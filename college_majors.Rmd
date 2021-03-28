@@ -1,0 +1,67 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r pressure, echo=FALSE}
+library(tidyverse)
+library(scales)
+theme_set(theme_light())
+```
+
+```{r}
+recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
+```
+
+```{r}
+major_processed <- recent_grads %>%
+    arrange(desc(Median)) %>% 
+    select(Major, Major_category, Median, P25th, P75th) %>% 
+    mutate(Major = str_to_title(Major),
+           Major = fct_reorder(Major, Median))
+```
+
+```{r}
+major_processed %>% 
+    mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
+    ggplot(aes(Major_category, Median)) +
+    geom_boxplot() +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip()
+```
+
+```{r}
+major_processed %>% 
+    mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
+    group_by(Major_category) %>% 
+    summarise(Median = median(Median)) %>% 
+    ggplot(aes(Major_category, Median)) +
+    geom_col() +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip()
+```
+
+What are the hightest Majors?
+
+```{r}
+major_processed %>% 
+    head(20) %>% 
+    ggplot(aes(Major, Median, color = Major_category)) +
+    expand_limits(y = 0) +
+    geom_point() +
+    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip()
+```
+
+What are the lowest majors?
+
+```{r}
+major_processed %>% 
+    tail(20) %>% 
+    ggplot(aes(Major, Median, color = Major_category)) +
+    expand_limits(y = 0) +
+    geom_point() +
+    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip()
+```
