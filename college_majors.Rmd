@@ -8,35 +8,53 @@ library(scales)
 theme_set(theme_light())
 ```
 
-```{r}
+```{r echo=FALSE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
+
+# first data cleaning
+major_processed <- recent_grads %>%
+    arrange(desc(Median)) %>% 
+    mutate(Major = str_to_title(Major), # converts uppercased characters to titlecased
+           Major = fct_reorder(Major, Median)) 
 ```
 
 
-```{r}
+# What are the highest earning majors?
+
+```{r echo=FALSE}
+major_processed %>% 
+    filter(Sample_size >= 100) %>% 
+    head(20) %>% 
+    ggplot(aes(Major, Median, color = Major_category)) +
+    geom_point() +
+    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+    expand_limits(y = 0) +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip() +
+    labs(title = "What are the highest-earning majors",
+         subtitle = "Top 20 majors with at lease 100 graduades surveyed",
+         x = "",
+         y = "Median salary of graduades")
+```
+
+### Most common majors (32min)
+
+```{r echo=FALSE}
 # show categories with highest major's 
-recent_grads %>% 
-    count(Major_category, wt = Total, sort = TRUE) %>% 
-    mutate(Major_category = fct_reorder(Major_category, n)) %>% 
-    ggplot(aes(Major_category, n, fill = Major_category)) +
+major_processed %>% 
+    mutate(Major_category = fct_reorder(Major, Total)) %>% 
+    arrange(desc(Total)) %>% 
+    head(20) %>% 
+    ggplot(aes(Major_category, Total, fill = Major_category)) +
     geom_col() +
     coord_flip() +
     labs(x = "",
-         y = "Total number of graduates") +
-    theme(legend.position = "none")
+         y = "Total number of graduates")
 ```
 
 
-```{r}
-major_processed <- recent_grads %>%
-    arrange(desc(Median)) %>% 
-    select(Major, Major_category, Median, P25th, P75th) %>% 
-    mutate(Major = str_to_title(Major),
-           Major = fct_reorder(Major, Median)) %>% 
-    add_count(Major_category)
-```
 
-```{r}
+```{r echo=FALSE}
 major_processed %>% 
     mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
     ggplot(aes(Major_category, Median)) +
@@ -45,7 +63,7 @@ major_processed %>%
     coord_flip()
 ```
 
-```{r}
+```{r echo=FALSE}
 major_processed %>% 
     mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
     group_by(Major_category) %>% 
@@ -58,7 +76,7 @@ major_processed %>%
 
 What are the hightest Majors?
 
-```{r}
+```{r echo=FALSE}
 major_processed %>% 
     head(20) %>% 
     ggplot(aes(Major, Median, color = Major_category)) +
@@ -71,7 +89,7 @@ major_processed %>%
 
 What are the lowest majors?
 
-```{r}
+```{r echo=FALSE}
 major_processed %>% 
     tail(20) %>% 
     ggplot(aes(Major, Median, color = Major_category)) +
