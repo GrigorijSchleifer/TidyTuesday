@@ -24,7 +24,7 @@ major_processed <- recent_grads %>%
 ```{r echo=FALSE}
 major_processed %>% 
     filter(Sample_size >= 100) %>% 
-    head(20) %>% 
+    head(10) %>% 
     ggplot(aes(Major, Median, color = Major_category)) +
     geom_point() +
     geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
@@ -48,9 +48,11 @@ major_processed %>%
     ggplot(aes(Major_category, Total, fill = Major_category)) +
     geom_col() +
     coord_flip() +
+    scale_y_continuous(labels = comma_format()) +
     labs(x = "",
          y = "Total number of graduates")
 ```
+
 
 
 
@@ -99,3 +101,19 @@ major_processed %>%
     scale_y_continuous(labels = dollar_format()) +
     coord_flip()
 ```
+
+### How does gender breakdown relate to typical earnings? (36min)
+
+```{r}
+major_processed %>% 
+    arrange(desc(Total)) %>% # will display top Majors by the count of people
+    head(20) %>% 
+    mutate(Major = fct_reorder(Major, Total)) %>% 
+    gather(Gender, Number, Men, Women) %>% 
+    select(Major, Gender, Number) %>% 
+    ggplot(aes(Major, Number, fill = Gender)) +
+    geom_col() +
+    coord_flip() +
+    scale_y_continuous(labels = comma_format())
+```
+
