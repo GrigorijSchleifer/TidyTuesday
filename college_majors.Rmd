@@ -117,3 +117,11 @@ major_processed %>%
     scale_y_continuous(labels = comma_format())
 ```
 
+```{r}
+major_processed %>%
+    group_by(Major_category) %>%
+    summarise_at(vars(Total, Men, Women), sum, na.rm = T) %>%
+    mutate(ShareWomen = Women / Total) %>% 
+    arrange(desc(ShareWomen))
+```
+
