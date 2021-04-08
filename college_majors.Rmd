@@ -102,7 +102,7 @@ major_processed %>%
     coord_flip()
 ```
 
-### How does gender breakdown relate to typical earnings? (36min)
+### How does gender breakdown relate to typical earnings? (36 min)
 
 ```{r}
 major_processed %>% 
@@ -117,11 +117,47 @@ major_processed %>%
     scale_y_continuous(labels = comma_format())
 ```
 
-```{r}
-major_processed %>%
+```{r by_major_category}
+by_major_categry <- major_processed %>%
+    filter(!is.na(Total)) %>% 
     group_by(Major_category) %>%
-    summarise_at(vars(Total, Men, Women), sum, na.rm = T) %>%
+    summarise(Men = sum(Men),
+              Women = sum(Women),
+              Total = sum(Total),
+              # weight medians by SampleSize
+              MedianSalary = sum(Median * Sample_size / sum(Sample_size)))%>%
     mutate(ShareWomen = Women / Total) %>% 
     arrange(desc(ShareWomen))
+```
+
+Salary and Women by Major_category(43 min)
+
+```{r}
+library(ggrepel)
+
+by_major_categry %>% 
+    ggplot(aes(ShareWomen, MedianSalary)) +
+    geom_point() +
+    # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
+    geom_smooth(method = "lm") +
+    geom_text_repel(aes(label = Major_category), force = .2) +
+    expand_limits(y = 0)
+```
+
+Salary and Women by Major (expressed in the Median column) (48 min)
+
+```{r}
+library(ggrepel)
+
+# for doing a statistical test we should be careful if aggregating first
+# This will reduce statistical power and hide some of the variation in the data
+# also be awere of simpson paradox (some Major_categories with high women percentage)
+# will have high Salaries, excluding those would potentially change the direction of the correlation
+major_processed %>% 
+    ggplot(aes(ShareWomen, Median)) +
+    geom_point() +
+    # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
+    geom_smooth(method = "lm") +
+    expand_limits(y = 0)
 ```
 
