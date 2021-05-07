@@ -130,7 +130,7 @@ by_major_categry <- major_processed %>%
     arrange(desc(ShareWomen))
 ```
 
-Salary and Women by Major_category(43 min)
+Salary and Women by Major_category (43 min)
 
 ```{r}
 library(ggrepel)
@@ -154,10 +154,11 @@ library(ggrepel)
 # also be awere of simpson paradox (some Major_categories with high women percentage)
 # will have high Salaries, excluding those would potentially change the direction of the correlation
 major_processed %>% 
-    ggplot(aes(ShareWomen, Median)) +
+    ggplot(aes(ShareWomen, Median, color = Major_category)) +
     geom_point() +
     # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
-    geom_smooth(method = "lm") +
+    # group aes argument to make lm for all categories
+    geom_smooth(aes(group = 1), method = "lm") +
     expand_limits(y = 0)
 ```
 
