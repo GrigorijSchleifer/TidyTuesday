@@ -117,6 +117,8 @@ major_processed %>%
     scale_y_continuous(labels = comma_format())
 ```
 
+Create ShareWomen variable
+
 ```{r by_major_category}
 by_major_categry <- major_processed %>%
     filter(!is.na(Total)) %>% 
@@ -125,7 +127,7 @@ by_major_categry <- major_processed %>%
               Women = sum(Women),
               Total = sum(Total),
               # weight medians by SampleSize
-              MedianSalary = sum(Median * Sample_size / sum(Sample_size)))%>%
+              MedianSalary = sum(Median * Sample_size / sum(Sample_size))) %>%
     mutate(ShareWomen = Women / Total) %>% 
     arrange(desc(ShareWomen))
 ```
@@ -160,5 +162,16 @@ major_processed %>%
     # group aes argument to make lm for all categories
     geom_smooth(aes(group = 1), method = "lm") +
     expand_limits(y = 0)
+```
+
+Weighted (on Sample_size) linear regression to predict Median salary from ShareWomen 51 nin
+wLR expects a Mean, but salary data is log normally distributed, the median is close geometric mean
+Estimate: if you would go from 0 % to 100 % women
+
+```{r}
+major_processed %>% 
+   select(Major, Total, ShareWomen, Sample_size, Median) %>% 
+    lm(Median ~ ShareWomen, data = ., weights = Sample_size) %>% 
+    summary()
 ```
 
