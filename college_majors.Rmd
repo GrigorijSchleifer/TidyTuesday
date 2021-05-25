@@ -188,6 +188,14 @@ major_processed %>%
     # within every Major category "Median explained by ShareWomen on this data with these weights"
     mutate(model = map(data, ~lm(Median ~ ShareWomen, data = ., weights = Sample_size)),
            tidied = map(model, tidy)) %>% 
-    unnest(tidied)
+    unnest(tidied) %>% 
+    filter(term == "ShareWomen") %>% 
+    arrange(estimate) %>% 
+    # adjusting p-value not by multiplying by the category count
+    # instead using false discovery rate
+    # if there is a significant correlation we would be 10% wrong in those categories with the smallest fdr
+    # linear effects model would be more appropriate to use here
+    # in those 4 groups the data suggests there is negative correlation within departments and not just across them
+    mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
 
