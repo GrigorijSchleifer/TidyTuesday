@@ -175,3 +175,19 @@ major_processed %>%
     summary()
 ```
 
+Detect correlations with salary within Major_category with  is 54 min
+
+```{r}
+library(broom)
+
+major_processed %>% 
+    select(Major, Major_category, Total, ShareWomen, Sample_size, Median) %>% 
+    add_count(Major_category) %>% # will add an extra column with counts of distinct categories
+    filter(n >= 10) %>% 
+    nest(-Major_category) %>% 
+    # within every Major category "Median explained by ShareWomen on this data with these weights"
+    mutate(model = map(data, ~lm(Median ~ ShareWomen, data = ., weights = Sample_size)),
+           tidied = map(model, tidy)) %>% 
+    unnest(tidied)
+```
+
