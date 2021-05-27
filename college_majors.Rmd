@@ -18,6 +18,34 @@ major_processed <- recent_grads %>%
            Major = fct_reorder(Major, Median)) 
 ```
 
+1:01:25: Create ShareWomen variable
+
+```{r}
+by_major_categry <- major_processed %>%
+    filter(!is.na(Total)) %>% 
+    group_by(Major_category) %>%
+    summarise(Men = sum(Men),
+              Women = sum(Women),
+              Total = sum(Total),
+              # weight medians by SampleSize
+              MedianSalary = sum(Median * Sample_size / sum(Sample_size))) %>%
+    mutate(ShareWomen = Women / Total) %>% 
+    arrange(desc(ShareWomen))
+```
+
+### Most common majors (32min)
+
+```{r echo=FALSE}
+# show categories with highest major's 
+by_major_categry %>% 
+    mutate(Major_category = fct_reorder(Major_category, Total)) %>% 
+    gather(Gender, Number, Men, Women) %>% 
+    ggplot(aes(Major_category, Total, fill = Gender)) +
+    geom_col() +
+    coord_flip() +
+    labs(x = "",
+         y = "Total number of graduates")
+```
 
 # What are the highest earning majors?
 
@@ -36,25 +64,6 @@ major_processed %>%
          x = "",
          y = "Median salary of graduades")
 ```
-
-### Most common majors (32min)
-
-```{r echo=FALSE}
-# show categories with highest major's 
-major_processed %>% 
-    mutate(Major_category = fct_reorder(Major, Total)) %>% 
-    arrange(desc(Total)) %>% 
-    head(20) %>% 
-    ggplot(aes(Major_category, Total, fill = Major_category)) +
-    geom_col() +
-    coord_flip() +
-    scale_y_continuous(labels = comma_format()) +
-    labs(x = "",
-         y = "Total number of graduates")
-```
-
-
-
 
 ```{r echo=FALSE}
 major_processed %>% 
@@ -117,22 +126,6 @@ major_processed %>%
     scale_y_continuous(labels = comma_format())
 ```
 
-Create ShareWomen variable
-
-```{r by_major_category}
-by_major_categry <- major_processed %>%
-    filter(!is.na(Total)) %>% 
-    group_by(Major_category) %>%
-    summarise(Men = sum(Men),
-              Women = sum(Women),
-              Total = sum(Total),
-              # weight medians by SampleSize
-              MedianSalary = sum(Median * Sample_size / sum(Sample_size))) %>%
-    mutate(ShareWomen = Women / Total) %>% 
-    arrange(desc(ShareWomen))
-```
-
-Salary and Women by Major_category (43 min)
 
 ```{r}
 library(ggrepel)
@@ -198,4 +191,3 @@ major_processed %>%
     # in those 4 groups the data suggests there is negative correlation within departments and not just across them
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
-
