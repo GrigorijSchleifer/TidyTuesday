@@ -36,19 +36,18 @@ by_major_categry <- major_processed %>%
     arrange(desc(ShareWomen))
 ```
 
-### Gender shares in most common majors (32min)
-
-```{r echo=FALSE}
-# show categories with highest major's 
+```{r}
 by_major_categry %>% 
     mutate(Major_category = fct_reorder(Major_category, Total)) %>% 
     gather(Gender, Number, Men, Women) %>% 
-    View()
-    ggplot(aes(Major_category, Total, fill = Gender)) +
+    ggplot(aes(Major_category, Number, fill = Gender)) +
     geom_col() +
     coord_flip() +
+    scale_y_continuous(labels = comma_format()) +
     labs(x = "",
-         y = "Total number of graduates")
+         y = "Total # number of graduates", 
+         title = "What are the most common major categories?")
+    
 ```
 
 # What are the highest earning majors?
@@ -67,15 +66,6 @@ major_processed %>%
          subtitle = "Top 20 majors with at lease 100 graduades surveyed",
          x = "",
          y = "Median salary of graduades")
-```
-
-```{r echo=FALSE}
-major_processed %>% 
-    mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
-    ggplot(aes(Major_category, Median)) +
-    geom_boxplot() +
-    scale_y_continuous(labels = dollar_format()) +
-    coord_flip()
 ```
 
 ```{r echo=FALSE}
@@ -195,3 +185,13 @@ major_processed %>%
     # in those 4 groups the data suggests there is negative correlation within departments and not just across them
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
+
+```{r}
+knitr::knit_exit()
+
+This is scrap work
+
+
+
+```
+
