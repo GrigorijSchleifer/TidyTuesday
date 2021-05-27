@@ -1,6 +1,9 @@
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r}
+
+```
 
 ```{r pressure, echo=FALSE}
 library(tidyverse)
@@ -33,13 +36,14 @@ by_major_categry <- major_processed %>%
     arrange(desc(ShareWomen))
 ```
 
-### Most common majors (32min)
+### Gender shares in most common majors (32min)
 
 ```{r echo=FALSE}
 # show categories with highest major's 
 by_major_categry %>% 
     mutate(Major_category = fct_reorder(Major_category, Total)) %>% 
     gather(Gender, Number, Men, Women) %>% 
+    View()
     ggplot(aes(Major_category, Total, fill = Gender)) +
     geom_col() +
     coord_flip() +
