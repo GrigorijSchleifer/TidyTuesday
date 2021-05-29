@@ -85,16 +85,18 @@ major_processed %>%
 ShareWomen and Median Salary relationship
 
 ```{r}
-library(ggrepel)
+library(plotly)
 
-major_processed %>% 
-    mutate(Major_category = fct_lump(Major_category, 6)) %>% 
-    ggplot(aes(ShareWomen, Median, color = Major_category)) +
-    geom_point() +
+g <- major_processed %>% 
+    mutate(Major_category = fct_lump(Major_category, 4)) %>% 
+    ggplot(aes(ShareWomen, Median, color = Major_category, size = Sample_size)) +
+    geom_point(aes(label = Major)) +
     # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
     geom_smooth(aes(group = 1), method = "lm") +
     # geom_text_repel(aes(label = Major_category), force = .2) +
     expand_limits(y = 0)
+
+ggplotly(g)
 ```
 
 Salary and Women by Major (expressed in the Median column) (48 min)
