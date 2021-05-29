@@ -87,12 +87,13 @@ ShareWomen and Median Salary relationship
 ```{r}
 library(ggrepel)
 
-by_major_categry %>% 
-    ggplot(aes(ShareWomen, MedianSalary)) +
+major_processed %>% 
+    mutate(Major_category = fct_lump(Major_category, 6)) %>% 
+    ggplot(aes(ShareWomen, Median, color = Major_category)) +
     geom_point() +
     # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
-    geom_smooth(method = "lm") +
-    geom_text_repel(aes(label = Major_category), force = .2) +
+    geom_smooth(aes(group = 1), method = "lm") +
+    # geom_text_repel(aes(label = Major_category), force = .2) +
     expand_limits(y = 0)
 ```
 
@@ -114,16 +115,6 @@ major_processed %>%
     expand_limits(y = 0)
 ```
 
-Weighted (on Sample_size) linear regression to predict Median salary from ShareWomen 51 nin
-wLR expects a Mean, but salary data is log normally distributed, the median is close geometric mean
-Estimate: if you would go from 0 % to 100 % women
-
-```{r}
-major_processed %>% 
-   select(Major, Total, ShareWomen, Sample_size, Median) %>% 
-    lm(Median ~ ShareWomen, data = ., weights = Sample_size) %>% 
-    summary()
-```
 
 Detect correlations with salary within Major_category with  is 54 min
 
@@ -149,12 +140,10 @@ major_processed %>%
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
 
-```{r}
-knitr::knit_exit()
-
 This is scrap work
 
-
+```{r}
+knitr::knit_exit()
 
 ```
 
