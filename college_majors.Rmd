@@ -36,20 +36,6 @@ by_major_categry <- major_processed %>%
     arrange(desc(ShareWomen))
 ```
 
-```{r}
-by_major_categry %>% 
-    mutate(Major_category = fct_reorder(Major_category, Total)) %>% 
-    gather(Gender, Number, Men, Women) %>% 
-    ggplot(aes(Major_category, Number, fill = Gender)) +
-    geom_col() +
-    coord_flip() +
-    scale_y_continuous(labels = comma_format()) +
-    labs(x = "",
-         y = "Total # number of graduates", 
-         title = "What are the most common major categories?")
-    
-```
-
 # What are the highest earning majors?
 
 ```{r echo=FALSE}
@@ -62,21 +48,25 @@ major_processed %>%
     expand_limits(y = 0) +
     scale_y_continuous(labels = dollar_format()) +
     coord_flip() +
-    labs(title = "What are the highest-earning majors",
-         subtitle = "Top 20 majors with at lease 100 graduades surveyed",
-         x = "",
-         y = "Median salary of graduades")
+    
 ```
+
+What categories of majors make more money than others?
 
 ```{r echo=FALSE}
 major_processed %>% 
-    mutate(Major_category = fct_reorder(Major_category, Median)) %>% 
+    mutate(Major_category = fct_reorder(Major_category, Median)) %>%
+    filter(Sample_size >= 100) %>% 
     group_by(Major_category) %>% 
-    summarise(Median = median(Median)) %>% 
-    ggplot(aes(Major_category, Median)) +
-    geom_col() +
+    ggplot(aes(Major_category, Median, fill = Major_category)) +
+    geom_boxplot() +
     scale_y_continuous(labels = dollar_format()) +
-    coord_flip()
+    expand_limits(y = 0) + 
+    coord_flip() +
+    theme(legend.position = "none") +
+    labs(title = "What are the highest-earning majors",
+         x = "",
+         y = "Median salary of Majors")
 ```
 
 What are the hightest Majors?
@@ -92,34 +82,7 @@ major_processed %>%
     coord_flip()
 ```
 
-What are the lowest majors?
-
-```{r echo=FALSE}
-major_processed %>% 
-    tail(20) %>% 
-    ggplot(aes(Major, Median, color = Major_category)) +
-    expand_limits(y = 0) +
-    geom_point() +
-    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
-    scale_y_continuous(labels = dollar_format()) +
-    coord_flip()
-```
-
-### How does gender breakdown relate to typical earnings? (36 min)
-
-```{r}
-major_processed %>% 
-    arrange(desc(Total)) %>% # will display top Majors by the count of people
-    head(20) %>% 
-    mutate(Major = fct_reorder(Major, Total)) %>% 
-    gather(Gender, Number, Men, Women) %>% 
-    select(Major, Gender, Number) %>% 
-    ggplot(aes(Major, Number, fill = Gender)) +
-    geom_col() +
-    coord_flip() +
-    scale_y_continuous(labels = comma_format())
-```
-
+ShareWomen and Median Salary relationship
 
 ```{r}
 library(ggrepel)
