@@ -1,9 +1,6 @@
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r}
-
-```
 
 ```{r pressure, echo=FALSE}
 library(tidyverse)
@@ -93,6 +90,8 @@ g <- major_processed %>%
     geom_point(aes(label = Major)) +
     # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
     geom_smooth(aes(group = 1), method = "lm") +
+    scale_x_continuous(labels = percent_format()) +
+    scale_y_continuous(labels = dollar_format()) +
     # geom_text_repel(aes(label = Major_category), force = .2) +
     expand_limits(y = 0)
 
@@ -148,4 +147,6 @@ This is scrap work
 knitr::knit_exit()
 
 ```
+
+
 
