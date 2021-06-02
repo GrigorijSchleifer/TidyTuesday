@@ -9,6 +9,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
-movie_profit <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv")
+library(lubridate)
+library(scales)
+theme_set(theme_light())
+```
+
+```{r}
+movie_profit <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv") %>% 
+    select(-X1) %>% 
+    # because parse_date_time worked as.Date is a cheat around the error from parse_date
+    mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y"))) %>% 
+    filter(release_date < "2018-01-01")
+```
+
+```{r}
+movie_profit %>% 
+    ggplot(aes(production_budget)) +
+    geom_histogram() +
+    # anytime you see money, put it on a log scale
+    # this will create a lognormal distribution 
+    scale_x_log10(label = dollar_format()) +
+    
 ```
 
