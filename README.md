@@ -15,6 +15,11 @@ mutate(variable = fct_reorder(variable, reorder_by))
 #### Horror movie EDA
 
 ```r
+# turn the datafram upside down with row_numbers()
+arrange(desc(row_number()))
+```
+
+```r
 # extract the dacade out of the release_date
 10 * floor(year(movie_profit$release_date) / 10)
 ```
