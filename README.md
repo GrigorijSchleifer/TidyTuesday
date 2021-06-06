@@ -18,3 +18,8 @@ mutate(variable = fct_reorder(variable, reorder_by))
 # extract the dacade out of the release_date
 10 * floor(year(movie_profit$release_date) / 10)
 ```
+
+```r
+# creates a nice summarisation for multiple variables at once
+summarise_at(vars(production_budget:worldwide_gross), median)
+```
