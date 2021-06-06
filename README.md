@@ -12,7 +12,7 @@
 mutate(variable = fct_reorder(variable, reorder_by))
 ```
 
-#### Horror movie EDA
+#### Horror movies EDA
 
 ```r
 # turn the datafram upside down with row_numbers()
