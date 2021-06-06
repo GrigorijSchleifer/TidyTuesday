@@ -6,7 +6,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(lubridate)
 library(scales)
-theme_set(theme_light())
+theme_set(theme_minimal())
 ```
 
 ```{r}
@@ -23,16 +23,38 @@ movie_profit <- movie_profit_raw %>%
     distinct(movie, release_date, .keep_all = TRUE)
 ```
 
+
+
 ```{r}
 movie_profit %>% 
-    count(distributor, sort = TRUE)
-
-
-movie_profit %>% 
-    ggplot(aes(production_budget)) +
-    geom_histogram() +
+    filter(distributor != "NA") %>% 
+    mutate(distributor = fct_reorder(distributor, production_budget)) %>% 
+    ggplot(aes(distributor, production_budget)) +
+    geom_boxplot() +
     # anytime you see money, put it on a log scale
     # this will create a lognormal distribution 
-    scale_x_log10(labels = dollar_format())
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip()
+```
+
+### What genres make the most money
+
+```{r}
+movie_profit %>% 
+    mutate(genre = fct_reorder(genre, production_budget)) %>% 
+    ggplot(aes(genre, production_budget)) +
+    geom_boxplot() +
+    # anytime you see money, put it on a log scale
+    # this will create a lognormal distribution 
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip()
+```
+
+What are typical budgets over time
+
+```{r}
+movie_profit %>% 
+    mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
+    count(decade)
 ```
 
