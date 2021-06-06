@@ -1,8 +1,3 @@
----
-title: "horror_movies"
-output: html_document
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -23,13 +18,16 @@ movie_profit <- movie_profit_raw %>%
     select(-X1) %>% 
     # because parse_date_time worked as.Date is a cheat around the error from parse_date
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
-           distributor = fct_lump(distributor, n = 6)) %>% 
-    filter(release_date < "2018-01-01") %>% 
-    # puts the frame upside down
-    arrange(desc(row_number())) 
+           distributor = fct_lump(distributor, n = 6)) %>%
+    arrange(desc(row_number())) %>% 
+    distinct(movie, release_date, .keep_all = TRUE)
 ```
 
 ```{r}
+movie_profit %>% 
+    count(distributor, sort = TRUE)
+
+
 movie_profit %>% 
     ggplot(aes(production_budget)) +
     geom_histogram() +
