@@ -19,7 +19,7 @@ movie_profit <- movie_profit_raw %>%
     # because parse_date_time worked as.Date is a cheat around the error from parse_date
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
            distributor = fct_lump(distributor, n = 6)) %>%
-    arrange(desc(row_number())) %>% 
+    mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
     distinct(movie, release_date, .keep_all = TRUE)
 ```
 
@@ -36,6 +36,7 @@ movie_profit %>%
     scale_y_log10(labels = dollar_format()) +
     coord_flip()
 ```
+
 
 ### What genres make the most money
 
@@ -54,7 +55,11 @@ What are typical budgets over time
 
 ```{r}
 movie_profit %>% 
-    mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
-    count(decade)
+    group_by(decade) %>% 
+    summarise_at(vars(production_budget:worldwide_gross), median, na.rm = TRUE) %>% 
+    gather(metric, value, -decade) %>% 
+    ggplot(aes(decade, value, color = metric)) +
+    geom_line() +
+    scale_y_continuous(labels = dollar_format())
 ```
 
