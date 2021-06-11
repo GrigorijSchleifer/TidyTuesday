@@ -15,6 +15,11 @@ mutate(variable = fct_reorder(variable, reorder_by))
 #### Horror movies EDA
 
 ```r
+# filter only 6 most common categories
+mutate(distributor = fct_lump(distributor, n = 6)
+```
+
+```r
 # turn the datafram upside down with row_numbers()
 arrange(desc(row_number()))
 ```
