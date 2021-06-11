@@ -75,16 +75,13 @@ movie_profit %>%
 
 # barplot of median profit ratios in different genres
 movie_profit %>% 
-    filter(!is.na(worldwide_gross & !is.na(production_budget))) %>%
     mutate(profit_ratio = worldwide_gross / production_budget) %>%
-    mutate(
     group_by(genre) %>% 
     summarise(median_profit_ratio = median(profit_ratio)) %>% 
+    mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
     ggplot(aes(genre, median_profit_ratio)) +
     geom_col() +
     coord_flip()
-
-
 ```
 
 
