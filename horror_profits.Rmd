@@ -77,8 +77,12 @@ movie_profit %>%
 movie_profit %>% 
     mutate(profit_ratio = worldwide_gross / production_budget) %>%
     group_by(genre) %>% 
-    mutate(median_profit_ratio = median(profit_ratio)) %>% 
-    
+    summarise(median_profit_ratio = median(profit_ratio)) %>% 
+    ggplot(aes(genre, median_profit_ratio)) +
+    geom_col() +
+    coord_flip()
+
+
 ```
 
 
