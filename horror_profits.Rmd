@@ -21,8 +21,7 @@ movie_profit <- movie_profit_raw %>%
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
            distributor = fct_lump(distributor, n = 6)) %>%
     mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
-    distinct(movie, release_date, .keep_all = TRUE) %>% 
-    filter(worldwide_gross > 0)
+    distinct(movie, release_date, .keep_all = TRUE)
 ```
 
 
