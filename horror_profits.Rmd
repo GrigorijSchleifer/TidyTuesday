@@ -4,7 +4,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ```{r}
-library(tidyverse)
 library(lubridate)
 library(scales)
 # theme_set(theme_minimal())
@@ -57,7 +56,7 @@ movie_profit %>%
 28:25 What genres have the biggest payoffs (worldwide gross to production budget ratio) ?
 
 ```{r}
-# distribution on a log scale of profit ratios
+# distribution on a log scale of ratios of any kind
 movie_profit %>% 
     mutate(profit_ratio = worldwide_gross / production_budget) %>%
     ggplot(aes(profit_ratio)) +
@@ -67,6 +66,7 @@ movie_profit %>%
 # distribution on a log scale of profit ration separated by genres
 movie_profit %>% 
     mutate(profit_ratio = worldwide_gross / production_budget) %>%
+    mutate(genre = fct_reorder(genre, profit_ratio)) %>% 
     ggplot(aes(genre, profit_ratio)) +
     geom_boxplot() +
     scale_y_log10() +
@@ -81,6 +81,14 @@ movie_profit %>%
     ggplot(aes(genre, median_profit_ratio)) +
     geom_col() +
     coord_flip()
+```
+
+```{r}
+movie_profit %>% 
+    mutate(profit_ratio = worldwide_gross / production_budget) %>% 
+    dplyr::filter(genre == "Horror") %>% 
+    arrange(desc(profit_ratio)) %>% 
+    dplyr::filter(distributor == "20th Century Fox")
 ```
 
 
