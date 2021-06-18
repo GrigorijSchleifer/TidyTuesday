@@ -28,7 +28,7 @@ movie_profit <- movie_profit_raw %>%
 
 ```{r}
 movie_profit %>% 
-    filter(distributor != "NA") %>% 
+    dplyr::filter(!is.na(distributor)) %>% 
     mutate(distributor = fct_reorder(distributor, production_budget)) %>% 
     ggplot(aes(distributor, production_budget)) +
     geom_boxplot() +
