@@ -21,9 +21,9 @@ movie_profit <- movie_profit_raw %>%
     mutate(profit_ratio = worldwide_gross / production_budget) %>% 
     # because parse_date_time worked as.Date is a cheat around the error from parse_date
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
-           distributor = fct_lump(distributor, n = 6)) %>%
+           distributor = fct_lump(distributor, n = 5)) %>%
     mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
-    distinct(movie, release_date, .keep_all = TRUE) %>% ]
+    distinct(movie, release_date, .keep_all = TRUE) %>% 
     mutate(profit_ratio = worldwide_gross / production_budget)
 ```
 
@@ -106,7 +106,21 @@ movie_profit %>%
     mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
     ggplot(aes(year, median_profit_ratio, color = genre)) +
     geom_line() +
-    coord_flip() +
+    scale_y_continuous(labels = function(x) paste0(x, "X"))
+```
+
+```{r}
+movie_profit %>% 
+    group_by(genre, distributor, decade) %>% 
+    summarise(median_profit_ratio = median(profit_ratio),
+              movies = n()) %>%
+    ungroup() %>% 
+    dplyr::filter(decade >= "1990",
+                  !is.na(distributor)) %>% 
+    mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
+    ggplot(aes(decade, median_profit_ratio, color = genre)) +
+    geom_line() +
+    facet_wrap(~ distributor) +
     scale_y_continuous(labels = function(x) paste0(x, "X"))
 ```
 
