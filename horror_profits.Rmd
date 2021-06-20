@@ -137,3 +137,23 @@ movie_profit %>%
     scale_y_continuous(labels = dollar_format())
 ```
 
+What are the most common genres?
+
+```{r}
+# based on just numbers
+movie_profit %>% 
+    count(decade, genre) %>% 
+    ggplot(aes(decade, n, color = genre)) +
+    geom_line()
+
+# Distribution 0f movie categories in percent
+movie_profit %>% 
+    count(decade, genre) %>% 
+    group_by(decade) %>% 
+    mutate(persent = n / sum(n)) %>% 
+    ggplot(aes(decade, persent, color = genre)) +
+    geom_line() +
+    scale_y_continuous(labels = percent_format())
+
+```
+
