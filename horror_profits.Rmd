@@ -18,6 +18,7 @@ Data preparation
 ```{r}
 movie_profit <- movie_profit_raw %>% 
     select(-X1) %>% 
+    dplyr::filter(!is.na(distributor)) %>% 
     mutate(profit_ratio = worldwide_gross / production_budget) %>% 
     # because parse_date_time worked as.Date is a cheat around the error from parse_date
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
@@ -31,7 +32,6 @@ movie_profit <- movie_profit_raw %>%
 
 ```{r}
 movie_profit %>% 
-    dplyr::filter(!is.na(distributor)) %>% 
     mutate(distributor = fct_reorder(distributor, production_budget)) %>% 
     ggplot(aes(distributor, production_budget)) +
     geom_boxplot() +
@@ -107,6 +107,7 @@ movie_profit %>%
     ggplot(aes(year, median_profit_ratio, color = genre)) +
     geom_line() +
     scale_y_continuous(labels = function(x) paste0(x, "X"))
+    
 ```
 
 ```{r}
@@ -120,8 +121,7 @@ movie_profit %>%
     mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
     ggplot(aes(decade, median_profit_ratio, color = genre)) +
     geom_line() +
-    facet_wrap(~ distributor) +
-    scale_y_continuous(labels = function(x) paste0(x, "X"))
+    facet_wrap(~ distributor)
 ```
 
 
@@ -154,6 +154,14 @@ movie_profit %>%
     ggplot(aes(decade, persent, color = genre)) +
     geom_line() +
     scale_y_continuous(labels = percent_format())
+```
 
+```{r}
+movie_profit %>% 
+    count(distributor, genre) %>% 
+    ggplot(aes(genre, n, fill = genre)) +
+    geom_col(show.legend = FALSE) +
+    facet_wrap(~ distributor, scales = "free_x") +
+    coord_flip()
 ```
 
