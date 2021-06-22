@@ -187,8 +187,5 @@ horror_movies %>%
          y = "Ratio of worldwide gross to production budget",
          title = "What horror movies have most outgrossed their budget?") +
     scale_y_continuous(labels = function(x) paste0(x, "X"))
-
-
-    
 ```
 
