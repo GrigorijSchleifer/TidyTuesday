@@ -14,7 +14,6 @@ mutate(variable = fct_reorder(variable, reorder_by))
 
 #### Horror movies EDA
 
-![](Images/horror-line.png)
 
 ```r
 # filter only 6 most common categories
