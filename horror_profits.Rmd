@@ -110,6 +110,7 @@ movie_profit %>%
     
 ```
 
+
 ```{r}
 movie_profit %>% 
     group_by(genre, distributor, decade) %>% 
