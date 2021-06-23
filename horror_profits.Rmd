@@ -185,7 +185,8 @@ horror_movies %>%
     coord_flip() +
     labs(x = "",
          y = "Ratio of worldwide gross to production budget",
-         title = "What horror movies have most outgrossed their budget?") +
+         title = "What horror movies have most outgrossed their budget?",
+         fill = "Distributor") +
     scale_y_continuous(labels = function(x) paste0(x, "X"))
 ```
 
