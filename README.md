@@ -14,6 +14,8 @@ mutate(variable = fct_reorder(variable, reorder_by))
 
 #### Horror movies EDA
 
+![alt text](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/horror-lines.png)
+
 
 ```r
 # filter only 6 most common categories
@@ -38,7 +40,13 @@ summarise_at(vars(production_budget:worldwide_gross), median)
 ```r
 # custom labeling of the y or x axis ... damn cool 
 scale_y_continuous(labels = function(x) paste0(x, "X"))
+
+# adding release year at the end of movies title
+mutate(movie = paste0(movie, " (", year(release_date), " )")
 ```
+
+![alt text](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-movies.png)
+
 
 ```r
 # 44:14 x axis shoul be on a free scale and not similar for all facets
