@@ -45,7 +45,7 @@ scale_y_continuous(labels = function(x) paste0(x, "X"))
 mutate(movie = paste0(movie, " (", year(release_date), " )")
 ```
 
-![alt text](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-movies.png)
+![Profit gross](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-horror-movies.png)
 
 
 ```r
