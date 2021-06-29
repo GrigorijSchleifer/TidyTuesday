@@ -178,15 +178,32 @@ What are the movies with the highest profit ratios
 
 ```{r}
 horror_movies %>% 
-    mutate(movie = fct_reorder(movie, profit_ratio)) %>% 
-    head(10) %>% 
+    mutate(movie = paste0(movie, " (", year(release_date), " )"),
+           movie = fct_reorder(movie, profit_ratio)) %>% 
+    head(20) %>% 
     ggplot(aes(movie, profit_ratio, fill = distributor)) +
     geom_col() +
     coord_flip() +
+    scale_y_continuous(labels = function(x) paste0(x, "X")) +
     labs(x = "",
          y = "Ratio of worldwide gross to production budget",
          title = "What horror movies have most outgrossed their budget?",
-         fill = "Distributor") +
-    scale_y_continuous(labels = function(x) paste0(x, "X"))
+         fill = "Distributor")
+```
+
+
+```{r}
+movie_profit %>% 
+    arrange(desc(profit_ratio)) %>% 
+    mutate(movie = fct_reorder(movie, profit_ratio)) %>% 
+    head(20) %>% 
+    ggplot(aes(movie, profit_ratio, fill = genre)) +
+    geom_col() +
+    coord_flip() +
+    scale_y_continuous(labels = function(x) paste0(x, "X")) +
+    labs(x = "",
+         y = "Ratio of worldwide gross to production budget",
+         title = "What movies have most outgrossed their budget?",
+         fill = "Genre")
 ```
 
