@@ -5,6 +5,7 @@
 ### Coolest snippets and pearls
 
 ```r
+# nice way to combine data frames on equal dates contained on both data sets
 sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
 ```
 
