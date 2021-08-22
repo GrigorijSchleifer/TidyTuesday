@@ -4,6 +4,9 @@
 
 ### Coolest snippets and pearls
 
+```r
+sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
+```
 
 #### Analizing Majors
 
