@@ -4,6 +4,10 @@
 
 ### Coolest snippets and pearls
 
+```r
+# nice way to combine data frames on equal dates contained in both data sets
+sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
+```
 
 #### Analizing Majors
 
@@ -45,7 +49,7 @@ scale_y_continuous(labels = function(x) paste0(x, "X"))
 mutate(movie = paste0(movie, " (", year(release_date), " )")
 ```
 
-![alt text](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-movies.png)
+![Profit gross](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-horror-movies.png)
 
 
 ```r
