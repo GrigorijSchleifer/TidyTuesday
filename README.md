@@ -9,7 +9,14 @@
 sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
 ```
 
-#### Analizing Majors
+# Dates
+
+```r
+library(lubridate)
+# creates the weeknumber as integer that can be counted etc.
+table(wday(r_downloads_year$date))
+```
+
 
 ```r
 # reordering variables in descending order, nice for graphs, not working if NAs are present
