@@ -41,12 +41,17 @@ arrange(desc(row_number()))
 summarise_at(vars(production_budget:worldwide_gross), median)
 ```
 
+
+```r
+# adding release year at the end of movies title
+mutate(movie = paste0(movie, " (", year(release_date), " )")
+```
+
+# Graphs
+
 ```r
 # custom labeling of the y or x axis ... damn cool 
 scale_y_continuous(labels = function(x) paste0(x, "X"))
-
-# adding release year at the end of movies title
-mutate(movie = paste0(movie, " (", year(release_date), " )")
 ```
 
 ![Profit gross](https://github.com/GrigorijSchleifer/TidyTuesday/blob/master/Images/Best-horror-movies.png)
