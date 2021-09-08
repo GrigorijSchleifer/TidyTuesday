@@ -9,11 +9,38 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
+library(lubridate)
 library(tidytuesdayR)
+theme_set(theme_light())
 
 # https://thebioengineer.github.io/tidytuesdayR/
 r_downloads_year <- tt_load(2018, week=31)
 r_downloads_year <- r_downloads_year$r_downloads_year
+
+r_downloads_year <- r_downloads_year %>% 
+    select(-X1)
 ```
+
+```{r}
+# counting downloads over time
+r_downloads_year %>% 
+    count(date) %>% 
+    ggplot(aes(date, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    labs(x = "# of R downloads per day")
+```
+
+```{r}
+r_downloads_year %>% 
+    # label = TRUE will assign the weekdays instead of integers
+    count(weekday = wday(date, label = TRUE)) %>% 
+    ggplot(aes(weekday, n)) +
+    # group will connect the dots
+    geom_line(group = 1) +
+    expand_limits(y = 0)
+```
+
+
 
 
