@@ -207,3 +207,8 @@ movie_profit %>%
          fill = "Genre")
 ```
 
+```{r}
+horror_movies %>% 
+    filter
+```
+
