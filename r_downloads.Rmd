@@ -1,0 +1,19 @@
+---
+title: "R_downloads"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(tidytuesdayR)
+
+# https://thebioengineer.github.io/tidytuesdayR/
+r_downloads_year <- tt_load(2018, week=31)
+r_downloads_year <- r_downloads_year$r_downloads_year
+```
+
+
