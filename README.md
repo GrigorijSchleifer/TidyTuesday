@@ -13,8 +13,8 @@ sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
 
 ```r
 library(lubridate)
-# creates the weeknumber as integer that can be counted etc.
-table(wday(r_downloads_year$date))
+# creates the weeknumber as character that can be counted etc.
+table(wday(r_downloads_year$date, label = TRUE))
 ```
 
 ```r
@@ -73,4 +73,11 @@ scale_y_continuous(labels = function(x) paste0(x, "X"))
 ```r
 # 44:14 x axis shoul be on a free scale and not similar for all facets
 facet_wrap(~ distributor, scales = "free_x")
+```
+
+# Country codes
+
+```r
+# converting EN, ES etc in readble country names
+count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE)
 ```

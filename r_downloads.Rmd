@@ -30,7 +30,7 @@ r_downloads_year %>%
     ggplot(aes(week, n)) +
     geom_line() +
     expand_limits(y = 0) +
-    labs(x = "# of R downloads per day")
+    labs(x = "# of R downloads per week")
 ```
 
 ```{r}
@@ -47,6 +47,12 @@ r_downloads_year %>%
     expand_limits(y = 0)
 ```
 
+```{r}
+library(countrycode)
+
+r_downloads_year %>% 
+    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE)
+```
 
 
 
