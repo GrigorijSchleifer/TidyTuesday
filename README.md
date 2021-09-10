@@ -17,6 +17,12 @@ library(lubridate)
 table(wday(r_downloads_year$date))
 ```
 
+```r
+library(lubridate)
+# counting by weeks
+count(week = floor_date(date, "week"))
+
+```
 
 ```r
 # reordering variables in descending order, nice for graphs, not working if NAs are present

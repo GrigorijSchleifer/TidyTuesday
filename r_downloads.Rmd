@@ -25,7 +25,9 @@ r_downloads_year <- r_downloads_year %>%
 # counting downloads over time
 r_downloads_year %>% 
     count(week = floor_date(date, "week")) %>% 
-    ggplot(aes(date, n)) +
+    # droping incomplete weeks
+    filter(week > min(week)) %>% 
+    ggplot(aes(week, n)) +
     geom_line() +
     expand_limits(y = 0) +
     labs(x = "# of R downloads per day")
