@@ -24,7 +24,7 @@ r_downloads_year <- r_downloads_year %>%
 ```{r}
 # counting downloads over time
 r_downloads_year %>% 
-    count(date) %>% 
+    count(week = floor_date(date, "week")) %>% 
     ggplot(aes(date, n)) +
     geom_line() +
     expand_limits(y = 0) +
@@ -32,10 +32,14 @@ r_downloads_year %>%
 ```
 
 ```{r}
+library(lubridate)
+
 r_downloads_year %>% 
+    count(date) %>% 
     # label = TRUE will assign the weekdays instead of integers
-    count(weekday = wday(date, label = TRUE)) %>% 
-    ggplot(aes(weekday, n)) +
+    group_by(weekday = wday(date, label = TRUE)) %>% 
+    summarise(average = mean(n)) %>% 
+    ggplot(aes(weekday, average)) +
     # group will connect the dots
     geom_line(group = 1) +
     expand_limits(y = 0)
