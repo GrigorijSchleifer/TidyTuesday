@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(lubridate)
 library(tidytuesdayR)
+library(countrycode)
 theme_set(theme_light())
 
 # https://thebioengineer.github.io/tidytuesdayR/
@@ -48,10 +49,15 @@ r_downloads_year %>%
 ```
 
 ```{r}
-library(countrycode)
-
 r_downloads_year %>% 
-    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE)
+    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE) %>% 
+    mutate(country = fct_reorder(country, n)) %>% 
+    dplyr::filter(!is.na(country)) %>% 
+    head(13) %>% 
+    ggplot(aes(country, n)) +
+    geom_col() +
+    coord_flip()
+    
 ```
 
 
