@@ -12,6 +12,7 @@ library(tidyverse)
 library(lubridate)
 library(tidytuesdayR)
 library(countrycode)
+library(scales)
 theme_set(theme_light())
 
 # https://thebioengineer.github.io/tidytuesdayR/
@@ -51,13 +52,15 @@ r_downloads_year %>%
 ```{r}
 r_downloads_year %>% 
     count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE) %>% 
-    mutate(country = fct_reorder(country, n)) %>% 
+    mutate(percent = n/sum(n)) %>% 
+    mutate(country = fct_reorder(country, percent)) %>% 
     dplyr::filter(!is.na(country)) %>% 
     head(13) %>% 
-    ggplot(aes(country, n)) +
+    ggplot(aes(country, percent)) +
     geom_col() +
-    coord_flip()
-    
+    coord_flip() +
+    scale_y_continuous(labels = percent_format()) +
+    labs(title = "What countries install most R?")
 ```
 
 

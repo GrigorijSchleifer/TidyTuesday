@@ -75,6 +75,12 @@ scale_y_continuous(labels = function(x) paste0(x, "X"))
 facet_wrap(~ distributor, scales = "free_x")
 ```
 
+```r
+# plot percents
+library(scales)
+cale_y_continuous(labels = percent_format())
+```
+
 # Country codes
 
 ```r
