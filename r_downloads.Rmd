@@ -12,7 +12,6 @@ library(tidyverse)
 library(lubridate)
 library(tidytuesdayR)
 library(countrycode)
-library(scales)
 theme_set(theme_light())
 
 # https://thebioengineer.github.io/tidytuesdayR/
@@ -49,19 +48,40 @@ r_downloads_year %>%
     expand_limits(y = 0)
 ```
 
+What time of day were people installing R?
+
 ```{r}
 r_downloads_year %>% 
-    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE) %>% 
-    mutate(percent = n/sum(n)) %>% 
-    mutate(country = fct_reorder(country, percent)) %>% 
+    mutate(country = countrycode(country, "iso2c", "country.name")) %>% 
     dplyr::filter(!is.na(country)) %>% 
-    head(13) %>% 
-    ggplot(aes(country, percent)) +
-    geom_col() +
-    coord_flip() +
-    scale_y_continuous(labels = percent_format()) +
-    labs(title = "What countries install most R?")
+    count(hour = hour(time),
+          country = fct_lump(country, 8)) %>% 
+    ggplot(aes(hour, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~country, scales = "free_y")
 ```
 
 
+
+```{r}
+r_downloads_year %>% 
+    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE) %>% 
+    mutate(country = fct_reorder(country, n)) %>% 
+    dplyr::filter(!is.na(country)) %>% 
+    head(13) %>% 
+    ggplot(aes(country, n)) +
+    geom_col() +
+    coord_flip()
+    
+```
+
+
+```{r}
+r_downloads_year %>% 
+    mutate(version = fct_lump(version, 7)) %>% 
+    count(date, version) %>% 
+    ggplot(aes(date, n, color = version)) +
+    geom_line()
+```
 
