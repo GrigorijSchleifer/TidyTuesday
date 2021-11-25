@@ -56,13 +56,21 @@ r_downloads_year %>%
     mutate(country = countrycode(country, "iso2c", "country.name")) %>% 
     dplyr::filter(!is.na(country)) %>% 
     count(hour = hour(time),
-          country = fct_lump(country, 8)) %>% 
+          country = fct_lump(country, 8)) %>%
     ggplot(aes(hour, n)) +
     geom_line() +
     expand_limits(y = 0) +
     facet_wrap(~country, scales = "free_y")
 ```
 
+```{r}
+r_downloads_year %>% 
+    count(contry = fct_lump(country, 2),
+          week = floor_date(date, "week")) %>% 
+    ggplot(aes(week, n)) +
+    geom_line() +
+    facet_wrap(~os)
+```
 
 
 ```{r}
@@ -87,6 +95,12 @@ r_downloads_year %>%
 ```
 
 ```{r}
-# Wipperführt session ..
+r_downloads_year %>% 
+    count(version, sort = TRUE) %>% 
+    print(n = 100)
+
+r_downloads_year %>% 
+    mutate(version = fct_lump(version, 8)) %>% 
+    count(version, sort = TRUE)
 ```
 
