@@ -35,7 +35,8 @@ r_downloads_year %>%
 ```
 
 ```{r}
-library(lubridate)
+# library(lubridate)
+# library(countrycode)
 
 r_downloads_year %>% 
     count(date) %>% 
@@ -83,5 +84,9 @@ r_downloads_year %>%
     count(date, version) %>% 
     ggplot(aes(date, n, color = version)) +
     geom_line()
+```
+
+```{r}
+# Wipperführt session ..
 ```
 
