@@ -19,7 +19,7 @@ r_downloads_year <- tt_load(2018, week=31)
 r_downloads_year <- r_downloads_year$r_downloads_year
 
 r_downloads_year <- r_downloads_year %>% 
-    select(-X1)
+    mutate(country_name = countrycode(country, "iso2c", "country.name"))
 ```
 
 ```{r}
@@ -33,6 +33,16 @@ r_downloads_year %>%
     expand_limits(y = 0) +
     labs(x = "# of R downloads per week")
 ```
+
+```{r}
+r_downloads_year %>% 
+    count(country_name = fct_lump(country_name, 8),
+          week = floor_date(date, "week")) %>% 
+    dplyr::filter(week > min(week)) %>% 
+    ggplot(aes(week, n, color = country_name)) +
+    geom_line()
+```
+
 
 ```{r}
 # library(lubridate)
