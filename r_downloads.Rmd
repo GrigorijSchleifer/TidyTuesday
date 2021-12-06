@@ -43,6 +43,18 @@ r_downloads_year %>%
     geom_line()
 ```
 
+### Taking a look at IP adresses
+```{r}
+r_downloads_year %>% 
+    count(ip_id, sort = T)
+```
+
+# Time between installations
+ 
+```{r}
+r_downloads_year %>% 
+    mutate(datetime = as.POSIXlt(date) + time)
+```
 
 ```{r}
 # library(lubridate)
