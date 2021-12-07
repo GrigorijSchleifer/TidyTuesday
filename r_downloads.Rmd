@@ -53,7 +53,12 @@ r_downloads_year %>%
  
 ```{r}
 r_downloads_year %>% 
-    mutate(datetime = as.POSIXlt(date) + time)
+    mutate(datetime = as.POSIXlt(date) + time) %>% 
+    arrange(datetime) %>% 
+    group_by(ip_id) %>% 
+    mutate(gap = datetime - lag(datetime)) %>% 
+    dplyr::filter(!is.na(gap))
+    
 ```
 
 ```{r}
