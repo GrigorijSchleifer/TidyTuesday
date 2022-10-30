@@ -9,6 +9,30 @@
 sent_q1 <- sent[as.POSIXct(sent$Date) %in% agg_q1$date,]
 ```
 
+```r
+# changing column names the cool way
+survey_dt_associations <- survey_data %>%
+    select(questions_table_one_EJA_paper, GDP_PER_CAPITA, digital_index, dichte) %>%
+    `colnames<-`(
+        c(
+            "when_complex",
+            "when_simple",
+            "accordance_complex",
+            "accordance_simple",
+            "legal_simple",
+            "Re_do",
+            "tech_internet",
+            "tech_telefone",
+            "ensuring_certain",
+            "future",
+            "pandemic_regulation",
+            "GDP_PER_CAPITA", 
+            "digital_index", 
+            "dichte"
+        )
+    )
+```
+
 # Dates
 
 ```r
