@@ -1,0 +1,21 @@
+---
+title: "bigfoot_pred_j_silge"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r reading in data}
+library(tidyverse)
+bigfoot_raw <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv')
+bigfoot_raw %>% 
+```
+
+
+
+
+
+
