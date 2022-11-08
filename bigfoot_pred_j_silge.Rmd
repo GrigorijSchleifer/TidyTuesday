@@ -17,9 +17,21 @@ bigfoot_raw %>%
 ```
 
 ```{r}
-
+# renaming classification and some filtering (class C is journal reporst)
+bigfoot <- 
+    bigfoot_raw %>% 
+    dplyr::filter(classification != "Class C", !is.na(observed)) %>% 
+    mutate(classification = case_when(
+        classification == "Class A" ~ "sighting", 
+        classification == "Class B" ~ "possible", 
+    ))
 ```
 
+```{r}
+install.packages("tidytext") | library(tidytext)
+# better representation for weighted log odds
+install.packages("tidylo") | library(tidylo)
+```
 
 
 
