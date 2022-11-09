@@ -4,32 +4,37 @@ date: 2022-11-08
 output: html_document
 ---
 
-# TidyTuesday
-
-Join the R4DS Online Learning Community in the weekly #TidyTuesday event!
-Every week we post a raw dataset, a chart or article related to that dataset, and ask you to explore the data.
-While the dataset will be “tamed”, it will not always be tidy! As such you might need to apply various R for Data Science techniques to wrangle the data into a true tidy format.
-The goal of TidyTuesday is to apply your R skills, get feedback, explore other’s work, and connect with the greater #RStats community!
-As such we encourage everyone of all skills to participate!
-
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 library(tidytuesdayR)
+library(scales)
+library(lubridate)
+theme_set(theme_light())
 
 ```
 
 # Load the weekly Data
 
-Download the weekly data and make available in the `tt` object.
-
 ```{r Load}
 
-tt <- tt_load("2022-11-08")
+tt <- tt_load("2022-11-01")
+horror_movies <- tt$horror_movies
 
+horror_movies %>% 
+    mutate(year = year(release_date), sort = TRUE) %>% 
+    ggplot(aes(year)) +
+    geom_histogram()
+
+horror_movies %>% 
+    dplyr::filter(runtime > 60, runtime <= 300) %>% 
+    ggplot(aes(runtime)) +
+    geom_histogram() +
+    scale_x_log10()
 ```
+
 
 
 # Readme
