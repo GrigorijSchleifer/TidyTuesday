@@ -10,13 +10,22 @@ theme_set(theme_light())
 
 ```{r echo=FALSE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
+```
 
+```{r}
+recent_grads %>% 
+    ggplot(aes(Median)) +
+    geom_histogram(bins = 100)
+```
+
+```{R}
 # first data cleaning
 major_processed <- recent_grads %>%
     arrange(desc(Median)) %>% 
     mutate(Major = str_to_title(Major), # converts uppercased characters to titlecased
            Major = fct_reorder(Major, Median)) 
 ```
+
 
 1:01:25: Create ShareWomen variable
 
