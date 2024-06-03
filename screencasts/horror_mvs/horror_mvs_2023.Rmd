@@ -1,4 +1,0 @@
-```{r}
-recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
-```
-
