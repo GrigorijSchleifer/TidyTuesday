@@ -1,3 +1,11 @@
+---
+title: Some cool markdown stuff
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -8,153 +16,24 @@ library(scales)
 theme_set(theme_light())
 ```
 
-```{r echo=FALSE}
+
+# Importing the data
+
+```{r echo=TRUE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 ```
 
-```{r}
-recent_grads %>% 
-    ggplot(aes(Median)) +
-    geom_histogram(bins = 100)
-```
-
-```{R}
-# first data cleaning
-major_processed <- recent_grads %>%
-    arrange(desc(Median)) %>% 
-    mutate(Major = str_to_title(Major), # converts uppercased characters to titlecased
-           Major = fct_reorder(Major, Median)) 
-```
-
-
-1:01:25: Create ShareWomen variable
 
 ```{r}
-by_major_categry <- major_processed %>%
-    filter(!is.na(Total)) %>% 
-    group_by(Major_category) %>%
-    summarise(Men = sum(Men),
-              Women = sum(Women),
-              Total = sum(Total),
-              # weight medians by SampleSize
-              MedianSalary = sum(Median * Sample_size / sum(Sample_size))) %>%
-    mutate(ShareWomen = Women / Total) %>% 
-    arrange(desc(ShareWomen))
-```
+recent_grads |> 
+    count(Major,
+          sort = TRUE,
+          wt = Total, # what column should be summed up to instead of summing the number of observtions
+          name = "Graduates")
 
-# What are the highest earning majors?
-
-```{r echo=FALSE}
-major_processed %>% 
-    filter(Sample_size >= 100) %>% 
-    head(10) %>% 
-    ggplot(aes(Major, Median, color = Major_category)) +
-    geom_point() +
-    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
-    expand_limits(y = 0) +
-    scale_y_continuous(labels = dollar_format()) +
-    coord_flip() +
+recent_grads |> 
+    add_count(Major) |> 
     
-```
-
-What categories of majors make more money than others?
-
-```{r echo=FALSE}
-major_processed %>% 
-    mutate(Major_category = fct_reorder(Major_category, Median)) %>%
-    filter(Sample_size >= 100) %>% 
-    group_by(Major_category) %>% 
-    ggplot(aes(Major_category, Median, fill = Major_category)) +
-    geom_boxplot() +
-    scale_y_continuous(labels = dollar_format()) +
-    expand_limits(y = 0) + 
-    coord_flip() +
-    theme(legend.position = "none") +
-    labs(title = "What are the highest-earning majors",
-         x = "",
-         y = "Median salary of Majors")
-```
-
-What are the hightest Majors?
-
-```{r echo=FALSE}
-major_processed %>% 
-    head(20) %>% 
-    ggplot(aes(Major, Median, color = Major_category)) +
-    expand_limits(y = 0) +
-    geom_point() +
-    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
-    scale_y_continuous(labels = dollar_format()) +
-    coord_flip()
-```
-
-ShareWomen and Median Salary relationship
-
-```{r}
-library(plotly)
-
-g <- major_processed %>% 
-    mutate(Major_category = fct_lump(Major_category, 4)) %>% 
-    ggplot(aes(ShareWomen, Median, color = Major_category, size = Sample_size)) +
-    geom_point(aes(label = Major)) +
-    # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
-    geom_smooth(aes(group = 1), method = "lm") +
-    scale_x_continuous(labels = percent_format()) +
-    scale_y_continuous(labels = dollar_format()) +
-    # geom_text_repel(aes(label = Major_category), force = .2) +
-    expand_limits(y = 0)
-
-ggplotly(g)
-```
-
-Salary and Women by Major (expressed in the Median column) (48 min)
-
-```{r}
-library(ggrepel)
-
-# for doing a statistical test we should be careful if aggregating first
-# This will reduce statistical power and hide some of the variation in the data
-# also be awere of simpson paradox (some Major_categories with high women percentage)
-# will have high Salaries, excluding those would potentially change the direction of the correlation
-major_processed %>% 
-    ggplot(aes(ShareWomen, Median, color = Major_category)) +
-    geom_point() +
-    # cave: Engeneering and Math are outliers in two dimensions (High Salary and more Men)
-    # group aes argument to make lm for all categories
-    geom_smooth(aes(group = 1), method = "lm") +
-    expand_limits(y = 0)
-```
-
-
-Detect correlations with salary within Major_category with  is 54 min
-
-```{r}
-library(broom)
-
-major_processed %>% 
-    select(Major, Major_category, Total, ShareWomen, Sample_size, Median) %>% 
-    add_count(Major_category) %>% # will add an extra column with counts of distinct categories
-    filter(n >= 10) %>% 
-    nest(-Major_category) %>% 
-    # within every Major category "Median explained by ShareWomen on this data with these weights"
-    mutate(model = map(data, ~lm(Median ~ ShareWomen, data = ., weights = Sample_size)),
-           tidied = map(model, tidy)) %>% 
-    unnest(tidied) %>% 
-    filter(term == "ShareWomen") %>% 
-    arrange(estimate) %>% 
-    # adjusting p-value not by multiplying by the category count
-    # instead using false discovery rate
-    # if there is a significant correlation we would be 10% wrong in those categories with the smallest fdr
-    # linear effects model would be more appropriate to use here
-    # in those 4 groups the data suggests there is negative correlation within departments and not just across them
-    mutate(fdr = p.adjust(p.value, method = "fdr"))
-```
-
-This is scrap work
-
-```{r}
-knitr::knit_exit()
-
 ```
 
 
