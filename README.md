@@ -3,6 +3,16 @@
 *Explanotary Data Analysis* on the fly ... 
 
 ### Coolest snippets and pearls
+```r
+# selecting and specifying columns and droping the rest, pretty cool! 
+mtcars_spec_cols <- read_csv(file = "mtcars.csv",
+                             col_types = cols_only(hp = col_integer(),
+                                                   am = col_integer(),
+                                                   vs = col_factor(levels = c("1", "0"), 
+                                                                   include_na = FALSE)))
+
+```
+
 
 ```r
 # nice way to combine data frames on equal dates contained in both data sets

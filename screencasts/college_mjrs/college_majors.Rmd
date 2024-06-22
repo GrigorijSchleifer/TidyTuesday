@@ -1,0 +1,40 @@
+---
+title: Some cool markdown stuff
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r pressure, echo=FALSE}
+library(tidyverse)
+library(scales)
+theme_set(theme_light())
+```
+
+
+# Importing the data
+
+```{r echo=TRUE}
+recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
+```
+
+
+```{r}
+recent_grads |> 
+    count(Major,
+          sort = TRUE,
+          wt = Total, # what column should be summed up to instead of summing the number of observtions
+          name = "Graduates")
+
+recent_grads |> 
+    add_count(Major) |> 
+    
+```
+
+
+
