@@ -1762,30 +1762,37 @@ display: none;
 <h1>Importing the data</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjZW50X2dyYWRzIDwtIHJlYWRfY3N2KFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZpdmV0aGlydHllaWdodC9kYXRhL21hc3Rlci9jb2xsZWdlLW1ham9ycy9yZWNlbnQtZ3JhZHMuY3N2XCIpXG5gYGAifQ== -->
-<pre class="r"><code>recent_grads &lt;- read_csv(&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjZW50X2dyYWRzIDwtIHJlYWRfY3N2KFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZpdmV0aGlydHllaWdodC9kYXRhL21hc3Rlci9jb2xsZWdlLW1ham9ycy9yZWNlbnQtZ3JhZHMuY3N2XCIpXG5cbmBgYCJ9 -->
+<pre class="r"><code>recent_grads &lt;- read_csv(&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv&quot;)
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMTczIENvbHVtbnM6IDIxXG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5EZWxpbWl0ZXI6IFwiLFwiXG5jaHIgICgyKTogTWFqb3IsIE1ham9yX2NhdGVnb3J5XG5kYmwgKDE5KTogUmFuaywgTWFqb3JfY29kZSwgVG90YWwsIE1lbiwgV29tZW4sIFNoYXJlV29tZW4sIFNhbXBsZV9zaXplLCBFbXBsb3llZCwgRnVsbF8uLi5cblxu4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxu4oS5IFNwZWNpZnkgdGhlIGNvbHVtbiB0eXBlcyBvciBzZXQgYHNob3dfY29sX3R5cGVzID0gRkFMU0VgIHRvIHF1aWV0IHRoaXMgbWVzc2FnZS5cbiJ9 -->
+<pre><code>Rows: 173 Columns: 21
+── Column specification ───────────────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr  (2): Major, Major_category
+dbl (19): Rank, Major_code, Total, Men, Women, ShareWomen, Sample_size, Employed, Full_...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVjZW50X2dyYWRzIHw+IFxuICAgIGNvdW50KE1ham9yLFxuICAgICAgICAgIHNvcnQgPSBUUlVFLFxuICAgICAgICAgIHd0ID0gVG90YWwsICMgd2hhdCBjb2x1bW4gc2hvdWxkIGJlIHN1bW1lZCB1cCB0byBpbnN0ZWFkIG9mIHN1bW1pbmcgdGhlIG51bWJlciBvZiBvYnNlcnZ0aW9uc1xuICAgICAgICAgIG5hbWUgPSBcIkdyYWR1YXRlc1wiKVxuXG5yZWNlbnRfZ3JhZHMgfD4gXG4gICAgYWRkX2NvdW50KE1ham9yKSB8PiBcbiAgICBcbmBgYCJ9 -->
-<pre class="r"><code>recent_grads |&gt; 
-    count(Major,
-          sort = TRUE,
-          wt = Total, # what column should be summed up to instead of summing the number of observtions
-          name = &quot;Graduates&quot;)
-
-recent_grads |&gt; 
-    add_count(Major) |&gt; 
-    </code></pre>
-<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MTYsIm5jb2wiOjIsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiMTYgw5cgMiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUExMVR5MjRUTVJSMW5pV0Jva0FGTFNxSVFRakVna1NpM1hUWnRBUzFLRVZSQTZJU1NNanh1RE9tSGp2eW95VXIrQXpXaUQ5Z3l4YUpCYjhBL0FJcnhLcmhqc2V1cWhscDV0am4zbk1mOXAzOXh3ZnI3WU0yUXFpRzZyVXFxalZnaVJvdm5qL3BiaUJVcjhLbWd1cW9sZU03Y0ZxQ1JVNTIzRnNZTG14WnpRVFYydTl2N05nTUMyWVkxZEg5YU1nbVZHRWU5WlVKRHExQmJBazJUQXBQWEJ5SUJDSlF4VVRpcWN0alNSakl4b1JSUWFoblYwWjZSbExKWlRLRDBON2xwVlJIM3Q3Y29aaWIxTyt1YjdIZ09tU0h0QlJyZFZ0bW1SV3NxQ1F2OWFtMFNtRE9kT1pkNnVlS1hnYjNxVFZVNVo1NzJLUTBBeUVKNXJ1N0lyYmFLT1piQmFkdGlHb3pxcUl4VmNlTTBPQjZaWlRPTktROWF5NFlsb2I0QkhRak8rR01SQ01KMzFuUTdBcElIVE5OMkpRemdWVXczTzRuaWhITGpWVVV0TTh3TENEeVB0WFFUQjRhampLL3EvNzY3elMvMnY2OWIvOGMzdW1zT1l5U1h3VStmTzN3MXF1dkRtOE9Dci9WTHg4ZEx2K05IVjc3OGNEaDFVM2s4TkppZ2MzUEd3NGJQMWR5M1B4ZWQveDdGMlhoVTJtWUdnSm5ycmlPR3loLzUzdjRyVlJ2NEVKb0lzODZySWlTdHFYa1NTL284K3pWRC9DWnorZC95a2tJeHpva0NXUTd4Z2IzRGhYb1lYZGFraXpJcVpzR0NKcVBlck1rcnFnUzBiRWlyeVR1a3RTS28rN2FvNUs5Tm9XSmhxU09LcDVGdis2Y1cxZUxNcXB6enpmRFBGUDNZNFIrT0o1UUhpTEg5RGljR3h5SU80L2VGUDRnRXhvRlZ2ZU1ORGhJMmtUeXdMalcwZWwvYW91MXB3QUVBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Major_category"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Business","2":"1302376"},{"1":"Humanities & Liberal Arts","2":"713468"},{"1":"Education","2":"559129"},{"1":"Engineering","2":"537583"},{"1":"Social Science","2":"529966"},{"1":"Psychology & Social Work","2":"481007"},{"1":"Health","2":"463230"},{"1":"Biology & Life Science","2":"453862"},{"1":"Communications & Journalism","2":"392601"},{"1":"Arts","2":"357130"},{"1":"Computers & Mathematics","2":"299008"},{"1":"Industrial Arts & Consumer Services","2":"229792"},{"1":"Physical Sciences","2":"185479"},{"1":"Law & Public Policy","2":"179107"},{"1":"Interdisciplinary","2":"12296"},{"1":"Agriculture & Natural Resources","2":"NA"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[16]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiBTb21lIGNvb2wgbWFya2Rvd24gc3R1ZmYKb3V0cHV0OiBodG1sX25vdGVib29rCmVkaXRvcl9vcHRpb25zOiAKICBjaHVua19vdXRwdXRfdHlwZTogaW5saW5lCi0tLQoKCmBgYHtyIHNldHVwLCBpbmNsdWRlPUZBTFNFfQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUpCmBgYAoKYGBge3IgcHJlc3N1cmUsIGVjaG89RkFMU0V9CmxpYnJhcnkodGlkeXZlcnNlKQpsaWJyYXJ5KHNjYWxlcykKdGhlbWVfc2V0KHRoZW1lX2xpZ2h0KCkpCmBgYAoKCiMgSW1wb3J0aW5nIHRoZSBkYXRhCgpgYGB7ciBlY2hvPVRSVUV9CnJlY2VudF9ncmFkcyA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZpdmV0aGlydHllaWdodC9kYXRhL21hc3Rlci9jb2xsZWdlLW1ham9ycy9yZWNlbnQtZ3JhZHMuY3N2IikKYGBgCgoKYGBge3J9CnJlY2VudF9ncmFkcyB8PiAKICAgIGNvdW50KE1ham9yLAogICAgICAgICAgc29ydCA9IFRSVUUsCiAgICAgICAgICB3dCA9IFRvdGFsLCAjIHdoYXQgY29sdW1uIHNob3VsZCBiZSBzdW1tZWQgdXAgdG8gaW5zdGVhZCBvZiBzdW1taW5nIHRoZSBudW1iZXIgb2Ygb2JzZXJ2dGlvbnMKICAgICAgICAgIG5hbWUgPSAiR3JhZHVhdGVzIikKCnJlY2VudF9ncmFkcyB8PiAKICAgIGFkZF9jb3VudChNYWpvcikgfD4gCiAgICAKYGBgCgoKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiBTb21lIGNvb2wgbWFya2Rvd24gc3R1ZmYKb3V0cHV0OiBodG1sX25vdGVib29rCmVkaXRvcl9vcHRpb25zOiAKICBjaHVua19vdXRwdXRfdHlwZTogaW5saW5lCi0tLQoKCmBgYHtyIHNldHVwLCBpbmNsdWRlPUZBTFNFfQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUpCmBgYAoKYGBge3IgcHJlc3N1cmUsIGVjaG89RkFMU0V9CmxpYnJhcnkodGlkeXZlcnNlKQpsaWJyYXJ5KHNjYWxlcykKdGhlbWVfc2V0KHRoZW1lX2xpZ2h0KCkpCmBgYAoKCiMgSW1wb3J0aW5nIHRoZSBkYXRhCgpgYGB7ciBlY2hvPVRSVUV9CnJlY2VudF9ncmFkcyA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZpdmV0aGlydHllaWdodC9kYXRhL21hc3Rlci9jb2xsZWdlLW1ham9ycy9yZWNlbnQtZ3JhZHMuY3N2IikKYGBgCgoKYGBge3J9CnJlY2VudF9ncmFkcyB8PiAKICAgIGNvdW50KE1ham9yX2NhdGVnb3J5LCB3dCA9IFRvdGFsLCBzb3J0ID0gVFJVRSkgfD4KICAgIG11dGF0ZShNYWpvcl9jYXRlZ29yeSA9IGZjdF9yZW9yZGVyKE1ham9yX2NhdGVnb3J5LCBuKSkgfD4KICAgIGdncGxvdChhZXMoTWFqb3JfY2F0ZWdvcnksIG4sIGZpbGwgPSBNYWpvcl9jYXRlZ29yeSkpICsKICAgIGdlb21fY29sKCkgKwogICAgY29vcmRfZmxpcCgpICsKICAgIGxhYnMoeCA9ICIiLAogICAgICAgICB5ID0gIk51bWJlciBvZiB0b3RhbCBncmFkdWF0ZXMiKSArCiAgICB0aGVtZShsZWdlbmQucG9zaXRpb24gPSAibm9uZSIpCgpyZWNlbnRfZ3JhZHMgfD4gCiAgICBncm91cF9ieShNYWpvcl9jYXRlZ29yeSkgfD4gCiAgICBzdW1tYXJpc2UobiA9IHN1bShUb3RhbCkpIHw+IAogICAgYXJyYW5nZShkZXNjKG4pKQpgYGAKCgoK</div>
 
 
 

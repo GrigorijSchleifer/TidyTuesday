@@ -26,14 +26,19 @@ recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data
 
 ```{r}
 recent_grads |> 
-    count(Major,
-          sort = TRUE,
-          wt = Total, # what column should be summed up to instead of summing the number of observtions
-          name = "Graduates")
+    count(Major_category, wt = Total, sort = TRUE) |>
+    mutate(Major_category = fct_reorder(Major_category, n)) |>
+    ggplot(aes(Major_category, n, fill = Major_category)) +
+    geom_col() +
+    coord_flip() +
+    labs(x = "",
+         y = "Number of total graduates") +
+    theme(legend.position = "none")
 
 recent_grads |> 
-    add_count(Major) |> 
-    
+    group_by(Major_category) |> 
+    summarise(n = sum(Total)) |> 
+    arrange(desc(n))
 ```
 
 
