@@ -23,10 +23,32 @@ theme_set(theme_light())
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 ```
 
+```{r}
+recent_grads |> 
+    group_by(Major_category) |> 
+    summarise(Median = median(Median)) |> 
+    mutate(Major_category = fct_reorder(Major_category, Median)) |> 
+    ggplot(aes(Major_category, Median)) +
+    geom_col() +
+    coord_flip()
+    
+    
+```
+
+```{r}
+major_processed <- recent_grads |> 
+    arrange(desc(Median)) |> 
+    select(Major, Major_category, Median, P25th, P75th, Sample_size) |> 
+    mutate(Major = str_to_title(Major),
+           Major = fct_reorder(Major, Median))
+    
+```
+
 
 ```{r}
 recent_grads |> 
     count(Major_category, wt = Total, sort = TRUE) |>
+    
     mutate(Major_category = fct_reorder(Major_category, n)) |>
     ggplot(aes(Major_category, n, fill = Major_category)) +
     geom_col() +
@@ -39,6 +61,19 @@ recent_grads |>
     group_by(Major_category) |> 
     summarise(n = sum(Total)) |> 
     arrange(desc(n))
+```
+
+```{r}
+recent_grads |> 
+    count(Major_category, wt = Total, sort = TRUE) |>
+    
+    mutate(Major_category = fct_reorder(Major_category, n)) |>
+    ggplot(aes(Major_category, n, fill = Major_category)) +
+    geom_col() +
+    coord_flip() +
+    labs(x = "",
+         y = "Number of total graduates") +
+    theme(legend.position = "none")
 ```
 
 
