@@ -1,54 +1,42 @@
----
-title: Some cool markdown stuff
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
----
-
+```{r}
+# imap kj <Esc>
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r pressure, echo=FALSE}
+```{r}
 library(tidyverse)
 library(scales)
-theme_set(theme_light())
 ```
 
-
 # Importing the data
-
-```{r echo=TRUE}
+```{r echo = FALSE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
+
+# modified and processed version of the dataset
+major_processed <- recent_grads |> 
+    arrange(desc(Median)) |> 
+    mutate(Major = str_to_title(Major),
+           Major = fct_reorder(Major, Median))
 ```
 
 ```{r}
-recent_grads |> 
+major_processed |> 
     group_by(Major_category) |> 
     summarise(Median = median(Median)) |> 
     mutate(Major_category = fct_reorder(Major_category, Median)) |> 
     ggplot(aes(Major_category, Median)) +
     geom_col() +
     coord_flip()
-    
-    
 ```
 
-```{r}
-major_processed <- recent_grads |> 
-    arrange(desc(Median)) |> 
-    select(Major, Major_category, Median, P25th, P75th, Sample_size) |> 
-    mutate(Major = str_to_title(Major),
-           Major = fct_reorder(Major, Median))
-    
-```
-
+Most common major categories
 
 ```{r}
-recent_grads |> 
+major_processed |> 
     count(Major_category, wt = Total, sort = TRUE) |>
-    
     mutate(Major_category = fct_reorder(Major_category, n)) |>
     ggplot(aes(Major_category, n, fill = Major_category)) +
     geom_col() +
@@ -57,24 +45,44 @@ recent_grads |>
          y = "Number of total graduates") +
     theme(legend.position = "none")
 
-recent_grads |> 
+major_processed |> 
     group_by(Major_category) |> 
     summarise(n = sum(Total)) |> 
     arrange(desc(n))
 ```
 
-```{r}
-recent_grads |> 
-    count(Major_category, wt = Total, sort = TRUE) |>
-    
-    mutate(Major_category = fct_reorder(Major_category, n)) |>
-    ggplot(aes(Major_category, n, fill = Major_category)) +
+```{r 34:00}
+major_processed |> 
+    mutate(Major = fct_reorder(Major, Total)) |>
+    arrange(desc(Total)) |> 
+    head(20) |> 
+    ggplot(aes(Major, Total, fill = Major_category)) +
     geom_col() +
     coord_flip() +
+    scale_y_continuous(labels = comma_format()) +
     labs(x = "",
-         y = "Number of total graduates") +
+         y = "Total # of graduates") +
     theme(legend.position = "none")
 ```
+
+### 36:00 Gender and typical earning
+
+```{r}
+major_processed |> 
+    arrange(desc(Total)) |> 
+    head(20) |> 
+    mutate(Major = fct_reorder(Major, Total)) |> 
+    gather(Gender, Number, Men, Women) |> 
+    select(Major, Gender, Number) |> 
+    ggplot(aes(Major, Number, fill = Gender)) +
+    geom_col() +
+    scale_y_continuous(labels = comma_format()) +
+    coord_flip()
+
+
+
+```
+
 
 
 
