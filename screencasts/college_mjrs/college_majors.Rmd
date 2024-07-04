@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 library(scales)
+library(ggrepel)
 ```
 
 Importing the data
@@ -106,6 +107,8 @@ by_major_category <- major_processed |>
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
 ```
+
+ShareWomen and salary
 ```{r}
 by_major_category |> 
     arrange(MedianSalaryWeighted) |> 
@@ -118,6 +121,15 @@ by_major_category |>
     labs(x = "",
          y = "",
          title = "Hello World!")
+
+# Engeneering and CS are outliers in two dimentions
+# in higher salara and more men in Total!!!
+by_major_category |> 
+    ggplot(aes(ShareWomen, MedianSalaryWeighted)) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    geom_text_repel(aes(label = Major_category), force = .2) +
+    expand_limits(y = 0)
 ```
 
 
