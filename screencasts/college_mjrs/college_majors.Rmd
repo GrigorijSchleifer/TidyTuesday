@@ -66,7 +66,6 @@ major_processed |>
 ```
 
 ### 36:00 Gender and typical earning
-
 ```{r}
 major_processed |> 
     arrange(desc(Total)) |> 
@@ -78,11 +77,34 @@ major_processed |>
     geom_col() +
     scale_y_continuous(labels = comma_format()) +
     coord_flip()
-
-
-
 ```
 
 
+39:00 Most shifted proportions
+```{r}
+major_processed |> 
+    group_by(Major_category) |> 
+    summarise_at(vars(Total, Men, Women), sum, na.rm = TRUE) |> 
+    mutate(ShareWomen = Women / Total) |> 
+    arrange(desc(ShareWomen))
+```
+
+43:00 Weighting medians and summarise instead of summarise_at
+```{r}
+# using just summarise
+major_processed |> 
+    dplyr::filter(!is.na(Total)) |> 
+    group_by(Major_category) |> 
+    # summary_at only for a single method not different methods
+    summarise(Men = sum(Men), 
+              Women = sum(Women),
+              Total = sum(Total),
+              # weighting the medain by sample size?
+              # medians can also be affected by high variation ones ...
+              # high sample size will get more weights
+              MedianSalaryWeighted = sum(Median * Sample_size / sum(Median))) |>  
+    mutate(ShareWomen = Women / Total) |> 
+    arrange(desc(ShareWomen))
+```
 
 
