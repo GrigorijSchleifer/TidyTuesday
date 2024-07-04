@@ -102,7 +102,7 @@ major_processed |>
               # weighting the medain by sample size?
               # medians can also be affected by high variation ones ...
               # high sample size will get more weights
-              MedianSalaryWeighted = sum(Median * Sample_size / sum(Median))) |>  
+              MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
 ```
