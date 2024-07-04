@@ -11,7 +11,7 @@ library(tidyverse)
 library(scales)
 ```
 
-# Importing the data
+Importing the data
 ```{r echo = FALSE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 
@@ -65,7 +65,7 @@ major_processed |>
     theme(legend.position = "none")
 ```
 
-### 36:00 Gender and typical earning
+36:00 Gender and typical earning
 ```{r}
 major_processed |> 
     arrange(desc(Total)) |> 
@@ -90,9 +90,9 @@ major_processed |>
 ```
 
 43:00 Weighting medians and summarise instead of summarise_at
-```{r}
+```{r by_major_category}
 # using just summarise
-major_processed |> 
+by_major_category <- major_processed |> 
     dplyr::filter(!is.na(Total)) |> 
     group_by(Major_category) |> 
     # summary_at only for a single method not different methods
@@ -105,6 +105,19 @@ major_processed |>
               MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
+```
+```{r}
+by_major_category |> 
+    arrange(MedianSalaryWeighted) |> 
+    mutate(Major_category = fct_reorder(Major_category, MedianSalaryWeighted, .desc = TRUE)) |> 
+    arrange(Major_category) |> 
+    ggplot(aes(Major_category, MedianSalaryWeighted, fill = ShareWomen)) +
+    geom_col() +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip() +
+    labs(x = "",
+         y = "",
+         title = "Hello World!")
 ```
 
 
