@@ -6,14 +6,12 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+Importing the data
+```{r echo = FALSE}
 library(tidyverse)
 library(scales)
 library(ggrepel)
-```
 
-Importing the data
-```{r echo = FALSE}
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 
 # modified and processed version of the dataset
@@ -21,6 +19,24 @@ major_processed <- recent_grads |>
     arrange(desc(Median)) |> 
     mutate(Major = str_to_title(Major),
            Major = fct_reorder(Major, Median))
+```
+
+43:00 Weighting medians and summarise instead of summarise_at
+```{r by_major_category}
+# using just summarise
+by_major_category <- major_processed |> 
+    dplyr::filter(!is.na(Total)) |> 
+    group_by(Major_category) |> 
+    # summary_at only for a single method not different methods
+    summarise(Men = sum(Men), 
+              Women = sum(Women),
+              Total = sum(Total),
+              # weighting the medain by sample size?
+              # medians can also be affected by high variation ones ...
+              # high sample size will get more weights
+              MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
+    mutate(ShareWomen = Women / Total) |> 
+    arrange(desc(ShareWomen))
 ```
 
 ```{r}
@@ -90,25 +106,8 @@ major_processed |>
     arrange(desc(ShareWomen))
 ```
 
-43:00 Weighting medians and summarise instead of summarise_at
-```{r by_major_category}
-# using just summarise
-by_major_category <- major_processed |> 
-    dplyr::filter(!is.na(Total)) |> 
-    group_by(Major_category) |> 
-    # summary_at only for a single method not different methods
-    summarise(Men = sum(Men), 
-              Women = sum(Women),
-              Total = sum(Total),
-              # weighting the medain by sample size?
-              # medians can also be affected by high variation ones ...
-              # high sample size will get more weights
-              MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
-    mutate(ShareWomen = Women / Total) |> 
-    arrange(desc(ShareWomen))
-```
 
-ShareWomen and salary
+48:00 ShareWomen and salary
 ```{r}
 by_major_category |> 
     arrange(MedianSalaryWeighted) |> 
@@ -129,7 +128,42 @@ by_major_category |>
     geom_point() +
     geom_smooth(method = "lm") +
     geom_text_repel(aes(label = Major_category), force = .2) +
-    expand_limits(y = 0)
+    expand_limits(y = 1000)
+
+major_processed |> 
+    ggplot(aes(ShareWomen, Median)) +
+    geom_point(aes(colour = Major_category)) +
+    geom_smooth(method = "lm", aes(colour = Major_category)) +
+    expand_limits(y = 10000)
 ```
 
+53:00 First statistics
+```{r}
+mj_lm <- major_processed |> 
+    select(Major, Total, ShareWomen, Sample_size, Median)
+
+lm(Median ~ ShareWomen, data = mj_lm, weights = Sample_size)
+
+major_processed |> 
+  select(Major, Total, ShareWomen, Sample_size, Median) %>% # you need this pipe here!
+  lm(Median ~ ShareWomen, data = ., weights = Sample_size) |>
+    summary() # every percent mor men, there will be an increase in salary by 236 dollars!
+```
+
+
+56:00 Nested data frames ect 
+```{r}
+library(broom)
+
+nested_major_processed <- major_processed |> 
+    select(Major, Major_category, Total, ShareWomen, Sample_size, Median) |> 
+    # counts the majors in a category (this is why counts are repeate in n column)
+    # this is similar to table but adds a column, pretty cool
+    add_count(Major_category) |> 
+    filter(n >= 10) |> 
+    nest(-Major_category) %>%
+    mutate(model = map(data, ~ lm(Median ~ ShareWomen, data = ., weights = Sample_size)),
+           tiedied = map(model, tidy)) |> 
+    unnest(tiedied)
+```
 
