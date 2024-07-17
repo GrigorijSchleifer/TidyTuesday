@@ -163,7 +163,13 @@ nested_major_processed <- major_processed |>
     filter(n >= 10) |> 
     nest(-Major_category) %>%
     mutate(model = map(data, ~ lm(Median ~ ShareWomen, data = ., weights = Sample_size)),
+           # amazing -> providing model to map inside mutate ... nice
            tiedied = map(model, tidy)) |> 
-    unnest(tiedied)
+    unnest(tiedied) |> 
+    filter(term == "ShareWomen") |> 
+    arrange(estimate) |> 
+    # p values will be not significant after bonferroni correcection (multiplication by n groups)
+    # false descovery rate control is better
+    mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
 
