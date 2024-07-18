@@ -6,6 +6,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 Importing the data
 ```{r echo = FALSE}
 library(tidyverse)
