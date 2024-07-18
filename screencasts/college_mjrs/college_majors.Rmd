@@ -20,10 +20,8 @@ major_processed <- recent_grads |>
     arrange(desc(Median)) |> 
     mutate(Major = str_to_title(Major),
            Major = fct_reorder(Major, Median))
-```
 
-43:00 Weighting medians and summarise instead of summarise_at
-```{r by_major_category}
+# 43:00 Weighting medians and summarise instead of summarise_at
 # using just summarise
 by_major_category <- major_processed |> 
     dplyr::filter(!is.na(Total)) |> 
@@ -38,6 +36,24 @@ by_major_category <- major_processed |>
               MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
+
+by_major_category |> 
+  mutate(Major_category = fct_reorder(Major_category, Total)) |> 
+  gather(Gender, Number, Men, Women) |> 
+  ggplot(aes(Major_category, Total, fill = Gender)) +
+  geom_col() +
+  coord_flip()
+
+
+
+by_major_category |> 
+  mutate(Major_category = fct_reorder(Major_category, Total)) |> 
+  gather(Gender, Number, Men, Women) |> 
+  ggplot(aes(Major_category, Total)) +
+  # fill needs to go into aesthetic otherwise it is not visible 
+  # if done outside aes
+  geom_col(aes(fill = Gender)) +
+  coord_flip()
 ```
 
 ```{r}
@@ -48,11 +64,8 @@ major_processed |>
     ggplot(aes(Major_category, Median)) +
     geom_col() +
     coord_flip()
-```
 
-Most common major categories
-
-```{r}
+# Most common major categories
 major_processed |> 
     count(Major_category, wt = Total, sort = TRUE) |>
     mutate(Major_category = fct_reorder(Major_category, n)) |>
@@ -62,12 +75,9 @@ major_processed |>
     labs(x = "",
          y = "Number of total graduates") +
     theme(legend.position = "none")
-
-major_processed |> 
-    group_by(Major_category) |> 
-    summarise(n = sum(Total)) |> 
-    arrange(desc(n))
 ```
+
+
 
 ```{r 34:00}
 major_processed |> 
@@ -172,5 +182,9 @@ nested_major_processed <- major_processed |>
     # p values will be not significant after bonferroni correcection (multiplication by n groups)
     # false descovery rate control is better
     mutate(fdr = p.adjust(p.value, method = "fdr"))
+```
+
+```{r}
+
 ```
 
