@@ -12,6 +12,7 @@ Importing the data
 library(tidyverse)
 library(scales)
 library(ggrepel)
+library(broom)
 
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 
@@ -20,10 +21,8 @@ major_processed <- recent_grads |>
     arrange(desc(Median)) |> 
     mutate(Major = str_to_title(Major),
            Major = fct_reorder(Major, Median))
-```
 
-43:00 Weighting medians and summarise instead of summarise_at
-```{r by_major_category}
+# 43:00 Weighting medians and summarise instead of summarise_at
 # using just summarise
 by_major_category <- major_processed |> 
     dplyr::filter(!is.na(Total)) |> 
@@ -40,6 +39,7 @@ by_major_category <- major_processed |>
     arrange(desc(ShareWomen))
 ```
 
+
 ```{r}
 major_processed |> 
     group_by(Major_category) |> 
@@ -50,7 +50,7 @@ major_processed |>
     coord_flip()
 ```
 
-Most common major categories
+Most common major categories using count
 
 ```{r}
 major_processed |> 
@@ -59,6 +59,7 @@ major_processed |>
     ggplot(aes(Major_category, n, fill = Major_category)) +
     geom_col() +
     coord_flip() +
+    scale_y_continuous(labels = comma_format()) +
     labs(x = "",
          y = "Number of total graduates") +
     theme(legend.position = "none")
@@ -154,7 +155,6 @@ major_processed |>
 
 56:00 Nested data frames ect 
 ```{r}
-library(broom)
 
 nested_major_processed <- major_processed |> 
     select(Major, Major_category, Total, ShareWomen, Sample_size, Median) |> 
