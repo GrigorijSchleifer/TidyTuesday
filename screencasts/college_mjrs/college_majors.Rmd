@@ -174,3 +174,55 @@ nested_major_processed <- major_processed |>
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
 
+1:06 cool boxplot 
+```{r}
+major_processed |> 
+    mutate(Major_category = fct_reorder(Major_category, Median)) |> 
+    ggplot(aes(Major_category, Median, fill = Major_category)) +
+    geom_boxplot() +
+    theme(legend.position = "none") +
+    scale_y_continuous(labels = dollar_format()) +
+    expand_limits(y = 0) +
+    coord_flip()
+```
+1:06 What are the highest and lowest earning majors
+
+```{r}
+# highest earing majors
+major_processed |> 
+    filter(Sample_size >= 100) %>%
+    head(20) %>%
+    ggplot(aes(Major, Median, color = Major_category)) +
+    geom_point() +
+    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+    expand_limits(y = 0) +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip() +
+    labs(title = "What are the highest-earning majors",
+         subtitle = "Top 20 earning majors with corresponding percentiles")
+
+# lowest
+major_processed |> 
+    filter(Sample_size >= 100) %>%
+    tail(20) %>%
+    ggplot(aes(Major, Median, color = Major_category)) +
+    geom_point() +
+    geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+    expand_limits(y = 0) +
+    scale_y_continuous(labels = dollar_format()) +
+    coord_flip() +
+    labs(title = "What are the highest-earning majors",
+         subtitle = "Top 20 earning majors with corresponding percentiles")
+
+```
+1:08 Why choosing Sample size 100
+
+```{r}
+major_processed |> 
+    ggplot(aes(Sample_size, Median)) +
+    geom_point() +
+    geom_text(aes(label = Major), check_overlap = TRUE, vjust = 1, hjust = 1) +
+    # expand_limits(y = 0)
+    scale_x_log10() +
+```
+
