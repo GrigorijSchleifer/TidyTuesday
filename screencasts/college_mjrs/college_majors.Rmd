@@ -13,6 +13,7 @@ library(tidyverse)
 library(scales)
 library(ggrepel)
 library(broom)
+library(plotly)
 
 recent_grads <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/recent-grads.csv")
 
@@ -139,7 +140,9 @@ major_processed |>
     expand_limits(y = 10000)
 ```
 
+
 53:00 First statistics
+
 ```{r}
 mj_lm <- major_processed |> 
     select(Major, Total, ShareWomen, Sample_size, Median)
@@ -154,6 +157,7 @@ major_processed |>
 
 
 56:00 Nested data frames ect 
+
 ```{r}
 
 nested_major_processed <- major_processed |> 
@@ -174,7 +178,8 @@ nested_major_processed <- major_processed |>
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
 
-1:06 cool boxplot 
+1:06 cool boxplot for highest median salary
+
 ```{r}
 major_processed |> 
     mutate(Major_category = fct_reorder(Major_category, Median)) |> 
@@ -185,7 +190,7 @@ major_processed |>
     expand_limits(y = 0) +
     coord_flip()
 ```
-1:06 What are the highest and lowest earning majors
+1:06 What are the highest and lowest earning majors 
 
 ```{r}
 # highest earing majors
@@ -215,7 +220,7 @@ major_processed |>
          subtitle = "Top 20 earning majors with corresponding percentiles")
 
 ```
-1:08 Why choosing Sample size 100
+1:08 Why choosing Sample size 100, low sample size has higher variation
 
 ```{r}
 major_processed |> 
@@ -223,6 +228,19 @@ major_processed |>
     geom_point() +
     geom_text(aes(label = Major), check_overlap = TRUE, vjust = 1, hjust = 1) +
     # expand_limits(y = 0)
-    scale_x_log10() +
+    scale_x_log10()
 ```
 
+1:09 Linear model and scatter plot using lump! Plotly graph
+
+```{r}
+plotly_g <- major_processed |>
+    mutate(Major_category = fct_lump(Major_category, 6)) |> 
+    ggplot(aes(ShareWomen, Median, color = Major_category, size = Sample_size)) +
+    geom_point() +
+    geom_smooth(aes(group = 1), method = "lm") +
+    expand_limits(x = 0)
+
+ggplotly(plotly_g)
+    
+```
