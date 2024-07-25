@@ -236,9 +236,11 @@ major_processed |>
 ```{r}
 plotly_g <- major_processed |>
     mutate(Major_category = fct_lump(Major_category, 6)) |> 
-    ggplot(aes(ShareWomen, Median, color = Major_category, size = Sample_size)) +
+    ggplot(aes(ShareWomen, Median, color = Major_category, size = Sample_size, label = Major)) +
     geom_point() +
     geom_smooth(aes(group = 1), method = "lm") +
+    scale_x_continuous(labels = percent_format()) +
+    scale_y_continuous(labels = dollar_format()) +
     expand_limits(x = 0)
 
 ggplotly(plotly_g)
