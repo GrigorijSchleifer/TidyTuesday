@@ -244,5 +244,13 @@ plotly_g <- major_processed |>
     expand_limits(x = 0)
 
 ggplotly(plotly_g)
-    
+```
+What majors have the highest ICR
+
+```{r}
+major_processed |> 
+    filter(Sample_size >= 100) |> 
+    mutate(ICR = P75th - P25th) |> 
+    arrange(desc(ICR)) |> 
+    View()
 ```
