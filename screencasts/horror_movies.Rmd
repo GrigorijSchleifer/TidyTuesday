@@ -13,10 +13,18 @@ movie_profit <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidy
 ```
 
 ```{r}
+# less observations comapered to the video
 movie_profit |> 
     ggplot(aes(production_budget)) +
     geom_histogram() +
     # cale_x_continuous(dollar_format()) +
     scale_x_log10()
+```
+
+```{r}
+diamonds |>
+  count(cut) |>
+  ggplot(aes(x = cut, y = n)) +
+  geom_bar(stat = "identity")
 ```
 
