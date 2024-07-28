@@ -1,0 +1,22 @@
+```{r}
+library(tidyverse)
+library(lubridate)
+theme_set(theme_light())
+library(scales)
+
+
+
+movie_profit <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv") %>% 
+    select(-"...1") %>% 
+    mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y"))) %>%  
+    dplyr::filter(release_date < "2018-01-01")
+```
+
+```{r}
+movie_profit |> 
+    ggplot(aes(production_budget)) +
+    geom_histogram() +
+    # cale_x_continuous(dollar_format()) +
+    scale_x_log10()
+```
+
