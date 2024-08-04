@@ -1,30 +1,44 @@
 ```{r}
 library(tidyverse)
 library(lubridate)
-theme_set(theme_light())
 library(scales)
 
-
-
-movie_profit <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv") %>% 
-    select(-"...1") %>% 
-    mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y"))) %>%  
-    dplyr::filter(release_date < "2018-01-01")
+theme_set(theme_light())
 ```
 
 ```{r}
-# less observations comapered to the video
-movie_profit |> 
+# 7:20 change to raw 
+movie_profit_raw <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv")
+
+movie_profit <- movie_profit_raw %>%   
+    select(-"...1") %>% 
+    dplyr::filter(release_date < "2018-01-01") %>% 
+    mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
+           # six most common distributors and other
+           distributor = fct_lump(distributor, n = 6)) %>% 
+    # reversing order of rows
+    arrange(desc(row_number())) %>% 
+    distinct(movie, release_date, .keep_all = TRUE)
+    
+```
+
+```{r}
+movie_profit %>% 
     ggplot(aes(production_budget)) +
     geom_histogram() +
-    # cale_x_continuous(dollar_format()) +
-    scale_x_log10()
-```
+    scale_x_continuous(labels = dollar_format())
+    
+# less observations comapered to the video
+movie_profit %>% 
+    ggplot(aes(production_budget)) +
+    geom_histogram() +
+    scale_x_log10(labels = dollar_format())
 
-```{r}
-diamonds |>
-  count(cut) |>
-  ggplot(aes(x = cut, y = n)) +
-  geom_bar(stat = "identity")
-```
+# 17:00 production budget based on distributor
+movie_profit %>% 
+    ggplot(aes(distributor, production_budget)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip()
 
+```
