@@ -42,3 +42,23 @@ movie_profit %>%
     coord_flip()
 
 ```
+
+18:00 What genres make the most money
+
+```{r}
+movie_profit %>% 
+    mutate(genre = fct_reorder(genre, production_budget)) %>% 
+    ggplot(aes(genre, production_budget)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip()
+```
+
+19:19 What are typical bugdets over time
+
+```{r}
+movie_profit %>% 
+    mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
+    count(decade)
+```
+
