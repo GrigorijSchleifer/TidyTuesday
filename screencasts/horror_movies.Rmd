@@ -62,3 +62,18 @@ movie_profit %>%
     count(decade)
 ```
 
+```{r}
+yrs <- tribble(~year, 
+        1234, 
+        1345, 
+        1235,
+        1344,
+        1899)
+
+# first we divide the year by 10 and floor it
+# this way we get rid of the year and keep the decade
+# by multiplying by 10 we get the decade
+yrs_decade <- yrs %>%
+    mutate(decade = 10 * floor(year/10))
+```
+
