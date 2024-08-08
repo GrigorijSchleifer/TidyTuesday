@@ -12,13 +12,15 @@ movie_profit_raw <- read_csv("https://raw.githubusercontent.com/rfordatascience/
 
 movie_profit <- movie_profit_raw %>%   
     select(-"...1") %>% 
-    dplyr::filter(release_date < "2018-01-01") %>% 
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
            # six most common distributors and other
            distributor = fct_lump(distributor, n = 6)) %>% 
+    dplyr::filter(release_date < "2018-01-01") %>% 
     # reversing order of rows
     arrange(desc(row_number())) %>% 
-    distinct(movie, release_date, .keep_all = TRUE)
+    distinct(movie, release_date, .keep_all = TRUE) %>% 
+    mutate(decade = 10 * floor(year(release_date) / 10)) %>%  # 19:19
+    filter(worldwide_gross > 0)
     
 ```
 
@@ -43,37 +45,68 @@ movie_profit %>%
 
 ```
 
-18:00 What genres make the most money
+18:00 Boxplot facets: What genres make the most money
 
 ```{r}
 movie_profit %>% 
     mutate(genre = fct_reorder(genre, production_budget)) %>% 
+    filter(!is.na(distributor)) %>% 
     ggplot(aes(genre, production_budget)) +
     geom_boxplot() +
     scale_y_log10(labels = dollar_format()) +
-    coord_flip()
+    coord_flip() +
+    # wow, it is possible to use facets after ggplot call
+    facet_wrap(~ distributor)
 ```
 
-19:19 What are typical bugdets over time
+22:00 Line graph: What are typical bugdets over time
 
 ```{r}
 movie_profit %>% 
-    mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
-    count(decade)
+    # mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
+    group_by(decade) %>% 
+    summarise_at(vars(production_budget:worldwide_gross), median, na.rm = TRUE) %>% 
+    gather(metric, value, -decade) %>% 
+    ggplot(aes(decade, value, color = metric)) +
+    geom_line() +
+    scale_y_continuous(labels = dollar_format())
 ```
+
+27:00 Boxplot facets: What genres make the most worldwide gross
 
 ```{r}
-yrs <- tribble(~year, 
-        1234, 
-        1345, 
-        1235,
-        1344,
-        1899)
-
-# first we divide the year by 10 and floor it
-# this way we get rid of the year and keep the decade
-# by multiplying by 10 we get the decade
-yrs_decade <- yrs %>%
-    mutate(decade = 10 * floor(year/10))
+movie_profit %>% 
+    mutate(genre = fct_reorder(genre, worldwide_gross)) %>% 
+    filter(!is.na(distributor)) %>% 
+    ggplot(aes(genre, worldwide_gross)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip() +
+    # wow, it is possible to use facets after ggplot call
+    facet_wrap(~ distributor)
 ```
+
+28:00 Biggest payoff (worldwide_gross/production_budget)
+
+```{r}
+# boxplot
+movie_profit %>% 
+    mutate(profit_ratio = worldwide_gross / production_budget) %>% 
+    ggplot(aes(genre, profit_ratio)) +
+    geom_boxplot() +
+    scale_y_log10() +
+    coord_flip()
+
+# boxplots display over several orders of magnitude
+movie_profit %>% 
+    mutate(profit_ratio = worldwide_gross / production_budget) %>% 
+    ggplot(aes(genre, profit_ratio)) +
+    geom_boxplot() +
+    scale_y_log10(
+```
+
+
+
+
+
 
