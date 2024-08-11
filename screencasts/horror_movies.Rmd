@@ -14,7 +14,7 @@ movie_profit <- movie_profit_raw %>%
     select(-"...1") %>% 
     mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
            # six most common distributors and other
-           distributor = fct_lump(distributor, n = 6)) %>% 
+           distributor = fct_lump(distributor, n = 5)) %>% 
     dplyr::filter(release_date < "2018-01-01") %>% 
     # reversing order of rows
     arrange(desc(row_number())) %>% 
@@ -148,15 +148,44 @@ movie_profit %>%
     summarise(median_profit_ratio = median(profit_ratio),
               movies = n()) %>% # n() is used in summarise()
     # lubridates year() creates a double
-    filter(year >= 2000) %>% 
+    filter(decade >= 1990,
+           !is.na(distributor)) %>% 
     # categorical variable can be reordered
     mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
-    ggplot(aes(year, median_profit_ratio, color = genre)) +
+    ggplot(aes(decade, median_profit_ratio, color = genre)) +
     geom_line() +
+    facet_wrap(~ distributor) + 
     # this is bad ass!!!
     scale_y_continuous(labels = function(x) paste0(x, "X"))
 ```
 
+41:27 What are the most common majors over time?
 
+```{r}
+movie_profit %>% 
+    count(decade, genre) %>% 
+    group_by(decade) %>% 
+    mutate(percent = n / sum(n)) %>% 
+    ggplot(aes(decade, percent, color = genre)) +
+    geom_line() +
+    # limits and labels
+    scale_y_continuous(labels = percent_format()) +
+    scale_x_continuous(limits = c(1930, 2010))
+```
+
+43:00
+
+Distributors and genres
+
+```{r}
+movie_profit %>% 
+    count(distributor, genre) %>% 
+    filter(!is.na(distributor)) %>% 
+    ggplot(aes(genre, n)) +
+    geom_col(aes(color = genre)) +
+    facet_wrap(~ distributor,
+               scales = "free_x") +
+    coord_flip()
+```
 
 
