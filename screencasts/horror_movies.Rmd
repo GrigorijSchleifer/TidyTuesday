@@ -181,8 +181,10 @@ Distributors and genres
 movie_profit %>% 
     count(distributor, genre) %>% 
     filter(!is.na(distributor)) %>% 
-    ggplot(aes(genre, n)) +
-    geom_col(aes(color = genre)) +
+    # why fill and not color
+    ggplot(aes(genre, n, fill = genre)) +
+    # nice! show.legend!
+    geom_col(show.legend = FALSE) +
     facet_wrap(~ distributor,
                scales = "free_x") +
     coord_flip()
