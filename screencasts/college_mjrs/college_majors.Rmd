@@ -36,25 +36,28 @@ by_major_category <- major_processed |>
               MedianSalaryWeighted = sum(Median * Sample_size / sum(Sample_size))) |>  
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
+```
+1:03 Category column bars showing totals filled by Gender
 
+```{r}
 by_major_category |> 
   mutate(Major_category = fct_reorder(Major_category, Total)) |> 
   gather(Gender, Number, Men, Women) |> 
-  ggplot(aes(Major_category, Total, fill = Gender)) +
+  ggplot(aes(Major_category, Number, fill = Gender)) +
+  scale_y_continuous(labels = comma_format()) +
   geom_col() +
   coord_flip()
 
-
-
 by_major_category |> 
   mutate(Major_category = fct_reorder(Major_category, Total)) |> 
   gather(Gender, Number, Men, Women) |> 
-  ggplot(aes(Major_category, Total)) +
+  ggplot(aes(Major_category, Number)) +
   # fill needs to go into aesthetic otherwise it is not visible 
   # if done outside aes
   geom_col(aes(fill = Gender)) +
   coord_flip()
 ```
+
 
 ```{r}
 major_processed |> 
@@ -94,6 +97,7 @@ major_processed |>
 ```
 
 36:00 Gender and typical earning
+
 ```{r}
 major_processed |> 
     arrange(desc(Total)) |> 
@@ -119,6 +123,7 @@ major_processed |>
 
 
 48:00 ShareWomen and salary
+
 ```{r}
 by_major_category |> 
     arrange(MedianSalaryWeighted) |> 
@@ -183,8 +188,17 @@ nested_major_processed <- major_processed |>
     # false descovery rate control is better
     mutate(fdr = p.adjust(p.value, method = "fdr"))
 ```
+1:06 What majors make more money boxplot
 
 ```{r}
+majors_processed |> 
+  mutate(Major_category = fct_reorder(Major_category, Median)) |> 
+  ggplot(aes(Major_category, Median, fill = Major_category)) +
+  geom_boxplot() +
+  coord_flip() +
+  expand_limits(y = 0) +
+  scale_y_continuous(labels = dollar_format()) +
+  theme(legend.position = "none")
 
 ```
 
