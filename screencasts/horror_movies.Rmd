@@ -1,0 +1,193 @@
+```{r}
+library(tidyverse)
+library(lubridate)
+library(scales)
+
+theme_set(theme_light())
+```
+
+```{r}
+# 7:20 change to raw 
+movie_profit_raw <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv")
+
+movie_profit <- movie_profit_raw %>%   
+    select(-"...1") %>% 
+    mutate(release_date = as.Date(parse_date_time(release_date, "%m!/%d/%Y")),
+           # six most common distributors and other
+           distributor = fct_lump(distributor, n = 5)) %>% 
+    dplyr::filter(release_date < "2018-01-01") %>% 
+    # reversing order of rows
+    arrange(desc(row_number())) %>% 
+    distinct(movie, release_date, .keep_all = TRUE) %>% 
+    mutate() %>%  # 19:19
+    mutate(profit_ratio = worldwide_gross / production_budget,
+           decade = 10 * floor(year(release_date) / 10)) %>% # 28:00
+    filter(worldwide_gross > 0)
+    
+```
+
+```{r}
+movie_profit %>% 
+    ggplot(aes(production_budget)) +
+    geom_histogram() +
+    scale_x_continuous(labels = dollar_format())
+    
+# less observations comapered to the video
+movie_profit %>% 
+    ggplot(aes(production_budget)) +
+    geom_histogram() +
+    scale_x_log10(labels = dollar_format())
+
+# 17:00 production budget based on distributor
+movie_profit %>% 
+    ggplot(aes(distributor, production_budget)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip()
+
+```
+
+18:00 Boxplot facets: What genres make the most money
+
+```{r}
+movie_profit %>% 
+    mutate(genre = fct_reorder(genre, production_budget)) %>% 
+    filter(!is.na(distributor)) %>% 
+    ggplot(aes(genre, production_budget)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip() +
+    # wow, it is possible to use facets after ggplot call
+    facet_wrap(~ distributor)
+```
+
+22:00 Line graph: What are typical bugdets over time
+
+```{r}
+movie_profit %>% 
+    # mutate(decade = 10 * floor(year(release_date) / 10)) %>% 
+    group_by(decade) %>% 
+    summarise_at(vars(production_budget:worldwide_gross), median, na.rm = TRUE) %>% 
+    gather(metric, value, -decade) %>% 
+    ggplot(aes(decade, value, color = metric)) +
+    geom_line() +
+    scale_y_continuous(labels = dollar_format())
+```
+
+27:00 Boxplot facets: What genres make the most worldwide gross
+
+```{r}
+movie_profit %>% 
+    mutate(genre = fct_reorder(genre, worldwide_gross)) %>% 
+    filter(!is.na(distributor)) %>% 
+    ggplot(aes(genre, worldwide_gross)) +
+    geom_boxplot() +
+    scale_y_log10(labels = dollar_format()) +
+    coord_flip() +
+    # wow, it is possible to use facets after ggplot call
+    facet_wrap(~ distributor)
+```
+
+28:00 Biggest payoff (worldwide_gross/production_budget)
+
+```{r}
+# boxplot
+movie_profit %>% 
+    ggplot(aes(genre, profit_ratio)) +
+    geom_boxplot() +
+    scale_y_log10() +
+    coord_flip()
+
+# boxplots display over several orders of magnitude
+movie_profit %>% 
+    mutate(profit_ratio = worldwide_gross / production_budget) %>% 
+    ggplot(aes(genre, profit_ratio)) +
+    geom_boxplot() +
+    scale_y_log10(
+```
+
+32:00
+
+```{r}
+movie_profit %>% 
+    group_by(genre) %>% 
+    summarise(median_profit_ratio = median(profit_ratio)) %>% 
+    # categorical variable can be reordered
+    mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
+    ggplot(aes(genre, median_profit_ratio)) +
+    geom_col() +
+    coord_flip() +
+    # this is bad ass!!!
+    scale_y_continuous(labels = function(x) paste0(x, "X"))
+```
+
+35:00 Line graph for profit ratio (median) over the years
+
+```{r}
+movie_profit %>% 
+    group_by(genre, year = year(release_date)) %>% 
+    summarise(median_profit_ratio = median(profit_ratio),
+              movies = n()) %>% # n() is used in summarise()
+    ungroup() %>% # interesting, this changes the order of the legend and thats all
+    # lubridates year() creates a double
+    filter(year >= 2000) %>% 
+    # categorical variable can be reordered
+    mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
+    ggplot(aes(year, median_profit_ratio, color = genre)) +
+    geom_line() +
+    # this is bad ass!!!
+    scale_y_continuous(labels = function(x) paste0(x, "X"))
+```
+
+38:00 Add distributor to the median and the temporal component
+
+```{r}
+movie_profit %>% 
+    # decade not year, because not enouph horror movies in one year!!!
+    group_by(genre, distributor, decade) %>% 
+    summarise(median_profit_ratio = median(profit_ratio),
+              movies = n()) %>% # n() is used in summarise()
+    # lubridates year() creates a double
+    filter(decade >= 1990,
+           !is.na(distributor)) %>% 
+    # categorical variable can be reordered
+    mutate(genre = fct_reorder(genre, median_profit_ratio)) %>% 
+    ggplot(aes(decade, median_profit_ratio, color = genre)) +
+    geom_line() +
+    facet_wrap(~ distributor) + 
+    # this is bad ass!!!
+    scale_y_continuous(labels = function(x) paste0(x, "X"))
+```
+
+41:27 What are the most common majors over time?
+
+```{r}
+movie_profit %>% 
+    count(decade, genre) %>% 
+    group_by(decade) %>% 
+    mutate(percent = n / sum(n)) %>% 
+    ggplot(aes(decade, percent, color = genre)) +
+    geom_line() +
+    # limits and labels
+    scale_y_continuous(labels = percent_format()) +
+    scale_x_continuous(limits = c(1930, 2010))
+```
+
+43:00
+
+Distributors and genres
+
+```{r}
+movie_profit %>% 
+    count(distributor, genre) %>% 
+    filter(!is.na(distributor)) %>% 
+    # why fill and not color
+    ggplot(aes(genre, n, fill = genre)) +
+    # nice! show.legend!
+    geom_col(show.legend = FALSE) +
+    facet_wrap(~ distributor,
+               scales = "free_x") +
+    coord_flip()
+```
+
+
