@@ -206,8 +206,24 @@ horror_movies %>%
     scale_y_continuous(labels = function(x) paste0(x, "X")) +
     labs(x = "",
          y = "Ratio",
-         title = "Highest profit rations and their distributors")
+         title = "Highest profit ratios and their distributors")
 ```
 
-52:00
+52:00 Plot above, but for all movies and color-filled by genre
+
+```{r}
+movie_profit %>% 
+    arrange(desc(profit_ratio)) %>% 
+    head(20) %>% 
+    mutate(movie = fct_reorder(movie, profit_ratio)) %>% 
+    ggplot(aes(movie, profit_ratio, fill = genre)) +
+    geom_col() +
+    coord_flip() +
+    scale_y_continuous(labels = function(x) paste0(x, "X")) +
+    labs(x = "",
+         y = "Ratio",
+         title = "Highest profit ratios based on genres",
+         fill = "Genre") # nice way to change the labels name
+```
+
 
