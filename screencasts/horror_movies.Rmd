@@ -190,4 +190,24 @@ movie_profit %>%
     coord_flip()
 ```
 
+47:00 What distrubutor made the most profitable horror movies
+
+```{r}
+horror_movies <- movie_profit %>% 
+    filter(genre == "Horror")
+
+horror_movies %>% 
+    arrange(desc(profit_ratio)) %>% 
+    head(10) %>% 
+    mutate(movie = fct_reorder(movie, profit_ratio)) %>% 
+    ggplot(aes(movie, profit_ratio, fill = distributor)) +
+    geom_col(show.legend = FALSE) +
+    coord_flip() +
+    scale_y_continuous(labels = function(x) paste0(x, "X")) +
+    labs(x = "",
+         y = "Ratio",
+         title = "Highest profit rations and their distributors")
+```
+
+52:00
 
