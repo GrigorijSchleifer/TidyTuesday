@@ -39,6 +39,27 @@ by_major_category <- major_processed |>
     mutate(ShareWomen = Women / Total) |> 
     arrange(desc(ShareWomen))
 ```
+1:03 Category column bars showing totals filled by Gender
+
+```{r}
+by_major_category |> 
+  mutate(Major_category = fct_reorder(Major_category, Total)) |> 
+  gather(Gender, Number, Men, Women) |> 
+  ggplot(aes(Major_category, Number, fill = Gender)) +
+  scale_y_continuous(labels = comma_format()) +
+  geom_col() +
+  coord_flip()
+
+by_major_category |> 
+  mutate(Major_category = fct_reorder(Major_category, Total)) |> 
+  gather(Gender, Number, Men, Women) |> 
+  ggplot(aes(Major_category, Number)) +
+  # fill needs to go into aesthetic otherwise it is not visible 
+  # if done outside aes
+  geom_col(aes(fill = Gender)) +
+  coord_flip()
+```
+
 
 
 ```{r}
@@ -49,11 +70,8 @@ major_processed |>
     ggplot(aes(Major_category, Median)) +
     geom_col() +
     coord_flip()
-```
 
-Most common major categories using count
 
-```{r}
 major_processed |> 
     count(Major_category, wt = Total, sort = TRUE) |>
     mutate(Major_category = fct_reorder(Major_category, n)) |>
@@ -64,12 +82,9 @@ major_processed |>
     labs(x = "",
          y = "Number of total graduates") +
     theme(legend.position = "none")
-
-major_processed |> 
-    group_by(Major_category) |> 
-    summarise(n = sum(Total)) |> 
-    arrange(desc(n))
 ```
+
+
 
 ```{r 34:00}
 major_processed |> 
@@ -86,6 +101,7 @@ major_processed |>
 ```
 
 36:00 Gender and typical earning
+
 ```{r}
 major_processed |> 
     arrange(desc(Total)) |> 
@@ -111,6 +127,7 @@ major_processed |>
 
 
 48:00 ShareWomen and salary
+
 ```{r}
 by_major_category |> 
     arrange(MedianSalaryWeighted) |> 
@@ -176,6 +193,19 @@ nested_major_processed <- major_processed |>
     # p values will be not significant after bonferroni correcection (multiplication by n groups)
     # false descovery rate control is better
     mutate(fdr = p.adjust(p.value, method = "fdr"))
+```
+1:06 What majors make more money boxplot
+
+```{r}
+majors_processed |> 
+  mutate(Major_category = fct_reorder(Major_category, Median)) |> 
+  ggplot(aes(Major_category, Median, fill = Major_category)) +
+  geom_boxplot() +
+  coord_flip() +
+  expand_limits(y = 0) +
+  scale_y_continuous(labels = dollar_format()) +
+  theme(legend.position = "none")
+
 ```
 
 1:06 cool boxplot for highest median salary
