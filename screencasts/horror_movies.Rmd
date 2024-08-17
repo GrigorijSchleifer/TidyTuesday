@@ -204,9 +204,9 @@ horror_movies %>%
     geom_col(show.legend = FALSE) +
     coord_flip() +
     scale_y_continuous(labels = function(x) paste0(x, "X")) +
-    labs(x = "",
-         y = "Ratio",
-         title = "Highest profit ratios and their distributors")
+    labs(x = '',
+         y = 'Ratio',
+         title = 'Highest profit ratios and their distributors')
 ```
 
 52:00 Plot above, but for all movies and color-filled by genre
