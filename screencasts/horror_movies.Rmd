@@ -2,6 +2,7 @@
 library(tidyverse)
 library(lubridate)
 library(scales)
+library(plotly)
 
 theme_set(theme_light())
 ```
@@ -23,7 +24,9 @@ movie_profit <- movie_profit_raw %>%
     mutate(profit_ratio = worldwide_gross / production_budget,
            decade = 10 * floor(year(release_date) / 10)) %>% # 28:00
     filter(worldwide_gross > 0)
-    
+
+horror_movies <- movie_profit %>% 
+    filter(genre == "Horror")
 ```
 
 ```{r}
@@ -193,9 +196,6 @@ movie_profit %>%
 47:00 What distrubutor made the most profitable horror movies
 
 ```{r}
-horror_movies <- movie_profit %>% 
-    filter(genre == "Horror")
-
 horror_movies %>% 
     arrange(desc(profit_ratio)) %>% 
     head(10) %>% 
@@ -215,7 +215,9 @@ horror_movies %>%
 movie_profit %>% 
     arrange(desc(profit_ratio)) %>% 
     head(20) %>% 
-    mutate(movie = fct_reorder(movie, profit_ratio)) %>% 
+    # this is badass to use paste0
+    mutate(movie = paste0(movie, " (", year(release_date), ")"),
+           movie = fct_reorder(movie, profit_ratio)) %>% 
     ggplot(aes(movie, profit_ratio, fill = genre)) +
     geom_col() +
     coord_flip() +
@@ -226,4 +228,36 @@ movie_profit %>%
          fill = "Genre") # nice way to change the labels name
 ```
 
+53:00 Scatterplot release year vs profit_ratio (one lm smooth line for all genres)
+
+```{r}
+movie_profit %>% 
+    filter(release_date >= "1990-01-01",
+           profit_ratio >= .01) %>% 
+    ggplot(aes(release_date, profit_ratio)) +
+    geom_point(aes(color = genre)) +
+    geom_smooth(method = "lm", group = 1) +
+    geom_text(aes(label = movie), vjust = 1, hjust = 1, check_overlap = TRUE) +
+    scale_y_log10(labels = function(x) paste0(x, "X"), breaks = c(.1, 1, 10, 100))
+```
+
+
+56:00 Scatterplot release year vs profit_ratio (every genre) will get a separate lm line
+
+```{r}
+# to get a separate lm line for every group we need to delete group = 1 and move color to the highest aesthetic
+# why is that???
+plt <- movie_profit %>% 
+    filter(release_date >= "1990-01-01",
+           profit_ratio >= .01) %>% 
+    ggplot(aes(release_date, profit_ratio, label = movie)) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    # geom_text(aes(label = movie), vjust = 1, hjust = 1, check_overlap = TRUE) +
+    scale_y_log10(labels = function(x) paste0(x, "X"), breaks = c(.1, 1, 10, 100)) +
+    facet_wrap(~ genre)
+
+ggplotly(plt)
+
+```
 
