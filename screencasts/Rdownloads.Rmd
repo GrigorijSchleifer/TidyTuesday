@@ -1,0 +1,91 @@
+```{r}
+library(tidyverse)
+library(scales)
+library(lubridate)
+library(countrycode)
+
+theme_set(theme_light())
+
+r_downloads_year <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-30/r_downloads_year.csv")
+
+r_downloads_year <- r_downloads_year %>% 
+    select(-"...1") %>% 
+    mutate(weekday = wday(date, label = TRUE))
+    
+```
+
+5:00 Look at downloads over time
+
+```{r}
+r_downloads_year %>% 
+    count(date) %>% 
+    ggplot(aes(date, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    labs(y = "R downloads")
+```
+
+9:00 Look at downloads in a week (averages)
+
+```{r}
+# this is a biggy!
+# cool way to display weekdays
+# and group arguments in geom_line (not sure what group argument does)
+# AAAAAND mutate thinge inside group_by method is so coool!!!
+r_downloads_year %>% 
+    count(date) %>% 
+    # there will be a lot data for every weekday
+    group_by(weekday = wday(date, label = TRUE)) %>% 
+    mutate(average = mean(n)) %>% 
+    ggplot(aes(weekday, average)) +
+    geom_line(group = 1) +
+    expand_limits(y = 0)
+
+# trying to understand the group argument in geom_line
+test <- r_downloads_year %>% 
+    count(date) %>% 
+    group_by(weekday = wday(date, label = TRUE)) %>% 
+    mutate(average_dwn_wday = mean(n)) 
+```
+
+10:00 Change of R downloads over week
+
+```{r}
+r_downloads_year %>% 
+    count(week = floor_date(date, "week")) %>% 
+    # remove incomplete weeks
+    filter(week > min(week)) %>% 
+    ggplot(aes(week, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    labs(y = "downlads per week")
+```
+
+12:00 Change country abbreviation to country name
+
+```{r}
+r_downloads_year %>% 
+    count(country = countrycode(country, "iso2c", "country.name"), sort = TRUE) %>% 
+    filter(!is.na(country)) %>% 
+    mutate(percent = n / sum(n)) %>% 
+    head(16) %>% 
+    mutate(country = fct_reorder(country, percent)) %>% 
+    ggplot(aes(country, percent)) +
+    geom_col() +
+    coord_flip() +
+    scale_y_continuous(labels = percent_format()) +
+    labs(title = "What countries install the most R")
+```
+
+17:00 Line graph for versions over time
+
+```{r}
+r_downloads_year %>% 
+    # only 7 most used, the rest will be other
+    mutate(version = fct_lump(version, 7)) %>% 
+    count(date, version) %>% 
+    ggplot(aes(date, n, color = version)) +
+    geom_line()
+```
+
+
