@@ -10,7 +10,8 @@ r_downloads_year <- read_csv("https://raw.githubusercontent.com/rfordatascience/
 
 r_downloads_year <- r_downloads_year %>% 
     select(-"...1") %>% 
-    mutate(weekday = wday(date, label = TRUE))
+    mutate(weekday = wday(date, label = TRUE),
+           country = countrycode(country, "iso2c", "country.name"))
     
 ```
 
@@ -88,4 +89,17 @@ r_downloads_year %>%
     geom_line()
 ```
 
+22:00 R installation over time of day
+
+```{r}
+r_downloads_year %>% 
+    filter(!is.na(country)) %>% 
+    count(hour = hour(time),
+          country = fct_lump(country, 8)) %>% 
+    ggplot(aes(hour, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~ country, scales = "free_y")
+    
+```
 
