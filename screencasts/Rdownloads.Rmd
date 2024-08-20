@@ -12,7 +12,6 @@ r_downloads_year <- r_downloads_year %>%
     select(-"...1") %>% 
     mutate(weekday = wday(date, label = TRUE),
            country = countrycode(country, "iso2c", "country.name"))
-    
 ```
 
 5:00 Look at downloads over time
@@ -100,6 +99,18 @@ r_downloads_year %>%
     geom_line() +
     expand_limits(y = 0) +
     facet_wrap(~ country, scales = "free_y")
-    
+```
+
+29:00 Line graph for downloads over time based on country
+
+```{r}
+r_downloads_year %>% 
+    count(country = fct_lump(country, 8),
+          week = floor_date(date, "week")) %>%
+    # first week is incomplete, filter it
+    filter(week >= min(week)) %>%
+    ggplot(aes(week, n, color = country)) +
+    geom_line()
+               
 ```
 
