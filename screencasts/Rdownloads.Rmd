@@ -114,3 +114,15 @@ r_downloads_year %>%
                
 ```
 
+33:00 IP Adress saga
+
+```{r}
+r_downloads_year %>% 
+    count(ip_id, sort = TRUE) %>% 
+    ggplot(aes(n)) +
+    geom_histogram()
+
+r_downloads_year %>% 
+    mutate(datetime = as.POSIXct(date) + time)
+```
+
