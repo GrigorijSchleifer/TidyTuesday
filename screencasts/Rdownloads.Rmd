@@ -114,7 +114,7 @@ r_downloads_year %>%
                
 ```
 
-33:00 IP Adress saga
+33:00 IP Adress saga (takes long to calculate and run!)
 
 ```{r}
 r_downloads_year %>% 
@@ -122,7 +122,22 @@ r_downloads_year %>%
     ggplot(aes(n)) +
     geom_histogram()
 
-r_downloads_year %>% 
-    mutate(datetime = as.POSIXct(date) + time)
+r_downloads_gaps <- r_downloads_year %>% 
+    mutate(datetime = as.POSIXct(date) + time) %>% 
+    arrange(datetime) %>% 
+    group_by(ip_id) %>% 
+    mutate(gap = as.numeric(datetime - lag(datetime))) %>% 
+    filter(!is.na(gap))
+
+r_downloads_gaps %>% 
+    count(country, gap) %>% 
+    # filter(country == "United States") %>% 
+    ggplot(aes(gap)) +
+    geom_histogram() +
+    # clear bimodal log normal distribution
+    # scale_x_log10()
+    scale_x_log10(breaks = 60 ^ (0:4),
+                  labels = c("Second", "Minute", "Hour", "2.5 Days", "120 Days"))
+    
 ```
 
