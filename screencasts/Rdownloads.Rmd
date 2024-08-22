@@ -134,10 +134,29 @@ r_downloads_gaps %>%
     # filter(country == "United States") %>% 
     ggplot(aes(gap)) +
     geom_histogram() +
+    geom_vline(color = "red", lty = 2, xintercept = 86400) +
     # clear bimodal log normal distribution
     # scale_x_log10()
     scale_x_log10(breaks = 60 ^ (0:4),
                   labels = c("Second", "Minute", "Hour", "2.5 Days", "120 Days"))
     
+```
+
+42:00 
+
+```{r}
+r_downloads_year %>% 
+    group_by(week = floor_date(date, "year")) %>%
+    summarise(n = n_distinct(ip_id))
+
+    filter(week == "2017-10-15") %>% 
+    distinct(ip_id)
+
+
+    summarise(n = n_distinct(ip_id))
+    # first week is incomplete, filter it
+    filter(week >= min(week)) %>%
+    ggplot(aes(week, n, color = country)) +
+    geom_line()
 ```
 
