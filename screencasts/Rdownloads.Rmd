@@ -142,21 +142,18 @@ r_downloads_gaps %>%
     
 ```
 
-42:00 
+42:00 Downloads per weeek (distinct IP adresses
 
 ```{r}
 r_downloads_year %>% 
-    group_by(week = floor_date(date, "year")) %>%
-    summarise(n = n_distinct(ip_id))
-
-    filter(week == "2017-10-15") %>% 
-    distinct(ip_id)
-
-
-    summarise(n = n_distinct(ip_id))
+    group_by(week = floor_date(date, "week")) %>%
+    summarise(n = n_distinct(ip_id)) %>% 
     # first week is incomplete, filter it
     filter(week >= min(week)) %>%
-    ggplot(aes(week, n, color = country)) +
-    geom_line()
+    ggplot(aes(week, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    labs(y = "Downloads per weeek (distinct IP adresses")
 ```
 
+# Good morning
