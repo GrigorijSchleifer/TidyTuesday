@@ -163,10 +163,19 @@ r_downloads_year %>%
 
 ```{r}
 package_downloads %>% 
-    filter(country %in% c("US", "CA")) %>% 
-    count(country, package, sort = T) %>% 
+    filter(country %in% c("US", "IN")) %>% 
+    group_by(country, package) %>%
+    summarise(n = n_distinct(ip_id)) %>%
     # missing values (NA) will be replaced by 0 (fill argument)
-    spread(country, n, fill = 0)
+    spread(country, n, fill = 0) 
 
+%>% 
+    mutate(total = US + IN,
+           # Laplace smothing: prevents Infitity in rations 
+           # Inf rations will result because of zero division  US / IN == 0
+           IN = (IN + 1) / (sum(IN) + 1),
+           US = (US + 1) / (sum(US) + 1),
+           ratio = US / IN) %>% 
+    arrange(desc(ratio))
 ```
 
