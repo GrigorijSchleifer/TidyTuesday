@@ -179,35 +179,3 @@ package_downloads %>%
     filter(total >= 1000) %>% 
     arrange(desc(ratio))
 ```
-
-```{r}
-df <- tribble(
-  ~gender,   ~OP,
-  1,         "ACB",
-  2,         "MKI",
-  2,         "ECMO",
-  2,         "ECMO",
-  2,         "ECMO",
-  2,         "ECMO"
-)
-
-df %>% 
-    count(gender, OP)
-
-
-dfmtcars %>% 
-    count(cyl, wt = hp)
-
-mtcars %>%
-    filter(cyl %in% c(4)) %>% 
-    select(hp) %>% 
-    sum()
-
-as.data.frame(mtcars) %>% 
-    group_by(cyl) %>% 
-    summarise(n = n(hp))
-
-    filter(cyl == 4) %>% 
-    sum(.$hp)
-```
-
