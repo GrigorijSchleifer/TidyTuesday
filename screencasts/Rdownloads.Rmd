@@ -167,15 +167,47 @@ package_downloads %>%
     group_by(country, package) %>%
     summarise(n = n_distinct(ip_id)) %>%
     # missing values (NA) will be replaced by 0 (fill argument)
-    spread(country, n, fill = 0) 
-
-%>% 
+    spread(country, n, fill = 0) %>% 
+    # no ungrouping needed, not sure why
+    ungroup() %>%
     mutate(total = US + IN,
            # Laplace smothing: prevents Infitity in rations 
            # Inf rations will result because of zero division  US / IN == 0
            IN = (IN + 1) / (sum(IN) + 1),
            US = (US + 1) / (sum(US) + 1),
            ratio = US / IN) %>% 
+    filter(total >= 1000) %>% 
     arrange(desc(ratio))
+```
+
+```{r}
+df <- tribble(
+  ~gender,   ~OP,
+  1,         "ACB",
+  2,         "MKI",
+  2,         "ECMO",
+  2,         "ECMO",
+  2,         "ECMO",
+  2,         "ECMO"
+)
+
+df %>% 
+    count(gender, OP)
+
+
+dfmtcars %>% 
+    count(cyl, wt = hp)
+
+mtcars %>%
+    filter(cyl %in% c(4)) %>% 
+    select(hp) %>% 
+    sum()
+
+as.data.frame(mtcars) %>% 
+    group_by(cyl) %>% 
+    summarise(n = n(hp))
+
+    filter(cyl == 4) %>% 
+    sum(.$hp)
 ```
 
