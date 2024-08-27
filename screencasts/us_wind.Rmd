@@ -1,0 +1,12 @@
+```{r}
+library(tidyverse)
+
+us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-06/us_wind.csv")
+```
+
+Starting most of the time with counts of categorical columns
+
+```{r}
+us
+```
+
