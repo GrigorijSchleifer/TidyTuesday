@@ -1,12 +1,22 @@
 ```{r}
 library(tidyverse)
+library(mapproj)
 
 us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-06/us_wind.csv")
 ```
 
 Starting most of the time with counts of categorical columns
 
+Looking only a continental US plus Disctrict of Columbia (Washington) 
+
+
 ```{r}
-us
+us_wind %>% 
+    filter(xlong < 100) %>% 
+    ggplot(aes(xlong, ylat)) +
+    borders("state") +
+    geom_point() + 
+    coord_map() +
+    theme_void()
 ```
 
