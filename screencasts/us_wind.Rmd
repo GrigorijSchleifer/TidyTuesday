@@ -3,6 +3,9 @@ library(tidyverse)
 library(mapproj)
 
 us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-06/us_wind.csv")
+
+us_wind <- us_wind %>% 
+    filter(!t_state %in% c("AK", "HI", "GU", "PR"))
 ```
 
 Starting most of the time with counts of categorical columns
@@ -11,9 +14,18 @@ Looking only a continental US plus Disctrict of Columbia (Washington)
 
 
 ```{r}
+# to use the color aesthetic and see the 6 lumped categories we need some magic!
 us_wind %>% 
+    group_by(p_name, t_state) %>% 
+    summarise(turbines = n()) %>% 
+    count(sort = TRUE)
+
+    # FALSE comes before TRUE (in this case Other is on top)
+    # fct_lumped data needs to be arranged so that TRUE comes on the top of the table
+    mutate(p_name = fct_lump(p_name, 6)) %>% 
+    arrange(p_name != "Other") %>% 
     filter(xlong < 100) %>% 
-    ggplot(aes(xlong, ylat)) +
+    ggplot(aes(xlong, ylat, color = p_name)) +
     borders("state") +
     geom_point() + 
     coord_map() +
