@@ -15,17 +15,32 @@ Looking only a continental US plus Disctrict of Columbia (Washington)
 
 ```{r}
 # to use the color aesthetic and see the 6 lumped categories we need some magic!
-us_wind %>% 
+wind_projects <- us_wind %>% 
     group_by(p_name, t_state) %>% 
-    summarise(turbines = n()) %>% 
-    count(sort = TRUE)
+    # we should rename the variable to use it second time inside the function!!!
+    summarise(turbines = n(),
+              lon = mean(xlong),
+              lat = mean(ylat),
+              lon_sd = sd(xlong),
+              lat_sd = sd(ylat))
 
+us_wind %>% 
     # FALSE comes before TRUE (in this case Other is on top)
     # fct_lumped data needs to be arranged so that TRUE comes on the top of the table
     mutate(p_name = fct_lump(p_name, 6)) %>% 
     arrange(p_name != "Other") %>% 
     filter(xlong < 100) %>% 
     ggplot(aes(xlong, ylat, color = p_name)) +
+    borders("state") +
+    geom_point() + 
+    coord_map() +
+    theme_void()
+```
+
+```{r}
+# one dot for every individual project
+wind_projects %>% 
+    ggplot(aes(lon, lat, size = turbines)) +
     borders("state") +
     geom_point() + 
     coord_map() +
