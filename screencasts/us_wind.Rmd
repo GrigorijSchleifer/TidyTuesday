@@ -4,8 +4,22 @@ library(mapproj)
 
 us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-06/us_wind.csv")
 
+
 us_wind <- us_wind %>% 
-    filter(!t_state %in% c("AK", "HI", "GU", "PR"))
+    filter(!t_state %in% c("AK", "HI", "GU", "PR")) %>% 
+    mutate(p_year = ifelse(p_year < -8000, NA, p_year))
+
+
+# to use the color aesthetic and see the 6 lumped categories we need some magic!
+wind_projects <- us_wind %>% 
+    group_by(p_name, t_state) %>% 
+    # we should rename the variable to use it second time inside the function!!!
+    summarise(year = min(p_year),
+              turbines = n(),
+              lon = mean(xlong),
+              lat = mean(ylat),
+              lon_sd = sd(xlong),
+              lat_sd = sd(ylat))
 ```
 
 Starting most of the time with counts of categorical columns
@@ -14,15 +28,6 @@ Looking only a continental US plus Disctrict of Columbia (Washington)
 
 
 ```{r}
-# to use the color aesthetic and see the 6 lumped categories we need some magic!
-wind_projects <- us_wind %>% 
-    group_by(p_name, t_state) %>% 
-    # we should rename the variable to use it second time inside the function!!!
-    summarise(turbines = n(),
-              lon = mean(xlong),
-              lat = mean(ylat),
-              lon_sd = sd(xlong),
-              lat_sd = sd(ylat))
 
 us_wind %>% 
     # FALSE comes before TRUE (in this case Other is on top)
@@ -40,10 +45,22 @@ us_wind %>%
 ```{r}
 # one dot for every individual project
 wind_projects %>% 
-    ggplot(aes(lon, lat, size = turbines)) +
+    ggplot(aes(lon, lat, size = turbines, color = year)) +
     borders("state") +
     geom_point() + 
     coord_map() +
     theme_void()
+```
+
+19:00
+
+```{r}
+us_wind %>% 
+    distinct(p_name, p_year) %>% 
+    count(p_name,sort = TRUE)
+
+wind_projects %>% 
+    ggplot(aes(year)) +
+    geom_histogram()
 ```
 
