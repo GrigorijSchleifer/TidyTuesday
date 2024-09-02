@@ -39,6 +39,7 @@ us_wind %>%
 
 ```{r}
 # one dot for every individual project
+# in da HOUSE!
 wind_projects %>% 
     ggplot(aes(lon, lat, size = turbines)) +
     borders("state") +
