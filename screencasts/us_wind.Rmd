@@ -14,7 +14,7 @@ us_wind <- us_wind %>%
 wind_projects <- us_wind %>% 
     group_by(p_name, t_state) %>% 
     # we should rename the variable to use it second time inside the function!!!
-    summarise(year = min(p_year),
+    summarise(year = min(p_year, na.rm = TRUE),
               turbines = n(),
               lon = mean(xlong),
               lat = mean(ylat),
