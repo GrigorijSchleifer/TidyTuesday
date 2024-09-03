@@ -7,8 +7,12 @@ us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesd
 
 us_wind <- us_wind %>% 
     filter(!t_state %in% c("AK", "HI", "GU", "PR")) %>% 
-    mutate(p_year = ifelse(p_year < -8000, NA, p_year),
-           t_cap = ifelse(t_cap < 0, NA, t_cap))
+    # this is so ugly but very effective
+    # would like to know if this is possible in python in one line
+    mutate(t_cap = ifelse(t_cap < 0, NA, t_cap)) %>% 
+    mutate_if(is.numeric, ~ ifelse(. == -9999, NA, .))
+
+
 
 
 # to use the color aesthetic and see the 6 lumped categories we need some magic!
@@ -89,5 +93,13 @@ wind_projects %>%
     # does not make sense
     ggplot(aes(year, turbines / total_capacity)) +
     geom_point()
+```
+
+39:00
+
+```{r}
+us_wind %>% 
+    group_by(t_model) %>% 
+    summarise_at(vars())
 ```
 
