@@ -7,7 +7,8 @@ us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesd
 
 us_wind <- us_wind %>% 
     filter(!t_state %in% c("AK", "HI", "GU", "PR")) %>% 
-    mutate(p_year = ifelse(p_year < -8000, NA, p_year))
+    mutate(p_year = ifelse(p_year < -8000, NA, p_year),
+           t_cap = ifelse(t_cap < 0, NA, t_cap))
 
 
 # to use the color aesthetic and see the 6 lumped categories we need some magic!
@@ -15,6 +16,8 @@ wind_projects <- us_wind %>%
     group_by(p_name, t_state) %>% 
     # we should rename the variable to use it second time inside the function!!!
     summarise(year = min(p_year, na.rm = TRUE),
+              # decided to keep missing data (it is an active decision)
+              total_capacity = sum(t_cap),
               turbines = n(),
               lon = mean(xlong),
               lat = mean(ylat),
@@ -63,5 +66,28 @@ us_wind %>%
 wind_projects %>% 
     ggplot(aes(year)) +
     geom_histogram()
+```
+
+26:00 How did total capacity changed over time?
+
+```{r}
+wind_projects %>% 
+    group_by(year) %>% 
+    ggplot(aes(year, total_capacity)) +
+    geom_point()
+
+wind_projects %>% 
+    group_by(year) %>% 
+    # if all of the capacity is divided under all turbines
+    # you get the capacity for one turbine
+    # how this changed over time
+    ggplot(aes(year, total_capacity / turbines)) +
+    geom_point()
+
+wind_projects %>% 
+    group_by(year) %>%
+    # does not make sense
+    ggplot(aes(year, turbines / total_capacity)) +
+    geom_point()
 ```
 
