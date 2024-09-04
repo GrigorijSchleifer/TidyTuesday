@@ -1,6 +1,7 @@
 ```{r}
 library(tidyverse)
 library(mapproj)
+library(gganimate)
 
 us_wind <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-06/us_wind.csv")
 
@@ -98,8 +99,54 @@ wind_projects %>%
 39:00
 
 ```{r}
-us_wind %>% 
+turbine_models <- us_wind %>% 
     group_by(t_model) %>% 
-    summarise_at(vars())
+    # good for doing the same on many columns
+    summarise(t_cap = median(t_cap),
+              t_hh = median(t_hh), 
+              t_rd = median(t_rd), 
+              t_rsa = median(t_rsa), 
+              t_ttlh = median(t_ttlh), 
+              turbines = n(),
+              projects = n_distinct(p_name)) %>% 
+    arrange(desc(projects))
+
+turbine_models %>% 
+    ggplot(aes(t_rsa, t_cap)) +
+    geom_point() +
+    labs(title = "Bigger turbines is better in terms of efficiency")
+```
+
+47:00 Animation
+
+```{r}
+
+# No renderer backend detected. gganimate will default to writing frames to separate files
+Consider installing:
+ggplot(mtcars, aes(factor(cyl), mpg)) + 
+  geom_boxplot() + 
+  # Here comes the gganimate code
+  transition_states(
+    gear,
+    transition_length = 2,
+    state_length = 1
+  ) +
+  enter_fade() + 
+  exit_shrink() +
+  ease_aes('sine-in-out')
+
+# one dot for every individual project
+# in da HOUSE!
+wind_projects %>% 
+    ggplot(aes(lon, lat, size = turbines, color = year)) +
+    borders("state") +
+    geom_point() + 
+    transition_states(
+        year,
+        transition_length = 2,
+        state_length = 1
+    ) +
+    coord_map() +
+    theme_void()
 ```
 
