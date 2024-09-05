@@ -150,3 +150,9 @@ wind_projects %>%
     theme_void()
 ```
 
+```{r}
+wind_projects %>% 
+    filter(!is.na(year), !is.infinite(year)) %>% 
+    crossing(time = 1980:2017)
+```
+
