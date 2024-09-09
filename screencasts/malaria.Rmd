@@ -1,0 +1,18 @@
+```{r}
+library(malariaAtlas)
+library(tidyverse)
+```
+
+
+
+
+```{r}
+# get parasite rate
+kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH")))
+```
+
+```{r}
+kenya_pr %>% 
+    View()
+```
+
