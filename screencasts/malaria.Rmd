@@ -1,6 +1,7 @@
 ```{r}
 library(malariaAtlas)
 library(tidyverse)
+library(scales)
 theme_set(theme_classic())
 ```
 
@@ -9,7 +10,8 @@ theme_set(theme_classic())
 
 ```{r}
 # get parasite rate
-kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH")))
+kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
+    filter(!is.na(pr))
 ```
 
 ```{r}
@@ -23,3 +25,26 @@ kenya_pr %>%
     geom_line()
 ```
 
+```{r}
+# ggplot2::map_data("world") %>% tibble() %>% filter(region == "Kenya")
+kenya_pr %>% 
+    # %/% truncates the last digit  
+    mutate(decade = 10 * (year_start %/% 10)) %>% 
+    # niiiice! This will show the highest pr´s on top of the graph
+    # this will arrange from lowest to highest and plot highest last
+    arrange(pr) %>% 
+    ggplot(aes(longitude, latitude, colour = pr)) +
+    geom_point() +
+    borders("world", regions = "Kenya") +
+    scale_color_gradient2(low = "blue", 
+                          high = "red", 
+                          midpoint = .5,
+                          labels = percent_format()) +
+    facet_wrap(~ decade) +
+    theme_void() +
+    coord_map() +
+    # changes the name of the legend
+    labs(color = "Prevalence")
+
+
+```
