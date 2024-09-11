@@ -1,6 +1,7 @@
 ```{r}
 library(malariaAtlas)
 library(tidyverse)
+theme_set(theme_classic())
 ```
 
 
@@ -13,6 +14,12 @@ kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"
 
 ```{r}
 kenya_pr %>% 
-    View()
+    group_by(year_start) %>% 
+    summarise(examnd = sum(examined),
+              pstv = sum(positive),
+              studies = n()) %>% 
+    mutate(proportion = pstv / examnd) %>% 
+    ggplot(aes(year_start, proportion)) +
+    geom_line()
 ```
 
