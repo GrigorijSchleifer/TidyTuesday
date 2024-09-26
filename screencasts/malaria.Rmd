@@ -45,6 +45,36 @@ kenya_pr %>%
     coord_map() +
     # changes the name of the legend
     labs(color = "Prevalence")
-
-
 ```
+
+Aggregated across countries
+
+```{r}
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+
+malaria_in_process <- malaria_inc %>% 
+    setNames(c("country", "code", "year", "incidence")) %>% 
+    mutate(incidence = incidence / 1000)
+```
+
+```{r}
+malaria_in_process %>% 
+    # grabbing 6 unique countries
+    filter(country %in% sample(unique(country), 6)) %>% 
+    ggplot(aes(year, incidence, color = country)) +
+    geom_line() +
+    scale_y_continuous(labels = scales::percent_format())
+```
+
+30:00 Looking at change from 2015 to the last incidence reports
+
+```{r}
+malaria_in_process %>% 
+    mutate(year = paste0("Y", year)) %>% 
+    spread(year, incidence) %>% 
+    mutate(current = Y2016,
+           change = Y1990 / Y2016) %>% 
+    arrange(change)
+```
+
+
