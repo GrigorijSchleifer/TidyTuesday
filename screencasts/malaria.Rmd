@@ -12,6 +12,12 @@ theme_set(theme_classic())
 # get parasite rate
 kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
     filter(!is.na(pr))
+
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+
+malaria_in_process <- malaria_inc %>% 
+    setNames(c("country", "code", "year", "incidence")) %>% 
+    mutate(incidence = incidence / 1000)
 ```
 
 ```{r}
@@ -50,11 +56,6 @@ kenya_pr %>%
 Aggregated across countries
 
 ```{r}
-malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
-
-malaria_in_process <- malaria_inc %>% 
-    setNames(c("country", "code", "year", "incidence")) %>% 
-    mutate(incidence = incidence / 1000)
 ```
 
 ```{r}
