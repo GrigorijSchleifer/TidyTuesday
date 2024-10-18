@@ -13,11 +13,13 @@ theme_set(theme_classic())
 kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
     filter(!is.na(pr))
 
-malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
-
+# 27:00
 malaria_in_process <- malaria_inc %>% 
     setNames(c("country", "code", "year", "incidence")) %>% 
     mutate(incidence = incidence / 1000)
+
+# 25:45
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
 ```
 
 ```{r}
@@ -55,13 +57,13 @@ kenya_pr %>%
 
 Aggregated across countries
 
-```{r}
-```
+# 28:00
 
 ```{r}
 malaria_in_process %>% 
     # grabbing 6 unique countries
-    filter(country %in% sample(unique(country), 6)) %>% 
+    # filter(country %in% sample(unique(country), 6)) %>%
+    filter(country %in%  sample(unique(country), 6)) %>% 
     ggplot(aes(year, incidence, color = country)) +
     geom_line() +
     scale_y_continuous(labels = scales::percent_format())
@@ -80,5 +82,12 @@ malaria_in_process %>%
 
 ```{r}
 # back in business in getting back on track
+```
+
+
+```{r}
+malaria_in_process %>% 
+    group_by(country) %>% 
+    mutate(current = first())
 ```
 
