@@ -73,8 +73,19 @@ malaria_in_process %>%
 
 ```{r}
 malaria_in_process %>% 
+    group_by(country) %>% 
+    summarise(current = last(incidence),
+           change = last(incidence) / first(incidence)) %>% 
+    arrange(desc(change))
+```
+
+31:00
+
+```{r}
+malaria_in_process %>%  
     mutate(year = paste0("Y", year)) %>% 
-    spread(year, incidence) %>% 
+    spread(year, incidence) %>%
+    first()# spread year by incidence 
     mutate(current = Y2016,
            change = Y1990 / Y2016) %>% 
     arrange(change)
@@ -90,4 +101,16 @@ malaria_in_process %>%
     group_by(country) %>% 
     mutate(current = first())
 ```
+
+```{r}
+trb <- tribble(
+    ~year, ~name,
+    1,     "Greg",
+    2,     "Don",
+    3,     "Monsta",
+    4,     "Rudi",
+    5,     "Gesterhängs"
+)
+```
+
 
