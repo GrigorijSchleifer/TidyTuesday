@@ -13,13 +13,23 @@ theme_set(theme_classic())
 kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
     filter(!is.na(pr))
 
+# 25:45
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+
 # 27:00
 malaria_in_process <- malaria_inc %>% 
     setNames(c("country", "code", "year", "incidence")) %>% 
     mutate(incidence = incidence / 1000)
 
-# 25:45
-malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+malaria_spread <- malaria_in_process %>%  
+    filter(year %in% c(2005, 2010, 2015)) %>% 
+    mutate(year = paste0("Y", year)) %>% 
+    filter(country != "Turkey",
+           !is.na(code)) %>% 
+    spread(year, incidence)
+
+world <- map_data("world") %>% 
+    filter(region != "Antarctica")
 ```
 
 ```{r}
@@ -69,48 +79,28 @@ malaria_in_process %>%
     scale_y_continuous(labels = scales::percent_format())
 ```
 
-30:00 Looking at change from 2015 to the last incidence reports
+
+31:00: Blunt-Altman plot
 
 ```{r}
-malaria_in_process %>% 
-    group_by(country) %>% 
-    summarise(current = last(incidence),
-           change = last(incidence) / first(incidence)) %>% 
-    arrange(desc(change))
-```
-
-31:00
-
-```{r}
-malaria_in_process %>%  
-    mutate(year = paste0("Y", year)) %>% 
-    spread(year, incidence) %>%
-    first()# spread year by incidence 
+malaria_spread %>%
     mutate(current = Y2016,
-           change = Y1990 / Y2016) %>% 
-    arrange(change)
+           change = Y2016 - Y2000) %>% 
+    ggplot(aes(current, change)) +
+    geom_point() +
+    geom_text(aes(label = code), vjust = 1, hjust = 1)
 ```
+
+35:00
 
 ```{r}
-# back in business in getting back on track
+malaria_spread %>% 
+    inner_join(maps::iso3166 %>% 
+                   select(a3, mapname), by = c(code = "a3")) %>% 
+    # this will keep all regions
+    right_join(world, by = c(mapname = "region")) %>% 
+    ggplot(aes(long, lat, group = group, fill = Y2015)) +
+    geom_polygon() +
+    theme_void()
 ```
-
-
-```{r}
-malaria_in_process %>% 
-    group_by(country) %>% 
-    mutate(current = first())
-```
-
-```{r}
-trb <- tribble(
-    ~year, ~name,
-    1,     "Greg",
-    2,     "Don",
-    3,     "Monsta",
-    4,     "Rudi",
-    5,     "Gesterhängs"
-)
-```
-
 
