@@ -96,11 +96,19 @@ malaria_spread %>%
 ```{r}
 malaria_spread %>% 
     inner_join(maps::iso3166 %>% 
+                   # do we keep only mapname here
                    select(a3, mapname), by = c(code = "a3")) %>% 
     # this will keep all regions
-    right_join(world, by = c(mapname = "region")) %>% 
+    # keeps all observations in y
+    # right_join(world, by = c(mapname = "region")) %>% 
+    # only what we have in malaria_spread, not the entire world in right_join
+    inner_join(world, by = c(mapname = "region")) %>% 
     ggplot(aes(long, lat, group = group, fill = Y2015)) +
     geom_polygon() +
     theme_void()
+```
+
+```{r}
+# WHERE IS MY R MOJO!!!
 ```
 
