@@ -35,8 +35,8 @@ world <- map_data("world") %>%
 ```{r}
 kenya_pr %>% 
     group_by(year_start) %>% 
-    summarise(examnd = sum(examined),
-              pstv = sum(positive),
+    summarise(examind = sum(examined),
+              positiv = sum(positive),
               studies = n()) %>% 
     mutate(proportion = pstv / examnd) %>% 
     ggplot(aes(year_start, proportion)) +
@@ -47,7 +47,7 @@ kenya_pr %>%
 # ggplot2::map_data("world") %>% tibble() %>% filter(region == "Kenya")
 kenya_pr %>% 
     # %/% truncates the last digit  
-    mutate(decade = 10 * (year_start %/% 10)) %>% 
+    mutate(decade_alter = 10 * (year_start %/% 10)) %>% 
     # niiiice! This will show the highest pr´s on top of the graph
     # this will arrange from lowest to highest and plot highest last
     arrange(pr) %>% 
@@ -58,7 +58,7 @@ kenya_pr %>%
                           high = "red", 
                           midpoint = .5,
                           labels = percent_format()) +
-    facet_wrap(~ decade) +
+    facet_wrap(~ decade_alter) +
     theme_void() +
     coord_map() +
     # changes the name of the legend
@@ -104,6 +104,10 @@ malaria_spread %>%
     # only what we have in malaria_spread, not the entire world in right_join
     inner_join(world, by = c(mapname = "region")) %>% 
     ggplot(aes(long, lat, group = group, fill = Y2015)) +
+    scale_fill_gradient2(low = "blue", 
+                          high = "red", 
+                          midpoint = .20,
+                          labels = percent_format()) +
     geom_polygon() +
     theme_void()
 ```
