@@ -94,7 +94,8 @@ malaria_spread %>%
 35:00
 
 ```{r}
-malaria_spread %>% 
+malaria_in_process %>% 
+    filter(year %in% c(2005, 2010, 2015)) %>% 
     inner_join(maps::iso3166 %>% 
                    # do we keep only mapname here
                    select(a3, mapname), by = c(code = "a3")) %>% 
@@ -103,12 +104,14 @@ malaria_spread %>%
     # right_join(world, by = c(mapname = "region")) %>% 
     # only what we have in malaria_spread, not the entire world in right_join
     inner_join(world, by = c(mapname = "region")) %>% 
-    ggplot(aes(long, lat, group = group, fill = Y2015)) +
+    ggplot(aes(long, lat, group = group, fill = incidence)) +
+    geom_polygon() +
     scale_fill_gradient2(low = "blue", 
                           high = "red", 
                           midpoint = .20,
                           labels = percent_format()) +
-    geom_polygon() +
+    coord_map() +
+    facet_wrap(~ year) +
     theme_void()
 ```
 
