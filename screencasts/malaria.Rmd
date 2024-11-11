@@ -95,7 +95,8 @@ malaria_spread %>%
 
 ```{r}
 malaria_in_process %>% 
-    filter(year %in% c(2005, 2010, 2015)) %>% 
+    filter(incidence < 1) %>% 
+    filter(year %in% c(2005, 2010, 2015, 2020)) %>% 
     inner_join(maps::iso3166 %>% 
                    # do we keep only mapname here
                    select(a3, mapname), by = c(code = "a3")) %>% 
@@ -117,5 +118,31 @@ malaria_in_process %>%
 
 ```{r}
 # WHERE IS MY R MOJO!!!
+```
+
+45:00 Malaria deaths over time
+
+```{r}
+# get parasite rate
+kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
+    filter(!is.na(pr))
+
+# 25:45
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+
+# 27:00
+malaria_in_process <- malaria_inc %>% 
+    setNames(c("country", "code", "year", "incidence")) %>% 
+    mutate(incidence = incidence / 1000)
+
+malaria_spread <- malaria_in_process %>%  
+    filter(year %in% c(2005, 2010, 2015)) %>% 
+    mutate(year = paste0("Y", year)) %>% 
+    filter(country != "Turkey",
+           !is.na(code)) %>% 
+    spread(year, incidence)
+
+world <- map_data("world") %>% 
+    filter(region != "Antarctica")
 ```
 
