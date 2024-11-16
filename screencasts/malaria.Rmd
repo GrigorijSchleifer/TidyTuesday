@@ -14,12 +14,16 @@ kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"
     filter(!is.na(pr))
 
 # 25:45
-malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
+malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_inc.csv")
+malaria_deaths <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
 
 # 27:00
 malaria_in_process <- malaria_inc %>% 
     setNames(c("country", "code", "year", "incidence")) %>% 
     mutate(incidence = incidence / 1000)
+
+malaria_deaths_processed <- malaria_deaths %>% 
+    setNames(c("country", "code", "year", "deaths"))
 
 malaria_spread <- malaria_in_process %>%  
     filter(year %in% c(2005, 2010, 2015)) %>% 
@@ -75,6 +79,14 @@ malaria_in_process %>%
     # filter(country %in% sample(unique(country), 6)) %>%
     filter(country %in%  sample(unique(country), 6)) %>% 
     ggplot(aes(year, incidence, color = country)) +
+    geom_line() +
+    scale_y_continuous(labels = scales::percent_format())
+
+malaria_deaths_processed %>% 
+    # grabbing 6 unique countries
+    # filter(country %in% sample(unique(country), 6)) %>%
+    filter(country %in%  sample(unique(country), 6)) %>% 
+    ggplot(aes(year, deaths, color = country)) +
     geom_line() +
     scale_y_continuous(labels = scales::percent_format())
 ```
