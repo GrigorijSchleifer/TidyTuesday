@@ -2,6 +2,7 @@
 library(malariaAtlas)
 library(tidyverse)
 library(scales)
+library(fuzzyjoin)
 theme_set(theme_classic())
 ```
 
@@ -87,8 +88,7 @@ malaria_deaths_processed %>%
     # filter(country %in% sample(unique(country), 6)) %>%
     filter(country %in%  sample(unique(country), 6)) %>% 
     ggplot(aes(year, deaths, color = country)) +
-    geom_line() +
-    scale_y_continuous(labels = scales::percent_format())
+    geom_line()
 ```
 
 
@@ -156,5 +156,33 @@ malaria_spread <- malaria_in_process %>%
 
 world <- map_data("world") %>% 
     filter(region != "Antarctica")
+```
+
+48:00
+
+```{r}
+malaria_country_data <- malaria_deaths_processed %>% 
+    # filter(year %% 10 == 0 & year == 2000) %>% 
+    inner_join(maps::iso3166 %>% 
+                   # do we keep only mapname here
+                   select(a3, mapname), by = c(code = "a3"))
+
+map_data("world") %>% 
+    filter(region != "Antarctica") %>% 
+    regex_inner_join()
+
+    # this will keep all regions
+    # keeps all observations in y
+    # right_join(world, by = c(mapname = "region")) %>% 
+    # only what we have in malaria_spread, not the entire world in right_join
+    inner_join(world, by = c(mapname = "region")) %>% 
+    ggplot(aes(long, lat, group = group, fill = deaths)) +
+    geom_polygon() +
+    scale_fill_gradient2(low = "blue", 
+                         high = "red", 
+                         midpoint = 100) +
+    facet_wrap(~ year) +
+    theme_void()
+
 ```
 
