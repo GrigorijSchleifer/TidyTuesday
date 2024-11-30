@@ -35,6 +35,12 @@ malaria_spread <- malaria_in_process %>%
 
 world <- map_data("world") %>% 
     filter(region != "Antarctica")
+
+malaria_map_data <- map_data("world") %>% 
+    filter(region != "Antarctica") %>% 
+    tbl_df() %>% 
+    inner_join(malaria_country_data, by = c(region = "mapname")) %>% 
+    filter(year %in% c(2000, 2005, 2010))
 ```
 
 ```{r}
@@ -139,8 +145,6 @@ malaria_in_process %>%
 kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
     filter(!is.na(pr))
 
-# 25:45
-malaria_inc <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths.csv")
 
 # 27:00
 malaria_in_process <- malaria_inc %>% 
@@ -168,22 +172,31 @@ malaria_country_data <- malaria_deaths_processed %>%
                    select(a3, mapname), by = c(code = "a3")) %>% 
     mutate(mapname = str_remove(mapname, "\\(.*"))
 
+# this will keep all regions
+# keeps all observations in y
+# right_join(world, by = c(mapname = "region")) %>% 
+# only what we have in malaria_spread, not the entire world in right_join
 map_data("world") %>% 
     filter(region != "Antarctica") %>% 
     tbl_df() %>% 
-    regex_inner_join(malaria_country_data, by = c(region = "mapname")) %>% 
-    # this will keep all regions
-    # keeps all observations in y
-    # right_join(world, by = c(mapname = "region")) %>% 
-    # only what we have in malaria_spread, not the entire world in right_join
-    inner_join(world, by = c(mapname = "region")) %>% 
+    inner_join(malaria_country_data, by = c(region = "mapname")) %>% 
     ggplot(aes(long, lat, group = group, fill = deaths)) +
     geom_polygon() +
     scale_fill_gradient2(low = "blue", 
                          high = "red", 
                          midpoint = 100) +
-    facet_wrap(~ year) +
     theme_void()
+```
 
+```{r}
+library(gganimate)
+
+malaria_map_data %>%  
+    ggplot(aes(long, lat, group = group, fill = deaths)) +
+    geom_polygon() +
+    scale_fill_gradient2(low = "blue", 
+                         high = "red", 
+                         midpoint = 100) +
+    theme_void()
 ```
 
