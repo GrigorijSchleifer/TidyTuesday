@@ -4,12 +4,7 @@ library(tidyverse)
 library(scales)
 library(fuzzyjoin)
 theme_set(theme_classic())
-```
 
-
-# go go
-
-```{r}
 # get parasite rate
 kenya_pr <- tibble::as_tibble((malariaAtlas::getPR(ISO = "KEN", species = "BOTH"))) %>% 
     filter(!is.na(pr))
@@ -35,6 +30,13 @@ malaria_spread <- malaria_in_process %>%
 
 world <- map_data("world") %>% 
     filter(region != "Antarctica")
+
+malaria_country_data <- malaria_deaths_processed %>% 
+    # filter(year %% 10 == 0 & year == 2000) %>% 
+    inner_join(maps::iso3166 %>% 
+                   # do we keep only mapname here
+                   select(a3, mapname), by = c(code = "a3")) %>% 
+    mutate(mapname = str_remove(mapname, "\\(.*"))
 
 malaria_map_data <- map_data("world") %>% 
     filter(region != "Antarctica") %>% 
@@ -165,12 +167,6 @@ world <- map_data("world") %>%
 48:00
 
 ```{r}
-malaria_country_data <- malaria_deaths_processed %>% 
-    # filter(year %% 10 == 0 & year == 2000) %>% 
-    inner_join(maps::iso3166 %>% 
-                   # do we keep only mapname here
-                   select(a3, mapname), by = c(code = "a3")) %>% 
-    mutate(mapname = str_remove(mapname, "\\(.*"))
 
 # this will keep all regions
 # keeps all observations in y
@@ -192,11 +188,14 @@ map_data("world") %>%
 library(gganimate)
 
 malaria_map_data %>%  
+    # every second year
+    filter(year %% 2 == 0) %>% 
     ggplot(aes(long, lat, group = group, fill = deaths)) +
     geom_polygon() +
     scale_fill_gradient2(low = "blue", 
                          high = "red", 
                          midpoint = 100) +
-    theme_void()
+    theme_void() +
+    transition_time(year)
 ```
 
