@@ -192,10 +192,10 @@ malaria_map_data %>%
     filter(year %% 2 == 0) %>% 
     ggplot(aes(long, lat, group = group, fill = deaths)) +
     geom_polygon() +
+    theme_void() +
     scale_fill_gradient2(low = "blue", 
                          high = "red", 
                          midpoint = 100) +
-    theme_void() +
-    transition_time(year)
+    transition_manual(year)
 ```
 
