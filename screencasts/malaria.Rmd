@@ -3,6 +3,8 @@ library(malariaAtlas)
 library(tidyverse)
 library(scales)
 library(fuzzyjoin)
+library(gganimate)
+library(countrycode)
 theme_set(theme_classic())
 
 # get parasite rate
@@ -185,17 +187,18 @@ map_data("world") %>%
 ```
 
 ```{r}
-library(gganimate)
-
 malaria_map_data %>%  
+    mutate(continent = countrycode(code, "iso3c", "continent")) %>% 
+    filter(continent == "Africa") %>% 
     # every second year
-    filter(year %% 2 == 0) %>% 
     ggplot(aes(long, lat, group = group, fill = deaths)) +
     geom_polygon() +
-    theme_void() +
     scale_fill_gradient2(low = "blue", 
                          high = "red", 
                          midpoint = 100) +
+    theme_void() +
+    labs(title = "Malaria deaths over time in the world",
+         fill = "Deaths per 100 000") +
     transition_manual(year)
 ```
 
