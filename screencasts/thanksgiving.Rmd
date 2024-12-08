@@ -1,7 +1,20 @@
 ```{r}
-library(malariaAtlas)
 library(tidyverse)
 library(scales)
 theme_set(theme_classic())
+
+thanksgiving_survey <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-20/thanksgiving_meals.csv")
 ```
+
+```{r}
+thanksgiving_survey %>% 
+    count(celebrate)
+
+thanksgiving_survey %>% 
+    count(age) %>% 
+    ggplot(aes(age, n)) +
+    geom_col()
+```
+
+
 
