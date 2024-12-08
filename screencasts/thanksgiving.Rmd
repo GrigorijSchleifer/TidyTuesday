@@ -1,0 +1,7 @@
+```{r}
+library(malariaAtlas)
+library(tidyverse)
+library(scales)
+theme_set(theme_classic())
+```
+
