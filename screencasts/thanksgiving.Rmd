@@ -10,10 +10,9 @@ thanksgiving_survey <- read_csv("https://raw.githubusercontent.com/rfordatascien
 thanksgiving_survey %>% 
     count(celebrate)
 
-thanksgiving_survey %>% 
-    count(age) %>% 
-    ggplot(aes(age, n)) +
-    geom_col()
+thanksgiving_survey %>%
+    count(main_dish, main_prep, sort = TRUE)
+
 ```
 
 
