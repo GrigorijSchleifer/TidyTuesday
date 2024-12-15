@@ -13,8 +13,15 @@ thanksgiving_survey %>%
 # give me some gravy
 thanksgiving_survey %>%
     count(main_dish, main_prep, sort = TRUE)
-
 ```
 
+11:00 Income
+
+```{r}
+thanksgiving_survey %>% 
+    filter(cranberry %in% c("Homemade", "Canned")) %>% 
+    group_by(family_income) %>% 
+    summarize(homemade = mean(cranberry == "Homemade"))
+```
 
 
