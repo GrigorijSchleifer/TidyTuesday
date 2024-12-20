@@ -19,9 +19,14 @@ thanksgiving_survey %>%
 
 ```{r}
 thanksgiving_survey %>% 
+    mutate(family_income = parse_number(family_income)) %>% 
     filter(cranberry %in% c("Homemade", "Canned")) %>% 
     group_by(family_income) %>% 
-    summarize(homemade = mean(cranberry == "Homemade"))
+    summarize(homemade = mean(cranberry == "Homemade"),
+              size = n()) %>% 
+    ggplot(aes(family_income, homemade, group = 1)) +
+    geom_line() +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
 
