@@ -22,11 +22,16 @@ thanksgiving_survey %>%
     mutate(family_income = parse_number(family_income)) %>% 
     filter(cranberry %in% c("Homemade", "Canned")) %>% 
     group_by(family_income) %>% 
-    summarize(homemade = mean(cranberry == "Homemade"),
-              size = n()) %>% 
-    ggplot(aes(family_income, homemade, group = 1)) +
+    summarize(homemade = sum(cranberry == "Homemade"),
+              total = n(),
+              low = qbeta(0.025, homemade + .5, total - homemade + .5),
+              high = qbeta(0.975, homemade + .5, total - homemade + .5)) %>% 
+    ggplot(aes(family_income, homemade / total, group = 1)) +
     geom_line() +
+    geom_ribbon(aes(ymin = low, ymax = high), alpha = .2) + 
+    scale_y_continuous(labels = scales::percent_format()) +
+    geom_smooth() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
-```
+ ```
 
 
