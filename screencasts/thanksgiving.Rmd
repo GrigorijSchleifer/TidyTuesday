@@ -33,5 +33,24 @@ thanksgiving_survey %>%
     geom_smooth() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
  ```
+```
+
+20:00 Celebrate
+
+```{r}
+thanksgiving_survey %>% 
+    group_by(family_income) %>% 
+    summarize(celebrate = sum(celebrate == "Yes"),
+              total = n(),
+              low = qbeta(0.025, celebrate + .5, total - celebrate + .5),
+              high = qbeta(0.975, celebrate + .5, total - celebrate + .5)) %>% 
+    ggplot(aes(family_income, celebrate / total, group = 1)) +
+    geom_line() +
+    geom_ribbon(aes(ymin = low, ymax = high), alpha = .2) + 
+    scale_y_continuous(labels = scales::percent_format()) +
+    geom_smooth() +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+````
+
 
 
