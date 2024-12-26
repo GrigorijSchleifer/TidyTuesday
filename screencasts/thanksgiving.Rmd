@@ -53,4 +53,13 @@ thanksgiving_survey %>%
 ````
 
 
+```{r}
+thanksgiving_survey %>% 
+    select(id, starts_with("side"),
+           starts_with("pie"),
+           starts_with("dessert")) %>% 
+    gather(type, value, -id) %>% 
+    filter(!is.na(value)) %>% 
+    mutate(type = str_remove(type, "\\d+"))
+```
 
