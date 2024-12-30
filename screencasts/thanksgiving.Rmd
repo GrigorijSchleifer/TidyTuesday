@@ -50,11 +50,11 @@ thanksgiving_survey %>%
     scale_y_continuous(labels = scales::percent_format()) +
     geom_smooth() +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
-````
+```
 
 
 ```{r}
-thanksgiving_survey %>% 
+food_gathered <- thanksgiving_survey %>% 
     select(id, starts_with("side"),
            starts_with("pie"),
            starts_with("dessert")) %>% 
