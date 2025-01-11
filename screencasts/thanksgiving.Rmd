@@ -52,14 +52,23 @@ thanksgiving_survey %>%
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
+23:00
 
 ```{r}
 food_gathered <- thanksgiving_survey %>% 
     select(id, starts_with("side"),
            starts_with("pie"),
            starts_with("dessert")) %>% 
+    select(-side15, -pie13, -dessert12) %>% 
     gather(type, value, -id) %>% 
-    filter(!is.na(value)) %>% 
+    filter(!is.na(value),
+           !value %in% c("None", "Other (please specify)")) %>% 
     mutate(type = str_remove(type, "\\d+"))
 ```
+
+```{r}
+food_gathered %>% 
+    count(type, value, sort = TRUE)
+```
+
 
