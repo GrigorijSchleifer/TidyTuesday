@@ -66,9 +66,29 @@ food_gathered <- thanksgiving_survey %>%
     mutate(type = str_remove(type, "\\d+"))
 ```
 
+28:00
+
 ```{r}
 food_gathered %>% 
-    count(type, value, sort = TRUE)
+    count(type, value, sort = TRUE) %>% 
+    mutate(value = fct_reorder(value, n)) %>% 
+    ggplot(aes(value, n, fill = type)) +
+    geom_col(show.legend = FALSE) +
+    coord_flip() +
+    facet_wrap(~type, ncol = 1, scales = "free_y")
 ```
 
+36:00 - Food by size of country
+
+```{r}
+food_gathered %>% 
+    inner_join(thanksgiving_survey, by = "id") %>% 
+    group_by(us_region) %>% 
+    mutate(respondents = n_distinct(id)) %>% 
+    count(us_region, respondents, type, value) %>% 
+    ungroup() %>% 
+    mutate(percent = n / respondents)
+    
+    
+```
 
