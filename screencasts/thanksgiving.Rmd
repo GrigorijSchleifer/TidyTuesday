@@ -4,6 +4,25 @@ library(scales)
 theme_set(theme_classic())
 
 thanksgiving_survey <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-20/thanksgiving_meals.csv")
+
+food_gathered <- thanksgiving_survey %>% 
+    select(id, starts_with("side"),
+           starts_with("pie"),
+           starts_with("dessert")) %>% 
+    select(-side15, -pie13, -dessert12) %>% 
+    gather(type, value, -id) %>% 
+    filter(!is.na(value),
+           !value %in% c("None", "Other (please specify)")) %>% 
+    mutate(type = str_remove(type, "\\d+"))
+
+
+food_by_region <- food_gathered %>% 
+    inner_join(thanksgiving_survey, by = "id") %>% 
+    group_by(us_region) %>% 
+    mutate(respondents = n_distinct(id)) %>% 
+    count(us_region, respondents, type, value) %>% 
+    ungroup() %>% 
+    mutate(percent = n / respondents)
 ```
 
 ```{r}
@@ -81,7 +100,7 @@ food_gathered %>%
 36:00 - Food by size of country
 
 ```{r}
-food_gathered %>% 
+food_by_region <- food_gathered %>% 
     inner_join(thanksgiving_survey, by = "id") %>% 
     group_by(us_region) %>% 
     mutate(respondents = n_distinct(id)) %>% 
@@ -90,5 +109,29 @@ food_gathered %>%
     mutate(percent = n / respondents)
     
     
+```
+
+41:00
+
+```{r}
+food_gathered %>% 
+    inner_join(thanksgiving_survey, by = "id") %>%
+    filter(!is.na(prayer)) %>% 
+    group_by(type, value) %>% 
+    summarise(prayer = sum(prayer == "Yes"),
+              total = n(),
+              percent = prayer / total) %>% 
+    arrange(desc(percent))
+```
+
+45:00 What sides are eaten together
+
+```{r}
+library(widyr)
+
+food_gathered %>% 
+    pairwise_cor(value, id, sort = TRUE)
+
+
 ```
 
