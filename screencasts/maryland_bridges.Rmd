@@ -1,0 +1,6 @@
+```{r}
+library(tidyverse)
+
+baltimore_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-27/baltimore_bridges.csv")
+```
+
