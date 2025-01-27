@@ -1,6 +1,37 @@
 ```{r}
 library(tidyverse)
+library(scales)
+theme_set(theme_light())
 
-baltimore_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-27/baltimore_bridges.csv")
+maryland_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-27/baltimore_bridges.csv")
+
+maryland_bridges <- maryland_bridges %>% 
+    mutate(inspection_yr = inspection_yr + 2000,
+           decade = 10 * (yr_built %/% 10))
+```
+
+09:00
+
+```{r}
+maryland_bridges %>% 
+    count(decade = 10 * (yr_built %/% 10), sort = TRUE) %>% 
+    ggplot(aes(decade, n)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    labs(y = "Number of bridges per decade")
+```
+
+11:00 How did condition of the bridges changed over time
+
+```{r}
+maryland_bridges %>% 
+    filter(yr_built >= 1900) %>% 
+    group_by(decade) %>% 
+    summarise(pct_good = mean(bridge_condition == "Good"),
+              total = n()) %>% 
+    ggplot(aes(decade, pct_good)) +
+    geom_line() +
+    scale_y_continuous(labels = percent_format()) +
+    expand_limits(y = 0)
 ```
 
