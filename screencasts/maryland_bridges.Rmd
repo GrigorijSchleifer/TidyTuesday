@@ -35,3 +35,52 @@ maryland_bridges %>%
     expand_limits(y = 0)
 ```
 
+20:00
+
+```{r}
+maryland_bridges %>% 
+    replace_na(list(responsibility = "Other")) %>% 
+    count(responsibility = fct_lump(responsibility, 4), sort = TRUE) %>% 
+    mutate(responsibility = fct_reorder(responsibility, n)) %>% 
+    ggplot(aes(responsibility, n)) +
+    geom_col() +
+    coord_flip()
+```
+
+22:00
+
+```{r}
+maryland_bridges %>% 
+    filter(yr_built >= 1900) %>% 
+    group_by(responsibility = fct_lump(responsibility, 4),
+             decade)  %>%
+    summarise(pct_good = mean(bridge_condition == "Good"),
+              total = n()) %>% 
+    filter(responsibility != "Other") %>% 
+    ggplot(aes(decade, pct_good, color = responsibility)) +
+    geom_line() +
+    scale_y_continuous(labels = percent_format()) +
+    expand_limits(y = 0) +
+    labs(y = "% of bridges rated Good")
+```
+
+29:00
+
+```{r}
+maryland_bridges %>% 
+    ggplot(aes(avg_daily_traffic)) +
+    geom_histogram() +
+    scale_x_log10(labels = comma_format())
+```
+
+30:00 Crazy cut function!
+
+```{r}
+maryland_bridges %>% 
+    filter(yr_built >= 1990) %>% 
+    group_by(traffic_category = cut(avg_daily_traffic, c(0, 1000, 10000, Inf),
+                                    labels = c("<1000", "1000 - 10.000", "10.000+"))) %>% 
+    summarise(pct_good = mean(bridge_condition == "Good"),
+              total = n())
+```
+
