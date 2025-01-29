@@ -7,7 +7,9 @@ maryland_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/
 
 maryland_bridges <- maryland_bridges %>% 
     mutate(inspection_yr = inspection_yr + 2000,
-           decade = 10 * (yr_built %/% 10))
+           decade = 10 * (yr_built %/% 10),
+           responsibility = fct_lump(responsibility, 4)) %>% 
+    replace_na(list(responsibility = "Other")) 
 ```
 
 09:00
@@ -52,8 +54,7 @@ maryland_bridges %>%
 ```{r}
 maryland_bridges %>% 
     filter(yr_built >= 1900) %>% 
-    group_by(responsibility = fct_lump(responsibility, 4),
-             decade)  %>%
+    group_by(responsibility, decade)  %>%
     summarise(pct_good = mean(bridge_condition == "Good"),
               total = n()) %>% 
     filter(responsibility != "Other") %>% 
@@ -82,5 +83,16 @@ maryland_bridges %>%
                                     labels = c("<1000", "1000 - 10.000", "10.000+"))) %>% 
     summarise(pct_good = mean(bridge_condition == "Good"),
               total = n())
+```
+
+34:00
+
+```{r}
+maryland_bridges %>% 
+    ggplot(aes(long, lat, color = responsibility)) +
+    borders("state", regions = "Maryland") +
+    geom_point() +
+    coord_map() +
+    theme_void()
 ```
 
