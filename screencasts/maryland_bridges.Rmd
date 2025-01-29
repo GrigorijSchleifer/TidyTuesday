@@ -1,6 +1,8 @@
 ```{r}
 library(tidyverse)
 library(scales)
+library(broom)
+
 theme_set(theme_light())
 
 maryland_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-27/baltimore_bridges.csv")
@@ -8,7 +10,8 @@ maryland_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/
 maryland_bridges <- maryland_bridges %>% 
     mutate(inspection_yr = inspection_yr + 2000,
            decade = 10 * (yr_built %/% 10),
-           responsibility = fct_lump(responsibility, 4)) %>% 
+           responsibility = fct_lump(responsibility, 4),#
+           county = str_to_title(county)) %>% 
     replace_na(list(responsibility = "Other")) 
 ```
 
@@ -33,6 +36,7 @@ maryland_bridges %>%
               total = n()) %>% 
     ggplot(aes(decade, pct_good)) +
     geom_line() +
+    geom_smooth(method = "lm") +
     scale_y_continuous(labels = percent_format()) +
     expand_limits(y = 0)
 ```
@@ -91,8 +95,58 @@ maryland_bridges %>%
 maryland_bridges %>% 
     ggplot(aes(long, lat, color = responsibility)) +
     borders("state", regions = "Maryland") +
-    geom_point() +
+    geom_point(size = 0.5) +
     coord_map() +
     theme_void()
+```
+
+38:00
+
+```{r}
+maryland_bridges %>% 
+    ggplot(aes(long, lat, color = avg_daily_traffic)) +
+    borders("state", regions = "Maryland") +
+    geom_point() +
+    scale_color_gradient2(low = "blue",
+                          high = "red",
+                          midpoint = log10(median(maryland_bridges$avg_daily_traffic)),
+                          trans = "log10",
+                          labels = comma_format()) +
+    coord_map() +
+    theme_void()
+```
+
+45:00
+
+```{r}
+maryland_bridges %>% 
+    filter(yr_built >= 1900) %>% 
+    group_by(county, decade)  %>%
+    summarise(pct_good = mean(bridge_condition == "Good"),
+              total = n()) %>% 
+    arrange(county, decade) %>% 
+    ggplot(aes(decade, pct_good, color = county)) +
+    geom_line() +
+    scale_y_continuous(labels = percent_format()) +
+    expand_limits(y = 0) +
+    labs(y = "% of bridges rated Good")
+```
+
+48:00
+
+```{r}
+# linear model is bad here!
+# bridge condition in not linear over time at oll
+model <- maryland_bridges %>% 
+    mutate(good = bridge_condition == "Good") %>% 
+    glm(good ~ yr_built, data = .)
+```
+
+51:00
+
+```{r}
+augment(model, maryland_bridges) %>% 
+    ggplot(aes(yr_built, .fitted)) +
+    geom_line()
 ```
 
