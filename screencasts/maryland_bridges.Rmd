@@ -2,12 +2,14 @@
 library(tidyverse)
 library(scales)
 library(broom)
+library(splines)
 
 theme_set(theme_light())
 
 maryland_bridges <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-11-27/baltimore_bridges.csv")
 
 maryland_bridges <- maryland_bridges %>% 
+    filter(yr_built >= 1900) %>% 
     mutate(inspection_yr = inspection_yr + 2000,
            decade = 10 * (yr_built %/% 10),
            responsibility = fct_lump(responsibility, 4),#
@@ -30,7 +32,6 @@ maryland_bridges %>%
 
 ```{r}
 maryland_bridges %>% 
-    filter(yr_built >= 1900) %>% 
     group_by(decade) %>% 
     summarise(pct_good = mean(bridge_condition == "Good"),
               total = n()) %>% 
@@ -57,7 +58,6 @@ maryland_bridges %>%
 
 ```{r}
 maryland_bridges %>% 
-    filter(yr_built >= 1900) %>% 
     group_by(responsibility, decade)  %>%
     summarise(pct_good = mean(bridge_condition == "Good"),
               total = n()) %>% 
@@ -82,7 +82,6 @@ maryland_bridges %>%
 
 ```{r}
 maryland_bridges %>% 
-    filter(yr_built >= 1990) %>% 
     group_by(traffic_category = cut(avg_daily_traffic, c(0, 1000, 10000, Inf),
                                     labels = c("<1000", "1000 - 10.000", "10.000+"))) %>% 
     summarise(pct_good = mean(bridge_condition == "Good"),
@@ -120,7 +119,6 @@ maryland_bridges %>%
 
 ```{r}
 maryland_bridges %>% 
-    filter(yr_built >= 1900) %>% 
     group_by(county, decade)  %>%
     summarise(pct_good = mean(bridge_condition == "Good"),
               total = n()) %>% 
@@ -138,16 +136,34 @@ maryland_bridges %>%
 # linear model is bad here!
 # bridge condition in not linear over time at oll
 # need a logistic model!!!!!!!!!!!
+# will fit a sigmoidal curve, shape is always the same!
 model <- maryland_bridges %>% 
     mutate(good = bridge_condition == "Good") %>% 
-    glm(good ~ yr_built, data = ., family = "binomial")
+    glm(good ~ ns(yr_built, 4) + responsibility + county, data = ., family = "binomial")
 ```
 
 51:00
 
 ```{r}
 augment(model, maryland_bridges, type.predict = "response") %>% 
-    ggplot(aes(yr_built, .fitted)) +
-    geom_line()
+    ggplot(aes(yr_built, .fitted, color = responsibility)) +
+    geom_line() +
+    expand_limits(y = 0) +
+    facet_wrap(~ county) +
+    scale_y_continuous(labels = percent_format()) +
+    labs(y = "Predicted probability of a bridge being GOOD")
+```
+
+1:02:00
+
+```{r}
+# coefficient plot
+model %>% 
+    tidy() %>% 
+    filter(str_detect(term, "responsibility|county")) %>% 
+    mutate(term = fct_reorder(term, estimate)) %>% 
+    ggplot(aes(estimate, term)) +
+    geom_point() +
+    geom_vline(xintercept = 0, color = "red", lty = 2)
 ```
 
