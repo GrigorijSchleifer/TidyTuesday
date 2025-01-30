@@ -137,15 +137,16 @@ maryland_bridges %>%
 ```{r}
 # linear model is bad here!
 # bridge condition in not linear over time at oll
+# need a logistic model!!!!!!!!!!!
 model <- maryland_bridges %>% 
     mutate(good = bridge_condition == "Good") %>% 
-    glm(good ~ yr_built, data = .)
+    glm(good ~ yr_built, data = ., family = "binomial")
 ```
 
 51:00
 
 ```{r}
-augment(model, maryland_bridges) %>% 
+augment(model, maryland_bridges, type.predict = "response") %>% 
     ggplot(aes(yr_built, .fitted)) +
     geom_line()
 ```
