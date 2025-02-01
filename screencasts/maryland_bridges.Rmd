@@ -159,11 +159,12 @@ augment(model, maryland_bridges, type.predict = "response") %>%
 ```{r}
 # coefficient plot
 model %>% 
-    tidy() %>% 
+    tidy(conf.int = TRUE) %>% 
     filter(str_detect(term, "responsibility|county")) %>% 
     mutate(term = fct_reorder(term, estimate)) %>% 
     ggplot(aes(estimate, term)) +
     geom_point() +
+    geom_errorbarh(aes(xmin = conf.low, xmax = conf.high)) +
     geom_vline(xintercept = 0, color = "red", lty = 2)
 ```
 
