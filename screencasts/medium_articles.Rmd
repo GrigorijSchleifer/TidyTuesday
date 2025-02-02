@@ -1,0 +1,11 @@
+```{r}
+library(tidyverse)
+
+medium_diatasci <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2018/2018-12-04/medium_datasci.csv")
+```
+
+```{r}
+medium_datasci
+```
+
+
