@@ -10,3 +10,14 @@ medium_datasci %>%
 ```
 
 
+```{r}
+list_count <- list()
+vector_count <- c()
+
+for (count in 1:10) {
+    list_count[[count]] <- mtcars$hp
+}
+
+
+```
+
