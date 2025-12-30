@@ -1,0 +1,26 @@
+---
+title: "Stats_With_R"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r T-Test}
+# creating a sample data set, patients will have a mean RR of 160 mmHg and a SD of 10 mmHg
+sample_data <- data.frame(id = 1:100,
+                          bp = rnorm(n = 100, mean = 140, sd = 10))
+
+# the blood pressure of the sample_data group is statistially higher than 120 mmHg
+# To see such a big difference is highly unlikley by chance would have a p-value < 2.2e-16
+t.test(x = sample_data$bp, mu = 120)
+
+sample_data %>% 
+    ggplot(aes(x = bp, after_stat(density))) +
+    geom_histogram(binwidth = 1) +
+    theme_bw() +
+    geom_density(color = "orange") + 
+    geom_vline(xintercept = 120, linewidth = 1.5)
+```
+
