@@ -16,7 +16,7 @@ ui <- page_sidebar(
 )
 
 server <- function(input, output) {
-    output$distPlot <- renderPlot({
+    output$distPlot<- renderPlot({
         x    <- faithful$waiting
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
         

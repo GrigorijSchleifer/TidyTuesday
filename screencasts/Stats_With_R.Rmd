@@ -22,5 +22,14 @@ sample_data %>%
     theme_bw() +
     geom_density(color = "orange") + 
     geom_vline(xintercept = 120, linewidth = 1.5)
+
+sample_A <- sample_data %>% 
+    filter(id %in% 1:50)
+
+sample_B <- sample_data %>% 
+    filter(id %in% 51:100) %>% 
+    mutate(bp = bp - 10)
+
+t.test(x = sample_A$bp, y = sample_B$bp)
 ```
 
