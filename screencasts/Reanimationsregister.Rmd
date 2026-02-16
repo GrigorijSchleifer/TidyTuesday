@@ -1,12 +1,14 @@
 ```{r}
 library(tidyverse)
+library(janitor)
 library(scales)
 library(lubridate)
 library(countrycode)
 
 theme_set(theme_light())
 
-r_downloads_year <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-30/r_downloads_year.csv")
+RD_year_2023 <- read_csv2("~/Desktop/gab_2023_rettungsdiensteinsaetze.csv", 
+                         locale = locale(encoding = "latin1"))
 
 # package downloads (50:00)
 package_downloads <- read_csv("http://cran-logs.rstudio.com/2024/2024-08-22.csv.gz")
