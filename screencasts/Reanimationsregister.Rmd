@@ -24,6 +24,7 @@ r_downloads_year <- r_downloads_year %>%
 5:00 Look at downloads over time
 
 ```{r}
+
 r_downloads_year %>% 
     count(date) %>% 
     ggplot(aes(date, n)) +
