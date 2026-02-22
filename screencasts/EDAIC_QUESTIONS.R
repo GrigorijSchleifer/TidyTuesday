@@ -4,7 +4,16 @@ run <- function() {
     # 1. Define the question sets
     soe_list <- list(
         # anatomy & physiology
-        soe_1 = c(
+        anatomy_physics = c(
+            "Tell me how oxygen is carried in blood.",
+            "What is the structure of haemoglobin (Hb)?",
+            "How does foetal Hb differ from adult Hb?",
+            "What is 2,3-DPG?",
+            "How does the saturation of Hb occur?",
+            "What is the oxygen dissociation curve (ODC)?",
+            "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
+            "What is the Bohr effect?",
+            "What is the Haldane effect?",
             "Please draw and explain the oxyhemoglobin dissociation curve",
             "What are the effects of altitude on the body?",
             "What conditions shift this curve to the right and to the left?",
@@ -37,17 +46,196 @@ run <- function() {
             "What is compliance?",
             "What is hysteresis?",
             "Please draw the following Flow-Volume Curves",
-            "What is Transfer factor?"
-            ),
-        soe_2 = c(
-            "What are the circumventricular organs and what is their function?",
-            "What are the main functions of the hypothalamus?"),
-        soe_3 = c(
+            "What is Transfer factor?",
+            "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
+            "What functions does the CSF fulfil?",
+            "Please explain the mechanism behind the CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine).",
+            "What is cerebral perfusion pressure?",
+            "What is the blood-brain barrier?",
             "Why does the anaesthetist have to consider the blood-brain barrier when choosing anaesthetic drugs?",
-            "How can the body compensate for the increased ventilation and perfusion during physical activity?"),
-        soe_4 = c(
-            "What is the Bohr effect?",
-            "What is the Haldane effect?")
+            "What are the circumventricular organs and what is their function?",
+            "What are the main functions of the hypothalamus?",
+            "Please describe the relationship between ventilation and perfusion in different parts of the lungs.",
+            "What is a pulmonary shunt and under which clinical conditions does shunt occur?",
+            "What is dead space and what types of dead space are there?",
+            "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
+            "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
+            "How can the body compensate for the increased ventilation and perfusion during physical activity?",
+            "What is hypoxic pulmonary vasoconstriction?",
+            "Please describe the physiological functions of the kidneys.",
+            "Please describe the three mechanisms involved in urine production",
+            "What is glomerular filtration rate?",
+            "What is renal clearance?",
+            "How can it be measured?",
+            "What is autoregulation of renal blood flow?", 
+            "What are the mechanisms?",
+            "How does the kidney contribute to the regulation of the water balance in the body?",
+            "Please describe the renin-angiotensin-aldosterone system (RAAS).",
+            "How is calcium stored in the body?",
+            "Is calcium mainly an intra- or an extracellular ion?",
+            "What is the normal plasma level of calcium?",
+            "How is calcium represented in plasma?",
+            "What are the functions of calcium in the body?",
+            "How is the metabolism of calcium regulated in the body?",
+            "Tell me about the role of parathyroid hormone in calcium homeostasis.",
+            "What is the role of calcitonin in calcium regulation?",
+            "How is Vitamin D involved in calcium regulation?",
+            "Outline the anatomy of the larynx.",
+            "Name the laryngeal cartilages.",
+            "Describe the anatomy of the thyroid cartilage.",
+            "Outline the anatomy of the cricoid cartilage.",
+            "Outline the anatomy of the epiglottis.",
+            "What are the arytenoid cartilages?",
+            "Briefly describe the anatomy of the cuneiform and corniculate cartilages.",
+            "What different types of ribs are there?",
+            "Describe the anatomy of the first rib.",
+            "What is the clinical relevance of a first rib fracture?",
+            "What is the thoracic inlet?",
+            "What are the boundaries of the thoracic inlet?",
+            "What structures pass through the thoracic inlet?",
+            "Describe the course of the subclavian arteries.",
+            "Describe the anatomy of the subclavian veins.",
+            "What is the ideal location for the tip of a central venous catheter?",
+            "Outline the anatomy of the diaphragm.",
+            "Describe the muscular attachments of the diaphragm.",
+            "What are the main openings in the diaphragm?",
+            "What is the innervation of the diaphragm?",
+            "What is a diaphragmatic hernia?",
+            "Briefly outline the different types of diaphragmatic herniae.",
+            "Describe the general structure of the abdominal wall.",
+            "What muscles are found in the anterolateral abdominal wall?",
+            "Name the muscles of the posterior abdominal wall.",
+            "Outline the nerve supply to the anterolateral abdominal wall.",
+            "What is the thoracolumbar fascia?",
+            "Tell me about the anatomy of the lumbar plexus.",
+            "Describe the anatomy of the femoral nerve.",
+            "What structures are innervated by the femoral nerve?",
+            "What are the borders and contents of the femoral triangle?",
+            "What is the femoral sheath?",
+            "What is the adductor canal?",
+            "Outline the course of the obturator nerve",
+            "What is the lumbosacral trunk?"
+            ),
+        # Pharmacology & Clinical Measurments
+        pharmacology_clinical_measurements = c(
+            "What different groups of local anaesthetics do you know?",
+            "Can you tell me how local anaesthetics work?",
+            "Can you tell me how some of the local anaesthetics vary in their pharmacological and clinical properties and explain why?",
+            "What does protein binding determine?",
+            "What is the significance of the pKa?",
+            "Tell me more about lipid solubility.",
+            "What do you know about local anaesthetic metabolism?",
+            "What can you tell me about additives to local anaesthetics that influence their action?",
+            "Tell me about the different routes of administration of local anaesthetics",
+            "What do you understand by the term ‘differential block’?",
+            "What do you understand by the term ‘agonist’?",
+            "What is an ‘antagonist’?",
+            "You have mentioned two terms: ‘affinity’ and ‘intrinsic activity’. Tell me more about them",
+            "What is the difference between an agonist and an antagonist if they both bind to the same receptor?",
+            "What types of agonists are you aware of?",
+            "Give me some clinical examples of full and partial agonists?",
+            "What is the difference between full and partial agonists?",
+            "What is an inverse agonist?",
+            "How can we graphically compare the efficacy of different agonists?",
+            "What kind of plot is this?",
+            "What is so useful about this plot that could be used to compare two different agonists?",
+            "Tell me what the dose/response curve looks like for a partial agonist.",
+            "What kind of antagonists are there?",
+            "What do you understand by the term competitive antagonist?",
+            "Can the action of competitive antagonists be reversed?",
+            "What about non-competitive antagonists?", 
+            "How do they produce their effects?",
+            "What are the irreversible antagonists?",
+            "What is the difference between an inverse agonist and a competitive antagonist?",
+            "How can general anaesthesia be administered?",
+            "When would you prefer an inhalational versus an intravenous induction?",
+            "What are the features of an ideal inhalational anaesthetic agent?",
+            "What is ‘saturated vapour pressure’ and how is it clinically relevant?",
+            "How do you define the ‘blood:gas partition coefficient’ and how is it clinically relevant?",
+            "What is the ‘oil:gas partition coefficient’ and how is it clinically relevant?",
+            "What do you understand by ‘MAC’ and how is it clinically relevant?",
+            "What factors can increase or decrease MAC?",
+            "Which inhalational anaesthetic agents are currently in clinical use?",
+            "Which two inhalational anaesthetic agents do you use most frequently?",
+            "Compare and contrast the properties of these two agents.",
+            "What is nitrous oxide?",
+            "What are the advantages and disadvantages of using nitrous oxide?",
+            "How can general anaesthesia be administered?",
+            "What are the properties of the ideal intravenous induction agent?",
+            "Which central receptors do the intravenous induction agents act on?",
+            "Which intravenous induction agent do you use most often?",
+            "Why is propofol your preferred option?",
+            "What are the disadvantages of using propofol as an induction agent?",
+            "Can you compare and contrast propofol and thiopental as induction agents?",
+            "What are the advantages and disadvantages of etomidate as an induction agent?",
+            "What are the advantages and disadvantages of ketamine as an induction agent?",
+            "What other intravenous agents can be used to induce general anaesthesia?",
+            "What do you understand by the term ‘muscle relaxant’?",
+            "What types of muscle relaxants are you aware of?",
+            "Tell me about depolarizing muscle relaxants first.",
+            "Describe the side effects of succinylcholine.",
+            "Classify the non-depolarizing muscle relaxants.",
+            "Describe the pharmacology of your preferred muscle relaxant.",
+            "Which drugs are used to reverse the action of muscle relaxants?",
+            "How can the effect of muscle relaxants be monitored?",
+            "What can potentiate or prolong the effects of muscle relaxants?",
+            "What are the indications for using muscle relaxants in anaesthetic practice?",
+            "What are the problems with using muscle relaxants in anaesthetic practice?",
+            "How does the pulse oximeter work?",
+            "Which two particular wavelengths are used and why?",
+            "What do you understand by ‘isobestic point’ and why is it useful?",
+            "Draw a graph representing the different light absorption for deoxygenated and oxygenated haemoglobins.",
+            "What is the Beer–Lambert law and what is the importance of it for pulse oximetry?",
+            "What are potential sources of error, limitations of the technique, and problems in interpreting the results?",
+            "Can you put COHb) and MetHb light absorption on a graph to demonstrate their absorption characteristics?",
+            "What are the methods available for measuring arterial blood pressure?",
+            "Tell me about the different non-invasive methods first.",
+            "What are the key components of non-automatic intermittent non-invasive methods (NIMs)?",
+            "What methods are used to determine flow at systolic and diastolic pressures using NIMs?",
+            "What is the automatic, intermittent non-invasive blood pressure measurement method?",
+            "Tell me about currently available continuous non-invasive blood pressure measurement methods.",
+            "What are the components of an invasive arterial blood pressure measurement system?",
+            "What is the function of a transducer, and how does it work in the system?",
+            "What are the sources of error associated with arterial blood pressure measurement?",
+            "How is resonance important for causing errors in blood pressure measurement?",
+            "Tell me how damping affects the accuracy of blood pressure measurement.",
+            "What methods are available to measure gas concentration in a mixture of gases?",
+            "Explain to me the principle behind the paramagnetic analyser",
+            "What is the theoretical principle of infrared capnometry?",
+            "What do you understand by the Beer–Lambert law?",
+            "Please draw and label a typical capnography trace seen in a spontaneously breathing patient.",
+            "Could you draw a capnography trace representing low cardiac output, oesophageal intubation, and malignant hyperpyrexia?",
+            "What types of capnograph do you know about and what are their advantages and disadvantages?",
+            "What is the principle behind computed tomography (CT)?",
+            "What are the components of the CT scanner?",
+            "What do you understand by the term computed axial tomography (CAT)?",
+            "How is it different from helical scanning?",
+            "How can CT imaging be enhanced?",
+            "What is the mechanism through which enhancement of the CT image occurs?",
+            "Explain how the magnetic resonance imaging (MRI) scanner generates a signal",
+            "What are the components of an MRI scanner?",
+            "What are the problems associated with providing anaesthesia for MRI investigations?",
+            "What methods are available for monitoring muscle relaxation perioperatively?",
+            "What are the main patterns of nerve stimulation used clinically?",
+            "What are the indications for using the single twitch method?",
+            "Describe the characteristics of a train-of-four stimulation.",
+            "What do you understand by the train-of-four ratio?",
+            "What is the main clinical application of the train-of-four ratio?",
+            "How is double burst stimulation different from train-of-four stimulation?",
+            "What is tetanic stimulation?",
+            "What do you understand by post-tetanic count?"
+        ),
+        # Clinicla anesthesia
+        clinical_anaesthesia = c(
+            "How is double burst stimulation different from train-of-four stimulation?",
+            "What is tetanic stimulation?",
+            "What do you understand by post-tetanic count?"
+        ),
+        # Critical care & Emergency medicine
+        icu_emergeny_medicine = c(
+            "cool",
+            "yeee"
+        )
     )
     
     cat("--- Starting Study Session ---\n")
@@ -60,18 +248,18 @@ run <- function() {
             current_set <- soe_list[[i]]
             selected_q <- sample(current_set, size = 1)
             
-            # Print which SOE we are in and the question
-            cat("\n[SECTION", i, "]----------------------------")
-            cat("\nQUESTION: ", selected_q, "\n")
+            # Print the SOE and the question 
+            cat("\nSECTION: [", names(soe_list)[i], "]")
+            cat("\nQUESTION:", selected_q, "\n")
             
             # 4. Wait for user input
-            cat("\nNext? > ")
+            cat("\nNext", "> ")
             usr_input <- readLines(file("stdin"), n = 1)
             
             # Check for quit command
             if (tolower(usr_input) == "q") {
-                cat("\nExiting... Good luck with your exam \n")
-                return() # Exits the entire function and script
+                cat("\nExiting", "Good luck with your exam \n")
+                return() 
             }
         }
         
