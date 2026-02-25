@@ -4,7 +4,7 @@ run <- function() {
     # 1. Define the question sets
     soe_list <- list(
         # anatomy & physiology
-        anatomy_physics = c(
+        anatomy_physics_physiology = c(
             "Tell me how oxygen is carried in blood.",
             "What is the structure of haemoglobin (Hb)?",
             "How does foetal Hb differ from adult Hb?",
@@ -23,6 +23,7 @@ run <- function() {
             "What is critical DO2?",
             "What is the Pasteur point?",
             "What is oxygen extraction ratio?",
+            "Can you tell me the components of the reflex arc?",
             "What are the different types of data?",
             "What are the different measures of central tendency?",
             "How does oxygen content in the blood change with altitude?",
@@ -32,8 +33,11 @@ run <- function() {
             "What assumptions are required for the alveolar gas equation?",
             "How does PaCO2 affect PAO2?",
             "What tells alveolar gas equation about the PiO2 and PAO2 relationship?",
+            "How does CO2 affect ventilation?",
             "How is the alveolar gas equation affected by altitude?",
             "PaO2 in an aircraft with a cabin pressure of 80kPa?",
+            "How does PAO2 affect minute ventilation?",
+            "How does minute ventilation affect PAO2?",
             "How does the respiratory quotient change in COPD?",
             "What is shunt and what categories do you know?",
             "What effect does shunt have?",
@@ -46,11 +50,13 @@ run <- function() {
             "What is compliance?",
             "What is hysteresis?",
             "Please draw the following Flow-Volume Curves",
+            "What is the Bell–Magendie law?",
             "What is Transfer factor?",
             "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
             "What functions does the CSF fulfil?",
             "Please explain the mechanism behind the CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine).",
             "What is cerebral perfusion pressure?",
+            "How does ventilation affect CO2?",
             "What is the blood-brain barrier?",
             "Why does the anaesthetist have to consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What are the circumventricular organs and what is their function?",
@@ -175,6 +181,7 @@ run <- function() {
             "Tell me about depolarizing muscle relaxants first.",
             "Describe the side effects of succinylcholine.",
             "Classify the non-depolarizing muscle relaxants.",
+            "What is compliance?",
             "Describe the pharmacology of your preferred muscle relaxant.",
             "Which drugs are used to reverse the action of muscle relaxants?",
             "How can the effect of muscle relaxants be monitored?",
@@ -269,3 +276,4 @@ run <- function() {
 
 # Execute the function
 run()
+
