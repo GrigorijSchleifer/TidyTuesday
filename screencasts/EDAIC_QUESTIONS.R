@@ -248,12 +248,9 @@ run <- function() {
             "What are the different classes of chemotherapeutic agents?",
             "What are the complication of chemotherapeutic agents on the different organs?"
             
-        ),
-        # Critical care & Emergency medicine
-        icu_emergeny_medicine = c(
-            "cool",
-            "yeee"
         )
+        # Critical care & Emergency medicine
+        # icu_emergeny_medicine = c()
     )
     
     cat("--- Starting Study Session ---\n")
