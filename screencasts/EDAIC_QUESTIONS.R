@@ -14,7 +14,9 @@ run <- function() {
             "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
             "What is the Bohr effect?",
             "What is the Haldane effect?",
+            "Where does CO2 come from?",
             "Please draw and explain the oxyhemoglobin dissociation curve",
+            "How does the body detect hypoxia and how does it respond?",
             "What are the effects of altitude on the body?",
             "What conditions shift this curve to the right and to the left?",
             "What’s the Bohr effect?",
@@ -67,7 +69,7 @@ run <- function() {
             "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
             "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
             "How can the body compensate for the increased ventilation and perfusion during physical activity?",
-            "What is hypoxic pulmonary vasoconstriction?",
+            "What is hypoxic pulmonary vasoconstriction (HPV)?",
             "Please describe the physiological functions of the kidneys.",
             "Please describe the three mechanisms involved in urine production",
             "What is glomerular filtration rate?",
@@ -93,6 +95,10 @@ run <- function() {
             "Outline the anatomy of the epiglottis.",
             "What are the arytenoid cartilages?",
             "Briefly describe the anatomy of the cuneiform and corniculate cartilages.",
+            "What are the types of hypoxia?",
+            "Can you plot arterial and venous points on the O2 dissociation curve for various types of hypoxia?",
+            "What factors cause a reduction in transfer factor (TLCO)?",
+            "Can you draw the pressure-volume loop for the lung as a single unit?",
             "What different types of ribs are there?",
             "Describe the anatomy of the first rib.",
             "What is the clinical relevance of a first rib fracture?",
@@ -104,6 +110,8 @@ run <- function() {
             "What is the ideal location for the tip of a central venous catheter?",
             "Outline the anatomy of the diaphragm.",
             "Describe the muscular attachments of the diaphragm.",
+            "What’s lung resistance?",
+            "What do you understand by the term ‘time constant’?",
             "What are the main openings in the diaphragm?",
             "What is the innervation of the diaphragm?",
             "What is a diaphragmatic hernia?",
@@ -112,6 +120,7 @@ run <- function() {
             "What muscles are found in the anterolateral abdominal wall?",
             "Name the muscles of the posterior abdominal wall.",
             "Outline the nerve supply to the anterolateral abdominal wall.",
+            "What is the difference between static and dynamic compliance?",
             "What is the thoracolumbar fascia?",
             "Tell me about the anatomy of the lumbar plexus.",
             "Describe the anatomy of the femoral nerve.",
@@ -143,7 +152,6 @@ run <- function() {
             "What is the difference between full and partial agonists?",
             "What is an inverse agonist?",
             "How can we graphically compare the efficacy of different agonists?",
-            "What kind of plot is this?",
             "What is so useful about this plot that could be used to compare two different agonists?",
             "Tell me what the dose/response curve looks like for a partial agonist.",
             "What kind of antagonists are there?",
@@ -236,7 +244,10 @@ run <- function() {
         clinical_anaesthesia = c(
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
-            "What do you understand by post-tetanic count?"
+            "What do you understand by post-tetanic count?",
+            "What are the different classes of chemotherapeutic agents?",
+            "What are the complication of chemotherapeutic agents on the different organs?"
+            
         ),
         # Critical care & Emergency medicine
         icu_emergeny_medicine = c(
