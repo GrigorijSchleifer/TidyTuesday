@@ -36,6 +36,7 @@ run <- function() {
             "What assumptions are required for the alveolar gas equation?",
             "How are muscle spindles innervated?", 
             "How does PaCO2 affect PAO2?",
+            "What are the necessary components of an electrocardiogram?",
             "What tells alveolar gas equation about the PiO2 and PAO2 relationship?",
             "How does CO2 affect ventilation?",
             "How is the alveolar gas equation affected by altitude?",
@@ -56,6 +57,7 @@ run <- function() {
             "Please draw the following Flow-Volume Curves",
             "What is the Bell–Magendie law?",
             "What is Transfer factor?",
+            "How can dead space be calculated?",
             "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
             "What functions does the CSF fulfil?",
             "Please explain the mechanism behind the CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine).",
@@ -64,6 +66,7 @@ run <- function() {
             "What is the blood-brain barrier?",
             "Why does the anaesthetist have to consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What are the circumventricular organs and what is their function?",
+            "How can you measure dead space?",
             "What are the main functions of the hypothalamus?",
             "Please describe the relationship between ventilation and perfusion in different parts of the lungs.",
             "What is a pulmonary shunt and under which clinical conditions does shunt occur?",
@@ -102,7 +105,9 @@ run <- function() {
             "Can you plot arterial and venous points on the O2 dissociation curve for various types of hypoxia?",
             "What factors cause a reduction in transfer factor (TLCO)?",
             "Can you draw the pressure-volume loop for the lung as a single unit?",
+            "How is the Henderson–Hasselbalch equation derived and what does it tell us?",
             "What different types of ribs are there?",
+            "How does pulmonary vascular resistance change with lung volume (graph)?",
             "Describe the anatomy of the first rib.",
             "What is the clinical relevance of a first rib fracture?",
             "What is the thoracic inlet?",
@@ -122,6 +127,9 @@ run <- function() {
             "What are the main openings in the diaphragm?",
             "How is CO2 carried around the body?",
             "What is the innervation of the diaphragm?",
+            "How is pulmonary vascular resistance calculated?",
+            "Explain the units of PVR (dynes * s * cm^-5) and how it is calculated",
+            " What factors affect pulmonary vascular resistance?",
             "Can you draw the CO2 Dissociation Curve?",
             "What is a diaphragmatic hernia?",
             "Briefly outline the different types of diaphragmatic herniae.",
@@ -134,6 +142,8 @@ run <- function() {
             "What is the thoracolumbar fascia?",
             "Tell me about the anatomy of the lumbar plexus.",
             "Describe the anatomy of the femoral nerve.",
+            # https://www.tiktok.com/@anaestheasier/video/7436091968536595744
+            "Explain the Bohr equation?", 
             "What structures are innervated by the femoral nerve?",
             "What are the borders and contents of the femoral triangle?",
             "What is the femoral sheath?",
@@ -144,6 +154,7 @@ run <- function() {
         # Pharmacology & Clinical Measurments
         pharmacology_clinical_measurements = c(
             "What different groups of local anaesthetics do you know?",
+            "Describe the principle of the Vacuum insulator evaporator?",
             "Can you tell me how local anaesthetics work?",
             "Can you tell me how some of the local anaesthetics vary in their pharmacological and clinical properties and explain why?",
             "What does protein binding determine?",
@@ -254,10 +265,12 @@ run <- function() {
         clinical_anaesthesia = c(
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
+            "Which blocks should be performed for Total Knee Arthroplasty (TKA)?",
+            "Describe the Vaughan Williams Classiification", 
             "What do you understand by post-tetanic count?",
             "What are the different classes of chemotherapeutic agents?",
             "What are the complication of chemotherapeutic agents on the different organs?"
-            
+
         )
         # Critical care & Emergency medicine
         # icu_emergeny_medicine = c()
@@ -295,3 +308,5 @@ run <- function() {
 # Execute the function
 run()
 
+
+    
