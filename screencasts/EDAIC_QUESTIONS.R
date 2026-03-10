@@ -3,6 +3,28 @@
 run <- function() {
     # 1. Define the question sets
     soe_list <- list(
+        anatomy = c(
+            "Explain me the course of the corticospinal tract", ###
+            "What is the thoracic inlet?",
+            "What are the contents of the tarsal tunnel?",
+            "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
+            "Draw the fossa poplitea",
+            "What is the foramen ovale?",
+            "Dras the lumbosacral plexus",
+            # https://en.wikipedia.org/wiki/Juxtaglomerular_apparatus
+            "Explain the anatomy and function of the jugstaglomerular apparatus",
+            "Waht is a Malpighian Body?",
+            "Can you describe and draw the glomerulus with the cells involved?",
+            "How is blood flow controlled through capillary beds?",
+            "What is the course and innervation of the obturator nerve?",
+            "What are the posterior muscles of the foot?",
+            # https://www.youtube.com/shorts/i38zHAcCrz8
+            "What are the distal branches of the tibial nerve?",
+            "Describe the sacroiliacal plexusus",
+            "What is the ductus arteriosus?",
+            "Which neuron type do you know responsible for motor innervation?", 
+            "Explain the course and innervations of the tibial nerve and its realtion to the popliteal fossa and the tarsal tunnel"
+        ),
         physics_physiology = c(
             "Tell me how oxygen is carried in blood.",
             "What is the structure of haemoglobin (Hb)?",
@@ -11,32 +33,37 @@ run <- function() {
             "How does the saturation of Hb occur?",
             "What is the oxygen dissociation curve (ODC)?",
             "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
-            "What is the Bohr effect?",
+            "What is the Bohr effect?", #
             "What factors increase afterload?",
             "What is the Haldane effect?",
             "Where does CO2 come from?",
-            "Describe the sacroiliacal plexusus",
             "Please draw and explain the oxyhemoglobin dissociation curve",
             "How does the body detect hypoxia and how does it respond?",
+            "Describe the foetal circulation",
+            "What is streaming?",
+            "Explain the Fick law of diffusion formula",
             "What considerations do you need to make regarding heart rate in heart transplant patient?",
             "What are the effects of altitude on the body?",
             "What conditions shift this curve to the right and to the left?",
             "Please draw and explain the pacemaker action potential", 
-            "What’s the Bohr effect?",
             "What is oxygen flux?",
             "What is the structure of a muscle spindle?",
             "What factors increase afterload?",
             "How is CaO2 estimated?",
+            "What is the formula for net filtration in the bowman’s capsule?",
             "What is critical DO2?", # 
             "What is the Pasteur point?",
             "Draw the left ventricular pressure volume loop and explain the points",
+            "What is the function of capillaries and what features allow them to perform this role?",
             "What is oxygen extraction ratio?",
             "What factors influence stroke volume?", 
             "Can you tell me the components of the reflex arc?",
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What factors increase afterload?",
+            "What are sinusoidal capillaries?",
             "What are the different types of data?",
             "What are the different measures of central tendency?", ###
+            "How does fluid move between intra and extracellular fluid?",
             "Describe the nephron and where do the diuretic drugs work?",
             "How does oxygen content in the blood change with altitude?",
             "How is 2,3-DPG produced and what does it do?",
@@ -74,7 +101,7 @@ run <- function() {
             "How can dead space be calculated?",
             "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
             "What functions does the CSF fulfil?", ##
-            "Explain the mechanism of CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine)",
+            "Explain the mechanism of CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine)", ###
             "What is cerebral perfusion pressure?",
             "How does ventilation affect CO2?",
             "What is the blood-brain barrier?",
@@ -144,11 +171,11 @@ run <- function() {
             "What factors cause a reduction in transfer factor (TLCO)?",
             "Can you draw the pressure-volume loop for the lung as a single unit?",
             "How is the Henderson–Hasselbalch equation derived and what does it tell us?",
+            "What are Starling forces?",
             "What different types of ribs are there?",
             "How does pulmonary vascular resistance change with lung volume (graph)?",
             "Describe the anatomy of the first rib.",
             "What is the clinical relevance of a first rib fracture?",
-            "What is the thoracic inlet?",
             "What are the boundaries of the thoracic inlet?",
             "What ECG changes are seen with hypocalcaemia?",
             "What is the cardiac cycle?",
@@ -212,6 +239,7 @@ run <- function() {
             "Tell me more about lipid solubility.",
             "What do you know about local anaesthetic metabolism?",
             "What can you tell me about additives to local anaesthetics that influence their action?",
+            "What is an Osmole and how is it measured?",
             "Tell me about the different routes of administration of local anaesthetics",
             "What do you understand by the term ‘differential block’?",
             "Explain the concept of efficacy and potency.",
@@ -226,20 +254,24 @@ run <- function() {
             "What is the difference between full and partial agonists?",
             "What would it look like for a failing ventricle?",
             "What is heterometric autoregulation?",
+            "What is an Osmole?",
             "Explain the concept of efficacy and potency.",
             "What is an inverse agonist?",
             "How can we graphically compare the efficacy of different agonists?",
             "What is so useful about this plot that could be used to compare two different agonists?",
             "Tell me what the dose/response curve looks like for a partial agonist.",
             "What kind of antagonists are there?",
+            "What is osmotic pressure and how is it calculated?",
             "What do you understand by the term competitive antagonist?",
             "Can the action of competitive antagonists be reversed?",
-            "What about non-competitive antagonists?", 
+            "Tell me about non-competitive antagonists and give an example?", #
             "How do they produce their effects?",
             "Why do tachyarrhythmias occur?",
             "What are the irreversible antagonists?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
             "How can general anaesthesia be administered?",
+            # https://www.youtube.com/watch?v=2eiLaFlTfKc
+            "Can you describe and draw the glomerulus with the cells involved?",
             "When would you prefer an inhalational versus an intravenous induction?",
             "What are the features of an ideal inhalational anaesthetic agent?",
             "What is ‘saturated vapour pressure’ and how is it clinically relevant?",
@@ -255,6 +287,9 @@ run <- function() {
             "Compare and contrast the properties of these two agents.",
             "What is nitrous oxide?",
             "What are the advantages and disadvantages of using nitrous oxide?",
+            # https://cvpharmacology.com/
+            "Tell me about amiodaron",
+            "Tell me about lidocaine",
             "How can general anaesthesia be administered?",
             "What are the properties of the ideal intravenous induction agent?",
             "Which central receptors do the intravenous induction agents act on?",
@@ -263,8 +298,10 @@ run <- function() {
             "What are the disadvantages of using propofol as an induction agent?",
             "Can you compare and contrast propofol and thiopental as induction agents?",
             "What are the advantages and disadvantages of etomidate as an induction agent?",
+            "What is the difference between oncotic and osmotic pressure?",
             "What are the advantages and disadvantages of ketamine as an induction agent?",
             "What other intravenous agents can be used to induce general anaesthesia?",
+            "What is the osmolar gap?",
             "What do you understand by the term ‘muscle relaxant’?",
             "What types of muscle relaxants are you aware of?",
             "Tell me about depolarizing muscle relaxants first.",
@@ -272,9 +309,11 @@ run <- function() {
             "Classify the non-depolarizing muscle relaxants.",
             "What are ECG ‘leads’?",
             "What is compliance?",
+            "What are osmoreceptors?",
             "Describe the pharmacology of your preferred muscle relaxant.",
             "Which drugs are used to reverse the action of muscle relaxants?",
             "How can the effect of muscle relaxants be monitored?",
+            "How is water distributed throughout the body?",
             "What can potentiate or prolong the effects of muscle relaxants?",
             "What are the indications for using muscle relaxants in anaesthetic practice?",
             "What are the problems with using muscle relaxants in anaesthetic practice?",
@@ -313,6 +352,7 @@ run <- function() {
             "What do you understand by the term computed axial tomography (CAT)?",
             "What is Einthoven’s law?",
             "How is it different from helical scanning?",
+            "What is the structure of the BBB?",
             "How can CT imaging be enhanced?",
             "What is the mechanism through which enhancement of the CT image occurs?",
             "Explain how the magnetic resonance imaging (MRI) scanner generates a signal",
@@ -332,14 +372,19 @@ run <- function() {
             "What do you understand by post-tetanic count and effect on reversal or TOF return??" ##
         ),
         clinical_anaesthesia = c(
+            # Patient, Pathology, anesthetic and surgical conserns
+            "What framework can be used to formulate major anesthetic conserns for the perioperative Period?",
+            # history, functional capacity, investigations, examinations 
+            "What framework can be used for evaluating the severity of an underlying preoperative condition?",
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
             "What ECG changes are seen in hypothermia?",
+            "How would you induce a patient using a propofol sparing technique?",
             "Explain me the Brown-Sequard syndrome",
             "Wher do the diurhetic drugs work in the nephron?",
-            "Explain how antiarrhythmic agents are classified",
+            "Explain how antiarrhythmic agents are classified", ##
             "What are responses to a Valsalva manouvre seen in neuropathy and heart failure?",
-            "What conditions affect DLCO and KCO?",
+            "What conditions affect DLCO and KCO?", 
             "Which blocks should be performed for Total Knee Arthroplasty (TKA)?",
             "How can you work out ejection fraction and how much is it?", 
             "What are the GURDs creteria?",
@@ -353,9 +398,6 @@ run <- function() {
             "How does SVR relate to blood pressure?",
             "What are the complication of chemotherapeutic agents on the different organs?"
 
-        ),
-        anatomy = c(
-            "Explain me the course of the corticospinal tract"
         )
     )
     
