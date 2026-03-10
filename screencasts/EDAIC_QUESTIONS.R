@@ -19,6 +19,7 @@ run <- function() {
             "Describe the sacroiliacal plexusus",
             "Please draw and explain the oxyhemoglobin dissociation curve",
             "How does the body detect hypoxia and how does it respond?",
+            "What considerations do you need to make regarding heart rate in heart transplant patient?",
             "What are the effects of altitude on the body?",
             "What conditions shift this curve to the right and to the left?",
             "Please draw and explain the pacemaker action potential", 
@@ -36,7 +37,7 @@ run <- function() {
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What factors increase afterload?",
             "What are the different types of data?",
-            "What are the different measures of central tendency?",
+            "What are the different measures of central tendency?", ###
             "Describe the nephron and where do the diuretic drugs work?",
             "How does oxygen content in the blood change with altitude?",
             "How is 2,3-DPG produced and what does it do?",
@@ -48,6 +49,7 @@ run <- function() {
             "How does PaCO2 affect PAO2?",
             "What are the necessary components of an electrocardiogram?",
             "What tells alveolar gas equation about the PiO2 and PAO2 relationship?",
+            "Can you explain how an atrioventricular nodal re-entrant tachycardia works?",
             "How does CO2 affect ventilation?",
             "How is the alveolar gas equation affected by altitude?",
             "PaO2 in an aircraft with a cabin pressure of 80kPa?",
@@ -91,7 +93,7 @@ run <- function() {
             "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
             "How can the body compensate for the increased ventilation and perfusion during physical activity?",
             "What is the equation for venous return?",
-            "Tell me about the production, chemistry, circulation and reabsorbtion of CSF",
+            "Tell me about the production, composition, circulation and reabsorbtion of CSF",
             "What is hypoxic pulmonary vasoconstriction (HPV)?",
             "Please describe the physiological functions of the kidneys.",
             "Please describe the three mechanisms involved in urine production",
@@ -102,6 +104,7 @@ run <- function() {
             "Describe the sacroiliacal plexus",
             "What would it look like for a failing ventricle?",
             "What is heterometric autoregulation?",
+            "Can you explain how an atrioventricular nodal re-entrant tachycardia works?",
             "What is the equation for venous return?",
             "What effect does reducing venous resistance have on venous return and cardiac output?",
             "What effect does increasing venous filling have on venous return and cardiac output?",
@@ -137,6 +140,7 @@ run <- function() {
             "Briefly describe the anatomy of the cuneiform and corniculate cartilages.",
             "What are the types of hypoxia?",
             "Explain the concept for the volume of distribution (Units)",
+            "Where does the autonomic system innervate the heart?",
             "Can you plot arterial and venous points on the O2 dissociation curve for various types of hypoxia?",
             "What factors cause a reduction in transfer factor (TLCO)?",
             "Can you draw the pressure-volume loop for the lung as a single unit?",
@@ -155,6 +159,7 @@ run <- function() {
             "What is dead space?",
             "Describe the course of the subclavian arteries.",
             "Describe the anatomy of the subclavian veins.",
+            "Why do children frequently develop bradycardia in response to an insult?",
             "What is the ideal location for the tip of a central venous catheter?",
             "What is the cardiac cycle?",
             "Outline the anatomy of the diaphragm.",
@@ -183,6 +188,7 @@ run <- function() {
             "What is the difference between static and dynamic compliance?",
             "What is the thoracolumbar fascia?",
             "What is CVP and why do we use it?",
+            "Where does the autonomic system innervate the heart?",
             "Tell me about the anatomy of the lumbar plexus.",
             "Describe the anatomy of the femoral nerve.",
             # https://www.tiktok.com/@anaestheasier/video/7436091968536595744
@@ -232,6 +238,7 @@ run <- function() {
             "Can the action of competitive antagonists be reversed?",
             "What about non-competitive antagonists?", 
             "How do they produce their effects?",
+            "Why do tachyarrhythmias occur?",
             "What are the irreversible antagonists?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
             "How can general anaesthesia be administered?",
@@ -246,6 +253,7 @@ run <- function() {
             "What factors can increase or decrease MAC?",
             "Which inhalational anaesthetic agents are currently in clinical use?",
             "Which two inhalational anaesthetic agents do you use most frequently?",
+            "Why might a patient become bradycardic?",
             "Compare and contrast the properties of these two agents.",
             "What is nitrous oxide?",
             "What are the advantages and disadvantages of using nitrous oxide?",
@@ -290,10 +298,11 @@ run <- function() {
             "What are the components of an invasive arterial blood pressure measurement system?",
             "What is the function of a transducer, and how does it work in the system?",
             "What are the sources of error associated with arterial blood pressure measurement?",
-            "How is resonance important for causing errors in blood pressure measurement?",
+            "How is resonance important for causing errors in blood pressure measurement?", #
             "Tell me how damping affects the accuracy of blood pressure measurement.",
             "Can you draw the CVP waveform and explain it?",
             "What methods are available to measure gas concentration in a mixture of gases?",
+            "Where does the autonomic system innervate the heart?",
             "Explain to me the principle behind the paramagnetic analyser",
             "What is the theoretical principle of infrared capnometry?",
             "What do you understand by the Beer–Lambert law?",
@@ -322,20 +331,24 @@ run <- function() {
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
             # https://clinicalview.gehealthcare.com/sites/default/files/styles/paragraph_scaled_picture_medium/public/Annotation%202022-05-04%20111901_0.png.webp?itok=p8xfmUAk
-            "What do you understand by post-tetanic count and effect on reversal or TOF return??" # 
+            "What do you understand by post-tetanic count and effect on reversal or TOF return??" ##
         ),
         # Clinicla anesthesia
         clinical_anaesthesia = c(
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
             "What ECG changes are seen in hypothermia?",
+            "Explain me the Brown-Sequard syndrome",
             "Wher do the diurhetic drugs work in the nephron?",
             "Explain how antiarrhythmic agents are classified",
             "What are responses to a Valsalva manouvre seen in neuropathy and heart failure?",
+            "What conditions affect DLCO and KCO?",
             "Which blocks should be performed for Total Knee Arthroplasty (TKA)?",
             "How can you work out ejection fraction and how much is it?", 
+            "What are the GURDs creteria?",
+            "What is the difference between Duchenne and Becker muscular dystrophy?",
             "Describe the Vaughan Williams Classiification", 
-            "What do you understand by post-tetanic count and effect on reversal or TOF return?", # 
+            "What do you understand by post-tetanic count and effect on reversal or TOF return?", ##
             "What are the different classes of chemotherapeutic agents?",
             "What are the causes for hypocalcaemia?",
             "What factors affect pulmonary vascular resistance?",    
@@ -345,7 +358,9 @@ run <- function() {
 
         )
         # Critical care & Emergency medicine
-        # icu_emergeny_medicine = c()
+        icu_emergeny_medicine = c(
+            "Explain me the course of the corticospinal tract"
+        )
     )
     
     cat("--- Starting Study Session ---\n")
