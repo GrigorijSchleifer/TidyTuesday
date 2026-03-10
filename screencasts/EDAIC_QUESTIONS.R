@@ -3,8 +3,7 @@
 run <- function() {
     # 1. Define the question sets
     soe_list <- list(
-        # anatomy & physiology
-        anatomy_physics_physiology = c(
+        physics_physiology = c(
             "Tell me how oxygen is carried in blood.",
             "What is the structure of haemoglobin (Hb)?",
             "How does foetal Hb differ from adult Hb?",
@@ -200,7 +199,6 @@ run <- function() {
             "Outline the course of the obturator nerve",
             "What is the lumbosacral trunk?"
             ),
-        # Pharmacology & Clinical Measurments
         pharmacology_clinical_measurements = c(
             "What different groups of local anaesthetics do you know?",
             "Can you draw the CVP waveform and explain it??",
@@ -333,7 +331,6 @@ run <- function() {
             # https://clinicalview.gehealthcare.com/sites/default/files/styles/paragraph_scaled_picture_medium/public/Annotation%202022-05-04%20111901_0.png.webp?itok=p8xfmUAk
             "What do you understand by post-tetanic count and effect on reversal or TOF return??" ##
         ),
-        # Clinicla anesthesia
         clinical_anaesthesia = c(
             "How is double burst stimulation different from train-of-four stimulation?",
             "What is tetanic stimulation?",
@@ -356,9 +353,8 @@ run <- function() {
             "How does SVR relate to blood pressure?",
             "What are the complication of chemotherapeutic agents on the different organs?"
 
-        )
-        # Critical care & Emergency medicine
-        icu_emergeny_medicine = c(
+        ),
+        anatomy = c(
             "Explain me the course of the corticospinal tract"
         )
     )
