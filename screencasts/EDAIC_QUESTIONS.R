@@ -8,6 +8,7 @@ run <- function() {
             "What is the thoracic inlet?",
             "What are the contents of the tarsal tunnel?",
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
+            "Describe the anatomy of the spinal nerve",
             "Draw the fossa poplitea",
             "What is the foramen ovale?",
             "Dras the lumbosacral plexus",
@@ -15,14 +16,19 @@ run <- function() {
             "Explain the anatomy and function of the jugstaglomerular apparatus",
             "Waht is a Malpighian Body?",
             "Can you describe and draw the glomerulus with the cells involved?",
+            "What do you understand by the autonomic nervous system?",
+            "How is the nervous system organised?",
             "How is blood flow controlled through capillary beds?",
             "What is the course and innervation of the obturator nerve?",
             "What are the posterior muscles of the foot?",
             # https://www.youtube.com/shorts/i38zHAcCrz8
             "What are the distal branches of the tibial nerve?",
             "Describe the sacroiliacal plexusus",
+            "Tell me about the sympathetic nervous system",
             "What is the ductus arteriosus?",
             "Which neuron type do you know responsible for motor innervation?", 
+            "How is the nervous system organised?",
+            "Tell me about the parasympathetic nervous system",
             "Explain the course and innervations of the tibial nerve and its realtion to the popliteal fossa and the tarsal tunnel"
         ),
         physics_physiology = c(
@@ -58,6 +64,7 @@ run <- function() {
             "What is oxygen extraction ratio?",
             "What factors influence stroke volume?", 
             "Can you tell me the components of the reflex arc?",
+            "What are the methods of measuring anaerobic threshold?", 
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What factors increase afterload?",
             "What are sinusoidal capillaries?",
@@ -333,6 +340,7 @@ run <- function() {
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "Tell me about currently available continuous non-invasive blood pressure measurement methods.",
             "What are the components of an invasive arterial blood pressure measurement system?",
+            "What changes occur after birth?",
             "What is the function of a transducer, and how does it work in the system?",
             "What are the sources of error associated with arterial blood pressure measurement?",
             "How is resonance important for causing errors in blood pressure measurement?", #
