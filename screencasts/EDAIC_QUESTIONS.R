@@ -6,14 +6,13 @@ run <- function() {
         anatomy = c(
             "Explain me the course of the corticospinal tract", ###
             "What is the thoracic inlet?",
-
-             "How would you perform an interscalene brachial plexus block?",
-              "How would you perform a supraclavicular brachial plexus block?",
+            "How would you perform an interscalene brachial plexus block?",
+            "How would you perform a supraclavicular brachial plexus block?",
               "How would you perform an infraclavicular brachial plexus block?",
               "How would you perform an axillary brachial plexus block?",
               "How would you perform a suprascapular nerve block?",
               "How would you perform a superficial cervical plexus block?",
-  "How would you perform a deep cervical plexus block?",
+              "How would you perform a deep cervical plexus block?",
   "How would you perform a transversus abdominis plane (TAP) block?",
   "How would you perform a rectus sheath block?",
   "How would you perform a quadratus lumborum block?",
