@@ -6,6 +6,7 @@ run <- function() {
         anatomy = c(
             "Explain me the course of the corticospinal tract", ###
             "What is the thoracic inlet?",
+            "What are the bounderies of the adductor canal?",
             "What are the contents of the tarsal tunnel?",
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
