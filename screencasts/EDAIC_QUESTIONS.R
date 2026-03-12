@@ -11,6 +11,7 @@ run <- function() {
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
             "Draw the fossa poplitea",
+            "What are the borders of the fascia iliaca compartment?",
             "What is the foramen ovale?",
             "Dras the lumbosacral plexus",
             "What is the course of the sciatic nerve?",
