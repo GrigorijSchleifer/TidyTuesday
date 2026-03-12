@@ -12,6 +12,7 @@ run <- function() {
             "Draw the fossa poplitea",
             "What is the foramen ovale?",
             "Dras the lumbosacral plexus",
+            "What is the course of the sciatic nerve?",
             # https://en.wikipedia.org/wiki/Juxtaglomerular_apparatus
             "Explain the anatomy and function of the jugstaglomerular apparatus",
             "Waht is a Malpighian Body?",
