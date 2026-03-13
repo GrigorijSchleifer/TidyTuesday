@@ -171,6 +171,7 @@ run <- function() {
             "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
             "What is the resting membrane potential?", 
             "What is the Donan effect?",
+            "How does skeletal muscle contract?",
             "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
             "How can the body compensate for the increased ventilation and perfusion during physical activity?",
             "What is the equation for venous return?",
