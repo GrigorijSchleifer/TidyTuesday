@@ -274,6 +274,7 @@ run <- function() {
             "Outline the nerve supply to the anterolateral abdominal wall.",
             "What is the difference between static and dynamic compliance?",
             "What is the thoracolumbar fascia?",
+            "Can you tell me about the structure and function of the muscle spindle?",
             "What is CVP and why do we use it?",
             "Where does the autonomic system innervate the heart?",
             "Tell me about the anatomy of the lumbar plexus.",
