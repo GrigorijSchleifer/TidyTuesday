@@ -9,6 +9,7 @@ run <- function() {
             "How would you perform an interscalene brachial plexus block?",
             "How would you perform a supraclavicular brachial plexus block?",
             "How would you perform an infraclavicular brachial plexus block?",
+            "Explain the anatomy of the oculocardiac reflex",
             "How would you perform an axillary brachial plexus block?",
             "How would you perform a suprascapular nerve block?",
             "What are the diaphragmatic openings and its contents?",
