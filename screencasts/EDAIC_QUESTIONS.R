@@ -9,6 +9,7 @@ run <- function() {
             "How would you perform an interscalene brachial plexus block?",
             "How would you perform a supraclavicular brachial plexus block?",
             "How would you perform an infraclavicular brachial plexus block?",
+            # https://anatomyqa.com/ciliary-ganglion/
             "Explain the anatomy of the oculocardiac reflex",
             "How would you perform an axillary brachial plexus block?",
             "How would you perform a suprascapular nerve block?",
