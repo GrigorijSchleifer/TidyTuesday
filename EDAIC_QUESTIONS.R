@@ -1,3 +1,4 @@
+library(lubridate)
 #!/usr/bin/env Rscript
 
 run <- function() {
@@ -21,6 +22,7 @@ run <- function() {
             "What types of pain fibres are there?",
             "How would you perform a rectus sheath block?",
             "How would you perform a quadratus lumborum block?",
+            "What is the course of blood vessels through the kidneys?", 
             "How would you perform an erector spinae plane block?",
             "How would you perform a paravertebral block?",
             "How would you perform a pectoral nerve block (PECS I and II)?",
@@ -38,7 +40,7 @@ run <- function() {
             "What are the contents of the tarsal tunnel?",
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
-            "Draw the fossa poplitea",
+            "Draw the fossa poplitea", #
             "Describe the circulation of CSF",
             "What are the borders of the fascia iliaca compartment?",
             "What is pH and why does it matter?",
@@ -100,6 +102,7 @@ run <- function() {
             "What is flow-metabolism coupling?",
             "How does the body detect hypoxia and how does it respond?",
             "Describe the foetal circulation",
+            "How does the collecting duct work?",
             "What is streaming?",
             "Explain the Fick law of diffusion formula",
             "What considerations do you need to make regarding heart rate in heart transplant patient?",
@@ -107,11 +110,16 @@ run <- function() {
             "What conditions shift this curve to the right and to the left?",
             "Please draw and explain the pacemaker action potential", 
             "What is oxygen flux?",
+            "What role does potassium play and what are normal plasma levels?",
+            "Tell me about the blood supply to the kidney",
             "What is the structure of a muscle spindle?",
             "What factors increase afterload?",
             "What is base excess when compared to 'standard' base excess?",
+            "What are the causes of hyperkalaemia?",
             "How is CaO2 estimated?",
-            "What is the formula for net filtration in the bowman’s capsule?",
+            "What is the formula for net filtration in the bowman’s capsule?", #
+            "What are the causes of hypokalaemia?",
+            "How does sodium concentration in the tubular fluid change through the nephron?",
             "How does the liver contribute to buffering?",
             "Can you draw a diagram to demonstrate the pain pathway to the brain?",
             "What is critical DO2?", # 
@@ -125,6 +133,7 @@ run <- function() {
             "Can you tell me the components of the reflex arc?",
             "What are the methods of measuring anaerobic threshold?", 
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
+            "What is the role of sodium within the body, and what are the daily requirements?",
             "What factors increase afterload?",
             "What are sinusoidal capillaries?",
             "What happens to the waveform if the compliance of the brain decreases?",
@@ -134,14 +143,17 @@ run <- function() {
             "Describe the nephron and where do the diuretic drugs work?",
             "How does oxygen content in the blood change with altitude?",
             "Can you tell me the differences between the different types of muscle?",
+            "Can you describe the different types of aquaporin?",
             "How is 2,3-DPG produced and what does it do?",
             "What factors increase 2,3-DPG production?",
             "What is the alveolar gas equation?",
             "What assumptions are required for the alveolar gas equation?",
             "How are muscle spindles innervated?", 
             "How can you demonstrate work done and stroke volume on this graph?",
+            "Tell me about GFR",
             "What is the golgi tendon organ and what does it do?",
             "How does PaCO2 affect PAO2?",
+            "How much sodium is lost by the body per day?",
             "What happens in muscular dystrophy?",
             "What are the necessary components of an electrocardiogram?",
             "What tells alveolar gas equation about the PiO2 and PAO2 relationship?",
@@ -161,6 +173,9 @@ run <- function() {
             "What is shunt and what categories do you know?",
             "What is the Henderson-Hasselbalch equation?",
             "What effect does shunt have?",
+            #  https://www.youtube.com/watch?v=2CzQoFtlg3w
+            "Draw and explain the countercurrent multiplier mechanism",
+            "What is the role of the vasa recta and peritubular capillaries?",
             "What happens if you increase the FiO2?",
             "How is CaO2 estimated?",
             "What is spirometry?",
@@ -171,12 +186,17 @@ run <- function() {
             "What is hysteresis?",
             "Please draw the following Flow-Volume Curves",
             "What is ventricular elastance and show it on a LV PV Loop?",
+            # https://www.youtube.com/watch?v=2CzQoFtlg3w
+            "Draw and explain the countercurrent multiplier mechanism",
             "How does the kidney handle acid?",
             "What factors influence stroke volume?",
             "What is the Bell–Magendie law?",
             "What is Transfer factor?",
+            "Tell me about renal blood flow autoregulation by drawing a graph",
             "How does the kidney handle acid?",
             "How can dead space be calculated?",
+            #https://www.youtube.com/watch?v=2CzQoFtlg3w
+            "Why are there two countercurrent mechanism?",
             "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
             "How would the body react to a bolus of acid?",
             "What functions does the CSF fulfil?", ##
@@ -203,8 +223,10 @@ run <- function() {
             "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
             "What is the resting membrane potential?", 
             "Tell me about plasma proteins and phosphate as buffering systems", 
+            "Can you draw and explain the function of the loop of Henle?",
             "What is the Donan effect?", #
             "How does skeletal muscle contract?",
+            "Draw a graph to show how renal excretion of glucose changes with plasma concentration",
             "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
             "How can the body compensate for the increased ventilation and perfusion during physical activity?",
             "What is the equation for venous return?",
@@ -368,6 +390,7 @@ run <- function() {
             "Tell me about non-competitive antagonists and give an example?", #
             "How do they produce their effects?",
             "Why do tachyarrhythmias occur?",
+            "How is glucose handled by the kidney?",
             "What are the irreversible antagonists?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
             "How can general anaesthesia be administered?",
@@ -376,6 +399,7 @@ run <- function() {
             "When would you prefer an inhalational versus an intravenous induction?",
             "What are the features of an ideal inhalational anaesthetic agent?",
             "What is ‘saturated vapour pressure’ and how is it clinically relevant?",
+            "How is chloride reabsorbed in the PCT?",
             "Tell me about the cardiac axis",
             "What are the different types of lactic acidosis?",
             "What is base excess when compared to 'standard' base excess?",
@@ -400,6 +424,7 @@ run <- function() {
             "Which central receptors do the intravenous induction agents act on?",
             "Which intravenous induction agent do you use most often?",
             "Why is propofol your preferred option?",
+            "How can filtered substances be reabsorbed in the proximal tubule?",
             "What are the disadvantages of using propofol as an induction agent?",
             "Can you compare and contrast propofol and thiopental as induction agents?",
             "What are the advantages and disadvantages of etomidate as an induction agent?",
@@ -450,10 +475,12 @@ run <- function() {
             "What are the sources of error associated with arterial blood pressure measurement?",
             "How is resonance important for causing errors in blood pressure measurement?", #
             "Tell me how damping affects the accuracy of blood pressure measurement.",
+            "What happens in the proximal convoluted tubule?",
             "Can you draw the CVP waveform and explain it?",
             "What methods are available to measure gas concentration in a mixture of gases?",
             "Where does the autonomic system innervate the heart?",
             "Explain to me the principle behind the paramagnetic analyser",
+            "How is sodium reabsorbed in the PCT?",
             "What is the theoretical principle of infrared capnometry?",
             "What do you understand by the Beer–Lambert law?",
             "What is pulmonary capillary wedge pressure and why is it of interest?",
@@ -530,9 +557,17 @@ run <- function() {
     while(TRUE) {
         for (i in 1:length(soe_list)) {
             
+            # lubridate lets you use ymd() (year-month-day) easily
+            future_date <- lubridate::ymd("2026-06-27")
+            now <- today()
+            days_between <- time_length(future_date - now, unit = "days")
+            
+            
             current_set <- soe_list[[i]]
             selected_q <- sample(current_set, size = 1)
             
+            
+            cat("\nDAYS LEFT: [", days_between, "]")
             # Print the SOE and the question 
             cat("\nSECTION: [", names(soe_list)[i], "]")
             cat("\nQUESTION:", selected_q, "\n")
