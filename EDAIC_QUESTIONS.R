@@ -29,7 +29,7 @@ run <- function() {
             "How would you perform a serratus anterior plane block?",
             "Describe the structure of the sarcomere",
             "How would you perform a fascia iliaca block?",
-            "Describe the gate control theory of pain",
+            "Describe the gate control theory of pain", #
             "What problems can occur with CSF circulation?",
             "How would you perform a femoral nerve block?",
             "Explain the innervation of the muscle spindles and golgi tendon organs",
@@ -222,7 +222,7 @@ run <- function() {
             "What is dead space and what types of dead space are there?",
             "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
             "What is the resting membrane potential?", 
-            "Tell me about plasma proteins and phosphate as buffering systems", 
+            "Tell me about plasma proteins and phosphate as buffering systems", # 
             "Can you draw and explain the function of the loop of Henle?",
             "What is the Donan effect?", #
             "How does skeletal muscle contract?",
@@ -322,10 +322,11 @@ run <- function() {
             "Explain the units of PVR (dynes * s * cm^-5) and how it is calculated",
             " What factors affect pulmonary vascular resistance?",
             "Can you draw the CO2 Dissociation Curve?",
-            "What is a diaphragmatic hernia?",
+            "What is a diaphragmatic hernia?", #
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "Briefly outline the different types of diaphragmatic herniae.",
             "How is CO2 removed from the body (draw a graph)?",
+            "What is the conversion factor for glucose mmols(L to mg/dL?",
             "What is the cardiac cycle?",
             "Describe the general structure of the abdominal wall.",
             "What muscles are found in the anterolateral abdominal wall?",
@@ -383,14 +384,14 @@ run <- function() {
             "How can we graphically compare the efficacy of different agonists?",
             "What is so useful about this plot that could be used to compare two different agonists?",
             "Tell me what the dose/response curve looks like for a partial agonist.",
-            "What kind of antagonists are there?",
+            "What kind of antagonists are there?", #
             "What is osmotic pressure and how is it calculated?",
             "What do you understand by the term competitive antagonist?",
             "Can the action of competitive antagonists be reversed?",
             "Tell me about non-competitive antagonists and give an example?", #
             "How do they produce their effects?",
             "Why do tachyarrhythmias occur?",
-            "How is glucose handled by the kidney?",
+            "How is glucose handled by the kidney?", #
             "What are the irreversible antagonists?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
             "How can general anaesthesia be administered?",
@@ -522,7 +523,8 @@ run <- function() {
             "What is tetanic stimulation?",
             "How would you perform an RSI induction?",
             "What ECG changes are seen in hypothermia?",
-            "How would you induce a patient using a propofol sparing technique?",
+            "How would you induce a patient using a propofol sparing technique?", # 
+            "Which antibiotic is indicated for contaminated traumatic injuries?",
             "Explain me the Brown-Sequard syndrome",
             "Wher do the diurhetic drugs work in the nephron?",
             "How can intracranial pressure be monitored?",
@@ -543,7 +545,7 @@ run <- function() {
             "What are the different classes of chemotherapeutic agents?",
             "What are the causes for hypocalcaemia?",
             "What factors affect pulmonary vascular resistance?",    
-            "What is the equation for pulmonary vascular resistance?",
+            "What is the equation for pulmonary vascular resistance?", # 
             "How does SVR relate to blood pressure?",
             "What are the complication of chemotherapeutic agents on the different organs?"
 
@@ -553,10 +555,11 @@ run <- function() {
     cat("--- Starting Study Session ---\n")
     cat("Press [Enter] for the next question, or type 'q' to quit.\n")
     
+    solved_questions <- 0
     # 2. Outer loop: Restarts the whole sequence forever
     while(TRUE) {
+        
         for (i in 1:length(soe_list)) {
-            
             # lubridate lets you use ymd() (year-month-day) easily
             future_date <- lubridate::ymd("2026-06-27")
             now <- today()
@@ -568,6 +571,8 @@ run <- function() {
             
             
             cat("\nDAYS LEFT: [", days_between, "]")
+            cat("\nQUESTIONS SOLVED: [", solved_questions, "]")
+            
             # Print the SOE and the question 
             cat("\nSECTION: [", names(soe_list)[i], "]")
             cat("\nQUESTION:", selected_q, "\n")
@@ -575,6 +580,7 @@ run <- function() {
             # 4. Wait for user input
             cat("\nNext", "> ")
             usr_input <- readLines(file("stdin"), n = 1)
+            solved_questions <- solved_questions + 1
             
             # Check for quit command
             if (tolower(usr_input) == "q") {
