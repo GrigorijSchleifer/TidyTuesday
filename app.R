@@ -1,5 +1,6 @@
 library(shiny)
 library(lubridate)
+library(bslib)
 
 # 1) Define the question sets (paste your full soe_list here)
 soe_list <- list(
@@ -553,6 +554,10 @@ soe_list <- list(
 
 
 ui <- fluidPage(
+    theme = bs_theme(
+        version = 5,
+        bootswatch = "darkly"   # other good ones: "cyborg", "slate", "superhero"
+    ),
     titlePanel("SOE Question Trainer"),
     sidebarLayout(
         sidebarPanel(
