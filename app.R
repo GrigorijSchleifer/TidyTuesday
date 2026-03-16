@@ -16,6 +16,7 @@ soe_list <- list(
         "How would you perform a suprascapular nerve block?",
         "What are the diaphragmatic openings and its contents?",
         "Describe the possible route of a sympathic preganglionic fiber",
+        "How are splanchnic ganglia innervated?",
         "What are the different types of nerve fibres?",
         "How would you perform a superficial cervical plexus block?",
         "How would you perform a deep cervical plexus block?",
