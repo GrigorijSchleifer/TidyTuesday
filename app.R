@@ -69,6 +69,7 @@ soe_list <- list(
         "What are the subtypes of muscarinic (cholinergic) receptors?",
         "How many nuclei does the vagus nerve have and what is their function?",
         "What is the ductus arteriosus?",
+        "Tell me the most important dermtomal landmarks",
         "Which neuron type do you know responsible for motor innervation?", 
         "How is the nervous system organised?",
         "Tell me about the parasympathetic nervous system",
@@ -558,7 +559,7 @@ soe_list <- list(
 ui <- fluidPage(
     theme = bs_theme(
         version = 5,
-        bootswatch = "darkly"   # other good ones: "cyborg", "slate", "superhero"
+        bootswatch = "cyborg"   # other good ones: "cyborg", "slate", "superhero"
     ),
     titlePanel("SOE Question Trainer"),
     sidebarLayout(
@@ -567,7 +568,7 @@ ui <- fluidPage(
             actionButton("quit", "Reset session"),
             hr(),
             checkboxInput("random_section", "Random section each time", FALSE),
-            helpText("Click 'Next question' to advance.")
+            # helpText("Click 'Next question' to advance.")
         ),
         mainPanel(
             h3(textOutput("days_left")),
