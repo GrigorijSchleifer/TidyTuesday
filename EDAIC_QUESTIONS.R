@@ -211,6 +211,7 @@ run <- function() {
             "Why does the anaesthetist have to consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What are the circumventricular organs and what is their function?",
             "How does CSF differ to plasma?",
+            "Explain the concept of end-systolic pressure volume relationship in regard to contractility",
             "How can you measure dead space?",
             "What are the main functions of the hypothalamus?",
             "Please describe the relationship between ventilation and perfusion in different parts of the lungs.",
