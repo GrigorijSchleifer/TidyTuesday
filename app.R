@@ -27,6 +27,7 @@ soe_list <- list(
         "Tell be about the kidney (ABC)",
         "Describe the anatomy of the adrenal gland",
         "How would you perform a quadratus lumborum block?",
+        "Where is the hypothalamus and what does it do?",
         "What is the course of blood vessels through the kidneys?", 
         "How would you perform an erector spinae plane block?",
         "How would you perform a paravertebral block?",
@@ -40,12 +41,14 @@ soe_list <- list(
         "Explain the innervation of the muscle spindles and golgi tendon organs",
         "How would you perform an adductor canal block?",
         "How would you perform an obturator nerve block?",
+        "What hormones does the hypothalamus secrete?",
         "How would you perform a sciatic nerve block in the gluteal region?",
         "What are the bounderies of the adductor canal?",
         "What are the contents of the tarsal tunnel?",
         "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
         "Describe the anatomy of the spinal nerve",
         "Draw the fossa poplitea", #
+        "What does the pituitary gland do?",
         "Describe the circulation of CSF",
         "What are the borders of the fascia iliaca compartment?",
         "What is pH and why does it matter?",
@@ -67,6 +70,7 @@ soe_list <- list(
         # https://www.youtube.com/shorts/i38zHAcCrz8
         "What are the distal branches of the tibial nerve?",
         "Describe the sacroiliacal plexusus",
+        "What does the pituitary gland do?",
         "Tell me about the sympathetic nervous system",
         "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",
         "What are the subtypes of muscarinic (cholinergic) receptors?",
@@ -208,12 +212,14 @@ soe_list <- list(
         "How does the kidney handle acid?",
         "What factors influence stroke volume?",
         "What is the Bell–Magendie law?",
+        "What does the pituitary gland do?",
         "What is Transfer factor?",
         "Where in the body is magnesium found and what is its normal concentration?",
         "Tell me about renal blood flow autoregulation by drawing a graph",
         "How does the kidney handle acid?",
         "How can dead space be calculated?",
         "What does magnesium do?",
+        "What is the mechanism of action of antidiuretic hormone?",
         #https://www.youtube.com/watch?v=2CzQoFtlg3w
         "Why are there two countercurrent mechanism?",
         "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
@@ -241,9 +247,11 @@ soe_list <- list(
         "What is dead space and what types of dead space are there?",
         "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
         "What is the resting membrane potential?", 
+        "What are the causes of hypercalcaemia?",
         "Tell me about plasma proteins and phosphate as buffering systems", # 
         "Can you draw and explain the function of the loop of Henle?",
         "What is the Donan effect?", #
+        "What are normal calcium levels?",
         "How does skeletal muscle contract?",
         "Draw a graph to show how renal excretion of glucose changes with plasma concentration",
         "Why does carbon dioxide equilibrate faster than oxygen between the alveoli and the pulmonary capillaries?",
@@ -252,11 +260,13 @@ soe_list <- list(
         "How can nociceptive pain be classified?",
         "Tell me about the production, composition, circulation and reabsorbtion of CSF",
         "What is hypoxic pulmonary vasoconstriction (HPV)?",
+        "Where is calcium stored in the body?",
         "Please describe the physiological functions of the kidneys.",
         "What is neuropathic pain?",
         "Please describe the three mechanisms involved in urine production",
         "What is glomerular filtration rate?",
         "What is renal clearance?",
+        "How does the body control calcium?",
         "What is chronic pain?",
         "How can it be measured?",
         "What is autoregulation of renal blood flow?", 
@@ -447,6 +457,7 @@ soe_list <- list(
         "Which inhalational anaesthetic agents are currently in clinical use?",
         "Which two inhalational anaesthetic agents do you use most frequently?",
         "Why might a patient become bradycardic?",
+        "What effects does the stress response have on the body?",
         "Compare and contrast the properties of these two agents.",
         "What are the types of refractory period?",
         "What is nitrous oxide?",
@@ -695,3 +706,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
