@@ -83,6 +83,7 @@ run <- function() {
             "What is the oxygen dissociation curve (ODC)?",
             "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
             "What is the Bohr effect?", #
+            "Plasmapharesis, what is important to know regarding clotting and calcium?",
             "Tell me about the bicarbonate-carbonic acid buffer",
             "How quickly do differentbuffer systems act?",
             "What determines how effective a buffer is?",
