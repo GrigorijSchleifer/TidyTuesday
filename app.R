@@ -542,6 +542,7 @@ soe_list <- list(
         "What are ECG ‘leads’?",
         "How is intraocular fluid produced?",
         "What is compliance?",
+        "What is the 20-30-40 rule in GBS?",
         "What is lymph and what does it do?",
         "What are osmoreceptors?",
         "Describe the pharmacology of your preferred muscle relaxant.",
