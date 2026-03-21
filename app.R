@@ -311,6 +311,7 @@ soe_list <- list(
         "Where is calcium stored in the body?",
         "Please describe the physiological functions of the kidneys.",
         "What is neuropathic pain?",
+        "Tell me the ml/kg for common respiratory volumes and capacities",
         "Please describe the three mechanisms involved in urine production",
         "What is glomerular filtration rate?",
         "What is renal clearance?",
