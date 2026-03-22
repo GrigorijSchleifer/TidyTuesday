@@ -29,6 +29,7 @@ soe_list <- list(
         "How would you perform a quadratus lumborum block?",
         "Where is the hypothalamus and what does it do?",
         "What is the course of blood vessels through the kidneys?", 
+        "What are the compartments of the leg, supplying nerves, and lesions?",
         "How would you perform an erector spinae plane block?",
         "How would you perform a paravertebral block?",
         "How would you perform a pectoral nerve block (PECS I and II)?",
