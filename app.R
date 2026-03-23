@@ -717,7 +717,6 @@ soe_list <- list(
         "What is the equation for pulmonary vascular resistance?", # 
         "How does SVR relate to blood pressure?",
         "What are the complication of chemotherapeutic agents on the different organs?"
-        
     )
 )
 
