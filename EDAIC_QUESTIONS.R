@@ -4,6 +4,7 @@ library(lubridate)
 run <- function() {
     # 1. Define the question sets
     soe_list <- list(
+        #####
         anatomy = c(
             "Explain me the course of the corticospinal tract", ####
             "What is the thoracic inlet?",
@@ -45,6 +46,7 @@ run <- function() {
             "How would you perform an adductor canal block?",
             "How would you perform an obturator nerve block?",
             "What hormones does the hypothalamus secrete?",
+            "Which proteins in the plasma bind to drugs?",
             "How would you perform a sciatic nerve block in the gluteal region?",
             "What are the bounderies of the adductor canal?",
             "What are the contents of the tarsal tunnel?",
@@ -69,9 +71,10 @@ run <- function() {
             "How is the nervous system organised?",
             "How is blood flow controlled through capillary beds?",
             "What is the course and innervation of the obturator nerve?",
-            "How many nuclei does the vagus nerve have and what is their function?",
+            "How many nuclei does the vagus nerve have and what is their function?", #
             "Tell me about the sympathetic chain",
             "What are the posterior muscles of the foot?",
+            "Describe the general structure of the abdominal wall.",
             # https://www.youtube.com/shorts/i38zHAcCrz8
             "What are the distal branches of the tibial nerve?",
             "Describe the sacroiliacal plexusus",
@@ -81,12 +84,13 @@ run <- function() {
             "What are the subtypes of muscarinic (cholinergic) receptors?",
             "How many nuclei does the vagus nerve have and what is their function?",
             "What is the ductus arteriosus?",
-            "Tell me the most important dermtomal landmarks", ##
+            "Tell me the most important dermatomal landmarks", ##
             "Which neuron type do you know responsible for motor innervation?", 
             "How is the nervous system organised?",
             "Tell me about the parasympathetic nervous system",
             "Explain the course and innervations of the tibial nerve and its relations to the popliteal fossa/tarsal tunnel"
         ),
+        #####
         physics_physiology = c(
             "Tell me how oxygen is carried in blood.",
             "What is the structure of haemoglobin (Hb)?",
@@ -163,7 +167,6 @@ run <- function() {
             "Tell me about the structure and function of the GI tract",
             "Tell me about gastrin",
             "What is oxygen flux?",
-            "Describe and draw the synthesis pathway for the production of the catecholamines",
             "What role does potassium play and what are normal plasma levels?",
             "What are the parameters of Thromboelastography?",
             "Tell me about the blood supply to the kidney",
@@ -397,7 +400,7 @@ run <- function() {
             "Can you explain how an atrioventricular nodal re-entrant tachycardia works?",
             "Explain the proportion, L/min and ml/100g of blood flow for heart, kidney, liver and the brain",
             "What is the equation for venous return?",
-            "What effect does reducing venous resistance have on venous return and cardiac output?",
+            "What effect does reducing venous resistance have on venous return and cardiac output?", #
             "What effect does increasing venous filling have on venous return and cardiac output?",
             "How does the respiratory cycle affect preload?",
             "Can you explain the Frank-Starling mechanism in relation to the heart?",
@@ -481,7 +484,6 @@ run <- function() {
             "How is CO2 removed from the body (draw a graph)?",
             "What is the conversion factor for glucose mmols(L to mg/dL?",
             "What is the cardiac cycle?",
-            "Describe the general structure of the abdominal wall.",
             "What muscles are found in the anterolateral abdominal wall?",
             "Name the muscles of the posterior abdominal wall.",
             "Outline the nerve supply to the anterolateral abdominal wall.",
@@ -501,6 +503,7 @@ run <- function() {
             "Outline the course of the obturator nerve",
             "What is the lumbosacral trunk?"
         ),
+        ##### 
         pharmacology_clinical_measurements = c(
             "What different groups of local anaesthetics do you know?",
             "Can you draw the CVP waveform and explain it??",
@@ -509,7 +512,10 @@ run <- function() {
             "What is first pass metabolism and when is it useful?",
             "Tell me how local anaesthetics vary in pharmacological and clinical properties and explain why?",
             "What does protein binding determine?",
+            "How many half lives does it take for a process to be considered completed?",
+            "How is ethanol metabolised and what pharmacokinetics does it demonstrate?",
             "What would the graph look like in Aortic Stenosis?",
+            "How does half life relate to the time constant?",
             "What are the different types of anti-emetic that you know?",
             "What is the significance of the pKa?",
             "Tell me about the renin-angiotensin-aldosterone system",
@@ -517,20 +523,29 @@ run <- function() {
             "What controls release of aldosterone and what are its effects?",
             "What problems are associated with hyperadrenalism?",
             "What are the effects of glucocorticoids such as cortisol?",
+            "Describe and draw the synthesis pathway for the production of the catecholamines",
             "How are the augmented and wilson leads derived?",
             "Tell me more about lipid solubility.",
             "What are the different types of lactic acidosis?",
             "What do you know about local anaesthetic metabolism?",
             "What can you tell me about additives to local anaesthetics that influence their action?",
             "What is bioavailability?",
+            "What is Clearance?",
             "What is an Osmole and how is it measured?",
             "Tell me about the different routes of administration of local anaesthetics",
+            "Why does ciprofloxacin reduce the plasma concentration of diclofenac?",
+            "What is genetic polymorphism?",
             "What factors affect movement of a drug across a membrane?",
+            "What factors influence hepatic metabolism of a drug?",
             "What do you understand by the term ‘differential block’?",
             "Explain the concept of efficacy and potency.",
+            "Which enzymes metabolise codeine, and what issues can arise?",
             "What do you understand by the term ‘agonist’?",
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "What would it look like for a failing ventricle?",
+            "By what three mechanisms can a drug increase an enzyme’s activity?",
+            "What is enterohepatic circulation and why is it relevant?",
+            "What else can affect enzymatic metabolism of drugs?",
             "How does sepsis cause a lactic acidosis?",
             "What is an ‘antagonist’?",
             "Why does alfentanil work faster than fentanyl, when fentanyl is more lipid soluble?",
@@ -550,6 +565,7 @@ run <- function() {
             "What effects does the stress response have on the body?",
             "What are the causes of pleural effusions?",
             "Explain the concept of efficacy and potency.",
+            "What is Clearance?",
             "What is an inverse agonist?",
             "How can we graphically compare the efficacy of different agonists?",
             "What is so useful about this plot that could be used to compare two different agonists?",
@@ -557,8 +573,10 @@ run <- function() {
             "What kind of antagonists are there?", #
             "What is osmotic pressure and how is it calculated?",
             "What do you understand by the term competitive antagonist?",
+            "What is half life and what factors affect it?",
             "Can the action of competitive antagonists be reversed?",
             "How is pleural fluid produced and what role does it serve?",
+            "What is half life and what factors affect it?",
             "Tell me about non-competitive antagonists and give an example?", #
             "How do they produce their effects?",
             "Why do tachyarrhythmias occur?",
@@ -584,6 +602,7 @@ run <- function() {
             "jlkWhat do you understand by ‘MAC’ and how is it clinically relevant?",
             "What are the causes of metabolic acidosis?",
             "Please describe what happens during a Valsalva manoeuvre",
+            "What factors affect protein binding?",
             "What factors can increase or decrease MAC?",
             "Which inhalational anaesthetic agents are currently in clinical use?",
             "Which two inhalational anaesthetic agents do you use most frequently?",
@@ -609,19 +628,27 @@ run <- function() {
             "What are the advantages and disadvantages of ketamine as an induction agent?",
             "What other intravenous agents can be used to induce general anaesthesia?",
             "What are the causes of metabolic acidosis?",
-            "What is the osmolar gap?",
+            "How do drugs cross the blood brain barrier?",
+            "What is the osmolar gap?", # 
+            "What factors affect whether a drug distributes to the foetus?",
             "Draw the formula for pyruvate to lactate conversion",
             "What do you understand by the term ‘muscle relaxant’?",
             "What types of muscle relaxants are you aware of?",
             "Tell me about depolarizing muscle relaxants first.",
             "What are the different types of anti-emetic that you know?",
+            "What do first order and zero order kinetics mean?",
             "What are the different types of nerve fibres?",
             "What is anion gap?",
+            "What are the stages of metabolism?",
+            "How do drugs cross the blood brain barrier?",
             "Describe the side effects of succinylcholine.",
             "Classify the non-depolarizing muscle relaxants.",
             "What are ECG ‘leads’?",
             "How is intraocular fluid produced?",
             "What is compliance?",
+            "What factors affect half life?",
+            "Where else does metabolism occur?",
+            "What are the stages of metabolism?",
             "What is the 20-30-40 rule in GBS?",
             "What is lymph and what does it do?",
             "What are osmoreceptors?",
@@ -642,10 +669,13 @@ run <- function() {
             "What are sources of error, limitations and problems in interpreting thepulse oxymetry and Beer-Lambert Law?",
             "Can you put COHb) and MetHb light absorption on a graph to demonstrate their absorption characteristics?",
             "What are the methods available for measuring arterial blood pressure?",
+            "What do first order and zero order kinetics mean?",
             "Tell me about the different non-invasive methods first.",
             "What are the key components of non-automatic intermittent non-invasive methods (NIMs)?",
             "What methods are used to determine flow at systolic and diastolic pressures using NIMs?",
             "What is the automatic, intermittent non-invasive blood pressure measurement method?",
+            "What factors affect whether a drug distributes to the foetus?",
+            "Can you name any prodrugs and their active metabolites?",
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "What is anion gap?",
             "Tell me about currently available continuous non-invasive blood pressure measurement methods.",
@@ -696,6 +726,7 @@ run <- function() {
             # https://clinicalview.gehealthcare.com/sites/default/files/styles/paragraph_scaled_picture_medium/public/Annotation%202022-05-04%20111901_0.png.webp?itok=p8xfmUAk
             "What do you understand by post-tetanic count and effect on reversal or TOF return??" ##
         ),
+        ##### 
         clinical_anaesthesia = c(
             # Patient, Pathology, anesthetic and surgical conserns
             "What framework can be used to formulate major anesthetic conserns for the perioperative Period?",
