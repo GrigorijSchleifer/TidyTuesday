@@ -580,6 +580,7 @@ run <- function() {
             "How do inhaled general anaesthetic agents work?",
             "What do you know about local anaesthetic metabolism?",
             "What is potency?",
+            "What is the Parkland formula?",
             "Discuss how a drug binds to its receptor",
             "What can you tell me about additives to local anaesthetics that influence their action?",
             "What is bioavailability?",
