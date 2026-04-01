@@ -1044,6 +1044,42 @@ run <- function() {
             "Tell me about propofol",
             "Tell me about thiopentone",
             
+            "What do you know about paracetamol?",
+            "Tell me about paracetamol overdose",
+            "What are the uses of NSAIDs?",
+            "What can you tell me about Aspirin?",
+            "How do you manage Aspirin overdose?",
+            "What is Reye syndrome?",
+            "What is the mechanism of action of NSAIDs?",
+            "What are the contraindications to NSAID use?",
+            "What is the difference between COX-1 and COX-2?",
+            "What are the side effects of non steroids?",
+            "Tell me about ibuprofen",
+            "Tell me about diclofenac",
+            "Tell me about ketorolac",
+            "Do you know any other NSAIDs?",
+            "What do you know about celecoxib?",
+            "What is the difference between an opiate and an opioid?",
+            "What effects do opioids have in common?",
+            "What are the undesirable effects of opioids?",
+            "Tell me about morphine",
+            "Tell me about diamorphine",
+            "Tell me about fentanyl",
+            "Tell me about alfentanil",
+            "Why is alfentanil so much faster onset than fentanyl?",
+            "Tell me about codeine",
+            "Tell me about dihydrocodeine",
+            "Tell me about remifentanil",
+            "Tell me about pethidine",
+            "Tell me about methadone",
+            "Tell me about tramadol",
+            "Tell me about naloxone ",
+            "Do you know any partial opioid agonists?"
+            
+            
+            
+
+            
             
             
             
