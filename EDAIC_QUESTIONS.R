@@ -896,6 +896,7 @@ run <- function() {
             "Explain me the Brown-Sequard syndrome",
             "Tell me about the three compartment model",
             "Wher do the diurhetic drugs work in the nephron?",
+            "What factors affect the MAC?",
             "What factors make face mask ventilaion more difficult?",
             "Why and how do we preoxygenate?",
             "What are your options if you reach Plan B (ITN)?",
@@ -907,6 +908,7 @@ run <- function() {
             "What are the indications specifically for CRRT?",
             "What are responses to a Valsalva manouvre seen in neuropathy and heart failure?",
             "What is ultrafiltration?",
+            "How do you estimate the weight of a child?",
             "How can you optimise your chances of a successful plan A?",
             "What are the creteria for the Berlin classification and what are the limitations?",
             "Explain the KDIGO creteria",
@@ -920,7 +922,9 @@ run <- function() {
             "How can you work out ejection fraction and how much is it?", 
             "Tell me the KDOGO criteria for acute kidney injury",
             "What does midazolam do?",
+            "Describe the Paediatric ALS algorithm",
             "What are the genetics of malignant hyperthermia?",
+            "Describe the components of the WETFLAG acronym",
             "How can you test someone for malignant hyperthermia?",
             "What are the GURDs creteria?",
             "What is the difference between structural isomers and stereoisomers?",
@@ -951,6 +955,7 @@ run <- function() {
             "Describe the ideal TIVA agent",
             "Tell me about propofol as a TIVA agent",
             "Resus Council Guidelines for adult tachycardia",
+            "How do you estimate blood volume in a child?",
             "What are carboprost and misoprostol?",
             "What drugs do you know that can help promote uterine contraction?",
             "Tell me about the use of remifentanil in TIVA",
@@ -998,7 +1003,52 @@ run <- function() {
             "What factors affect pulmonary vascular resistance?",    
             "What is the equation for pulmonary vascular resistance?", # 
             "How does SVR relate to blood pressure?",
-            "What are the complication of chemotherapeutic agents on the different organs?"
+            "What are the complication of chemotherapeutic agents on the different organs?",
+            
+            "What are Guedel’s Stages of Anaesthesia?",
+            "How do inhaled general anaesthetic agents work?",
+            "What factors affect the MAC?",
+            "Describe the components of the WETFLAG acronym",
+            "What advantages and disadvantages did ether have?",
+            "What are the different levels of MAC?",
+            "Tell me about Halothane",
+            "What are the reversible causes of cardiac arrest?",
+            "What is MAC?",
+            "Describe the Paediatric ALS algorithm",
+            "What do you know about Xenon?",
+            "What are the problems associated with metabolism of sevoflurane?",
+            "So why is my machine displaying MAC 1.0 when it’s at 2.1% Sevo?",
+            "What are the suitable locations for gaining intraosseous access on a child?",
+            "Key considerations for anaesthesia in aspiration",
+            "How do you estimate blood volume in a child?",
+            "Tell me about Sevofluran",
+            "Tell me about Enflurane",
+            "Tell me about Isoflurane",
+            "What is the gold standard investigation for diagnosis of tracheal and bronchial foreign body aspiration?",
+            "What are the complications of IO access?",
+            "What is the blood gas partition coefficient?",
+            "What are the contraindications to IO access?",
+            "How do you estimate the weight of a child?",
+            "What is saturated vapour pressure and what are the SVP at 20°C for the volatile agents and nitrous?",
+            "Tell me about Desflurane",
+            "What is the oil gas partition coefficient?",
+            "What are the boiling points for each of the volatile agents, Nitrous oxide and Xenon?",
+            "To what extent do each of the inhaled anaesthetic agents undergo metabolism by the body?",
+            "What are the characteristics of an ideal inhalational anaesthetic agent?",
+            "What do each of the coefficients correspond to clinically?",
+            "What is coronary steal?",
+            "What factors determine the rate at which inhaled anaesthetic agent is taken up into the blood?",
+            "Discuss the differences between halothane and sevoflurane",
+            "MAC values for the commonly used agents",
+            "What are the properties of the ideal intravenous anaesthetic agent?",
+            "Tell me about propofol",
+            "Tell me about thiopentone",
+            
+            
+            
+            
+            
+            
         )
     )
     
