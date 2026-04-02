@@ -1074,9 +1074,9 @@ run <- function() {
             "Tell me about methadone",
             "Tell me about tramadol",
             "Tell me about naloxone ",
-            "Do you know any partial opioid agonists?"
+            "Do you know any partial opioid agonists?",
             "Explain the LEMON mnemonic",
-            "Explain the MACOCHA mnemonic"
+            "Explain the MACOCHA mnemonic",
             "Do you know any partial opioid agonists?",
             
             "What are the main classes of local anaesthetics?",
