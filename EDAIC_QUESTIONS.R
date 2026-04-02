@@ -1044,7 +1044,6 @@ run <- function() {
             "What are the properties of the ideal intravenous anaesthetic agent?",
             "Tell me about propofol",
             "Tell me about thiopentone",
-            
             "What do you know about paracetamol?",
             "Tell me about paracetamol overdose",
             "What are the uses of NSAIDs?",
@@ -1078,9 +1077,44 @@ run <- function() {
             "Do you know any partial opioid agonists?"
             "Explain the LEMON mnemonic",
             "Explain the MACOCHA mnemonic"
+            "Do you know any partial opioid agonists?",
             
+            "What are the main classes of local anaesthetics?",
+            "What is the structure of a local anaesthetic molecule?",
+            "What is their mechanism of action?",
+            "What are the pH and ionisation changes seen when you inject a local anaesthetic?",
+            "What are the pKa, speed of onset and lipid solubility of amide anaesthetics?",
+            "What can you tell me about the pharmacokinetics of local anaesthetics?",
+            "Compare and contrast lidocaine and bupivacaine",
+            "How does protein binding vary between anaesthetics and what effect does this have?",
+            "What factors influence the speed of onset of local anaesthetic agents?",
+            "What factors influence potency of local anaesthetics?",
+            "How are local anaesthetics metabolised?",
+            "What additives might be given with local anaesthetics, and why?",
+            "What are the maximum safe doses of amide local anaesthetic agents, with and without adrenaline?",
+            "Why does adrenaline have less of an effect on the maximum safe dose of bupivacaine than lidocaine?",
+            "What are the cardiovascular effects of lidocaine and bupivacaine?",
+            "What CNS effects do local anaesthetic agents have?",
+            "Do you know any topical local anaesthetics?",
+            "How does systemic absorption differ between sites of local anaesthetic injection?",
+            "How would you manage local anaesthetic toxicity?",
+            "Tell me about lidocaine",
+            "Tell me about bupivacaine",
+            "Tell me about levobupivacaine",
+            "Which local anaesthetic agent is most suitable for day case surgery and why?",
+            "What can you tell me about cocaine?",
+            "How does diathermy work?",
+            "What frequency is used for diathermy and why?",
+            "What is the difference between monopolar and bipolar?",
+            "What are the safety implications of diathermy?",
+            "What should you do if your patient has a pacemaker?",
+            "What is the difference between heat and temperature?",
+            "What is specific heat capacity?",
+            "What are the four laws of thermodynamics?",
+            "How can temperature be measured?",
+            "How does anaesthesia lead to hypothermia?",
+            "What are the main routes of heat loss in the anaesthetised patient?",
             
-
             
             
             
