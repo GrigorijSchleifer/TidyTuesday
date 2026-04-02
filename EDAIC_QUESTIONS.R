@@ -1077,7 +1077,7 @@ run <- function() {
             "Do you know any partial opioid agonists?",
             "Explain the LEMON mnemonic",
             "Explain the MACOCHA mnemonic",
-            "Do you know any partial opioid agonists?",
+            "Do you know any partial opioid agonists?", #>
             
             "What are the main classes of local anaesthetics?",
             "What is the structure of a local anaesthetic molecule?",
