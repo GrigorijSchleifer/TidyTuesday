@@ -948,6 +948,7 @@ run <- function() {
             "What are the management options for raised intracranial pressure?",
             "What is the effect of hypokalaemia and what is a symptom of it?",
             "How does a two compartment model differ to the one compartment model?",
+            "What fresh gas flow is required for controlled ventilation in a 100kg patient?",
             "Can you use TIVA in morbidly obese patients?",
             "What do you understand by post-tetanic count and effect on reversal or TOF return?", ##
             "What should you do after managing a patient with local anaesthetic toxicity?",
@@ -1078,6 +1079,7 @@ run <- function() {
             "Explain the LEMON mnemonic",
             "Explain the MACOCHA mnemonic",
             "Do you know any partial opioid agonists?", 
+            # 02.04.26
             "What are the main classes of local anaesthetics?",
             "What is the structure of a local anaesthetic molecule?",
             "What is their mechanism of action?",
@@ -1113,7 +1115,7 @@ run <- function() {
             "How can temperature be measured?",
             "How does anaesthesia lead to hypothermia?",
             "What are the main routes of heat loss in the anaesthetised patient?",
-            
+            # 03.04.26
             "What is the immediate management of intra-arterial administration of thiopentone?",
             "Why do septic patients need less thiopentone?",
             "Tell me about ketamine",
@@ -1160,9 +1162,36 @@ run <- function() {
             "How is the wall suction vacuum generated?",
             "How do portable suction systems work?",
             "What features of a Yankauer help it to perform its function?",
-            "What are the benefits of a suction catheter mount?"
-            
-            
+            "What are the benefits of a suction catheter mount?",
+            # 04.04.26
+            "What are the different types of -tropy?",
+            "What is an inotrope and what are the different types?",
+            "Tell me about adrenaline",
+            "Tell me about noradrenaline",
+            "What do you know about dopamine?",
+            "What vasopressors do you know and how do they work?",
+            "What Beta agonists do you know?",
+            "Tell me about ephedrine",
+            "Draw the synthesis pathway for the catecholamines",
+            "Tell me about aminophylline",
+            "Do you know any selective phosphodiesterase inhibitors?",
+            "How do thiazides work and what effects do they have?",
+            "Tell me about loop diuretics",
+            "How does amiloride work?",
+            "Tell me about spironolactone",
+            "Why is mannitol used for raised intracranial pressure?",
+            "Tell me about a carbonic anhydrase inhibitor of your choice",
+            "What are the different types of anaesthetic breathing systems?",
+            "What are the properties of an ideal breathing system?",
+            "What is the Mapleson Classification of breathing systems?",
+            "Describe the Circle breathing system",
+            "Tell me about the Bain Circuit",
+            "What is the main risk with a co-axial mapleson B or Bain circuit?",
+            "Can you explain why the Mapleson A circuit is better for spontaneous breathing than controlled ventilation?",
+            "What flow rates do each of the systems require?",
+            "What does the APL valve do?",
+            "What fresh gas flow is required for controlled ventilation in a 100kg patient?",
+            "Tell me about the Humphrey ADE system"
             
             
             
