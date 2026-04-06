@@ -715,6 +715,7 @@ run <- function() {
             "What is the ‘oil:gas partition coefficient’ and how is it clinically relevant?",
             "jlkWhat do you understand by ‘MAC’ and how is it clinically relevant?",
             "What are the causes of metabolic acidosis?",
+            "How is AVR (Goldberger) calculated?",
             "Please describe what happens during a Valsalva manoeuvre",
             "What factors affect protein binding?",
             "How does levobupivacaine compare to dextrobupivacaine?",
@@ -1228,6 +1229,29 @@ run <- function() {
             "What methods are there for measuring CO2 concentration in a gas sample?",
             "What are the two different types of infrared capnography?",
             "What are the problems with infrared spectroscopy?",
+            # 06.04.26
+            "Can you explain the components of a normal ETCO2 waveform?",
+            "What might cause a rapid loss of end tidal CO2 trace?",
+            "What might be the cause of a high end tidal CO2?",
+            "What might be the the cause of a low end tidal CO2?",
+            "How is AVR (Goldberger) calculated?",
+            "Where do the chest leads go?",
+            "How many physical leads are needed for a 12 lead ECG?",
+            "What is the function of the right lower limb lead?",
+            "How is a typical ECG calibrated",
+            "How does pulse oximetry work?",
+            "What sources of errors can occur while using a pulse oximeter?",
+            "How does a pulse oximeter work?",
+            "What are the two wavelengths used in spectrophotometry?",
+            "Which line represents oxyhaemoglobin and which is deoxyhaemoglobin?",
+            "What is the name of the point of equal absorbance, and what wavelengths does it represent?",
+            "What are the sources of error with a pulse oximeter?",
+            "How does the pulse oximeter reduce the impact of ambient light?",
+            "What is BIS?",
+            "What are the components of BIS?",
+            "What does the BIS Index number mean?",
+            "What factors may cause artefact and interference of the BIS signal?",
+            
         )
     )
     
