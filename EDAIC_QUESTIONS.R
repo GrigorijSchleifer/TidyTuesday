@@ -1191,10 +1191,43 @@ run <- function() {
             "What flow rates do each of the systems require?",
             "What does the APL valve do?",
             "What fresh gas flow is required for controlled ventilation in a 100kg patient?",
-            "Tell me about the Humphrey ADE system"
-            
-            
-            
+            "Tell me about the Humphrey ADE system",
+            # 05.04.26
+            "What monitoring is required by the AoA for general anaesthesia?",
+            "What is calibration?",
+            "What is drift?",
+            "What are sensitivity and linearity (measuring)?",
+            "What does dynamic response refer to?",
+            "What is a step response?",
+            "What are the different methods of measuring cardiac output?",
+            "How does the thermodilution technique work?",
+            "Describe the Swan-Ganz pulmonary arterial catheter and how it is inserted",
+            "Please explain the pulomary cathether graph",
+            "What are the complications associated with insertion of a pulmonary artery catheter?",
+            "What is pulmonary capillary wedge pressure?",
+            "What methods do you know for measuring concentrations of gases and anaesthetic agents in a gas sample?",
+            "How does an arterial blood gas machine measure pH in the blood?",
+            "How does an ABG machine measure CO2", 
+            "How does an ABG machine measure oxygen tension?",
+            "How does an anaesthetic machine measure oxygen tension in a gas sample?",
+            "How do you correctly size a blood pressure cuff?",
+            "How can blood pressure be measured non-invasively?",
+            "How does manual non-invasive blood pressure measurement work?",
+            "What are the pitfalls of using NIBP measurements?",
+            "How does DINAMAP work?",
+            "What are the important features of an arterial cannula and giving set?",
+            "What is a strain gauge and how does a Wheatstone bridge work?",
+            "Discuss the arterial waveform",
+            "What is the Wheatstone Bridge?",
+            "What is the Resonance?",
+            "What is Bandwidth?",
+            "What is the Damping?",
+            "What is Frequency Response?",
+            "What are the pitfalls and risks of invasive arterial blood pressure monitoring?",
+            "What is the square wave test?",
+            "What methods are there for measuring CO2 concentration in a gas sample?",
+            "What are the two different types of infrared capnography?",
+            "What are the problems with infrared spectroscopy?",
         )
     )
     
