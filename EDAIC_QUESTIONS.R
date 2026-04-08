@@ -1251,7 +1251,37 @@ run <- function() {
             "What are the components of BIS?",
             "What does the BIS Index number mean?",
             "What factors may cause artefact and interference of the BIS signal?",
-            
+            # 07.04.26
+            "What safety features are present for the medical gas supply?",
+            "What pressures are cylinders stored at for each gas? Which gas is different?",
+            "What pressures are delivered via the wall supply?",
+            "How is the anaesthetic machine protected from high pipeline pressures?",
+            "What are the pressures and flows delivered by the oxygen flush?",
+            "What prevents dangerously low levels of oxygen from being delivered to the patient?",
+            "How is medical oxygen manufactured?",
+            "How is oxygen stored?",
+            "What is the boiling point and the critical temperature for oxygen?",
+            "How does the VIE work?",
+            "How is carbon dioxide manufactured?",
+            "What is the boiling point and the critical temperature of carbon dioxide?",
+            "How is CO2 stored and what is it used for?",
+            "What effects and side effects does CO2 have on the body?",
+            "What is nitrous oxide and what is it used for?",
+            "How is nitrous oxide manufactured?",
+            "How is nitrous oxide stored and what implications does this have for measuring the quantity?",
+            "What information is engraved on a nitrous oxide cylinder?",
+            "What are the key pharmacological properties of nitrous oxide?",
+            "How is nitrous oxide metabolised?",
+            "What are the effects of nitrous oxide on the body?",
+            "What are the advantages and disadvantages of using nitrous oxide?",
+            "When is nitrous oxide contraindicated?",
+            "What is the mechanism of action to explain the analgesic effect of nitrous oxide?",
+            "What is diffusion hypoxia?",
+            "Explain the concentration and second gas effects",
+            "What is Entonox and how is it produced and stored?",
+            "How does entonox differ to nitrous oxide in its physical properties?",
+            "Can you draw the isotherm for nitrous oxide and explain it?",
+            # 08.04.26
         )
     )
     
