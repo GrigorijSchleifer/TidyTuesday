@@ -1318,7 +1318,7 @@ run <- function() {
             "How many physical leads are needed for a 12 lead ECG?",
             "What is the function of the right lower limb lead?",
             "How is a typical ECG calibrated",
-            "What are the main bacterial targets of antibiotics?"
+            "What are the main bacterial targets of antibiotics?",
             "How does pulse oximetry work?",
             "What sources of errors can occur while using a pulse oximeter?",
             "How does a pulse oximeter work?",
@@ -1461,6 +1461,8 @@ run <- function() {
             "When might a patient get too hot in theatre and what are the risks?",
             "What are the definitions of boiling point, freezing point, and latent heat?",
             "What is pseudocritical temperature?"
+            # 11.04.26
+            
             
             
             
