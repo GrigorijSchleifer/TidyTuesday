@@ -270,6 +270,7 @@ run <- function() {
             "How do you treat hypermagnesaemia?",
             "How much sodium is lost by the body per day?",
             "What happens in muscular dystrophy?",
+            "What is Reactance?",
             "How does it compare to low molecular weight heparin?",
             "How does the administration of anaesthesia change in the parturient?",
             "What are the causes and features of hypermagnesaemia?",
@@ -339,6 +340,7 @@ run <- function() {
             "What factors influence stroke volume?",
             "What is the Bell–Magendie law?",
             "What do you know about red blood cells?",
+            "What is Voltage?",
             "What does the pituitary gland do?",
             "What is Transfer factor?",
             "Where in the body is magnesium found and what is its normal concentration?",
@@ -549,6 +551,7 @@ run <- function() {
             "Can you draw the CVP waveform and explain it??",
             "Describe the principle of the Vacuum insulator evaporator?",
             "What are the different types of method of action that drugs can have?",
+            "What is Reactance?",
             "Can you tell me how local anaesthetics work?",
             "What is an antagonist?",
             "What is the difference between absolute and relative risk reduction?",
@@ -644,6 +647,7 @@ run <- function() {
             "What are the steps to reducing bias?",
             "What would it look like for a failing ventricle?",
             "What is heterometric autoregulation?",
+            "What is Voltage?",
             "What are the features of an ideal fluid warmer?",
             "What effect does cardiac disease have on pharmacokinetics?",
             "What are the effects of glucocorticoids such as cortisol?",
@@ -892,6 +896,7 @@ run <- function() {
             "What should you do post-operatively for a patient with an unexpectedly difficult airway?",
             "Which toxins can be removed by the RRT?",
             "How would you induce a patient using a propofol sparing technique?", # 
+            "What is Reactance?",
             "What information can be used to predict how difficult a patient’s airway may be to manage?",
             "Which antibiotic is indicated for contaminated traumatic injuries?",
             "What is the difference between structural isomers and stereoisomers?",
@@ -1282,6 +1287,76 @@ run <- function() {
             "How does entonox differ to nitrous oxide in its physical properties?",
             "Can you draw the isotherm for nitrous oxide and explain it?",
             # 08.04.26
+            "What drugs can be given to provide hypotensive anaesthesia?",
+            "Tell me about Hydralazine",
+            "Tell me more about β blockers",
+            "How do beta blockers cause hypotension?",
+            "What factors should influence your decision to lower the blood pressure?",
+            "Tell me about sodium nitroprusside",
+            "Discuss cyanide toxicity",
+            "Tell me about labetalol",
+            "How does GTN compare to sodium nitroprusside?",
+            "What drugs do you know that are used to treat hypertension?",
+            "What are the effects and side effects of ACE inhibitors?",
+            "Which antihypertensives should be witheld in the perioperative period?",
+            "What can you tell me about clonidine?",
+            "Tell me about methyldop",
+            "What is charge?",
+            "Can you draw the following electrical symbols?",
+            "What is current?",
+            "What is a conductor?",
+            "What is a semiconductor?",
+            "What is Voltage?",
+            "What is Power?",
+            "What are resistance and impedance?",
+            "What is Reactance?",
+            "How does a capacitor work?",
+            "What factors affect a capacitor’s ability to store charge?",
+            "What is inductance?",
+            "What does a transistor do?", 
+            # 09.04.26
+            "What voltage is carried by UK overhead powerlines, and how is it converted to 240V in the home?",
+            "What are the three points on a UK plug socket for?",
+            "What are the different types of electrical injury?",
+            "What are the types of electric shock?",
+            "What resistance is offered by different parts of the body?",
+            "What are the three main dangers from electrical circuits?",
+            "How can electricutions be prevented?",
+            "How is electrical equipment classified?",
+            "How does a circuit breaker work?",
+            "How would you ensure your electrical equipment was as safe as possible?",
+            "What three things need to be present for a fire or explosion?",
+            "What is the difference between fire and explosion?",
+            "What are the different sources of ignition?",
+            "What are the different sources of fuel?",
+            "How does MRI work?",
+            "What does T1/T2 mean?",
+            "What is a transducer?",
+            "What is interference and can you give examples?",
+            "How does Ultrasound work?",
+            "What features of a sound or ultrasound wave are important?",
+            "What is the Doppler effect and how is it relevant to medicine?",
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         )
     )
     
