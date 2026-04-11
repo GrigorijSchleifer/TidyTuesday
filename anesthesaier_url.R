@@ -547,7 +547,6 @@ run <- function() {
             "https://www.anaestheasier.com/anaesthesia-for-peripheral-vascular-disease/",
             "https://www.anaestheasier.com/post-amputation-pain/",
             "https://www.anaestheasier.com/tag/vascular-surgery/",
-            "https://www.anaestheasier.com/#/portal/"
     )
     
     cat("--- Starting Study Session ---\n")
@@ -557,14 +556,14 @@ run <- function() {
     # 2. Outer loop: Restarts the whole sequence forever
     while(TRUE) {
         
-        for (i in 1:length(soe_list)) {
+        for (i in 1:length(urls)) {
             # lubridate lets you use ymd() (year-month-day) easily
             future_date <- lubridate::ymd("2026-06-27")
             now <- today()
             days_between <- time_length(future_date - now, unit = "days")
             
             
-            current_set <- soe_list[[i]]
+            current_set <- urls[[i]]
             selected_q <- sample(current_set, size = 1)
             
             
@@ -572,7 +571,7 @@ run <- function() {
             cat("\nQUESTIONS SOLVED: [", solved_questions, "]")
             
             # Print the SOE and the question 
-            cat("\nSECTION: [", names(soe_list)[i], "]")
+            cat("\nSECTION: [", names(urls)[i], "]")
             cat("\nQUESTION:", selected_q, "\n")
             
             # 4. Wait for user input
