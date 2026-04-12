@@ -4,23 +4,7 @@ library(lubridate)
 run <- function() {
         urls <- list(
             not_seen <- c(
-                "https://www.anaestheasier.com/",
-                "https://www.anaestheasier.com/about/",
-                "https://open.spotify.com/show/0oceOCr1DYQcydzsh1zwxk",
-                "https://www.tiktok.com/@anaestheasier",
-                "https://www.instagram.com/anaestheasier/",
-                "https://twitter.com/Anaestheasier21",
-                "https://www.anaestheasier.com/shop/",
-                "https://www.anaestheasier.com/members/",
-                "https://www.anaestheasier.com/#/portal/account",
-                "https://www.anaestheasier.com/why-subscribe/",
-                "https://www.anaestheasier.com/tag/news/",
-                "https://www.anaestheasier.com/untitled/",
-                "https://www.anaestheasier.com/tag/medical-students/",
-                "https://www.anaestheasier.com/why-we-made-a-toolkit/",
-                "https://www.anaestheasier.com/tag/news/",
                 "https://www.anaestheasier.com/frequently-asked-questions/",
-                "https://www.anaestheasier.com/tag/trainee-zone/",
                 "https://www.anaestheasier.com/tag/airway-management/",
                 "https://www.anaestheasier.com/a-needle-to-the-neck/",
                 "https://www.anaestheasier.com/januairway/",
