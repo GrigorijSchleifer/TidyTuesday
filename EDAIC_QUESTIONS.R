@@ -613,6 +613,7 @@ run <- function() {
             "How do inhaled general anaesthetic agents work?",
             "What do you know about local anaesthetic metabolism?",
             "What is potency?",
+            "What are the different types of anti-emetic that you know?",
             "How do macrolides work?",
             "Do you know any aminoglycosides?",
             "Tell me about clindamycin",
@@ -1460,9 +1461,14 @@ run <- function() {
             "What methods are there of keeping patients warm?",
             "When might a patient get too hot in theatre and what are the risks?",
             "What are the definitions of boiling point, freezing point, and latent heat?",
-            "What is pseudocritical temperature?"
+            "What is pseudocritical temperature?",
             # 11.04.26
-            
+            "What are the different types of anti-emetic that you know?",
+            "What endotracheal tubes do you know about?",
+            "Can you discuss the commonly used airway adjuncts?",
+            "What are the limitations of the Hudson facemask?",
+            "What supraglottic airways can you tell me about?",
+            "What are the features of the commonly used laryngoscopes?",
             
             
             
