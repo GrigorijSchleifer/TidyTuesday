@@ -1524,11 +1524,34 @@ run <- function() {
             "What is Gay-Lussac’s Law",
             "What is the Universal or Ideal Gas Law?",
             "What is Henry’s Law?",
-            
-            
-            
-            
-            
+            # 13.04.26
+            "What classes of antidepressant do you know?",
+            "How do TCAs work and what effects do they have", 
+            "How would you diagnose and manage TCA overdose?",
+            "How do serotonin specific reuptake inhibitors work?",
+            "What can you tell me about monoamine oxidase inhibitors?",
+            "Tell me about lithium",
+            "What type of chemical is insulin and what is it used for?",
+            "Where is it produced and how is it controlled?",
+            "What is insulin’s mechanism of action and what effects does it have?",
+            "How is insulin presented?",
+            "What are its important side effects?",
+            "Tell me about the oral diabetic medications",
+            "What are main anaesthetic concerns for diabetic patient in perioperative period?",
+            "What are the different types of anticoagulant drugs?",
+            "How can you measure the activity of anticoagulant medications?",
+            "Tell me about heparin",
+            "What are the side effects of Protamine?",
+            "What are the main differences between UFH and LMWH?",
+            "Tell me about warfarin",
+            "What antiplatelet agents do you know?",
+            "What can you tell me about fibrinolytic agents?",
+            "How long must you wait after giving LMWH before performing central neuraxial blockade? What about other agents?",
+            "What do you know about aprotinin?",
+            "What other options are there for reversal of anticoagulants?",
+            "What drugs do you know that act on the gastrointestinal system?",
+            "Please define the following terms",
+            "What equations would give the following graphs?",
             
             
             
