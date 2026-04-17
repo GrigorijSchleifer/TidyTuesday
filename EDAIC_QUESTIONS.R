@@ -9,7 +9,7 @@ run <- function() {
             "Explain me the course of the corticospinal tract", 
             "What is the thoracic inlet?",
             "How would you perform an interscalene brachial plexus block?",
-            "Please explain positive and negative predictive value",
+            "Explain positive and negative predictive value",
             "How would you perform a supraclavicular brachial plexus block?",
             "How would you perform an infraclavicular brachial plexus block?",
             # https://anatomyqa.com/ciliary-ganglion/
@@ -23,19 +23,22 @@ run <- function() {
             "NT > tell the orde of the adductor muscles",                                                                                             # anteriu to posterior AL > AB > AD 
             "NT > what are the contents of the paravertebral space?",                                                                                 # T1-L1, wedge shaped, on eather side of vertebral column, spinal nerve roots, dorsal root ganglia, rami communicantes, sympathetic chain ganglia, vessels, fat
             "NT > Where is the LA injected for the iPACK block",                                                                                      # between the popliteal artery and the posterior capsule of the knee, at the level of the femoral condyles, posterior knee pain, sensory articular schiatic branches, prevents foot drop (CPN block)                                
+            "NT > What muscle to pierce to get to transversal processus for a ESP block",                                                             # trapecius > rhomboids > erector spinae > TP (go for lower side to prevent spread into ES (would only get the posterior rami (good for spine surgery))) >>>>>>>> https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
+            "NT > How can you distinguish ribs from TP in ultrasound?",                                                                               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
             "Draw the coronary arteries (TT)",
-            
+            "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
             "What are the diaphragmatic openings and its contents?",
             "Can you explain the difference between sensitivity and specificity?",
             "What signs would indicate ulnar nerve damage?",
             "Describe the possible route of a sympathic preganglionic fiber",
-            "How are splanchnic ganglia innervated?",
+            "NT > How are splanchnic ganglia innervated?",                                                                            #               # prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
+            "NT > What is special about the adrenal medulla?",                                                                                        # preganglionic sympathetic fibers T5-L2, enter medulla via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
             "Describe the function of the Rotameter",
             "What are relative and absolute humidity?",
             "What safety features are present on the rotameter?",
             "What are the causes of infection?",
             "What are the main bacterial targets of antibiotics?",
-            "How do penicillins work?",
+            "How do penicillins work?",                                                                                  
             "What proportion of people are genuinely allergic to penicillins?",
             "What side effects do penicillins cause?",
             "How can bacteria become resistant to penicillins?",
@@ -50,13 +53,13 @@ run <- function() {
             "What types of pain fibres are there?",
             "What nerves need to be innervated for an awake FOI?",
             "What is the MACOCHA airway assessment?",
-            "Please explain positive and negative predictive value",
+            "NT > What is the lateral horn?",                                                                                                         # T1-L2, ell bodies of preganglionic sympathetic neurons, axons exit via ventral root, enter spinal nerve, then white ramus communicantes > sympathetic chain ganglia
             "How would you perform a rectus sheath block?",
             "In healthy adults, which is produced in greater quantity: adrenaline or noradrenaline?",
             "Tell be about the kidney (ABC)",
             "Describe the anatomy of the adrenal gland",
             "How would you perform a quadratus lumborum block?",
-            "Where is the hypothalamus and what does it do?",
+            "Where is the hypothalamus and what does it do?",                                                                             #
             "What is the course of blood vessels through the kidneys?", 
             "What are the compartments of the leg, supplying nerves, and lesions?",
             "How would you perform an erector spinae plane block?",
@@ -66,7 +69,7 @@ run <- function() {
             "What airway factors make intubation of young children and babies more difficult?",
             "Describe the structure of the sarcomere",
             "How would you perform a fascia iliaca block?",
-            "Describe the gate control theory of pain", #
+            "Describe the gate control theory of pain",                                                                                  #
             "What problems can occur with CSF circulation?",
             "How would you perform a femoral nerve block?",
             "Explain the innervation of the muscle spindles and golgi tendon organs",
@@ -80,7 +83,7 @@ run <- function() {
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
             "What can you tell me about the thyroid gland?",
-            "Draw the fossa poplitea", #
+            "Draw the fossa poplitea",                                                                                                   #
             "What airway factors make intubation of young children and babies more difficult?",
             "What does the pituitary gland do?",
             "Describe the circulation of CSF",
@@ -90,23 +93,20 @@ run <- function() {
             "Dras the lumbosacral plexus",
             "What is the course of the sciatic nerve?",
             "What is 'power' with regards to a buffer?",
-            # https://en.wikipedia.org/wiki/Juxtaglomerular_apparatus
-            "Explain the anatomy and function of the jugstaglomerular apparatus",
+            "Explain the anatomy and function of the jugstaglomerular apparatus",                                                                     # https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
             "Waht is a Malpighian Body?",
             "Can you describe and draw the glomerulus with the cells involved?",
             "What do you understand by the autonomic nervous system?",
             "How is the nervous system organised?",
             "How is blood flow controlled through capillary beds?",
             "What is the course and innervation of the obturator nerve?",
-            "How many nuclei does the vagus nerve have and what is their function?", #
+            "How many nuclei does the vagus nerve have and what is their function?",                                                     #
             "Tell me about the sympathetic chain",
             "What are the posterior muscles of the foot?",
             "Describe the general structure of the abdominal wall.",
-            # https://www.youtube.com/shorts/i38zHAcCrz8
-            "What are the distal branches of the tibial nerve?",
+            "What are the distal branches of the tibial nerve?",                                                                                      # https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
             "Describe the sacroiliacal plexusus",
             "What does the pituitary gland do?",
-            # 15.04.26
             "Please label the following structures of the eye",
             "What are the normal dimensions of the eye?",
             "What nerves supply sensation to the eye?",
@@ -165,7 +165,6 @@ run <- function() {
             "What are the borders of the sacral hiatus?",
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
-            # 16.04.26
             "Please draw the circle of willis",
             "Can you describe the venous drainage of the brain?",
             "What structures pass through the following foramina in the skull?",
@@ -207,10 +206,10 @@ run <- function() {
             "What are the signs and symptoms of a high spinal?",
             "Tell me about the sympathetic nervous system",
             "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",
-            "What are the subtypes of muscarinic (cholinergic) receptors?",
+            "What are the subtypes of muscarinic (cholinergic) receptors?",                                                            # 
             "How many nuclei does the vagus nerve have and what is their function?",
             "What is the ductus arteriosus?",
-            "Tell me the most important dermatomal landmarks", ##
+            "Tell me the most important dermatomal landmarks",                                                                         ##
             "Which neuron type do you know responsible for motor innervation?", 
             "How is the nervous system organised?",
             "Tell me about the parasympathetic nervous system",
@@ -230,7 +229,7 @@ run <- function() {
             "What is the oxygen dissociation curve (ODC)?",
             "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
             "What determines where in the gut a drug is absorbed?",
-            "What is the Bohr effect?", #
+            "What is the Bohr effect?",                                                                                                #
             "Tell me about the bicarbonate-carbonic acid buffer",
             "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
             "What factors affect lower oesophageal sphincter tone?",
@@ -240,6 +239,7 @@ run <- function() {
             "What determines how effective a buffer is?",
             "How does the kidney handle acid?",
             "What factors increase afterload?",
+            "Explain positive and negative predictive value",                                                                         #               # TP/TestPos, TN/TestNeg
             "What are the causes of raised intracranial pressure?",
             "Can you describe the physiological differences seen in paediatric patients?",
             "Which drugs are given by the epidural route?",
@@ -366,7 +366,7 @@ run <- function() {
             "What are sinusoidal capillaries?",
             "What happens to the waveform if the compliance of the brain decreases?",
             "What are the different types of data?",
-            "What are the different measures of central tendency?", ###
+            "What are the different measures of central tendency?",                                                                       ###
             "How does fluid move between intra and extracellular fluid?",
             "Describe the nephron and where do the diuretic drugs work?",
             "How does oxygen content in the blood change with altitude?",
@@ -411,7 +411,7 @@ run <- function() {
             "How can you calculate fluid deficit in an infant?",
             "Which drugs are known to cause hepatitis?",
             "Explain the hypothalamic-pituitary-adrenal axis and the control of cortisol release", 
-            "How does the kidney handle acid?", # 
+            "How does the kidney handle acid?",                                                                                          # 
             "What is base excess when compared to 'standard' base excess?",
             "How does PAO2 affect minute ventilation?",
             "How does minute ventilation affect PAO2?",
@@ -428,22 +428,20 @@ run <- function() {
             "Can you tell me about the structure and function of the muscle spindle?",
             "What is an adverse effect and how are they categorised?",
             "How can summation, synergism and potentiation  properties be displayed graphically?",
-            "Tell me about dabigatran",
             "What are the parameters of Thromboelastography?",
             "What effect does smoking have on anaesthesia?",
             "Can you draw a diagram to demonstrate the pain pathway to the brain?",
             "How can you calculate the volumen if you know the dose and the concentration?",
             "What is tachyphylaxis?",
             "What factors influence insulin secretion?",
-            "What is shunt and what categories do you know?",
+            "What is shunt and what categories do you know?",                                                                             #           # pulm. arteriovenous fistula, cyanotic heart disease (right to left shunt)
             "Drugs can be divided into three categories where they distribute",
             "What is tolerance and how it can be explained?",
             "What is the Henderson-Hasselbalch equation?",
             "What effect does shunt have?",
             "What does somatostatin do?",
             "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
-            #  https://www.youtube.com/watch?v=2CzQoFtlg3w
-            "Draw and explain the countercurrent multiplier mechanism",
+            "Draw and explain the countercurrent multiplier mechanism",                                                                               #  https://www.youtube.com/watch?v=2CzQoFtlg3w
             "What is the role of the vasa recta and peritubular capillaries?",
             "What happens if you increase the FiO2?",
             "How is CaO2 estimated?",
@@ -457,8 +455,7 @@ run <- function() {
             "Please draw the following Flow-Volume Curves",
             "What is ventricular elastance and show it on a LV PV Loop?",
             "What are the systemic effects of magnesium?",
-            # https://www.youtube.com/watch?v=2CzQoFtlg3w
-            "Draw and explain the countercurrent multiplier mechanism",
+            "Draw and explain the countercurrent multiplier mechanism",                                                                               # https://www.youtube.com/watch?v=2CzQoFtlg3w
             "How does the kidney handle acid?",
             "What factors influence stroke volume?",
             "What is the Bell–Magendie law?",
@@ -473,13 +470,12 @@ run <- function() {
             "What are the key considerations for anaesthetising a patient with sickle cell disease?",
             "What does magnesium do?",
             "What is the mechanism of action of antidiuretic hormone?",
-            #https://www.youtube.com/watch?v=2CzQoFtlg3w
-            "Why are there two countercurrent mechanism?",
-            "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",
+            "Why are there two countercurrent mechanism?",                                                                                            
+            "Please discuss the production, circulation, and contents of cerebrospinal fluid (CSF).",                                                 # https://www.youtube.com/watch?v=2CzQoFtlg3w
             "How would the body react to a bolus of acid?",
             "What are the main bacterial targets of antibiotics?",
-            "What functions does the CSF fulfil?", ##
-            "Explain the mechanism of CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine)", ###
+            "What functions does the CSF fulfil?",                                                                                         ##
+            "Explain the mechanism of CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine)",                      ###
             "What is basal metabolic rate?",
             "What is cerebral perfusion pressure?",
             "Describe the function of the Rotameter",
@@ -523,7 +519,6 @@ run <- function() {
             "Tell me about the haemoglobin buffer system",
             "What test would you use in each of the following scenarios?",
             "Should we hyperventilate patients with high intracranial pressure?",
-            "What is a pulmonary shunt and under which clinical conditions does shunt occur?",
             "What effect does increasing venous filling have on venous return and cardiac output?",
             "What is dead space and what types of dead space are there?",
             "How can you calculate fluid deficit in an infant?",
@@ -535,7 +530,7 @@ run <- function() {
             "Can you draw and explain the function of the loop of Henle?",
             "What is the Donan effect?", #
             "What are normal calcium levels?",
-            "Please explain positive and negative predictive value",
+            "Explain positive and negative predictive value",
             "What is an adverse effect and how are they categorised?",
             "How does skeletal muscle contract?",
             "Draw a graph to show how renal excretion of glucose changes with plasma concentration",
@@ -642,7 +637,7 @@ run <- function() {
             "What is the cardiac cycle?",
             "Outline the anatomy of the diaphragm.",
             "Describe the muscular attachments of the diaphragm.",
-            "What is the Haldane Effect?", # 
+            "What is the Haldane Effect?",                                                                                               # 
             "What’s lung resistance?",
             "What do you understand by the term ‘time constant’?",
             "How is CO2 removed from the body (draw a graph)?",
@@ -662,7 +657,7 @@ run <- function() {
             "What is the conversion factor for glucose mmols(L to mg/dL?",
             "What is the cardiac cycle?",
             "What muscles are found in the anterolateral abdominal wall?",
-            "Name the muscles of the posterior abdominal wall.",
+            "NT > Name the muscles of the posterior abdominal wall.",                                                                   #             # Iliacus (iliac fossa), psoas (vertebrae T12-L5), quadratus lumborum, post. diaphragm
             "Outline the nerve supply to the anterolateral abdominal wall.",
             "What is the difference between static and dynamic compliance?",
             "What is the thoracolumbar fascia?",
@@ -688,6 +683,7 @@ run <- function() {
             "What are the different types of method of action that drugs can have?",
             "What is Reactance?",
             "Can you tell me how local anaesthetics work?",
+            "Tell me about dabigatran",
             "What is an antagonist?",
             "What is the difference between absolute and relative risk reduction?",
             "Describe the nicotinic acetylcholine receptor",
@@ -778,7 +774,7 @@ run <- function() {
             "Tell me about the renin-angiotensin-aldosterone system",
             "What controls release of aldosterone and what are its effects?",
             "You have mentioned two terms: ‘affinity’ and ‘intrinsic activity’. Tell me more about them",
-            "What is the difference between an agonist and an antagonist if they both bind to the same receptor?", # 
+            "What is the difference between an agonist and an antagonist if they both bind to the same receptor?",                        # 
             "What types of agonists are you aware of?",
             "What is pKa?",
             "Describe the function of the Rotameter",
@@ -806,7 +802,7 @@ run <- function() {
             "What are the effects of glucocorticoids such as cortisol?",
             "What is an Osmole?",
             "What is a normal distribution?",
-            "What is the null hypothesis?",
+            "What is the null hypothesis?",                                                                                               # 
             "What effects does the stress response have on the body?",
             "What is volume of distribution and what does it tell you?",
             "What is bias?",
@@ -825,7 +821,7 @@ run <- function() {
             "What are the different degrees of nerve damage?",
             "What is so useful about this plot that could be used to compare two different agonists?",
             "Tell me what the dose/response curve looks like for a partial agonist.",
-            "What kind of antagonists are there?", #
+            "What kind of antagonists are there?",                                                                                       #
             "What is osmotic pressure and how is it calculated?",
             "What do you understand by the term competitive antagonist?",
             "What are affinity and intrinsic activity?",
@@ -835,7 +831,7 @@ run <- function() {
             "Can the action of competitive antagonists be reversed?",
             "How is pleural fluid produced and what role does it serve?",
             "What is half life and what factors affect it?",
-            "Tell me about non-competitive antagonists and give an example?", #
+            "Tell me about non-competitive antagonists and give an example?",                                                            #
             "What factors change the shape of the log dose-response curve?",
             "How does pharmacokinetics differ in the neonate?",
             "How do they produce their effects?",
@@ -930,10 +926,10 @@ run <- function() {
             "What factors affect half life?",
             "Where else does metabolism occur?",
             "What are the stages of metabolism?",
-            "What is statistical error?"
+            "What is statistical error?",
             "What is the 20-30-40 rule in GBS?",
             "What is lymph and what does it do?",
-            "Please explain positive and negative predictive value",
+            "Explain positive and negative predictive value",
             "Can you explain the difference between sensitivity and specificity?",
             "What are osmoreceptors?",
             "Describe the pharmacology of your preferred muscle relaxant.",
@@ -946,7 +942,6 @@ run <- function() {
             "How does the pulse oximeter work?",
             "Which two particular wavelengths are used and why?",
             "What happens to the electrical signal as it passes from patient to monitor?",
-            "What is the null hypothesis?",
             "What do you understand by ‘isobestic point’ and why is it useful?",
             "Draw a graph representing the different light absorption for deoxygenated and oxygenated haemoglobins.",
             "What is the Beer–Lambert law and what is the importance of it for pulse oximetry?",
@@ -1020,15 +1015,14 @@ run <- function() {
         ),
         ##### 
         clinical_anaesthesia = c(
-            # Patient, Pathology, anesthetic and surgical conserns
-            "What framework can be used to formulate major anesthetic conserns for the perioperative Period?",
+            "What framework can be used to formulate major anesthetic conserns for the perioperative Period?",                                        # What framework can be used to formula
             # history, functional capacity, investigations, examinations 
             "What framework can be used for evaluating the severity of an underlying preoperative condition?",
             "How is double burst stimulation different from train-of-four stimulation?",
             "How does a two compartment model differ to the one compartment model?",
             "What is tetanic stimulation?",
             "What are your options if you reach Plan B (ITN)?",
-            "Please explain positive and negative predictive value",
+            "Explain positive and negative predictive value",
             "What are the anaesthetic implications of laparoscopic surgery?",
             "How do you perform emergency front of neck access?",
             "Describe the function of the Rotameter",
@@ -1179,7 +1173,7 @@ run <- function() {
             "How would you manage local anaesthetic toxicity?",
             "What is anaphylaxis?",
             "What other things may be causing this clinical picture?",
-            "Please explain positive and negative predictive value",
+            "Explain positive and negative predictive value",
             "What are the anaesthetic implications of laparoscopic surgery?",
             "What factors affect pulmonary vascular resistance?",    
             "What is the equation for pulmonary vascular resistance?", # 
@@ -1401,7 +1395,7 @@ run <- function() {
             "How can blood pressure be measured non-invasively?",
             "How does manual non-invasive blood pressure measurement work?",
             "What are the pitfalls of using NIBP measurements?",
-            "How does DINAMAP work?",
+            "How does DINAMAP work?",                                                                                                 #              
             "What are the important features of an arterial cannula and giving set?",
             "What is a strain gauge and how does a Wheatstone bridge work?",
             "Discuss the arterial waveform",
@@ -1629,7 +1623,6 @@ run <- function() {
             "What is Gay-Lussac’s Law",
             "What is the Universal or Ideal Gas Law?",
             "What is Henry’s Law?",
-            # 13.04.26
             "What classes of antidepressant do you know?",
             "How do TCAs work and what effects do they have", 
             "How would you diagnose and manage TCA overdose?",
@@ -1657,11 +1650,10 @@ run <- function() {
             "What drugs do you know that act on the gastrointestinal system?",
             "Please define the following terms",
             "What equations would give the following graphs?",
-            # 14.04.26
             "What are the base SI units?",
             "What are the derived SI units relevant to anaesthesia?",
             "How do energy, work and power relate?",
-            "What are Newton’s Laws?",
+            "What are Newton’s Laws?"
         )
     )
     
