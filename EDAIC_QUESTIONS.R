@@ -12,8 +12,9 @@ run <- function() {
             "Explain positive and negative predictive value",
             "How would you perform a supraclavicular brachial plexus block?",
             "How would you perform an infraclavicular brachial plexus block?",
-            # https://anatomyqa.com/ciliary-ganglion/
-            "Explain the anatomy of the oculocardiac reflex",
+            "Explain the anatomy of the oculocardiac reflex",                                                                                         # # https://anatomyqa.com/ciliary-ganglion/
+            "NT > What is anterior vs posterior cerebral circulation?",                                                                               # anterior: internal carotid artery > ACA, MCA, posterior: vertebral arteries > basilar artery > posterior cerebral arteries, circle of willis anastomoses these two circulations 
+            "NT > Draw the cubital fossa",                                                                                                            # borders: brachioradialis, pronator teres, line between epicondyles, floor: brachialis and supinator, roof: deep fascia, contents: TAN (lateral to medial) > tendon of biceps brachii, brachial artery, median nerve
             "How would you perform an axillary brachial plexus block?",
             "How would you perform a suprascapular nerve block?",
             "Draw the branches if abdominal aorta (TT)",
@@ -23,9 +24,9 @@ run <- function() {
             "NT > tell the orde of the adductor muscles",                                                                                             # anteriu to posterior AL > AB > AD 
             "NT > what are the contents of the paravertebral space?",                                                                                 # T1-L1, wedge shaped, on eather side of vertebral column, spinal nerve roots, dorsal root ganglia, rami communicantes, sympathetic chain ganglia, vessels, fat
             "NT > Where is the LA injected for the iPACK block",                                                                                      # between the popliteal artery and the posterior capsule of the knee, at the level of the femoral condyles, posterior knee pain, sensory articular schiatic branches, prevents foot drop (CPN block)                                
-            "NT > What muscle to pierce to get to transversal processus for a ESP block",                                                             # trapecius > rhomboids > erector spinae > TP (go for lower side to prevent spread into ES (would only get the posterior rami (good for spine surgery))) >>>>>>>> https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
+            "NT > What muscle to pierce to get to transversal processus for a ESP block",                                                             # trapecius > rhomboids > erector spinae > TP (go for lower side to prevent spread into ES (would only get the posterior rami (good for spine surgery))) > https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
             "NT > How can you distinguish ribs from TP in ultrasound?",                                                               #               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
-            "Draw the coronary arteries (TT)",
+            "Draw the coronary arteries (TT)",                                                                                        #               # RCA > right atrium, right ventricle, SA node (60% of people), AV node (80% of people), posterior descending artery (85% of people), LCA > LAD > anterior interventricular septum, left circumflex artery > left atrium, left ventricle, SA node (40% of people)
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
             "What are the diaphragmatic openings and its contents?",
             "Can you explain the difference between sensitivity and specificity?",
@@ -84,7 +85,7 @@ run <- function() {
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
             "What can you tell me about the thyroid gland?",
-            "Draw the fossa poplitea",                                                                                                   #
+            "Draw the fossa poplitea",                                                                                                   #             
             "What airway factors make intubation of young children and babies more difficult?",
             "What does the pituitary gland do?",
             "Describe the circulation of CSF",
@@ -130,6 +131,7 @@ run <- function() {
             "What are the anatomical components of the mouth?",
             "Muscles of the soft palate",
             "What are the boundaries of the nasal cavity?",
+            "Describe the ascending and descending spinal pathways, and the information they carry",
             "Can you name the paranasal sinuses?",
             "What is the blood supply to the nose?",
             "Tell me about the nerve supply to the nose",
@@ -156,14 +158,14 @@ run <- function() {
             "What is the average total CSF volume, and normal supine pressure, in an adult?",
             "What are the primary and compensatory curvatures of the spine?",
             "What are the distinguishing features of each type of vertebra?",
-            "What are the effects of acute spinal cord injury?",
+            "What are the effects of acute spinal cord injury?",                                                                         #            # spinal shock (neulogical symptoms) > paraplegia, areflexia, neurogenic shock (haemodynamic symptoms) > hypotension, bradycardia, hypothermia, fluid reistant, 6 weeks post injury,
             "Describe Brown-Sequard syndrome",
             "What are the signs and symptoms of anterior cord syndrome?",
-            "Describe the ascending and descending spinal pathways, and the information they carry",
+            "Describe the ascending and descending spinal pathways, and the information they carry",                                     #            # Ascending spinal pathways include the dorsal columns (fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the corticospinal tract for voluntary movement and extrapyramidal tracts for posture and tone.
             "What are the symptoms and causes of cauda equina syndrome?",
             "Describe the anatomy of the sacrum",
             "How do the nerve routes exit the sacrum?",
-            "What are the borders of the sacral hiatus?",                                                                               ##            # U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
+            "What are the borders of the sacral hiatus?",                                                                                ##            # U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
             "Please draw the circle of willis",
@@ -179,7 +181,7 @@ run <- function() {
             "Where are arterial aneurysms most commonly found?",
             "What factors affect flow in a blood vessel?",
             "What factors affect cerebral autoregulation?",
-            "What proportion of strokes occur in the anterior circulation?",
+            "What proportion of strokes occur in the anterior circulation?",                                                            #             # 70% (90% of these in the MCA)
             "Where is the only place in the body that an artery passes through a venous structure?",
             "What are the boundaries of the mediastinum?",
             "What are the contents of the mediastinum?",
@@ -291,7 +293,7 @@ run <- function() {
             "How does pregnancy affect the clinical effect of a drug?",
             "What are the gastric cells and what do they produce?",
             "How is gastric secretion regulated?",
-            "Tell me about the structure and function of the GI tract",                                                                  # 
+            "Tell me about the structure and function of the GI tract",                                                                 # 
             "Tell me about gastrin",
             "What is oxygen flux?",
             "What are the different measures of spread?",
@@ -305,7 +307,7 @@ run <- function() {
             "What factors affect gastric emptying time?",
             "What is the structure of a muscle spindle?",
             "What factors increase afterload?",
-            "What is base excess when compared to 'standard' base excess?",
+            "What is base excess when compared to 'standard' base excess?",                                                            #              # TK: Amount of acid/base to be added (Norm +/- 3 mEq/L → whole blood to pH 7.4 at 37 C + 5.3 kPa CO2 - influenced by Hb level > 'Standard' BE = same process BUT for EXTRACELLULAR fluid not whole blood > machine estimates for blood at 50g/L Hb (to exclude Hbs buffer qualities) > BE might indicate metabolic acidosis (because of low Hb) > SBE account for that (more accurate)
             "What are the effects on the body of acute anaemia?",
             "What is the structure of a platelet and how long do they last?",
             "What types of drug interaction do you know?",
@@ -528,7 +530,7 @@ run <- function() {
             "What makes a good RCT?",
             "What are the causes of hypercalcaemia?",
             "Tell me about plasma proteins and phosphate as buffering systems",                                                         # 
-            "Can you draw and explain the function of the loop of Henle?",
+            "Can you draw and explain the function of the loop of Henle?",                                                              #                         
             "What is the Donan effect?",                                                                                                #
             "What are normal calcium levels?",
             "Explain positive and negative predictive value",
@@ -542,7 +544,7 @@ run <- function() {
             "Tell me about the production, composition, circulation and reabsorbtion of CSF",
             "What is hypoxic pulmonary vasoconstriction (HPV)?",
             "Where is calcium stored in the body?",
-            "Please describe the physiological functions of the kidneys.",
+            "NT > Please describe the physiological functions of the kidneys.",                                                         ##            # Excretion (urea, creatinine, uric acid, bilirubin, drugs), water and electrolyte balance, acid-base balance, Endocrine functions (RAAS, erythropoietin, calcitriol > vitamin D activation)
             "What is neuropathic pain?",
             "What types of drug interaction do you know?",
             "What is the number needed to treat?",
@@ -552,7 +554,7 @@ run <- function() {
             "What is glomerular filtration rate?",
             "What is renal clearance?",
             "How does the body control calcium?",
-            "What is chronic pain?",
+            "What is chronic pain?",                                                                                                    ##            # Persistent pain after cause was removed, longer than 3 to 6 months,  nociceptive, neuropathic, or mixed types
             "How can it be measured?",
             "What is autoregulation of renal blood flow?", 
             "Explain the renal blood flow",
@@ -640,7 +642,7 @@ run <- function() {
             "Describe the muscular attachments of the diaphragm.",
             "What is the Haldane Effect?",                                                                                              # 
             "What’s lung resistance?",
-            "What do you understand by the term ‘time constant’?",
+            "What do you understand by the term ‘time constant’?",                                                                      #             # TK > tau = R * C > Describes how long lung unit takes to fill or empty to a certain extent, relationship between stretchiness (compliance) and openness (resistance),  τ (s) inflate 63% of TV (3 τ ~ 95%, 5 τ ~ 99% inflated)
             "How is CO2 removed from the body (draw a graph)?",
             "Tell me about cerebral autoregulation (graph)",
             "How can you measure dead space?",
@@ -686,7 +688,7 @@ run <- function() {
             "Can you tell me how local anaesthetics work?",
             "NT > What steps are needed for a conservations of a RBC bag?",                                                                           # centrifuge > remove plasma, add preservatives (60 ml), leukoreduction (99.9% WBC removed),  store at 4 degrees for 40d
             "Tell me about dabigatran",
-            "NT > For what is blood routinely screened?",                                                            ,                                # ABO and RhD blood group, Hepatitis B (Hep B core antigen (anti-HBc + HBs)), Hepatitis C (Antibodies, HCV RNA), antibobies to HIV 1 and 2, syphilis, West Nil virus
+            "NT > For what is blood routinely screened?",                                                                                             # ABO and RhD blood group, Hepatitis B (Hep B core antigen (anti-HBc + HBs)), Hepatitis C (Antibodies, HCV RNA), antibobies to HIV 1 and 2, syphilis, West Nil virus
             "What is an antagonist?",
             "NT > Tell the significane and differences of direct and indirect coombs test?",                                                          # Every transfusion > 9% alloimmunisation, Direct > detects AB already bound to RBC (autoimmune haemolytic anaemia, haemolytic disease of newborn, transfusion reactions) > add anti-human globulin to patient’s RBCs > agglutination = positive test. Indirect > recipients AB (alloimunisation) > can bind to RBC (e.g. pre-transfusion testing) > add patient’s serum to donor RBCs > add anti-human globulin > agglutination = positive test"
             "What is the difference between absolute and relative risk reduction?",
@@ -701,6 +703,7 @@ run <- function() {
             "How does half life relate to the time constant?",
             "What are the different types of anti-emetic that you know?",
             "What is the significance of the pKa?",
+            "NT > Why is pregabalin better compared to gabapentin?",                                                                                  # Pregabalins (Lyrica) bioavailability (90% vs 33-66%), linear pharmacokinetics, faster onset, less interactions, more potent (150 mg pregabalin = 300 mg gabapentin), more sedation with pregabaline, Gabapentin better for dialysis patients in renal failure
             "What classes of antidepressant do you know?",
             "How do TCAs work and what effects do they have", 
             "How would you diagnose and manage TCA overdose?",
@@ -767,14 +770,14 @@ run <- function() {
             "How are fentanyl and remifentanil eliminated?",
             "What are the three ways in which drugs can be excreted into the urine?",
             "What is context sensitive half time?",
-            "What is genetic polymorphism?",
+            "What is genetic polymorphism?",                                                                                              #          
             "What factors affect movement of a drug across a membrane?",
             "What factors influence hepatic metabolism of a drug?",
             "What do you understand by the term ‘differential block’?",
             "Explain the concept of efficacy and potency.",
             "How do these intracellular receptors exert their effects?",
             "Which enzymes metabolise codeine, and what issues can arise?",
-            "What can you tell me about oxytocin?",
+            "What can you tell me about oxytocin?",                                                                                       #           # hypothalamus > posterior pituitary gland, Nonapeptide (9 AS), from Ncl. paraventricularis, supraopticus (little), bound on neurophysin via neuroaxonal transport to posterior pituitary gland
             "What other drugs are used to promote uterine contraction?",
             "What do you understand by the term ‘agonist’?",
             "What do you know about the NMDA receptor?",
@@ -827,13 +830,12 @@ run <- function() {
             "What would it look like for a failing ventricle?",
             "What is heterometric autoregulation?",
             "What is Voltage?",
-            "What are the features of an ideal fluid warmer?",
             "What effect does cardiac disease have on pharmacokinetics?",
             "What are the effects of glucocorticoids such as cortisol?",
             "What is an Osmole?",
             "What is a normal distribution?",
-            "What is the null hypothesis?",                                                                                               # 
-            "What effects does the stress response have on the body?",
+            "What is the null hypothesis?",                                                                                              # 
+            "What effects does the stress response have on the body?",                                                                   #            # 
             "What is volume of distribution and what does it tell you?",
             "What is bias?",
             "What effect does obesity have?",
@@ -868,7 +870,7 @@ run <- function() {
             "What is odds ratio?",
             "Why do tachyarrhythmias occur?",
             "What is skew?",
-            "What is power?",
+            "What is power (statistics)?",                                                                                               #            # TK > 1 - β > ability to detect a significant difference between groups > 80-90%,  80% chance of detecting an effect if one truly exists, and a 20% chance you will miss it (the false negative rate)
             "What is meant by the term ‘spare receptors’?",
             "What problems are associated with hypoadrenalism?",
             "What are the steps to a machine check?",
@@ -1043,8 +1045,7 @@ run <- function() {
         ##### 
         clinical_anaesthesia = c(
             "What framework can be used to formulate major anesthetic conserns for the perioperative Period?",                                        # What framework can be used to formula
-            # history, functional capacity, investigations, examinations 
-            "What framework can be used for evaluating the severity of an underlying preoperative condition?",
+            "What framework can be used for evaluating the severity of an underlying preoperative condition?",                                        #  # history, functional capacity, investigations, examinations 
             "How is double burst stimulation different from train-of-four stimulation?",
             "How does a two compartment model differ to the one compartment model?",
             "What is tetanic stimulation?",
@@ -1086,14 +1087,16 @@ run <- function() {
             "What is acute kidney injury?",
             "What should you do post-operatively for a patient with an unexpectedly difficult airway?",
             "Which toxins can be removed by the RRT?",
-            "How would you induce a patient using a propofol sparing technique?",                                                       # 
+            "How would you induce a patient using a propofol sparing technique?",                                                      # 
             "What is Reactance?",
             "What information can be used to predict how difficult a patient’s airway may be to manage?",
             "Which antibiotic is indicated for contaminated traumatic injuries?",
             "What is the difference between structural isomers and stereoisomers?",
+            "NT > What is the differnece between CVVH and CVVHDF?",                                                                                   # CVVH and CVVHF are not different,CVVH (convection) > solute removal by solvent drag, CVVHD (diffusion) > solute removal by diffusion, CVVHDF > both,  CVVH relies on convection using pressure, CVVHDF adds a layer of diffusion by running a countercurrent dialysate
             "Explain me the Brown-Sequard syndrome",
             "Tell me about the three compartment model",
             "Wher do the diurhetic drugs work in the nephron?",
+            "NT > How is dose calculated in CRRT and why it is important?",                                                                           # Dose = (effluent flow rate (ultrafiltrate + dialysate))(ml/hr) x 1000) / weight (kg) > 20-25 ml/kg/h, underdosing worse outcomes, overdosing electrolyte imbalances, bicarbonate load > hypotension
             "What factors affect the MAC?",
             "What factors make face mask ventilaion more difficult?",
             "Why and how do we preoxygenate?",
@@ -1134,7 +1137,7 @@ run <- function() {
             "What are the anaesthetic implications of laparoscopic surgery?",
             "What are the principles of treatment of MH?",
             "What are the complications associated with RRT?",                                                                        #
-            "What features of CRRT need to be prescribed?",
+            "NT > What features of CRRT need to be prescribed?",                                                                      #               # modality (CVVH, CVVHD, CVVHDF, SCUF), dose (how much blood is cleaned > 20-25 ml/kg/h), filter, blood flow rate, dialysate flow rate, replacement fluid flow rate, anticoagulation, temperature,
             "Tell me about Dantrolene",
             "What is the difference between Duchenne and Becker muscular dystrophy?",
             "Tell me about the three compartment model",
@@ -1152,7 +1155,7 @@ run <- function() {
             "How does a two compartment model differ to the one compartment model?",
             "What fresh gas flow is required for controlled ventilation in a 100kg patient?",
             "Can you use TIVA in morbidly obese patients?",
-            "What do you understand by post-tetanic count and effect on reversal or TOF return?",                                          ##
+            "What do you understand by post-tetanic count and effect on reversal or TOF return?",                                     ##
             "What should you do after managing a patient with local anaesthetic toxicity?",
             "What are the different classes of chemotherapeutic agents?",
             "What is TIVA?",
@@ -1213,7 +1216,7 @@ run <- function() {
             "How do inhaled general anaesthetic agents work?",
             "What factors affect the MAC?",
             "Describe the components of the WETFLAG acronym",
-            "NT > What advantages and disadvantages did ether have?",                                                                 #               # stable CO, RR, save in hypovolemia, strong painkill, slow onset, but flammable, airway irritation, PONV, MH trigger
+            "NT > What advantages and disadvantages did ether have?",                                                                   #             # stable CO, RR, save in hypovolemia, strong painkill, slow onset, but flammable, airway irritation, PONV, MH trigger
             "What are the different levels of MAC?",
             "Tell me about Halothane",
             "What are the reversible causes of cardiac arrest?",
@@ -1222,7 +1225,7 @@ run <- function() {
             "What do you know about Xenon?",
             "What are the problems associated with metabolism of sevoflurane?",
             "So why is my machine displaying MAC 1.0 when it’s at 2.1% Sevo?",
-            "What are the suitable locations for gaining intraosseous access on a child?",
+            "What are the suitable locations for gaining intraosseous access on a child?",                                             ##            
             "Key considerations for anaesthesia in aspiration",
             "How do you estimate blood volume in a child?",
             "Tell me about Sevofluran",
@@ -1242,7 +1245,7 @@ run <- function() {
             "What do each of the coefficients correspond to clinically?",
             "What is coronary steal?",
             "What factors determine the rate at which inhaled anaesthetic agent is taken up into the blood?",
-            "Discuss the differences between halothane and sevoflurane",
+            "Discuss the differences between halothane and sevoflurane",                                                                #             # Halothan not irritant, but hepatitis and heart (sensitisation for catecholamins), 20 % metabolism, CHEAP!, O:G 224, very potent (MAC 0.75), B:G 2.4 (slow onset), Sevofluran B:G 0.65 (fast), MAC 2, O:G 53, 5% metabolism, more expensive 
             "MAC values for the commonly used agents",
             "What are the properties of the ideal intravenous anaesthetic agent?",
             "Tell me about propofol",
@@ -1354,7 +1357,7 @@ run <- function() {
             "How would you manage suspected inadequate reversal of neuromuscular blockade?",
             "What modes of stimulation can be used by a nerve stimulator?",
             "Which patterns would you see after using a non depolarising neuromuscular blocking agent such as rocuronium?",
-            "What is the Tensilon test?",
+            "What is the Tensilon test?",                                                                                              #              # Distinguish myasthenic crisis from cholinergic crisis > Myasthenia improve, cholinergic worsen (keep atromine), Diagnose myasthenia gravis, 10 mg edrophonium (anticholinesterase) > if symptoms improve, test is positive
             "What is the Bernoulli principle?",
             "How does a Venturi mask work?",
             "What is Entrainment ratio?",
@@ -1470,7 +1473,7 @@ run <- function() {
             "What prevents dangerously low levels of oxygen from being delivered to the patient?",
             "How is medical oxygen manufactured?",
             "How is oxygen stored?",
-            "What is the boiling point and the critical temperature for oxygen?",
+            "What is the boiling point and the critical temperature for oxygen?",                                                      #              # Boiling point is -185°C. Critical T -118°C
             "How does the VIE work?",
             "How is carbon dioxide manufactured?",
             "What is the boiling point and the critical temperature of carbon dioxide?",
