@@ -103,7 +103,7 @@ run <- function() {
             "How is blood flow controlled through capillary beds?",
             "What is the course and innervation of the obturator nerve?",
             "How many nuclei does the vagus nerve have and what is their function?",                                                     #
-            "Tell me about the sympathetic chain",
+            "Tell me about the sympathetic chain",                                                                                       #.           # paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
             "What are the posterior muscles of the foot?",
             "Describe the general structure of the abdominal wall.",
             "What are the distal branches of the tibial nerve?",                                                                                      # https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
@@ -168,7 +168,7 @@ run <- function() {
             "What are the borders of the sacral hiatus?",                                                                                ##            # U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
-            "Please draw the circle of willis",
+            "Please draw the circle of willis",                                                                                          #            
             "Can you describe the venous drainage of the brain?",
             "What structures pass through the following foramina in the skull?",
             "Tell me what each of the cranial nerves does",
@@ -242,12 +242,12 @@ run <- function() {
             "What determines how effective a buffer is?",
             "How does the kidney handle acid?",
             "What factors increase afterload?",
-            "Explain positive and negative predictive value",                                                                         #               # TP/TestPos, TN/TestNeg
+            "Explain positive and negative predictive value",                                                                          #               # TP/TestPos, TN/TestNeg
             "What are the causes of raised intracranial pressure?",
             "Can you describe the physiological differences seen in paediatric patients?",
             "Which drugs are given by the epidural route?",
             "How can a cell produce energy?",
-            "What is the isohydric principle?",
+            "What is the isohydric principle?",                                                                                        #              # TK: All buffering systems in balance with one another, cannot change one without changing others, we measure the CO2/HCO3- system, but it represents all other systems as well (we only need one), if this one is showing acidosis, the phosphate + protein systems will be acidotic as well
             "Calculate the ph for the Carbonic-CO2 buffer system using the Handerson-Hasselbalch equation",
             "How much acid is produced by the body per day?",
             "What factors impact the amount of drug absorbed by the inhalational route?",
@@ -689,7 +689,7 @@ run <- function() {
             "NT > What steps are needed for a conservations of a RBC bag?",                                                                           # centrifuge > remove plasma, add preservatives (60 ml), leukoreduction (99.9% WBC removed),  store at 4 degrees for 40d
             "Tell me about dabigatran",
             "NT > For what is blood routinely screened?",                                                                                             # ABO and RhD blood group, Hepatitis B (Hep B core antigen (anti-HBc + HBs)), Hepatitis C (Antibodies, HCV RNA), antibobies to HIV 1 and 2, syphilis, West Nil virus
-            "What is an antagonist?",
+            "What kind of antagonists are there?",                                                                                      #             # competitive (reversible), non-competitive (irreversible), uncompetitive (only bind when agonist is bound), functional (block downstream effects of receptor activation)
             "NT > Tell the significane and differences of direct and indirect coombs test?",                                                          # Every transfusion > 9% alloimmunisation, Direct > detects AB already bound to RBC (autoimmune haemolytic anaemia, haemolytic disease of newborn, transfusion reactions) > add anti-human globulin to patient’s RBCs > agglutination = positive test. Indirect > recipients AB (alloimunisation) > can bind to RBC (e.g. pre-transfusion testing) > add patient’s serum to donor RBCs > add anti-human globulin > agglutination = positive test"
             "What is the difference between absolute and relative risk reduction?",
             "Describe the nicotinic acetylcholine receptor",
@@ -786,7 +786,7 @@ run <- function() {
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "Tell me about ergometrine",
             "What would it look like for a failing ventricle?",
-            "What are the key binding sites on the GABA receptor?",
+            "What are the key binding sites on the GABA receptor?",                                                                       #           #  propofol and etomidate on the $\beta$-subunits, barbiturates within the transmembrane domains, and benzodiazepines at the $\alpha/\gamma$ subunit interface
             "Describe the one compartment model",
             "How would you describe the G-Protein receptor and can you give examples?",
             "Which molecule is the most abundant secondary messenger and what actions does it have?",
@@ -811,7 +811,7 @@ run <- function() {
             "What types of agonists are you aware of?",
             "What is pKa?",
             "Describe the function of the Rotameter",
-            "What safety features are present on the rotameter?",
+            "What safety features are present on the rotameter?",                                                                         #           # 
             "What are the causes of infection?",
             "What are the main bacterial targets of antibiotics?",
             "How do penicillins work?",
@@ -1054,7 +1054,6 @@ run <- function() {
             "What are the anaesthetic implications of laparoscopic surgery?",
             "How do you perform emergency front of neck access?",
             "Describe the function of the Rotameter",
-            "What safety features are present on the rotameter?",
             "What are the causes of infection?",
             "What are the main bacterial targets of antibiotics?",
             "How do penicillins work?",
@@ -1188,7 +1187,7 @@ run <- function() {
             "What is the definition of major obstetric haemorrhage?",
             "What is the definition of post-partum haemorrhage?",
             "What is the epidemiology of major obstetric haemorrhage?",
-            "What are the causes of major obstetric haemorrhage?",
+            "What are the causes of major obstetric haemorrhage?",                                                                      #             # TK: Antepartum > Placental praevia, accreta or percreta, abruption, Uterine rupture or trauma, Post-partum > Tone, Tissue, Thrombin, Trauma, Codex: uterine atony (70%), trauma (20%), retained placenta (10%), coagulopathy (1%), uterine rupture, placenta accreta, vasa previa, uterine inversion, amniotic fluid embolism,sepsis
             "What are the risk factors for PPH?",
             "How common is ante-partum haemorrhage?",
             "When might coagulopathy be the cause of post-partum haemorrhage?",
