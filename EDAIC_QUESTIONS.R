@@ -24,7 +24,7 @@ run <- function() {
             "NT > what are the contents of the paravertebral space?",                                                                                 # T1-L1, wedge shaped, on eather side of vertebral column, spinal nerve roots, dorsal root ganglia, rami communicantes, sympathetic chain ganglia, vessels, fat
             "NT > Where is the LA injected for the iPACK block",                                                                                      # between the popliteal artery and the posterior capsule of the knee, at the level of the femoral condyles, posterior knee pain, sensory articular schiatic branches, prevents foot drop (CPN block)                                
             "NT > What muscle to pierce to get to transversal processus for a ESP block",                                                             # trapecius > rhomboids > erector spinae > TP (go for lower side to prevent spread into ES (would only get the posterior rami (good for spine surgery))) >>>>>>>> https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
-            "NT > How can you distinguish ribs from TP in ultrasound?",                                                                               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
+            "NT > How can you distinguish ribs from TP in ultrasound?",                                                               #               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
             "Draw the coronary arteries (TT)",
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
             "What are the diaphragmatic openings and its contents?",
@@ -33,6 +33,7 @@ run <- function() {
             "Describe the possible route of a sympathic preganglionic fiber",
             "NT > How are splanchnic ganglia innervated?",                                                                            #               # prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
             "NT > What is special about the adrenal medulla?",                                                                                        # preganglionic sympathetic fibers T5-L2, enter medulla via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
+            "NT > How much LA do you need to block a segment thoracally and lumbar?",                                                                 # 3-4 ml (thoracally), more for lumbar (5-6 ml), less for cervical (2-3 ml)"
             "Describe the function of the Rotameter",
             "What are relative and absolute humidity?",
             "What safety features are present on the rotameter?",
@@ -558,7 +559,7 @@ run <- function() {
             "What do nociceptors detect?",
             "Describe the sacroiliacal plexus",
             "What would it look like for a failing ventricle?",
-            "What is heterometric autoregulation?",
+            "What is heterometric autoregulation?",                                                                                     #             # Frank-Starling mechanism > Adjust force of contraction to changes in preload, which states that the more the heart muscle stretched > stronger contraction
             "Can you explain how an atrioventricular nodal re-entrant tachycardia works?",
             "What is the hierarchy of evidence?",
             "Explain the proportion, L/min and ml/100g of blood flow for heart, kidney, liver and the brain",
@@ -681,22 +682,51 @@ run <- function() {
             "Describe the principle of the Vacuum insulator evaporator?",
             "What are the different types of method of action that drugs can have?",
             "What is Reactance?",
-            "NT > What drugs increase the likelyhood of serotonine syndrome in patietns on SSRI?"                                                     # tramadol, MAO inhibitors (selegelin, moclobemid, rasagilin, tranylcypromin), linezolid, lithium, dextromethorphan, St John's Wort, buspirone, cyclobenzaprine, fentanyl, methadone                  
+            "NT > What drugs increase the likelyhood of serotonine syndrome in patietns on SSRI?",                                                    # tramadol, MAO inhibitors (selegelin, moclobemid, rasagilin, tranylcypromin), linezolid, lithium, dextromethorphan, St John's Wort, buspirone, cyclobenzaprine, fentanyl, methadone                  
             "Can you tell me how local anaesthetics work?",
+            "NT > What steps are needed for a conservations of a RBC bag?",                                                                           # centrifuge > remove plasma, add preservatives (60 ml), leukoreduction (99.9% WBC removed),  store at 4 degrees for 40d
             "Tell me about dabigatran",
+            "NT > For what is blood routinely screened?",                                                            ,                                # ABO and RhD blood group, Hepatitis B (Hep B core antigen (anti-HBc + HBs)), Hepatitis C (Antibodies, HCV RNA), antibobies to HIV 1 and 2, syphilis, West Nil virus
             "What is an antagonist?",
+            "NT > Tell the significane and differences of direct and indirect coombs test?",                                                          # Every transfusion > 9% alloimmunisation, Direct > detects AB already bound to RBC (autoimmune haemolytic anaemia, haemolytic disease of newborn, transfusion reactions) > add anti-human globulin to patient’s RBCs > agglutination = positive test. Indirect > recipients AB (alloimunisation) > can bind to RBC (e.g. pre-transfusion testing) > add patient’s serum to donor RBCs > add anti-human globulin > agglutination = positive test"
             "What is the difference between absolute and relative risk reduction?",
             "Describe the nicotinic acetylcholine receptor",
             "What is first pass metabolism and when is it useful?",
             "Tell me how local anaesthetics vary in pharmacological and clinical properties and explain why?",
             "What does protein binding determine?",
             "How many half lives does it take for a process to be considered completed?",
+            "NT > How is crossmatch performed?",                                                                                                      # Donor blood is mixed with reciepients serum (Immidiate phase (5 min) - major AB-Rh incompatibility, incubation phase (40 min) - AB in Rhesus system, antiglobulin phase (hours) - only if atypical AB by alloimmunisation (atypical Kell, Kidd, Duffy))
             "How is ethanol metabolised and what pharmacokinetics does it demonstrate?",
             "What would the graph look like in Aortic Stenosis?",
             "How does half life relate to the time constant?",
             "What are the different types of anti-emetic that you know?",
             "What is the significance of the pKa?",
+            "What classes of antidepressant do you know?",
+            "How do TCAs work and what effects do they have", 
+            "How would you diagnose and manage TCA overdose?",
+            "How do serotonin specific reuptake inhibitors work?",
+            "What can you tell me about monoamine oxidase inhibitors?",
+            "Tell me about lithium",
+            "What type of chemical is insulin and what is it used for?",
+            "Where is it produced and how is it controlled?",
+            "What is insulin’s mechanism of action and what effects does it have?",
+            "How is insulin presented?",
+            "What are its important side effects?",
+            "Tell me about the oral diabetic medications",
+            "What are main anaesthetic concerns for diabetic patient in perioperative period?",
+            "What are the different types of anticoagulant drugs?",
+            "How can you measure the activity of anticoagulant medications?",
+            "Tell me about heparin",
+            "What are the side effects of Protamine?",
+            "What are the main differences between UFH and LMWH?",
+            "Tell me about warfarin",
+            "What antiplatelet agents do you know?",
+            "What can you tell me about fibrinolytic agents?",
+            "How long must you wait after giving LMWH before performing central neuraxial blockade? What about other agents?",
+            "What do you know about aprotinin?",
+            "What other options are there for reversal of anticoagulants?",
             "Can you explain the difference between sensitivity and specificity?",
+            "NT > What are the changes of RBC during prolongs storage?",                                                                              # 2,3-DPG depletion (high energy phospate form due to ATP depletion (no mitochondria)) (left shift), K leak, haemolysis due to phospholipid loss, reduced deformability (first echinocytes (reversible), 40d irreversible) - spleen pooling, less endothelial contact6 , reduced nitric oxide levels, increased pro-inflammatory mediators
             "Tell me about the renin-angiotensin-aldosterone system",
             "What are the ways in which a molecule can cross a membrane?",
             "What controls release of aldosterone and what are its effects?",
@@ -714,6 +744,7 @@ run <- function() {
             "How do inhaled general anaesthetic agents work?",
             "What do you know about local anaesthetic metabolism?",
             "What is potency?",
+            "NT > What blood compatibility testing is done before a blood transfusion?",                                                              # Donor-Recipient crossmatch, ABO (15 min) and RhD typing > Anti D (10 min) > 85 % Rh positive (have D antigen on RBC walls) > 40 Antigens but 5 relevant (D, C, E, c, e, anti D most immunogen))
             "What are the different types of anti-emetic that you know?",
             "How do macrolides work?",
             "Do you know any aminoglycosides?",
@@ -1031,6 +1062,7 @@ run <- function() {
             "How can bacteria become resistant to penicillins?",
             "How do cephalosporins differ from penicillins?",
             "Tell me about carbapenems",
+            "NT > What are the infection rates of blood transfusion?",                                                                                # 1:2/3 Mill (HIV, HEP C), HBV (1:50-200k), bacterial contamination (1:30-150k, more for platelets), low developed countries all much higher
             "How do glycopeptide antibiotics work?",
             "How would you perform an RSI induction?",
             "What are the main bacterial targets of antibiotics?",
@@ -1042,6 +1074,8 @@ run <- function() {
             "How is AKI diagnosed?",
             "Describe the Mallampati score",
             "Describe the Cormack-Lehane classification",
+            "NT > What is the risk of transfusion reaction?",                                                                                         # ABO + Rh: 99.2% (2 out of 1000), ABO + Rh + Ab: 99.94% (< 1:1000), ABO + Rh + Ab + Crossmatch: 99.95%, pat with TrX 10 fold increase of reactions!!!
+            "NT > What are the general rules for emergency transfusion?",                                                                             # O negative blood (Rh +, except female in child bearing age or female child), if mass transfusion, redo ABO testing every 10 units
             "What is dialysis?",
             "What is a difficult airway?",
             "What are the disadvantages of CRRT compared to intermittent?",
@@ -1618,30 +1652,6 @@ run <- function() {
             "What is Gay-Lussac’s Law",
             "What is the Universal or Ideal Gas Law?",
             "What is Henry’s Law?",
-            "What classes of antidepressant do you know?",
-            "How do TCAs work and what effects do they have", 
-            "How would you diagnose and manage TCA overdose?",
-            "How do serotonin specific reuptake inhibitors work?",
-            "What can you tell me about monoamine oxidase inhibitors?",
-            "Tell me about lithium",
-            "What type of chemical is insulin and what is it used for?",
-            "Where is it produced and how is it controlled?",
-            "What is insulin’s mechanism of action and what effects does it have?",
-            "How is insulin presented?",
-            "What are its important side effects?",
-            "Tell me about the oral diabetic medications",
-            "What are main anaesthetic concerns for diabetic patient in perioperative period?",
-            "What are the different types of anticoagulant drugs?",
-            "How can you measure the activity of anticoagulant medications?",
-            "Tell me about heparin",
-            "What are the side effects of Protamine?",
-            "What are the main differences between UFH and LMWH?",
-            "Tell me about warfarin",
-            "What antiplatelet agents do you know?",
-            "What can you tell me about fibrinolytic agents?",
-            "How long must you wait after giving LMWH before performing central neuraxial blockade? What about other agents?",
-            "What do you know about aprotinin?",
-            "What other options are there for reversal of anticoagulants?",
             "What drugs do you know that act on the gastrointestinal system?",
             "Please define the following terms",
             "What equations would give the following graphs?",
@@ -1655,7 +1665,7 @@ run <- function() {
     cat("--- Starting Study Session ---\n")
     cat("Press [Enter] for the next question, or type 'q' to quit.\n")
     
-    solved_questions <- 0
+    solved_questions <- 1
     # 2. Outer loop: Restarts the whole sequence forever
     while(TRUE) {
         
