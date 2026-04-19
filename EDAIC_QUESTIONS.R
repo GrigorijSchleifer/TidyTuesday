@@ -47,7 +47,7 @@ run <- function() {
             "NT > How can you distinguish ribs from TP in ultrasound?",                                                               #               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
             "Draw the coronary arteries (TT)",                                                                                        #               # RCA > right atrium, right ventricle, SA node (60% of people), AV node (80% of people), posterior descending artery (85% of people), LCA > LAD > anterior interventricular septum, left circumflex artery > left atrium, left ventricle, SA node (40% of people)
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
-            "What are the diaphragmatic openings and its contents?",                                                                  #               # caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein)
+            "What are the diaphragmatic openings and its contents?",                                                                  #               # caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein), left phrenic pierces muscle, sympathetic truncs pass posteriourly, splanchnics piers crura
             "What signs would indicate ulnar nerve damage?",
             "Describe the possible route of a sympathic preganglionic fiber",
             "NT > How are splanchnic ganglia innervated?",                                                                            #               # prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
@@ -255,7 +255,6 @@ run <- function() {
             "What determines where in the gut a drug is absorbed?",
             "What is the Bohr effect?",                                                                                                #
             "Tell me about the bicarbonate-carbonic acid buffer",
-            "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
             "What factors affect lower oesophageal sphincter tone?",
             "NT > Explain the calculation of cylinders capacity and differences of A-H cylinders with their cylinder factors",                        # A smallest, G (around 1.8m) > both can have 2000 psi 
             "How quickly do differentbuffer systems act?",
@@ -355,13 +354,13 @@ run <- function() {
             "Can you draw a diagram to demonstrate the pain pathway to the brain?",
             "What are the different types of hypersensitivity reactions?",
             "What are the physiological changes seen in pregnancy?",
-            "What is critical DO2?",                                                                                                  # 
+            "What is critical DO2?",                                                                                                   # 
             "How is iron excreted?",
             "Drugs can be divided into three categories where they distribute",
             "How can molecules cross a cell membrane?",
             "What are the effects on the body of acute anaemia?",
             "What happens to a single dose of IV propofol?",
-            "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
+            "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",                                  # 
             "What the structure of the immune system?",
             "What is the Pasteur point?",
             "How can a cell produce energy?",
@@ -383,7 +382,7 @@ run <- function() {
             "What factors affect distribution of a drug?",
             "What is the function of CSF?",
             "What is base excess when compared to 'standard' base excess?", 
-            "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                           ###            # 3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
+            "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                            ###           # 3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
             "Can you tell me the components of the reflex arc?",
             "What are the methods of measuring anaerobic threshold?", 
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
@@ -475,6 +474,7 @@ run <- function() {
             "What is spirometry?",
             "Please draw a normal vitalograph spirometry trace for a single exhaled breath",
             "Draw a spirometry trace of normal tidal volume breathing, and then a maximal inspiratory and expiratory breath",
+            "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
             "What volumes cannot be measured using spirometry?",
             "What is compliance?",
             "What is hysteresis?",                                                                                                       # 
@@ -924,7 +924,7 @@ run <- function() {
             "What is the ‘oil:gas partition coefficient’ and how is it clinically relevant?",
             "jlkWhat do you understand by ‘MAC’ and how is it clinically relevant?",
             "What are the causes of metabolic acidosis?",
-            "How is AVR (Goldberger) calculated?",
+            "How is AVR (Goldberger) calculated?",                                                                                       #
             "NT > Please describe what happens during a Valsalva manoeuvre",                                                             #            # picture on derranged physiology 
             "What factors affect protein binding?",
             "How does levobupivacaine compare to dextrobupivacaine?",
@@ -1628,7 +1628,7 @@ run <- function() {
             "Can you discuss the commonly used airway adjuncts?",
             "What are the limitations of the Hudson facemask?",
             "What supraglottic airways can you tell me about?",
-            "What are the features of the commonly used laryngoscopes?",
+            "NT > What are the features of the commonly used laryngoscopes?",                                                               #              # Macintosh (in valecula, indirect epi lifting, 3 for women, 4 for men), Miller (staigt blade, direct epi lifting, good for large + floppy epi in kids), McCoy (lever to lift epi, for restricted neck), C-MAC + Glidescope (video, but can be used as normal) 
             # 12.04.26
             "Tell me more about the Class I antiarrhythmic agents",
             "Tell me about amiodarone",
