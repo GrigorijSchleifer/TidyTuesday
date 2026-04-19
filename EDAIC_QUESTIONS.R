@@ -4,6 +4,11 @@ library(lubridate)
 run <- function() {
     # 1. Define the question sets
     soe_list <- list(
+        # biopsychosocial approach
+        # IR (immediate release) vs DR (delayed release) vs SR (sustained release), STAT: Immediately. OM/ON: Every morning/every nigh
+        # BD (bis in die) twice daily, TDS (ter die sumendum) three times daily, QDS (quater die sumendum) four times daily, PRN (pro re nata) as needed
+        # meloxicam (COX2 NSAID) has a longer HL than ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)
+        # 
         #####
         anatomy = c(
             "Explain me the course of the corticospinal tract", 
@@ -103,7 +108,7 @@ run <- function() {
             "How is blood flow controlled through capillary beds?",
             "What is the course and innervation of the obturator nerve?",
             "How many nuclei does the vagus nerve have and what is their function?",                                                     #
-            "Tell me about the sympathetic chain",                                                                                       #.           # paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
+            "Tell me about the sympathetic chain",                                                                                       #            # paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers (C) exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
             "What are the posterior muscles of the foot?",
             "Describe the general structure of the abdominal wall.",
             "What are the distal branches of the tibial nerve?",                                                                                      # https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
@@ -203,7 +208,7 @@ run <- function() {
             "How would you perform a spinal anaesthetic for a TURP?",
             "What spinal level would you choose and why?",
             "What are the contraindications to spinal anaesthesia?",
-            "What layers would your needle pass through?",
+            "What layers would your needle pass through?",                                                                             ###            # skin > subcutaneous tissue > supraspinous ligament > interspinous ligament > ligamentum flavum > epidural space > dura mater > arachnoid mater > subarachnoid space
             "What level is required for a TURP?",
             "How long must you wait after giving prophylactic low molecular weight heparin?",
             "What are the signs and symptoms of a high spinal?",
@@ -380,7 +385,7 @@ run <- function() {
             "What factors increase 2,3-DPG production?",
             "Describe the fibrinolytic pathway",
             "What are the requirenments for a patient who is nil by mouth (NBM) before surgery?",
-            "What is the alveolar gas equation?",
+            "What is the alveolar gas equation?",                                                                                       ##            # TK: PAO2 = FiO2 (Pb - PH2O) - PaCO2/RQ - 0.21 * (101 - 6.3) - 5.5/0.8 = 13.7 kPa PAO2
             "What assumptions are required for the alveolar gas equation?",
             "What are the physiological changes seen in pregnancy?",
             "How are muscle spindles innervated?", 
@@ -1210,7 +1215,6 @@ run <- function() {
             "What is the equation for pulmonary vascular resistance?",                                                                 # 
             "How does SVR relate to blood pressure?",
             "What are the complication of chemotherapeutic agents on the different organs?",
-            
             "What are Guedel’s Stages of Anaesthesia?",
             "How do inhaled general anaesthetic agents work?",
             "What factors affect the MAC?",
@@ -1397,7 +1401,7 @@ run <- function() {
             "What are the properties of an ideal breathing system?",
             "What is the Mapleson Classification of breathing systems?",
             "Describe the Circle breathing system",
-            "Tell me about the Bain Circuit",                                                                                          #              # inner tube for FG, Mapleson D, spontaneous inefficient, APL distant, FG close to patient
+            "Tell me about the Bain Circuit",                                                                                           #             # inner tube for FG, Mapleson D, spontaneous inefficient, APL distant, FG close to patient
             "What is the main risk with a co-axial mapleson B or Bain circuit?",
             "Can you explain why the Mapleson A circuit is better for spontaneous breathing than controlled ventilation?",
             "What flow rates do each of the systems require?",
