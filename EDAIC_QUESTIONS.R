@@ -1,14 +1,19 @@
+# biopsychosocial approach
+# IR (immediate release) vs DR (delayed release) vs SR (sustained release), STAT: Immediately. OM/ON: Every morning/every nigh
+# BD (bis in die) twice daily, TDS (ter die sumendum) three times daily, QDS (quater die sumendum) four times daily, PRN (pro re nata) as needed
+# meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)
+# REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal
+# Damage Control Surgery
+# Compiance lung + thorax = 130 ml/cmH2O, compliance lungs 220 ml/cmH2O FOR delta P alveolar, delta P intrapleural is differenct (decrease in delta p intrapleural 100 lung + thorax / 200 lungs only)
+# despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product
+# haemolysis > free Hb crystalyses in bowmann capsule > "plugging of renal filter"
 library(lubridate)
 #!/usr/bin/env Rscript
 
 run <- function() {
     # 1. Define the question sets
     soe_list <- list(
-        # biopsychosocial approach
-        # IR (immediate release) vs DR (delayed release) vs SR (sustained release), STAT: Immediately. OM/ON: Every morning/every nigh
-        # BD (bis in die) twice daily, TDS (ter die sumendum) three times daily, QDS (quater die sumendum) four times daily, PRN (pro re nata) as needed
-        # meloxicam (COX2 NSAID) has a longer HL than ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)
-        # 
+        
         #####
         anatomy = c(
             "Explain me the course of the corticospinal tract", 
@@ -154,11 +159,11 @@ run <- function() {
             "Tell me how you would perform an emergency cricothyroidotomy",
             "Tell me how you would perform an elective or semi-elective percutaneous tracheostomy",
             "What are the anatomical borders of the anterior triangle of the neck?",
-            "Describe the course of the internal jugular vein",
+            "Describe the course of the internal jugular vein",                                                                          #
             "What are the anatomical landmarks for placing an internal jugular central line?",
             "Why is the right internal jugular vein used more frequently than the left?",
             "How can you tell between the internal jugular vein and the carotid artery on ultrasound?",
-            "What are the important nearby structures to the internal jugular vein?",
+            "What are the important nearby structures to the internal jugular vein?",                                                    # 
             "How many vertebrae are there?",
             "What is the average total CSF volume, and normal supine pressure, in an adult?",
             "What are the primary and compensatory curvatures of the spine?",
@@ -186,7 +191,7 @@ run <- function() {
             "Where are arterial aneurysms most commonly found?",
             "What factors affect flow in a blood vessel?",
             "What factors affect cerebral autoregulation?",
-            "What proportion of strokes occur in the anterior circulation?",                                                            #             # 70% (90% of these in the MCA)
+            "What proportion of strokes occur in the anterior circulation?",                                                            ##            # 70% (90% of these in the MCA)
             "Where is the only place in the body that an artery passes through a venous structure?",
             "What are the boundaries of the mediastinum?",
             "What are the contents of the mediastinum?",
@@ -231,6 +236,7 @@ run <- function() {
             "What factors impact the amount of drug absorbed by the inhalational route?",
             "What is 2,3-DPG?",
             "How does the saturation of Hb occur?",
+            "NT > What are the equivalents for 1 Atm in mmHg, kPa, psi and Torr?",                                                                    # 1 Atm = 760 mmHg = 101.3 kPa = 14.7 psi, 760 Torr
             "What are the parameters of Thromboelastography?",
             "What systems in the body act to maintain control of pH?",
             "What is pKa in relation to buffer systems?",
@@ -241,6 +247,7 @@ run <- function() {
             "Tell me about the bicarbonate-carbonic acid buffer",
             "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
             "What factors affect lower oesophageal sphincter tone?",
+            "NT > Explain the calculation of cylinders capacity and differences of A-H cylinders with their cylinder factors",                        # A smallest, G (around 1.8m) > both can have 2000 psi 
             "How quickly do differentbuffer systems act?",
             "Why is the medulla devided and how?",
             "How is insulin produced and how does it work?",
@@ -459,7 +466,7 @@ run <- function() {
             "Draw a spirometry trace of normal tidal volume breathing, and then a maximal inspiratory and expiratory breath",
             "What volumes cannot be measured using spirometry?",
             "What is compliance?",
-            "What is hysteresis?",
+            "What is hysteresis?",                                                                                                       # 
             "Please draw the following Flow-Volume Curves",
             "What is ventricular elastance and show it on a LV PV Loop?",
             "What are the systemic effects of magnesium?",
@@ -1055,6 +1062,7 @@ run <- function() {
             "How does a two compartment model differ to the one compartment model?",
             "What is tetanic stimulation?",
             "What are your options if you reach Plan B (ITN)?",
+            "NT > What are the points of the hunter creteria for serotone syndrome?",                                                                 # 1. Exposure to a serotonergic agent, 2. Spontaneous clonus, 3. Inducible clonus + agitation or diaphoresis, 4. Ocular clonus + agitation or diaphoresis, 5. Tremor + hyperreflexia, 6. Hypertonia + temperature > 38 degrees + ocular or inducible clonus
             "Explain positive and negative predictive value",
             "What are the anaesthetic implications of laparoscopic surgery?",
             "How do you perform emergency front of neck access?",
@@ -1065,12 +1073,15 @@ run <- function() {
             "What proportion of people are genuinely allergic to penicillins?",
             "What side effects do penicillins cause?",
             "How can bacteria become resistant to penicillins?",
+            "NT > What kinds of transfusion reactions do you know?",                                                                                  # most deadly (first TRALY, second HTR, sepsis), acute haemolytic (1:30-50k, ABO incompatibility), delayed haemolytic (1:100-200, alloimmunisation), febrile non-haemolytic (most common, 1:100-200, cytokine release from WBCs), allergic (1:100-1000, IgE mediated (atopy), anaphylactic (1:10-20k, IgA deficiency), TRALI (1:5-10k, donor anti-leukocyte antibodies), bacterial contamination (1:30-150k, more for platelets), iron overload (multiple transfusions)
             "How do cephalosporins differ from penicillins?",
             "Tell me about carbapenems",
             "NT > What are the infection rates of blood transfusion?",                                                                                # 1:2/3 Mill (HIV, HEP C), HBV (1:50-200k), bacterial contamination (1:30-150k, more for platelets), low developed countries all much higher
             "How do glycopeptide antibiotics work?",
+            "NT > What is the difference between delayed and acute haemolytic transfusion reactions?",                                                # Delayed (1:100-200) > alloimmunisation, 3-10 days post-transfusion, fever, jaundice, anaemia, positive coombs test
             "How would you perform an RSI induction?",
             "What are the main bacterial targets of antibiotics?",
+            "NT > Explain the pathophysiology of acute haemolytic reaction",                                                                          # VOLUME - SAVE THE KIDNEY, Anti-A, Anti-B (IgM - at the beginning and intravascular) > complement activatio (C1q > C3a > C5a > form membrane attack complex)  > intravascular haemolysis > free Hb > renal failure, DIC, shock, later on IgG (extravascular esp spleen)                                                          
             "Tell me about the three compartment model",
             "What is the management of AKI?",
             "Can you use TIVA in morbidly obese patients?",
