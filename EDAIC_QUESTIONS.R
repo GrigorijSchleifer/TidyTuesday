@@ -12,6 +12,9 @@ thousend <- c(
     "meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
     "Trousseau’s and Chvostek’s signs - low Ca and Mg",
     "C3 is the most abundand complement", 
+    "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
+    "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+    "Contraction alcalosis in diurhetics (bicarbonate increase) - extracellular volume depletion but fixed bicarbonate",
     
 )
 
@@ -92,7 +95,7 @@ run <- function() {
             "Tell be about the kidney (ABC)",
             "Describe the anatomy of the adrenal gland",
             "How would you perform a quadratus lumborum block?",
-            "Where is the hypothalamus and what does it do?",                                                                             #
+            "Where is the hypothalamus and what does it do?",                                                                           #
             "What is the course of blood vessels through the kidneys?", 
             "What are the compartments of the leg, supplying nerves, and lesions?",
             "How would you perform an erector spinae plane block?",
@@ -102,10 +105,10 @@ run <- function() {
             "What airway factors make intubation of young children and babies more difficult?",
             "Describe the structure of the sarcomere",
             "How would you perform a fascia iliaca block?",
-            "Describe the gate control theory of pain",                                                                                  #
+            "Describe the gate control theory of pain",                                                                                 #
             "What problems can occur with CSF circulation?",
             "How would you perform a femoral nerve block?",
-            "Can you tell me about the structure and function of the muscle spindle?",                                                    #            # muscle spindles (intrafusal fibres) > sensory afferent (Ia, II) to spinal cord, motor efferent (gamma) to intrafusal fibres, golgi tendon organs > sensory afferent (Ib) to spinal cord
+            "Can you tell me about the structure and function of the muscle spindle?",                                                  #              # muscle spindles (intrafusal fibres) > sensory afferent (Ia, II) to spinal cord, motor efferent (gamma) to intrafusal fibres, golgi tendon organs > sensory afferent (Ib) to spinal cord
             "How would you perform an adductor canal block?",
             "How would you perform an obturator nerve block?",
             "What hormones does the hypothalamus secrete?",
@@ -116,7 +119,7 @@ run <- function() {
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
             "Describe the anatomy of the spinal nerve",
             "What can you tell me about the thyroid gland?",
-            "Draw the fossa poplitea",                                                                                                   #             
+            "Draw the fossa poplitea",                                                                                                  #             
             "What airway factors make intubation of young children and babies more difficult?",
             "What does the pituitary gland do?",
             "Describe the circulation of CSF",
@@ -188,7 +191,7 @@ run <- function() {
             "How can you tell between the internal jugular vein and the carotid artery on ultrasound?",
             "What are the important nearby structures to the internal jugular vein?",                                                    # 
             "How many vertebrae are there?",
-            "What is the average total CSF volume, and normal supine pressure, in an adult?",
+            "What is the average total CSF volume, and normal supine pressure, in an adult?",                                            ##            # 150 ml, 10-15 mmHg (5-15 cmH2O)
             "What are the primary and compensatory curvatures of the spine?",
             "What are the distinguishing features of each type of vertebra?",
             "What are the effects of acute spinal cord injury?",                                                                         #            # spinal shock (neulogical symptoms) > paraplegia, areflexia, neurogenic shock (haemodynamic symptoms) > hypotension, bradycardia, hypothermia, fluid reistant, 6 weeks post injury,
@@ -216,7 +219,6 @@ run <- function() {
             "What factors affect flow in a blood vessel?",
             "What factors affect cerebral autoregulation?",
             "What proportion of strokes occur in the anterior circulation?",                                                            ##            # 70% (90% of these in the MCA)
-            "Where is the only place in the body that an artery passes through a venous structure?",
             "What are the boundaries of the mediastinum?",                                                                              # 
             "What are the contents of the mediastinum?",
             "Can you describe the nervous and blood supply to the tracheobronchial tree?",
@@ -239,7 +241,7 @@ run <- function() {
             "What is the femoral sheath?",
             "What is the adductor canal?",
             "Outline the course of the obturator nerve",
-            "What is the lumbosacral trunk?"
+            "What is the lumbosacral trunk?",
             "How would you perform a spinal anaesthetic for a TURP?",
             "What spinal level would you choose and why?",
             "What are the contraindications to spinal anaesthesia?",
@@ -261,7 +263,7 @@ run <- function() {
         #####
         physics_physiology = c(
             "Tell me how oxygen is carried in blood.",
-            "What is the structure of haemoglobin (Hb)?",
+            "NT > What is the structure of haemoglobin (Hb)?",                                                                         ##             # Tetrameric 4 globin chains (2 alpha, 2 beta), each with a haem group (protoporphyrin ring + ferrous iron), each haem can bind one O2 molecule, cooperative binding (binding of one O2 increases affinity for the next O2)
             "How does foetal Hb differ from adult Hb?",
             "What factors impact the amount of drug absorbed by the inhalational route?",
             "What is 2,3-DPG?",
@@ -334,14 +336,14 @@ run <- function() {
             "How does pregnancy affect the clinical effect of a drug?",
             "What are the gastric cells and what do they produce?",
             "How is gastric secretion regulated?",
-            "Tell me about the structure and function of the GI tract",                                                                 # 
+            "Tell me about the structure and function of the GI tract",                                                                # 
             "Tell me about gastrin",
             "What is oxygen flux?",
             "What are the different measures of spread?",
             "What role does potassium play and what are normal plasma levels?",
             "What are the parameters of Thromboelastography?",
             "Tell me about the blood supply to the kidney",
-            "What is the role of stomach acid?",
+            "What is the role of stomach acid?",                                                                                       #              # Digestion of food (especially proteins), 2. Absorption of nutrients (e.g., calcium, iron, vitamin B12), 3. Defense against pathogens (low pH kills many microorganisms), 4. Activation of digestive enzymes (e.g., pepsinogen to pepsin), 5. Regulation of gastric emptying (acidic chyme slows gastric emptying)
             "What is inflammation?",
             "What are the physiological effects of increasing age?",
             "What are the physiological changes seen in pregnancy?",
@@ -772,7 +774,7 @@ run <- function() {
             "What is odds ratio?",
             "What is the definition of an agonist?",
             "What problems are associated with hyperadrenalism?",
-            "What are the effects of glucocorticoids such as cortisol?",
+            "What are the effects of glucocorticoids such as cortisol?",                                                                #             # Metabolic (gluconeogenesis, insulin resistance, lipolysis, protein catabolism), anti-inflammatory (inhibit phospholipase A2 > reduce production of prostaglandins and leukotrienes, inhibit migration of inflammatory cells), immunosuppressive (reduce function of T and B lymphocytes), cardiovascular (catecholamine sensitivity), CNS (mood changes, insomnia), mineralcorticoid (sodium retention, potassium excretion), less T4 to T3 conversion
             "Describe and draw the synthesis pathway for the production of the catecholamines",
             "How does context sensitive half life vary between anaesthetic agents?",
             "What are the different types of method of action that drugs can have?",
@@ -867,7 +869,6 @@ run <- function() {
             "What is heterometric autoregulation?",
             "What is Voltage?",
             "What effect does cardiac disease have on pharmacokinetics?",                                                                # 
-            "What are the effects of glucocorticoids such as cortisol?",
             "What is an Osmole?",
             "What is a normal distribution?",
             "What is the null hypothesis?",                                                                                              # 
@@ -972,7 +973,7 @@ run <- function() {
             "How do drugs cross the blood brain barrier?",
             "What is the osmolar gap?",                                                                                                   # 
             "What factors affect whether a drug distributes to the foetus?",
-            "Draw the formula for pyruvate to lactate conversion",
+            "Draw the formula for pyruvate to lactate conversion",                                                                        #           # https://matthey.com/products-and-markets/pgms-and-circularity/pgm-chemicals-and-catalysts/catalysts/biocatalysts/ldh-enzyme
             "What do you understand by the term ‘muscle relaxant’?",
             "What is meant by the term pharmacogenetics and what are typical conditions?",
             "What types of muscle relaxants are you aware of?",
@@ -1057,7 +1058,7 @@ run <- function() {
             "How does systemic absorption differ between sites of local anaesthetic injection?",
             "How would you manage local anaesthetic toxicity?",
             "Tell me about lidocaine",
-            "Tell me about bupivacaine",
+            "Tell me about bupivacaine",                                                                                                #             # racemic mixture of dextrobupivacaine and levobupivacaine, long acting, more cardiotoxic than lidocaine (due to higher lipid solubility and potency), used for epidural and peripheral nerve blocks, less suitable for IV use, metabolised by liver (CYP450) > caution in hepatic impairment, excreted by kidneys > caution in renal impairment
             "Tell me about levobupivacaine",
             "Which local anaesthetic agent is most suitable for day case surgery and why?",
             "What can you tell me about cocaine?",
@@ -1507,7 +1508,8 @@ run <- function() {
             "What is the name of the point of equal absorbance, and what wavelengths does it represent?",
             "What are the sources of error with a pulse oximeter?",
             "How does the pulse oximeter reduce the impact of ambient light?",
-            "What is BIS?",
+            "What is BIS?",                                                                                                            #              # only validated for GABAa (Propofol and stuff), Poweranalysis, Phaserelationsship and how much burst suppression > dimensionless number (0-100), at deep sleep the waves are aligning in a coherent way and BIS sees this phase relationsship, POWER ANALYSIS, Is like a concert listener analysing with waves are playing at the moment, computer plots voltages as a graph, forrier analysis (dismantles the complex wave in muliple other sine waves with different frequencies), awake: high frequency, low amplitude, asleep - low frequency, high amplitued (sine way kind of), On the screen - voltage between the 4 electrodes > reference - middle of forehead, 2 active - forehead, ground - temple), measures frontal lobe electrical activity, 
+            "NT > What are the main freuquencies of brain activity and what do they correspond to?",                                                  # Delta (0.5 - 4 Hz) > deep sleep, Theta (4 - 8 Hz) > light sleep, Alpha (8 - 13 Hz) > awake but relaxed, Beta (13 - 30 Hz) > awake and alert, Gamma (> 30 Hz) > cognitive processing
             "What are the components of BIS?",
             "What does the BIS Index number mean?",
             "What factors may cause artefact and interference of the BIS signal?",
@@ -1648,7 +1650,7 @@ run <- function() {
             "Can you discuss the commonly used airway adjuncts?",
             "What are the limitations of the Hudson facemask?",
             "What supraglottic airways can you tell me about?",
-            "NT > What are the features of the commonly used laryngoscopes?",                                                               #              # Macintosh (in valecula, indirect epi lifting, 3 for women, 4 for men), Miller (staigt blade, direct epi lifting, good for large + floppy epi in kids), McCoy (lever to lift epi, for restricted neck), C-MAC + Glidescope (video, but can be used as normal) 
+            "NT > What are the features of the commonly used laryngoscopes?",                                                           #              # Macintosh (in valecula, indirect epi lifting, 3 for women, 4 for men), Miller (staigt blade, direct epi lifting, good for large + floppy epi in kids), McCoy (lever to lift epi, for restricted neck), C-MAC + Glidescope (video, but can be used as normal) 
             # 12.04.26
             "Tell me more about the Class I antiarrhythmic agents",
             "Tell me about amiodarone",
@@ -1661,6 +1663,8 @@ run <- function() {
             "What are the steps to a machine check?",
             "What are the features of an ideal vaporiser?",
             "Why does the machine have reducing valves?",
+            "NT > What are the effects of temperature on ph, pCO2 and O2 on a blood gas, little effect on HCO3-?",                      #             # Temperature decrease > pH increase, pCO2 decrease, pO2 decrease (solubility of gases increases with decreasing temperature) 
+            "NT > Differences in venous and arterial blood gas",                                                                        #             # Venous blood gas > pH lower, pCO2 higher (6mmHg), pO2 lowe (40-50mmHgr, HCO3- similar (depends on metabolic status), lower glucose, higher lactate 
             "What does a vaporiser do?",
             "What is saturated vapour pressure?",
             "How does a plenum vaporiser work?",
