@@ -31,8 +31,25 @@
 # Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment
 # ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)
 # the lower you puncture for IJV in the sedillets triangle the more anterio the carotid gets
+# Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) 
+# AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)
 # Larmour equation describes the spin of protons around the B0 magnetic field, the higher the B0, the faster the spin, the better the resolution of the MRI, RF pulse affects this spin
-
+# Body is on a alkaline neutral side state
+# Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder
+# By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction
+# Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis
+# Fibrinolysis is assesset with DDimers, and Thrombintime!
+# LCFN - over iliacus muscle and over, under or through the inguinal ligament 
+# if placing LA under the fascia lata > not LA to LFCN becaus FL is deviding the iliacus and rectus femoris
+# Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh
+# PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) 
+# Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression
+# Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids
+# Coca Cola Urine - Rhabdomyolysis, muscle breakdown, myoglobinuria, hyperbilirubinuria (Cholurie), treat with fluids (myoglobin dilution --- MOST IMPORTANT), mannitol, bicarbonate
+# Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)
+# Gurd`s criteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat
+# PLAN PREPARE PROCEED - extubation or other interventions 
+# Becker - mild form of Duchene
 
 
 
@@ -266,11 +283,13 @@ run <- function() {
         ),
         #####
         physics_physiology = c(
+            "NT > What is SID (Steward) and how is it calculated?",                                                                                   # Strong Ion Difference (SID) = (Na + K + Ca + Mg) - (Cl + lactate), normal around 40 (if albumine normal), decrease in SID causes acidosis, increase causes alkalosis (unmeasured ions)
             "Tell me how oxygen is carried in blood",
             "NT > What is the structure of haemoglobin?",                                                                              ##             # Tetrameric 4 globin chains (2 alpha, 2 beta), each with a haem group (protoporphyrin ring + ferrous iron), each haem can bind one O2 molecule, cooperative binding (binding of one O2 increases affinity for the next O2)
             "How does foetal Hb differ from adult Hb?",
             "What factors impact the amount of drug absorbed by the inhalational route?",
             "What is 2,3-DPG?",
+            "NT > Why can a hypoalbuminaemia mask detection of metabolic acidosis?",                                                                  # Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis)
             "How does the saturation of Hb occur?",
             "NT > What are the equivalents for 1 Atm in mmHg, kPa, psi and Torr?",                                                     ##              # 1 Atm = 1 bar = 760 mmHg = 101.3 kPa = 14.7 psi, 760 Torr
             "What are the parameters of Thromboelastography?",
@@ -286,6 +305,7 @@ run <- function() {
             "How quickly do differentbuffer systems act?",
             "Why is the medulla devided and how?",
             "How is insulin produced and how does it work?",
+            "NT > Describe the DLCO and KCO values and what does it say?",                                                                            # Diffusing capacity of the lung for carbon monoxide (DLCO), normal around 25 ml/min/mmHg, decreased in conditions that affect the alveolar-capillary membrane (e.g., pulmonary fibrosis, emphysema), increased in conditions with increased pulmonary blood flow (e.g., left-to-right cardiac shunts), KCO - correction factor for lung volume 
             "What is specific heat capacity?",
             "What are the four laws of thermodynamics?",
             "How can temperature be measured?",
@@ -307,6 +327,7 @@ run <- function() {
             "What can you tell me about calcitonin?",
             "How does pregnancy affect the clinical effect of a drug?",
             "Tell me about white blood cells",
+            "NT > Describe the ultasound picture when performing the femoral or LCFN blocks",                                          #              # IVAN, FN under FL over the iliaocus (no psoas component), lateral to the iliacu is the rectus femoris, lateral to rectus femoris (RF) is the tensor fascial lata (TFL. Between RF and TFL is a fat spot under inguinal ligament (there is the LFCN)
             "What are the functions of the kidney?",
             "Can you draw me a diagram of the thyroid axis?",
             "How is blood sugar controlled?",                                                                                          #              # Beta cells (Islets of Langerhans) - stimulus (BZ, Aminoacids, Incretins (GLP1) > depolarisation > Ca2+ influx > insulin release > inhibition of hepatic gluconeogenesis in the liver, inhibits lipolysis, glucogenoneogenesis, uptake, proteinogenesis, lipogenesis, alpha cells (Islets of Langerhans) - stimulus (hypoglycaemia, aminoacids) > depolarisation > Ca2+ influx > glucagon release > stimulates hepatic gluconeogenesis and glycogenolysis, stimulates lipolysis, inhibits lipogenesis, delta cells (Islets of Langerhans) - somatostatin release > inhibits insulin and glucagon release, adrenalin, cortison, growth hormone increase sugar
@@ -628,6 +649,7 @@ run <- function() {
             "Tell me about pressure is the pressure driving flow to the coronary arteries",
             "What are the mechanisms?",
             "How does the kidney contribute to the regulation of the water balance in the body?",
+            "NT > Why do we have measurements for AG and SID, what is the difference?",                                                               # AG - Diagnostic Tool (anion gap - Henderson-Hasselbach tradition - are there unmeasured anions that eat up my bicarbonate - to categorise types of metabolic acidosis) = [Na+] - ([Cl-] + [HCO3-]) > normal 12 mEq/L, used to identify causes of metabolic acidosis (elevated AG suggests presence of unmeasured anions, such as lactate or ketones), SID (strong ion difference - Stewards physical chemistry approach - explains how changes in water dissociation (H+ and OH-) are forced by the balance of strong ions.) = [Na+] + [K+] - [Cl-] > normal 40 mEq/L, used in the Stewart approach to acid-base ELECTRICAL BALANCE balance, where a decrease in SID (due to increased Cl- or decreased Na+) leads to acidosis, while an increase in SID leads to alkalosis
             "Please describe the renin-angiotensin-aldosterone system (RAAS).",
             "What effect does reducing venous resistance have on venous return and cardiac output?", 
             "How is calcium stored in the body?",
