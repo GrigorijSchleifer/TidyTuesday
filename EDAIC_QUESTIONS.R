@@ -1,4 +1,15 @@
+# ACUTE assessment and treatment framework based on xABCDE
+# TRAUMA MIST SAMPLE framework
+# CONSERNS can be formulated with the patient, pathology, anesthetic and surgical framework
+# EVALUATION of patients condition using history, functional capacity, vitals, medication, examination, investigations framework >> OPTIMISATION and risk assessment for patient informed consent
+# US assessment framework: structural, functional, haemodynamic 
+
 # "biopsychosocial approach",
+# Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h
+# Propofol sparing technique
+# TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good
+# Always mention the MDT approach before you start
+# Anesthetic with COMPETING interests
 # "Nerves like fermoral arborise > slide higher",
 # "q.i.d (4/d), IR (immediate release) vs DR (delayed release) vs SR (sustained release), STAT: Immediately. OM/ON: Every morning/every nigh",
 # "Genicular nerves provide innervation to the knee joint",
@@ -54,8 +65,17 @@
 # 1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)
 # 101 kPa (1 Atm or 1 bar) is 101 thouthend Pascal
 # Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)
-
-
+# Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose
+# Urokinase/Streptokinases are serine proteases that activate plasminogen to plasmin, which breaks down fibrin
+# Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)
+# Dabigatran (Pradaxa) is a thrombin inhibitor (the only one imortant) - rest is Factor X inhibitors (Apixaban (Eliquis), Rivaroxaban (Xarelto), Edoxaban (Lixiana))
+# Andexanet (Ondexxya) > reversal agent for factor Xa inhibitors apixaban AND rivaroxaban) - modified recombinant factor Xa
+# HAS BLED SCORE - 1 POINT FOR ANY > Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly > 1 year probability of bleeding for AFib patients
+# Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)
+# aPTT > intrinsic pathway (heparin), PT > extrinsic pathway (warfarin), INR > standardised PT
+# Bupivacain is 20 times more lipid solumble and 4 times more potent than lidocain
+# Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine
+# Onset can`t really be affected by mixing the locals (it only shortens the duration of the more longer lasting LA)
 
 library(lubridate)
 #!/usr/bin/env Rscript
@@ -344,6 +364,7 @@ run <- function() {
             "What is the chemoreceptor trigger zone?",
             "How is thyroid hormone produced?",
             "At what receptors do thyroid hormones act?",
+            "NT > What are the transvalvular pressure gradients and valvular areas?",                                                                 # Aortic valve: < 5 mmHg, Mitral valve: < 2 mmHg, Tricuspid valve: < 2 mmHg, Pulmonary valve: < 5 mmHg
             "What are insulin's effects?",
             "What is the Monroe-Kellie doctrine?",
             "How can a cell produce energy?",
@@ -436,6 +457,7 @@ run <- function() {
             "Define “exponential”",
             "Tell me about white blood cells",
             "What factors affect distribution of a drug?",                                                                              #             # Grahams law (size), ficks law (concentration),  blood flow to tissues, capillary permeability, binding to plasma proteins and tissue components, and the drug's own physicochemical properties (lipophilicity, molecular size, ionization)  
+            "NT > Which respiratory failure types do you know?",                                                                                      # Type 1 (hypoxemic, PaO2 < 60 mmHg with normal or low PaCO2), Type 2 (hypercapnic, PaCO2 > 50 mmHg), Type 3 (perioperative, combination of type 1 and 2), Type 4 (shock-related, due to inadequate perfusion)                                        
             "What is the function of CSF?",
             "What is base excess when compared to 'standard' base excess?", 
             "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                            ###           # 3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
@@ -444,6 +466,7 @@ run <- function() {
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What is the role of sodium within the body, and what are the daily requirements?",
             "What factors increase afterload?",
+            "Tell me the management of anticoagulatory drugs in respect to regional anesthesia",
             "What are sinusoidal capillaries?",
             "What happens to the waveform if the compliance of the brain decreases?",
             "What are the different types of data?",
@@ -776,6 +799,7 @@ run <- function() {
             "How does half life relate to the time constant?",
             "What are the different types of anti-emetic that you know?",
             "What is the significance of the pKa?",
+            "NT > Draw the classical clotting cascade and the drugs involved",
             "NT > Why is pregabalin better compared to gabapentin?",                                                                    #             Pregabalins (Lyrica) bioavailability (90% vs 33-66%), linear pharmacokinetics, faster onset, less interactions, more potent (150 mg pregabalin = 300 mg gabapentin), more sedation with pregabaline, Gabapentin better for dialysis patients in renal failure
             "What classes of antidepressant do you know?",
             "How do TCAs work and what effects do they have", 
