@@ -4,7 +4,6 @@ library(lubridate)
 run <- function() {
         urls <- list(
             not_seen <- c(
-                "https://www.anaestheasier.com/frequently-asked-questions/",
                 "https://www.anaestheasier.com/tag/airway-management/",
                 "https://www.anaestheasier.com/a-needle-to-the-neck/",
                 "https://www.anaestheasier.com/januairway/",
