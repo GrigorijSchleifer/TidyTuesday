@@ -337,7 +337,6 @@ run <- function() {
                 "https://www.anaestheasier.com/tag/physics-and-equipment/",
                 "https://www.anaestheasier.com/tag/poems/",
                 "https://www.anaestheasier.com/a-paralytic-poem/",
-                "https://www.anaestheasier.com/harmony-amidst-complexity-down-syndromes-anesthetic-voyage/",                    #
                 "https://www.anaestheasier.com/journey-of-light-awake-fibreoptics-guiding-hand/",
                 "https://www.anaestheasier.com/nerves-meanderings-a-spike-milligan-esque-ode-to-vagus/",
                 "https://www.anaestheasier.com/the-tempest-within-an-ode-to-anaphylaxis-in-anesthesia/",
