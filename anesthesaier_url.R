@@ -209,7 +209,7 @@ run <- function() {
                 "https://www.anaestheasier.com/accidental-awareness/",
                 "https://www.anaestheasier.com/nap-6/",
                 "https://www.anaestheasier.com/tag/national-audit-projects/",
-                "https://www.anaestheasier.com/tag/neonatal/",
+                # "https://www.anaestheasier.com/tag/neonatal/",
                 "https://www.anaestheasier.com/pyloric-stenosis/",
                 "https://www.anaestheasier.com/tag/neonatal/",
                 "https://www.anaestheasier.com/tag/neurophysiology/",
