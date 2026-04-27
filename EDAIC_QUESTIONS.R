@@ -1,22 +1,33 @@
-# ACUTE assessment and treatment framework based on xABCDE
-# TRAUMA MIST SAMPLE framework
-# CONSERNS can be formulated with the patient, pathology, anesthetic and surgical framework
-# EVALUATION of patients condition using history, functional capacity, vitals, medication, examination, investigations framework >> OPTIMISATION and risk assessment for patient informed consent
-# US assessment framework: structural, functional, haemodynamic 
-# Question to perfom something: Indications, Contraindications, censent/risc/patient history, preparation, safety checks, technique, assessment, complications, documentation, follow up
-# Komplication: Patient, Surgical, Anesthetic framework 
+# ACUTE:                                    Assessment and treatment (xABCDE)
+# TRAUMA:                                   MIST SAMPLE
+# CONSERNS:                                 Patient, pathology (indication), anesthetic, surgical framework
+# EVALUATION:                               Patient (history, functional capacity, vitals, medication, examination, investigations >> OPTIMISATION and risk assessment for patient informed consent
+# US:                                       Structural, functional, haemodynamic 
+# INTERVENTION:                             Indications, Contraindications, censent/risc/patient history, preparation, safety checks, technique, assessment, complications, documentation, follow up
+# COMPLICATION:                             Patient, Surgical, Anesthetic framework 
 
 # "biopsychosocial approach",
+# Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period
 # Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h
 # SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction
 # Damage Control Surgery
 # Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)
 # 3 Fr/Charrier = 3 mm outer diameter (14G Vigoo = 2.2 mm outer diameter) 
 # Propofol sparing technique
+# Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)
+# Early systolic, non projecting, positional dependent murmor - benign in kids
+# Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but takes longer to work (up to minutes)) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)
+# Pericardium secretes prostaglandins for coronary perfusion
+# Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive
+# Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration
 # Atrial filling (V wave) - happens during systoly!
 # TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good
 # Always mention the MDT approach before you start
+# Epicardium is the inner sheatch of the visceral pericardium
+# Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs
 # Anesthetic with COMPETING interests
+# Pericardial effusion will deteriorate into tamponade if haemodynamic compromise
+# Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)
 # Ortner Syndrom - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarseness
 # Diastasis is the longest phase in cardiac cycle (diasole - after rapid filling and before atrial contraction)
 # Superficial cervical plexus - between superior and investing cervical faschia
@@ -45,7 +56,6 @@
 # platelets, FFPs make more TRALI and female, multipara donors more likely to cause TRALI
 # CSF low protein, less buffer > CO2 on central chemoreceptors (rostral Medulla = retrotrapezoid nucleus) > fast pH drop
 # pons and cerebella build the metencephlon (hindbrain)
-0
 # nervs on ultrasound: honeycomb
 # dermatoms, osteotoms and myotoms
 # anisotropic - probs tilting > if perpendicular to probe > nerve hypoechoic (typical for nerves, identification)
@@ -94,6 +104,7 @@
 # Clopidogrel, Ticagrelor, Prasugrel are P2Y12 inhibitors (ADP receptor inhibitors) - inhibit platelet aggregation - Hemmung der ADP-bedingten Thrombozytenaggregation, sowie der Freisetzung der Plättcheninhaltsstoffe und der Bildung von Thromboxanen
 # DES need longer dual platelet therapy (DAPT) than bare metal stents (BMS) - 6 months vs 1 month (the coating prevents endothelisation and thus increases the risk of late thrombosis)
 # Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs ()
+# WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9
 
 library(lubridate)
 #!/usr/bin/env Rscript
@@ -115,9 +126,9 @@ run <- function() {
             "NT > How would you perform a suprascapular nerve block?",                                                                ##              C5-6 (upper trunk of brachial plexus) > through suprascapular notch (with transverse scapular ligament) > innervates supraspinatus + infraspinatus, sensory to 70% of shoulder joint, block at suprascapular notch (posterior approach, CLASSIC) or suporaspinatus fossa (more superficial), better that ISNB if respiratory compromise, 
             "Draw the branches if abdominal aorta (TT)",
             "Draw the ankle plane (TT)",
-            "NT > What structures are near the saphenus nerve?",                                                                                      # runs with femoral artery and vein, deep to sartorius and over adductor longus 
+            "NT > What structures are near the saphenus nerve?",                                                                      #               Runs with femoral artery and vein, deep to sartorius and over adductor longus 
             "NT > What structures are around saphenus nerve at high thigh window?",                                                                   # fermoal artery medial, nerve lateral to FA, sartorius above, vastus medialis medial, AL below 
-            "NT > Tell the order of the adductor muscles",                                                                            ##              # anteriu to posterior: M. pectineus > AL > AB > AD 
+            "NT > Tell the order of the adductor muscles",                                                                            ##              Anteriu to posterior: M. pectineus > AL > AB > AD 
             "NT > What are the boundaries for the adductor canal?",                                                                                   # sartorius (roof), vastus medialis (lateral), adductor longus and magnus (medial), femoral artery and vein, saphenus nerve, nerve to vastus medialis
             "NT > what are the contents of the paravertebral space?",                                                                                 # T1-L1, wedge shaped, on eather side of vertebral column, spinal nerve roots, dorsal root ganglia, rami communicantes, sympathetic chain ganglia, vessels, fat
             "NT > Where is the LA injected for the iPACK block",                                                                                      # between the popliteal artery and the posterior capsule of the knee, at the level of the femoral condyles, posterior knee pain, sensory articular schiatic branches, prevents foot drop (CPN block)                                
@@ -127,7 +138,7 @@ run <- function() {
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
             "What are the diaphragmatic openings and its contents?",                                                                  #               Caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein), left phrenic pierces muscle, sympathetic truncs pass posteriourly, splanchnics piers crura
             "What signs would indicate ulnar nerve damage?",
-            "NT > Describe the possible route of a sympathic preganglionic fiber",                                                    #               # lateral horn (T1-L2) > ventral root > spinal nerve > white ramus communicantes > paravertebral ganglion (synapse) > grey ramus communicantes > spinal nerve > target organ, some fibers ascend or descend before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
+            "NT > Describe the possible route of a sympathic preganglionic fiber",                                                    #               Lateral horn (T1-L2) > ventral root > spinal nerve > white ramus communicantes > paravertebral ganglion (synapse) > grey ramus communicantes > spinal nerve > target organ, some fibers ascend or descend before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
             "NT > How are splanchnic ganglia innervated?",                                                                            #               Prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
             "NT > What is special about the adrenal medulla?",                                                                        #               Preganglionic sympathetic fibers T5-L2, exit spinal chord via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
             "NT > How much LA do you need to block a segment thoracally and lumbar?",                                                                 # 3-4 ml (thoracally), more for lumbar (5-6 ml), less for cervical (2-3 ml)"
@@ -230,7 +241,7 @@ run <- function() {
             "Please explain how you would perform an infraclavicular block",
             "What are the anatomical components of the mouth?",
             "Muscles of the soft palate",
-            "What are the boundaries of the nasal cavity?",
+            "What are the boundaries of the nasal cavity?",                                                                              #            Epistaxis (Little’s area - Kisselbach plexus) → septum,  Nasal intubation → lateral wall important, Sinus drainage → middle meatus, ROOF: cribriform plate of ethmoid bone (CSF leak), nasal bone, FLOOR : hard palate (separates nasal from oral - maxilla and palatine bones), LATERAL: maxilla, palatine, lacrimal, conchaes (sup, med, inf), MEDIAL: nasal septum (vomer + perpendicular plate of ethmoid + septal cartilage), CHOANAE > openeings on both sites into the nasopharynx, each turbinae > meatuses, Inferior meatus → nasolacrimal duct, Middle meatus → sinuses (maxillary, frontal, ethmoid), Superior meatus → posterior ethmoid sinuses                    
             "Describe the ascending and descending spinal pathways, and the information they carry",
             "Can you name the paranasal sinuses?",                                                                                       #            Frontal (anterior to ethmoid, above orbit), maxillary (below orbit), ethmoid (between orbit and nasal cavity), sphenoid (posterior to ethmoid, behind nasal cavity)
             "What is the blood supply to the nose?",                                                                                     #            Epistaxis: Littles area = Kisselbach plexus (anastomosis of four or five arteries) > anterior + posterior ethmoidal (OPHTALMIC), sphenopalatine + greater palatine artery (MAXILLARY), superior labial artery (FACIAL)         
@@ -302,7 +313,7 @@ run <- function() {
             "What structures are innervated by the femoral nerve?",
             "What are the borders and contents of the femoral triangle?",
             "What would the graph look like in Aortic Stenosis?",
-            "What is the femoral sheath?",
+            "What is the femoral sheath?",                                                                                             #            Prolongation of transversalis facia (anterior), iliacus fascia (posterior), lateral compartment (artery), intermidium compartment (vein), medial (cluquet - site of hernia), Fascial sheath that encloses the femoral artery and vein, but not the femoral nerve, extends from the inguinal ligament to the saphenous opening, contains three compartments (lateral > femoral artery, intermediate > femoral vein, medial > lymphatics (cloques node)
             "NT > Describe the parasympathetic contribution to cranial nerves",                                                        #            CN III (Ncl. Edinger-Westfal > synapse in ciliary ganglion > sphincter pupillae, cilliary muscle for near accomodation, lens more convex, VII (Sup. salivatory nucleus - lacrimal - with greater petrosal nerve to pterygopalatine ganglion to lacrimal nerve AND salivatory - join CN VII chorda tympaty > join lingual nerv (V3) - submandibular gagnlion (submandibular/sublingual glands)), IX - inferior salivatory nucleus (preganglionic) as Jacobson nerve (tympanic plexus (middle ear) > continue as lesser tympanic nerve to otic galnglion for parotid gland innervation))
             "NT > Describe the parasympathetic part of the vagus nerve",                                                               #            From medulla in brainstem, Right Vagus: Passes anterior to the right subclavian artery and then moves posterior to the right main bronchus to join the pulmonary and esophageal plexuses. Left Vagus: Passes between the left common carotid and left subclavian arteries, then crosses the aortic arch.Up to 80% of all parasympathetic fibers, preganglionic fibers incredibly long, both Ach transmitters synapsing in intramural ganglia (lung, heart, gut) DORSAL MOTOR NUCLEUS - primary origin > (heart rate, bronchoconstriction, GI-secretion), NUCLEUS AMBIGUUS (pharyngo-laryngeal, soft palate, upper oesophagal tor supply), > swallowing, phonation, gag reflex, heart rhythm), NUCLEUS SOLITARIUS (baroreceptor, chemoreceptor, visceral sens, taste epiglottis), SPINAL TRIGEMINAL NUCLEUS (pain, temp > xternal ear, auditory canal, dura)     
             "What is the adductor canal?",
@@ -336,8 +347,8 @@ run <- function() {
             "What factors impact the amount of drug absorbed by the inhalational route?",
             "What is 2,3-DPG?",
             "NT > Why can a hypoalbuminaemia mask detection of metabolic acidosis?",                                                                  # Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis)
-            "How does the saturation of Hb occur?",
-            "NT > What are the equivalents for 1 Atm in mmHg, kPa, psi and Torr?",                                                     ##              # 1 Atm = 1 bar = 760 mmHg = 101.3 kPa = 14.7 psi, 760 Torr
+            "How does the saturation of Hb occur?",                                                                                    ##             First tense (low affinity and flat curve) > relaxed (high affinity and sigmoidal curve) > cooperative binding 
+            "NT > What are the equivalents for 1 Atm in mmHg, kPa, psi and Torr?",                                                     ##             1 Atm = 1 bar = 760 mmHg = 101.3 kPa = 14.7 psi, 760 Torr
             "What are the parameters of Thromboelastography?",
             "What systems in the body act to maintain control of pH?",
             "What is pKa in relation to buffer systems?",
@@ -360,7 +371,7 @@ run <- function() {
             "How does the kidney handle acid?",
             "NT > What are the phases of systoly and diastoly (check cardiac cycle question)?",                                                       # Systole: isovolumetric contraction, ventricular ejection (semilunar valves open), Diastole: isovolumetric relaxation, rapid filling (AV valves open), diastasis (slow filling), atrial systole (atrial contraction pushes remaining blood into ventricles)
             "What factors increase afterload?",                                                                                        # 
-            "Explain positive and negative predictive value",                                                                          #               # TP/TestPos, TN/TestNeg
+            "Explain positive and negative predictive value",                                                                          #               TP/TestPos, TN/TestNeg
             "What are the causes of raised intracranial pressure?",
             "Can you describe the physiological differences seen in paediatric patients?",
             "Which drugs are given by the epidural route?",
@@ -547,7 +558,7 @@ run <- function() {
             "What are the causes and features of hypomagnesaemia?",
             "What are the roles of the liver?",
             "What factors increase afterload?",
-            "Which drugs can trigger porphyric crises?",
+            "Which drugs can trigger porphyric crises?",                                                                                  #           Autosomal dominant but low penetrance, URO 1 SYNTHASE DEFECT (Porphobillinogen BUILDUP), Thiopenton, Ketamin are BAD, Etomidate not clear, Women are 4 to 5 times more likely to develop crises in their early thirties, Almost all patients have severe abdominal pain, usually associated with tachycardia amd NEUROPSYCHISTRIC SYMPTOMS, cutaneous manifistations are not interesting,  Acute porphyrias: Potential to develop acute neurovisceral crises (fasting, dehydration,drugs, alcohol,infection), 4 Pyrrol rings, covalent bound to globin chains, Inherited genetic disorders of heme biosynthesisEspecially drugs that induce CYP450 (porphyria - defect in haem synthesis, build up of toxic porphyrin precursors, THIOPENTHAL, ETOMIDATE, PHENYTOIN, CARBAMAZEPINE, RIFAMPICINE (strong enzyme inducerr))
             "Why are the logarithms of concentrations plotted?",
             "Describe and draw the synthesis pathway for the production of the catecholamines",
             "How does the respiratory quotient change in COPD?",
@@ -654,7 +665,7 @@ run <- function() {
             "What are the causes of hypercalcaemia?",
             "Tell me about plasma proteins and phosphate as buffering systems",                                                         ##            Especially intracellular, albumnin/globuline in plasma (hypoalbunaemia affects strong ion difference (Steward)), plasma proteins (albumin, globulins) have negative charge and bind H+ ions, phosphate buffer system (H2PO4- <-> HPO4 2- + H+) is important in renal tubular fluid (good in excretion of H+), and intracellular fluid, pKa 6.8 is close to phys. pH and thus effective buffer, amino (NH2) groups can bind protons, carboxyl (COOH) groups can release protons
             "Can you draw and explain the function of the loop of Henle?",                                                              #                         
-            "What is the Donan effect?",                                                                                                #
+            "What is the Donan effect?",                                                                                                ##            Plasma has more positive charge copared to interstitium, fluid retention in capillaries, Not diffusable charged particles in plasma (e.g. negative plasma proteins) create a gradient that affects the distribution of diffusible ions (e.g., Na+, K+, Cl-) across a semipermeable membrane > uneven distribution of ions and water between the two sides of the membrane
             "What are normal calcium levels?",                                                                                          #             1.15 - 1.35 mmol/L ionised, 2.2 - 2.6 mmol/L total (bound + unbound)
             "Explain positive and negative predictive value",
             "What is an adverse effect and how are they categorised?",
@@ -941,7 +952,7 @@ run <- function() {
             "Tell me about carbapenems",
             "How do glycopeptide antibiotics work?",
             "How does pharmacokinetics differ in the neonate?",                                                                          #            
-            "Discuss how a drug binds to its receptor",
+            "Discuss how a drug binds to its receptor",                                                                                  #            Velocity forward reaction is V = K1 x [Drug] x [Receptor] > K1 = rate constant, Reverse reaction is V = K2 x [Drug-receptor complex], At equilibrium these two occur at the same rate, Equilibrium dissociation constant is Kd > K2/K1, Reciprocal = Ka - equilibrium association constant - measure strength drug-receptor binding
             "What is a confidence interval?",
             "Give me some clinical examples of full and partial agonists?",
             "What is the difference between full and partial agonists?",
@@ -978,7 +989,6 @@ run <- function() {
             "What is a normal distribution?",
             "What is half life and what factors affect it?",
             "What other methods are there for warming fluids?",
-            "Can the action of competitive antagonists be reversed?",
             "How is pleural fluid produced and what role does it serve?",
             "What is half life and what factors affect it?",
             "Tell me about non-competitive antagonists and give an example?",                                                            #
@@ -1029,7 +1039,6 @@ run <- function() {
             "Why might a patient become bradycardic?",
             "What is a racemic mixture and can you name any?",
             "What effects does the stress response have on the body?",
-            "Compare and contrast the properties of these two agents.",
             "What are the types of refractory period?",
             "What is nitrous oxide?",
             "What are the advantages and disadvantages of using nitrous oxide?",
@@ -1178,7 +1187,7 @@ run <- function() {
             "NT > What are the points of the hunter creteria for serotone syndrome?",                                                                 # 1. Exposure to a serotonergic agent, 2. Spontaneous clonus, 3. Inducible clonus + agitation or diaphoresis, 4. Ocular clonus + agitation or diaphoresis, 5. Tremor + hyperreflexia, 6. Hypertonia + temperature > 38 degrees + ocular or inducible clonus
             "Explain positive and negative predictive value",
             "What are the anaesthetic implications of laparoscopic surgery?",
-            "NT > How can be a febrile non-haemolytic transfusion reaction explained?",                                                               # MOST COMMON T-REACTION (BUT RULE OUT SEPSIS (contamination or other non related causes)) > 1:200, recipients AB agains donors WBCs (HLA load) (despite leukodepletion), fever, chills, rigors, pruritus, urticaria, no haemolysis, no positive coombs
+            "NT > How can be a febrile non-haemolytic transfusion reaction explained?",                                                  #            MOST COMMON T-REACTION (BUT RULE OUT SEPSIS (contamination or other non related causes)) > 1:200, recipients AB agains donors WBCs (HLA load) (despite leukodepletion), fever, chills, rigors, pruritus, urticaria, no haemolysis, no positive coombs
             "How do you perform emergency front of neck access?",
             "Describe the function of the Rotameter",
             "What are the causes of infection?",
@@ -1363,7 +1372,6 @@ run <- function() {
             "Tell me about Sevofluran",
             "Tell me about Enflurane",
             "Tell me about Isoflurane",
-            "What is the gold standard investigation for diagnosis of tracheal and bronchial foreign body aspiration?",
             "What are the complications of IO access?",
             "What is the blood gas partition coefficient?",
             "What are the contraindications to IO access?",
@@ -1534,7 +1542,7 @@ run <- function() {
             "What is a step response?",
             "What are the different methods of measuring cardiac output?",
             "How does the thermodilution technique work?",
-            "Describe the Swan-Ganz pulmonary arterial catheter and how it is inserted",
+            "Describe the Swan-Ganz pulmonary arterial catheter and how it is inserted",                                               ##             
             "Please explain the pulomary cathether graph",
             "What are the complications associated with insertion of a pulmonary artery catheter?",
             "What methods do you know for measuring concentrations of gases and anaesthetic agents in a gas sample?",
@@ -1667,7 +1675,7 @@ run <- function() {
             "What is the Doppler effect and how is it relevant to medicine?",                                                            #            Doppler effect > change in wave frequency in relation to observer moving relative to the source of the wave > if towards each other, frequency increases (positive Doppler shift), if away, frequency decreases (negative Doppler shift)
             # 10.04.26
             "How can respiratory gas flow and volume be measured?",
-            "Describe the function of the Rotameter",
+            "Describe the function of the Rotameter",                                                                                    # 
             "What are the causes of infection?",
             "What are the main bacterial targets of antibiotics?",                                                                                    # CELL WALL (penicillins, cephalosporins, carbapenems, glycopeptides), PROTEIN SYNTHESIS (aminoglycosides, macrolides, tetracyclines, clindamycin), DNA/RNA (fluoroquinolones, metronidazole), FOLATE METABOLISM (sulfonamides, trimethoprim)
             "How do penicillins work?",
