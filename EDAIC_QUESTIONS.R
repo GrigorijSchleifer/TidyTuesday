@@ -122,14 +122,14 @@ run <- function() {
             "NT > what are the contents of the paravertebral space?",                                                                                 # T1-L1, wedge shaped, on eather side of vertebral column, spinal nerve roots, dorsal root ganglia, rami communicantes, sympathetic chain ganglia, vessels, fat
             "NT > Where is the LA injected for the iPACK block",                                                                                      # between the popliteal artery and the posterior capsule of the knee, at the level of the femoral condyles, posterior knee pain, sensory articular schiatic branches, prevents foot drop (CPN block)                                
             "NT > What muscle to pierce to get to transversal processus for a ESP block",                                                             # trapecius > rhomboids > erector spinae > TP (go for lower side to prevent spread into ES (would only get the posterior rami (good for spine surgery))) > https://www.youtube.com/watch?v=KTmzwR-NziE&t=69s
-            "NT > How can you distinguish ribs from TP in ultrasound?",                                                               #               # rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
-            "Draw the coronary arteries (TT)",                                                                                        #               # RCA > right atrium, right ventricle, SA node (60% of people), AV node (80% of people), posterior descending artery (85% of people), LCA > LAD > anterior interventricular septum, left circumflex artery > left atrium, left ventricle, SA node (40% of people)
+            "NT > How can you distinguish ribs from TP in ultrasound?",                                                               #               Rib more rounded, move with respiration, while TP flatter + shallower, more square, pleura is lost
+            "Draw the coronary arteries (TT)",                                                                                        #               RCA > right atrium, right ventricle, SA node (60% of people), AV node (80% of people), posterior descending artery (85% of people), LCA > LAD > anterior interventricular septum, left circumflex artery > left atrium, left ventricle, SA node (40% of people)
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
-            "What are the diaphragmatic openings and its contents?",                                                                  #               # caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein), left phrenic pierces muscle, sympathetic truncs pass posteriourly, splanchnics piers crura
+            "What are the diaphragmatic openings and its contents?",                                                                  #               Caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein), left phrenic pierces muscle, sympathetic truncs pass posteriourly, splanchnics piers crura
             "What signs would indicate ulnar nerve damage?",
             "NT > Describe the possible route of a sympathic preganglionic fiber",                                                    #               # lateral horn (T1-L2) > ventral root > spinal nerve > white ramus communicantes > paravertebral ganglion (synapse) > grey ramus communicantes > spinal nerve > target organ, some fibers ascend or descend before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
-            "NT > How are splanchnic ganglia innervated?",                                                                            #               # prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
-            "NT > What is special about the adrenal medulla?",                                                                        #               # preganglionic sympathetic fibers T5-L2, exit spinal chord via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
+            "NT > How are splanchnic ganglia innervated?",                                                                            #               Prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
+            "NT > What is special about the adrenal medulla?",                                                                        #               Preganglionic sympathetic fibers T5-L2, exit spinal chord via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
             "NT > How much LA do you need to block a segment thoracally and lumbar?",                                                                 # 3-4 ml (thoracally), more for lumbar (5-6 ml), less for cervical (2-3 ml)"
             "Describe the function of the Rotameter",
             "What are relative and absolute humidity?",
@@ -179,7 +179,7 @@ run <- function() {
             "What are the bounderies of the adductor canal?",
             "What are the contents of the tarsal tunnel?",                                                                              #             Tibialis posterior, flexor digitorum longus, posterior tibial artery and vein, tibial nerve, flexor hallucis longus (Tom, Dick And Very Nervous Harry)
             "Explain the mnemonic Tom, Dick And Very Nervous Harry", 
-            "Describe the anatomy of the spinal nerve",
+            "Describe the anatomy of the spinal nerve",                                                                                 #             Mixed nerve, union dorsal (sensory) and verntral (motor) roots in intervertebral foramen, dorsal root ganglia with cell bodies of sensory neurons, ventral root (carries motor fibers from anterio horn) and aotonomic nerves (lateral horn T1-L2), quick division in dorsal (post.) ramus (back muscles, skin back), ventral (anteior) ramus (limbs, anterolateral body wall + builds plexuses (cervical, brachial, lumber, sacral))
             "What can you tell me about the thyroid gland?",
             "Draw the fossa poplitea",                                                                                                  #             
             "What airway factors make intubation of young children and babies more difficult?",
@@ -237,13 +237,13 @@ run <- function() {
             "Tell me about the nerve supply to the nose",                                                                                #            Infratrochlear (V1) + infraorbital (V2), ANTEROSUPERIOR from anterior ethmoidal nerve (V1), INFEROPOSTERIOR from maxillary branches (V2 - nasopalatine, palatine) 
             "Please describe the anatomy of the pharynx",
             "Can you describe the nerve supply to the larynx?",
-            "Which recurrent laryngeal nerve is more prone to damage?",                                                                  #            # LLN loops around aortic arch, longer course in mediastinum, deeper, RLN loops around subclavian A., shorter, Ortner syndrom (large LA > horasness)
+            "Which recurrent laryngeal nerve is more prone to damage?",                                                                  #            LLN loops around aortic arch, longer course in mediastinum, deeper, RLN loops around subclavian A., shorter, Ortner syndrom (large LA > horasness)
             "What are the signs of recurrent laryngeal nerve damage?",
             "Please describe the muscles of the larynx and their respective functions",
             "Tell me about the blood supply and lymphatic drainage of the larynx",
             "At what vertebral levels are the hyoid, thyroid and cricoid cartilages found?",
             "Can you name the ligaments of the larynx?",
-            "What are the cartilages of the larynx?",                                                                                    #            # thyroid (largest, anterior), cricoid (only complete ring, inferior), ARYTENOID (posterior, vocal cords attach), CORNICULATE (on top of arytenoids), CUNEIFORM (anterior to corniculate, support aryepiglottic folds), epiglottis (leaf shaped, posterior to hyoid, anterior to laryngeal inlet)
+            "What are the cartilages of the larynx?",                                                                                    #            Thyroid (largest, anterior), cricoid (only complete ring, inferior), ARYTENOID (posterior, vocal cords attach), CORNICULATE (on top of arytenoids), CUNEIFORM (anterior to corniculate, support aryepiglottic folds), epiglottis (leaf shaped, posterior to hyoid, anterior to laryngeal inlet)
             "NT > Describe the landmark anatomy for the subclavian vain cannulation",
             "How is the epiglottis different in neonates?",
             "Tell me how you would perform an emergency cricothyroidotomy",
@@ -255,9 +255,9 @@ run <- function() {
             "How can you tell between the internal jugular vein and the carotid artery on ultrasound?",
             "What are the important nearby structures to the internal jugular vein?",                                                    # 
             "How many vertebrae are there?",
-            "What is the average total CSF volume, and normal supine pressure, in an adult?",                                            ##            # 150 ml, 10-15 mmHg (5-15 cmH2O)
+            "What is the average total CSF volume, and normal supine pressure, in an adult?",                                            ##            150 ml, 10-15 mmHg (5-15 cmH2O)
             "What are the primary and compensatory curvatures of the spine?",
-            "What are the distinguishing features of each type of vertebra?",
+            "What are the distinguishing features of each type of vertebra?",                                                            #            C1 > No body, No spine, Anterior arch that articulates with the odontoid peg of C2, C2 - 6 > Bifid spinous process, C7 > Prominent spinous process (note that C7 is the ***prominens*** vertebra), Thoracic > Heart shaped bod, Articulate with ribs via their costal facet joints, Large transverse processes, Long caudally angulated spinous process, Lumbar > Kidney shaped body, Wide transverse processes, Large horizontal spinous process
             "What are the effects of acute spinal cord injury?",                                                                         ##           SPINAL SHOCK (neulogical symptoms) > paraplegia, areflexia, NEUROGENIC SHOCK (haemodynamic symptoms > hypotension, bradycardia, hypothermia, fluid reistant, 6 weeks post injury
             "Describe Brown-Sequard syndrome",
             "What are the signs and symptoms of anterior cord syndrome?",
@@ -265,7 +265,7 @@ run <- function() {
             "What are the symptoms and causes of cauda equina syndrome?",
             "Describe the anatomy of the sacrum",
             "How do the nerve routes exit the sacrum?",
-            "What are the borders of the sacral hiatus?",                                                                                ##            # U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
+            "What are the borders of the sacral hiatus?",                                                                                ##            U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
             "Please draw the circle of willis",                                                                                          #            
@@ -273,7 +273,7 @@ run <- function() {
             "What structures pass through the following foramina in the skull?",
             "Tell me what each of the cranial nerves does",
             "What is Vernet's syndrome?",
-            "Can you explain the difference between sensitivity and specificity?",                                                       #            # CONFUSION MATRIX > Sensitivity: “If I have the condition, how likely is it that the test will detect it?” > TP/(TP + FN), Specificity: “If I don’t have the condition, how likely am I to test negative?” > TN/TN + FP
+            "Can you explain the difference between sensitivity and specificity?",                                                       #            CONFUSION MATRIX > Sensitivity: “If I have the condition, how likely is it that the test will detect it?” > TP/(TP + FN), Specificity: “If I don’t have the condition, how likely am I to test negative?” > TN/TN + FP
             "Key facts about the Circle of Willis",
             "Which arteries form the Circle of Willis?",
             "What does the anterior cerebral artery supply?",
@@ -311,11 +311,12 @@ run <- function() {
             "How would you perform a spinal anaesthetic for a TURP?",
             "What spinal level would you choose and why?",
             "What are the contraindications to spinal anaesthesia?",
-            "What layers would your needle pass through?",                                                                             ###            # skin > subcutaneous tissue > supraspinous ligament > interspinous ligament > ligamentum flavum > epidural space > dura mater > arachnoid mater > subarachnoid space
+            "Describe the anatomy of the spinal nerve",                                                                                               # Mixed nerve, union dorsal (sensory) and verntral (motor) roots in intervertebral foramen, dorsal root ganglia with cell bodies of sensory neurons, ventral root (carries motor fibers from anterio horn) and aotonomic nerves (lateral horn T1-L2), quick division in dorsal (post.) ramus (back muscles, skin back), ventral (anteior) ramus (limbs, anterolateral body wall + builds plexuses (cervical, brachial, lumber, sacral))
+            "What layers would your needle pass through?",                                                                             ###            Skin > subcutaneous tissue > supraspinous ligament > interspinous ligament > ligamentum flavum > epidural space > dura mater > arachnoid mater > subarachnoid space
             "What level is required for a TURP?",
             "How long must you wait after giving prophylactic low molecular weight heparin?",
-            "What are the signs and symptoms of a high spinal?",
-            "Tell me about the sympathetic nervous system",
+            "What are the signs and symptoms of a high spinal?",                                                                       ##             Hypotension, bradycardia, respiratory distress, loss of consciousness, nausea, vomiting, dilated pupils, cardiac arrest
+            "Tell me about the sympathetic nervous system",                                                                            #              Only sympathetic input Sweat glands, Fat, Juxtaglomerular apparatus, Ach > Nora (excapt sweat), Paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers (C) exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)    . 
             "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",
             "What are the subtypes of muscarinic (cholinergic) receptors?",                                                            # 
             "How many nuclei does the vagus nerve have and what is their function?",
@@ -323,7 +324,7 @@ run <- function() {
             "Tell me the most important dermatomal landmarks",                                                                         ##
             "Which neuron type do you know responsible for motor innervation?", 
             "How is the nervous system organised?",
-            "NT > Tell me about the parasympathetic nervous system",                                                                   #              # craniosacral outflow, preganglionic fibers from brainstem (CN III (Nc. Edinger-Westfal > synapse in ciliary ganglion > sphincter pupillae, cilliary muscle for near accomodation, lens more convex), VII (Sup. salivatory nucleus - lacrimal (tears with greater petrosal nerve to pterygopalatine ganglion to lacrimal nerve, ) > ), IX, X) and sacral spinal cord (S2-4), long preganglionic fibers synapse in ganglia close to target, short postganglionic, functions include rest and digest, energy conservation, maintenance of homeostasis
+            "NT > Tell me about the parasympathetic nervous system",                                                                   #              Craniosacral outflow, preganglionic fibers from brainstem (CN III (Nc. Edinger-Westfal > synapse in ciliary ganglion > sphincter pupillae, cilliary muscle for near accomodation, lens more convex), VII (Sup. salivatory nucleus - lacrimal (tears with greater petrosal nerve to pterygopalatine ganglion to lacrimal nerve, ) > ), IX, X) and sacral spinal cord (S2-4), long preganglionic fibers synapse in ganglia close to target, short postganglionic, functions include rest and digest, energy conservation, maintenance of homeostasis
             "Explain the course and innervations of the tibial nerve and its relations to the popliteal fossa/tarsal tunnel"
         ),
         #####
@@ -350,7 +351,7 @@ run <- function() {
             "How quickly do differentbuffer systems act?",
             "Why is the medulla devided and how?",
             "How is insulin produced and how does it work?",
-            "NT > Describe the DLCO and KCO values and what does it say?",                                                                            # Diffusing capacity of the lung for carbon monoxide (DLCO), normal around 25 ml/min/mmHg, decreased in conditions that affect the alveolar-capillary membrane (e.g., pulmonary fibrosis, emphysema), increased in conditions with increased pulmonary blood flow (e.g., left-to-right cardiac shunts), KCO - correction factor for lung volume 
+            "NT > Describe the DLCO and KCO values and what does it say?",                                                             #              Low DLCO + high KVO (small lung size: pneumektomy, muscle weakness, skoliosis, Asthma: DLCO is usually normal or even high (because of increased blood flow to the lungs). COPD/Emphysema: DLCO is almost always low.KCO (DLCO/Va) is the Transfer Coefficient > it is the DLCO divided by the Alveolar Volume (Va), Diffusing capacity of the lung for carbon monoxide (DLCO), normal around 25 ml/min/mmHg, decreased in conditions that affect the alveolar-capillary membrane (e.g., pulmonary fibrosis, emphysema), increased in conditions with increased pulmonary blood flow (e.g., left-to-right cardiac shunts), KCO - correction factor for lung volume 
             "What is specific heat capacity?",
             "What are the four laws of thermodynamics?",
             "How can temperature be measured?",
@@ -446,7 +447,7 @@ run <- function() {
             "What are the causes of hypokalaemia?",
             "What is the role of the mitochondrion?",
             "How does sodium concentration in the tubular fluid change through the nephron?",
-            "How does the liver contribute to buffering?",
+            "How does the liver contribute to buffering?",                                                                             #             # Metabolism of organic acids (e.g., lactic acid, ketoacids), Synthesis of plasma proteins (e.g., albumin, which acts as a buffer), Urea cycle (removal of ammonia, a weak base > 2 NH4+ + 2HCO3- -> Urea + CO2 + 3 H2O), Gluconeogenesis (consumption of H+ ions), Storage and release of bicarbonate (HCO3-) in the bile
             "What is the body's response to this?",
             "What are the physiological effects of increasing age?",
             "Can you draw a diagram to demonstrate the pain pathway to the brain?",
@@ -676,7 +677,7 @@ run <- function() {
             "NT > What is glomerular filtration rate?",                                                                                 #             Volume of plasma filtered by all glomeruli per unit time, Declines with age, men higher, GFR = K (filtration coefficient (surface, permeability) * Net Filtration Pressure (NFP = (Pgc - Pbc) - mü gc (no oncotic pressure in bowmann capsule usually), 60 - 15 - 25 ~ 20 mmHg Net Filtration Pressure, GFR = 125 ml/min (180 L/d) > fenestrated endothelium, passive, non-selective, size and charge selectivity, normal range 90-120 ml/min/1.73m2, used to assess kidney function, can be estimated using creatinine clearance or equations like MDRD or CKD-EPI
             "What is renal clearance?",
             "How does the body control calcium?",
-            "What is chronic pain?",                                                                                                    ##            Persistent pain after cause was removed, longer than 3 to 6 months,  nociceptive, neuropathic, or mixed types
+            "What is chronic pain?",                                                                                                    ###           Persistent pain after cause was removed, longer than 3 to 6 months,  nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)
             "How can it be measured?",
             "What is autoregulation of renal blood flow?", 
             "Explain the renal blood flow",
@@ -708,8 +709,8 @@ run <- function() {
             "Can you explain the difference between sensitivity and specificity?",
             "Is calcium mainly an intra- or an extracellular ion?",
             "Describe the membrane potential",
-            "What is Pearson's Chi-Squared Test used for?",
-            "What is the normal plasma level of calcium?",
+            "What is Pearson's Chi-Squared Test used for?", 
+            "What is the normal plasma level of calcium?",                                                                               #           1.15 - 1.35 mmol/L ionised, 2.2 - 2.6 mmol/L total (bound + unbound)
             "How is calcium represented in plasma?",
             "What are the functions of calcium in the body?",
             "How is the metabolism of calcium regulated in the body?",
@@ -817,7 +818,7 @@ run <- function() {
             "NT > How is crossmatch performed?",                                                                                                      # Donor blood is mixed with reciepients serum (Immidiate phase (5 min) - major AB-Rh incompatibility, incubation phase (40 min) - AB in Rhesus system, antiglobulin phase (hours) - only if atypical AB by alloimmunisation (atypical Kell, Kidd, Duffy))
             "How is ethanol metabolised and what pharmacokinetics does it demonstrate?",
             "How does half life relate to the time constant?",
-            "What are the different types of anti-emetic that you know?",
+            "What are the different types of anti-emetic that you know?",                                                               #             5-HT3 antagonists (ondansetron), D2 antagonists (metoclopramide, prochlorperazine), antihistamines (cyclizine), anticholinergics (hyoscine), corticosteroids (dexamethasone), NK1 antagonists (aprepitant)
             "What is the significance of the pKa?",
             "NT > Draw the classical clotting cascade and the drugs involved",
             "NT > Why is pregabalin better compared to gabapentin?",                                                                    #             Pregabalins (Lyrica) bioavailability (90% vs 33-66%), linear pharmacokinetics, faster onset, less interactions, more potent (150 mg pregabalin = 300 mg gabapentin), more sedation with pregabaline, Gabapentin better for dialysis patients in renal failure
@@ -881,7 +882,7 @@ run <- function() {
             "Describe the one compartment model",                                                                                        #            # Assumes that the drug is distributed instantaneously and uniformly throughout the body after administration, and that elimination occurs from the central compartment. The plasma concentration of the drug decreases exponentially over time, with a constant half-life. 
             "What statistical tests do you know and in which scenarios are they used?",
             "Why are both drugs are considered 'safe' in renal failure?",
-            "What is Clearance?",
+            "What is Clearance?",                                                                                                        #            Pharmacokinetic parameter > describes plasma V from which a drug is removed per unit time (mL/min or L/hr) > Formula: Clearance (Cl) = Rate of elimination / Plasma concentration > Determining dosing regimens and understanding how quickly a drug is eliminated
             "What is an Osmole and how is it measured?",
             "Tell me about the different routes of administration of local anaesthetics",
             "Tell me about the structure of GABA receptors",
@@ -959,7 +960,7 @@ run <- function() {
             "What are the causes of pleural effusions?",
             "What factors change the shape of the log dose-response curve?",
             "Explain the concept of efficacy and potency.",
-            "What is skew?",
+            "What is skew?",                                                                                                             #            Long tail > positive (positive skew) or negative (negative skew) > drags mean from median and mode > Occasionally ‘log’-ing can convert a positive skew to normal distribution (isn’t a general rule), Likewise negative skew > ‘normalised’ by squaring the dataset
             "What is Clearance?",
             "What effect does cardiac disease have on pharmacokinetics?",
             "What is the difference between absolute and relative risk reduction?",
@@ -992,7 +993,6 @@ run <- function() {
             "What problems are associated with hypoadrenalism?",
             "What are the steps to a machine check?",
             "How is glucose handled by the kidney?",                                                                                     ##            # Glucose freely filtered and reabsorbed (PCT) by sodium-glucose co-transporters (SGLT2 proximal (Concentration gradient of Na (secondary active transport)), SGLT1 late proximal). If plasma > 180 mg/dL) > transporters become saturated > glucosuria, SGLT2-Hemmer (Gliflozine) 
-            "What are the different types of anti-emetic that you know?",
             "What are the irreversible antagonists?",
             "What are relative and absolute humidity?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
@@ -1116,7 +1116,6 @@ run <- function() {
             "What are the sources of error associated with arterial blood pressure measurement?",
             "How is resonance important for causing errors in blood pressure measurement?",                                              #
             "Tell me how damping affects the accuracy of blood pressure measurement.",                                                   #            Gradual, progressive loss of amplitude of oscillating signal (systems energy loss) 
-            "What are the different types of anti-emetic that you know?",
             "What happens in the proximal convoluted tubule?",
             "Can you draw the CVP waveform and explain it?",
             "What methods are available to measure gas concentration in a mixture of gases?",
@@ -1214,8 +1213,8 @@ run <- function() {
             "What are the disadvantages of CRRT compared to intermittent?",
             "What invenstigations might be useful for assessing airway difficulty?",
             "What are the indications for RRT?",
-            "What drugs do you know that can help promote uterine contraction?",
-            "NT > How would you reduce ICM before opening the dura?",                                                                   #             # PHYSIOLOGICAL (CO2, PEEP, tube fixation, positioning, PHARMACOLOGICAL: mannitol, sedation (CMRO2 - burst suppresion), SURGICAL: EVD, CSF drainage, decompressive creaniectomy
+            "What drugs do you know that can help promote uterine contraction?",                                                        #             Oxytocin (synthetic, short half life, uterine contraction and anti-diuretic effect), Ergometrine (longer half life, more side effects - hypertension, nausea, vomiting), Prostaglandins (carboprost, misoprostol - also used for medical abortion)
+            "NT > How would you reduce ICM before opening the dura?",                                                                   #             PHYSIOLOGICAL (CO2, PEEP, tube fixation, positioning, PHARMACOLOGICAL: mannitol, sedation (CMRO2 - burst suppresion), SURGICAL: EVD, CSF drainage, decompressive creaniectomy
             "What is malignant hyperthermia?",
             "What is acute kidney injury?",
             "How would you perform a supraclavicular brachial plexus block?",                                                           # 
@@ -1236,7 +1235,7 @@ run <- function() {
             "What factors make face mask ventilaion more difficult?",
             "Why and how do we preoxygenate?",
             "What are your options if you reach Plan B (ITN)?",
-            "NT > What are the settings on a nerve stimulator?",                                                                       ##             # current (0.5 mA), frequency (1 - 2 Hz), pulse width (0.2 ms) - depends on location and nerve vicinity
+            "NT > What are the settings on a nerve stimulator?",                                                                       ##             Current (0.5 mA), frequency (1 - 2 Hz), pulse width (0.2 ms) - depends on location and nerve vicinity
             "How can intracranial pressure be monitored?",
             "What framework can you use for evaluating the TTE/TEE examination?",                                                                     # structural, functional and haemodynamic assessment
             "Explain how antiarrhythmic agents are classified",                                                                        ##
@@ -1280,7 +1279,7 @@ run <- function() {
             "What is the difference between structural isomers and stereoisomers?",
             "Describe the Vaughan Williams Classiification", 
             "Tell me some features of needles used for nerve blocks",
-            "What are the signs and symptoms of local anaesthetic toxicity?",                                                         ##              Excitatory phase first, Inhibitory second, CNS (circumoral numbness, tinnitus, metallic taste, visual disturbances, agitation, seizures), cardiovascular (PR elongation, QRS elongation, Asystole, Sinus Bradycardia,Ventricular and re-entrant tachys, VF, arrhythmias, hypotension, cardiac arrest), other (methemoglobinemia (benzocaine), allergic reactions)
+            "What are the signs and symptoms of local anaesthetic toxicity?",                                                         ####            Excitatory phase first, Inhibitory second, CNS (circumoral numbness, tinnitus, metallic taste, visual disturbances, agitation, seizures), cardiovascular (PR elongation, QRS elongation, Asystole, Sinus Bradycardia, Ventricular and re-entrant tachys, VF, arrhythmias, hypotension, cardiac arrest), other (methemoglobinemia (benzocaine), allergic reactions)
             "What is cardiac tamponade and why does it occur?",
             "What are the clinical features of raised intracranial pressure?",
             "How is AKI diagnosed?",
@@ -1299,7 +1298,7 @@ run <- function() {
             "Resus Council Guidelines for adult tachycardia",
             "How do you estimate blood volume in a child?",
             "What are carboprost and misoprostol?",
-            "What drugs do you know that can help promote uterine contraction?",
+            "What drugs do you know that can help promote uterine contraction?",                                                      #               OXYTOCINE (10 IE - hypertension, synthetic, short half life, uterine contraction and anti-diuretic effect), ERGOMETRINE (ergot alcaloid - 0.25-0.5 mg IV/IM hypertension, not in eclampsia, longer half life, more side effects - hypertension, nausea, vomiting), CARBOPORST Prostaglandins 0.25 mg IM - bronchospasm, MISOPROSTOL (cytotec) - also used for medical abortion)<
             "Tell me about the use of remifentanil in TIVA",
             "What do you understand by TCI?",
             "What are the key principles of managing PPH?",
@@ -1689,11 +1688,11 @@ run <- function() {
             "What are the different clinical uses of dexamethasone?",
             "What types of glucocorticoid do you know?",
             "What effects do glucocorticoids they have?",
-            "What are the equivalent doses of the common steroids?",
+            "What are the equivalent doses of the common steroids?",                                                                    #             Hydrocortosone or cortison 100mg (normal antiinflammatory but strong mineralcorticoid), Prednisolone 25mg (strong antiinflammatory and little bit mineralocorticoid), Methylprednisolone 20mg (strong antiinflammatory and little bit mineralocorticoid), Dexamethasone 4mg (very strong antiinflammatory and no mineralocorticoid), Triamcinolone 20mg (some antiinflammatory, no mineral)
             "Tell me about thyroxine",
             "Tell me about carbimazole",
             "Do you know any other drugs used for hyperthyroidism?",
-            "What are the side effects of the oral contraceptive pill?",                                                                ##            # Venous thromboembolism, hypertension, breast cancer, stroke, MI, menstrual changes, nausea, weight gain, mood changes
+            "What are the side effects of the oral contraceptive pill?",                                                                ##            Venous thromboembolism, hypertension, breast cancer, stroke, MI, menstrual changes, nausea, weight gain, mood changes
             "What can you tell me about carbetocin?",
             "What are relative and absolute humidity?",
             "What is the absolute humidity of air in room air, and in the trachea?",
@@ -1703,7 +1702,7 @@ run <- function() {
             "How does a hair hygrometer work?",
             "How does a wet and dry bulb hygrometer work?",
             "How can you measure absolute humidity?",
-            "How does a Regnault’s hygrometer work?",                                                                                   #             # Air is blown through a silver tube with ether + thermometer in it > as ether evaporates > cools silver plate > when reaches the dew point > condensation forms on silver plate > telling that air is fully saturated with water (100% relative humidity) > thermometer will tell you the T at which this occurs > saturated vapour pressure tables tell you relative humidity
+            "How does a Regnault’s hygrometer work?",                                                                                   #             Air is blown through a silver tube with ether + thermometer in it > as ether evaporates > cools silver plate > when reaches the dew point > condensation forms on silver plate > telling that air is fully saturated with water (100% relative humidity) > thermometer will tell you the T at which this occurs > saturated vapour pressure tables tell you relative humidity
             "What is the interrelationship between humidity and pressure?",
             "What is an appropriate level of humidity for the operating theatre and why?",
             "Why is inspired gas humidification important and which patients are most at risk?",
@@ -1716,12 +1715,12 @@ run <- function() {
             "What are the definitions of boiling point, freezing point, and latent heat?",
             "What is pseudocritical temperature?",
             # 11.04.26
-            "What are the different types of anti-emetic that you know?",
+            "What are the different types of anti-emetic that you know?",                                                               #              5-HT3 antagonists (ondansetron, granisetron), D2 antagonists (metoclopramide, prochlorperazine), NK1 antagonists (aprepitant), antihistamines (cyclizine), anticholinergics (scopolamine, hyachine), corticosteroids (dexamethasone), neurokinine antagonists (aprepitant), cannabinoids (nabilone), benzodiazepines (lorazepam) 
             "What endotracheal tubes do you know about?",
             "Can you discuss the commonly used airway adjuncts?",
             "What are the limitations of the Hudson facemask?",
             "What supraglottic airways can you tell me about?",
-            "NT > What are the features of the commonly used laryngoscopes?",                                                           #              # Macintosh (in valecula, indirect epi lifting, 3 for women, 4 for men), Miller (staigt blade, direct epi lifting, good for large + floppy epi in kids), McCoy (lever to lift epi, for restricted neck), C-MAC + Glidescope (video, but can be used as normal) 
+            "NT > What are the features of the commonly used laryngoscopes?",                                                           #              Macintosh (in valecula, indirect epi lifting, 3 for women, 4 for men), Miller (staigt blade, direct epi lifting, good for large + floppy epi in kids), McCoy (lever to lift epi, for restricted neck), C-MAC + Glidescope (video, but can be used as normal) 
             # 12.04.26
             "Tell me more about the Class I antiarrhythmic agents",
             "Tell me about amiodarone",
