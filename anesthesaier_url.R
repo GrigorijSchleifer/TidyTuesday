@@ -1,9 +1,10 @@
+# https://www.anaestheasier.com/tag/exam-technique/ 
+
 library(lubridate)
 #!/usr/bin/env Rscript
 
 run <- function() {
         urls <- list(
-            not_seen <- c(
                 "https://www.anaestheasier.com/tag/airway-management/",
                 "https://www.anaestheasier.com/a-needle-to-the-neck/",
                 "https://www.anaestheasier.com/januairway/",
@@ -110,7 +111,7 @@ run <- function() {
                 "https://www.anaestheasier.com/tag/environment/",
                 "https://www.anaestheasier.com/sustainability/",
                 "https://www.anaestheasier.com/tag/environment/",
-                "https://www.anaestheasier.com/tag/exam-technique/",
+                # "https://www.anaestheasier.com/tag/exam-technique/",
                 "https://www.anaestheasier.com/final-frca-soe-final-month-plan/",
                 "https://www.anaestheasier.com/how-to-use-those-10-minutes/",
                 "https://www.anaestheasier.com/tag/exam-technique/",
@@ -497,6 +498,7 @@ run <- function() {
                 "https://www.anaestheasier.com/tag/ultrasound/",
                 "https://www.anaestheasier.com/tag/urology/",
                 "https://www.anaestheasier.com/turp-syndrome/",
+                # "https://www.anaestheasier.com/januairway/" 
                 "https://www.anaestheasier.com/the-urology-robot/",
                 "https://www.anaestheasier.com/tag/urology/",
                 "https://www.anaestheasier.com/tag/useful-tweets/",
@@ -510,12 +512,8 @@ run <- function() {
                 "https://www.anaestheasier.com/short-case-3-for-the-final-frca/",
                 "https://www.anaestheasier.com/anaesthesia-for-peripheral-vascular-disease/",
                 "https://www.anaestheasier.com/post-amputation-pain/",
-                "https://www.anaestheasier.com/tag/vascular-surgery/"
-            ),
-            urls_important <- c(
-                "https://www.anaestheasier.com/pulmonary-stenosis-in-obstetrics/", #
-                "https://www.anaestheasier.com/januairway/" # 
-            )
+                "https://www.anaestheasier.com/tag/vascular-surgery/",
+                "https://www.anaestheasier.com/pulmonary-stenosis-in-obstetrics/"
     )
     
     cat("--- Starting Study Session ---\n")

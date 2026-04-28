@@ -1,19 +1,41 @@
 # ACUTE:                                    Assessment and treatment (xABCDE)
 # TRAUMA:                                   MIST SAMPLE
 # CONSERNS:                                 Patient, pathology (indication), anesthetic, surgical framework
-# EVALUATION:                               Patient (history, functional capacity, vitals, medication, examination, investigations >> OPTIMISATION and risk assessment for patient informed consent
+# EVALUATION:                               Patient, history, functional capacity, vitals, medication, examination, investigations >> OPTIMISATION and risk assessment for patient informed consent
 # US:                                       Structural, functional, haemodynamic 
 # INTERVENTION:                             Indications, Contraindications, censent/risc/patient history, preparation, safety checks, technique, assessment, complications, documentation, follow up
 # COMPLICATION:                             Patient, Surgical, Anesthetic framework 
 
+
+# SCORES
+
+# Goldman
+# SOFA
+# NELA
+# APACHE
+# HAS BLED
+# CHADVASC score
+# NEWS
+# rLee
+
+
+# THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure
+# During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!
 # "biopsychosocial approach",
 # Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period
 # Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h
 # SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction
 # Damage Control Surgery
+# Vertical axis (III and aVF very positive) and clockwise rotation (prolonged R progression in wilson leads - transitional lead is V5), peak P waves in inferior leads, Low voltages in the left-sided leads (I, aVL, V5-6)
 # Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)
+# Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2R). 
 # 3 Fr/Charrier = 3 mm outer diameter (14G Vigoo = 2.2 mm outer diameter) 
+# Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)
+## Heparine can cause osteoporosis
+# 1mmHg ~ 1.36 cmH2O
+# Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate
 # Propofol sparing technique
+# Right axis deviation, dominant R wave in V1 and deep S wave in V6 suggest right ventricular hypertrophy due to cor pulmonale
 # Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)
 # Early systolic, non projecting, positional dependent murmor - benign in kids
 # Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but takes longer to work (up to minutes)) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)
@@ -21,7 +43,7 @@
 # Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive
 # Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration
 # Atrial filling (V wave) - happens during systoly!
-# TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good
+## TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good
 # Always mention the MDT approach before you start
 # Epicardium is the inner sheatch of the visceral pericardium
 # Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs
@@ -31,10 +53,10 @@
 # Ortner Syndrom - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarseness
 # Diastasis is the longest phase in cardiac cycle (diasole - after rapid filling and before atrial contraction)
 # Superficial cervical plexus - between superior and investing cervical faschia
-# "Nerves like fermoral arborise > slide higher",
+## "Nerves like fermoral arborise > slide higher",
 # "q.i.d (4/d), IR (immediate release) vs DR (delayed release) vs SR (sustained release), STAT: Immediately. OM/ON: Every morning/every nigh",
 # "Genicular nerves provide innervation to the knee joint",
-# "Nimodipine 60mg orally every 4 hours",
+## "Nimodipine 60mg orally every 4 hours",
 # There is no oncotic pressure in bowmans capsule
 # "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
 # "Perioperative ruptured aneurysm > 24mg adenosine",
@@ -138,6 +160,7 @@ run <- function() {
             "NT > Which structures do the umbilical arteries pierce through?",                                                                        # Amnion > Chorion > enter vilus (surroundet by throphoblasts) > obliterate to become medial umbilical ligament
             "What are the diaphragmatic openings and its contents?",                                                                  #               Caval (central tendon, T8, IVC, right phrenic), oesophageal (T10, right muscular crus, oesophagus, vagus nerves, left gastric vessels - HIATUS HERNIA (otherwise PHYS. SPHINCTER)), aortic (post. diaphr. between crura, T12, aorta, thoracic duct, azygous vein), left phrenic pierces muscle, sympathetic truncs pass posteriourly, splanchnics piers crura
             "What signs would indicate ulnar nerve damage?",
+            "Explain the bronchoscope route and thea anatomical details",                                                             ##              Right: 325, Left: 324 (upper lobe in superior division and lingual division), Left lower lobe has no medial segment, Right middle lobe has lateral and mendial instead of superior/inferior lingual division segments, Right lung has a intermediate brochus, Right bronchus is 2.5 vs 5cm left main bronchus, https://www.anaestheasier.com/bronchoscopy/
             "NT > Describe the possible route of a sympathic preganglionic fiber",                                                    #               Lateral horn (T1-L2) > ventral root > spinal nerve > white ramus communicantes > paravertebral ganglion (synapse) > grey ramus communicantes > spinal nerve > target organ, some fibers ascend or descend before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)
             "NT > How are splanchnic ganglia innervated?",                                                                            #               Prvertebral (not paravertebral) ganglium (also like coeliac, sup/inf. mesenteric ganglion), via splanchnic nerves (preganglionic) from lateral horn (T5-L2), enter sympathetic chain via white ramus communicantes, no synapsing in paravertebral ganglia, form grater (T5-9, lesser (T10-11, Least (T12), lumbar (L1-2) splanchnic nerves)), travel along arteries to organs, visceral afferent pain fibers                                             
             "NT > What is special about the adrenal medulla?",                                                                        #               Preganglionic sympathetic fibers T5-L2, exit spinal chord via white ramus communicantes, synapse with chromaffin cells (modified postganglionic sympathetic neurons), part of sympatheticus > acts as endocrine gland
@@ -158,7 +181,7 @@ run <- function() {
             "NT > How would you perform a superficial cervical plexus block?",                                                        #               Indications, Contraindications, censent/risc/patient history, preparation, safety checks, technique, assessment, complications, documentation, follow up
             "NT > How many cervical faschias do you know?",                                                                                           # SUPERFICIAL fachia between skin and deep faschia (external jugular vain, platysma, superficial cervical plexus), DEEP (INVESTING LAYER) FASCIA, that envelopes the SCM and trapezius muscle, PRETRACHIAL FASCIA around trachea, thyroid gland, oesophagus, CAROTID SHEATH layer around large vessels, PREVERTEBRAL FASCIA around vertebral column and deep muscles of the neck, superficial (between superficial and investing (deep - around Trap/SCM)), intermediate (below investing/deep) and deep (below prevertebral fascia) cervical block)
             "How would you perform a deep cervical plexus block?",                                                                    #               Superficial plexus block is suitable for the same procedures and has less complications (like intrathecal or vertebral injection)     
-            "How would you perform a transversus abdominis plane (TAP) block?",
+            "How would you perform a transversus abdominis plane (TAP) block?",                                                       #               Too anterior > misses the lateral branches, hydrodissection, 
             "What types of pain fibres are there?",
             "What nerves need to be innervated for an awake FOI?",
             "What is the MACOCHA airway assessment?",
@@ -167,7 +190,7 @@ run <- function() {
             "In healthy adults, which is produced in greater quantity: adrenaline or noradrenaline?",
             "Tell be about the kidney (ABC)",
             "Describe the anatomy of the adrenal gland",
-            "How would you perform a quadratus lumborum block?",
+            "How would you perform a quadratus lumborum block?",                                                                        #             Blockade of intercostal nerves of the abdominal wall (T7-L1), posterior to psoas major, lateral to errector spinae, from iliac crest to 12th rib + medial attachmewnt to lumbar transverse processes, anterior to errector spinus muscle, ventral rami of lower thoracic nerves between psoas - ql - can be blocked there, ventral rami run then between transverse and internal oblique
             "Where is the hypothalamus and what does it do?",                                                                           #
             "What is the course of blood vessels through the kidneys?", 
             "What are the compartments of the leg, supplying nerves, and lesions?",
@@ -206,7 +229,7 @@ run <- function() {
             "NT > What is the function of both ciliary nerves?",                                                                                      # Long ciliary nerves (2–3) branch from the nasociliary nerve, handling sensation (cornea) and sympathetic innervation (dilator pupillae). Short ciliary nerves (8–10) arise from the ciliary ganglion, carrying parasympathetic fibers (constrictor pupillae, ciliary muscle)
             "What is the course of the sciatic nerve?",
             "What is 'power' with regards to a buffer?",
-            "NT > Explain the anatomy and function of the juxstaglomerular apparatus",                                                   ##           Makula densa (chemoreceptor detecting Na and Cl choncentration (increas and decrease)) of the distal convolutet tubule meets with afferent arterioles at the glomerulus, between both of them lie the juxtaglomerula cells, produce renin in response to low blood pressure, low sodium or sympathetic stimulation (beta 1 adrenergic stimulation), renin is not filtered and is passte to the efferent arterial and leaves into systemic circulation,              
+            "NT > Explain the anatomy and function of the juxstaglomerular apparatus",                                                   ###          Makula densa (chemoreceptor detecting Na and Cl choncentration (increas and decrease)) of the distal convolutet tubule meets with afferent arterioles at the glomerulus, between both of them lie the juxtaglomerula cells, produce renin in response to low blood pressure, low sodium or sympathetic stimulation (beta 1 adrenergic stimulation), renin is not filtered and is passte to the efferent arterial and leaves into systemic circulation,              
             "Waht is a Malpighian Body?",
             "Can you describe and draw the glomerulus with the cells involved?",
             "What do you understand by the autonomic nervous system?",
@@ -266,17 +289,17 @@ run <- function() {
             "How can you tell between the internal jugular vein and the carotid artery on ultrasound?",
             "What are the important nearby structures to the internal jugular vein?",                                                    # 
             "How many vertebrae are there?",
-            "What is the average total CSF volume, and normal supine pressure, in an adult?",                                            ##            150 ml, 10-15 mmHg (5-15 cmH2O)
+            "What is the average total CSF volume, and normal supine pressure, in an adult?",                                            ###          150 ml, 10-15 mmHg (5-15 cmH2O), 25 ml in ventricles, 125 ml in subarachnoid space, 500 ml produced daily, turnover 3-4 times a day 
             "What are the primary and compensatory curvatures of the spine?",
             "What are the distinguishing features of each type of vertebra?",                                                            #            C1 > No body, No spine, Anterior arch that articulates with the odontoid peg of C2, C2 - 6 > Bifid spinous process, C7 > Prominent spinous process (note that C7 is the ***prominens*** vertebra), Thoracic > Heart shaped bod, Articulate with ribs via their costal facet joints, Large transverse processes, Long caudally angulated spinous process, Lumbar > Kidney shaped body, Wide transverse processes, Large horizontal spinous process
             "What are the effects of acute spinal cord injury?",                                                                         ##           SPINAL SHOCK (neulogical symptoms) > paraplegia, areflexia, NEUROGENIC SHOCK (haemodynamic symptoms > hypotension, bradycardia, hypothermia, fluid reistant, 6 weeks post injury
             "Describe Brown-Sequard syndrome",
-            "What are the signs and symptoms of anterior cord syndrome?",
+            "What are the signs and symptoms of anterior cord syndrome?",                                                                #            Bilateral loss of motor function, pain and temperature sensation below the level of the lesion, preserved proprioception, vibration and fine touch (dorsal columns), UMN (upper motor neuron) - spasticity after initial spinal shock period, LMN (lower motor neuron)-sign (at the lesion level floppy paralysis), neurogenic shock (hypotension, bradycardia, hypothermia, fluid resistant), 6 weeks post injury if high lesion, bladder, erectily dysfuntion
             "Describe the ascending and descending spinal pathways, and the information they carry",                                     #            Ascending spinal pathways include the dorsal columns (fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the corticospinal tract for voluntary movement and extrapyramidal tracts for posture and tone.
             "What are the symptoms and causes of cauda equina syndrome?",
             "Describe the anatomy of the sacrum",
             "How do the nerve routes exit the sacrum?",
-            "What are the borders of the sacral hiatus?",                                                                                ##            U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
+            "What are the borders of the sacral hiatus?",                                                                                ##           U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
             "Please draw the circle of willis",                                                                                          #            
@@ -305,7 +328,7 @@ run <- function() {
             "What are the complications of epidurals?",                                                                                #             Hypotension (sympathetic block), urinary retention (sacral block), post dural puncture headache (dural puncture), epidural haematoma, epidural abscess, nerve injury, total spinal (high spinal), LAST, meningitis, back pain, Failure to work > 1 in 20 will require resiting, Hypotension > 1 in 50, Headache > 1 in 150, Nerve damage Temporary > 1 in 2000, Permanent > 1 in 15 000, Epidural Abscess > 1 in 50 000, Meningitis > 1 in 100 000, Paralysis > 1 in 250 000
             "What features can you tell me about the Tuohy needle?",
             "What are the boundaries of the dural space at the L3/4 vertebral space?",                                                 #             Anterior > Posterior longitudinal ligament, vertebral bodies and intervertebral discs, Posterior > Ligamentum flavum and laminae, Lateral > Pedicles and intervertebral foraminae
-            "What are the contraindications to performing an epidural?",                                                               #             Inability to monitor, Raised intracranial pressure, severe hypovolemia, sepsis
+            "What are the contraindications to performing an epidural?",                                                               ##             Inability to monitor, Raised intracranial pressure, severe hypovolemia, sepsis, aortic stenosis, heart failure, coagulopathy, patient refusal, local infection at site of insertion, allergy to local anaesthetic, previous spinal surgery or deformity, uncooperative patient
             "What are the indications for an intercostal nerve block?",                                                                ##            Pain relief for rib fractures, thoracotomy, breast surgery, abdominal surgery, hernia repair, cholecystectomy, appendicectomy, gynaecological surgery, can be used in combination with paravertebral block for mastectomy
             "What are the complications of an intercostal nerve block?",                                                               ##            Pneumothorax, vascular puncture, nerve injury, local anaesthetic toxicity, intercostal neuralgia#
             "What is the nerve supply to the intercostal space?",
@@ -313,14 +336,14 @@ run <- function() {
             "What structures are innervated by the femoral nerve?",
             "What are the borders and contents of the femoral triangle?",
             "What would the graph look like in Aortic Stenosis?",
-            "What is the femoral sheath?",                                                                                             #            Prolongation of transversalis facia (anterior), iliacus fascia (posterior), lateral compartment (artery), intermidium compartment (vein), medial (cluquet - site of hernia), Fascial sheath that encloses the femoral artery and vein, but not the femoral nerve, extends from the inguinal ligament to the saphenous opening, contains three compartments (lateral > femoral artery, intermediate > femoral vein, medial > lymphatics (cloques node)
+            "What is the femoral sheath?",                                                                                             ##           Femoral canal: "dead space," allowing the femoral vein to expand, canal extends from the femoral ring (its superior opening) down to the saphenous opening, Lateral: The femoral vein, Medial: The lacunar ligament, Anterior: The inguinal ligament, Posterior: The pectineal ligament and the pectineus muscle, Prolongation of transversalis facia (anterior), iliacus fascia (posterior), lateral compartment (artery), intermidium compartment (vein), medial (cluquet/rosenmüller - site of hernia), Fascial sheath that encloses the femoral artery and vein, but not the femoral nerve, extends from the inguinal ligament to the saphenous opening
             "NT > Describe the parasympathetic contribution to cranial nerves",                                                        #            CN III (Ncl. Edinger-Westfal > synapse in ciliary ganglion > sphincter pupillae, cilliary muscle for near accomodation, lens more convex, VII (Sup. salivatory nucleus - lacrimal - with greater petrosal nerve to pterygopalatine ganglion to lacrimal nerve AND salivatory - join CN VII chorda tympaty > join lingual nerv (V3) - submandibular gagnlion (submandibular/sublingual glands)), IX - inferior salivatory nucleus (preganglionic) as Jacobson nerve (tympanic plexus (middle ear) > continue as lesser tympanic nerve to otic galnglion for parotid gland innervation))
             "NT > Describe the parasympathetic part of the vagus nerve",                                                               #            From medulla in brainstem, Right Vagus: Passes anterior to the right subclavian artery and then moves posterior to the right main bronchus to join the pulmonary and esophageal plexuses. Left Vagus: Passes between the left common carotid and left subclavian arteries, then crosses the aortic arch.Up to 80% of all parasympathetic fibers, preganglionic fibers incredibly long, both Ach transmitters synapsing in intramural ganglia (lung, heart, gut) DORSAL MOTOR NUCLEUS - primary origin > (heart rate, bronchoconstriction, GI-secretion), NUCLEUS AMBIGUUS (pharyngo-laryngeal, soft palate, upper oesophagal tor supply), > swallowing, phonation, gag reflex, heart rhythm), NUCLEUS SOLITARIUS (baroreceptor, chemoreceptor, visceral sens, taste epiglottis), SPINAL TRIGEMINAL NUCLEUS (pain, temp > xternal ear, auditory canal, dura)     
             "What is the adductor canal?",
             "Outline the course of the obturator nerve",
             "What is the lumbosacral trunk?",
             "How would you perform a spinal anaesthetic for a TURP?",
-            "What spinal level would you choose and why?",
+            "What spinal level would you choose and why?", 
             "What are the contraindications to spinal anaesthesia?",
             "Describe the anatomy of the spinal nerve",                                                                                               # Mixed nerve, union dorsal (sensory) and verntral (motor) roots in intervertebral foramen, dorsal root ganglia with cell bodies of sensory neurons, ventral root (carries motor fibers from anterio horn) and aotonomic nerves (lateral horn T1-L2), quick division in dorsal (post.) ramus (back muscles, skin back), ventral (anteior) ramus (limbs, anterolateral body wall + builds plexuses (cervical, brachial, lumber, sacral))
             "What layers would your needle pass through?",                                                                             ###            Skin > subcutaneous tissue > supraspinous ligament > interspinous ligament > ligamentum flavum > epidural space > dura mater > arachnoid mater > subarachnoid space
@@ -328,7 +351,7 @@ run <- function() {
             "How long must you wait after giving prophylactic low molecular weight heparin?",
             "What are the signs and symptoms of a high spinal?",                                                                       ##             Hypotension, bradycardia, respiratory distress, loss of consciousness, nausea, vomiting, dilated pupils, cardiac arrest
             "Tell me about the sympathetic nervous system",                                                                            #              Only sympathetic input Sweat glands, Fat, Juxtaglomerular apparatus, Ach > Nora (excapt sweat), Paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers (C) exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)    . 
-            "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",
+            "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",                                     #              Found at the level of C7, anterior to the neck of the first rib, and medial to vertebral artery, behind the carotid sheath,Occurs in 75-80% of people, Formed by fusion of inferior cervical and first thoracic ganglion, located at C7, anterior to the transverse process, posterior to the carotid sheath, medial to the scalene muscles, lateral to the longus colli muscle, sympathetic innervation to head, neck, upper limb, can be blocked for sympathetically mediated pain (complex regional pain syndrome), hyperhidrosis, vascular insufficiency, - stellate ganglion block can be used for Vascular insufficiency of the upper limb, Complex regional pain syndromeSevere refractory angina, Post herpetic neuralgia
             "What are the subtypes of muscarinic (cholinergic) receptors?",                                                            # 
             "How many nuclei does the vagus nerve have and what is their function?",
             "What is the ductus arteriosus?",
@@ -369,9 +392,9 @@ run <- function() {
             "NT > At what pressure do O2 cylinder operate and what reaches the patient?",                                              #              O2 cylinders operate at around 2000 psi (137.9 bar), the pressure is reduced to around 50 psi (3.4 bar) by the regulator before reaching the patienta at 14.7 psi (1 Atm) 
             "What determines how effective a buffer is?",
             "How does the kidney handle acid?",
-            "NT > What are the phases of systoly and diastoly (check cardiac cycle question)?",                                                       # Systole: isovolumetric contraction, ventricular ejection (semilunar valves open), Diastole: isovolumetric relaxation, rapid filling (AV valves open), diastasis (slow filling), atrial systole (atrial contraction pushes remaining blood into ventricles)
+            "NT > What are the phases of systoly and diastoly (check cardiac cycle question)?",                                        #              Systole: isovolumetric contraction, ventricular ejection (semilunar valves open), Diastole: isovolumetric relaxation, rapid filling (AV valves open), diastasis (slow filling), atrial systole (atrial contraction pushes remaining blood into ventricles)
             "What factors increase afterload?",                                                                                        # 
-            "Explain positive and negative predictive value",                                                                          #               TP/TestPos, TN/TestNeg
+            "Explain positive and negative predictive value",                                                                          #              TP/TestPos, TN/TestNeg
             "What are the causes of raised intracranial pressure?",
             "Can you describe the physiological differences seen in paediatric patients?",
             "Which drugs are given by the epidural route?",
@@ -424,10 +447,11 @@ run <- function() {
             "How does pregnancy affect the clinical effect of a drug?",
             "What are the gastric cells and what do they produce?",
             "How is gastric secretion regulated?",
+            "How can oxygen consumtion be calculated?",                                                                                                # V02 (ml/min) = CO x (CaO2 - CvO2) or (Vi * Fi2) - (Ve * Fe2)) > https://x.com/dasresidents/status/1609447217575731201/photo/1 
             "Tell me about the structure and function of the GI tract",                                                                # 
             "Tell me about gastrin",
             "What is oxygen flux?",
-            "What are the different measures of spread?",
+            "What are the different measures of spread?",                                                                              #
             "What role does potassium play and what are normal plasma levels?",
             "What are the parameters of Thromboelastography?",
             "Tell me about the blood supply to the kidney",                                                                            #              A. renalis (L1-2) > anterior/posterior > segmental > interlobar > arcuate > cortical radial arteries > afferent arteriole > efferent arterioles > vasa recta, - Recieve 25% of CO → 1.25 L/min = 400 - 500ml/100g/min, 90% to the cortex (only ~ 5% reaching medulla), - wo capillary networks, high pressure glomerular and low pressure peritubular network
@@ -443,7 +467,8 @@ run <- function() {
             "What is the structure of a platelet and how long do they last?",
             "What types of drug interaction do you know?",
             "Define “exponential”",
-            "What are the different measures of spread?",
+            "What are the different measures of spread?",                                                                              #              SD: spread of all data points in a dataset = dispersion of the dataset (square root of variance), variance: average SQARED deviation of every point from the mean (difficult to work with - SD cancels the squares), SE: precesion or spread of sample mean if you have many samples, SD σ (square root of variance) > Normal distribution - 68% within 1 SD, 95.7% within 2 SD,  99.7% within 3 SD (both sides of μ)
+            
             "What are the causes of hyperkalaemia?",
             "What factors affect lower oesophageal sphincter tone?",
             "What happens to iron once it is absorbed?",
@@ -462,7 +487,7 @@ run <- function() {
             "What is the body's response to this?",
             "What are the physiological effects of increasing age?",
             "Can you draw a diagram to demonstrate the pain pathway to the brain?",
-            "What are the different types of hypersensitivity reactions?",
+            "What are the different types of hypersensitivity reactions?",                                                             #              Type 1: Rapid IgE-mediated → cross linkage of mast cell IgE, Histamine - anaphylaxis and asthma), Type 2: IgM or IgG mediated → react to antigens on cells (Blood transfusion reactions + newborn haemolytic disease), Type 3: Immune complex mediated, IgG and complement → mast cells histamin - Lupus and glomerulonephritis, Type 4: Memory T helper → cytokines → activating macrophages - Contact dermatitis, Type 5: Autoimmune (IgG and IgM) gainst self-receptors - Graves’ disease, myasthenia gravis
             "What are the physiological changes seen in pregnancy?",
             "What is critical DO2?",                                                                                                   ##             Minimum DO2 that can meet the O2 demand (VO2) = 4-8ml/kg/min, below this value the VO2 is supply dependent, the more DO2, the less of O2 gets extracted and other way around, the SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction
             "How is iron excreted?",
@@ -479,25 +504,26 @@ run <- function() {
             "What is oxygen extraction ratio?",
             "How do macrolides work?",
             "Do you know any aminoglycosides?",
-            "Tell me about clindamycin",
+            "Tell me about clindamycin",                                                                                                #            
             "How does doxycyline work and what are its side effects?",
+            "NT > How does a defibrillator work?",                                                                                      #             Capacitor stores charged energy in a defibrillator when a potential difference is applied by creating a negative charge from the abundance of electrons at the first plate with simultaneous depletion of electrons at the second plate,  Once the potential difference across the two plates is equal to the voltage of its power source, it is fully charged, Charging curcuit (transformer, rectifier, capacitor), discharging curcuit (capacitor also part of the discharge curcuit), The rate at which the potential difference accumulates at the capacitor is a build-up exponential (wash-in) curve, owing to the fact it becomes increasingly difficult to remove electrons from the positive capacitor plate and add them to the negative one.
             "How do antiviral agents work?",
             "Do you know any antifungals?",
             "How can you measure the fluid compartments of the body?",
             "What factors influence stroke volume?", 
-            "What are the causes and features of hypomagnesaemia?",                                                                     #             # decreased intake (malnutrition, alcoholism), increased loss (diuretics, diarrhoea, vomiting, renal tubular disorders), or redistribution (acute pancreatitis, sepsis, citrate, insuline, hyperparathyreoidismus) > neuromuscular irritability (tremors, tetany, seizures), cardiovascular effects (arrhythmias, hypertension), and metabolic disturbances (hypocalcaemia, hypokalaemia). 
+            "What are the causes and features of hypomagnesaemia?",                                                                     #             Decreased intake (malnutrition, alcoholism), increased loss (diuretics, diarrhoea, vomiting, renal tubular disorders), or redistribution (acute pancreatitis, sepsis, citrate, insuline, hyperparathyreoidismus) > neuromuscular irritability (tremors, tetany, seizures), cardiovascular effects (arrhythmias, hypertension), and metabolic disturbances (hypocalcaemia, hypokalaemia). 
             "Can you describe the physiological differences seen in paediatric patients?",
             "Define “exponential”",
             "Tell me about white blood cells",
-            "What factors affect distribution of a drug?",                                                                              #             # Grahams law (size), ficks law (concentration),  blood flow to tissues, capillary permeability, binding to plasma proteins and tissue components, and the drug's own physicochemical properties (lipophilicity, molecular size, ionization)  
+            "What factors affect distribution of a drug?",                                                                              #             Grahams law (size), ficks law (concentration),  blood flow to tissues, capillary permeability, binding to plasma proteins and tissue components, and the drug's own physicochemical properties (lipophilicity, molecular size, ionization)  
             "NT > Which respiratory failure types do you know?",                                                                                      # Type 1 (hypoxemic, PaO2 < 60 mmHg with normal or low PaCO2), Type 2 (hypercapnic, PaCO2 > 50 mmHg), Type 3 (perioperative, combination of type 1 and 2), Type 4 (shock-related, due to inadequate perfusion)                                        
             "What is the function of CSF?",
             "What is base excess when compared to 'standard' base excess?", 
-            "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                            ###           # 3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
-            "Can you tell me the components of the reflex arc?",                                                                        #             # Monosynaptic reflex (Sensor > afferent neuron > synapse > efferent motor neuron > effector) vs polysynaptic reflex (involvinfg an interneuron) 
+            "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                            ###           3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
+            "Can you tell me the components of the reflex arc?",                                                                        #             Monosynaptic reflex (Sensor > afferent neuron > synapse > efferent motor neuron > effector) vs polysynaptic reflex (involvinfg an interneuron) 
             "What are the methods of measuring anaerobic threshold?", 
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
-            "What is the role of sodium within the body, and what are the daily requirements?",
+            "What is the role of sodium within the body, and what are the daily requirements?",                                         #             Contols fluid volume, osmolality, low Na crazy, high Na > dehydration, CNS dysfunction, Renal: Nabi handling through Na/H exchange, cotransport of glucose and AS, Sodium is the main extracellular cation, it helps maintain fluid balance, nerve function, and muscle function. Daily requirements are around 1.5-3g (65-130 mmol) per day
             "What factors increase afterload?",
             "Tell me the management of anticoagulatory drugs in respect to regional anesthesia",
             "What are sinusoidal capillaries?",
@@ -538,11 +564,10 @@ run <- function() {
             "NT > Please tell me about the anatomy of the liver and its blood supply",                                                  #             # largest solid organ, 4 lobes (right, left, caudate, quadrate - but functionally diveded into 2 functional lobes (Cantlie`s line (IVC/gallbladder))), 8 segments (I-VIII with own protal triad sypply and venous drainage (surgically crucial)) dual blood supply (portal vein 75% and hepatic artery 25%), portal vein drains GI tract, spleen and pancreas (low O2, high nutrients), hepatic artery (celiac trunk), blood leaves via hepatic veins to IVC, diaphragmatic and visceral surface
             "NT > Tell me about the anatomy and functionality of the portal triad",                                                                   # portal triad (hepatic artery, portal vein, bile duct), hepatic artery (oxygenated blood from celiac trunk), portal vein (deoxygenated blood from GI tract, spleen and pancreas), bile duct (bile from liver to gallbladder and duodenum)
             "What does isotonic mean?",
-            "What are the different measures of spread?",
             "What are the necessary components of an electrocardiogram?",
             "What are the physiological changes seen in pregnancy?",
             "What tells alveolar gas equation about the PiO2 and PAO2 relationship?",
-            "NT > Can you explain how an atrioventricular nodal re-entrant tachycardia works?",                                         #             # Re-entry circuit within the AV node (most people, the AV node is a single path. In patients with AVNRT, the node is split into two), with a fast pathway (long refractory) and a slow pathway (short refractory). AVNRT usually starts with a PAC (Premature Atrial Contraction), A premature atrial beat can block the fast pathway and conduct down the slow pathway, then re-enter the fast pathway, creating a loop of electrical activity that causes a rapid heart rate.  
+            "NT > Can you explain how an atrioventricular nodal re-entrant tachycardia works?",                                         #             Re-entry circuit within the AV node (most people, the AV node is a single path. In patients with AVNRT, the node is split into two), with a fast pathway (long refractory) and a slow pathway (short refractory). AVNRT usually starts with a PAC (Premature Atrial Contraction), A premature atrial beat can block the fast pathway and conduct down the slow pathway, then re-enter the fast pathway, creating a loop of electrical activity that causes a rapid heart rate.  
             "How does CO2 affect ventilation?",
             "How is the alveolar gas equation affected by altitude?",
             "What are the clinical features of lower and upper motor neurone injury?",
@@ -558,7 +583,7 @@ run <- function() {
             "What are the causes and features of hypomagnesaemia?",
             "What are the roles of the liver?",
             "What factors increase afterload?",
-            "Which drugs can trigger porphyric crises?",                                                                                  #           Autosomal dominant but low penetrance, URO 1 SYNTHASE DEFECT (Porphobillinogen BUILDUP), Thiopenton, Ketamin are BAD, Etomidate not clear, Women are 4 to 5 times more likely to develop crises in their early thirties, Almost all patients have severe abdominal pain, usually associated with tachycardia amd NEUROPSYCHISTRIC SYMPTOMS, cutaneous manifistations are not interesting,  Acute porphyrias: Potential to develop acute neurovisceral crises (fasting, dehydration,drugs, alcohol,infection), 4 Pyrrol rings, covalent bound to globin chains, Inherited genetic disorders of heme biosynthesisEspecially drugs that induce CYP450 (porphyria - defect in haem synthesis, build up of toxic porphyrin precursors, THIOPENTHAL, ETOMIDATE, PHENYTOIN, CARBAMAZEPINE, RIFAMPICINE (strong enzyme inducerr))
+            "Which drugs can trigger porphyric crises?",                                                                                  ##          Autosomal dominant but low penetrance, URO 1 SYNTHASE DEFECT (PORPHOBILINOGEN BUILDUP - Watson-Schwartz-Test), Thiopenton, Ketamin are BAD, Etomidate not clear, Women are 4 to 5 times more likely to develop crises in their early thirties, Almost all patients have severe abdominal pain, usually associated with tachycardia amd NEUROPSYCHISTRIC SYMPTOMS, cutaneous manifistations are not interesting,  Acute porphyrias: Potential to develop acute neurovisceral crises (fasting, dehydration, drugs, alcohol, infection), 4 Pyrrol rings, covalent bound to globin chains, Inherited genetic disorders of heme biosynthesis, Especially drugs that induce CYP450 (porphyria - defect in haem synthesis, build up of toxic porphyrin precursors, THIOPENTHAL, ETOMIDATE, PHENYTOIN, CARBAMAZEPINE, RIFAMPICINE (strong enzyme inducer))
             "Why are the logarithms of concentrations plotted?",
             "Describe and draw the synthesis pathway for the production of the catecholamines",
             "How does the respiratory quotient change in COPD?",
@@ -580,7 +605,7 @@ run <- function() {
             "What does somatostatin do?",
             "What determines whether a drug can be given as repeated IV boluses, or as an infusion?",
             "Draw and explain the countercurrent multiplier mechanism",                                                                               #  https://www.youtube.com/watch?v=2CzQoFtlg3w
-            "What is the role of the vasa recta and peritubular capillaries?",
+            "What is the role of the vasa recta and peritubular capillaries?",                                                            #           Antiparallelle to the loop of henley (countercurrent), enters from above (300 mosmol/L) and takes salts (increasing osmolarity), ascends conter to descending loop and takes the water, diluting back to 300 mosmol/L, this creates a gradient for water to be reabsorbed, 2 countercurrents EXCHANGE and MULTIPLIER, The multiplier creates a high medullary osmotic gradient (up to 1,400 mOsm/L) using energy, while the exchanger maintains this gradient by supplying blood to the medulla without washing out the solutes
             "What happens if you increase the FiO2?",
             "How is CaO2 estimated?",
             "Describe and draw the synthesis pathway for the production of the catecholamines",
@@ -629,7 +654,7 @@ run <- function() {
             "What is a cofactor?",
             "What can you tell me about the blood grouping systems?",
             "What are the effects of PaCO2 and PaO2 on cerebral blood flow (graphs)?",
-            "What is normal core temperature, and does the body maintain a steady temperature?",
+            "What is normal core temperature, and does the body maintain a steady temperature?",                                        #             36.5-37.5, varying by 0.5 degrees (circadian), Heat generated > Basal metabolic rate, digestion, muscle activity, Heat loss > Distribution to skin, countercurrent exchange (warmer arterial blood → heat → veins → return to core), vasoconstriction determine heat retained or lost, difference body and environment (Heat lost via infra red radiation (60% of total heat loss), Insulation and clothing (conduction and convection), Evaporation of water (wet skin)
             "How does CO2 affect intracranial pressure?",
             "How can you test for Sickle Cell Disease?",
             "Can you describe the physiological differences seen in paediatric patients?",
@@ -655,7 +680,7 @@ run <- function() {
             "Can you draw and explain the left ventricular volume/time graph?",
             "Tell me about the haemoglobin buffer system",
             "What statistical tests do you know and in which scenarios are they used?",
-            "Should we hyperventilate patients with high intracranial pressure?",
+            "Should we hyperventilate patients with high intracranial pressure?",                                                       #             Hyperventilation causes vasoconstriction and thus reduces cerebral blood flow and intracranial pressure, but it also reduces oxygen delivery to the brain, so it should be used with caution and only as a temporary measure, - ICP reduction only temporarily, Recalibration → new set point → previous returns to same level (hours), If hyperventilation stops (CO2 rises) → resulting vasodilatation worse
             "What effect does increasing venous filling have on venous return and cardiac output?",
             "What is dead space and what types of dead space are there?",
             "How can you calculate fluid deficit in an infant?",
@@ -721,7 +746,7 @@ run <- function() {
             "Is calcium mainly an intra- or an extracellular ion?",
             "Describe the membrane potential",
             "What is Pearson's Chi-Squared Test used for?", 
-            "What is the normal plasma level of calcium?",                                                                               #           1.15 - 1.35 mmol/L ionised, 2.2 - 2.6 mmol/L total (bound + unbound)
+            "What is the normal plasma level of calcium?",                                                                               ##          1.15 - 1.35 mmol/L ionised, 2.2 - 2.6 mmol/L total (bound + unbound)
             "How is calcium represented in plasma?",
             "What are the functions of calcium in the body?",
             "How is the metabolism of calcium regulated in the body?",
@@ -755,7 +780,6 @@ run <- function() {
             "What different types of ribs are there?",
             "How does pulmonary vascular resistance change with lung volume (graph)?",
             "Describe the anatomy of the first rib.",
-            "What are the different measures of spread?",
             "Tell me what you know about the body fluid compartments and plasma composition",
             "What is the clinical relevance of a first rib fracture?",
             "What are the boundaries of the thoracic inlet?",
@@ -846,12 +870,12 @@ run <- function() {
             "What are its important side effects?",
             "Tell me about the oral diabetic medications",
             "What are main anaesthetic concerns for diabetic patient in perioperative period?",
-            "What are the different types of anticoagulant drugs?",
+            "What are the different types of anticoagulant drugs?",                                                                     #
             "How can you measure the activity of anticoagulant medications?",
-            "Tell me about heparin",
+            "Tell me about heparin",                                                                                                    #             Function native not clear, Bodys own sulfated polysaccharide, produced by basophils and mast cell, isolated from dogs liver cells (hepar - in), Heparin binds to the enzyme inhibitor antithrombin (AT), causing a conformational change, activated AT then inactivates thrombin, factor Xa and other proteases, highly negative charge density of heparin contributes to its very strong electrostatic interaction with thrombin
             "NT > What are the side effects of Protamine?",                                                                             #             Fishs sperm (salmon), alkaline substance, Anaphylaxis (males with vasektomy and allergic to fish), hypotension (most common - histamine), pulmonary hypertension, bradycardia
             "What are the main differences between UFH and LMWH?",
-            "NT > Tell me about warfarin",                                                                                              #.            Vitamin K antagonist > inhibits vitamin K epoxide reductase > reduces activation of II, VII, IX, X and anticoagulant proteins C and S (delayed onset (until factors gone), transient hypercoagulatory state (Proteine C has short half life), hepatic metabolism CYP2C9, Interaction (amiodaron, NSAIDs, antibiotics), DECREASED EFFECT (rifampicine, carbamazepine INDUCERS), skin necrosis (proteine C depletion) (vitamin K rich foods can reduce effectiveness), use bridging with LMWH in sick patient until INR < 1.5       
+            "NT > Tell me about warfarin",                                                                                              #             Vitamin K antagonist > inhibits vitamin K epoxide reductase > reduces activation of II, VII, IX, X and anticoagulant proteins C and S (delayed onset (until factors gone), transient hypercoagulatory state (Proteine C has short half life), hepatic metabolism CYP2C9, Interaction (amiodaron, NSAIDs, antibiotics), DECREASED EFFECT (rifampicine, carbamazepine INDUCERS), skin necrosis (proteine C depletion) (vitamin K rich foods can reduce effectiveness), use bridging with LMWH in sick patient until INR < 1.5       
             "What antiplatelet agents do you know?",
             "What can you tell me about fibrinolytic agents?",
             "How long must you wait after giving LMWH before performing central neuraxial blockade? What about other agents?",
@@ -931,7 +955,7 @@ run <- function() {
             "What is an ‘antagonist’?",
             "Why does alfentanil work faster than fentanyl, when fentanyl is more lipid soluble?",
             "Can you name some examples of hormones that act on intracellular receptors?",
-            "What is a p value?",                                                                                                        #
+            "What is a p value?",                                                                                                        ###          If the drug actually does nothing, what are the chances I'd see a recovery rate this high just by pure luck?
             "What type of receptor is the glycine receptor and where is it found?",
             "What is a hormone and what chemical groups they belong to?",
             "Tell me about the renin-angiotensin-aldosterone system",
@@ -983,7 +1007,7 @@ run <- function() {
             "What is so useful about this plot that could be used to compare two different agonists?",
             "Tell me what the dose/response curve looks like for a partial agonist.",
             "What kind of antagonists are there?",                                                                                       ##            COMPETITIVE (reversible - Naloxone), NON-COMPETITIVE (different, allosteric site, irreversible - NMDA, Phenoxybenzamine ((irreversible, non-selective alpha-adrenergic receptor blocker))), UNCOMPETITIVE (Memantin (Alzheimer) only bind when agonist is bound)
-            "What is osmotic pressure and how is it calculated?",
+            "What is osmotic pressure and how is it calculated?",                                                                        #             The pressure necessary to stop osmotic flow across a barrier that is impermeable to the solute, Excess pressure required to maintain osmotic equilibrium between a solution and the pure solvent separated by a membrane permeable only to the solvent, Van't Hoff equation describes osmotic pressure: P = (nRT) / V (P is the osmotic pressure, n is the number of particles in solution (in moles), R is the universal gas constant, which is 0.082 L atm mol-1 K-1, T is the absolute temperature (Kº), V is the volume)
             "What do you understand by the term competitive antagonist?",
             "What are affinity and intrinsic activity?",
             "What is a normal distribution?",
@@ -998,11 +1022,12 @@ run <- function() {
             "What is odds ratio?",
             "Why do tachyarrhythmias occur?",
             "What is skew?",
-            "What is power (statistics)?",                                                                                               #            # TK > 1 - β > ability to detect a significant difference between groups > 80-90%,  80% chance of detecting an effect if one truly exists, and a 20% chance you will miss it (the false negative rate)
+            "What is power (statistics)?",                                                                                               #            TK > 1 - β > ability to detect a significant difference between groups > 80-90%,  80% chance of detecting an effect if one truly exists, and a 20% chance you will miss it (the false negative rate)
             "What is meant by the term ‘spare receptors’?",
             "What problems are associated with hypoadrenalism?",
             "What are the steps to a machine check?",
-            "How is glucose handled by the kidney?",                                                                                     ##            # Glucose freely filtered and reabsorbed (PCT) by sodium-glucose co-transporters (SGLT2 proximal (Concentration gradient of Na (secondary active transport)), SGLT1 late proximal). If plasma > 180 mg/dL) > transporters become saturated > glucosuria, SGLT2-Hemmer (Gliflozine) 
+            "How is glucose handled by the kidney?",                                                                                     ##           Glucose freely filtered and reabsorbed (PCT) by sodium-glucose co-transporters (SGLT2 proximal (Concentration gradient of Na (secondary active transport)), SGLT1 late proximal). If plasma > 180 mg/dL) > transporters become saturated > glucosuria, SGLT2-Hemmer (Gliflozine) 
+            "NT > How can the formula Q = C * V applied to a defibrillator?",                                                                         # https://www.sciencedirect.com/science/article/abs/pii/S1472029923002680
             "What are the irreversible antagonists?",
             "What are relative and absolute humidity?",
             "What is the difference between an inverse agonist and a competitive antagonist?",
@@ -1020,16 +1045,16 @@ run <- function() {
             "Tell me about the cardiac axis",
             "Can you name some drugs that demonstrate optical stereoisomerism?",
             "What are the differences between atracurium and cisatracurium?",
+            "NT > What does an inductor do in a defibrillator",                                                                                       # An inductor consists of a coil of wire wrapped around a ferromagnetic core and will produce an electromagnetic force, by Faraday's law of induction, when the current flowing through it is changing. The direction of this electromagnetic force opposes the change that produced it, thereby resisting changes in the flow rate of electrons. The primary function of the inductor is to damp the rapid discharge from the capacitor, with the increased duration of the shock optimizing the chances of successful defibrillation.
             "What is a p value?",
             "What is the stress response?",
             "What are the different types of lactic acidosis?",
-            "What is base excess when compared to 'standard' base excess?",
             "How do you define the ‘blood:gas partition coefficient’ and how is it clinically relevant?",
             "What is the ‘oil:gas partition coefficient’ and how is it clinically relevant?",
             "jlkWhat do you understand by ‘MAC’ and how is it clinically relevant?",
-            "What are the causes of metabolic acidosis?",
+            "What are the causes of metabolic acidosis?",                                                                                #            Normal anion gap, increased anion gap, reduction acid excreationm, increase acid intake, increased loss of bicarbonate (fistula, diarhea). 
             "How is AVR (Goldberger) calculated?",                                                                                       #
-            "NT > Please describe what happens during a Valsalva manoeuvre",                                                             #            # picture on derranged physiology 
+            "NT > Please describe what happens during a Valsalva manoeuvre",                                                             #            Picture on derranged physiology 
             "What factors affect protein binding?",
             "How does levobupivacaine compare to dextrobupivacaine?",
             "What factors can increase or decrease MAC?",
@@ -1055,14 +1080,18 @@ run <- function() {
             "Can you compare and contrast propofol and thiopental as induction agents?",
             "What is the number needed to treat?",
             "What are the advantages and disadvantages of etomidate as an induction agent?",
+            "What are ECG changes for the left bundle block?",
+            "What are ECG changes for the right bundle block?",
+            "What are ECG creteria for VT?",
+            "NT > what are the ECG sings for a severy COPD?",                                                                                        # Vertical axis (III and aVF very positive) and clockwise rotation (prolonged R progression in wilson leads - transitional lead is V5), peak P waves in inferior leads, Low voltages in the left-sided leads (I, aVL, V5-6)
             "What is the difference between oncotic and osmotic pressure?",
             "What are the advantages and disadvantages of ketamine as an induction agent?",
             "What other intravenous agents can be used to induce general anaesthesia?",
-            "What are the causes of metabolic acidosis?",
+            "What are the causes of metabolic acidosis?",                                                                                 #           Normal anion gap, increased anion gap, reduction acid excreationm, increase acid intake, increased loss of bicarbonate (fistula, diarhea)
             "How do drugs cross the blood brain barrier?",
             "What is the osmolar gap?",                                                                                                   # 
             "What factors affect whether a drug distributes to the foetus?",
-            "Draw the formula for pyruvate to lactate conversion",                                                                        #            https://matthey.com/products-and-markets/pgms-and-circularity/pgm-chemicals-and-catalysts/catalysts/biocatalysts/ldh-enzyme
+            "Draw the formula for pyruvate to lactate conversion",                                                                        #           https://matthey.com/products-and-markets/pgms-and-circularity/pgm-chemicals-and-catalysts/catalysts/biocatalysts/ldh-enzyme
             "What do you understand by the term ‘muscle relaxant’?",
             "What is meant by the term pharmacogenetics and what are typical conditions?",
             "What types of muscle relaxants are you aware of?",                                                                           #           
@@ -1072,7 +1101,7 @@ run <- function() {
             "What are the different types of nerve fibres?",
             "What is anion gap?",
             "What are the stages of metabolism?",
-            "How do drugs cross the blood brain barrier?",
+            "How do drugs cross the blood brain barrier?",                                                                                #           Simple diffusion → very small, lipid soluble → propofol, anaesthetics, volatiles, Active transport → glucose, insulin, Facilitated diffusion, NOT CROSSING - Large charged muscle relaxants (glycopyrrolate → permanently charged quaternary amine), atropine → ***tertiary*** amine cross BBB (confusion and paradoxical bradicardia, Some metabolised as they cross > monoamines inactivated by monoamine oxidase (trauma → BBB leakage → leakage of catecholamines → cardiovascular disruption (SAB) > If BBB disrupted → benzylpenicillin not penetrate BBB → except in meningitis
             "What are additives?",                                                                                                        #           TK: Preservatives > Benzyl alcohol, Solvents > Water (most), Propylene glycol (Propofol), Mannitol (Dantrolene), Soybean oil (Propofol), Antioxidants (Sulphites), Buffers (Hydroxide), Nitrogen (thiopenthal)
             "Describe the side effects of succinylcholine.",
             "Classify the non-depolarizing muscle relaxants.",                                                                            #           Aminosteroids (rocuronium, vecuronium, pancuronium), benzylisoquinolinium (atracurium, cisatracurium, mivacurium) 
@@ -1130,7 +1159,7 @@ run <- function() {
             "What methods are available to measure gas concentration in a mixture of gases?",
             "Where does the autonomic system innervate the heart?",
             "Explain to me the principle behind the paramagnetic analyser",
-            "How is sodium reabsorbed in the PCT?",
+            "How is sodium reabsorbed in the PCT?",                                                                                      #            Na/K/ATPase lowers intracellular Na concentration (basolateral membrane - to blood), H+ out of the cell into the tubule, Paracellularly (between the cells)
             "NT > What is the theoretical principle of infrared capnometry?",                                                            #            IR source throug a saphire filter (only 4 micron) through sample and reference chamber (molecules with 2 ore more atoms absorb IR), Beer-Lamber law > A proportional to conc and lenth)               
             "What do you understand by the Beer–Lambert law?",                                                                           #            Beer’s law > absorption is directly proportional to substances concentration, Lambert’s law > absorption is directly proportional to length of the light’s path
             "What is statistical error?",
@@ -1145,11 +1174,11 @@ run <- function() {
             "How does systemic absorption differ between sites of local anaesthetic injection?",
             "How would you manage local anaesthetic toxicity?",
             "Tell me about lidocaine",
-            "Tell me about bupivacaine",                                                                                                #             # racemic mixture of dextrobupivacaine and levobupivacaine, long acting, more cardiotoxic than lidocaine (due to higher lipid solubility and potency), used for epidural and peripheral nerve blocks, less suitable for IV use, metabolised by liver (CYP450) > caution in hepatic impairment, excreted by kidneys > caution in renal impairment
+            "Tell me about bupivacaine",                                                                                                #            Racemic mixture of dextrobupivacaine and levobupivacaine, long acting, more cardiotoxic than lidocaine (due to higher lipid solubility and potency), used for epidural and peripheral nerve blocks, less suitable for IV use, metabolised by liver (CYP450) > caution in hepatic impairment, excreted by kidneys > caution in renal impairment
             "Tell me about levobupivacaine",
             "Which local anaesthetic agent is most suitable for day case surgery and why?",
-            "What can you tell me about cocaine?",
-            "What are the components of the CT scanner?",
+            "What can you tell me about cocaine?",                                                                                      #            Local anaesthetic (Na channel) and vasoconstrictor (inhibits reuptake of noradrenaline at adrenergic nerve terminals), used for ENT surgery, metabolised by plasma esterases, excreted by kidneys, toxicity (CNS stimulation - seizures, cardiovascular toxicity - arrhythmias)           
+            "NT > What are the components of the CT scanner?",                                                                          #            X-ray generation system (fan shaped beam, rotates around), detector system (opposite - detects attenuated X-rays > scintillations detectors - produce light if ionizing radiation passes through them), gantry (The CT gantry supports and rotates the X-ray source and detector array around the patient to produce cross-sectional anatomical images), data acquisition system, and computer reconstruction/display system
             "What factors affect bioavailability?",
             "What do you understand by the term computed axial tomography (CAT)?",
             "What is Einthoven’s law?",
@@ -1259,9 +1288,9 @@ run <- function() {
             "Resus Council Guidelines for adult tachycardia",
             "How do macrolides work?",  
             "Do you know any aminoglycosides?",
-            "Tell me about clindamycin",
+            "Tell me about clindamycin",                                                                                               #              Lincosamide antibiotic, Good for bone and joint infection, Anaerobic and gram positive cover, Good for MRSA, malaria (P. Falciparum), Mechanism > binds and inhibits 50S subunit, prevents protein synthesis, Effects > Can cause colitis, Diarrhoea, Rash and fever
             "How does doxycyline work and what are its side effects?",
-            "How do antiviral agents work?",                                                                                          #               Nucleoside analogues (acyclovir, ganciclovir) > inhibit viral DNA polymerase, non-nucleoside reverse transcriptase inhibitors (nevirapine) > bind to and inhibit reverse transcriptase (Retroviruses (HIV) - read from RNA and build DNA), protease inhibitors (ritonavir) > inhibit viral proteases, integrase inhibitors (raltegravir) > inhibit viral integrase, fusion inhibitors (enfuvirtide) > prevent fusion of virus with host cell membrane
+            "How do antiviral agents work?",                                                                                           #              Nucleoside analogues (acyclovir, ganciclovir) > inhibit viral DNA polymerase, non-nucleoside reverse transcriptase inhibitors (nevirapine) > bind to and inhibit reverse transcriptase (Retroviruses (HIV) - read from RNA and build DNA), protease inhibitors (ritonavir) > inhibit viral proteases, integrase inhibitors (raltegravir) > inhibit viral integrase, fusion inhibitors (enfuvirtide) > prevent fusion of virus with host cell membrane
             "How many attempts at intubation are allowed?",
             "Which blocks should be performed for Total Knee Arthroplasty (TKA)?",
             "What are the clinical features of malignant hyperthermia?",
@@ -1364,11 +1393,11 @@ run <- function() {
             "What is MAC?",
             "Describe the Paediatric ALS algorithm",
             "What do you know about Xenon?",
-            "What are the problems associated with metabolism of sevoflurane?",
+            "What are the problems associated with metabolism of sevoflurane?",                                                         #             < 5% metabolised by CYP2E1 > fluoride ions > nephropathy, Production of compounds A, B, C, D and E > interacting with soda lime that is strong alkali (good is calcium hydroxyde) (nephrotoxic in rats, humans unclear), Risk factors > High temperature, High sevoflurane concentration, Baralyme, Low gas flow
             "So why is my machine displaying MAC 1.0 when it’s at 2.1% Sevo?",
             "What are the suitable locations for gaining intraosseous access on a child?",                                              ####             
             "Key considerations for anaesthesia in aspiration",
-            "How do you estimate blood volume in a child?",
+            "How do you estimate blood volume in a child?",                                                                             #             Neonate = 85 - 90 ml/kg, Infant = 75 - 80 ml/kg, Child = 70 - 75 ml/kg
             "Tell me about Sevofluran",
             "Tell me about Enflurane",
             "Tell me about Isoflurane",
@@ -1526,8 +1555,8 @@ run <- function() {
             "What are the properties of an ideal breathing system?",
             "What is the Mapleson Classification of breathing systems?",
             "Describe the Circle breathing system",
-            "Tell me about the Bain Circuit",                                                                                           #             # inner tube for FG, Mapleson D, spontaneous inefficient, APL distant, FG close to patient
-            "What is the main risk with a co-axial mapleson B or Bain circuit?",
+            "Tell me about the Bain Circuit",                                                                                           #             Inner tube for FG, Mapleson D, spontaneous inefficient, APL distant, FG close to patient
+            "What is the main risk with a co-axial mapleson B or Bain circuit?",                                                        #             Disconnection of the inner tube supplying FGF > converts entire circuit into dead space > rebreathing of CO2
             "Can you explain why the Mapleson A circuit is better for spontaneous breathing than controlled ventilation?",
             "What flow rates do each of the systems require?",
             "What does the APL valve do?",
@@ -1575,15 +1604,14 @@ run <- function() {
             "What might be the the cause of a low end tidal CO2?",
             "How is AVR (Goldberger) calculated?",
             "Where do the chest leads go?",
-            "How many physical leads are needed for a 12 lead ECG?",
+            "How many physical leads are needed for a 12 lead ECG?",                                                                   #              10 physical leads (4 limb leads > I, II, III, avL, avR, aVF and 6 chest leads) > 12 lead ECG (4 limb leads (I, II, III, aVR, aVL, aVF) and 6 chest leads (V1-V6))
             "What is the function of the right lower limb lead?",
             "How is a typical ECG calibrated",
             "What are the main bacterial targets of antibiotics?",                                                                                    # CELL WALL (penicillins, cephalosporins, carbapenems, glycopeptides), PROTEIN SYNTHESIS (aminoglycosides, macrolides, tetracyclines, clindamycin), DNA/RNA (fluoroquinolones, metronidazole), FOLATE METABOLISM (sulfonamides, trimethoprim)
             "How does pulse oximetry work?",
             "What sources of errors can occur while using a pulse oximeter?",
             "How does a pulse oximeter work?",
-            "What are the two wavelengths used in spectrophotometry?",
-            "Which line represents oxyhaemoglobin and which is deoxyhaemoglobin?",
+            "What are the two wavelengths in spectrophotometry and what line is what?",                                                #              Y line is the extinction coefficient, one can compare the ratio of pulsatile and nonpulsatile absorbance to produce R, the ratio of absorbance at any given time, R = (AC660 / DC660) / (AC940/DC940), When the LED is off, the photometer measures the absorption of ambient light, and subtracts  this from the signal measured when the LEDs are on to eliminate for ambient light, Essential design elements of a pulse oximeter include: LED light sources, A photometer, A control circuit, A user interfce with display and alarm functions
             "What is the name of the point of equal absorbance, and what wavelengths does it represent?",
             "What are the sources of error with a pulse oximeter?",                                                                    #              Motion artefact, low perfusion, nail polish, Carboxyhaemoglobin - reading falsely high, Methaemoglobin - reading around 85%, Hyperbilirubinaemia - reading falsely low, ambient light, skin pigmentation, anaemia, interference with other devices, incorrect probe placement, venous pulsation, hypothermia, vasoconstriction
             "How does the pulse oximeter reduce the impact of ambient light?",
@@ -1603,16 +1631,16 @@ run <- function() {
             "How is oxygen stored?",
             "What is the boiling point and the critical temperature for oxygen?",                                                      #              Boiling point is -185°C. Critical T -118°C
             "How does the VIE work?",
-            "How is carbon dioxide manufactured?",
+            "How is carbon dioxide manufactured?",                                                                                     #              Heating limestone to 850°C > decompose to quicklime > CaCO3 → CaO + CO2, Other methods > Combustion of fossil fuels, fermentation, byproduct of ammonia production (Haber process)
             "What is the boiling point and the critical temperature of carbon dioxide?",
             "How is CO2 stored and what is it used for?",
             "What effects and side effects does CO2 have on the body?",
-            "What is nitrous oxide and what is it used for?",
+            "What is nitrous oxide and what is it used for?",                                                                          #              Sweet-smelling, colourless inorganic gas > 1770s by Joseph Priestly > GA adjunct > reduce anaesthetic requirements and add analgesia, Main form of analgesia in labour (joint relocation ED and dental extractions), cryotherapy, Mechanism > Positive allosteric GABA modulator, antagonist at NMDA, some opioid receptor agonism (analgesic effect), Critical Temperature > 36.5°C > above 36.5°C therefore a gas, Blood gas coefficient > 0.47 > the lower the B:G coefficient > the faster agent > fast agent, Oil gas coefficient > 1.4 > the higher O:G coefficient > more potent agent > very low (desflurane = 19, isoflurane = 98) > nitrous not potent
             "How is nitrous oxide manufactured?",
             "How is nitrous oxide stored and what implications does this have for measuring the quantity?",
             "What information is engraved on a nitrous oxide cylinder?",
             "What are the key pharmacological properties of nitrous oxide?",
-            "How is nitrous oxide metabolised?",                                                                                       #              Not metabolised, but small amount (0.004%) reduced to ammonia by bacteria in the gut           
+            "How is nitrous oxide metabolised?",                                                                                        #              Not metabolised, but small amount (0.004%) reduced to ammonia by bacteria in the gut           
             "What are the effects of nitrous oxide on the body?",
             "What are the advantages and disadvantages of using nitrous oxide?",
             "When is nitrous oxide contraindicated?",
@@ -1623,7 +1651,7 @@ run <- function() {
             "How does entonox differ to nitrous oxide in its physical properties?",
             "Can you draw the isotherm for nitrous oxide and explain it?",
             # 08.04.26
-            "What drugs can be given to provide hypotensive anaesthesia?",                                                             #              # GTN, hydralazine, labetalol, sodium nitroprusside (GTN = nitroglycide (sl)), SNIP (iv), phentolamine (pheochromocytoma), methyldopa, clonidine, Mg, Dextor
+            "What drugs can be given to provide hypotensive anaesthesia?",                                                              #              GTN, hydralazine, labetalol, sodium nitroprusside (GTN = nitroglycide (sl)), SNIP (iv), phentolamine (pheochromocytoma), methyldopa, clonidine, Mg, Dextor
             "Tell me about Hydralazine",
             "Tell me more about β blockers",
             "How do beta blockers cause hypotension?",
@@ -1646,7 +1674,8 @@ run <- function() {
             "What is Power?",
             "What are resistance and impedance?",
             "What is Reactance?",
-            "How does a capacitor work?",
+            "How does a capacitor work?",                                                                                                #            Capacitance is the ability to hold electric charge, with 1 F equal to a capacitor being able to store one coulomb of charge when a potential difference of one volt is applied across it. , 115 mikroFarad, 2300 Volt >>> 300 Joules, Two conductive plates separated by an insulator (dielectric), when voltage applied > electrons accumulate on one plate > creates electric field > stores energy, when voltage removed > electric field collapses > releases energy, Capacitance (C) = Q / V (charge stored per unit voltage), Materials ability to store electrical charge > Farads (F) > 1 Farad = 1 coulomb (charge) is stored for 1 volt (Voltage) > formed from 2 conducting plates separated by a dielectric (insulator) > current (direct, DC) passes through > e- collect on negative plate > meaning that other plate is more positive due to defecit of these electrons > build up of charge > generates a voltage of its own > once voltage increases to same level as voltage driving the current > current will stop 
+            
             "What factors affect a capacitor’s ability to store charge?",
             "What is inductance?",
             "What does a transistor do?", 
@@ -1666,8 +1695,8 @@ run <- function() {
             "What is the difference between fire and explosion?",
             "What are the different sources of ignition?",
             "What are the different sources of fuel?",
-            "How does MRI work?",
-            "What does T1/T2 mean?",                                                                                                     #            Relaxation times, describe how hydrogen protons return to normal state after radiofrequency pulse, time constant LONGITUDINAL RECOVERY (T1 - "Spin-Lattice" relaxation) - how long it takes for protons to realign with MRIs magnetic field > fat recovers quickly, water slow, T2 = Pathology (Edema, Inflammation, Tumors), how long the protons stay "in sync" with each other after the pulse.,  water bright, fat grey, time constant TRANSVERSE RECOVERY (T2 - "Spin-Spin" relaxation) > Water has a long T1 > Fat has a short T1, T1 weighted fat as brighter T2 weighted fat and water as brighter
+            "How does MRI work?",                                                                                                        #            Atomic nucleus with a differing number of protons and neutrons demonstrate charge + spin > behave like magnet > if magnetic force applied > nuclei will align parallel (low energy) or perpendicular (high energy) to field > second radiofrequency magnetic field is pulsed at 90 degrees to magnetic field of nuclei exciting those nuclei with spin > second field stopped > nuclei relax > releasing energy > detected > Hydrogen ions give strongest response > most abundant nucleus that demonstrates charge and spin > MRI use superconducting electromagnets in liquid helium to provide higher magnetic flux density
+            "What does T1/T2 mean?",                                                                                                     #            Relaxation times, describe how hydrogen protons return to normal state after radiofrequency pulse, time constant LONGITUDINAL RECOVERY (T1 - "Spin-Lattice" relaxation) - how long it takes for protons to realign with MRIs magnetic field > fat recovers quickly, water slow, T2 = Pathology (Edema, Inflammation, Tumors), how long the protons stay "in sync" with each other after the pulse (water + infalmmation bright) - TRANSVERSE RECOVERY (T2 - "Spin-Spin" relaxation) > Water has a long T1 > Fat has a short T1, T1 fat bright, water dark, T2 weighted water and inflammatiopn is brighter
             "What is a transducer?",
             "What is interference and can you give examples?",
             "How does Ultrasound work?",
@@ -1684,7 +1713,7 @@ run <- function() {
             "How can bacteria become resistant to penicillins?",
             "How do cephalosporins differ from penicillins?",
             "Tell me about carbapenems",                                                                                                 #            Imipenem (most seizures esp in AKI), meropenem (MOST COMMONLY), ertapenem > beta lactam antibiotics (related to penicillins and cephaolsporins), inhibit cell wall synthesis, binds to penicillin binding protein, not for MRSA, RESISTANT TO BETA LACTAMASES (ESBLs - e.coli, clebsiella), broad spectrum (gram positive and negative + anaerobic), used for multi-resistant infections, expensiv, seizures
-            "How do glycopeptide antibiotics work?",
+            "How do glycopeptide antibiotics work?",                                                                                     #            Bind to D-Ala-D-Ala-terminio of peptidoglukane precursors and inhibit prolongation, Teicoplanin and vancomycin attack bacterial cell wall > prevent peptidoglycan reinforcement (are not β-lactams), bactericidal, ONLY against aerobic and anaerobic gram positive bacteria, MRSA and endocarditis, Vancomycin is not absorbed from GI tract (useful for C. difficile infection),Vancomycin can be given intrathecally for CNS infections, excreted unchanged in the urine, Teicoplanin 3 times potent as vancomycin + lasts longer (once a day after loading period), Side effects (Ototoxic,Reversibly nephrotoxic, Red man syndrome due to histamine release if given rapidly, Neutropenia and thrombocytopenia)
             "How do the quinolones (ciprofloxacine) work and what are their side effects?",
             "Tell me about rifampicin",
             "How do macrolides work?",
@@ -1762,12 +1791,13 @@ run <- function() {
             "What can you tell me about the types of permanent pacemaker?",
             "What are the indications for perioperative pacing?",
             "What are the intraoperative risks associated with pacemakers?",
-            "What is a defibrillator and how does it work?",
+            "What is a defibrillator and how does it work?",                                                                                          # capacitor stores charged energy in a defibrillator when a potential difference is applied by creating a negative charge from the abundance of electrons at the first plate with simultaneous depletion of electrons at the second plate.
             "What are the components of an implanted automatic defibrillator?",
             "How do anticonvulsants work?",
             "Tell me about phenytoin",
             "Tell me about valproate",
             "NT > What are common key patient assessment tools",                                                                         #            Assessment-Treatment framework (ABCDE) > MIST-SAMPLE (trauma), OPQRS (general symptoms), AVPU (consciousness)
+            "NT > What is a Joule and how is it defferent from Watt?",                                                                   #            Joule (J) is a unit of energy, while Watt (W) is a unit of power, which is the rate at which energy is transferred or converted, 1 Watt = 1 Joule per second. 
             "NT > What are the risks of anticonvulsants in pregnancy?",                                                                  #            VALPROATE > neural tube defects (spina bifida), facial dysmorphism, cardiac defects, PHENYTOIN > fetal hydantoin syndrome (microcephaly, growth restriction, cleft lip/palate), CARBAMAZEPINE > neural tube defects, facial dysmorphism, developmental delay
             "How would you manage status epilepticus?",
             "What are the undesirable side effects of antiepileptics?",
