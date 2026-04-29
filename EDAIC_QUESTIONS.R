@@ -23,6 +23,7 @@
 # THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure
 # During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!
 # "biopsychosocial approach",
+# Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure
 # Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period
 # Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h
 # SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction
@@ -34,7 +35,7 @@
 # Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)
 ## Heparine can cause osteoporosis
 # 1mmHg ~ 1.36 cmH2O
-# Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate
+## Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate
 # Propofol sparing technique
 # Right axis deviation, dominant R wave in V1 and deep S wave in V6 suggest right ventricular hypertrophy due to cor pulmonale
 # Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)
