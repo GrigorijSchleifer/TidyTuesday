@@ -36,6 +36,7 @@
 # RELATE: show how things are connected
 
 
+# Tirofiban - IV glycoprotein IIb/IIIa inhibitor > final step of platelet aggregation, whereas clopidogrel = oral P2Y₁₂ receptor inhibitor prevents platelet activation
 # Coronary sinus into posterior RA between inferior vena cava and tricuspidal valve, great cardiac veins along LAD, middle cardiac veins along posterior descending, small cardiac veins along right marginal artery, medium and greit vein drain into CS, small cardiac veins and vens cordis minimae direct into right ventricle
 # Foregn body child > keep spontaneous
 # THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure
