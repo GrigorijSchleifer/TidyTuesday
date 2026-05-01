@@ -36,6 +36,7 @@
 # RELATE: show how things are connected
 
 
+# Coronary sinus into posterior right sinus between inferior vena cava and tricuspidal valve, great cardiac veins Long LAD, middle cardiac veins along posterior descending, medium and greit vein drain into CS, small cardiac veins and vens cordis minimae direct into right ventricle
 # Foregn body child > keep spontaneous
 # THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure
 # During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!
