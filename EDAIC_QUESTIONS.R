@@ -11,6 +11,10 @@
 
 # FIRST IMPRESSION
 
+# LOOK, LISTEN, FEEL, MEASURE
+# RATES: Respiration, Auscultate, Tracheal deviation, Effort of breathing, Saturation
+
+
 # PREOP
 
 # WELL >                # HISTORY (functional capacity, vitals, disease history, medication, examination, investigations, examinations), EXAMINATIONS, INVESTIGATIONS
@@ -32,12 +36,13 @@
 
 # SCORES ####
 
+# GCS/AVPU (Alert, Voice, Pain, Unresponsive) - D of DRSABCDE
 # Goldman
 # SOFA
 # NELA
 # APACHE
 # HAS BLED
-# CHADVASC 
+# CHA2DS2VASc (risc for stroke in AFib) - CHF, Hypertension, Age > 75 (2), Diabetes, Stroke/TIA (2), Vascular disease, Age 65-74, Sex category 
 # ASA
 # KDIGO
 # rCRI:                                     IHD, CHF, CVD, Insulin therapy, Creatinine > 2 mg/dl, high risk surgery (every one 1 point) > 0: 0.4%, 1: 0.9%, 2: 6.6%, 3 or more: 11% risk of major cardiovascular event
@@ -68,6 +73,14 @@
 
 
 # PEARLS ####
+
+# CPR + Pregnancy: left side, early intubation (increase in aspiration risc), perimortem cesarean section after 4 minutes of unsuccessful resuscitation (if uterus is above umbilicus) - delivery at 5 mninutes
+# Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery, CO2 (infrared#) - superficial, poor tissue penetration, cutting and superf. surgery), Argon (blue green) - retitinal coagulation and dermatology
+# D (in DRSABCDE) (GSC/AVPU, pupils, gross motor function, GLUCOSE!!!!!!!!!!!
+# Changes in conscious state: physiological (O2 ect), pharmacological, neuro (stroke ect) and others (endocrine)
+# Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J 
+# Neonate CPR: all depends on the HR (assess every 30 seconds - adjust airway manouvers to the HR)
+# Neurological assessment - Tone, Power, Reflexex, Coordination, Sensation
 ## Dorsal and ventral horns are in the spinal chord, anterior and posterior root are coming into spinal chord
 ## Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2 * R)
 # Tirofiban - IV glycoprotein IIb/IIIa inhibitor > final step of platelet aggregation, whereas clopidogrel = oral P2Y₁₂ receptor inhibitor prevents platelet activation
@@ -78,10 +91,14 @@
 
 
 
-
+# Use BLS Flowchart to identify the arrest and use ALS for CPR
 # ISAAC - International Study Group for Asthma and Allergies in Childhood (ISAAC) questionnaire - assess kids for occurrence of perioperative respiratory adverse events - asthma in family, rhinitis, exzema, nocturnal dry cough (10 times the bronchospasm risk), wheezing at exercise, heyfeever, tobacco exposure, upper airway infection in last 2 weeks, laryngospasm risk decreased by 11% with every year of age
-
-
+# Benign murmors variate on posture, pathological rarely
+# COACHED approach: Continue compressions, Oxygen away, All clear except compressions, Charging, Hands off, Evaluate, Deliver or Disarm
+# In BLS abnormal breathing qualifies for CPR!
+# Precordial thump only for monitored pulseles VT not for VF or Asystoly
+## Weeze and crackles#
+# ST-segment elevation/depression
 # Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg
 # Fluid deficite for children: BW * Deficite (%) * 10
 # 85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haemolytic disease of the newborn (HDN) - give anti-D immunoglobulin to rhesus negative mothers at 28 weeks and after delivery if baby is rhesus positive, also after miscarriage, abortion, ectopic pregnancy, amniocentesis
@@ -182,7 +199,7 @@
 # Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis
 # Fibrinolysis is assesset with DDimers, and Thrombintime!
 # LCFN - over iliacus muscle and over, under or through the inguinal ligament 
-# if placing LA under the fascia lata > not LA to LFCN becaus FL is deviding the iliacus and rectus femoris
+## if placing LA under the fascia lata > no coverage of LFCN > FL is deviding the iliacus and rectus femoris
 # Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh
 # PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) 
 # Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression
@@ -293,6 +310,8 @@ run <- function() {
             "Tell be about the kidney (ABC)",
             "Describe the anatomy of the adrenal gland",
             "How would you perform a quadratus lumborum block?",                                                                        #             Blockade of intercostal nerves of the abdominal wall (T7-L1), posterior to psoas major, lateral to errector spinae, from iliac crest to 12th rib + medial attachmewnt to lumbar transverse processes, anterior to errector spinus muscle, ventral rami of lower thoracic nerves between psoas - ql - can be blocked there, ventral rami run then between transverse and internal oblique
+            "NT > Explain the process of swallowing",                                                                                   #             ORAL: voluntary, mixing and pushing by the tounge to oropharynx, PHARYNGEAL: involuntary (CN9), tiggerd by food entering the oropharynx, soft palate lifts to seal the nasopharynx, larynx elevates, glottis closes, epiglottis folds down, crycophayngeus relaxes (upper oesophageal sphincter), superior and middle phayngeal constrictors contract (brief apnea), OESOPHAGEAL: peristaltic pushes food down, crycopharyngeus constricts, lower oesophageal sphincter opens
+            "NT > Explain the process of vomiting",
             "Where is the hypothalamus and what does it do?",                                                                           #
             "What is the course of blood vessels through the kidneys?", 
             "What are the compartments of the leg, supplying nerves, and lesions?",
