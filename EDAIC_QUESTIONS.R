@@ -370,6 +370,7 @@ run <- function() {
             "What nerves supply sensation to the eye?",
             "What nerves supply motor function to the extra-ocular muscles?",
             "Tell me about the blood supply to the eye",                                                                                 #            Dual blood supply: Inner retina → central retinal artery, Outer retina → choroidal circulationOphthalmic artery (from internal carotid) > central retinal artery (enters with optic nerve - inner retina - end artery, no collaterals - occlusion is bad "Cherry red spot" on fundus - imminnent blindness!!!!!!), short ciliary arteries (outer retina, choroid), long cilliary arteries >  iris, ciliary body), central retinal vein > superior ophthalmic vein > cavernous sinus, 
+            "NT > Explain tje APL valve",
             "What structures pass through the optic canal and orbital fissures?",
             "Please draw and label the Brachial Plexus",
             "Where do the roots of the brachial plexus lie?",
