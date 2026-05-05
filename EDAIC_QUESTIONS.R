@@ -88,9 +88,14 @@
 # Foregn body child > keep spontaneous
 # THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure
 ## During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!
-
-
-
+# Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)
+# Volume of distribution (ml) = Dose (mg) / Concentration (mg/ml)
+# Elimination rate constant (k) = 1/ time constant (min)
+# Half life (T1/2) = 0.693 x time constant (min)
+# Clearance (ml/min) = Volume of distribution (ml) x k (/min)
+# Clearance = dose / Area under curve (concentration/time)
+# Loading dose = Volume of distribution x target concentration
+# Maintenance infusion rate = target concentration x clearance
 # Use BLS Flowchart to identify the arrest and use ALS for CPR
 # ISAAC - International Study Group for Asthma and Allergies in Childhood (ISAAC) questionnaire - assess kids for occurrence of perioperative respiratory adverse events - asthma in family, rhinitis, exzema, nocturnal dry cough (10 times the bronchospasm risk), wheezing at exercise, heyfeever, tobacco exposure, upper airway infection in last 2 weeks, laryngospasm risk decreased by 11% with every year of age
 # Benign murmors variate on posture, pathological rarely
@@ -124,8 +129,8 @@
 # The lower the pKa the faster the onset (inverse proportional) - local anesthetics
 ### Heparine can cause osteoporosis 
 # N. glossopharyngeus runs submucosaly behind anterior and posterior tonsillar pillarspiriform fossae 
-# Palatine tonsil lies between anterior and posterior tonsillar pillow
-# Waldeyer ring: palatine (real), sublingual and pharyngeal tonsils (adenoids - OSAS, nasal obstruction, snoring)
+## Palatine tonsil lies between anterior and posterior palatine arch
+# Waldeyer ring: palatine (real - between anterior and posterior palatine arch), sublingual and pharyngeal tonsils (adenoids - OSAS, nasal obstruction, snoring)
 # N. glossopharyngeus: GAG REFLEX > posterior 1/3 of tongue, anterior epiglottis surface, valecula, pharynx, carotid body and sinus, parotid gland, stylopharyngeus muscle
 ## 1mmHg ~ 1.36 cmH2O
 ## Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate
@@ -192,7 +197,7 @@
 # the lower you puncture for IJV in the sedillets triangle the more anterio the carotid gets
 # Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) 
 # AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)
-# Larmour equation describes the spin of protons around the B0 magnetic field, the higher the B0, the faster the spin, the better the resolution of the MRI, RF pulse affects this spin
+## Larmour equation describes the spin of protons around the B0 magnetic field, the higher the B0, the faster the spin, the better the resolution of the MRI, RF pulse affects this spin
 # Body is on a alkaline neutral side state
 # Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder
 # By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction
@@ -265,7 +270,7 @@ run <- function() {
             "How would you perform an axillary brachial plexus block?",
             "NT > How would you perform a suprascapular nerve block?",                                                                ##              C5-6 (upper trunk of brachial plexus) > through suprascapular notch (with transverse scapular ligament) > innervates supraspinatus + infraspinatus, sensory to 70% of shoulder joint, block at suprascapular notch (posterior approach, CLASSIC) or suporaspinatus fossa (more superficial), better that ISNB if respiratory compromise, 
             "Draw the branches if abdominal aorta (TT)",
-            "Draw the ankle plane (TT)",
+            "Draw the ankle plane (TT)",                                                                                              #
             "NT > What structures are near the saphenus nerve?",                                                                      #               Runs with femoral artery and vein, deep to sartorius and over adductor longus 
             "NT > What structures are around saphenus nerve at high thigh window?",                                                                   # fermoal artery medial, nerve lateral to FA, sartorius above, vastus medialis medial, AL below 
             "NT > Tell the order of the adductor muscles",                                                                            ##              Anteriu to posterior: M. pectineus > AL > AB > AD 
@@ -392,6 +397,7 @@ run <- function() {
             "What is the blood supply to the nose?",                                                                                     #            Epistaxis: Littles area = Kisselbach plexus (anastomosis of four or five arteries) > anterior + posterior ethmoidal (OPHTALMIC), sphenopalatine + greater palatine artery (MAXILLARY), superior labial artery (FACIAL)         
             "Tell me about the nerve supply to the nose",                                                                                #            Infratrochlear (V1) + infraorbital (V2), ANTEROSUPERIOR from anterior ethmoidal nerve (V1), INFEROPOSTERIOR from maxillary branches (V2 - nasopalatine, palatine) 
             "Please describe the anatomy of the pharynx",
+            "NT > Describe the anatomy of the first rib",                                                                                             # https://www.physio-pedia.com/First_Rib - Shortest, broadest, most curved, single articular facet for T1 vertebra, scalene tubercle (anterior scalene insertion), groove for subclavian artery (posterior to scalene tubercle), groove for subclavian vein (anterior to scalene tubercle), 2-3 cm from sternoclavicular joint, 5-6 cm from midline, 1.5-2 cm from clavicle, 1.5-2 cm from lung apex
             "Can you describe the nerve supply to the larynx?",
             "Which recurrent laryngeal nerve is more prone to damage?",                                                                  #            LLN loops around aortic arch, longer course in mediastinum, deeper, RLN loops around subclavian A., shorter, Ortner syndrom (large LA > horasness)
             "What are the signs of recurrent laryngeal nerve damage?",
@@ -451,7 +457,7 @@ run <- function() {
             "What features can you tell me about the Tuohy needle?",                                                                   #              Hollow 16 gauge >  curved Huber tip typically for epidural catheters > usually 8cm long from hub to tip > total length of 10cm > Lee's lines marking 1c, Huber tip curved + blunted > improve haptic feedback + prevent damage to tissues > guide catheter > introducing stylet prevents coring of tissue + wings allow greater control
             "What are the boundaries of the dural space at the L3/4 vertebral space?",                                                 #              Anterior > Posterior longitudinal ligament, vertebral bodies and intervertebral discs, Posterior > Ligamentum flavum and laminae, Lateral > Pedicles and intervertebral foraminae
             "What are the contraindications to performing an epidural?",                                                               ##             Inability to monitor, Raised intracranial pressure, severe hypovolemia, sepsis, aortic stenosis, heart failure, coagulopathy, patient refusal, local infection at site of insertion, allergy to local anaesthetic, previous spinal surgery or deformity, uncooperative patient
-            "What are the indications for an intercostal nerve block?",                                                                ##             Pain relief for rib fractures, thoracotomy, breast surgery, abdominal surgery, hernia repair, cholecystectomy, appendicectomy, gynaecological surgery, can be used in combination with paravertebral block for mastectomy
+            "What are the indications for an intercostal nerve block?",                                                                ###            Pain relief for rib fractures, thoracotomy, breast surgery, abdominal surgery, hernia repair, cholecystectomy, appendicectomy, gynaecological surgery, can be used in combination with paravertebral block for mastectomy
             "What are the complications of an intercostal nerve block?",                                                               ##             Pneumothorax, vascular puncture, nerve injury, local anaesthetic toxicity, intercostal neuralgia
             "What is the nerve supply to the intercostal space?",                                                                      #              Intercostal nerves (ventral rami of T1-T11 + T12 (subcostal nerve) spinal nerves) run in the costal groove along the inferior border of each rib (neurovascular bundle > VAN (sup > inf) Vein/Artery/Nerve - between innermost and inner intercostal muscles), providing motor innervation to intercostal muscles and sensory innervation to the skin and parietal pleura of the thoracic wall. The subcostal nerve (T12) runs below the 12th rib and supplies the abdominal wall. Each nerve supply provides an collateral branch on the upper rib border below, lateral cutaneus branch (mid axillary line - anterior/posterior division), anterior cutaneus branch, sympatheticto vasomotor and sweat glands
             "Describe the blood supply to the intercostal space",
@@ -472,7 +478,7 @@ run <- function() {
             "How long must you wait after giving prophylactic low molecular weight heparin?",
             "What are the signs and symptoms of a high spinal?",                                                                       ##             Hypotension, bradycardia, respiratory distress, loss of consciousness, nausea, vomiting, dilated pupils, cardiac arrest
             "Tell me about the sympathetic nervous system",                                                                            #              Only sympathetic input Sweat glands, Fat, Juxtaglomerular apparatus, Ach > Nora (excapt sweat), Paired, paravertebral ganglia, T1-L2 (THORACOLUMBAR OUTLOW), preganglionic fibers (B) enter via white ramus communicantes, synapse with postganglionic neurons in the ganglia, postganglionic fibers (C) exit via grey ramus communicantes, rejoin spinal nerve, travel to target organ, some fibers ascend or descend in the chain before exiting (head and neck), some fibers pass through the chain without synapsing (splanchnic nerves to abdomen)    . 
-            "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",                                     #              Found at the level of C7, anterior to the neck of the first rib, and medial to vertebral artery, behind the carotid sheath,Occurs in 75-80% of people, Formed by fusion of inferior cervical and first thoracic ganglion, located at C7, anterior to the transverse process, posterior to the carotid sheath, medial to the scalene muscles, lateral to the longus colli muscle, sympathetic innervation to head, neck, upper limb, can be blocked for sympathetically mediated pain (complex regional pain syndrome), hyperhidrosis, vascular insufficiency, - stellate ganglion block can be used for Vascular insufficiency of the upper limb, Complex regional pain syndromeSevere refractory angina, Post herpetic neuralgia
+            "Tell me about the stellate ganglion, and why it is relevant to anaesthetic practice",                                     ##             Found at the level of C7, anterior to the neck of the first rib, and medial to vertebral artery, behind the carotid sheath, Occurs in 75-80% of people, Formed by fusion of inferior cervical and first thoracic ganglion, located at C7, anterior to the transverse process, posterior to the carotid sheath, medial to the scalene muscles, lateral to the longus colli muscle, sympathetic innervation to head, neck, upper limb, can be blocked for sympathetically mediated pain (complex regional pain syndrome), hyperhidrosis, vascular insufficiency, refractory angina, Post herpetic neuralgia
             "What are the subtypes of muscarinic (cholinergic) receptors?",                                                            # 
             "How many nuclei does the vagus nerve have and what is their function?",
             "What is the ductus arteriosus?",
@@ -639,7 +645,7 @@ run <- function() {
             "NT > Which respiratory failure types do you know?",                                                                                      # Type 1 (hypoxemic, PaO2 < 60 mmHg with normal or low PaCO2), Type 2 (hypercapnic, PaCO2 > 50 mmHg), Type 3 (perioperative, combination of type 1 and 2), Type 4 (shock-related, due to inadequate perfusion)                                        
             "What is the function of CSF?",
             "What volume of epidural local anaesthetic is needed for each vertebral segment to be blocked?",                            ###           3-4 ml (thoracically), more for lumbar (5-6 ml), less for cervical (2-3 ml)
-            "Can you tell me the components of the reflex arc?",                                                                        #             Monosynaptic reflex (Sensor > afferent neuron > synapse > efferent motor neuron > effector) vs polysynaptic reflex (involvinfg an interneuron) 
+            "Can you tell me the components of the reflex arc?",                                                                        ##            Monosynaptic reflex (Sensor > afferent neuron > synapse > efferent motor neuron > effector) vs polysynaptic reflex (involvinfg an interneuron) 
             "What are the methods of measuring anaerobic threshold?", 
             "Why we consider the blood-brain barrier when choosing anaesthetic drugs?",
             "What is the role of sodium within the body, and what are the daily requirements?",                                         #             Contols fluid volume, osmolality, low Na crazy, high Na > dehydration, CNS dysfunction, Renal: Nabi handling through Na/H exchange, cotransport of glucose and AS, Sodium is the main extracellular cation, it helps maintain fluid balance, nerve function, and muscle function. Daily requirements are around 1.5-3g (65-130 mmol) per day
@@ -825,7 +831,7 @@ run <- function() {
             "What is the number needed to treat?",                                                                                      ##            NNT = 1/ARR (absolute risk reduction = 1/(control event rate - experimental event rate), the number of patients that need to be treated to prevent one additional bad outcome, lower NNT is better, NNT of 1 means every patient treated benefits, stroke 10%, drug > stroke 5%, 1 / (0.1 - 0.05) = 20, so 20 patients need to be treated to prevent one stroke
             "NT > Tell me the ml/kg for common respiratory volumes and capacities",                                                     #             Tidal volume (TV) 7 ml/kg, Inspiratory reserve volume (IRV) 40 ml/kg, Expiratory reserve volume (ERV) 15 ml/kg, Residual volume (RV) 15 ml/kg, Total lung capacity (TLC) 80 ml/kg, Vital capacity (VC) 65 ml/kg, Inspiratory capacity (IC) 50 ml/kg, Functional residual capacity (FRC) 30 ml/kg          
             "Please describe the three mechanisms involved in urine production",                                                        #             Glomerular filtration (Starlink forces - GFR = 125 ml/min (180 L/d) > fenestrated endothelium, passive, non-selective, size and charge selectivity), tubular reabsorption (Mainly in proximal tubulus > active and passive, selective), tubular secretion (H+, K, NH4+ >  active, selective)
-            "What is Pearson's Chi-Squared Test used for?",
+            "What is Pearson's Chi-Squared Test used for?",                                                                             #             Comparing categorical data from two different groups > significant difference between groups as compared to expected, If number of observations < 5 > Fisher’s exact test, Assumption → ***no significant difference*** between the two groups (χ2 = 0), χ2 increases with difference size >  value needs to be interpreted with pre-calculated tables that incorporate the degrees of freedom > p-value   
             "NT > What is glomerular filtration rate?",                                                                                 #             Volume of plasma filtered by all glomeruli per unit time, Declines with age, men higher, GFR = K (filtration coefficient (surface, permeability) * Net Filtration Pressure (NFP = (Pgc - Pbc) - mü gc (no oncotic pressure in bowmann capsule usually), 60 - 15 - 25 ~ 20 mmHg Net Filtration Pressure, GFR = 125 ml/min (180 L/d) > fenestrated endothelium, passive, non-selective, size and charge selectivity, normal range 90-120 ml/min/1.73m2, used to assess kidney function, can be estimated using creatinine clearance or equations like MDRD or CKD-EPI
             "What is renal clearance?",
             "How does the body control calcium?",
@@ -897,7 +903,7 @@ run <- function() {
             "How does pulmonary vascular resistance change with lung volume (graph)?",
             "Describe the anatomy of the first rib.",
             "Tell me what you know about the body fluid compartments and plasma composition",
-            "What is the clinical relevance of a first rib fracture?",
+            "NT > What is the clinical relevance of a first rib fracture?",                                                             #             Major force is needed, likely other neurovascular structures are impacted as well, arteries/veins and brachial plexus damage
             "What are the boundaries of the thoracic inlet?",
             "What ECG changes are seen with hypocalcaemia?",
             "What is the cardiac cycle?",                                                                                               # 
@@ -1042,15 +1048,15 @@ run <- function() {
             "What are the three ways in which drugs can be excreted into the urine?",
             "Explain the causes and manifestations of hypo/hyper of Na, Ka, Cl, Ca, Mg imbalances",
             "What is context sensitive half time?",
-            "What is genetic polymorphism?",                                                                                              #          
+            "What is genetic polymorphism?",                                                                                            #          
             "What factors affect movement of a drug across a membrane?",
             "What factors influence hepatic metabolism of a drug?",
-            "What do you understand by the term ‘differential block’?",
+            "What do you understand by the term ‘differential block’?",                                                                 #             1st: small diameter Myelinated Autonomic (B-fibers) —> vasodilation, Then unmyelinated C fibers first (cold, dull, slow pain & visceral pain ), Then myelinated sensory impulses (A-delta) – sharp pain, Then myelinated A-beta (pressure), Then myelinated motor (A gamma, A-alpha), Aα fibers: supply skeletal muscle: motor and proprioception, Aβ fibers transmit tactile sensation (pressure, touch), Aγ fibers provide innervation to muscle spindles, Aδ fibers transmit nociception(pain) and cold.
             "Explain the concept of efficacy and potency.",
             "How do these intracellular receptors exert their effects?",
             "Which enzymes metabolise codeine, and what issues can arise?",
-            "What can you tell me about oxytocin?",                                                                                       #           Hypothalamus > posterior pituitary gland, Nonapeptide (9 AS), from Ncl. paraventricularis, supraopticus (little), bound on neurophysin via neuroaxonal transport to posterior pituitary gland
-            "What other drugs are used to promote uterine contraction?",                                                                  #           Ergometrine (Ergonovine) (UNCLEAR mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension), Prostaglandins analoges (Dinoprostone, Misoprostol) (PGE2 > cervical ripening, PGF2a > uterine contraction), Carbetocin (Oxytocin analogue with longer half life)
+            "What can you tell me about oxytocin?",                                                                                     #             Hypothalamus > posterior pituitary gland, Nonapeptide (9 AS), from Ncl. paraventricularis, supraopticus (little), bound on neurophysin via neuroaxonal transport to posterior pituitary gland
+            "What other drugs are used to promote uterine contraction?",                                                                #             Ergometrine (Ergonovine) (UNCLEAR mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension), Prostaglandins analoges (Dinoprostone, Misoprostol) (PGE2 > cervical ripening, PGF2a > uterine contraction), Carbetocin (Oxytocin analogue with longer half life)
             "What do you understand by the term ‘agonist’?",
             "What do you know about the NMDA receptor?",
             "Can you name any other secondary messengers?",
@@ -1058,11 +1064,11 @@ run <- function() {
             "Can you explain the graphs in relation to a pulmonary artery catheter?",
             "Tell me about ergometrine",
             "What would it look like for a failing ventricle?",
-            "What are the key binding sites on the GABA receptor?",                                                                       #           Propofol and etomidate on the $\beta$-subunits, barbiturates within the transmembrane domains, and benzodiazepines at the $\alpha/\gamma$ subunit interface
+            "What are the key binding sites on the GABA receptor?",                                                                     #           Propofol and etomidate on the $\beta$-subunits, barbiturates within the transmembrane domains, and benzodiazepines at the $\alpha/\gamma$ subunit interface
             "Describe the one compartment model",
-            "How would you describe the G-Protein receptor and can you give examples?",                                                   #           Contain the G-Protein (Guanine nucleotide-binding proteins) a heterotrimetric G Protein complex, bound to GTP, they are 'on', and, when they are bound to GDP, they are 'off', ACTIVATED BY G-protein coupled receptors (GPCRs) > 7 transmembrane domains, extracellular N-terminus, intracellular C-terminus, ligand binding > conformational change > activation of G-protein > dissociation of alpha subunit from beta-gamma subunits > activation of intracellular signalling pathways (e.g. cAMP, IP3/DAG, calcium channels)
+            "How would you describe the G-Protein receptor and can you give examples?",                                                 #           Contain the G-Protein (Guanine nucleotide-binding proteins) a heterotrimetric G Protein complex, bound to GTP, they are 'on', and, when they are bound to GDP, they are 'off', ACTIVATED BY G-protein coupled receptors (GPCRs) > 7 transmembrane domains, extracellular N-terminus, intracellular C-terminus, ligand binding > conformational change > activation of G-protein > dissociation of alpha subunit from beta-gamma subunits > activation of intracellular signalling pathways (e.g. cAMP, IP3/DAG, calcium channels)
             "Which molecule is the most abundant secondary messenger and what actions does it have?",
-            "By what three mechanisms can a drug increase an enzyme’s activity?",
+            "By what three mechanisms can a drug increase an enzyme’s activity?",                                                       #           Enzyme induction, intermediary messengers, positive allosteric modulation, Km (Michaelis constant = substrate concentration for 50% max rate), Vmax (max enzyme rate) or both modulated
             "What is enterohepatic circulation and why is it relevant?",
             "Give two examples of hormones that act on tyrosine kinase receptors",
             "What is the difference between elimination and excretion, and what are the common routes?",
@@ -1194,7 +1200,7 @@ run <- function() {
             "How can filtered substances be reabsorbed in the proximal tubule?",
             "NT > What are the disadvantages of using propofol as an induction agent?",                                                   #           No pain, vagal activity (bradycardia - asystoly), metabolic acidosis, rhabdomyolysis, cardiac failure
             "Can you compare and contrast propofol and thiopental as induction agents?",
-            "What are the advantages and disadvantages of etomidate as an induction agent?",
+            "What are the advantages and disadvantages of etomidate as an induction agent?",                                              #           Weak base, ph: 8.1, pKa: 4.2, Imidazole and ester (Estgerhydrolysis hepatically), renal excretion, anti-platelet, Advantages: Cardiovascular stability (no histamine release, no effect on sympathetic tone), minimal respiratory depression, rapid onset and short duration of action, minimal effect on cerebral blood flow and intracranial pressure, Disadvantages: Adrenal suppression (inhibition of 11β-hydroxylase > reduced cortisol and aldosterone synthesis > increased risk of sepsis and death in critically ill patients), myoclonus (up to 50% of patients), pain on injection, nausea and vomiting, Epileptic EEG
             "What are ECG changes for the left bundle block?",
             "What are ECG changes for the right bundle block?",
             "NT > Explain the campbell diagramm and its relationsship for the patient",                                         
@@ -1429,7 +1435,7 @@ run <- function() {
             # "What are the signs and symptoms of local anaesthetic toxicity?",                                                       ####            Excitatory phase first, Inhibitory second, CNS (circumoral numbness, tinnitus, metallic taste, visual disturbances, agitation, seizures), cardiovascular (PR elongation, QRS elongation, Asystole, Sinus Bradycardia, Ventricular and re-entrant tachys, VF, arrhythmias, hypotension, cardiac arrest), other (methemoglobinemia (benzocaine), allergic reactions)
             "What is cardiac tamponade and why does it occur?",
             "What are the clinical features of raised intracranial pressure?",
-            "How is AKI diagnosed?",
+            "How is AKI diagnosed?",                                                                                                  #               Current staging of CKD is based on a functional (estimated GFR = eGFR, clearance) and a structural (albuminuria) parameter, eGFR < 30 ml/min./1.73 m2 (singleness < 60 ml/min./1.73 m2), constant albuminuria > 30 mg/mmol creatinine, CKD-EPI 2009 (up to 69 years) and CKD-BIS-1 (70 years and older) should be used to determine eGFR, KDIGO criteria > STAGE 1: SCr up by 0.3 mg/dl within 48 hours OR SCr rises to 1.5 times baseline within last 7 days OR Urine output is < 0.5 mL/kg/h for 6 hours, STAGE2: 2.0–2.9 times baseline OR < 0.5 mL/kg/h for 12h, STAGE 3: > 3.0 times baseline OR rise to 4.0 mg/dL OR start of RRT OR < 0.3 mL/kg/h for 24 h OR Anuria for 12 h, Kreatinin stammt aus dem Metabolismus von Kreatin im Skelettmuskel und wird relativ konstant ins Blut abgegeben, was zu stabilen Serumkonzentrationen führt (12). Weil Kreatinin als kleines Molekül glomerulär frei filtriert wird, Bereits 2013 empfahlen die KDIGO-Richtlinien, nur die CKD-EPI-Formel 2009 und nicht mehr die ältere MDRD-Formel zu verwenden
             "What is the effect compartment?",
             "What are the management options for raised intracranial pressure?",
             "What is the effect of hypokalaemia and what is a symptom of it?",
@@ -1450,7 +1456,7 @@ run <- function() {
             "What do you understand by TCI?",
             "What are the key principles of managing PPH?",
             "Why are propofol and remifentanil used together?",                                                                       #               Synergistic > smaller doses required to achieve adequate depth > curved out isobologram line 
-            "How can you manually administer TIVA?",                                                                                  #               Bristol model most commonly > aims target plasma concentration of 3 μg/ml within 2 min> assumes premedication with temazepam followed by 3μg/kg fentanyl > 1mg/kg bolus start > 10mg/kg/h 10 min > 8mg/kg/h next 10 min > 6mg/kg/h from then on > ends up giving more propofol than TCI models (more cp instability and slower wake up)
+            "How can you manually administer TIVA?",                                                                                  #               Bristol model most commonly (First pharmacokinetic model, Based on three-compartment model of health patients) > aims target plasma concentration of 3 μg/ml within 2 min > assumes premedication with temazepam followed by 3μg/kg fentanyl > 1mg/kg bolus start > 10mg/kg/h 10 min > 8mg/kg/h next 10 min > 6mg/kg/h from then on > ends up giving more propofol than TCI models (more cp instability and slower wake up)
             "What are the indications for TIVA?",
             "Tell me about syntocinon",
             "What should you do if cardioversion fails?",
@@ -1469,6 +1475,7 @@ run <- function() {
             "What is the definition of post-partum haemorrhage?",
             "What is the epidemiology of major obstetric haemorrhage?",
             "What are the causes of major obstetric haemorrhage?",                                                                      #             TK: Antepartum > Placental praevia, accreta or percreta, abruption, Uterine rupture or trauma, Post-partum > Tone, Tissue, Thrombin, Trauma, Codex: uterine atony (70%), trauma (20%), retained placenta (10%), coagulopathy (1%), uterine rupture, placenta accreta, vasa previa, uterine inversion, amniotic fluid embolism,sepsis
+            "NT > What are the differences between Marsch and Snider",                                                                                # https://partone.litfl.com/tiva-and-tci.html
             "What are the risk factors for PPH?",
             "How common is ante-partum haemorrhage?",
             "When might coagulopathy be the cause of post-partum haemorrhage?",
