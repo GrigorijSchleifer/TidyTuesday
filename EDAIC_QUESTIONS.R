@@ -70,7 +70,7 @@
 # OUTLINE: give the main features or general principles
 # RELATE: show how things are connected
 
-
+# TEST
 
 # PEARLS ####
 
@@ -97,6 +97,7 @@
 # Loading dose = Volume of distribution x target concentration
 # Maintenance infusion rate = target concentration x clearance
 # Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)
+
 # Use BLS Flowchart to identify the arrest and use ALS for CPR
 # ISAAC - International Study Group for Asthma and Allergies in Childhood (ISAAC) questionnaire - assess kids for occurrence of perioperative respiratory adverse events - asthma in family, rhinitis, exzema, nocturnal dry cough (10 times the bronchospasm risk), wheezing at exercise, heyfeever, tobacco exposure, upper airway infection in last 2 weeks, laryngospasm risk decreased by 11% with every year of age
 # Benign murmors variate on posture, pathological rarely
