@@ -52,6 +52,7 @@
 # rLee
 # APGAR
 # MELD
+# NSQUIP calculator: https://riskcalculator.facs.org/RiskCalculator/PatientInfo.jsp
 
 
 # ANALYSE ####
@@ -74,6 +75,17 @@
 
 # PEARLS ####
 
+# Hypotension: Preload, Afterload, Rate, Rhythm, Contractiliy, Obstructive 
+# Tachycardia: Physiological, pharmacological, Pain, Surgical
+# Bradycardia: Pharma, Vagal, Cardiac, 
+# Stridor: Lumen, Wall, Extrinsic
+# High Ventilation Pressur: Machine, Circuit, HME, ETT, Patient
+# Delayed Emergence: Physilogical, Pharm, Neuro, Other
+
+
+
+# Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors
+# Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac
 # CPR + Pregnancy: left side, early intubation (increase in aspiration risc), perimortem cesarean section after 4 minutes of unsuccessful resuscitation (if uterus is above umbilicus) - delivery at 5 mninutes
 # Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery, CO2 (infrared#) - superficial, poor tissue penetration, cutting and superf. surgery), Argon (blue green) - retitinal coagulation and dermatology
 # D (in DRSABCDE) (GSC/AVPU, pupils, gross motor function, GLUCOSE!!!!!!!!!!!
@@ -105,7 +117,7 @@
 # In BLS abnormal breathing qualifies for CPR!
 # Precordial thump only for monitored pulseles VT not for VF or Asystoly
 ## Weeze and crackles#
-# ST-segment elevation/depression
+## ST-segment elevation/depression
 # Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg
 # Fluid deficite for children: BW * Deficite (%) * 10
 # 85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haemolytic disease of the newborn (HDN) - give anti-D immunoglobulin to rhesus negative mothers at 28 weeks and after delivery if baby is rhesus positive, also after miscarriage, abortion, ectopic pregnancy, amniocentesis
@@ -260,6 +272,25 @@ run <- function() {
     # 1. Define the question sets
     soe_list <- list(
         
+        how_to_pass = c(
+            "Tell me how oxygen is carried in blood.",
+            "What is the structure of haemoglobin (Hb)?",
+               " How does foetal Hb differ from adult Hb?",
+                "What is 2,3-DPG?",
+                "How does the saturation of Hb occur?",
+               "What is the oxygen dissociation curve (ODC)?",
+                "Can you draw the oxyhaemoglobin dissociation curve and explain what shifts it to the right or to the left?",
+            "What is the Bohr effect?",
+            "What is the Haldane effect?",
+            "Please discuss the production, circulation, and contents of cerebrospinalfluid (CSF)",
+            "What functions does the CSF fulfil?",
+            "Please explain the mechanism behind the CSF’s ability to protect the brain from ischaemia (The Monro–Kellie doctrine)",
+            "What is cerebral perfusion pressure?",
+            "What is the blood-brain barrier?",
+                "Why does the anaesthetist have to consider the blood-brain barrier when choosing anaesthetic drugs?",
+                "What are the circumventricular organs and what is their function?",
+                "What are the main functions of the hypothalamus?"
+        ),
         #####
         anatomy = c(
             "Explain me the course of the corticospinal tract", 
@@ -437,7 +468,8 @@ run <- function() {
             "What are the borders of the sacral hiatus?",                                                                              ##           U-shaped defect > posterior wall of sacral canal > fusion failure of laminae S5, skin and subcutaneous tissue, caudal epidural
             "What are the contents of the sacral canal?",
             "How would you perform a caudal injection?",
-            "Please draw the circle of willis",                                                                                        #            
+            "Please draw the circle of willis",                                                                                        #          
+            "NT > What are the genicular nerves of the knee?",                                                                         #            Superomedial and Inferomedial (from the tibial nerve), Superolateral (from the common peroneal nerve), Inferolateral (from the common peroneal nerve), recurrent peroneal nerve (from the common peroneal nerve anteriour joint structure) - these nerves complement the adductor canal, femoral nerve and popliteal plexus block
             "Can you describe the venous drainage of the brain?",
             "What structures pass through the following foramina in the skull?",
             "Tell me what each of the cranial nerves does",
@@ -449,6 +481,8 @@ run <- function() {
             "What does the middle cerebral artery supply?",                                                                            ##            Lateral frontal lobe, Lateral parietal lobe, Lateral temporal lobe, Basal ganglia, Internal capsule, Motor and sensory areas to face and upper limbs, Broca’s and Wernicke’s areas (language), Frontal eye fields (conjugate gaze to opposite side), Contralateral hemiparesis and hemisensory loss (face and upper limb > leg), Aphasia (if dominant hemisphere), Neglect (if non-dominant)
             "What does the posterior cerebral artery supply?",
             "Where are arterial aneurysms most commonly found?",
+            "NT > What are the contents and border of the adductor canal?",                                                            #              Borders: Medially (roof) it is formed by sartorius muscle beneath which lies subsartorial plexuses over a fascial sheath, Anterolaterally it is bounded by vastus medialis, posterior: adductor longus (in upper part) and adductor magnus (in lower part, lateral: vastus medialis, Contents: femoral artery, femoral vein, saphenous nerve (sensory to medial leg), nerve to vastus medialis (motor to vastus medialis)
+            "NT > Tell me the branches of the A. femoralis",                                                                           #             Common femoral artery (from external iliac artery) > profunda femoris artery (deep artery of the thigh) > medial and lateral circumflex femoral arteries (hip joint), various perforating branches to the adductors,  superficial femoral artery (continues down the thigh) > popliteal artery (after passing through adductor hiatus) > anterior tibial artery (after passing through interosseous membrane) and posterior tibial artery (continues down the leg)
             "What factors affect flow in a blood vessel?",
             "What factors affect cerebral autoregulation?",                                                                            ###             
             "What proportion of strokes occur in the anterior circulation?",                                                           ##            70% (90% of these in the MCA)
@@ -1231,7 +1265,7 @@ run <- function() {
             "How do drugs cross the blood brain barrier?",                                                                                ##          Simple diffusion → very small, lipid soluble → propofol, anaesthetics, volatiles, Active transport → glucose, insulin, Facilitated diffusion, NOT CROSSING - Large charged muscle relaxants (glycopyrrolate → permanently charged quaternary amine), atropine > tertiary amine cross BBB (confusion and paradoxical bradicardia, Some metabolised as they cross > monoamines inactivated by monoamine oxidase (trauma → BBB leakage → leakage of catecholamines → cardiovascular disruption (SAB) > If BBB disrupted → benzylpenicillin not penetrate BBB → except in meningitis
             "What are additives?",                                                                                                        ##          TK: Preservatives > Benzyl alcohol, Solvents > Water (most), Propylene glycol (Propofol), Mannitol (Dantrolene), Soybean oil (Propofol), Antioxidants (Sulphites), Buffers (Hydroxide), Nitrogen (thiopenthal)
             "Describe the side effects of succinylcholine.",
-            "Classify the non-depolarizing muscle relaxants.",                                                                         #              Aminosteroids (rocuronium, vecuronium, pancuronium), benzylisoquinolinium (atracurium, cisatracurium, mivacurium) 
+            "Classify the non-depolarizing muscle relaxants.",                                                                            #           Aminosteroids (rocuronium, vecuronium, pancuronium), benzylisoquinolinium (atracurium, cisatracurium, mivacurium) 
             "What are ECG ‘leads’?",
             "How is intraocular fluid produced?",
             "What is compliance?",
