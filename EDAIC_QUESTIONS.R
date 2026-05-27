@@ -1,5 +1,6 @@
 # LAST WEEK
 
+# https://www.ccjm.org/content/92/4/213
 # ALS - BLS GUIDLINES
 # Surviving Sepsis Guidline
 # ATLS guidlines
@@ -297,8 +298,6 @@ run <- function() {
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
             "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
@@ -332,7 +331,6 @@ run <- function() {
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
@@ -417,6 +415,8 @@ run <- function() {
             
             
             # ANATOMY
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -495,6 +495,7 @@ run <- function() {
             
             
             # CLINIC
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -511,6 +512,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -518,6 +520,8 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -576,7 +580,11 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
-        
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
             
             
             
@@ -614,11 +622,15 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
@@ -647,11 +659,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -705,6 +719,11 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -794,7 +813,9 @@ run <- function() {
             
             
             # PHYSIOLOGY
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -3903,7 +3924,12 @@ run <- function() {
             "Explain the Bohr equation?"                                                                                                              # https://www.tiktok.com/@anaestheasier/video/7436091968536595744
         ),
         
-        
+        guidlines = c(
+            "We recommend using a muscle relaxant to facilitate tracheal intubation (1A). R2 We recommend the use of muscle relaxants to reduce pharyngeal and/or laryngeal injury following endotracheal intubation (1C). R3 We recommend the use of a fast-acting muscle relaxant for rapid sequence induction intubation (RSII) such as succinylcholine 1 mg kg 1 or rocuronium 0.9 to 1.2 mg kg 1 (1B). R4 We recommend deepening neuromuscular blockade if surgical conditions need to be improved (1B). R5 There is insufficient evidence to recommend deep neuromuscular blockade in general to reduce postoperative pain or decrease the incidence of peri-operative complications. (2C). R6 We recommend the use of ulnar nerve stimulation and quantitative neuromuscular monitoring at the adductor pollicis muscle to exclude residual paralysis (1B). R7 We recommend using sugammadex to antagonise deep, moderate and shallow neuromuscular blockade induced by aminosteroidal agents (rocuronium, vecuronium) (1A). R8 We recommend advanced spontaneous recovery (i.e. TOF ratio >0.2) before starting neostigmine-based (40 microgram/kg) reversal and to continue quantitative monitoring of neuromuscular blockade until a TOF ratio of more than 0.9 has been attained. (1C)",
+            "GRADE approach (Grading of Recommendations Assessment, Development and Evaluation): High, Moderate, Low, Very Low, a systematic framework for evaluating the quality of evidence and strength of recommendations in healthcare, considering factors such as study design, risk of bias, consistency of results, directness of evidence, and precision of estimates",
+            "CPS1: Current evidence does not allow the recommendation of one reversal agent over another when reversing a TOF-ratio between 0.4 and 0.9. The choice between sugammadex and neostigmine must consider patient-related factors as well as availability. CPS2: Recovery from succinylcholine-induced neuromuscular blockade should also be monitored quantitatively",
+            "Risk of bias assessment was conducted in accordance with the Cochrane Hand book for Systematic Reviews and Interventions. The risk of bias was assessed for the following domains: (1) Random sequence generation (selection bias); (2) Allocation concealment (selection bias); (3) Blinding of participants and personnel (performance bias);(4) Blinding of outcome assessors (detection bias); (5) Incomplete outcome data, intention-to-treat (attrition bias); (6) Selective reporting. "
+        ),
 
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
