@@ -147,69 +147,83 @@ run <- function() {
             "NT > Explain the makroanatomy of the liver",                                                                             ###              4 lobes (right, left, caudatum, quadratum), functional division into right and left = Cantlies line (from gallblader to IVC), glisson capsule (equivalent of peritoneum), falciform ligament (holding the lig. teres hepatis (remnant of umbilical vein) and right/left triangular ligaments), ligamentum venosum (remnant of ductus venosus in close proximity to left hepatic vain), porta hepatis (hilum of the liver on visceral surface, FROM POSTERIOR TO ANTERIOR: entry of portal vein, hepatic artery and exit of common bile duct), caudate lobe (between IVC and ligamentum venosum), quadrate lobe (between gallbladder and ligamentum teres), functional division in right and left lobe by middle hepatic vein, segmental division in 8 segments (Couinaud classification - Each Couinaud segment has its own: Portal vein branch, Hepatic artery branch, Bile duct drainage, Venous outflow pattern) based on portal vein branches, venous drainage via hepatic veins into IVC, arterial supply from hepatic artery, portal vein brings 75% of blood flow but only 50% of oxygen supply, Caudatus I, segments clockwise from caudate: II, III, IV (left lobe), V, VI, VII, VIII (right lobe), Poor liver reserve → risk of:, Hypoglycaemia, Coagulopathy, Lactate clearance failure, Drug metabolism impairment
             "What is the Fick principle? Can you explain how to use it to measure cardiac output?",                                   ###              CO = VO2 / (CaO2 - CvO2) > principle: amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference,
             "What does the anterior cerebral artery supply?",
-            "Tell me about white blood cells",                                                                                         #              Produced in bone marrow, MYELOID: Neutrophils (bacteria and fungi) Monocytes, resident macrophages (Kupffer cells), Basophils, Eosinophils LYMPHOID: T Cells, B Cells, NK-cells
-            "What does the middle cerebral artery supply?",                                                                            ##             Lateral frontal lobe, Lateral parietal lobe, Lateral temporal lobe, Basal ganglia, Internal capsule, Motor and sensory areas to face and upper limbs, Broca’s and Wernicke’s areas (language), Frontal eye fields (conjugate gaze to opposite side), Contralateral hemiparesis and hemisensory loss (face and upper limb > leg), Aphasia (if dominant hemisphere), Neglect (if non-dominant)
-            "What does the posterior cerebral artery supply?",                                                                         #              Occipital lobe, Inferior temporal lobe, Thalamus, Midbrain, Visual cortex (calcarine sulcus), Contralateral homonymous hemianopia with macular sparing (due to collateral blood supply from MCA), Thalamic syndrome (sensory loss followed by severe pain), Weber’s syndrome (midbrain infarction > ipsilateral oculomotor nerve palsy and contralateral hemiparesis)
+            "Tell me about pressure is the pressure driving flow to the coronary arteries",                                             #             Coronary blood flow: between 100-200ml/100g/min (no flow during high systolic pressure), Coronary flow = (dAP - LVEDP) / cVR, - CPP = Aortic diastolic pressure - LVEDP (compressing the arteries), Right ventricle → both systole and diastole (ventricular wall pressure lower), CBF depends on Ohms law, Coronary blood flow = CPP / Coronary vascular resistance, Left ventricular CBF = 100ml/100g/min, Right ventricular CBF = 10ml/100g/min, During isovolumetric contraction, CBF is 0 (maximal compression)
+            "Can you explain how amiodarone acts as an anti-arrhythmic?",                                                              #              Class III anti-arrhythmic drug, slows the rate of repolarisation thereby increasing the duration of the action potential. It also prolongs the effective refractory periodblocks K channels and prolongs AP duration and refractory period, also has class I, II and IV effects (blocks sodium channels, non-competitive beta-blocker and calcium channel blocker)
+            "How do atracurium and cisatracurium compare?",                                                                           #               Cisatracurium is enantiopure, one of atracurium’s ten possible isomers. Cisatracurium is four times as potent > slower onset > Bowman’s principle > less potent > have a faster onset > larger dose > larger gradient, Cisatracurium less histamine and less laudanosine, mainly Hofmann elimination                                                                   
+            "What classes of antidepressant do you know?",                                                                            #             CAVE: MAOs (catecholamins), or hypotonia, serotonine syndrome (SSRIs with fentanyl, methadone, tramadol, linezolid), TCA/Citalopram and ondansetron - QT, SSRI (platelet dysfunction), SSRIs (Fluoxetin, Sertralin, Paroxetin, Citalopram, Escitalopram), SNRIs (Serotonin-Norepinephrine Reuptake Inhibitors) - (Venlafaxine, Duloxetine), TCAs (Amitriptyline, Imipramine, Nortriptyline), MAOIs (Moclobemid, Selegeline, Rasagiline, Tranylcypromin)
+            "Tell me about white blood cells",                                                                                        #              Produced in bone marrow, MYELOID: Neutrophils (bacteria and fungi) Monocytes, resident macrophages (Kupffer cells), Basophils, Eosinophils LYMPHOID: T Cells, B Cells, NK-cells
+            "What does the middle cerebral artery supply?",                                                                           ##             Lateral frontal lobe, Lateral parietal lobe, Lateral temporal lobe, Basal ganglia, Internal capsule, Motor and sensory areas to face and upper limbs, Broca’s and Wernicke’s areas (language), Frontal eye fields (conjugate gaze to opposite side), Contralateral hemiparesis and hemisensory loss (face and upper limb > leg), Aphasia (if dominant hemisphere), Neglect (if non-dominant)
+            "What does the posterior cerebral artery supply?",                                                                        #              Occipital lobe, Inferior temporal lobe, Thalamus, Midbrain, Visual cortex (calcarine sulcus), Contralateral homonymous hemianopia with macular sparing (due to collateral blood supply from MCA), Thalamic syndrome (sensory loss followed by severe pain), Weber’s syndrome (midbrain infarction > ipsilateral oculomotor nerve palsy and contralateral hemiparesis)
             "NT > Graph the Course of O2- versus CO2-binding curve in Physiological Levels",                                         ##                https://www.doccheck.com/en/detail/photos/22988-course-of-o2-versus-co2-binding-curve-in-physiological-levels
             "Tell me about the neural control, CO2 AND PAO2 ON cerebral circulation?",                                                #                Cross/Plunkett - 314-315, Cerebral vessels derive their sympathetic supply from the superior cervical ganglia that accompany the internal carotid artery and parasympathetic supply from facial nerve (BUT overall minimal effect)
-            "Describe the Weatstone bridge of a transducer",                                                                           #               Converts energy from one form to another> classic Wheatstone bridge > Bridge network  >  convert resistance change in voltage change >kinetic into electrical energy > strain gauges > thin metal wire > resistance changes with stretch > calibrated + measures changes in strain > employs multiple strain > arrangement allows very small strain changes detected and amplified, Voltage drop in the bridge is the change of resistance in Rx, R2 is the variable resistance and can be adjusted to Rx changes (the amount of “adjustment” corresponds to the voltage change = resistance change on the Rx’s strain gauge)
-            "What do you know about the NMDA receptor?",                                                                                #              One of three ionotropic glutamate receptor associated > Na/Ca channel in CNS > other two ***kainate*** and ***AMPA*** receptors, Structure > 4 subunits (2 GluN1 and 2 GluN2 around Na/Ca channel) > usually blocked by Mg or zinc Function > ***coincidence*** detector > only open if two conditions met simultaneously > substrate binding and depolarisation > dislodges Mg or zinc from channel > allows Na and Ca in + out, Substrates Endogenous (Glutamate, Glycine, N-methyl-D-Aspartate), Drugs (Ketamine, Nitrous oxide, Xenon, Valproate > hepatoxicity, clotting disturbances > bleeding)
-            "Tell me about the blood supply to the kidney",                                                                            ##              A. renalis (L1-2) > anterior/posterior > segmental > interlobar > arcuate > cortical radial arteries > afferent arteriole > efferent arterioles > vasa recta, - Recieve 25% of CO → 1.25 L/min = 400 - 500ml/100g/min, 90% to the cortex (only ~ 5% reaching medulla), - wo capillary networks, high pressure glomerular and low pressure peritubular network
+            "Describe the Weatstone bridge of a transducer",                                                                          #               Converts energy from one form to another> classic Wheatstone bridge > Bridge network  >  convert resistance change in voltage change >kinetic into electrical energy > strain gauges > thin metal wire > resistance changes with stretch > calibrated + measures changes in strain > employs multiple strain > arrangement allows very small strain changes detected and amplified, Voltage drop in the bridge is the change of resistance in Rx, R2 is the variable resistance and can be adjusted to Rx changes (the amount of “adjustment” corresponds to the voltage change = resistance change on the Rx’s strain gauge)
+            "What do you know about the NMDA receptor?",                                                                              #              One of three ionotropic glutamate receptor associated > Na/Ca channel in CNS > other two ***kainate*** and ***AMPA*** receptors, Structure > 4 subunits (2 GluN1 and 2 GluN2 around Na/Ca channel) > usually blocked by Mg or zinc Function > ***coincidence*** detector > only open if two conditions met simultaneously > substrate binding and depolarisation > dislodges Mg or zinc from channel > allows Na and Ca in + out, Substrates Endogenous (Glutamate, Glycine, N-methyl-D-Aspartate), Drugs (Ketamine, Nitrous oxide, Xenon, Valproate > hepatoxicity, clotting disturbances > bleeding)
+            "Tell me about the blood supply to the kidney",                                                                           ##              A. renalis (L1-2) > anterior/posterior > segmental > interlobar > arcuate > cortical radial arteries > afferent arteriole > efferent arterioles > vasa recta, - Recieve 25% of CO → 1.25 L/min = 400 - 500ml/100g/min, 90% to the cortex (only ~ 5% reaching medulla), - wo capillary networks, high pressure glomerular and low pressure peritubular network
             "What are the effects of acute spinal cord injury on various systems?",                                                   #                Spinal shock (flaccid paralysis, loss of reflexes, loss of sensation below level of injury), Neurogenic shock (hypotension and bradycardia due to loss of sympathetic tone), Respiratory compromise (if injury above C5, diaphragmatic paralysis), Autonomic dysreflexia (exaggerated sympathetic response to stimuli below level of injury, causing hypertension, bradycardia, headache, sweating), Bladder and bowel dysfunction (loss of voluntary control), Sexual dysfunction, Pressure ulcers (due to immobility), Deep vein thrombosis (due to immobility and venous stasis) 
-            "What is dialysis?",                                                                                                       #               Blood and dialysate pass on opposing sides of a semi-permeable membran, Solutes diffuse down concentration gradient, Determined by membrane permeability, Counter-current exchange → blood and dialysate in opposite directions
+            "What is dialysis?",                                                                                                      #               Blood and dialysate pass on opposing sides of a semi-permeable membran, Solutes diffuse down concentration gradient, Determined by membrane permeability, Counter-current exchange → blood and dialysate in opposite directions
             "Draw the formula for pyruvate to lactate conversion",                                                                    ##               https://matthey.com/products-and-markets/pgms-and-circularity/pgm-chemicals-and-catalysts/catalysts/biocatalysts/ldh-enzyme
             "NT > How many cervical faschias do you know?",                                                                           #                4 fascias: SUPERFICIAL fachia between skin and deep faschia (external jugular vain, platysma, superficial cervical plexus), DEEP (INVESTING LAYER) FASCIA, that envelopes the SCM and trapezius muscle, PRETRACHIAL FASCIA around trachea, thyroid gland, oesophagus, CAROTID SHEATH layer around large vessels, PREVERTEBRAL FASCIA around vertebral column and deep muscles of the neck, superficial (between superficial and investing (deep - around Trap/SCM)), intermediate (below investing/deep) and deep (below prevertebral fascia) cervical block)
             "NT > Tell me about the parasympathetic nervous system",                                                                  ###              Craniosacral outflow, preganglionic fibers from brainstem (CN III (Nc. Edinger-Westfal > synapse in ciliary ganglion > sphincter pupillae, cilliary muscle for near accomodation, lens more convex), VII (Sup. salivatory nucleus - lacrimal (tears with greater petrosal nerve to pterygopalatine ganglion to lacrimal nerve, IX, X and sacral spinal cord (S2-4), long preganglionic fibers synapse in ganglia close to target, short postganglionic, functions include rest and digest, energy conservation, maintenance of homeostasis
             "What chemicals are used to absorb carbon dioxide in the circle system?",                                                 #                Ca(OH)2 is CONSUMED in both reactions: SODA LIME (calcium hydroxide (Ca(OH)3: 81%), sodium hydroxide (NaOH 4%), H2O 15% ---> CO2 + Ca(OH)3 > CaCOH3 + Heat + Water, NaOH is reformed and acts as a catalyst, ), BARALIME (barium hydroxide (20%) and calcium hydroxide Ca(OH)2), Ethyl violett or clayton yellow as indicator
             "Calculate pat Aa gradient and the normal gradient: room air, PaCO2: 26, PaO2: 41",                                       #               https://www.youtube.com/watch?v=pEsOv_pdOUQ (13:43), 
             "Calculate pat Aa gradient and the normal gradient: room air, PaCO2: 60, PaO2: 57",                                       #               https://www.youtube.com/watch?v=pEsOv_pdOUQ (17:00), COPD EXACERBATION!!!!!!!!!! Hypoventilation due to dead space and tired
-            "Describe and draw the synthesis pathway for the production of the catecholamines",                                        #              https://www.mdpi.com/2308-3425/3/3/28
-            "How does oxygen content in the blood change with altitude?",                                                               ##             Sea level = 101.3 kPa Patm (PO2 = 21 kPa), 5500m = 50.7 kPa Patm = PO2 = 10.6 kPa, Mount Everest (8848m) = 34 kPa = PO2 = 7 kPa, Chronic (erythropoeitin, bicarbonate ex (Hypoxia stimulates the peripheral chemoreceptors (location: aortic and carotid bodies) leading to hyperventilationresp. alkalosis), Angiogenesis, more mitochondria, Increased 2,3-DPG (Right shift), Hyper-RV/PAP
+            "Describe and draw the synthesis pathway for the production of the catecholamines",                                       #              https://www.mdpi.com/2308-3425/3/3/28
+            "How does oxygen content in the blood change with altitude?",                                                             ##             Sea level = 101.3 kPa Patm (PO2 = 21 kPa), 5500m = 50.7 kPa Patm = PO2 = 10.6 kPa, Mount Everest (8848m) = 34 kPa = PO2 = 7 kPa, Chronic (erythropoeitin, bicarbonate ex (Hypoxia stimulates the peripheral chemoreceptors (location: aortic and carotid bodies) leading to hyperventilationresp. alkalosis), Angiogenesis, more mitochondria, Increased 2,3-DPG (Right shift), Hyper-RV/PAP
             "What are the features of an ideal inhalational anaesthetic agent?",                                                      ##              PHYSICAL (stable chemical, Low latent heat of vaporisation, not affected by light or heat; it should not interact with materials, non-flammable and non-explosive and should ideally be odourless), PHARMACOLOGICAL (high saturated vapour pressure, a low blood:gas partition coefficient, a high oil:gas partition coefficient, and a low minimum alveolar concentration (MAC), No adverse hepatic, renal, haematological effects, Muscle relaxation, No increase in cerebral blood flow/intracranial pressureNon-trigger for malignant hyperthermia, No effects on uterus, Not teratogenic/carcinogenicAnalgesic, anti-emetic, anti-convulsant, Bronchodilatation, no respiratory depression, produce a smooth induction of and emergence, minimal metabolismand should be eliminated unchanged through the lungs), LOGISTICAL (inexpensive and easy to produce and administer, long shelf-life, not require complicated transport or storage, no preservatives, no greenhouse gas effect.) 
             "What is an adverse effect and how are they categorised?",                                                                #               Undesirable effect by a drug at normal dose, rather than overdose, More common in young, women (2x men), asthmatics, pregnant, Type A - *caused by dose*, Dose-related response due to mechanism (reproducible, predictable), Examples > hypokalaemia with furosemide, tachycardia with salbutamol, Type B - *not due dose*, diosyncratic reactions > Less common and unpredictable, Not always reproducible, Genetic component, Not dependent dose, Examples > Anaphylaxis, Anaphylactoid reactions, Stevens-Johnson syndrome, Suxamethonium apnoea, Type C - *accumulation >* Dose and time-related, Examples > Osteonecrosis with bisphosphonates, Adrenal suppression steroids, Type D - *time related >* Tardive dyskinesia from antipsychotics, Type E - *withdrawal reaction*, Type F - *unexpected failure >* Antibiotic resistance
             "Please draw a normal vitalograph spirometry trace for a single exhaled breath",                                          ###             Maximal flow at the start → negative hyperbolic pattern decrease (Asymptote at FVC), Obstructive (FEV1/FVC is reduced), Restrictive: Reduced FVC (Expiration not affected) → FEV1/FVC normal or increased
             "Write down the Henderson–Hasselbach equation for me",                                                                    #               Easiert to use carbon diaxide for the denominater (H2CO3) > pH = 6.1 + log(HCO3- / 0.03 * PaCO2) > pH = 6.1 + log(24 / 0.03 * 40) (The ratio is 20/1 = log(20/1) = 1.3)
-            "Draw the absorbtion coefficients for Hb, DesHh, MetHb, COHb",                                                            ##              https://stormanesthesia.com/anesthesia-material/storm-anesthesia-answers/pulse-oximetry-carboxyhemoglobin
+            "Draw the absorbtion coefficients for Hb, DesHh, MetHb, COHb",                                                            ###              https://stormanesthesia.com/anesthesia-material/storm-anesthesia-answers/pulse-oximetry-carboxyhemoglobin
             "What is insulin, where is it produced and how is it controlled?",                                                        #               Anabolic peptide hormone by beta cells (alpha cells > glucagon, delta cells: somatostatin), of the pancreatic islets of Langerhans, regulating glucose fat and protein metabolism. glucose (enters cell via GLUT 2 transporter) - glucose metabolism increases ATP > ATP closes ATP-sensible K-channels > depolarisation > insulin ex > and incretins (from the gut in response to food intake), amino acids, and certain neurotransmitters influence insulin secretion. Insuline receptor:            
-            "What are the advantages and disadvantages of using nitrous oxide?",                                                       #              B:G 0.49 > means the gas is about half as soluble in blood as it is in alveolar gas, O:G: 1.4 - very weak anesthetic (MAC 102), Advantages > potent analgesic, weak anaesthetic, reduces MAC of other volatiles, low B:G (rapid onset), Increases concentration of other agents and accelerates induction via second gas effect, Disadvantages > high diffusion capacity 25x that of nitrogen (fills air filled cavities), 4h 66% N2O > bowel expandes by 200%, infiltrate into tube cuff., diffusion hypoxia, emetogenic (via opioid and sympathomimetic + bowel distension), toxic (bone marrow suppression, oxidises VitB12 cobalt > inhibiting methionine synthetase > preventing synthesis of (thymidine, tetrahydrofolate, methionine, precursor to myelin (after 40 min), megaloblastic anaemia due > RNA and DNA synthesis dysfunction, teratogenic, Neurotoxicity (subacute cord egeneration + dorsal column dysfunction), Environmental impact > 1% of global greenhouse effect
-            "what types of antagonists are there and give examples, and how do they work?",                                            ##             COMPETITIVE A.: naloxone, atropine, flumazenile, NON-COMPETITIVE A.: ketamine, phenoxybenzamine (alpha receptors), PHYSIOLOGICAL A.: different receptors but opposite effect (adrenaline: opposes histamine induced bronchospasm), CHEMICAL A.: direct antagonising agonsit (Heparine, Chelators (heavy metal poisoning), PARTIAL AGONIST: Buprenorphin and Nalbuphine, INVERSE AGONIST: beta-carbolines at benzodiazepine receptor, )
-            "Can you explain this graph concerning nitrous oxide?",                                                                    #              https://www.youtube.com/watch?v=kmkTBqkPGJ0
+            "What are the advantages and disadvantages of using nitrous oxide?",                                                      #              B:G 0.49 > means the gas is about half as soluble in blood as it is in alveolar gas, O:G: 1.4 - very weak anesthetic (MAC 102), Advantages > potent analgesic, weak anaesthetic, reduces MAC of other volatiles, low B:G (rapid onset), Increases concentration of other agents and accelerates induction via second gas effect, Disadvantages > high diffusion capacity 25x that of nitrogen (fills air filled cavities), 4h 66% N2O > bowel expandes by 200%, infiltrate into tube cuff., diffusion hypoxia, emetogenic (via opioid and sympathomimetic + bowel distension), toxic (bone marrow suppression, oxidises VitB12 cobalt > inhibiting methionine synthetase > preventing synthesis of (thymidine, tetrahydrofolate, methionine, precursor to myelin (after 40 min), megaloblastic anaemia due > RNA and DNA synthesis dysfunction, teratogenic, Neurotoxicity (subacute cord egeneration + dorsal column dysfunction), Environmental impact > 1% of global greenhouse effect
+            "what types of antagonists are there and give examples, and how do they work?",                                           ##             COMPETITIVE A.: naloxone, atropine, flumazenile, NON-COMPETITIVE A.: ketamine, phenoxybenzamine (alpha receptors), PHYSIOLOGICAL A.: different receptors but opposite effect (adrenaline: opposes histamine induced bronchospasm), CHEMICAL A.: direct antagonising agonsit (Heparine, Chelators (heavy metal poisoning), PARTIAL AGONIST: Buprenorphin and Nalbuphine, INVERSE AGONIST: beta-carbolines at benzodiazepine receptor, )
+            "Can you explain this graph concerning nitrous oxide?",                                                                   #              https://www.youtube.com/watch?v=kmkTBqkPGJ0
             "Can you draw a graph demonstrating the compliance of the respiratory system?",
-            "What is the adductor canal?",                                                                                             #              Triangular intermuscular space in the middle third of the thigh, Bounded by vastus medialis (anterolateral), adductor longus and magnus (posterior), and sartorius (roof), Contains the femoral artery, femoral vein, saphenous nerve (sensory to medial leg), nerve to vastus medialis (motor to vastus medialis)            
-            "How is electrical equipment classified?",                                                                                 ###            According how it prevents electric shock from mains supply + maximal allowed leakage current, Class I > Powered by mains, earthed casing > only connected to patient if non-earthed transformer isolates patient from mains > leakage between live wire and case, earth wire is also damaged > case can become live, Class II >** Double Insulated, no earth, Class III > l**ow voltage - less than 24V AC, Usually battery powered, - Maximal permissible leakage current > Type B: Externally connected to patient (Ventilator), can be class I, II or III, mains or battery powered > max DC leakage current = 50 μA (10 if multiple circuit faults), max AC leakage current = 500 μA (100 if multiple circuit faults)
-            "What are the boundaries of the nasal cavity?",                                                                            ###             Epistaxis (Little’s area - Kisselbach plexus) → septum,  Nasal intubation → lateral wall important, Sinus drainage → middle meatus, ROOF: cribriform plate of ethmoid bone (CSF leak), nasal bone, FLOOR : hard palate (separates nasal from oral - maxilla and palatine bones), LATERAL: maxilla, palatine, lacrimal, conchaes (sup, med, inf), MEDIAL: nasal septum (vomer + perpendicular plate of ethmoid + septal cartilage), CHOANAE > openeings on both sites into the nasopharynx, each turbinae > meatuses, Inferior meatus → nasolacrimal duct, Middle meatus → sinuses (maxillary, frontal, ethmoid), Superior meatus → posterior ethmoid sinuses                    
-            "Do you know any other types of endotracheal tubes?",                                                                      #              Nasal tubes, armoured tracheal tubes, North and south facing RAE tubes, Microlaryngeal tubes, Flexible aluminium shaft (Mallinckrodt laserflex) or stainless steel shaft laser tubes, Double lumen tubes
-            "What is Clearance?",                                                                                                      ###             Pharmacokinetic parameter > describes plasma V from which a drug is removed per unit time (mL/min or L/hr) > Formula: Clearance (Cl) = Rate of elimination / Plasma concentration > Determining dosing regimens and understanding how quickly a drug is eliminated, ormula for half-life is (t½ = 0.693 × Vd / CL) > 0.693 is the logarithm of 2, and represents the exponential rate of elimination (assuming elimination is by first order kinetics, Half life is increased by an increase in the volume of distribution and increased by a decrease in the rate of clearance,  5 half-lives for a drug to be roughly 97% eliminated, rugs eliminated by first-order kinetics, half life is constant regardless of concentration, Doubling the dose of a drug will usually increase its duration of action by one half-life
+            "What is the adductor canal?",                                                                                            #              Triangular intermuscular space in the middle third of the thigh, Bounded by vastus medialis (anterolateral), adductor longus and magnus (posterior), and sartorius (roof), Contains the femoral artery, femoral vein, saphenous nerve (sensory to medial leg), nerve to vastus medialis (motor to vastus medialis)            
+            "How is electrical equipment classified?",                                                                                ###            According how it prevents electric shock from mains supply + maximal allowed leakage current, Class I > Powered by mains, earthed casing > only connected to patient if non-earthed transformer isolates patient from mains > leakage between live wire and case, earth wire is also damaged > case can become live, Class II >** Double Insulated, no earth, Class III > l**ow voltage - less than 24V AC, Usually battery powered, - Maximal permissible leakage current > Type B: Externally connected to patient (Ventilator), can be class I, II or III, mains or battery powered > max DC leakage current = 50 μA (10 if multiple circuit faults), max AC leakage current = 500 μA (100 if multiple circuit faults)
+            "What are the boundaries of the nasal cavity?",                                                                           ###             Epistaxis (Little’s area - Kisselbach plexus) → septum,  Nasal intubation → lateral wall important, Sinus drainage → middle meatus, ROOF: cribriform plate of ethmoid bone (CSF leak), nasal bone, FLOOR : hard palate (separates nasal from oral - maxilla and palatine bones), LATERAL: maxilla, palatine, lacrimal, conchaes (sup, med, inf), MEDIAL: nasal septum (vomer + perpendicular plate of ethmoid + septal cartilage), CHOANAE > openeings on both sites into the nasopharynx, each turbinae > meatuses, Inferior meatus → nasolacrimal duct, Middle meatus → sinuses (maxillary, frontal, ethmoid), Superior meatus → posterior ethmoid sinuses                    
+            "Do you know any other types of endotracheal tubes?",                                                                     #              Nasal tubes, armoured tracheal tubes, North and south facing RAE tubes, Microlaryngeal tubes, Flexible aluminium shaft (Mallinckrodt laserflex) or stainless steel shaft laser tubes, Double lumen tubes
+            "What is Clearance?",                                                                                                     ###             Pharmacokinetic parameter > describes plasma V from which a drug is removed per unit time (mL/min or L/hr) > Formula: Clearance (Cl) = Rate of elimination / Plasma concentration > Determining dosing regimens and understanding how quickly a drug is eliminated, ormula for half-life is (t½ = 0.693 × Vd / CL) > 0.693 is the logarithm of 2, and represents the exponential rate of elimination (assuming elimination is by first order kinetics, Half life is increased by an increase in the volume of distribution and increased by a decrease in the rate of clearance,  5 half-lives for a drug to be roughly 97% eliminated, rugs eliminated by first-order kinetics, half life is constant regardless of concentration, Doubling the dose of a drug will usually increase its duration of action by one half-life
             "How does doxycyline work and what are its side effects?",                                                               #                 Inhibits 30S subunit to prevent protein production, Good oral bioavailability, Do not take with milk or antacids, Avoid in liver and kidney dysfunction, Can cause muscle weakness and binds to teeth and bones (tetracycline teeth) so avoid in pregnancy, breastfeeding and children
-            "What are the different types of hypersensitivity reactions?",                                                             #               Type 1: Rapid IgE-mediated → cross linkage of mast cell IgE, Histamine - anaphylaxis and asthma), Type 2: IgM or IgG mediated → react to antigens on cells (Blood transfusion reactions + newborn haemolytic disease), Type 3: Immune complex mediated, IgG and complement → mast cells histamin - Lupus and glomerulonephritis, Type 4: Memory T helper → cytokines → activating macrophages - Contact dermatitis, Type 5: Autoimmune (IgG and IgM) gainst self-receptors - Graves’ disease, myasthenia gravis
+            "What are the different types of hypersensitivity reactions?",                                                            #               Type 1: Rapid IgE-mediated → cross linkage of mast cell IgE, Histamine - anaphylaxis and asthma), Type 2: IgM or IgG mediated → react to antigens on cells (Blood transfusion reactions + newborn haemolytic disease), Type 3: Immune complex mediated, IgG and complement → mast cells histamin - Lupus and glomerulonephritis, Type 4: Memory T helper → cytokines → activating macrophages - Contact dermatitis, Type 5: Autoimmune (IgG and IgM) gainst self-receptors - Graves’ disease, myasthenia gravis
             "What is inflammation?",                                                                                                  #                Calor - heat, Rubor - redness, Dolor - pain (inflammatory mediators), Tumor - swelling,3 main phases > Hyperaemia, Exudation, Emigration, Mediators, Histamine and leukotrienes (mast cells and basophils), Kinin system (Kallikrein enzyme - kininogen → bradykinin), Vasodilatation and vascular permeability, Neutrophils (adhesion proteins, stick to endothelium), Migrate, release platelet activating factor, Tumour necrosis factor and interleukin 1b, Vasodilatation, endothelium ‘leaky’, Complement: Hepatic plasma proteins (cascade → ***membrane attack complex (MAC)), Classic, lytic, and alternative, Opsonisation -*** ‘flag up’ cells → destraction by MAC, COX-2 and Eicosanoids (pro-inflammatory prostaglandins)
-            "What is bias?",                                                                                                          ###               Systematic error in the design, conduct or analysis > mistaken estimate of effect (attrition bias (droping out non randomly - intention to treat), reporting bias (publishing), detection bias (equipment), allocation bias (study group), selection bias (population - RCT), information bias)
-            "Describe the ascending and descending spinal pathways, and the information they carry",                                  ##                Ascending spinal pathways include the dorsal columns (gracile fasciculus (MEDIAL - LOWER BODY, except face (trigeminal ganglion)) and the cuneate fasciculus (lateral to gracilis UPPER BODY), cross over at the sensory decussation to form the medial lemniscus.[4] They then synapse with third-order neurons of the thalamus, fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the corticospinal tract for voluntary movement and extrapyramidal tracts for posture and tone. Dorsal column medial lemniscus (DCML) > touch, pressure, vibration, proprioception, large myelinated fibers (Aβ), decussate in medulla, synapse in gracile and cuneate nuclei, then to thalamus and somatosensory cortex, Spinothalamic tract (STT) > pain and temperature, small myelinated (Aδ) and unmyelinated (C) fibers, decussate in spinal cord at the level of entry, then ascend contralaterally to thalamus and somatosensory cortex, Spinocerebellar tract > proprioception from muscle spindles and golgi tendon organs, uncrossed (ipsilateral) to cerebellum             
+            # "What is bias?",                                                                                                        ####               Systematic error in the design, conduct or analysis > mistaken estimate of effect (attrition bias (droping out non randomly - intention to treat), reporting bias (publishing), detection bias (equipment), allocation bias (study group), selection bias (population - RCT), information bias)
+            "Describe the ascending and descending spinal pathways, and the information they carry",                                  ###                Ascending spinal pathways include the dorsal columns (gracile fasciculus (MEDIAL - LOWER BODY, except face (trigeminal ganglion)) and the cuneate fasciculus (lateral to gracilis UPPER BODY), cross over at the sensory decussation to form the medial lemniscus.[4] They then synapse with third-order neurons of the thalamus, fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the corticospinal tract for voluntary movement and extrapyramidal tracts for posture and tone. Dorsal column medial lemniscus (DCML) > touch, pressure, vibration, proprioception, large myelinated fibers (Aβ), decussate in medulla, synapse in gracile and cuneate nuclei, then to thalamus and somatosensory cortex, Spinothalamic tract (STT) > pain and temperature, small myelinated (Aδ) and unmyelinated (C) fibers, decussate in spinal cord at the level of entry, then ascend contralaterally to thalamus and somatosensory cortex, Spinocerebellar tract > proprioception from muscle spindles and golgi tendon organs, uncrossed (ipsilateral) to cerebellum             
             "What other drugs are used to promote uterine contraction?",                                                              ###              Nalador (IV - sulproston: PGE2 prostaglandin receptor agonist in uterine smooth muscles BUT also bronchi - BRONCHOSPASM, PAH, MI!!!), Misoprostol (one time rectal - 400 - 1000 microgram), Ergometrine (Ergonovine) (UNCLEAR mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension), Prostaglandins analoges (Misoprostol) (PGE2 > cervical ripening, PGF2a > uterine contraction), Carbetocin (Oxytocin analogue with longer half life)
             "What signs would indicate ulnar nerve damage?",                                                                          #                ULNAR (C8-T1 - just medial (but outside of the hand) to ulnar artery) > hypothenar muscles, third and fourth lumbricals, interossei, sensory to palmar and dorsal side of little finger and half of ring finger, Ulnar nerve (claw hand, loss of sensation over hypothenar eminence and palmar and dorsal side of little finger and half of ring finger)^
-            "Tell me about the endocarditis and its prophylaxis",                                                                     ###              Staphylococci (42–57%; primarily S. aureus and coagulase-negative Staph. epidermidis) and oral streptococci (27–31%),  enterococci (13%), HACEK group pathogens - gram negative stabs (BACILLII) (normal mouth flora) (12%; Aggregatibacter, Cardiobacterium, Eikenella, Kingella), and fungi (12%) . Acute: Most commonly caused by S. aureus or pneumococci. Subacute IE (endocarditis lenta): More commonly caused by streptococci, coagulase-negative staphylococci, or HACEK pathogens. Limited to high-risk patients: History of valve replacement (mechanical/biological) or valve reconstruction with prosthetic material, previous endocarditis, uncorrected cyanotic heart defects, first 6 months after correction with prosthetic material, or persistent residual defects in prosthetic material. For dental procedures (gums, the periapical region, or perforation of the oral mucosa; 30–60 min preoperatively): Amoxicillin: 50 mg/kg p.o. (adults 2 g). In case of penicillin allergy: Clindamycin 20 mg/kg p.o./i.v. (adults 600 mg), Diagnosis: The gold standard is the modified Duke criteria (main criteria: positive blood cultures and imaging evidence/echocardiogram). Blood cultures: At least 3 sets (aerobic/anaerobic) prior to antibiotic administration, regardless of fever spikes. High-dose, parenteral (i.v.) long-term therapy (usually 4–6 weeks). In cases of prosthetic valve endocarditis caused by staphylococci, combination with rifampicin (biofilm efficacy) is mandatory. Surgical indication (acute/urgent): Progressive heart failure (most common cause), uncontrolled infection (despite antibiotic), prevention of emboly if vegetation over 10mm
+            # "Tell me about the endocarditis and its prophylaxis",                                                                   ####              Staphylococci (42–57%; primarily S. aureus and coagulase-negative Staph. epidermidis) and oral streptococci (27–31%),  enterococci (13%), HACEK group pathogens - gram negative stabs (BACILLII) (normal mouth flora) (12%; Aggregatibacter, Cardiobacterium, Eikenella, Kingella), and fungi (12%) . Acute: Most commonly caused by S. aureus or pneumococci. Subacute IE (endocarditis lenta): More commonly caused by streptococci, coagulase-negative staphylococci, or HACEK pathogens. Limited to high-risk patients: History of valve replacement (mechanical/biological) or valve reconstruction with prosthetic material, previous endocarditis, uncorrected cyanotic heart defects, first 6 months after correction with prosthetic material, or persistent residual defects in prosthetic material. For dental procedures (gums, the periapical region, or perforation of the oral mucosa; 30–60 min preoperatively): Amoxicillin: 50 mg/kg p.o. (adults 2 g). In case of penicillin allergy: Clindamycin 20 mg/kg p.o./i.v. (adults 600 mg), Diagnosis: The gold standard is the modified Duke criteria (main criteria: positive blood cultures and imaging evidence/echocardiogram). Blood cultures: At least 3 sets (aerobic/anaerobic) prior to antibiotic administration, regardless of fever spikes. High-dose, parenteral (i.v.) long-term therapy (usually 4–6 weeks). In cases of prosthetic valve endocarditis caused by staphylococci, combination with rifampicin (biofilm efficacy) is mandatory. Surgical indication (acute/urgent): Progressive heart failure (most common cause), uncontrolled infection (despite antibiotic), prevention of emboly if vegetation over 10mm
             "What are the different types of lactic acidosis?",                                                                       ###              Type A (hypoxic) > tissue hypoxia > anaerobic metabolism > increased lactate production, Type B (non-hypoxic) > normal oxygen delivery but impaired cellular metabolism or clearance of lactate > liver disease, renal failure, certain medications (metformin), malignancies, Type 3 inherited metabolic disorders, Cohen and Woods Classification: Type A - Inadequate O2 delivery, glycolysis and anaerobic respiration, Type B - O2 delivery ok, but effective use, Type B1: Leukaemia and lymphoma, TIPS, Thiamine deficiency, Infection, Pancreatitis, Short gut syndrome Liver and kidney failure, Type B2: Cyanide and nitroprusside, Paracetamol and salicylates, Adrenaline and beta-agonists, Type B3: Inborn errors of metabolism)
-            # "What other drugs or conditions affect neuromuscular blockade?",                                                          ####               Drugs > Volatiles, Gentamicin, Lithium, Hypothermia > Slower metabolism, Acidosis > enzymes less effective, Hypokalaemia> hyperpolarisation of excitable cells (opposite effect for suxamethonium), Hypermagnesaemia > Calcium antagonism > acetylcholine release > prolongs blockade, Hypotension > slows clearance, Burns > After 48 h >  resistance to non-depolarising agents develops, Neuromuscular disease, Myasthenia Gravis, Autoimmune destruction of postsynaptic ACh receptors. Massively increased sensitivity to non-depolarising agents, Lambert-Eaton Myasthenic Syndrome, Reduced presynaptic ACh release > Ca channel autoantibodies, Increased sensitivity to non-depolarising relaxants, Motor Neuron Diseases (e.g. ALS) > Denervation and muscle atrophy reduce receptor density, Increased sensitivity to muscle relaxants, Peripheral Neuropathies (e.g. Guillain-Barré Syndrome) > denervation and receptor upregulation , Critical Illness Polyneuropathy / Myopathy (ICU) > prolonged immobilisation or sepsis, Increased sensitivity to NMBDs + reduced clearance
-            # "What effect does reducing venous resistance have on venous return and cardiac output?",                                  ###                https://derangedphysiology.com/main/cicm-primary-exam/cardiovascular-system/Chapter-028/cardiac-output-curves-and-vascular-function-curves
+            # "What other drugs or conditions affect neuromuscular blockade?",                                                        ####               Drugs > Volatiles, Gentamicin, Lithium, Hypothermia > Slower metabolism, Acidosis > enzymes less effective, Hypokalaemia> hyperpolarisation of excitable cells (opposite effect for suxamethonium), Hypermagnesaemia > Calcium antagonism > acetylcholine release > prolongs blockade, Hypotension > slows clearance, Burns > After 48 h >  resistance to non-depolarising agents develops, Neuromuscular disease, Myasthenia Gravis, Autoimmune destruction of postsynaptic ACh receptors. Massively increased sensitivity to non-depolarising agents, Lambert-Eaton Myasthenic Syndrome, Reduced presynaptic ACh release > Ca channel autoantibodies, Increased sensitivity to non-depolarising relaxants, Motor Neuron Diseases (e.g. ALS) > Denervation and muscle atrophy reduce receptor density, Increased sensitivity to muscle relaxants, Peripheral Neuropathies (e.g. Guillain-Barré Syndrome) > denervation and receptor upregulation , Critical Illness Polyneuropathy / Myopathy (ICU) > prolonged immobilisation or sepsis, Increased sensitivity to NMBDs + reduced clearance
+            # "What effect does reducing venous resistance have on venous return and cardiac output?",                                ###                https://derangedphysiology.com/main/cicm-primary-exam/cardiovascular-system/Chapter-028/cardiac-output-curves-and-vascular-function-curves
             "What is the principle behind computed tomography (CT)?"                                                                  ###              X-Ray tube: Electrons from the cathode strike Anode and produce X-rays, Ionization chamber acting as the detector on the opposite side of the apparatus CT emitter-detector unit rotates around the circular opening of a donut-shaped structure called a gantry making slices, X-ray source which produces a fan of beams radiating out towards an array of detectors, Rather than ionization chambers, modern scanners use solid-state photodetectors that fluoresce visible light (photoelectric effect and Compton scattering) when exposed to X-ray energy, A photodetector then captures this visible light and converts it into an electric current that is conveyed to the computer producing a 2D image, slices are 1-10 mm
 
         ),
         
+        
+        guidlines = c(
+            "We recommend using a muscle relaxant to facilitate tracheal intubation (1A). R2 We recommend the use of muscle relaxants to reduce pharyngeal and/or laryngeal injury following endotracheal intubation (1C). R3 We recommend the use of a fast-acting muscle relaxant for rapid sequence induction intubation (RSII) such as succinylcholine 1 mg kg 1 or rocuronium 0.9 to 1.2 mg kg 1 (1B). R4 We recommend deepening neuromuscular blockade if surgical conditions need to be improved (1B). R5 There is insufficient evidence to recommend deep neuromuscular blockade in general to reduce postoperative pain or decrease the incidence of peri-operative complications. (2C). R6 We recommend the use of ulnar nerve stimulation and quantitative neuromuscular monitoring at the adductor pollicis muscle to exclude residual paralysis (1B). R7 We recommend using sugammadex to antagonise deep, moderate and shallow neuromuscular blockade induced by aminosteroidal agents (rocuronium, vecuronium) (1A). R8 We recommend advanced spontaneous recovery (i.e. TOF ratio >0.2) before starting neostigmine-based (40 microgram/kg) reversal and to continue quantitative monitoring of neuromuscular blockade until a TOF ratio of more than 0.9 has been attained. (1C)",
+            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
+            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J", 
+            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
+            "Chronic AKI: Hemoglobin levels should be kept between 11 and 12 g/dL to avoid possible increases in cardiovascular events and thromboembolic phenomena",
+            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
+            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J", 
+            "Erythropoietin (4000 U three times weekly if hematocrit was <32%, and two times weekly if hematocrit was between 32% and 38%) have improvements in anemia after six to 12 weeks of treatment (number needed to treat [NNT] = 2)",
+            "Postoperatively, iron deficiency should be defined by ferritin concentration < 100 μg.l−1, ferritin < 100–300 μg.l−1 and transferrin saturation < 20%, or reticulocyte haemoglobin content < 28 pg.",
+            "Iron deficiency anaemia: ferritin <30 mcg/L, Hb < 13 man, 12 women, Oral iron - take at least four weeks, If oral iron not tolerated > IV iron, If surgery is within 4 weeks and cannot be delayed IV iron should be prescribed, chronic inflammatory conditions often have a functional iron deficiency, If ferritin is between 30-100 mcg/L and Transferrin sats (Tsats) are <20% in the presence of anaemia functional iron deficiency is likely, in Vitamin B12 Ferritine will be > 100mü/L, 200mg tablet on alternate day, oral iron on an empty stomach or with vitamin C containing drinks (e.g. Orange juice), Ferrinject up to 1000mg once, and after another week another time (cave anaphylaxis and hypertension)", 
+            "GRADE approach (Grading of Recommendations Assessment, Development and Evaluation): High, Moderate, Low, Very Low, a systematic framework for evaluating the quality of evidence and strength of recommendations in healthcare, considering factors such as study design, risk of bias, consistency of results, directness of evidence, and precision of estimates",
+            "CPS1: Current evidence does not allow the recommendation of one reversal agent over another when reversing a TOF-ratio between 0.4 and 0.9. The choice between sugammadex and neostigmine must consider patient-related factors as well as availability. CPS2: Recovery from succinylcholine-induced neuromuscular blockade should also be monitored quantitatively",
+            "Risk of bias assessment was conducted in accordance with the Cochrane Hand book for Systematic Reviews and Interventions. The risk of bias was assessed for the following domains: (1) Random sequence generation (selection bias); (2) Allocation concealment (selection bias); (3) Blinding of participants and personnel (performance bias);(4) Blinding of outcome assessors (detection bias); (5) Incomplete outcome data, intention-to-treat (attrition bias); (6) Selective reporting. "
+        ),
         
         
         
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -219,23 +233,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -249,7 +257,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -268,7 +275,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -284,19 +290,16 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
@@ -304,15 +307,12 @@ run <- function() {
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
-            "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
+           "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
             "haemolysis > free Hb crystalyses in bowmann capsule > plugging of renal filter",
@@ -323,15 +323,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -339,7 +336,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -349,7 +345,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -388,12 +383,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -414,7 +406,10 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
             "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
             "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
@@ -466,17 +461,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
- 
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
+            
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -495,7 +495,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+           "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+           "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
             "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -520,6 +534,7 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
             "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
             "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
@@ -562,8 +577,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -585,16 +607,21 @@ run <- function() {
             "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
             "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
             "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
-            
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+           "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
+           
+
             
             
             
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -612,6 +639,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
            
+             
+           
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -622,8 +651,16 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+           "Oxygenation markers: PF ration or Aa gradient ()",
+           "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
             "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
             "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
@@ -637,6 +674,7 @@ run <- function() {
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -678,13 +716,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+           "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
            
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -719,7 +759,29 @@ run <- function() {
             
             
             # PHARMACOLOGY
+           "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+           "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
             "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
             "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
             "Infusion rate: C (concentration) * CL (clearance)",
             "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
@@ -736,6 +798,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -745,6 +808,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -760,7 +824,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -770,6 +834,759 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
+            "Glycopyrrolate 200micrograms iv",
+            "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
+            "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
+            "Dabigatran (Pradaxa), Rivaroxaban (also hepatic) are problematic in renal impairment, with other NOAKs INR and PTT may be normal or prolonged",
+            "Medication Timing: Levodopa has a short half-life (1–3 hours). It must be continued up until the morning of surgery. Abrupt withdrawal can cause a sudden return of symptoms or Neuroleptic Malignant Syndrome",
+            "Carbidopa: The most common DDCI used globally. It is paired with levodopa",
+            "Benserazide: Paired with levodopa to create the combination drug Madopar",
+            "Hepatic clearance (ER * blood flow) and ER (extraction ration are describing livers capacity to clear the drug",
+            "TBV of a patient is around 42 Liters (much lower than Vd for lipophilic drugs",
+            "Tirofiban - IV glycoprotein IIb/IIIa inhibitor > final step of platelet aggregation, whereas clopidogrel = oral P2Y₁₂ receptor inhibitor prevents platelet activation",
+            "Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)",
+            "Magnesium: 4th abundant bivaletn ion of the body, 60% bones, 20% intracellular (muscle) - calcium antagonist (reduces ca-triggert transmitter realease (like Ach), opposes Ach postsynamptically, inhibits Ca entry via voltage-gated channels, reduces Ca release from ER, and ca-induced ca-release, Na/K-ATPase needs Mg to work, opposes K to leave, if Mg low > K will be low too, RR low and Bradycardia, pain: NMDA antagonism, Mg. suppresses early early afterrepolarisation",
+            "Oxytocine: 15 Units in 30 minutes after first bolus of 3 units - hypotony, flush, nausea",
+            "Insuline: 1U ~ 20-25 mg/dl glucose lower, H1/2 10minutes, infusion: 0.1U/kg/h or plasma glucose / 150,  1 U/h at rest, up to 59 Units/d, anabolic, 51AS polypeptides hormon, alpha stimulation increase, beta and parasympathetic decrease",
+            "INSULINE: SHORT: Aspart/Lispro (shorter HL than insulin), LONG: Glargine (peakless, 24h)",
+            "Glucagon: (alpha cells pankreas), not a catecholamine but increases cAPM, positiv inotrope, HR and CO, increases bile production (ERCP), beta blocker intox",
+            "Sulfonureas (Glibemglimid): STOP AM of OR > incerease beta cell activity and insuline secretion (not in DMI), Biguanides (Metformin): decrease hepatic gluconeogenesis, NO STOP if normal kidney function, small OR and no contrast agent use anymore, inhibits insuline resistance",
+            "DPP4: Sitagliptin, Vildagliptin, Saxagliptin - inhibit DPP4 (dipeptidyl peptidase-4) enzyme that degrades incretins (GLP-1 and GIP) > increase insulin release - no need to stop",
+            "All antidiabetics can be continued on the day before surgery, DAY of SURGERY: STOP metformine (if renal, contrast or large OR), stop sufonureas (restart after food intake), stop acarbose (inhibits glucose absorbtion in the gut), restart after food intake, stop Sodium Glucose Cotransporter 2 inhibitors (SGLT2: FLOZINS - stop on day of surgery, restart after feeding,  euglycemic ketoacidosis)",
+            "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
+            "Methylergometrine (Ergonovine) - 200 micrograms IM (unclear mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension - not in pre-eclamsia, PHT",
+            "ASS (acetycalicylic acid): non specific COX inhibitor (fever, pain, analgesia, NO anti-inflamattoryr, irrversible acetylation of the platelet COX1, cave uraemic patients - have already plateled dysfunction, all NSAIDS > bronchocostriction, not in pediatric viral infection - Reye Syndrom",
+            "Ibuprofen: pain, fever, inflammation, high first pass, does not accumulate in IV, same side effects (plattelets, bronchospasm, renal, GI",
+            "NSAIDS: not up to 6 month, premature DA closure, renal increase in miscarriage risk",
+            "Dose ratio = Dose of Agonist with PA / Dose of Agonist without PA",
+            "Neuroleptics: NMS, dystonic side effects, QT prolongation with VTach, torsaides, autonomic dysfunction (droperidol was withdrawn from market)",
+            "Phenytoin: Na, Ca and NMDA antagonism, 10-20mü/ml level (but > 20 is already toxic) - 1 g bolus, gingiva, teratogen, nystagmus, ataxia, hypotension, cave precipitate in IV line (no mixing)",
+            "Keppra (levetiracetam): unclear mechanism, but binds to synaptic vesicle protein SV2A, no interactions, no monitoring, no interactions, no hepatic metabolism, DECREASE IN RENAL",
+            "Carbamacepine: CYPP450 inducer, epilepsy, neuropathic pain, shizo, bipolar: Na channel antagonist (similar to valproat or lamotrigin), SIADH, hyponatremia, leukopenia, thrombocytopenia, teratogen",
+            "Gabapentin: (Pregabalin increase GABA) binds to alpha-2-delta subunit of voltage-gated calcium channels, also NMDA, low protein binding, no hepaticm metabolism, used for neuropathic pain and seizures, sedation, dizziness, ataxia",
+            "Levodopa with Carbidopa (decarboxylation inhibition before BBB entry, if dose missed > parkinsonian crysis and MNS - ORTHOSTATIC HYPOTENSION - always ask what happens if pat misses a dose (intraop via NG tube)",
+            "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
+            "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
+             
+            
+             
+            # PEDIATRICS
+            "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
+            "Reason for late bleeding after tonsillectomy are infections",
+            "Reye syndrom: acute encephalopathy and hepatic failure",
+            "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
+            
+            
+            
+            # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
+            "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
+            "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
+            "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
+            "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
+            "On 100% oxygen, the A-a gradient in elderly patient can be as high as 100 mmHg",
+            "Volume of distribution (ml) = Dose (mg) / Concentration (mg/ml)",
+            "The CO2-binding curve is a hyperbole. It does not have a plateau in contrast to the oxygen-binding curve, since there is no maximum. The amount of CO2 levels in the blood is expandable as long as the bicarbonate concentration is increasable",
+            "Human hemoglobin is a roughly spherical protein complex with a molecular weight of approximately65 kDa and a molecular diameter of about 6nm",
+            "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
+            "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
+            "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
+           "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+           "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+           "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+           "Hysterisis in the lung is introduced by surfactant",
+           "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+           "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+           "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+           "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
+
+            
+            
+        ),
+        
+        
+       
+        
+        
+            # ANAEDOC
+        anae_doc = c(
+            # "Graph the pressure and volume changes in LV during cardiac cycle",                                                     ####
+            "Explain the difficulties in anesthetising a heart transplant patient",                                                   ###              Primary graft dysfunction is the most important cause of early death, check organ function, assess antiinflammatory drugs, is a rejection ongoing, who is the transplant team, no sympathetic, these patients are “preload dependent” as an increase in cardiac output is dependent on venous return denervated heart lacks the ability to respond acutely to hypovolemia or hypotension with reflex tachycardia, parasympathetic, or sensory innervation, and the loss of vagal influence results in a higher‑than‑normal resting heartrate,  General anesthesia is preferred and central neuraxial blockade is avoided to prevent acute vasodilatation and uncontrolled hypotension, the native P‑wave cannot traverse the suture line and thus has no influence on the chronotropic activity of the transplanted heart (two p waves are posible). Carotid sinus massage and the Valsalva maneuver have no effect on the heart rate. There is a loss of cardiac baroreflexes and loss of sympathetic response to laryngoscopy, tracheal intubation, and inadequate anesthetic depth or analgesia due, Denervation also alters the pharmacological response to certain drugs. The cardiac vagolytic effect of drugs such as atropine and glycopyrrolate are lost; therefore, isoprenaline and adrenaline should be readily available, Neuromuscular, blocking agents should be avoided when muscle relaxation is non‑essential for surgery, thus avoiding the need for reversa (massive sensitivity to Ach-esterase inhibitors), most common drug regimen includes tacrolimus, mycophenolate, and prednisone. Tacrolimus and prednisone can cause hypertension, diabetes, neurotoxicity, and renal insufficiency. Mycophenolate mofetil may result in anemia, leukopenia, and thrombocytopenia.[
+            "What are perioperative consideration in patients with long QT-syndrom",                                                  #               Romano-Ward, Lange-Nielsen, Bradycardia is the "loaded gun" (slow rhythm, long QT) and the tachycardia (Torsades) is the "bullet", Polymorphic VT, Most danger in low K, Mg or Ca, different triggers (sport, sudden auditory, rest/sleep - different channulopathy), synkopies or sudden deaths in family, Inborn usualy K-chanel loss and Na-channel gain (Romano-Ward, Lange-Nielsen), TIVA - NO VOLATILES!!!!!!!!!!! (QT increase), Propofol (if not possible midazolam, etomidate or thio not clear but possible), PONV only dexa, in LA no additives like adrenaline, extubation deep to prevent tachycardia, Pads ready, Magnesiom reads?, Roc and atracurium ok, only Suggamadex (Bridion) (no Ach-esterase inhibitors - QT longer), Most important B-blockade and ICD, Elytes norm, premediaction to prevent stress tachycardia, ALL OPIOIDS ARE OK, SCHWARZ score (most points for over 480ms, syncopies history, death in family, Stress, pain, anxiety ect (tachycardia), Danger if QTc > 440ms (men), 450 ms (women), 2g Mg therapy,  Increased risc for torsades and VF, check elytes (esp. low K), The QT interval reflects repolarization of the myocardium (longer plateau (phase 2) and longer vulnerable phase R on T), Na or K channelopathies, Romano-Ward-Syndrom, BAZETT formula > QTc = QT / square root of R-R distance, Lange-Nielsen-Syndrom, ondansetron, amiodaron, markolids, fluorochinolones, droperidol, haloperidol, TCA, SSRI, Methadone, azoles, notched T waves,
+            "Tell me about the perioperative management of a pacemaker patient",                                                      ##               If MRT: turn antitachy function off, check suitability (non chest MRT ok), Bipolar cautery is advised, no contact to wires, lowest possible current, monopolar pad (neutral) as far away from pm as possible, ZVK > mobilisation of thrmobogenic material from the leads, keep seldinger wire not too deep, magnet can turn the pc into asynchrone modus with constant HR, for ICD can a magnet turn off the antitachykard function, Monopolar cautery might be a problem, Keep normo-everything to fascilitate transduction of signals, succi fasciculation can be misinterpreted as tachy (turn off frequenzadaptation is not advised), Type of anesthesia is irrelevant, need to know: pacemaker dependent? every p and QRS with a spike? Newrst PM very small spikes, Every 12 month check, battery (should be ok for 10y), Internationnal 4 integers code (for both pacemakers and ICDs) Up to 100k implanted in G, ICD most in cardiac failure or cardiomyopathy (malignant arrytmias) patients, or combination with ICD, most often bradycadic symptomatic (syncopy,dizziness, ischemia), Active fixation - screw mechanism to attach anywhere, passive fixation uses anchers in trabecular structures, Asynchronous (fixed-rate) deliver impulses at a constant rate, during surgeries or temporary scenario BUT R on T is possible, Synchronous (demand - modern) pacemakers only fire if rate drops (standard choice), ICDs analise RR interval and separate into mormofrequent, tachycard (overpacing or defibrillation but also in new generations pacing for bradycardy) and bradycard, most are DDD or VVI (NBG Code), type is dependent on underlying pothology and AV conductivity, demand HR increase canb be detected with a piezo crystall implanted, possible stimulations (cutaneous, epicardial with hooks, transoesophageal, transvenous), dependent on access (subclavia or cephalica) > pneumothorax or haematothorax, early lead displacement, perforation, thrombemboly, pericardial effusion, lead endocarditis, Exit block: no responce on spike, oversensing with inhibition of impulse (cautery, shivering), undersensing: spikes despite patients activity (R on T phenomenon possible), pacemaker syndrome: impulse coordination between atreium and ventricle Ps in QRS), endless loop tachycardia: Bei vorhandenen akzessorischen Leitungsbahnen im Herzen kann ein abgegebener Kammerimpuls retrograd in die Vorhöfe fortgeleitet werden. Dort erkennt der Schrittmacher die Vorhofkontraktion und induzierten einen erneuten Kammerimpuls, welcher eine kreisende Erregung
+            "What implications does mitral rigurgitation has for anesthesia?",                                                        ###              D-shaped annulus, two leaflets (anterior and posterior), two papillary muscles with tendinous chords, circumflex artery follows the line of the annulus > damage causes lateral wall ischaemia, MS represents a fixed cardiac output state (chronic inflammation (most commonly from Rheumatic Fever, left atrial (LA) dilation and eventually pulmonary hypertension, Severe MS is defined by a valve area <1.0 cm², a mean pressure gradient >10 mm Hg, Anaesthetic Goals (Slow and Sinus - diastolic filling time, cave fluid boluses can quickly cause pulmonary oedema, Maintain systemic vascular resistance (SVR) to ensure coronary perfusion, Avoid factors that increase pulmonary vascular resistance (hypoxia, hypercapnia, acidosis, and nitrous oxide, Poorly tolerated due to increased blood volume and heart rate; often first presents during pregnancy, MI: primary (valve pathology) or secondary/functional (LV dysfunction), Severe MR is defined by a regurgitant fraction ≥50% or a regurgitant volume ≥60 ml/beat, Maintain a high normal heart rate (80–100 bpm) to reduce LV filling time and overload Preload: Keep the patient well-filled to promote forward flow, Afterload: Reduce SVR to promote forward flow into the aorta and decrease the regurgitant fraction, Neuraxial Anaesthesia: Generally well-tolerated in MR because it reduces afterload, whereas it must be used with extreme caution in MS due to the risk of profound hypotension from SVR reductio
+            # "What is volume of distribution and give an example?",                                                                  ####              Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)
+            "What implications does aortic stenosis has for anesthesia?",                                                             ###              DYSPNEA, ANGINA, SYNCOPY -Increased LV workload with concentric hypertrophy with cardiac failure or arrhytmias (volume overlode in rugurgitations leads to exchentrical hypertrophy), pulmonary hypertension, METs important for accessing the severity, systolic in 2 ICS right, > 2,5cm² normal, < 2cm² mild (2-3 m/s, mean gradient < 20 mmHg): 1-1,5cm²: moderate (3-4 m/s, 20-40 mmHg), < 1cm²: severe „high-grade“ (>4 m/s, > 40 mmHg)
+            # "Desribe the perioperative management of a patient with a patent ductus botally (arteriosus)",                          ####             High prostaglandin level during pregnancy keeps DAB open, after birth prostaglandine levels sink and get metabolised by the lung, plus PVR low, ductus smooth muscles contract (takes up to 3 days), if preterm > DAB is open > left-right shunt with lung over-perfusion, systolic murmur, tachycardia, no weight gain, cardiac failure, substantial LV work load, pulmonary hypertony with large DAB, small DAB does not need to be closed (cath closure can be done later), if hamodynamically relevant but no cardiac failure/PAH - closure < 1y old,  NSAIDs (indomethacin, ibuprofen) to inhibit prostaglandin synthesis (works only on preterm), if not possible > surgical ligation with a clip (small kids surgery, larger kids intervention), always keep PVR low and SVR normal (otherwise R > L shunt is possible), pulmonary hypertony and hypoxia in preterm babies lead to persistent DAB, circulus vicious > more hypoxia + acidosis > more PVR more shunt over DAB,  Pregnancy: Represents a high-risk state for EMAH patients, especially those with Eisenmenger syndrome, where mortality is significantly elevated
+            "Explain the alveolar gas equations, inspiratory, alveolar and arterial PO2 and the Aa gradient",
+            "If your FiO2 if 10%, what would be inspiratory, alveolar and arterial PO2 and correstponding SpO2?",
+            "What are the differenes between Quick (PT) and aPTT",                                                                    #               Quick (PT) - extrinsic (Tissue Factor - VII + common (I, II, V and X)), aPTT (intrinsic - surface activator, phospholipid - XII, XI, IX, VIII and common (Haemophilly A)
+            "What is the Hering-Breuer Reflex?",                                                                                      ###
+            "What are normal values for ROTEM (CT, CFT, alpha angle and MCF, LI30/60)",                                               #               CT (clotting time) 40-80s, CFT (clot formation time) 30-150s, alpha angle 63-83°, MCF (maximum clot firmness) 50-72mm, LI30: if > 8% (TXA!!!) - should be 3-8%
+            "Describe the concept and classification of MET",                                                                         #               One MET is defined as the resting oxygen consumption of a typical 40-year-old male > 3.5ml/kg/min, 1 MET: eating, dressing, using the toilet), walking around the house. 3 MET: Walking 1 to 2 blocks at a slow, leisurely pace.4 METs Climbing a flight of stairs (approx. 10-12 steps), doing light housework (washing clothes), or walking briskly at 4.0 to 5.6 km/h. 10 METs: Playing golf, bowling, or running briefly, 10 METsStrenuous sports (e.g., soccer, swimming, singles tennis).
+            "Why is flow viscosity-dependent at low flow and density-dependent at high flow?",
+            "Explain the concept of clearance as function of creatinine",                                                             #               Creatinine clearance provides the estimated (overestimations up to 20% because somehow creatinine is DOCH secreted) of volume cleared of creatinine and is a surrogate for GFR), GFR measures the actual rate of blood filtration (mL/min). CrCl measures the volume of plasma cleared of creatinine per unit time (mL/min). Real GFR (125ml/min > 180 L/d) requires invasive and radioskopic methods, Estimation (eGFR (age, gender, ethnicity and creatinine - newer (based on standart body surface of 1.73m2) form of older Cockcroft-Gault): Because 24-hour urine collection is prone to errors and there is creatinine blind spot (only up if GFR is down by 50%), estimated GFR (eGFR)—using formulas like CKD-EPI or MDRD—is preferred. Volume of plasma from which a substance is completely removed per unit time, calculated as: Clearance = (Urine concentration of substance * Urine flow rate) / Plasma concentration of substance, Creatinine (breakdown product of muscle creatinphosphsate, released at a constant rate, removed only way to eliminate is to filter (no reabsorbion and no secretion) it renally (similar to a sugar Inulin)), Does not detect early GFR decrease,  Creatinine inversly prop to GFR (if GFR low,Crea high) dependent on muchle mass, meat intake, volume loading, ncreases with dietary protein consumption, It decreases with fasting and vegetarian diet     
+            "Explain the perioperative consideration in patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency",           ##               X-linked recessive, most common enzymatic disorder of red blood cells, G6PD is an enzyme in the pentose phosphate pathway that helps protect red blood cells from oxidative damage, deficiency can lead to hemolytic anemia in response to oxidative stress (e.g., infections, certain drugs like sulfonamides, antimalarials, and fava beans), avoid triggers, monitor for signs of hemolysis (jaundice, dark urine, fatigue), maintain hydration and consider blood transfusion if severe hemolysis occurs, riggers for hemolysis: Oxidative stress caused by medications, infections, metabolic acidosis, ketoacidosis, hypothermia, and surgical stress. Anesthesia-related medications: Avoid: Medications that trigger oxidative stress or methemoglobinemia. Absolutely contraindicated: Methylene blue (is ineffective and triggers severe hemolysis), Critical: Lidocaine, Prilocaine (EMLA), Metoclopramide, Diclofenac, and high-dose ASA, Safe: Propofol, Ketamine, Fentanyl, Sufentanil, Rocuronium, succinylcholine, bupivacaine, acetaminophen (in therapeutic doses), and nitrous oxide. Management tips: Preoperatively: Screen for jaundice; laboratory tests (LDH, haptoglobin, bilirubin, LDH, spherocytes on smear, reticulocytes); no elective procedures during acute hemolysis; intraoperatively: Avoid stress through generous analgesia, maintain normothermia, closely monitor blood glucose; Postoperatively: Hemolysis usually occurs 24–72 hours after exposure to the trigger (therefore, outpatient anesthesia is not recommended); Monitor urine for hemoglobinuria
+            "Explain the perioperative consideration in patients with sickle cell disease",                                           ##               Autosomal recessive disorder caused by a mutation (Chromosom 11) in the beta-globin gene, leading to the production of abnormal hemoglobin S (HbS - Glutamin is replaced by Valin (hydrophobic)) > red blood cells rigid and sickle-shaped under low oxygen conditions > vaso-occlusion, hemolysis, and chronic anemia, avoid triggers (hypoxia, dehydration, acidosis, hypothermia), maintain hydration, provide adequate analgesia, consider blood transfusion for severe anemia or before major surgery, monitor for complications (acute chest syndrome, stroke, infection),  Pathophysiology: Autosomal recessive mutation in the β-globin chain (valine instead of glutamic acid), which leads to polymerization (sickling) at low oxygen partial pressure Triggers for crises: Hypoxia, dehydration, acidosis, stress, infections, and hypothermia Clinical complications: Vaso-occlusive crises, splenic sequestration, and the life-threatening acute chest syndrome (ACS) (most common cause of death), Management tips: Preoperatively: Hemoglobin electrophoresis; Target hematocrit approx. 30% (to reduce viscosity), simple transfusion often sufficient, Anesthesia approach: General anesthesia is often preferred over regional anesthesia, as the latter can promote stasis and sickling due to compensatory vasoconstriction in unblocked areas, Intraoperatively: Maintain SpO₂ >94%, aggressive hydration (early IV), strict normothermia (operating room >24°C), avoidance of acidosis, analgesia: Often chronic pain and opioid tolerance; use multimodal approaches Postoperatively: Aggressive respiratory therapy (respiratory trainer), oxygen administration, and hydration to prevent ACS
+            "What are perioperative consideration in patients with thalassemia?",                                                     ##               Thalassemia is a group of inherited blood disorders characterized by reduced or absent production of one of the globin chains, Forms: α-thalassemia: Deletion of α-genes, Alpha thalassemia is caused by deficient production of the alpha globin component of hemoglobin, while beta thalassemia is a deficiency in the beta globin component.[7] The severity of alpha and beta thalassemia depends on how many of the four genes for alpha globin or two genes for beta globin are faulty. Severe forms (fetal hydrops) are often fatal in the neonatal period; Symptoms include tiredness, pallor, bone problems, an enlarged spleen, jaundice, pulmonary hypertension, and dark urine.[1] A child's growth and development may be slower than normal.[1], HbH disease presents as thalassemia intermedia. β-thalassemia: More commonly clinically significant. Thalassemia major (Cooley’s anemia) requires regular transfusions; minor forms are often asymptomatic incidental findings. Main problems: ineffective erythropoiesis, chronic hemolysis, and hemosiderosis (iron overload due to transfusions). 2. Anesthesiological Focus Areas (EDAIC Checklist), Airway: The “thalassemia facies”; problem: bone marrow hyperplasia leads to facial skeletal deformities (prominent upper jaw, malocclusion); consequence: increased risk of difficult intubation; examination findings: Careful clinical evaluation (Mallampati, thyreomental distance), preparation of fiber-optic equipment and algorithm for difficult airways, organ functions (consequence of hemosiderosis), Heart: The most common cause of death is cardiac hemosiderosis (heart failure, arrhythmias), Preoperative: Check echocardiogram/ejection fraction, Liver: Hemochromatosis-related liver cirrhosis with impaired synthetic capacity and altered drug metabolism, Endocrinology: Diabetes mellitus (pancreatic damage) and adrenal insufficiency, Tight intraoperative blood glucose monitoring, Hematology & Transfusion Anemia management: Target preoperative hematocrit approx. 30%; higher values offer no advantage, Splenectomy: Many patients have undergone splenectomy. This leads to an increased risk of sepsis  (especially OPSI syndrome), consider perioperative antibiotic prophylaxis and vaccination status; coagulation: both thrombocytopenia (in cases of splenomegaly) and thrombophilia are possible; contraindication: iron supplementation is absolutely contraindicated (risk of exacerbating hemosiderosis); preoperative optimization: For planned procedures, optimize metabolic status (HbA1c) and organ function (heart, liver); Stress avoidance: As with sickle cell disease, perioperative stress should be minimized to maintain metabolic stability
+            "Draw the breathing patterns for biot, cheyne-stokes and kussmaul respiration",                                           #               BIOT: Damage to the brainstem (specifically the medulla oblongata or pons (TRAUMA; STROKE) - Irregular breathing with periods of apnea (very deep (like KUSSMAUL) pattern but with breaks: poor prognosis, neuronal damage, ataxic breathing), CHEYN-STOKES: Type of sleep apnea, heart failure and stroke, Gradual increase and decrease in tidal volume followed by apnea (apoplex, hypoperfusion of breathing center,cerebral pressure, drugs), KUSSMAUL: Ketone, Uraemia, Sepsis, Salicylates, Methanol, Aldehydes, Lactate - Deep, labored breathing often associated with metabolic acidosis            
+            "Calculate the O2 content and delivery with a CO of 5L/min, Hb of 15 g/dL and an SaO2 of 98%",                            #               
+            "Tell the difference between hypoxia and hypoxaemia",                                                                     ##.             Hypoxia: A condition where the oxygen supply is inadequate either to the body as a whole (general hypoxia) or to a specific region (tissue hypoxia) Hypoxemia: low oxygen in arterial blood, as measured by PaO2 or SpO2, Can be both hypoxic without hypoxemia (i.e. anemia, cardiogenic shock) and hypoxemic without hypoxia (i.e. mild V/Q mismatch states) but severe hypoxemia will almost always cause hypoxia
+            "Desribe the perioperative management of a patient with a ventricular septal defect",                                     #               Most common isolated congenital heart defect Left to right shunt, pulmonary over-perfusion, pansystolic murmur is typical. Chest X-rays often show cardiomegaly and increased pulmonary vascularity, check history of URTIs, very large air embolism risk (clear all iv lines from bubbles - paradoxical emboly), Urinary output is a key surrogate for cardiac output (target >1 cc/kg/hr), review echos esp. PAP and calculated resistance, palliative care with a band around PA, heart failure in large VSD with digitalis and diurhetics (withheld digitalis preop), premed  oral midazolam (0.5 mg/kg) or IM ketamine (3–5 mg/kg) for anxious children with difficult venous access, pulmonary hypertension, Eisenmenger syndrome (reversal of shunt with cyanosis), small VSDs can close spontaneously, large VSDs cause heart failure and require closure (surgical or cath), if PAH develops > no closure possible, avoid increases in PVR (hypoxia, hypercapnia, acidosis) and decreases in SVR (vasodilation) to prevent shunt reversal", fixed PA hypertension is most dangerous (hypoxia, co2, hypothermia, acidosis, atelectasis, hyperinflation, pain/stress > sympathetic stimulation and pulmonary hypertension), induction and maintainance with very large fentanyl doses up to 100 mcg/kg, Cardiopulmonary Bypass (CPB): Requires heparin (3–4 mg/kg) to achieve an Activated Coagulation Time (ACT) >480 seconds (ideally >600s, Weaning from CPB: Facilitated by volume and inotropic support (commonly Dopamine or Dobutamine) and vasodilators to control PVR/SVR, Extubation: Early extubation in the ICU is appropriate for uncomplicated cases. However, patients with pulmonary hypertension should remain intubated for 2–3 days while following a pulmonary hypertension drug protocol, heart block is common and should be treated with pacing, Phenylephrine (pure alpha-1 agonist). It increases SVR without increasing heart rate or contractility,
+            "What are perioperative considerations for a patient with HOCM?",                                                         ###             Most common genetic cardiovascular disorder, autosomal-dominant (worsens with: Decreased Preload: Reduced left ventricular (LV) cavity size, Decreased Afterload: Reduced systemic vascular resistance (SVR), Increased Contractility: Stronger myocardial contraction narrows the LVOT, tachycardia: Decreases diastolic filling time, further reducing LV volume) characterized by asymmetric hypertrophy of the interventricular septum > intermittent obstruction of the left ventricular outflow tract (LVOT).Asymmetric septal hypertrophy, dynamic LVOT obstruction, mitral regurgitation, diastolic dysfunction, arrhythmias, sudden cardiac death, syncope, dyspnea, angina, palpitations, beta blockers to reduce heart rate and contractility (reduce LVOT obstruction), avoid vasodilators (can worsen obstruction), maintain adequate preload and afterload, careful fluid management to avoid hypovolemia, avoid tachycardia (can worsen obstruction), consider invasive monitoring for hemodynamic management, Screen for dyspnea, syncope, and palpitations, Left Ventricular Hypertrophy (LVH) or left axis deviation on ECT (Sokolow-Lyon-Index (SV1 + RV5 or V6 > 3,5 mV), Continue beta-blockers to maintain a slow heart rate and prolong diastole, Maintain Preload: Use judicious fluid preloading (e.g., 500ml Ringer’s Lactate) to maintain stroke volume, Maintain Afterload: Avoid systemic vasodilation, Maintain Sinus Rhythm/Slow Heart Rate: Tachycardia or loss of "atrial kick",  Avoid Sympathetic Stimulation: Use adequate anxiolysis (e.g., benzodiazepines) and analgesia to prevent increases in contractility and heart rate
+            "What are perioperative considerations for a patient with Fallot tetralogy?",                                             ##              Most common cyanotic congenital heart defect, KEEP PVR low and SVR HIGH (RLS low then), Four anatomical abnormalities: Ventricular Septal Defect (VSD), Pulmonary Stenosis (PS), Overriding Aorta (moved to the right side and originates at the VSD), Right Ventricular Hypertrophy (RVH) - often in DiGeorge syndrome, undergo complete repair between 6–18 months of age Some may have had palliative B-T (Blalock-Taussig) shunts (if pulmonary stenosis is too severe - A. subclavia to pulmoary artery), to maintain pulmonary perfusion, Uncorrected: Problem RLS > low SaO2 (pain, stress, hypovolemia), anesthesia: keep PVR low and SVR high > this will lower RLS, increase preload, keep PVR low (high FiO2, pCO2 low, avoid acedaemia), SVR and MAD with Noradrenalin to keep RR high and reduce RLS > VSD- Patch, RVOT- Plastik, Most common cyanotic congenital heart defect, four anatomical abnormalities: Ventricular Septal Defect (VSD), Pulmonary Stenosis (PS), Overriding Aorta, Right Ventricular Hypertrophy (RVH). Cyanosis, dyspnea, fatigue, and syncope, especially during exertion. Surgical repair is typically performed in infancy or early childhood, Avoid increases in pulmonary vascular resistance (PVR) (e.g., hypoxia, hypercapnia, acidosis) and decreases in systemic vascular resistance (SVR) (e.g., vasodilation) to prevent worsening of the right-to-left shunt. Use of beta-blockers to reduce infundibular spasm and maintain a slow heart rate can be beneficial. Low peep and V pressures to keep PVR low and prevent RLS deterioration, polycythaemia (Hct >0.65 may require venesection), maintain Systemic Vascular Resistance (SVR) and minimize Pulmonary Vascular Resistance (PVR) to reduce right-to-left shunting, Premedication: Essential to avoid crying/stress which increases PVR and can trigger a "tet" spell (during feeding or crying); A tetralogy or ‘tet’ spell (also known as a cyanotic spell, or hypercyanotic spell), Historically, ketamine was favored to preserve SVR, but careful titration of any induction agent is acceptable, Knee-to-chest position (increases SVR and reduces deoxygenated venous return), 100% Oxygen (acts as a pulmonary vasodilator), Fluid boluses and sedation/analgesia (e.g., IV morphine/fentanyl) to reduce sympathetic drive, Phenylephrine to increase SVR, Beta-blockers (esmolol/propranolol) to relieve infundibular spasm, Obstetrics: High risk for uncorrected TOF, Use sequential low-dose combined spinal-epidural (CSE) or epidural techniques to avoid sudden SVR drops, Be cautious with uterotonics: Syntocinon causes hypotension, and Carboprost (PGF2alpha) increases PVR, Complications: Be vigilant for air embolism (use air filters on IV lines due to the VSD) and infective endocarditis prophylaxis in high-risk cases
+            "What are the alternative ROTEM variants?",                                                                               ###             HEPTEM excludes the effects of heparin, The use of HEPTEM is ideal for situations where the patient is heavily heparinised (eg. on bypass) and the anaesthetist is interested in the degree of residual coagulopathy INTEM and HEPTEM are virtually identical, INTEM is similar to the APTT (12, 11, 9), EXTEM is similar to the PT (extrinsic - FVII and tissue factor > activate X), APTEM excludes fibrinolysis. 
+            "Explain the principles of the Davenport diagram",
+            "How can you assess lung function and muscular function under anesthesia?",                                               ###              20-30-40 Rule from Guillan-Barre syndrom for intubation but more than that: > 20ml FVC, -30 cmH20 Inspiratory Pressure, > 40 cmH2O expiratory pressure 
+            "What is bioavailability?",                                                                                               ##               Fraction (%) → oral AUC time / AUC IV * 100, Bioavailability is the proportion of a drug that enters the systemic circulation in an active form after administration, compared to the same drug administered intravenously (which has 100% bioavailability)
+            "What are the properties of an ideal intravenous anaesthetic agent?",                                                     ###
+            # "What factors affect bioavailability?",                                                                                   ###           Route, size (smaller better), ionisation (lower better), active transport (Levodopa), Enteral metabolism (benzylpenicillin) , GI disease (malabsorbtion), FPM (lidocaine, morphine, midazolam), enzyme induction (rifampicin)
+            "Define AaDO2 and what influences it?",                                                                                   ##              DIFFERENTIATE CAUSES OF HYPOXIA, PAO2 ~ 100mmHg, AaDO2 = PAO2 ((Patm – PH2O) x FiO2 – PaCO2/RQ + f (commonly ignored correction factor of 2-3 mmHg accounting for changes in the partial pressure of nitrogen)) - PaO2. Normal 5-10 mmHg, increase with age. Hypoxia with normal AaO2: Alveolar hypoventilation (elevated PACO2), Low PiO2 (FiO2 < 0.21 or barometric pressure < 760 mmHg) Influencing factors: V/Q mismatch, diffusion impairment, shunt, hypoventilation, FiO2 (increasing FiO2 can increase PAO2 and thus increase AaDO2), and age (normal increases with age)., For every decade a person has lived, their A–a gradient is expected to increase by 1 mmHg – a conservative estimate of normal A–a gradient is < [age in years/4] + 4, Gradient varies with age and FiO2:, FiO2 0.21 – 7 mmHg in young, 14 mmHg in elderly, FiO2 1.0 – 31 mmHg in young, 56 mmHg in elderly
+            "What do you mean by ‘first-pass metabolism’?",                                                                           #               First-pass metabolism is the metabolism of a drug before it reaches the systemic circulation after absorption, usually after oral administration. Gut mucosa (enterocytes contain Cyp3A4)
+            "Explain and draw the major TEG/ROTEM forms",                                                                             ##               https://x.com/OnePagerICU/status/1525131483458875394/photo/1
+            "Which drugs can be administered by a transdermal route?",                                                                ###             Fentanyl, buprenorphine, scopolamine, nicotine, estradiol, testosterone, lidocaine, methylphenidat, selegiline, rotigotine                                                     
+            "What are the advantages of transdermal route?",                                                                          ###             Avoids first-pass metabolism, Provides a steady plasma concentration, Non-invasive and convenient, Improved patient compliance, Suitable for drugs with short half-lives, Can be used in patients who cannot take oral medications, Slow and sustained absorption, Steady plasma level without significant troughs and peaks.
+            "What are perioperative considerations for a patient with Univentricular Heart and Fontan Circulation?",                  #               Fontan circulation is a palliative state where systemic venous blood flows passively through the lungs without a pumping sub-pulmonary ventricle. Hemodynamic Determinants: Cardiac output is entirely dependent on transpulmonary blood flow, which is driven by central venous pressure (CVP) and inhibited by PVR. Ventilation Challenges: Positive pressure ventilation increases intrathoracic pressure and inhibits passive pulmonary flow. Goals: Low mean airway pressures (8–10 mbar), low PEEP (2–5 mbar), and early extubation. Laparoscopy: Generally contraindicated in Fontan patients because the increased intra-abdominal pressure severely reduces venous return and passive pulmonary flow. Clinical Signs of Failure: A "Failing Fontan" presents with cyanosis, ascites, arrhythmias, and protein-losing enteropathy
+            "Explain the concepts of trigger, limit and cycling",                                                                     #              
+            "Explain the pharmokinetic ADME scheme",                                                                                  ##               Pharmakokinetics: How the body handles the drug: ABSORBTION/ADMINISTRATION: how does the drug enters the system (affected by route AND compound solubility, gastric emptying time, intestinal transit time, chemical instability in the stomach, and inability to permeate the intestinal wall), DISTRIBUTION: how is the drug distributed in the body (reversible transfer of a drug between one compartment to another (affected by: regional blood flow rates, molecular size, polarity and binding to serum proteins), METABOLISM: CYP450 (Type I), Type II (Glucuronidation, Sulfatisation - water solubility), EXCRETION: how is the drug eliminated from the body (RENAL, BILIARY, LUNGS, sweat, saliva, breast milk, 
+            "Provide an overview of opioid receptors",                                                                                                # Mü: analgesia, euphoria, respiratory depression, kappa: spinal analgesia, sedation, dysphoria (lower addiction risc - unpleasant, less potent), delta: modulary role
+            "What do you need to know about ROTEM?",                                                                                  ##.             ROTEM EUROPE, TEG rotates the cup, and ROTEM rotates the pin, BRANDY sniffer NORMAL, How fast (if too slow - CT > 90sec > FACTORS (FFP, Prothrombinconcentrate, (Fast = Factors)), How strong (Speed: alpha angle - Febrin, MCF: platelets, not strong enough: platelets or fibrinogen problem > differentiating what of thme is the problem), How long: how long until lysis begins (fibrinolysis vs TXA), TEG (thromboelastography) and ROTEM (Rotational thromboelastometry) are slightly different variations of the same thing
+            "If the cylinder volume is 10 l and the gauge pressure is 137 bar, if you use oxygen at a rate of 10 l/min how long does it last?",
+            "What is there to know about peripartal haemorrage?",                                                                     ###             Non elective C-section has highest incidenc (up to 20%),  If > 2L: MAT if volume > 1000ml, damage control surgery, recombinnant FVII (only then and only if fibrinogen > 1.5g/L, Thrombos > 50k and T > 35), simultatneous transfusion (4:4:1), BLOOD LOSS > 1500ml > Fibrinogen 30-60mg/kg (Goal > 0.5 g/L and A5fib > 12mm, FXIII 20 IE (GOAL activity > 60%, PPSB 25 UI/kg, FFP 30ml/kg (4:4:1 ratio), repeat 1g TXA, If congenital thrombopathy: DDAVP 0.3mü/kg  If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - very potent uterotonic (bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - also labor induction, 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, Thrombos: 70-100, MAD: 55-65, pH > 7.2, T > 34, Ca > 0.9 mmmol/L, BE > -6, mEq/L, Lactate < 4 mmol/L  bleeding - check Tissue, Trauma, Thrombin, Tone, LESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol (Cytotec) 1g rectaly or 600mü orally (synthetic E1-prostaglandine for uteral contraction and good for gastric ulcer - off label - stimulation of prostaglandine receptors), if SHOCK index > 0.9 (HR/sRR)
+            "What are the risc factors for PPH?",                                                                                     ###              NICE guidline: Hb < 11mg/dl is ANAEMIA!; TONE: overstretch, polyhydramnion, fetal makrosomy, uterus myopatosus, fast or very long labor (> 12h), tokolytics or long oxytocine use, TISSUE: placenta rests, accreta spectrum (previous D&C (dilation & curettage) or D&E (dilation & evacuation)), TRAUM: uterine rupture, Episiotomie, THROMBINE: Disseminierte intravasale Gerinnung (DIG) (z. B. bei Präeklampsie, HELLP-Syndrom, intrauteriner Fruchttod (IUFT), Abruptio placentae, Fruchtwasserembolie), higher risk for PPH for women with congenital heart disease (especially FONTAN circulation), PPH > Faktorenmangel (Verlust, Verbrauch, Verdünnung), Präexistent: VON WILLEBRAND-JÜRGENS Syndrom, plasmatische Gerinnungsstörungen, Thrombopathien, Koagulopathien
+            "What are perioperative considerations for a patient with Fontane pathology",                                             #               Staged approach to reduce hypoxia (venous and returning pulmonary blood mix (via ASD or/and VSD) and reduce strain on the ventrikle, PUT SYSTEMIC and PULMONARY CIRCULATION IN SERIES despite a single ventricle, Single ventricle heart (8% of inbourn errors) > Single functional ventricle undergo a staged surgical process that converts their systemic and pulmonary circulations from parallel to in-series, Passive Pulmonary Flow: Unlike a normal heart, there is no sub-pulmonary ventricle to pump blood to the lungs; instead, systemic venous blood flows passively into the pulmonary arteries, Transpulmonary Pressure Gradient: The driving force for pulmonary blood flow is the difference between central venous pressure (CVP) and atrial pressure, Key Complications: Patients are prone to ventricular dysfunction (systolic and diastolic), atrial arrhythmias (poorly tolerated and may require immediate cardioversion), thromboembolism, and protein-losing enteropathy, Perioperative Anesthetic Management > The primary goal is to maintain the transpulmonary pressure gradient by ensuring adequate preload and minimizing pulmonary vascular resistance (PVR) 1. Preoperative Optimization > Conduct a detailed history and physical exam, focusing on functional status and signs of end-organ damage from chronic high venous pressure Obtain a 12-lead ECG and echocardiography to assess rhythm, valvular function, and ventricular contractility, Administer antibiotic prophylaxis for any procedure likely to cause bacteraemia, 2. Hemodynamic Goals > Maintain Preload: These patients are highly preload-dependent; even moderate hypovolemia is tolerated poorly and will drop cardiac output, Minimize PVR: Strenuously avoid factors that increase PVR, such as hypoxia, hypercarbia, acidosis, and inadequate analgesia, Maintain Sinus Rhythm: This is vital for optimal ventricular filling and atrial emptying, Avoid Vasoconstrictors: α-adrenergic agonists should be avoided as they increase PVR; similarly, β-blockers should be used with caution due to negative inotropic effects, 3. Induction and Maintenance > Agents: Avoid myocardial depressants like thiopental Propofol is generally safe if the patient is normovolemic Maintenance: Use low concentrations of volatile agents (<1.5 MAC) to avoid arrhythmias, ideally combined with an opioid infusion (e.g., remifentanil) for stability, Monitoring: Invasive arterial and CVP monitoring are mandatory for major surgery to guide fluid administration, Transoesophageal echocardiography (TOE) or esophageal Doppler can help assess preload and cardiac output, 4. Ventilation Strategy > Spontaneous Breathing: Preferred for short procedures to avoid the negative effects of positive pressure on venous return, Mechanical Ventilation: If necessary, use low respiratory rates, short inspiratory times, and low PEEP, Tidal Volumes: Keep volumes at 5–6 ml/kg to prevent high mean intrathoracic pressures that decrease pulmonary blood flow, 5. Special Considerations > Pregnancy: Epidural anaesthesia is the technique of choice for delivery, as it avoids the PVR-increasing effects of general anesthesia, though it must be titrated carefully to avoid sudden hypotension, Laparoscopy: Most patients tolerate this if intra-abdominal pressure is kept ≤10 mm Hg; higher pressures compress the IVC and severely reduce cardiac output, Embolic Risk: Patients with a fenestration (a residual right-to-left shunt) are at high risk for paradoxical air or fat emboliThe older Fontan patient is at particular risk of thromboembolism, arrhythmias and progressive ventricular dysfunction. Heart function in the pregnant patient with a Fontan circulation deteriorates throughout pregnancy. Elective delivery under epidural anaesthesia is usually the technique of choice. Laparoscopic and day care surgery is usually well tolerated in the young Fontan patient.
+            "What are perioperative considerations for a patient with the TGA pathology",                                                             # Aorta arises from the right ventricle (RV) and the pulmonary artery from the left ventricle (LV), Systemic and pulmonary circulations exist in parallel rather than in series. Deoxygenated blood recirculates to the body, and oxygenated blood recirculates to the lungs, Survival is impossible without communications (PFO/ASD, VSD, or PDA), Atrial-level mixing is the most effectivem, Left Ventricle (LV) Deconditioning: In TGA with an intact ventricular septum, the LV mass rapidly involutes after birth as pulmonary vascular resistance (PVR) drops. If surgery is delayed beyond 2–4 weeks, the LV may fail to support systemic pressures after repair, Perioperative Management Preoperative Stabilization: Prostaglandin E1 (PGE1): Infused to maintain PDA patency for mixing, Balloon Atrial Septostomy (BAS): Performed if mixing is inadequate or if the ASD is restrictive; it improves saturations by tearing the atrial septum, Surgical Options: Arterial Switch Operation (ASO): The standard anatomical repair involving vessel translocation and coronary artery transfer, Arterial Switch Operation (ASO): This is the gold standard, occurring in approximately 80% of cases. It involves cutting the aorta and pulmonary artery just above where they leave the heart and switching them to their proper ventricles (aorta to left ventricle, pulmonary artery to right ventricle).Coronary Artery Transfer: During the ASO, the coronary arteries must be detached from the original aorta and moved to the new aorta ("neo-aorta").Lecompte Maneuver: Often used during the ASO, this maneuver brings the pulmonary arteries forward to sit in front of the aorta to prevent future narrowing.Balloon Atrial Septostomy (BAS): A catheter-based procedure (often done before surgery) to improve mixing of oxygenated and deoxygenated blood.
+            "What are perioperative consideration for a patient with ARDS?"                                                           #               Berlin definition (2012) Mildes ARDS: 200mmHg > PaO_2/FiO_2 < 300mmHg, Moderat ARDS: 100mmHg > PaO_2/FiO_2 < 200mmHg, Schweres ARDS: PaO_2/FiO_2 < 100mmHg PLUS PEEP over 5 and no cardiac failure, ARDS new global Definition (2023) keeps same PF ranges for mild, moderate and severe, adds radiologic and ultrasound feetures, SpO2/FiO2, and HFNO in mild
+        ),
+        
+        FACTS = c(
+            "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
+            "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
+            "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
+            "Pulse oximetry uses spectrophotometry",
+            "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
+            "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
+            "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
+            "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
+            "CT: Factors (FFP or Prothrombin), alpha angle: fibrinogen, MCF: platelets, lysis: fibrinolysis vs TXAlp",
+            "Ankylosing spondylitis: severy neck movement impairment",
+            "rigid bronchoskope technique",
+            "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
+            "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
+            "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
+            "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
+            "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
+            "NSQIP underestimates mortality",
+            "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
+            "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
+            "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
+            "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
+            "LRS > low fiO2  RLS > fiO2 high ",
+            "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
+            "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
+            "Beta-blockers are competitive antagonists on the beta cardiac receptors",
+            "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
+            "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
+            "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
+            "ADDITIVES to epiduran/sacral: clonidin 1mü/kg, morphine 10-20 mü/kg (nausea, pruritus, respiratory depression), ketamine 0.5 mg/kg (concerns for neurotox - not used anymore)",
+            "Filum terminale - terminal extension from the pia from the caudal dural sack (S2-3) to coccux > anchors dural sack caudaly",
+            "(CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
+            "Caudal cornua are remnants of unfused vertebral arches",
+            "Renal clearance = Urine concentration * Urine flow rate) / Plasma concentration",
+            "Surgical Risk Score: very Low, low, intermediate, high, very high risc surgery",
+            "3 cervical sympathetic ganglia and 4 upper thoracic ganglia responsible for head and heart/lung!! (trachea mainly from middle cervical ganglion)",
+            "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
+            "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
+            "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
+            "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
+            "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
+            "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
+            "CO2 (infrared#) - superficial, poor tissue penetration, cutting and superf. surgery), Argon (blue green) - retitinal coagulation and dermatology",
+            "D (in DRSABCDE) (GSC/AVPU, pupils, gross motor function, GLUCOSE!!!!!!!!!!!",
+            "Beck triad (tamponade) - hypotonia, muffled/abolished heart sounds, distenden jugular vain",
+            "How strong it gets: Platelets, How long it needs: Fibrinogen, Initiation: Factors",
+            "Hypercalcaemia makes all segments shorter (PR and ST)",
+            "Neonate CPR: all depends on the HR (assess every 30 seconds - adjust airway manouvers to the HR)",
+            "Neurological assessment - Tone, Power, Reflexex, Coordination, Sensation",
+            "Dorsal and ventral horns are in the spinal chord, anterior and posterior root are coming into spinal chord",
+            "Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2 * R)",
+            "Ortner syndrome - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarsenesss",
+            "Foregn body child > keep spontaneous",
+            "During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!",
+            "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
+            "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
+            "Cooling on countercurrent exchange points (groin, neck, axilla)",
+            "Clearance = dose / Area under curve (concentration/time)",
+            "Loading dose = Volume of distribution x target concentration",
+            "Maintenance infusion rate = target concentration x clearance",
+            "Fentanyl 600 times more lipid soluble than morphine",
+            "Use BLS Flowchart to identify the arrest and use ALS for CPR",
+            "Benign murmors variate on posture, pathological rarely",
+            "Precordial thump only for monitored pulseles VT not for VF or Asystoly",
+            "Fluid deficite for children: BW * Deficite (%) * 10",
+            "85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haem",
+            "olytic disease of the newborn (HDN) - give anti-D immunoglobulin to rhesus negative mothers at 28 weeks and after delivery if baby is rhesus positive, also after miscarriage, abortion, ectopic pregnancy, amniocentesis",
+            "Altitude > high-altitude pulmonary edema (HAPE) or cerebral edema (HACE)",
+            "IV induction is much less associated with laryngospasm than inhalational induction",
+            "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
+            "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
+            "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
+            "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
+            "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
+            "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
+            "Bleomycine and oxygen toxicity for the lung",
+            "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
+            "Palatine tonsil lies between anterior and posterior palatine arch",
+            "Propofol sparing technique",
+            "thermoplastic elastomer",
+            "Le Fort I > floating palat",
+            "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
+            "Pericardium secretes prostaglandins for coronary perfusion",
+            "Always mention the MDT approach before you start",
+            "Epicardium is the inner sheatch of the visceral pericardium",
+            "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
+            "Anesthetic with COMPETING interests",
+            "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
+            "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
+            "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
+            "There is no oncotic pressure in bowmans capsule",
+            "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
+            "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
+            "APRV and relaxation does not make sense",
+            "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
+            "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
+            "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
+            "haemolysis > free Hb crystalyses in bowmann capsule > plugging of renal filter",
+            "CSF low protein, less buffer > CO2 on central chemoreceptors (rostral Medulla = retrotrapezoid nucleus) > fast pH drop",
+            "Radial artery is in the anatomical snuffbox (tabatie), under the tendons of the extensor pollicis longus and brevis",
+            "pons and cerebella build the metencephlon (hindbrain)",
+            "dermatoms, osteotoms and myotoms",
+            "zero order drugs - ethanol, phenytoin",
+            "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
+            "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
+            "Body is on a alkaline neutral side state",
+            "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
+            "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
+            "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
+            "Fibrinolysis is assesset with DDimers, and Thrombintime!",
+            
+            "PICCO: ELWI: > 10mlkg, ",
+            "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
+            "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
+            "MAP = CO (HR * SV) * SVR + CVP (negligible)",
+            "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
+            "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
+            "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
+            "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
+            "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
+            "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
+            "Urea is produced in the liver from ammonia (protein and amino acid metabolism), Protein > amino acids > deamination > NH3 (ammonia) / NH4+ (ammonium) > liver > urea cycle > urea, Why? Because ammonia is toxic, especially to the brain. The liver converts it into urea, which is much less toxic and water-soluble.",
+            "Ammonia (NH3) and Ammonium (NH4+) are crucial acid-base pairs, NH3 + H2O <> NH4+ + OH- ",
+            "Renal ammonium metabolism is the primary component of net acid excretion and thereby is critical for acid-base homeostasis",
+            "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
+            
+            
+            "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
+            "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
+            "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
+            "FFP dose for INR 2,4,>6 is around 10-20 ml/kg",
+            "The acid-base regulation is chiefly dependent on the control of net acid excretion by the kidney and CO2 excretion by the lungs. Renal acid-base homeostasis consists of two major processes, the reabsorption of filtered bicarbonate and the excretion of the hydrogen ion",
+            "SVI: approximately 35–65 ml/m2 - indicator for SV",
+            "Functioning kidney - Urine Na: 10 - 20 mmol/L (RAAS, ADH, Sympathicus activation) otherwise high urine osmolarity, acute tubular necrosis: Urine Na > 40 mmol/L, low urine osmolarity, muddy brown casts ",
+            "Glycopeptides - ONLY G+, (e.g., vancomycin, teicoplanin, oritavancin) - MRSA, Sepsis, Endocarditis - inhibit bacterial wall synthesis (peptidoglycan interaction, D-Ala-D-Ala block), red man syndrom, oto and nephrotoxicity, MRSA and Clostridium difficile infections (oral, not absorbed, QT,  Time dependent killing (need to be above certain level for some time",
+            "Normal urine osmolarity is between 300 - 900 depending on ADH (if ADH low > low urine osmolarity, if ADH high > high urine osmolarity) - osmolarity decreases if kidney function declines",
+            "Inferior border of each rib (neurovascular bundle > VAN (sup > inf) Vein/Artery/Nerve",
+            "Erlanger-Gasser classification of nerve fibers: A (alpha (motor, spindle), beta (touch, propiroception, vibration), gamma (innervate spindles), delta (pain)), B (presynaptic autonomic), C (unmyelinated - pain)",
+            "Dont mix up dorsal/ventral roots (dorsal: sensory, ventral: motor) and dorsal/ventral rami (both motor and sensory) - root vs ramus",
+            "SVV: > 10% is fluid responsive, CI: > 2.5 L/min/m2 is good, SVR: >2000-2400 dynes/sec/cm5",
+            "Isoflurane and enflurane are positional isomers (same molecular formula but have different arrangements of their atoms)",
+            "Shock with ARDS - PAC not needed, Thermodilution (PICCO - CO, GEDV, ELWI) is sufficient, if shock is not improving one can add PAC, of if patient has RV-failure",
+            "HAS BLED SCORE - 1 POINT FOR ANY > Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly > 1 year probability of bleeding for AFib patients",
+            "DES need longer dual platelet therapy (DAPT) than bare metal stents (BMS) - 6 months vs 1 month (the coating prevents endothelisation and thus increases the risk of late thrombosis)",
+            "Viscoelastic tests ROTEM do not take hypothermia and/or hypocalcaemia into account",
+            "Dabigatran (Pradaxa) is a thrombin inhibitor (the only one imortant) - rest is Factor X inhibitors (Apixaban (Eliquis), Rivaroxaban (Xarelto), Edoxaban (Lixiana))",
+            "Carvedilol: non selective with a1 blocking property (vasodilation and low heart rate for insufficient heart)",
+            "Recessus piriformis guide the food into osophagus and prevent aspiration",
+            "The lower the pKa the faster the onset (inverse proportional) - local anesthetics",
+            "Clotting system has transitioned from the classic waterfall cascade (Intrinsic, Extrinsic, and Common pathways) to the Cell-Based Model of Coagulation - Initiation > Amplification > Propagation",
+            "pH changes = acidaemia/alkalaemia > explained either by respiratory acidosis/alkalosins - TERMINOLOGY!",
+            "Clearance (ml/min) = Volume of distribution (ml) x k (/min)",
+            "Boston rule for CO2 (otherwise: 1:4/2:5 rule for H2CO2 compensation): Acidosis > 1.5 * H2CO3 + 9, Alkalosis < 0.7 * H2CO3 + 20 vs Copenhagen rule: every 0.1 pH change 6 BE",
+            "The half-life of fibrinogen is 3-5 days",
+            "SOFA (describes organ dysfunction): Respiratory, PO2/FiO2 (mmHg/kPa), Platelets, (×103/mm3), Bilirubin (mg/dL), GCS, Creatinine (mg/dL)",
+            "Goiter: not only tracheal deviation but retrosternal extension",
+            "INSULIN: 50 UI in 49ml > 0.1 ml/kg/h = 0.1 UI/kg/h",
+            "Larmour equation describes the spin of protons around the B0 magnetic field, the higher the B0, the faster the spin, the better the resolution of the MRI, RF pulse affects this spin",
+            "Heparine can cause osteoporosis",
+            "large store of pre-formed T3 and T4 in the thyroid gland and bound to thyroid binding globulin (99% bound) has to be depleted before any beneficial clinical effect occurs (Carbimazol)",
+            "Cryoprecipitate: Matching with RhD is not necessary",
+            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
+            "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
+            "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
+            "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
+            "Body needs 200 mikrograms Iondine a day",
+            "Amiodaron or contrasting agens can lead to a thyroid storm",
+            "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
+            "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
+            "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
+            "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
+            "Genicular nerves provide innervation to the knee joint",
+            "If large volumes of ABO-incompatible cryoprecipitate are used, the recipient may develop a positive direct antiglobulin test and, very rarely, develop haemolysis.",
+            "HCAP: Healthcare-Associated Pneumonia - Pseudomonas aeruginosa, Staph aureus and MRSA, Klebsiella pneumoniae, Escherichia coli, Acinetobacter species",
+            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
+            "Cryoprecipitate contains fibrinogen, Factor VIII, Factor XIII and vWF, 1 unit for every 10kg, 1 UNIT raises fibrinogen by 0.5-1 g/dL - Fibrinogen level less than 1.5 g/L (2.0 g/L in obstetric haemorrhage or cardiothoracic haemorrhage)",
+            "C3 is the most abundand complement",
+            "Thyroid strom: fever (>40°C), severe tachycardia (>140 bpm), agitation, delirium, psychosis, severe nausea/vomiting, diarrhea, and JAUNDICE",
+            "How long it needs: Fibrinogen, Initiation: Factors, How strong it gets: Platelets",
+            "PPSB is Beriplex (Prothrommbn complex concentrate) - contains factors II, VII, IX, X (and some protein C and S) - used for reversal of warfarin",
+            "ISAAC - International Study Group for Asthma and Allergies in Childhood (ISAAC) questionnaire - assess kids for occurrence of perioperative respiratory adverse events - asthma in family, rhinitis, exzema, nocturnal dry cough (10 times the bronchospasm risk), wheezing at exercise, heyfeever, tobacco exposure, upper airway infection in last 2 weeks, laryngospasm risk decreased by 11% with every year of age",
+            "Anisotropic - probs tilting > if perpendicular to probe > nerve hypoechoic (typical for nerves, identification)",
+            "IPTEM: Contact activation (Kaolin) (in opposition to EXTEM which is tissue factor activation)",
+            "Inodilators (dobutamine) - decrease reistance but keep pressure stable (inotrope) - increase flow (I = U/R)",
+            "Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate",
+            
+            
+            
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
+            "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
+            "PICA originate for the vertebral artery",
+            "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
+            "Carotid bodies (glossopharyngeal) and aortic bodies (vagus nerve)",
+            "The atria contract (right first, then left shortly after)",
+            "Sacral hiatus - palpating posterior superior iliac spines (PSIS); line connecting these forms base of an EQUILATERAL triangle pointing caudally. Apex of triangle lies over hiatus between sacral cornua (level of the sacrococcygeal joint) Thumb feel two sacral cornua",
+            "Dermatoms, osteotoms and myotoms",
+            "Hepatic histoanatomy: HEPATIC LOBULE hexagonal structure with portal triads at all six of angles of the hexagon, PORTAL LOBULE: triangular structure with three central veins at the points of the triangle and a portal triad in the middle, LIVER ACINUS: 3 Zones of oxygen supply, ellipsoidal structure with portal triads at opposite ends",
+            "Carotid sinus - main baroreceptor (more than aortic arch)",
+            "Hepatocytes produce bile and together with the lymphatic vessels they flow in the opposite direction compared to hepatic artery and portal vein",
+            "Liver histology: 50-100k hepatic lobules > hexagonal (6 sides), both portal vain and hepatic artery send vessels to every corner of the six sides of the lobule > and they mix in the sinusoids, in the sinusoids are Kupfer cells (digest bacteria from portal vein) and hepatocytes that metobolise and produce stuff - all goes to central vain and to VCI",
+            "if placing LA under the fascia lata > no coverage of LFCN > FL is deviding the iliacus and rectus femoris",
+            "Dural sack ends typically at S3 in infants and is at S2 at age of 3 (contains CSF and cauda equina) - caudal space is distal to the dural sack and contains fat, veins and nerves (sacral nerves) - LA into the sacral hiatus to block the sacral nerves",
+            "Intercostal nerves have ventral rami (anterolateral body wall and limbs) and dorsal rami (back skin and deep back muscles) - both have motor and sensory fibers",
+            "In 15% of patients the right descending artery comes from the circumflex artery",
+            "SSEP: stimulation of N. tibialis posterior > Abeta fibers via ischiadicus > dorsal root > dorsal horn > fasciculus gracilis > medulla > medial lemniscus > thalamus > somotosensory cortex - fasciculus cunetatus is for the upper extremities",
+            "Acute marginal artery comes from RCA to the right hearts margin, LAD gives of diagonal branches, SA is supplied by RCA in 60%",
+            "In 15% of patients the right descending artery comes from the circumflex artery",
+            "N. glossopharyngeus: GAG REFLEX > posterior 1/3 of tongue, anterior epiglottis surface, valecula, pharynx, carotid body and sinus, parotid gland, stylopharyngeus muscle",
+            "N. glossopharyngeus runs submucosaly behind anterior and posterior tonsillar pillars (piriform fossae)",
+            "LCFN - over iliacus muscle and over, under or through the inguinal ligament",
+            "Carotid bifurcation typically occurs at the level of the superior border of the thyroid cartilage, which corresponds to the C3–C4",
+            "Caudal epidrual space communicates with thoracolumbar space (larger volume get the higher blocks), Dural sack ends typically at S3 in infants and is at S2 at age of 3, Lumbar spinal channel between vertebral bodies anteriurly and vertebral arches posteriory, S5 noch completely fuse - no posterior arch (sometimes S4 as well > opening that is instead is SACRAL HIATUS (between the sacral cornua - to acces the caudal epidural space you have to go through the sacrococcygeal ligament) ,Most frequent in children, anesthesia from the umbillical region to the toes, 1-2 mL/kg of local anesthetic, lateral or prone position,  22G needle inserted at 45 degree angle until loss of resistance, 5-10 mL in adults, 1-2 mL/kg in children, faster recovery, less postop pain mads, less intraop meds",
+            "STOMACH: Eosophagus > cardia > fundus > corpus > antrum > pylorus > duodenum",
+            "Coronary sinus (up to 80%, rest is via thebesian veins) > right atrium, great cardiac vein (anterior interventricular sulcus), middle cardiac vein (posterior interventricular sulcus), small cardiac vein (Runs in the coronary groove between the right atrium and right ventricle), Left Marginal Vein: Drains the lateral wall of the left ventricle, anterior cardiac veins (drain directly into right atrium)",
+            "Trachea > Bronchi > bronchioles > terminal bronchioles (conducting stop) > respiratory bronchioles > alveolar ducts > alveoli",
+            "Medial borders of sartorius and AL meet point is the apex of femoral triangle (femoral triangle block: saphenos proximal to this point, distal to this point is the adductor canal) - DOESNT MATTER - supsartorial space is ok for both - MIDPOINT OF THIGH is good - but not too proximal (motor fibers to the quads)",
+            "Described to achieve a motor sparing effect (quads weekness) compared to the femoral block, Saphenos nerve towards the adductor canal runs with the femoral vein/artery on the AL and below the sartorius (vascular structurs are also between AL and MS - medial is the vastus medialis), NERVE IS LATERAL TO THE ARTERY (nerves to vastus medialis provide pain to anteromedial knee)",
+            "Choroid plexus in the lateral ventricles and partly from third and fourth ventricles, passage of CSF from third to fourth ventricle through aqueduct foramen. Ultimately CSF leaves the fourth ventricle via the foramina of Magendie (in the Midline) and Luschka (Laterally) thence reaching the cisterns and bathing the spinal cord and the brain, 0.3 ml/min (500–600 ml/day). Total volume is 100–150 ml. 85–90% of CSF is reabsorbed through arachnoid villi.",
+            "Mixed nerve, union dorsal (sensory) and verntral (motor) roots in intervertebral foramen, dorsal root ganglia (cell bodies of sensory neurons, known as first-order neurons, are located in the dorsal root ganglia) with cell bodies of sensory neurons, ventral root (carries motor fibers from anterio horn) and aotonomic nerves (lateral horn T1-L2), quick division in dorsal (post.) ramus (back muscles, skin back), ventral (anteior) ramus (limbs, anterolateral body wall + builds plexuses (cervical, brachial, lumber, sacral))",
+            "Ortner Syndrom - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarseness",
+            "300 Million alveoli and up to 100 m2 surface area, 0.3 micrometer thick - Ficks law of perfusion ",
+            "Terminal (anatomical deadspace - 2ml/kg ~ 150 ml) to Respiratory bronchioles where conducting airways end", 
+            "Anatomical unit of the lung is the acinus",
+            "Ribs: 7 true ribs (1-7 - Attach directly to the spine in the back and directly to the sternum), 3 false ribs (8-10 - Do not connect directly to the sternum. Instead, pairs 8, 9, and 10 attach to the cartilage of the rib just above them), 2 floating ribs (11-12 - They attach to the spine in the back but do not connect to the sternum)",
+            "Intercostal musces: External (inspiration, hands in pockets), Internal (expiration, perpendicular to external), Innermost (incomplete muscle (on the side of the chest, M. transversus thoracis anterio portion of the chest), expiration, hands on chest) - neurovascular bundle (VAN: superior to inferior) in costal groove inferior rib part (BETWEEN INTERNAL AND INNOMOST INTERCOSTAL MUSCHLE)", 
+            "Blood supply to the intercostal space: posterior intercostal artery (from thoracic aorta), anterior intercostal artery (from internal thoracic artery), intercostal vein (drains into azygos system)",
+            "Mechanics of breathing: upper ribs increase AP diameter, lower ribs increase transverse diameter",
+            "Retinal blood supply: Dual supply: Inner retina → central retinal artery, Outer retina → choroidal circulation, Ophthalmic artery (from internal carotid) > central retinal artery (enters with optic nerve - inner retina - end artery, no collaterals - occlusion is bad (Cherry red spot) on fundus - imminnent blindness!!!!!!), short ciliary arteries (outer retina, choroid), long cilliary arteries >  iris, ciliary body), central retinal vein > superior ophthalmic vein > cavernous sinus,",
+            "Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)",
+            "During muscle contraction (the sliding filament model), the I-band and the H-zone narrow as the filaments slide past one another",
+            "The lower you puncture for IJV in the sedillets triangle the more anterio the carotid gets",
+            
+            
+            
+            
+            
+            # ANTIBIOTICS
+            "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
+            "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
+            "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
+            "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
+            "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
+            "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
+            
+            
+            # ACID-BASE-BLOOD-GAS
+            "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
+            "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
+            "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
+            "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
+            "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
+            "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
+            "ULTRAFILTRATION (UF) is the filtration of water from the blood, driven by the transmembrane pressure (TMP) gradient between the blood & effluent. TMP can be titrated by adjusting the effluent pump & pressure. Ultrafiltration (UF) provides clearance by convection (also called solute drag) removing small & medium sized molecules.",
+            "RRT: BLOOD FLOW RATE (QB) is the flow rate of blood through the dialysis circuit. Higher flows enable greater clearance/UF & have lower thrombosis risk but may require larger access & have more adverse hemodynamic effects VS DIALYSATE FLOW RATE (QD) is a countercurrent flow of dialysate through the dialyzer. Higher flow rates enable greater clearance of small molecules via diffusion.",
+            "RRT: IHD: needs fistula/graft, highest clearance QB/QD: 300/500, RR common, risc of DISEQUILIBRIUM SYNDROM (cerebral oedema, seizures, coma), SLEDD (sustained low-efficiency dialysis) is a hybrid of IHD and CRRT, CRRT: continuous, slower, better for haemodynamically unstable patients, QB/QD: 200/100, moderate clearance, less RR, CRRT: continuous on ICU,  QB/QD: 200/50, least RR, slow correction, Thrombosis risk, immobility, higher cost",
+            "CRRT MODES: SCUF (slow continuous ultrafiltration) - only fluid removal, no dialysate, no e-lytes removal, no clearance, no pH correction, CVVH (continuous venovenous hemofiltration) - Continuous venovenous hemofiltration. Provides convective clearance by filtering a large volume of blood; Replacement fluid restores volume lost. Corrects uremia, lytes, pH and can remove volume, CVVHD (continuous venovenous hemodialysis) - diffusion, Continuous venovenous hemodialysis. Provides diffusive clearance by running dialysate opposite blood flow. No replacement fluid used. Gently corrects uremia, lytes, pH, CVVHDF (continuous venovenous hemodiafiltration) - both, Continuous venovenous hemodiafiltration. High clearance achieved using both UF & dialysate flow (both convection & diffusion). Replacement fluid used. Allows fluid removal and correction of electrolyte/pH. Good for toxin removal",
+            "CVVHDF (continuous venovenous hemodiafiltration) - both, Continuous venovenous hemodiafiltration. High clearance achieved using both UF & dialysate flow (both convection & diffusion). Replacement fluid used. Allows fluid removal and correction of electrolyte/pH. Good for toxin removal",
+            "CVVHD (continuous venovenous hemodialysis) - diffusion, Continuous venovenous hemodialysis. Provides diffusive clearance by running dialysate opposite blood flow. No replacement fluid used. Gently corrects uremia, lytes, pH",
+            "SCUF (slow continuous ultrafiltration) - only fluid removal, no dialysate, no e-lytes removal, no clearance, no pH correction - difference between the blood pressure in the hollow fibers and the surrounding pressure is the Transmembrane Pressure (TMP). The TMP determines the ultrafiltrate production.",
+            "CVVH (continuous venovenous hemofiltration) - Continuous venovenous hemofiltration. Provides convective clearance by filtering a large volume of blood; Replacement fluid restores volume lost. Corrects uremia, lytes, pH and can remove volume",
+            "RRT: remove urea, K, excess fluid, Clearance (V cleared) depends on blood flow and dialysate flow + dialyser, 2 main principles (Diffusion = Dialysis (smaller < 200 D) and Convection = Ultrafiltration (small and medium < 50kD)",
+            "RRT indications: A: acidosis, E: electrolytes (K,Ca), Intox (Barbiturates, Lithium, carbamazepine, metformin,methanol, salicylates, thallium, theophylline, valproate), O: Fluid overload, U: Uraemia (mental, uraemic pericarditis, bleeding diathesis)", 
+            "Bartnerr Syndrom > defect of the NaK2Cl channel (RR low, hypokalemia, metabolic alkalosis) - loop diuretics (furosemide) inhibit this channel and can cause similar symptoms)",
+            
+            
+            
+            # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
+            "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
+            "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
+            "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
+            "DKA triad: ketonuria, acidosis, hyperglycaemia",
+            "X-linked recessive, most common enzymatic disorder of red blood cells, G6PD is an enzyme in the pentose phosphate pathway that helps protect red blood cells from oxidative damage, deficiency can lead to hemolytic anemia in response to oxidative stress (e.g., infections, certain drugs like sulfonamides, antimalarials, and fava beans), avoid triggers, monitor for signs of hemolysis (jaundice, dark urine, fatigue), maintain hydration and consider blood transfusion if severe hemolysis occurs, riggers for hemolysis: Oxidative stress caused by medications, infections, metabolic acidosis, ketoacidosis, hypothermia, and surgical stress. Anesthesia-related medications: Avoid: Medications that trigger oxidative stress or methemoglobinemia. Absolutely contraindicated: Methylene blue (is ineffective and triggers severe hemolysis), Critical: Lidocaine, Prilocaine (EMLA), Metoclopramide, Diclofenac, and high-dose ASA, Safe: Propofol, Ketamine, Fentanyl, Sufentanil, Rocuronium, succinylcholine, bupivacaine, acetaminophen (in therapeutic doses), and nitrous oxide. Management tips: Preoperatively: Screen for jaundice; laboratory tests (LDH, haptoglobin, bilirubin, LDH, spherocytes on smear, reticulocytes); no elective procedures during acute hemolysis; intraoperatively: Avoid stress through generous analgesia, maintain normothermia, closely monitor blood glucose; Postoperatively: Hemolysis usually occurs 24–72 hours after exposure to the trigger (therefore, outpatient anesthesia is not recommended); Monitor urine for hemoglobinuria",
+            "COACHED approach: Continue compressions, Oxygen away, All clear except compressions, Charging, Hands off, Evaluate, Deliver or Disarm",
+            "Pacemaker: Fourth Letter: RATE MODULATION: O: none, R: rate respopnsive > DDDR (adjusts rate to activity), Fifth letter: MULTISIDE PACING (in the same chamber) 0: none, A: Atrium, V: Ventrikel: D: both",
+            "DDDRV: Pacing in both chambers (atria and ventrikels), Sensed in both chambers (atria and ventrikels), Triggered or/and inhibited, rate modulated, and has multiple pacing wires in the ventrikel",
+            "Pembertons sign: facial plethora and distended neck veins when raising the arms above the head - indicative of a large goiter causing thoracic inlet obstruction - narrows thoracic inlet",
+            "Fat embolism: most in closed fractures, long bones (up to 33% in bilateral femur), 24-72 post injury, TRIAD: neurological, respiratory and petechial rash, BUT also pyrexia, right heart strain, coags",
+            "Bone cement: no agreed definition, hypoxia, RR, arrytmias, PAH and cor pulmonale, at femoral reaming, acetabulum and fermoral cement impantation, insertion of prosthesis, joint reduction",
+            "Consenting for epidural: gestational history (eklampsia, RR, gDM), check airway, clotting and previous transfusions (Group and antibodies with previous transfusions), general partal progression, PLACENTAL LOCATION (if previos SS and sectiones)",
+            "Previos C-sections increase ratee of accreta and other infiltration abnormalities by 1: 3%, 2: 11%, 3: 40%, 4: 60%, 5: 67%",
+            "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
+            "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
+            "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
+            "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
+            "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
+            "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
+            "Preeklampsia:  Mg 4-6g bolus (Magpie Trial) over 20 min, 2g/h Mg infusion (reflexes), labetalol (alpha and beta) or hydralasine 10-20mg iv (if severy hypertensive), urapidil is better than dihydralazine, dexamethason 6mg bolus every 12h or Methyldopa (2000-3000mg/d if mild hypertension as tablets)",  
+            "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
+            "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
+            "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
+            "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
+            "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
+            "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
+            "Preeklampsia: Consent - risk/benefit informed consent - best way to treat pain, avoiding RR decompensation and improve fetal blood supply (ALSO RECOMMENDET IN PLACENTAL INSUFFICIENCY), 1:25 fail and need reciting, 1:150 headache (worst headache in live), temporal nerve injury 1:1500, permanent nerve injury: 1:100 000",
+            "Anticholinergic: hot and dry (antihistaminics, TCA, antimuscarinics), Sympathomimectics (labetalol (non-selective beta blocker), malignant hyperthermia: hot, sweaty, rock hard, SEROTONINE: fast onset, CLONUS, dialted pupils (Hunter and Sternback creteria) - CYPORHEPTADINE, NMS: dopamine antagonist (antipsychotic, parkinson meds, antiemetics) - need BROMOCRIPTINE (Dopamine agonist)",
+            "Increased doses of remifentanyl PCA during labor can present abnormal fetus positioning",
+            "CPR + Pregnancy: left side, early intubation (increase in aspiration risc), perimortem cesarean section after 4 minutes of unsuccessful resuscitation (if uterus is above umbilicus) - delivery at 5 mninutes",
+            "Spinal anesthesia: 10mg hyperbaric Bupivacain (2ml Bupi 0.5%",
+            "Hyperosmolar hyperglycaemia state (HHS) - severe hyperglycaemia (>600 mg/dL), hyperosmolarity (>320 mOsm/kg), dehydration, and altered consciousness without significant ketoacidosis - more common in type 2 diabetes - still some insuline is present",
+            "Mediastinal mass: 4Ts: Terrible infections, Thymoma, Teratoma (germ cell tumor), retrosternal Thyroid)",
+            "PLAN PREPARE PROCEED - extubation or other interventions ",
+            "Large mediastinal mass: positional - not for sedation, maybe lateral or prone - otherwise not suitable for sedation procedure",
+            "Goiter: tachy, CO2 normal, no rigor, high fever - thyroid storm",
+            "Parkinson: decrease in dopaminergic and increase in cholinergic activity, Levodopa (precursor) PLUS decarboxylase inhibitor, Or dopamine agonists (pramipexol), or NMDA receptor antagonists (amantadin), no droperidol, MCP or haloperidol, cave with antihistaminics due to anticholinergic effect, Aspiration risc and recurrent pneumonia, postural hypotension and autonomic dysfunction, increased sensitivity to sedatives and antipsychotics (dopamine antagonists), avoid metoclopramide (dopamine antagonist), use domperidone instead (does not cross BBB), avoid haloperidol, use quetiapine or clozapine if needed",
+            "Thing about the WHO safty checklist and the fucking GRADE guidlines guidline",
+            "Propofol has a bigger negative RR effect than thipental, but can blunt the laryngoscopy stimulus better and prevent RR spike",
+            "Glycine 1.5% non electrolyte solution for monopolar TURP - basically free water > dilutional hyponatreamia (non-conductive, less tissue damage, less obturator reflex, but can cause hyponatremia and glycine toxicity - visual disturbances, nausea, vomiting, confusion, seizures), if monopolar then saline can be used, TUR syndrome—dilutional hyponatraemia, hypo-osmolality, cerebral symptoms, and volume overload, plus glycine-related visual/CNS effest",
+            "Post dural headache: 15min after standing up, 5 days after puncture > Neck stiffness, tinnitus, changes in hearing, photophobia, nausea > CAVE: can be a haematoma or abscess",
+            "Trousseau’s and Chvostek’s signs - low Ca and Mg",
+            "DKA - relative lack of K, potassium infusion (10 - 20 mmols/h starting if K below 5mmol/l) may be warranted especially after fluid rescucitation (20ml/kg up to 10L) and insuline (0.1 U/kg/h) - insuline boluses not advised anymore - initiatsation, if blood sugar drops to fast, initiate dextrose infusion to prevent cerebral oedema",
+            "Right upper bronchus (3 segments and mercedes) very steep at 12 and only after 2-2.5 centimeters, left upper bronchus at 5 cm",
+            "Vagal bradycardia after peritoneum insufflation",
+            "Manometer: inflate 1-2cmH2O if in a bronchus - ususally 25 cmH2O for tracheal",
+            "Coca Cola Urine - Rhabdomyolysis, muscle breakdown, myoglobinuria, hyperbilirubinuria (Cholurie), treat with fluids (myoglobin dilution --- MOST IMPORTANT), mannitol, bicarbonate",
+            "Post drual headache: caffeine: 200mg 3/d, theophyllin 300mg 3/d, Gabapentine 300mg 3/d, hydrocortison 10mg po 3/d, paracetamol - max 4g, Ibuprofen max 2.4g",
+            "In BLS abnormal breathing qualifies for CPR!",
+            "4 weeks baby: 2.5 uncuffed and 3 cuffed tube, 9cm depth oral, 11 cm depth nasal",
+            "DLT - hypoxaemia, if inhalation, CPAP on collapsed lung does not help, clamp pulmoary artery to the collapsed lung, reverse to two lung ventilation",
+            "Double lumen tube or single lumen tube with a bronchus blocker could be used to isolate the lung",
+            "Male 160 - 170cm: 39F DLT, 170 - 180cm: 41F, >180cm > 41F, depth: Average Adult (170 cm): standard depth at incisors is 29 cm. Height-Based Adjustment: For every 10 cm increase or decrease, adjust by 1 cm (add 1 cm for every 10 cm > 170 cm; subtract 1 cm for every 10 cm < 170 cm) - Average depths typically range between 27 cm for women and 29 cm for men",
+            "Tube deapth: 7-8-9 rule: 1kg > 7cm deep, 2kg > 8cm deep, 3kg > 9cm deep",
+            "Perioperative ruptured aneurysm > 24mg adenosine",
+            "Transplanted heart: silent ischemia esp due to antiinflammatory drugs, no anesthesia depth, SVT not with carotid massage, arrytmias far more common (5% on pacemaker), catecholamins unpredictable, no baroreflex, no tachy on laryngoskopy or other interventions",
+            "PYLORIC STENOSIS: loss of HCL (protons) - dehydration and increase in aldosteron (similar to Conn) > hypokalemia (in exchange for Na), HYPOCHLOREMIC, HYPOKALIEMIC ALCALOSIS with acidic urin due to Na/H exchange in the kidney - RISC OF APNEA (to compensate for alcaloses)",
+            "Laser: patient AND stuff safety, wet gause on the eyes, matt instruments, saline in case of fire, non flammable drapes, smoke evacuation system, avoid inflammable substances (alcohol, chlorhexidine), eye protection for staff, avoid laser plume (can contain viruses and bacteria)",
+            "Laser tube: long, stainless steel, corrugated, flexible tube with 2 cuffs",
+            "Variable Rate Insuline Infusion (VRII)",
+            "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
+            "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
+            "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
+            
+            # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
+            "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
+            "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
+            "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
+            "Recombinant FVII - 90 U/kg",
+            "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "Intrinsic system: activated when Factor XII (Hageman factor) comes into contact with negatively charged surfaces—such as exposed subendothelial collagen at an injury site",
+            "Clopidogrel, Ticagrelor, Prasugrel are P2Y12 inhibitors (ADP receptor inhibitors) - inhibit platelet aggregation - Hemmung der ADP-bedingten Thrombozytenaggregation, sowie der Freisetzung der Plättcheninhaltsstoffe und der Bildung von Thromboxanen",
+            "Fibrinogen 30-60mg/kg, FXIII 20 UI/kg",
+            "clotting factors are proteins. There are 13 main clotting factors in the blood; nearly all of them are specialized proteins (such as enzymes and cofactors) produced primarily by the liver",
+            "Urokinase/Streptokinases are serine proteases that activate plasminogen to plasmin, which breaks down fibrin",
+            "A5, A10, A15 or A20 value These values describe the clot firmness (or amplitude) obtained after 10, 15 or 20 minutes (beginning from CFT) - provide a forecast on the expected MCF value",
+            "Apixaban: depends on your dosage, kidney function, Prophylactic Dose (e.g., 2.5 mg twice daily): Wait at least 36 hours after your last dose.Treatment Dose (e.g., 5 mg or 10 mg twice daily): Wait at least 48 to 72 hour, test to check your residual drug level (e.g., anti-Xa levels, CAVE renal failure",
+            "If CT long (give cryoprecipitates, FFP or PPSB), if CFT long (give fibrinogen), if alpha low (give platelets and fibrinogen), if MCF low (give fibrinogen and platelets)",
+            "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
+            "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
+            "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
+            
+            
+            
+            
+            
+            
+            # DEVICES
+            "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
+            "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
+            
+            
+            # ECG
+            "Right axis deviation, dominant R wave in V1 and deep S wave in V6 suggest right ventricular hypertrophy due to cor pulmonale",
+            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
+            "ST elevation in aVR due to LMCA or “left main” occlusion is a misnomer — simultaneous anterior, posterior and lateral STEMI leading to almost instantaneous death",
+            "Upright P-QRS-T complex in aVR with otherwise normal QRS conduction should raise suspicion for limb lead reversal",
+            "Vertical axis (III and aVF very positive) and clockwise rotation (prolonged R progression in wilson leads - transitional lead is V5), peak P waves in inferior leads, Low voltages in the left-sided leads (I, aVL, V5-6)",
+            "aVR is not a real lead – it is calculated from leads I and II and is a mirror (reciprocal) image of changes seen in these leads",
+            
+            
+            
+            
+            # ENDOCRINOLOGY
+            "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
+            "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
+            
+            
+            
+            # EMERGENCY 
+            "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
+            
+            
+            
+            # FORMULAS
+            "Aa difference: Age / 4 + 4",
+            "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
+            
+            # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
+            "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
+            "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
+            "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
+            "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
+            "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
+            "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
+            "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
+            "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
+            "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
+            "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
+            "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
+            "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
+            "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
+            "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
+            "FICK: Tracer is oxygen, Relies on mixed venous blood sampled from the pulmonary artery, and arterial blood sampled from a peripheral arterial line",
+            "CBF measurment - Kety–Schmidt technique applying the Fick principle using inhaled nitrous oxide.",
+            "Natural variability - CO varies by 10% (changes in intrathor. P (3-5 measurementsat end-expiration), Incorrect volume of injectate (Too much underestimates CO, Too little overestimates CO), Warm fluid (greater degree of error), too cold > bradyarrytmias, Tricuspid regurgitation or Pulmonary regurgitation Results in retrograde ejection of injectate back past the valve, resulting in a prolonged decay time of the thermodilution curve. This usually results in underestimation of CO, but can result in overestimation depending on the severity of regurgitation and the true CO. Shunts: Thermodilution measures RV CO only. LV CO and RV CO not be equal if intra- or extra-cardiac shunts, Arrhythmia",
+            "PICCO: The area under the curve can be used to calculate cardiac output, as per the modified Stewart-Hamilton Equation",
+            "Exponential' means that the gradient is becoming less steep as time goes on",
+            "Clarc electrode: POLAROGRAPHIC (measures current generated by reduction of O2 at platinum cathode) - need 0.6 power supply",
+            "Platelets and FFPs from female, multipara donors more likely to cause TRALI",
+            "Stewart Hamilton equation: cardiac output is equal to the amount of an indicator injected divided by its average concentration in the arterial blood after a single circulation through the heart, cardiac output is inversely proportional to the mean blood-temperature depression",
+            "How strong it gets: Platelets, How long it needs: Fibrinogen, Initiation: Factors",
+            "Stewart Hamilton equation: CO = amount of injected indicator / area under dilution curve",
+            "Tiffeneau-Index (auch Tiffeneau-Wert oder FEV1/FVC-Ratio - reversibility > 12% favors asthma, otherwise COPD is suspected",
+            "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
+            "Coumarines causes a significant prolongation of the Clotting Time (CT) in ROTEM® (Rotational Thromboelastometry)",
+            "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
+            "Isobestic point (800nm) - both oxy and deoxy Hb absorb the same amount of light, both are indistinguishable - total haemoglobin absorbance ~ total haemoglobin concentration",
+            "Capnography: Non-Dispersive Infrared Spectroskopy (uses filter (saphire) for spectroscopy",
+            "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
+            "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
+            "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
+            "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
+            "Amniotic fluid embolism - flat ROTEM trace",
+            "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
+            "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
+            "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
+            "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
+            "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
+            "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
+            "Systemic vascular resistance - 700–1600 (dyn·s/cm5) OR 9–20 (mmHg·min/L or Wood units) VS Pulmonary vascular resistance 20–130 (dyn·s/cm5)	OR 0.25–1.6 (mmHg·min/L or Wood units)", 
+            "Bronchial transplants do not need circulation and in lung transplants vessels are not attached",
+            
+            
+            
+            # REGIONAL
+            "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
+            "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
+            "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
+            
+            
+            
+            
+            
+            
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
+            "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
+            "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
+            "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
+            "SIRS (Systemic Inflammatory Response Syndrome): Fiever, Tachycardia, Tachypnea, Leukocytosis or leukopenia - 2 or more criteria",
+            "SIRS Criteria (Systemic Inflammatory Response Syndrome), Temperature > 38 degrees C or < 36 degrees C (Yes = 1; No = 0), Heart rate > 90 (Yes = 1; No = 0), Respiratory rate > 20 or PaCO2 < 32 mmHg (Yes = 1; No = 0), WBC > 12,000 / mm3 or < 4,000 / mm3 or > 10% bands (Yes = 1; No = 0)",
+            "SIRS Score 0 or 1: Patient does not meet criteria for SIRS Score 2, 3 or 4: Patient meets SIRS criteria. Note that this does not diagnose infection",
+            "DUKE endocarditis: MAIN: blood culture, Echo, Intraop confirmation (SIDE CRETERIA: predisposition, fever, immunological phenomena, microbiological evidence)",
+            "Sepsis 3 (2016 - Singer, Angus): ## life-threatening organ dysfunction caused by a dysregulated host response to infection, no severe sepsis anymore, SOFA > 2 (mortality 10%)",
+            "Prognose vascular spasms: Fischer scale (modified): 1: ≤ 1 mm SAB, keine IVB # 24%, 2: ≤ 1 mm SAB, IVB - 33%, 3: > 1 mm SAB, keine IVB 33%, 4: > 1 mm SAB + IVB oder intrazerebrale Blutung - 40%",
+            "NSQIP evaluates over 20 patient variables and the specific Current Procedural Terminology (CPT) code to predict 15+ different postoperative complications (such as pneumonia, SSI, and renal failure)",
+            "Aortic stenosis:  > 2,5cm² normal, < 2cm² mild (2-3 m/s, mean gradient < 20 mmHg): 1-1,5cm²: moderate (3-4 m/s, 20-40 mmHg), < 1cm²: severe „high-grade“ (>4 m/s, > 40 mmHg)",
+            "NSQIP utilizes a massive, continuously updated database of millions of surgical cases to calculate exact percentages",
+            "quickSOFA (qSOFA): respiratory rate of 22/min or greater, altered mentation, or systolic blood pressure of 100 mm Hg or less",
+            "Septic shock identified > vasopressor requirement to maintain MAP of 65 mm Hg or greater + lactate > 2 mmol/L (>18 mg/dL) in the absence of hypovolemia (Mortality 40%)",
+            
+            
+            
+            # STATISTIC
+            "ATTRITION bias - droping out non randomly - intention to treat, REPORTING bias (publishing), DETECTION bias (equipment), ALLOCATION bias (study group), SELECTION bias (population not properly represented - RCT, INFORMATION bias, and confounding",
+            "Bland-Altman plot: X: Average of 2 measurements, Y: difference of two measurements, method to compare two measurements of the same variable, plotting the difference between the two measurements against their average, to assess agreement and identify any systematic bias or outliers",
+            
+            
+            # OBSTETRICS
+            "If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - very potent uterotonic (bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, Thrombos: 70-100, MAD: 55-65, pH > 7.2, T > 34, Ca > 0.9 mmmol/L, BE > -6, mEq/L, Lactate < 4 mmol/L  bleeding - check Tissue, Trauma, Thrombin, Tone, LESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol 1g rectaly or 600mü orally (synthetic E1-prostaglandine for uteral contraction and good for gastric ulcer - off label - stimulation of prostaglandine receptors), if SHOCK index > 0.9 (HR/sRR)", 
+            "Avoid NSAIDs in pregnancy to avoid prmature ductus closure in 3 trimester",
+            "Anesthetic during pregnancy after completed organogenesis (week 10 completed) - very low teratogenicity, induced labor and misscariage, haemodynamic compromise (but if emergency operation (lap chol) - this outweights the anesthetic risc",
+            "FVII (if fibrinogen > 1.5g/L, Thrombos > 50k and T > 35), FXIII 20 IE (GOAL activity > 60%, PPSB 25 UI/kg, FFP 30ml/kg (4:4:1 ratio), repeat 1g TXA, If congenital thrombopathy: DDAVP 0.3mü/kg  If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - also labor induction, 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, ThLESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol 1g rectaly or 600mü orally (synthetic E1-prostaglandine",
+            "If surgery on a pregnant - RSI, Sodiumcitrate, MCP, Fetal heart rate, contract to midwifery to inform, left tilt (caval compression)",
+            "Hemolysis, elevated liver enzymes, and low platelet count (HELLP) syndrome develops in approximately 20% of women with severe preeclampsia (pulmonary edema, acute renal failure, disseminated vascular coagulopathy, abruptio placentae, hepatic hemorrhage or failure, and fetal or maternal death)",
+            "PDK-Anlage im Kreissaal bei unauffälliger Gerinnungs- und Schwangerschaftsanamnese OHNE Laborkontrolle möglich, DGAI. A&I 2009",
+            
+            
+            
+            # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
+            "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
+            "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
+            "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
+            "Corticoids: hypokalaemic metabolic alkalosis, moon face, buffalo hump, striae, osteoporosis, diabetes, immunosuppression, cataract, glaucoma, myopathy, psychiatric symptoms (depression, psychosis), peptic ulcer disease",
+            "Corticosteroids equivalent dosing: 20 mg hydrocortisone = 5 mg prednisolone = 0.75 mg dexamethasone, 2mg fludrocortison (250 times sodium retention compared to hydrocortisone), dexa no mineralocorticoid effect",
+            "Corticoids: 20mg/d endogenous cortisol secretion, anti-insulin effect, cerebral oedema up to 20 dexa, for airway oedema 0.1 - 0.2 mg/kg dexamethasone",
+            "Hepatic clearance = hepatic blood flow (Q) * extraction ratio (E) - high E drugs (propofol, fenta) - clearance is flow-dependent, low E drugs (e.g., diazepam, phenytoin, ROCURONIUM) are cleared slowly and capacity-limited",
+            "Chiral isomers (enantiomers) have identical physical and chemical properties BUT not pharmacodynamic properties (because biological targets are chiral) - S-Ketamine/Levobupivacaine (less cardiotoxic), Cisatracurium (different potency from isomers)",
+            "Contraction alcalosis in diurhetics (bicarbonate increase) - extracellular volume depletion but fixed bicarbonate",
+            "Elimination rate constant (k) = 1/ time constant (min)",
+            "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
+            "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
+            "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
+            "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
+            "LD = Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Nalbuphin: mü-antagonist and kappa-agonist, 0.1 - 0.2 mg/kg",
+            "Nalador (sulproston: PGE2 prostaglandin receptor agonist in uterine smooth muscles BUT also bronchi - BRONCHOSPASM, PAH, MI!!!), Ergometrine (Ergonovine) (UNCLEAR mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension), Prostaglandins analoges (Dinoprostone, Misoprostol) (PGE2 > cervical ripening, PGF2a > uterine contraction), Carbetocin (Oxytocin analogue with longer half life)",
+            "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
+            "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
+            "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
+            "Antagonists have a flat line on a dose responce curve",
+            "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
+            "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
+            "Bupivacain is 20 times more lipid solumble and 4 times more potent than lidocain",
+            "In healthy anion gap unmeasured particles include: albumin (net negative charge), Phosphates, Sulfates (Sulfur-containing anions), Organic acids: lactate",
+            "Andexanet (Ondexxya) > reversal agent for factor Xa inhibitors apixaban AND rivaroxaban) - modified recombinant factor Xa",
+            "Diastasis is the longest phase in cardiac cycle (diasole - after rapid filling and before atrial contraction)",
+            "Atrial filling (V wave) - happens during systoly!",
+            "Lithium (bipolar, manic) - need plasma monitoring (0.6-1.2 mmol/L), narrow therapeutic window, , no antidote (RRT), excretion renal (95%), toxicity can be precipitated by dehydration or renal impairment, polyuria, polydipsia, prolonged muscle relaxants, avoid diurhetics, NSAIDS and ACEs, cave in hyponatriemic pats - kidney trys to reabsorb Na and Li in exchange for K, so if Na low > more Li reabsorption > toxicity, if K low > more Li reabsorption",
+            "Beta-2-Sympathomimetics - hypo-K and hypoerglycaemia",
+            "PK: 4 compartments of the body: VRG (75% blood supply for 10% of mass, brain, kidney, hart, liver), Muscle (19% for 50% mass), Fat (6% for 20%), VP (0% for 20%, bones, tendons)",
+            "MAO-B inhibitors (selegeline) are used in Parkinson's disease to increase the amount of dopamine available in the brain, no data for stoppin them preop, use DIRECT like phenylephrin (instead of indirect ephedrin), epi in local or regional is not advised, MAO-A: especially catecholamines (amins), MAO-B especially tyramine (AS) - lethal overdose (Dantrolen suggested), tyramine free diat (avocados, cheese, chianti wine, liver and fava beans, selegelin (MAO-B) no dietary restrictions",
+            "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
+            "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
+            "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
+            "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
+            "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
+            "Antimetabolites: Mucophenolate, Azathioprine, 5FU: resemble normal cellular metabolites and interfere with DNA or RNA synthesis (mimic purines, puyrimidines, folates) - Bone marrow suppression, mucositis, diarhea",
+            "Digoxin increases the refractory period of the AV node and bundle of His but decreases the ventricular refractory period",
+            "An agonist will have an affinity of 1 (morphin vs buprenorphine)",
+            "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
+            "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
+            "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -804,15 +1621,21 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
             "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
@@ -826,618 +1649,18 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
-
-            
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
-        ),
-        
-        
-       
-        
-        
-            # ANAEDOC
-        anae_doc = c(
-            # "Graph the pressure and volume changes in LV during cardiac cycle",                                                       ####
-            "Explain the difficulties in anesthetising a heart transplant patient",                                                   ###              Primary graft dysfunction is the most important cause of early death, check organ function, assess antiinflammatory drugs, is a rejection ongoing, who is the transplant team, no sympathetic, these patients are “preload dependent” as an increase in cardiac output is dependent on venous return denervated heart lacks the ability to respond acutely to hypovolemia or hypotension with reflex tachycardia, parasympathetic, or sensory innervation, and the loss of vagal influence results in a higher‑than‑normal resting heartrate,  General anesthesia is preferred and central neuraxial blockade is avoided to prevent acute vasodilatation and uncontrolled hypotension, the native P‑wave cannot traverse the suture line and thus has no influence on the chronotropic activity of the transplanted heart (two p waves are posible). Carotid sinus massage and the Valsalva maneuver have no effect on the heart rate. There is a loss of cardiac baroreflexes and loss of sympathetic response to laryngoscopy, tracheal intubation, and inadequate anesthetic depth or analgesia due, Denervation also alters the pharmacological response to certain drugs. The cardiac vagolytic effect of drugs such as atropine and glycopyrrolate are lost; therefore, isoprenaline and adrenaline should be readily available, Neuromuscular, blocking agents should be avoided when muscle relaxation is non‑essential for surgery, thus avoiding the need for reversa (massive sensitivity to Ach-esterase inhibitors), most common drug regimen includes tacrolimus, mycophenolate, and prednisone. Tacrolimus and prednisone can cause hypertension, diabetes, neurotoxicity, and renal insufficiency. Mycophenolate mofetil may result in anemia, leukopenia, and thrombocytopenia.[
-            "What are perioperative consideration in patients with long QT-syndrom",                                                  #               Romano-Ward, Lange-Nielsen, Bradycardia is the "loaded gun" (slow rhythm, long QT) and the tachycardia (Torsades) is the "bullet", Polymorphic VT, Most danger in low K, Mg or Ca, different triggers (sport, sudden auditory, rest/sleep - different channulopathy), synkopies or sudden deaths in family, Inborn usualy K-chanel loss and Na-channel gain (Romano-Ward, Lange-Nielsen), TIVA - NO VOLATILES!!!!!!!!!!! (QT increase), Propofol (if not possible midazolam, etomidate or thio not clear but possible), PONV only dexa, in LA no additives like adrenaline, extubation deep to prevent tachycardia, Pads ready, Magnesiom reads?, Roc and atracurium ok, only Suggamadex (Bridion) (no Ach-esterase inhibitors - QT longer), Most important B-blockade and ICD, Elytes norm, premediaction to prevent stress tachycardia, ALL OPIOIDS ARE OK, SCHWARZ score (most points for over 480ms, syncopies history, death in family, Stress, pain, anxiety ect (tachycardia), Danger if QTc > 440ms (men), 450 ms (women), 2g Mg therapy,  Increased risc for torsades and VF, check elytes (esp. low K), The QT interval reflects repolarization of the myocardium (longer plateau (phase 2) and longer vulnerable phase R on T), Na or K channelopathies, Romano-Ward-Syndrom, BAZETT formula > QTc = QT / square root of R-R distance, Lange-Nielsen-Syndrom, ondansetron, amiodaron, markolids, fluorochinolones, droperidol, haloperidol, TCA, SSRI, Methadone, azoles, notched T waves,
-            "Tell me about the perioperative management of a pacemaker patient",                                                      ##               If MRT: turn antitachy function off, check suitability (non chest MRT ok), Bipolar cautery is advised, no contact to wires, lowest possible current, monopolar pad (neutral) as far away from pm as possible, ZVK > mobilisation of thrmobogenic material from the leads, keep seldinger wire not too deep, magnet can turn the pc into asynchrone modus with constant HR, for ICD can a magnet turn off the antitachykard function, Monopolar cautery might be a problem, Keep normo-everything to fascilitate transduction of signals, succi fasciculation can be misinterpreted as tachy (turn off frequenzadaptation is not advised), Type of anesthesia is irrelevant, need to know: pacemaker dependent? every p and QRS with a spike? Newrst PM very small spikes, Every 12 month check, battery (should be ok for 10y), Internationnal 4 integers code (for both pacemakers and ICDs) Up to 100k implanted in G, ICD most in cardiac failure or cardiomyopathy (malignant arrytmias) patients, or combination with ICD, most often bradycadic symptomatic (syncopy,dizziness, ischemia), Active fixation - screw mechanism to attach anywhere, passive fixation uses anchers in trabecular structures, Asynchronous (fixed-rate) deliver impulses at a constant rate, during surgeries or temporary scenario BUT R on T is possible, Synchronous (demand - modern) pacemakers only fire if rate drops (standard choice), ICDs analise RR interval and separate into mormofrequent, tachycard (overpacing or defibrillation but also in new generations pacing for bradycardy) and bradycard, most are DDD or VVI (NBG Code), type is dependent on underlying pothology and AV conductivity, demand HR increase canb be detected with a piezo crystall implanted, possible stimulations (cutaneous, epicardial with hooks, transoesophageal, transvenous), dependent on access (subclavia or cephalica) > pneumothorax or haematothorax, early lead displacement, perforation, thrombemboly, pericardial effusion, lead endocarditis, Exit block: no responce on spike, oversensing with inhibition of impulse (cautery, shivering), undersensing: spikes despite patients activity (R on T phenomenon possible), pacemaker syndrome: impulse coordination between atreium and ventricle Ps in QRS), endless loop tachycardia: Bei vorhandenen akzessorischen Leitungsbahnen im Herzen kann ein abgegebener Kammerimpuls retrograd in die Vorhöfe fortgeleitet werden. Dort erkennt der Schrittmacher die Vorhofkontraktion und induzierten einen erneuten Kammerimpuls, welcher eine kreisende Erregung
-            "What implications does mitral rigurgitation has for anesthesia?",                                                        ###              D-shaped annulus, two leaflets (anterior and posterior), two papillary muscles with tendinous chords, circumflex artery follows the line of the annulus > damage causes lateral wall ischaemia, MS represents a fixed cardiac output state (chronic inflammation (most commonly from Rheumatic Fever, left atrial (LA) dilation and eventually pulmonary hypertension, Severe MS is defined by a valve area <1.0 cm², a mean pressure gradient >10 mm Hg, Anaesthetic Goals (Slow and Sinus - diastolic filling time, cave fluid boluses can quickly cause pulmonary oedema, Maintain systemic vascular resistance (SVR) to ensure coronary perfusion, Avoid factors that increase pulmonary vascular resistance (hypoxia, hypercapnia, acidosis, and nitrous oxide, Poorly tolerated due to increased blood volume and heart rate; often first presents during pregnancy, MI: primary (valve pathology) or secondary/functional (LV dysfunction), Severe MR is defined by a regurgitant fraction ≥50% or a regurgitant volume ≥60 ml/beat, Maintain a high normal heart rate (80–100 bpm) to reduce LV filling time and overload Preload: Keep the patient well-filled to promote forward flow, Afterload: Reduce SVR to promote forward flow into the aorta and decrease the regurgitant fraction, Neuraxial Anaesthesia: Generally well-tolerated in MR because it reduces afterload, whereas it must be used with extreme caution in MS due to the risk of profound hypotension from SVR reductio
-            # "What is volume of distribution and give an example?",                                                                  ####              Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)
-            "What implications does aortic stenosis has for anesthesia?",                                                             ###              DYSPNEA, ANGINA, SYNCOPY -Increased LV workload with concentric hypertrophy with cardiac failure or arrhytmias (volume overlode in rugurgitations leads to exchentrical hypertrophy), pulmonary hypertension, METs important for accessing the severity, systolic in 2 ICS right, > 2,5cm² normal, < 2cm² mild (2-3 m/s, mean gradient < 20 mmHg): 1-1,5cm²: moderate (3-4 m/s, 20-40 mmHg), < 1cm²: severe „high-grade“ (>4 m/s, > 40 mmHg)
-            "Desribe the perioperative management of a patient with a patent ductus botally (arteriosus)",                            ###             High prostaglandin level during pregnancy keeps DAB open, after birth prostaglandine levels sink and get metabolised by the lung, plus PVR low, ductus smooth muscles contract (takes up to 3 days), if preterm > DAB is open > left-right shunt with lung over-perfusion, systolic murmur, tachycardia, no weight gain, cardiac failure, substantial LV work load, pulmonary hypertony with large DAB, small DAB does not need to be closed (cath closure can be done later), if hamodynamically relevant but no cardiac failure/PAH - closure < 1y old,  NSAIDs (indomethacin, ibuprofen) to inhibit prostaglandin synthesis (works only on preterm), if not possible > surgical ligation with a clip (small kids surgery, larger kids intervention), always keep PVR low and SVR normal (otherwise R > L shunt is possible), pulmonary hypertony and hypoxia in preterm babies lead to persistent DAB, circulus vicious > more hypoxia + acidosis > more PVR more shunt over DAB,  Pregnancy: Represents a high-risk state for EMAH patients, especially those with Eisenmenger syndrome, where mortality is significantly elevated
-            "Explain the alveolar gas equations, inspiratory, alveolar and arterial PO2 and the Aa gradient",
-            "If your FiO2 if 10%, what would be inspiratory, alveolar and arterial PO2 and correstponding SpO2?",
-            "What are the differenes between Quick (PT) and aPTT",                                                                    #               Quick (PT) - extrinsic (Tissue Factor - VII + common (I, II, V and X)), aPTT (intrinsic - surface activator, phospholipid - XII, XI, IX, VIII and common (Haemophilly A)
-            "What is the Hering-Breuer Reflex?",                                                                                      ###
-            "What are normal values for ROTEM (CT, CFT, alpha angle and MCF, LI30/60)",                                               #               CT (clotting time) 40-80s, CFT (clot formation time) 30-150s, alpha angle 63-83°, MCF (maximum clot firmness) 50-72mm, LI30: if > 8% (TXA!!!) - should be 3-8%
-            "Describe the concept and classification of MET",                                                                         #               One MET is defined as the resting oxygen consumption of a typical 40-year-old male > 3.5ml/kg/min, 1 MET: eating, dressing, using the toilet), walking around the house. 3 MET: Walking 1 to 2 blocks at a slow, leisurely pace.4 METs Climbing a flight of stairs (approx. 10-12 steps), doing light housework (washing clothes), or walking briskly at 4.0 to 5.6 km/h. 10 METs: Playing golf, bowling, or running briefly, 10 METsStrenuous sports (e.g., soccer, swimming, singles tennis).
-            "Why is flow viscosity-dependent at low flow and density-dependent at high flow?",
-            "Explain the concept of clearance as function of creatinine",                                                             #               Creatinine clearance provides the estimated (overestimations up to 20% because somehow creatinine is DOCH secreted) of volume cleared of creatinine and is a surrogate for GFR), GFR measures the actual rate of blood filtration (mL/min). CrCl measures the volume of plasma cleared of creatinine per unit time (mL/min). Real GFR (125ml/min > 180 L/d) requires invasive and radioskopic methods, Estimation (eGFR (age, gender, ethnicity and creatinine - newer (based on standart body surface of 1.73m2) form of older Cockcroft-Gault): Because 24-hour urine collection is prone to errors and there is creatinine blind spot (only up if GFR is down by 50%), estimated GFR (eGFR)—using formulas like CKD-EPI or MDRD—is preferred. Volume of plasma from which a substance is completely removed per unit time, calculated as: Clearance = (Urine concentration of substance * Urine flow rate) / Plasma concentration of substance, Creatinine (breakdown product of muscle creatinphosphsate, released at a constant rate, removed only way to eliminate is to filter (no reabsorbion and no secretion) it renally (similar to a sugar Inulin)), Does not detect early GFR decrease,  Creatinine inversly prop to GFR (if GFR low,Crea high) dependent on muchle mass, meat intake, volume loading, ncreases with dietary protein consumption, It decreases with fasting and vegetarian diet     
-            "Explain the perioperative consideration in patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency",           ##               X-linked recessive, most common enzymatic disorder of red blood cells, G6PD is an enzyme in the pentose phosphate pathway that helps protect red blood cells from oxidative damage, deficiency can lead to hemolytic anemia in response to oxidative stress (e.g., infections, certain drugs like sulfonamides, antimalarials, and fava beans), avoid triggers, monitor for signs of hemolysis (jaundice, dark urine, fatigue), maintain hydration and consider blood transfusion if severe hemolysis occurs, riggers for hemolysis: Oxidative stress caused by medications, infections, metabolic acidosis, ketoacidosis, hypothermia, and surgical stress. Anesthesia-related medications: Avoid: Medications that trigger oxidative stress or methemoglobinemia. Absolutely contraindicated: Methylene blue (is ineffective and triggers severe hemolysis), Critical: Lidocaine, Prilocaine (EMLA), Metoclopramide, Diclofenac, and high-dose ASA, Safe: Propofol, Ketamine, Fentanyl, Sufentanil, Rocuronium, succinylcholine, bupivacaine, acetaminophen (in therapeutic doses), and nitrous oxide. Management tips: Preoperatively: Screen for jaundice; laboratory tests (LDH, haptoglobin, bilirubin, LDH, spherocytes on smear, reticulocytes); no elective procedures during acute hemolysis; intraoperatively: Avoid stress through generous analgesia, maintain normothermia, closely monitor blood glucose; Postoperatively: Hemolysis usually occurs 24–72 hours after exposure to the trigger (therefore, outpatient anesthesia is not recommended); Monitor urine for hemoglobinuria
-            "Explain the perioperative consideration in patients with sickle cell disease",                                           #               Autosomal recessive disorder caused by a mutation (Chromosom 11) in the beta-globin gene, leading to the production of abnormal hemoglobin S (HbS - Glutamin is replaced by Valin (hydrophobic)) > red blood cells rigid and sickle-shaped under low oxygen conditions > vaso-occlusion, hemolysis, and chronic anemia, avoid triggers (hypoxia, dehydration, acidosis, hypothermia), maintain hydration, provide adequate analgesia, consider blood transfusion for severe anemia or before major surgery, monitor for complications (acute chest syndrome, stroke, infection),  Pathophysiology: Autosomal recessive mutation in the β-globin chain (valine instead of glutamic acid), which leads to polymerization (sickling) at low oxygen partial pressure Triggers for crises: Hypoxia, dehydration, acidosis, stress, infections, and hypothermia Clinical complications: Vaso-occlusive crises, splenic sequestration, and the life-threatening acute chest syndrome (ACS) (most common cause of death), Management tips: Preoperatively: Hemoglobin electrophoresis; Target hematocrit approx. 30% (to reduce viscosity), simple transfusion often sufficient, Anesthesia approach: General anesthesia is often preferred over regional anesthesia, as the latter can promote stasis and sickling due to compensatory vasoconstriction in unblocked areas, Intraoperatively: Maintain SpO₂ >94%, aggressive hydration (early IV), strict normothermia (operating room >24°C), avoidance of acidosis, analgesia: Often chronic pain and opioid tolerance; use multimodal approaches Postoperatively: Aggressive respiratory therapy (respiratory trainer), oxygen administration, and hydration to prevent ACS
-            "What are perioperative consideration in patients with thalassemia?",                                                     ##               Thalassemia is a group of inherited blood disorders characterized by reduced or absent production of one of the globin chains, Forms: α-thalassemia: Deletion of α-genes, Alpha thalassemia is caused by deficient production of the alpha globin component of hemoglobin, while beta thalassemia is a deficiency in the beta globin component.[7] The severity of alpha and beta thalassemia depends on how many of the four genes for alpha globin or two genes for beta globin are faulty. Severe forms (fetal hydrops) are often fatal in the neonatal period; Symptoms include tiredness, pallor, bone problems, an enlarged spleen, jaundice, pulmonary hypertension, and dark urine.[1] A child's growth and development may be slower than normal.[1], HbH disease presents as thalassemia intermedia. β-thalassemia: More commonly clinically significant. Thalassemia major (Cooley’s anemia) requires regular transfusions; minor forms are often asymptomatic incidental findings. Main problems: ineffective erythropoiesis, chronic hemolysis, and hemosiderosis (iron overload due to transfusions). 2. Anesthesiological Focus Areas (EDAIC Checklist), Airway: The “thalassemia facies”; problem: bone marrow hyperplasia leads to facial skeletal deformities (prominent upper jaw, malocclusion); consequence: increased risk of difficult intubation; examination findings: Careful clinical evaluation (Mallampati, thyreomental distance), preparation of fiber-optic equipment and algorithm for difficult airways, organ functions (consequence of hemosiderosis), Heart: The most common cause of death is cardiac hemosiderosis (heart failure, arrhythmias), Preoperative: Check echocardiogram/ejection fraction, Liver: Hemochromatosis-related liver cirrhosis with impaired synthetic capacity and altered drug metabolism, Endocrinology: Diabetes mellitus (pancreatic damage) and adrenal insufficiency, Tight intraoperative blood glucose monitoring, Hematology & Transfusion Anemia management: Target preoperative hematocrit approx. 30%; higher values offer no advantage, Splenectomy: Many patients have undergone splenectomy. This leads to an increased risk of sepsis  (especially OPSI syndrome), consider perioperative antibiotic prophylaxis and vaccination status; coagulation: both thrombocytopenia (in cases of splenomegaly) and thrombophilia are possible; contraindication: iron supplementation is absolutely contraindicated (risk of exacerbating hemosiderosis); preoperative optimization: For planned procedures, optimize metabolic status (HbA1c) and organ function (heart, liver); Stress avoidance: As with sickle cell disease, perioperative stress should be minimized to maintain metabolic stability
-            "Draw the breathing patterns for biot, cheyne-stokes and kussmaul respiration",                                           #               BIOT: Damage to the brainstem (specifically the medulla oblongata or pons (TRAUMA; STROKE) - Irregular breathing with periods of apnea (very deep (like KUSSMAUL) pattern but with breaks: poor prognosis, neuronal damage, ataxic breathing), CHEYN-STOKES: Type of sleep apnea, heart failure and stroke, Gradual increase and decrease in tidal volume followed by apnea (apoplex, hypoperfusion of breathing center,cerebral pressure, drugs), KUSSMAUL: Ketone, Uraemia, Sepsis, Salicylates, Methanol, Aldehydes, Lactate - Deep, labored breathing often associated with metabolic acidosis            
-            "Calculate the O2 content and delivery with a CO of 5L/min, Hb of 15 g/dL and an SaO2 of 98%",                            #               
-            "Tell the difference between hypoxia and hypoxaemia",                                                                     ##.             Hypoxia: A condition where the oxygen supply is inadequate either to the body as a whole (general hypoxia) or to a specific region (tissue hypoxia) Hypoxemia: low oxygen in arterial blood, as measured by PaO2 or SpO2, Can be both hypoxic without hypoxemia (i.e. anemia, cardiogenic shock) and hypoxemic without hypoxia (i.e. mild V/Q mismatch states) but severe hypoxemia will almost always cause hypoxia
-            "Desribe the perioperative management of a patient with a ventricular septal defect",                                     #               Most common isolated congenital heart defect Left to right shunt, pulmonary over-perfusion, pansystolic murmur is typical. Chest X-rays often show cardiomegaly and increased pulmonary vascularity, check history of URTIs, very large air embolism risk (clear all iv lines from bubbles - paradoxical emboly), Urinary output is a key surrogate for cardiac output (target >1 cc/kg/hr), review echos esp. PAP and calculated resistance, palliative care with a band around PA, heart failure in large VSD with digitalis and diurhetics (withheld digitalis preop), premed  oral midazolam (0.5 mg/kg) or IM ketamine (3–5 mg/kg) for anxious children with difficult venous access, pulmonary hypertension, Eisenmenger syndrome (reversal of shunt with cyanosis), small VSDs can close spontaneously, large VSDs cause heart failure and require closure (surgical or cath), if PAH develops > no closure possible, avoid increases in PVR (hypoxia, hypercapnia, acidosis) and decreases in SVR (vasodilation) to prevent shunt reversal", fixed PA hypertension is most dangerous (hypoxia, co2, hypothermia, acidosis, atelectasis, hyperinflation, pain/stress > sympathetic stimulation and pulmonary hypertension), induction and maintainance with very large fentanyl doses up to 100 mcg/kg, Cardiopulmonary Bypass (CPB): Requires heparin (3–4 mg/kg) to achieve an Activated Coagulation Time (ACT) >480 seconds (ideally >600s, Weaning from CPB: Facilitated by volume and inotropic support (commonly Dopamine or Dobutamine) and vasodilators to control PVR/SVR, Extubation: Early extubation in the ICU is appropriate for uncomplicated cases. However, patients with pulmonary hypertension should remain intubated for 2–3 days while following a pulmonary hypertension drug protocol, heart block is common and should be treated with pacing, Phenylephrine (pure alpha-1 agonist). It increases SVR without increasing heart rate or contractility,
-            "What are perioperative considerations for a patient with HOCM?",                                                         ###             Most common genetic cardiovascular disorder, autosomal-dominant (worsens with: Decreased Preload: Reduced left ventricular (LV) cavity size, Decreased Afterload: Reduced systemic vascular resistance (SVR), Increased Contractility: Stronger myocardial contraction narrows the LVOT, tachycardia: Decreases diastolic filling time, further reducing LV volume) characterized by asymmetric hypertrophy of the interventricular septum > intermittent obstruction of the left ventricular outflow tract (LVOT).Asymmetric septal hypertrophy, dynamic LVOT obstruction, mitral regurgitation, diastolic dysfunction, arrhythmias, sudden cardiac death, syncope, dyspnea, angina, palpitations, beta blockers to reduce heart rate and contractility (reduce LVOT obstruction), avoid vasodilators (can worsen obstruction), maintain adequate preload and afterload, careful fluid management to avoid hypovolemia, avoid tachycardia (can worsen obstruction), consider invasive monitoring for hemodynamic management, Screen for dyspnea, syncope, and palpitations, Left Ventricular Hypertrophy (LVH) or left axis deviation on ECT (Sokolow-Lyon-Index (SV1 + RV5 or V6 > 3,5 mV), Continue beta-blockers to maintain a slow heart rate and prolong diastole, Maintain Preload: Use judicious fluid preloading (e.g., 500ml Ringer’s Lactate) to maintain stroke volume, Maintain Afterload: Avoid systemic vasodilation, Maintain Sinus Rhythm/Slow Heart Rate: Tachycardia or loss of "atrial kick",  Avoid Sympathetic Stimulation: Use adequate anxiolysis (e.g., benzodiazepines) and analgesia to prevent increases in contractility and heart rate
-            "What are perioperative considerations for a patient with Fallot tetralogy?",                                             ##              Most common cyanotic congenital heart defect, KEEP PVR low and SVR HIGH (RLS low then), Four anatomical abnormalities: Ventricular Septal Defect (VSD), Pulmonary Stenosis (PS), Overriding Aorta (moved to the right side and originates at the VSD), Right Ventricular Hypertrophy (RVH) - often in DiGeorge syndrome, undergo complete repair between 6–18 months of age Some may have had palliative B-T (Blalock-Taussig) shunts (if pulmonary stenosis is too severe - A. subclavia to pulmoary artery), to maintain pulmonary perfusion, Uncorrected: Problem RLS > low SaO2 (pain, stress, hypovolemia), anesthesia: keep PVR low and SVR high > this will lower RLS, increase preload, keep PVR low (high FiO2, pCO2 low, avoid acedaemia), SVR and MAD with Noradrenalin to keep RR high and reduce RLS > VSD- Patch, RVOT- Plastik, Most common cyanotic congenital heart defect, four anatomical abnormalities: Ventricular Septal Defect (VSD), Pulmonary Stenosis (PS), Overriding Aorta, Right Ventricular Hypertrophy (RVH). Cyanosis, dyspnea, fatigue, and syncope, especially during exertion. Surgical repair is typically performed in infancy or early childhood, Avoid increases in pulmonary vascular resistance (PVR) (e.g., hypoxia, hypercapnia, acidosis) and decreases in systemic vascular resistance (SVR) (e.g., vasodilation) to prevent worsening of the right-to-left shunt. Use of beta-blockers to reduce infundibular spasm and maintain a slow heart rate can be beneficial. Low peep and V pressures to keep PVR low and prevent RLS deterioration, polycythaemia (Hct >0.65 may require venesection), maintain Systemic Vascular Resistance (SVR) and minimize Pulmonary Vascular Resistance (PVR) to reduce right-to-left shunting, Premedication: Essential to avoid crying/stress which increases PVR and can trigger a "tet" spell (during feeding or crying); A tetralogy or ‘tet’ spell (also known as a cyanotic spell, or hypercyanotic spell), Historically, ketamine was favored to preserve SVR, but careful titration of any induction agent is acceptable, Knee-to-chest position (increases SVR and reduces deoxygenated venous return), 100% Oxygen (acts as a pulmonary vasodilator), Fluid boluses and sedation/analgesia (e.g., IV morphine/fentanyl) to reduce sympathetic drive, Phenylephrine to increase SVR, Beta-blockers (esmolol/propranolol) to relieve infundibular spasm, Obstetrics: High risk for uncorrected TOF, Use sequential low-dose combined spinal-epidural (CSE) or epidural techniques to avoid sudden SVR drops, Be cautious with uterotonics: Syntocinon causes hypotension, and Carboprost (PGF2alpha) increases PVR, Complications: Be vigilant for air embolism (use air filters on IV lines due to the VSD) and infective endocarditis prophylaxis in high-risk cases
-            "What are the alternative ROTEM variants?",                                                                               ###             HEPTEM excludes the effects of heparin, The use of HEPTEM is ideal for situations where the patient is heavily heparinised (eg. on bypass) and the anaesthetist is interested in the degree of residual coagulopathy INTEM and HEPTEM are virtually identical, INTEM is similar to the APTT (12, 11, 9), EXTEM is similar to the PT (extrinsic - FVII and tissue factor > activate X), APTEM excludes fibrinolysis. 
-            "Explain the principles of the Davenport diagram",
-            "How can you assess lung function and muscular function under anesthesia?",                                               ###              20-30-40 Rule from Guillan-Barre syndrom for intubation but more than that: > 20ml FVC, -30 cmH20 Inspiratory Pressure, > 40 cmH2O expiratory pressure 
-            "What is bioavailability?",
-            "What are the properties of an ideal intravenous anaesthetic agent?",
-            "What factors affect bioavailability?",
-            "Define AaDO2 and what influences it?",                                                                                   ##              DIFFERENTIATE CAUSES OF HYPOXIA, PAO2 ~ 100mmHg, AaDO2 = PAO2 ((Patm – PH2O) x FiO2 – PaCO2/RQ + f (commonly ignored correction factor of 2-3 mmHg accounting for changes in the partial pressure of nitrogen)) - PaO2. Normal 5-10 mmHg, increase with age. Hypoxia with normal AaO2: Alveolar hypoventilation (elevated PACO2), Low PiO2 (FiO2 < 0.21 or barometric pressure < 760 mmHg) Influencing factors: V/Q mismatch, diffusion impairment, shunt, hypoventilation, FiO2 (increasing FiO2 can increase PAO2 and thus increase AaDO2), and age (normal increases with age)., For every decade a person has lived, their A–a gradient is expected to increase by 1 mmHg – a conservative estimate of normal A–a gradient is < [age in years/4] + 4, Gradient varies with age and FiO2:, FiO2 0.21 – 7 mmHg in young, 14 mmHg in elderly, FiO2 1.0 – 31 mmHg in young, 56 mmHg in elderly
-            "What do you mean by ‘first-pass metabolism’?",                                                                           #               First-pass metabolism is the metabolism of a drug before it reaches the systemic circulation after absorption, usually after oral administration. Gut mucosa (enterocytes contain Cyp3A4)
-            "Explain and draw the major TEG/ROTEM forms",                                                                             ##               https://x.com/OnePagerICU/status/1525131483458875394/photo/1
-            "Which drugs can be administered by a transdermal route?",                                                                ###             Fentanyl, buprenorphine, scopolamine, nicotine, estradiol, testosterone, lidocaine, methylphenidat, selegiline, rotigotine                                                     
-            "What are the advantages of transdermal route?",                                                                          ###             Avoids first-pass metabolism, Provides a steady plasma concentration, Non-invasive and convenient, Improved patient compliance, Suitable for drugs with short half-lives, Can be used in patients who cannot take oral medications, Slow and sustained absorption, Steady plasma level without significant troughs and peaks.
-            "What are perioperative considerations for a patient with Univentricular Heart and Fontan Circulation?",                  #               Fontan circulation is a palliative state where systemic venous blood flows passively through the lungs without a pumping sub-pulmonary ventricle. Hemodynamic Determinants: Cardiac output is entirely dependent on transpulmonary blood flow, which is driven by central venous pressure (CVP) and inhibited by PVR. Ventilation Challenges: Positive pressure ventilation increases intrathoracic pressure and inhibits passive pulmonary flow. Goals: Low mean airway pressures (8–10 mbar), low PEEP (2–5 mbar), and early extubation. Laparoscopy: Generally contraindicated in Fontan patients because the increased intra-abdominal pressure severely reduces venous return and passive pulmonary flow. Clinical Signs of Failure: A "Failing Fontan" presents with cyanosis, ascites, arrhythmias, and protein-losing enteropathy
-            "Explain the concepts of trigger, limit and cycling",                                                                     #              
-            "Explain the pharmokinetic ADME scheme",                                                                                  #               Pharmakokinetics: How the body handles the drug: ABSORBTION/ADMINISTRATION: how does the drug enters the system (affected by route AND compound solubility, gastric emptying time, intestinal transit time, chemical instability in the stomach, and inability to permeate the intestinal wall), DISTRIBUTION: how is the drug distributed in the body (reversible transfer of a drug between one compartment to another (affected by: regional blood flow rates, molecular size, polarity and binding to serum proteins), METABOLISM: CYP450 (Type I), Type II (Glucuronidation, Sulfatisation - water solubility), EXCRETION: how is the drug eliminated from the body (RENAL, BILIARY, LUNGS, sweat, saliva, breast milk, 
-            "Provide an overview of opioid receptors",                                                                                                # Mü: analgesia, euphoria, respiratory depression, kappa: spinal analgesia, sedation, dysphoria (lower addiction risc - unpleasant, less potent), delta: modulary role
-            "What do you need to know about ROTEM?",                                                                                  ##.             ROTEM EUROPE, TEG rotates the cup, and ROTEM rotates the pin, BRANDY sniffer NORMAL, How fast (if too slow - CT > 90sec > FACTORS (FFP, Prothrombinconcentrate, (Fast = Factors)), How strong (Speed: alpha angle - Febrin, MCF: platelets, not strong enough: platelets or fibrinogen problem > differentiating what of thme is the problem), How long: how long until lysis begins (fibrinolysis vs TXA), TEG (thromboelastography) and ROTEM (Rotational thromboelastometry) are slightly different variations of the same thing
-            "If the cylinder volume is 10 l and the gauge pressure is 137 bar, if you use oxygen at a rate of 10 l/min how long does it last?",
-            "What is there to know about peripartal haemorrage?",                                                                     ###             Non elective C-section has highest incidenc (up to 20%),  If > 2L: MAT if volume > 1000ml, damage control surgery, recombinnant FVII (only then and only if fibrinogen > 1.5g/L, Thrombos > 50k and T > 35), simultatneous transfusion (4:4:1), BLOOD LOSS > 1500ml > Fibrinogen 30-60mg/kg (Goal > 0.5 g/L and A5fib > 12mm, FXIII 20 IE (GOAL activity > 60%, PPSB 25 UI/kg, FFP 30ml/kg (4:4:1 ratio), repeat 1g TXA, If congenital thrombopathy: DDAVP 0.3mü/kg  If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - very potent uterotonic (bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - also labor induction, 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, Thrombos: 70-100, MAD: 55-65, pH > 7.2, T > 34, Ca > 0.9 mmmol/L, BE > -6, mEq/L, Lactate < 4 mmol/L  bleeding - check Tissue, Trauma, Thrombin, Tone, LESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol (Cytotec) 1g rectaly or 600mü orally (synthetic E1-prostaglandine for uteral contraction and good for gastric ulcer - off label - stimulation of prostaglandine receptors), if SHOCK index > 0.9 (HR/sRR)
-            "What are the risc factors for PPH?",                                                                                     ###              NICE guidline: Hb < 11mg/dl is ANAEMIA!; TONE: overstretch, polyhydramnion, fetal makrosomy, uterus myopatosus, fast or very long labor (> 12h), tokolytics or long oxytocine use, TISSUE: placenta rests, accreta spectrum (previous D&C (dilation & curettage) or D&E (dilation & evacuation)), TRAUM: uterine rupture, Episiotomie, THROMBINE: Disseminierte intravasale Gerinnung (DIG) (z. B. bei Präeklampsie, HELLP-Syndrom, intrauteriner Fruchttod (IUFT), Abruptio placentae, Fruchtwasserembolie), higher risk for PPH for women with congenital heart disease (especially FONTAN circulation), PPH > Faktorenmangel (Verlust, Verbrauch, Verdünnung), Präexistent: VON WILLEBRAND-JÜRGENS Syndrom, plasmatische Gerinnungsstörungen, Thrombopathien, Koagulopathien
-            "What are perioperative considerations for a patient with Fontane pathology",                                             #               Staged approach to reduce hypoxia (venous and returning pulmonary blood mix (via ASD or/and VSD) and reduce strain on the ventrikle, PUT SYSTEMIC and PULMONARY CIRCULATION IN SERIES despite a single ventricle, Single ventricle heart (8% of inbourn errors) > Single functional ventricle undergo a staged surgical process that converts their systemic and pulmonary circulations from parallel to in-series, Passive Pulmonary Flow: Unlike a normal heart, there is no sub-pulmonary ventricle to pump blood to the lungs; instead, systemic venous blood flows passively into the pulmonary arteries, Transpulmonary Pressure Gradient: The driving force for pulmonary blood flow is the difference between central venous pressure (CVP) and atrial pressure, Key Complications: Patients are prone to ventricular dysfunction (systolic and diastolic), atrial arrhythmias (poorly tolerated and may require immediate cardioversion), thromboembolism, and protein-losing enteropathy, Perioperative Anesthetic Management > The primary goal is to maintain the transpulmonary pressure gradient by ensuring adequate preload and minimizing pulmonary vascular resistance (PVR) 1. Preoperative Optimization > Conduct a detailed history and physical exam, focusing on functional status and signs of end-organ damage from chronic high venous pressure Obtain a 12-lead ECG and echocardiography to assess rhythm, valvular function, and ventricular contractility, Administer antibiotic prophylaxis for any procedure likely to cause bacteraemia, 2. Hemodynamic Goals > Maintain Preload: These patients are highly preload-dependent; even moderate hypovolemia is tolerated poorly and will drop cardiac output, Minimize PVR: Strenuously avoid factors that increase PVR, such as hypoxia, hypercarbia, acidosis, and inadequate analgesia, Maintain Sinus Rhythm: This is vital for optimal ventricular filling and atrial emptying, Avoid Vasoconstrictors: α-adrenergic agonists should be avoided as they increase PVR; similarly, β-blockers should be used with caution due to negative inotropic effects, 3. Induction and Maintenance > Agents: Avoid myocardial depressants like thiopental Propofol is generally safe if the patient is normovolemic Maintenance: Use low concentrations of volatile agents (<1.5 MAC) to avoid arrhythmias, ideally combined with an opioid infusion (e.g., remifentanil) for stability, Monitoring: Invasive arterial and CVP monitoring are mandatory for major surgery to guide fluid administration, Transoesophageal echocardiography (TOE) or esophageal Doppler can help assess preload and cardiac output, 4. Ventilation Strategy > Spontaneous Breathing: Preferred for short procedures to avoid the negative effects of positive pressure on venous return, Mechanical Ventilation: If necessary, use low respiratory rates, short inspiratory times, and low PEEP, Tidal Volumes: Keep volumes at 5–6 ml/kg to prevent high mean intrathoracic pressures that decrease pulmonary blood flow, 5. Special Considerations > Pregnancy: Epidural anaesthesia is the technique of choice for delivery, as it avoids the PVR-increasing effects of general anesthesia, though it must be titrated carefully to avoid sudden hypotension, Laparoscopy: Most patients tolerate this if intra-abdominal pressure is kept ≤10 mm Hg; higher pressures compress the IVC and severely reduce cardiac output, Embolic Risk: Patients with a fenestration (a residual right-to-left shunt) are at high risk for paradoxical air or fat emboliThe older Fontan patient is at particular risk of thromboembolism, arrhythmias and progressive ventricular dysfunction. Heart function in the pregnant patient with a Fontan circulation deteriorates throughout pregnancy. Elective delivery under epidural anaesthesia is usually the technique of choice. Laparoscopic and day care surgery is usually well tolerated in the young Fontan patient.
-            "What are perioperative considerations for a patient with the TGA pathology",                                                             # Aorta arises from the right ventricle (RV) and the pulmonary artery from the left ventricle (LV), Systemic and pulmonary circulations exist in parallel rather than in series. Deoxygenated blood recirculates to the body, and oxygenated blood recirculates to the lungs, Survival is impossible without communications (PFO/ASD, VSD, or PDA), Atrial-level mixing is the most effectivem, Left Ventricle (LV) Deconditioning: In TGA with an intact ventricular septum, the LV mass rapidly involutes after birth as pulmonary vascular resistance (PVR) drops. If surgery is delayed beyond 2–4 weeks, the LV may fail to support systemic pressures after repair, Perioperative Management Preoperative Stabilization: Prostaglandin E1 (PGE1): Infused to maintain PDA patency for mixing, Balloon Atrial Septostomy (BAS): Performed if mixing is inadequate or if the ASD is restrictive; it improves saturations by tearing the atrial septum, Surgical Options: Arterial Switch Operation (ASO): The standard anatomical repair involving vessel translocation and coronary artery transfer, Arterial Switch Operation (ASO): This is the gold standard, occurring in approximately 80% of cases. It involves cutting the aorta and pulmonary artery just above where they leave the heart and switching them to their proper ventricles (aorta to left ventricle, pulmonary artery to right ventricle).Coronary Artery Transfer: During the ASO, the coronary arteries must be detached from the original aorta and moved to the new aorta ("neo-aorta").Lecompte Maneuver: Often used during the ASO, this maneuver brings the pulmonary arteries forward to sit in front of the aorta to prevent future narrowing.Balloon Atrial Septostomy (BAS): A catheter-based procedure (often done before surgery) to improve mixing of oxygenated and deoxygenated blood.
-            "What are perioperative consideration for a patient with ARDS?"                                                           #               Berlin definition (2012) Mildes ARDS: 200mmHg > PaO_2/FiO_2 < 300mmHg, Moderat ARDS: 100mmHg > PaO_2/FiO_2 < 200mmHg, Schweres ARDS: PaO_2/FiO_2 < 100mmHg PLUS PEEP over 5 and no cardiac failure, ARDS new global Definition (2023) keeps same PF ranges for mild, moderate and severe, adds radiologic and ultrasound feetures, SpO2/FiO2, and HFNO in mild
-        ),
-        
-        FACTS = c(
-            "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
-            "Chiral isomers (enantiomers) have identical physical and chemical properties BUT not pahrmacodynamic properties (because biological targets are chiral) - S-Ketamine/Levobupivacaine (less cardiotoxic), Cisatracurium (different potency from isomers)",
-            "LD = Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
-            "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
-            "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
-            "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
-            "Isobestic point (800nm) - both oxy and deoxy Hb absorb the same amount of light, both are indistinguishable - total haemoglobin absorbance ~ total haemoglobin concentration",
-            "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
-            "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
-            "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
-            "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
-            "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
-            "CT: Factors (FFP or Prothrombin), alpha angle: fibrinogen, MCF: platelets, lysis: fibrinolysis vs TXAlp",
-            "Ankylosing spondylitis: severy neck movement impairment",
-            "rigid bronchoskope technique",
-            "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
-            "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
-            "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
-            "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
-            "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
-            "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
-            "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
-            "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
-            "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "Non technical skills for communication in crisis",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
-            "Nalbuphin: mü-antagonist and kappa-agonist, 0.1 - 0.2 mg/kg",
-            "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
-            "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
-            "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
-            "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
-            "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
-            "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
-            "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
-            "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
-            "ADDITIVES to epiduran/sacral: clonidin 1mü/kg, morphine 10-20 mü/kg (nausea, pruritus, respiratory depression), ketamine 0.5 mg/kg (concerns for neurotox - not used anymore)",
-            "Filum terminale - terminal extension from the pia from the caudal dural sack (S2-3) to coccux > anchors dural sack caudaly",
-            "(CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
-            "Caudal cornua are remnants of unfused vertebral arches",
-            "Renal clearance = Urine concentration * Urine flow rate) / Plasma concentration",
-            "Surgical Risk Score: very Low, low, intermediate, high, very high risc surgery",
-            "3 cervical sympathetic ganglia and 4 upper thoracic ganglia responsible for head and heart/lung!! (trachea mainly from middle cervical ganglion)",
-            "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
-            "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
-            "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
-            "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
-            "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
-            "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
-            "CO2 (infrared#) - superficial, poor tissue penetration, cutting and superf. surgery), Argon (blue green) - retitinal coagulation and dermatology",
-            "D (in DRSABCDE) (GSC/AVPU, pupils, gross motor function, GLUCOSE!!!!!!!!!!!",
-            "Beck triad (tamponade) - hypotonia, muffled/abolished heart sounds, distenden jugular vain",
-            "How strong it gets: Platelets, How long it needs: Fibrinogen, Initiation: Factors",
-            "Hypercalcaemia makes all segments shorter (PR and ST)",
-            "Neonate CPR: all depends on the HR (assess every 30 seconds - adjust airway manouvers to the HR)",
-            "Neurological assessment - Tone, Power, Reflexex, Coordination, Sensation",
-            "Dorsal and ventral horns are in the spinal chord, anterior and posterior root are coming into spinal chord",
-            "Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2 * R)",
-            "Ortner syndrome - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarsenesss",
-            "Foregn body child > keep spontaneous",
-            "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
-            "During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!",
-            "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
-            "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
-            "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
-            "Clearance = dose / Area under curve (concentration/time)",
-            "Loading dose = Volume of distribution x target concentration",
-            "Maintenance infusion rate = target concentration x clearance",
-            "Fentanyl 600 times more lipid soluble than morphine",
-            "PICA originate for the vertebral artery",
-            "Use BLS Flowchart to identify the arrest and use ALS for CPR",
-            "Benign murmors variate on posture, pathological rarely",
-            "COACHED approach: Continue compressions, Oxygen away, All clear except compressions, Charging, Hands off, Evaluate, Deliver or Disarm",
-            "Precordial thump only for monitored pulseles VT not for VF or Asystoly",
-            "carotid bifurcation typically occurs at the level of the superior border of the thyroid cartilage, which corresponds to the C3–C4",
-            "Fluid deficite for children: BW * Deficite (%) * 10",
-            "85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haem",
-            "olytic disease of the newborn (HDN) - give anti-D immunoglobulin to rhesus negative mothers at 28 weeks and after delivery if baby is rhesus positive, also after miscarriage, abortion, ectopic pregnancy, amniocentesis",
-            "Altitude > high-altitude pulmonary edema (HAPE) or cerebral edema (HACE)",
-            "IV induction is much less associated with laryngospasm than inhalational induction",
-            "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
-            "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
-            "(CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
-            "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
-            "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
-            "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
-            "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
-            "Carotid bodies (glossopharyngeal) and aortic bodies (vagus nerve)",
-            "Bleomycine and oxygen toxicity for the lung",
-            "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
-            "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
-            "Propofol sparing technique",
-            "thermoplastic elastomer",
-            "Le Fort I > floating palat",
-            "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
-            "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
-            "Always mention the MDT approach before you start",
-            "Epicardium is the inner sheatch of the visceral pericardium",
-            "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
-            "Anesthetic with COMPETING interests",
-            "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
-            "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
-            "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
-            "Nerves like fermoral arborise > slide higher",
-            "Nimodipine 60mg orally every 4 hours",
-            "There is no oncotic pressure in bowmans capsule",
-            "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
-            "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
-            "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
-            "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
-            "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
-            "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
-            "haemolysis > free Hb crystalyses in bowmann capsule > plugging of renal filter",
-            "CSF low protein, less buffer > CO2 on central chemoreceptors (rostral Medulla = retrotrapezoid nucleus) > fast pH drop",
-            "Radial artery is in the anatomical snuffbox (tabatie), under the tendons of the extensor pollicis longus and brevis",
-            "pons and cerebella build the metencephlon (hindbrain)",
-            "dermatoms, osteotoms and myotoms",
-            "zero order drugs - ethanol, phenytoin",
-            "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
-            "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
-            "Body is on a alkaline neutral side state",
-            "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
-            "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
-            "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
-            "Fibrinolysis is assesset with DDimers, and Thrombintime!",
-            
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
-            "PICCO: ELWI: > 10mlkg, ",
-            "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
-            "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
-            "MAP = CO (HR * SV) * SVR + CVP (negligible)",
-            "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
-            "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
-            "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
-            "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
-            "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
-            "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
-            "Urea is produced in the liver from ammonia (protein and amino acid metabolism), Protein > amino acids > deamination > NH3 (ammonia) / NH4+ (ammonium) > liver > urea cycle > urea, Why? Because ammonia is toxic, especially to the brain. The liver converts it into urea, which is much less toxic and water-soluble.",
-            "Ammonia (NH3) and Ammonium (NH4+) are crucial acid-base pairs, NH3 + H2O <> NH4+ + OH- ",
-            "Renal ammonium metabolism is the primary component of net acid excretion and thereby is critical for acid-base homeostasis",
-            "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
-            "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
-            
-            
-            "# Bartnerr Syndrom > defect of the NaK2Cl channel (RR low, hypokalemia, metabolic alkalosis) - loop diuretics (furosemide) inhibit this channel and can cause similar symptoms)",
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
-            "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
-            "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
-            "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
-            "FFP dose for INR 2,4,>6 is around 10-20 ml/kg",
-            "The acid-base regulation is chiefly dependent on the control of net acid excretion by the kidney and CO2 excretion by the lungs. Renal acid-base homeostasis consists of two major processes, the reabsorption of filtered bicarbonate and the excretion of the hydrogen ion",
-            "SVI: approximately 35–65 ml/m2 - indicator for SV",
-            "Functioning kidney - Urine Na: 10 - 20 mmol/L (RAAS, ADH, Sympathicus activation) otherwise high urine osmolarity, acute tubular necrosis: Urine Na > 40 mmol/L, low urine osmolarity, muddy brown casts ",
-            "Glycopeptides - ONLY G+, (e.g., vancomycin, teicoplanin, oritavancin) - MRSA, Sepsis, Endocarditis - inhibit bacterial wall synthesis (peptidoglycan interaction, D-Ala-D-Ala block), red man syndrom, oto and nephrotoxicity, MRSA and Clostridium difficile infections (oral, not absorbed, QT,  Time dependent killing (need to be above certain level for some time",
-            "Normal urine osmolarity is between 300 - 900 depending on ADH (if ADH low > low urine osmolarity, if ADH high > high urine osmolarity) - osmolarity decreases if kidney function declines",
-            "Inferior border of each rib (neurovascular bundle > VAN (sup > inf) Vein/Artery/Nerve",
-            "Erlanger-Gasser classification of nerve fibers: A (alpha (motor, spindle), beta (touch, propiroception, vibration), gamma (innervate spindles), delta (pain)), B (presynaptic autonomic), C (unmyelinated - pain)",
-            "Dont mix up dorsal/ventral roots (dorsal: sensory, ventral: motor) and dorsal/ventral rami (both motor and sensory) - root vs ramus",
-            "Dabigatran (Pradaxa), Rivaroxaban (also hepatic) are problematic in renal impairment, with other NOAKs INR and PTT may be normal or prolonged",
-            "SVV: > 10% is fluid responsive, CI: > 2.5 L/min/m2 is good, SVR: >2000-2400 dynes/sec/cm5",
-            "Isoflurane and enflurane are positional isomers (same molecular formula but have different arrangements of their atoms)",
-            "Shock with ARDS - PAC not needed, Thermodilution (PICCO - CO, GEDV, ELWI) is sufficient, if shock is not improving one can add PAC, of if patient has RV-failure",
-            "HAS BLED SCORE - 1 POINT FOR ANY > Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly > 1 year probability of bleeding for AFib patients",
-            "DES need longer dual platelet therapy (DAPT) than bare metal stents (BMS) - 6 months vs 1 month (the coating prevents endothelisation and thus increases the risk of late thrombosis)",
-            "Viscoelastic tests ROTEM do not take hypothermia and/or hypocalcaemia into account",
-            "Dabigatran (Pradaxa) is a thrombin inhibitor (the only one imortant) - rest is Factor X inhibitors (Apixaban (Eliquis), Rivaroxaban (Xarelto), Edoxaban (Lixiana))",
-            "Carvedilol: non selective with a1 blocking property (vasodilation and low heart rate for insufficient heart)",
-            "Recessus piriformis guide the food into osophagus and prevent aspiration",
-            "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
-            "The lower the pKa the faster the onset (inverse proportional) - local anesthetics",
-            "Clotting system has transitioned from the classic waterfall cascade (Intrinsic, Extrinsic, and Common pathways) to the Cell-Based Model of Coagulation - Initiation > Amplification > Propagation",
-            "pH changes = acidaemia/alkalaemia > explained either by respiratory acidosis/alkalosins - TERMINOLOGY!",
-            "Clearance (ml/min) = Volume of distribution (ml) x k (/min)",
-            "Boston rule for CO2 (otherwise: 1:4/2:5 rule for H2CO2 compensation): Acidosis > 1.5 * H2CO3 + 9, Alkalosis < 0.7 * H2CO3 + 20 vs Copenhagen rule: every 0.1 pH change 6 BE",
-            "The half-life of fibrinogen is 3-5 days",
-            "SOFA (describes organ dysfunction): Respiratory, PO2/FiO2 (mmHg/kPa), Platelets, (×103/mm3), Bilirubin (mg/dL), GCS, Creatinine (mg/dL)",
-            "Goiter: not only tracheal deviation but retrosternal extension",
-            "Clotting cascade is divided into the intrinsic pathway and extrinsic pathway, which join to form the common pathway. In vitro, the intrinsic and extrinsic pathways operate separately. This is an artifact of lab measurement - in vivo the pathways are co-dependent",
-            "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
-            "INSULIN: 50 UI in 49ml > 0.1 ml/kg/h = 0.1 UI/kg/h",
-            "Larmour equation describes the spin of protons around the B0 magnetic field, the higher the B0, the faster the spin, the better the resolution of the MRI, RF pulse affects this spin",
-            "Heparine can cause osteoporosis",
-            "large store of pre-formed T3 and T4 in the thyroid gland and bound to thyroid binding globulin (99% bound) has to be depleted before any beneficial clinical effect occurs (Carbimazol)",
-            "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
-            "Cryoprecipitate: Matching with RhD is not necessary",
-            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
-            "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
-            "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
-            "Propranolol > thyroid storm (inhibiting the peripheral conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
-            "Body needs 200 mikrograms Iondine a day",
-            "Amiodaron or contrasting agens can lead to a thyroid storm",
-            "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
-            "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
-            "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
-            "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
-            "Genicular nerves provide innervation to the knee joint",
-            "Thyroid storm: Propylthiouracil, Hydrocortison (100mg), Propranolol (80mg/6h) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally)",
-            "If large volumes of ABO-incompatible cryoprecipitate are used, the recipient may develop a positive direct antiglobulin test and, very rarely, develop haemolysis.",
-            "Clopidogrel 30% non responders (Prasugrel or Ticagrelor 100% response)",
-            "HCAP: Healthcare-Associated Pneumonia - Pseudomonas aeruginosa, Staph aureus and MRSA, Klebsiella pneumoniae, Escherichia coli, Acinetobacter species",
-            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
-            "Cryoprecipitate contains fibrinogen, Factor VIII, Factor XIII and vWF, 1 unit for every 10kg, 1 UNIT raises fibrinogen by 0.5-1 g/dL - Fibrinogen level less than 1.5 g/L (2.0 g/L in obstetric haemorrhage or cardiothoracic haemorrhage)",
-            "C3 is the most abundand complement",
-            "Thyroid strom: fever (>40°C), severe tachycardia (>140 bpm), agitation, delirium, psychosis, severe nausea/vomiting, diarrhea, and JAUNDICE",
-            "MACE stands for Major Adverse Cardiac (or Cardiovascular) Events",
-            "How long it needs: Fibrinogen, Initiation: Factors, How strong it gets: Platelets",
-            "Cascade model (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: Coagulation begins with tissue factor being exposed, which also activates platelets. Amplification phase: A positive feedback loop occurs: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, Propagation phase > Platelets bind activated clotting factors, causing high rates of thrombin formation around them.", 
-            "PPSB is Beriplex (Prothrommbn complex concentrate) - contains factors II, VII, IX, X (and some protein C and S) - used for reversal of warfarin",
-            "ISAAC - International Study Group for Asthma and Allergies in Childhood (ISAAC) questionnaire - assess kids for occurrence of perioperative respiratory adverse events - asthma in family, rhinitis, exzema, nocturnal dry cough (10 times the bronchospasm risk), wheezing at exercise, heyfeever, tobacco exposure, upper airway infection in last 2 weeks, laryngospasm risk decreased by 11% with every year of age",
-            "Anisotropic - probs tilting > if perpendicular to probe > nerve hypoechoic (typical for nerves, identification)",
-            "IPTEM: Contact activation (Kaolin) (in opposition to EXTEM which is tissue factor activation)",
-            "Inodilators (dobutamine) - decrease reistance but keep pressure stable (inotrope) - increase flow (I = U/R)",
-            "Lots of salbutamol and/or adrenaline for bronchospasm does increase lactate",
-            "Coronary sinus into posterior RA between inferior vena cava and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into right ventricle",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
             
-            # ANATOMY
-            "The atria contract (right first, then left shortly after)",
-            "Sacral hiatus - palpating posterior superior iliac spines (PSIS); line connecting these forms base of an EQUILATERAL triangle pointing caudally. Apex of triangle lies over hiatus between sacral cornua (level of the sacrococcygeal joint) Thumb feel two sacral cornua",
-            "Dermatoms, osteotoms and myotoms",
-            "Hepatic histoanatomy: HEPATIC LOBULE hexagonal structure with portal triads at all six of angles of the hexagon, PORTAL LOBULE: triangular structure with three central veins at the points of the triangle and a portal triad in the middle, LIVER ACINUS: 3 Zones of oxygen supply, ellipsoidal structure with portal triads at opposite ends",
-            "Carotid sinus - main baroreceptor (more than aortic arch)",
-            "Hepatocytes produce bile and together with the lymphatic vessels they flow in the opposite direction compared to hepatic artery and portal vein",
-            "Liver histology: 50-100k hepatic lobules > hexagonal (6 sides), both portal vain and hepatic artery send vessels to every corner of the six sides of the lobule > and they mix in the sinusoids, in the sinusoids are Kupfer cells (digest bacteria from portal vein) and hepatocytes that metobolise and produce stuff - all goes to central vain and to VCI",
-            "if placing LA under the fascia lata > no coverage of LFCN > FL is deviding the iliacus and rectus femoris",
-            "Dural sack ends typically at S3 in infants and is at S2 at age of 3 (contains CSF and cauda equina) - caudal space is distal to the dural sack and contains fat, veins and nerves (sacral nerves) - LA into the sacral hiatus to block the sacral nerves",
-            "Intercostal nerves have ventral rami (anterolateral body wall and limbs) and dorsal rami (back skin and deep back muscles) - both have motor and sensory fibers",
-            "In 15% of patients the right descending artery comes from the circumflex artery",
-            "SSEP: stimulation of N. tibialis posterior > Abeta fibers via ischiadicus > dorsal root > dorsal horn > fasciculus gracilis > medulla > medial lemniscus > thalamus > somotosensory cortex - fasciculus cunetatus is for the upper extremities",
-            "Acute marginal artery comes from RCA to the right hearts margin, LAD gives of diagonal branches, SA is supplied by RCA in 60%",
-            "In 15% of patients the right descending artery comes from the circumflex artery",
-            "N. glossopharyngeus: GAG REFLEX > posterior 1/3 of tongue, anterior epiglottis surface, valecula, pharynx, carotid body and sinus, parotid gland, stylopharyngeus muscle",
-            "N. glossopharyngeus runs submucosaly behind anterior and posterior tonsillar pillars (piriform fossae)",
-            "LCFN - over iliacus muscle and over, under or through the inguinal ligament",
-            "Caudal epidrual space communicates with thoracolumbar space (larger volume get the higher blocks), Dural sack ends typically at S3 in infants and is at S2 at age of 3, Lumbar spinal channel between vertebral bodies anteriurly and vertebral arches posteriory, S5 noch completely fuse - no posterior arch (sometimes S4 as well > opening that is instead is SACRAL HIATUS (between the sacral cornua - to acces the caudal epidural space you have to go through the sacrococcygeal ligament) ,Most frequent in children, anesthesia from the umbillical region to the toes, 1-2 mL/kg of local anesthetic, lateral or prone position,  22G needle inserted at 45 degree angle until loss of resistance, 5-10 mL in adults, 1-2 mL/kg in children, faster recovery, less postop pain mads, less intraop meds",
-            "STOMACH: Eosophagus > cardia > fundus > corpus > antrum > pylorus > duodenum",
-            "Trachea > Bronchi > bronchioles > terminal bronchioles (conducting stop) > respiratory bronchioles > alveolar ducts > alveoli",
-            "Medial borders of sartorius and AL meet point is the apex of femoral triangle (femoral triangle block: saphenos proximal to this point, distal to this point is the adductor canal) - DOESNT MATTER - supsartorial space is ok for both - MIDPOINT OF THIGH is good - but not too proximal (motor fibers to the quads)",
-            "Described to achieve a motor sparing effect (quads weekness) compared to the femoral block, Saphenos nerve towards the adductor canal runs with the femoral vein/artery on the AL and below the sartorius (vascular structurs are also between AL and MS - medial is the vastus medialis), NERVE IS LATERAL TO THE ARTERY (nerves to vastus medialis provide pain to anteromedial knee)",
-            "Choroid plexus in the lateral ventricles and partly from third and fourth ventricles, passage of CSF from third to fourth ventricle through aqueduct foramen. Ultimately CSF leaves the fourth ventricle via the foramina of Magendie (in the Midline) and Luschka (Laterally) thence reaching the cisterns and bathing the spinal cord and the brain, 0.3 ml/min (500–600 ml/day). Total volume is 100–150 ml. 85–90% of CSF is reabsorbed through arachnoid villi.",
-            "Mixed nerve, union dorsal (sensory) and verntral (motor) roots in intervertebral foramen, dorsal root ganglia (cell bodies of sensory neurons, known as first-order neurons, are located in the dorsal root ganglia) with cell bodies of sensory neurons, ventral root (carries motor fibers from anterio horn) and aotonomic nerves (lateral horn T1-L2), quick division in dorsal (post.) ramus (back muscles, skin back), ventral (anteior) ramus (limbs, anterolateral body wall + builds plexuses (cervical, brachial, lumber, sacral))",
-            "Ortner Syndrom - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarseness",
-            "300 Million alveoli and up to 100 m2 surface area, 0.3 micrometer thick - Ficks law of perfusion ",
-            "Terminal (anatomical deadspace - 2ml/kg ~ 150 ml) to Respiratory bronchioles where conducting airways end", 
-            "Anatomical unit of the lung is the acinus",
-            "Retinal blood supply: Dual supply: Inner retina → central retinal artery, Outer retina → choroidal circulation, Ophthalmic artery (from internal carotid) > central retinal artery (enters with optic nerve - inner retina - end artery, no collaterals - occlusion is bad (Cherry red spot) on fundus - imminnent blindness!!!!!!), short ciliary arteries (outer retina, choroid), long cilliary arteries >  iris, ciliary body), central retinal vein > superior ophthalmic vein > cavernous sinus,",
-            "Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)",
-            "The lower you puncture for IJV in the sedillets triangle the more anterio the carotid gets",
-            
-            
-            
-            
-            
-            # ANTIBIOTICS
-            "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
-            "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
-            "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
-            "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
-            "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
-            "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
-            
-            
-            # ACID-BASE-BLOOD-GAS
-            "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
-            "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
-            
-            
-            # CLINIC
-            "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
-            "Pacemaker: Fourth Letter: RATE MODULATION: O: none, R: rate respopnsive > DDDR (adjusts rate to activity), Fifth letter: MULTISIDE PACING (in the same chamber) 0: none, A: Atrium, V: Ventrikel: D: both",
-            "DDDRV: Pacing in both chambers (atria and ventrikels), Sensed in both chambers (atria and ventrikels), Triggered or/and inhibited, rate modulated, and has multiple pacing wires in the ventrikel",
-            "Pembertons sign: facial plethora and distended neck veins when raising the arms above the head - indicative of a large goiter causing thoracic inlet obstruction - narrows thoracic inlet",
-            "Fat embolism: most in closed fractures, long bones (up to 33% in bilateral femur), 24-72 post injury, TRIAD: neurological, respiratory and petechial rash, BUT also pyrexia, right heart strain, coags",
-            "Bone cement: no agreed definition, hypoxia, RR, arrytmias, PAH and cor pulmonale, at femoral reaming, acetabulum and fermoral cement impantation, insertion of prosthesis, joint reduction",
-            "Consenting for epidural: gestational history (eklampsia, RR, gDM), check airway, clotting and previous transfusions (Group and antibodies with previous transfusions), general partal progression, PLACENTAL LOCATION (if previos SS and sectiones)",
-            "Previos C-sections increase ratee of accreta and other infiltration abnormalities by 1: 3%, 2: 11%, 3: 40%, 4: 60%, 5: 67%",
-            "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
-            "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
-            "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
-            "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
-            "Preeklampsia:  Mg 4-6g bolus (Magpie Trial) over 20 min, 2g/h Mg infusion (reflexes), labetalol (alpha and beta) or hydralasine 10-20mg iv (if severy hypertensive), urapidil is better than dihydralazine, dexamethason 6mg bolus every 12h or Methyldopa (2000-3000mg/d if mild hypertension as tablets)",  
-            "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
-            "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
-            "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
-            "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
-            "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
-            "Preeklampsia: Consent - risk/benefit informed consent - best way to treat pain, avoiding RR decompensation and improve fetal blood supply (ALSO RECOMMENDET IN PLACENTAL INSUFFICIENCY), 1:25 fail and need reciting, 1:150 headache (worst headache in live), temporal nerve injury 1:1500, permanent nerve injury: 1:100 000",
-            "Anticholinergic: hot and dry (antihistaminics, TCA, antimuscarinics), Sympathomimectics (labetalol (non-selective beta blocker), malignant hyperthermia: hot, sweaty, rock hard, SEROTONINE: fast onset, CLONUS, dialted pupils (Hunter and Sternback creteria) - CYPORHEPTADINE, NMS: dopamine antagonist (antipsychotic, parkinson meds, antiemetics) - need BROMOCRIPTINE (Dopamine agonist)",
-            "Increased doses of remifentanyl PCA during labor can present abnormal fetus positioning",
-            "CPR + Pregnancy: left side, early intubation (increase in aspiration risc), perimortem cesarean section after 4 minutes of unsuccessful resuscitation (if uterus is above umbilicus) - delivery at 5 mninutes",
-            "Spinal anesthesia: 10mg hyperbaric Bupivacain (2ml Bupi 0.5%",
-            "Mediastinal mass: 4Ts: Terrible infections, Thymoma, Teratoma (germ cell tumor), retrosternal Thyroid)",
-            "PLAN PREPARE PROCEED - extubation or other interventions ",
-            "Large mediastinal mass: positional - not for sedation, maybe lateral or prone - otherwise not suitable for sedation procedure",
-            "Goiter: tachy, CO2 normal, no rigor, high fever - thyroid storm",
-            "Parkinson: decrease in dopaminergic and increase in cholinergic activity, Levodopa (precursor) PLUS decarboxylase inhibitor, Or dopamine agonists (pramipexol), or NMDA receptor antagonists (amantadin), no droperidol, MCP or haloperidol, cave with antihistaminics due to anticholinergic effect, Aspiration risc and recurrent pneumonia, postural hypotension and autonomic dysfunction, increased sensitivity to sedatives and antipsychotics (dopamine antagonists), avoid metoclopramide (dopamine antagonist), use domperidone instead (does not cross BBB), avoid haloperidol, use quetiapine or clozapine if needed",
-            "Thing about the WHO safty checklist and the fucking GRADE guidlines guidline",
-            "Propofol has a bigger negative RR effect than thipental, but can blunt the laryngoscopy stimulus better and prevent RR spike",
-            "Glycine 1.5% non electrolyte solution for monopolar TURP - basically free water > dilutional hyponatreamia (non-conductive, less tissue damage, less obturator reflex, but can cause hyponatremia and glycine toxicity - visual disturbances, nausea, vomiting, confusion, seizures), if monopolar then saline can be used, TUR syndrome—dilutional hyponatraemia, hypo-osmolality, cerebral symptoms, and volume overload, plus glycine-related visual/CNS effest",
-            "Post dural headache: 15min after standing up, 5 days after puncture > Neck stiffness, tinnitus, changes in hearing, photophobia, nausea > CAVE: can be a haematoma or abscess",
-            "Trousseau’s and Chvostek’s signs - low Ca and Mg",
-            "Right upper bronchus (3 segments and mercedes) very steep at 12 and only after 2-2.5 centimeters, left upper bronchus at 5 cm",
-            "Vagal bradycardia after peritoneum insufflation",
-            "Manometer: inflate 1-2cmH2O if in a bronchus - ususally 25 cmH2O for tracheal",
-            "Coca Cola Urine - Rhabdomyolysis, muscle breakdown, myoglobinuria, hyperbilirubinuria (Cholurie), treat with fluids (myoglobin dilution --- MOST IMPORTANT), mannitol, bicarbonate",
-            "Post drual headache: caffeine: 200mg 3/d, theophyllin 300mg 3/d, Gabapentine 300mg 3/d, hydrocortison 10mg po 3/d, paracetamol - max 4g, Ibuprofen max 2.4g",
-            "In BLS abnormal breathing qualifies for CPR!",
-            "4 weeks baby: 2.5 uncuffed and 3 cuffed tube, 9cm depth oral, 11 cm depth nasal",
-            "DLT - hypoxaemia, if inhalation, CPAP on collapsed lung does not help, clamp pulmoary artery to the collapsed lung, reverse to two lung ventilation",
-            "Double lumen tube or single lumen tube with a bronchus blocker could be used to isolate the lung",
-            "Male 160 - 170cm: 39F DLT, 170 - 180cm: 41F, >180cm > 41F, depth: Average Adult (170 cm): standard depth at incisors is 29 cm. Height-Based Adjustment: For every 10 cm increase or decrease, adjust by 1 cm (add 1 cm for every 10 cm > 170 cm; subtract 1 cm for every 10 cm < 170 cm) - Average depths typically range between 27 cm for women and 29 cm for men",
-            "Tube deapth: 7-8-9 rule: 1kg > 7cm deep, 2kg > 8cm deep, 3kg > 9cm deep",
-            "Perioperative ruptured aneurysm > 24mg adenosine",
-            "Transplanted heart: silent ischemia esp due to antiinflammatory drugs, no anesthesia depth, SVT not with carotid massage, arrytmias far more common (5% on pacemaker), catecholamins unpredictable, no baroreflex, no tachy on laryngoskopy or other interventions",
-            "PYLORIC STENOSIS: loss of HCL (protons) - dehydration and increase in aldosteron (similar to Conn) > hypokalemia (in exchange for Na), HYPOCHLOREMIC, HYPOKALIEMIC ALCALOSIS with acidic urin due to Na/H exchange in the kidney - RISC OF APNEA (to compensate for alcaloses)",
-            "Laser: patient AND stuff safety, wet gause on the eyes, matt instruments, saline in case of fire, non flammable drapes, smoke evacuation system, avoid inflammable substances (alcohol, chlorhexidine), eye protection for staff, avoid laser plume (can contain viruses and bacteria)",
-            "Laser tube: long, stainless steel, corrugated, flexible tube with 2 cuffs",
-            "Variable Rate Insuline Infusion (VRII)",
-            "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
-            "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
-            "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
-            
-            # CLOTTING
-            "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
-            "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
-            "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
-            "Recombinant FVII - 90 U/kg",
-            "Intrinsic system: activated when Factor XII (Hageman factor) comes into contact with negatively charged surfaces—such as exposed subendothelial collagen at an injury site",
-            "Clopidogrel, Ticagrelor, Prasugrel are P2Y12 inhibitors (ADP receptor inhibitors) - inhibit platelet aggregation - Hemmung der ADP-bedingten Thrombozytenaggregation, sowie der Freisetzung der Plättcheninhaltsstoffe und der Bildung von Thromboxanen",
-            "Fibrinogen 30-60mg/kg, FXIII 20 UI/kg",
-            "clotting factors are proteins. There are 13 main clotting factors in the blood; nearly all of them are specialized proteins (such as enzymes and cofactors) produced primarily by the liver",
-            "Urokinase/Streptokinases are serine proteases that activate plasminogen to plasmin, which breaks down fibrin",
-            "A5, A10, A15 or A20 value These values describe the clot firmness (or amplitude) obtained after 10, 15 or 20 minutes (beginning from CFT) - provide a forecast on the expected MCF value",
-            "Apixaban: depends on your dosage, kidney function, Prophylactic Dose (e.g., 2.5 mg twice daily): Wait at least 36 hours after your last dose.Treatment Dose (e.g., 5 mg or 10 mg twice daily): Wait at least 48 to 72 hour, test to check your residual drug level (e.g., anti-Xa levels, CAVE renal failure",
-            "If CT long (give cryoprecipitates, FFP or PPSB), if CFT long (give fibrinogen), if alpha low (give platelets and fibrinogen), if MCF low (give fibrinogen and platelets)",
-            "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
-            
-            # DEVICES
-            "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
-            
-            
-            
-            # ECG
-            "Right axis deviation, dominant R wave in V1 and deep S wave in V6 suggest right ventricular hypertrophy due to cor pulmonale",
-            "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
-            "ST elevation in aVR due to LMCA or “left main” occlusion is a misnomer — simultaneous anterior, posterior and lateral STEMI leading to almost instantaneous death",
-            "Upright P-QRS-T complex in aVR with otherwise normal QRS conduction should raise suspicion for limb lead reversal",
-            "Vertical axis (III and aVF very positive) and clockwise rotation (prolonged R progression in wilson leads - transitional lead is V5), peak P waves in inferior leads, Low voltages in the left-sided leads (I, aVL, V5-6)",
-            "aVR is not a real lead – it is calculated from leads I and II and is a mirror (reciprocal) image of changes seen in these leads",
-            
-            
-            
-            
-            # ENDOCRINOLOGY
-            "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
-            "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
-            
-            # EMERGENCY 
-            "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
-            
-            
-            
-            # FORMULAS
-            "Aa difference: Age / 4 + 4",
-            "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
-            
-            # MEASUREMENTS
-            "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
-            "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
-            "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
-            "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
-            "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
-            "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
-            "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
-            "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
-            "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
-            "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
-            "PICCO: Fails to differentiate between left and right ventricular failure",
-            "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
-            "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
-            "FICK: Tracer is oxygen, Relies on mixed venous blood sampled from the pulmonary artery, and arterial blood sampled from a peripheral arterial line",
-            "CBF measurment - Kety–Schmidt technique applying the Fick principle using inhaled nitrous oxide.",
-            "Natural variability - CO varies by 10% (changes in intrathor. P (3-5 measurementsat end-expiration), Incorrect volume of injectate (Too much underestimates CO, Too little overestimates CO), Warm fluid (greater degree of error), too cold > bradyarrytmias, Tricuspid regurgitation or Pulmonary regurgitation Results in retrograde ejection of injectate back past the valve, resulting in a prolonged decay time of the thermodilution curve. This usually results in underestimation of CO, but can result in overestimation depending on the severity of regurgitation and the true CO. Shunts: Thermodilution measures RV CO only. LV CO and RV CO not be equal if intra- or extra-cardiac shunts, Arrhythmia",
-            "PICCO: The area under the curve can be used to calculate cardiac output, as per the modified Stewart-Hamilton Equation",
-            "Exponential' means that the gradient is becoming less steep as time goes on",
-            "Clarc electrode: POLAROGRAPHIC (measures current generated by reduction of O2 at platinum cathode) - need 0.6 power supply",
-            "Platelets and FFPs from female, multipara donors more likely to cause TRALI",
-            "Stewart Hamilton equation: cardiac output is equal to the amount of an indicator injected divided by its average concentration in the arterial blood after a single circulation through the heart, cardiac output is inversely proportional to the mean blood-temperature depression",
-            "How strong it gets: Platelets, How long it needs: Fibrinogen, Initiation: Factors",
-            "Stewart Hamilton equation: CO = amount of injected indicator / area under dilution curve",
-            "Tiffeneau-Index (auch Tiffeneau-Wert oder FEV1/FVC-Ratio - reversibility > 12% favors asthma, otherwise COPD is suspected",
-            "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
-            "Coumarines causes a significant prolongation of the Clotting Time (CT) in ROTEM® (Rotational Thromboelastometry)",
-            "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
-            "Capnography: Non-Dispersive Infrared Spectroskopy (uses filter (saphire) for spectroscopy",
-            "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
-            "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
-            "Work of breathing: W = P * deltaV",
-            "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
-            "Amniotic fluid embolism - flat ROTEM trace",
-            "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
-            "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
-            "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
-            
-            
-            # REGIONAL
-            "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
-            "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
-            
-            
-            
-            
-            
-            
-            # SCORES
-            "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
-            "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
-            "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
-            "SIRS (Systemic Inflammatory Response Syndrome): Fiever, Tachycardia, Tachypnea, Leukocytosis or leukopenia - 2 or more criteria",
-            "SIRS Criteria (Systemic Inflammatory Response Syndrome), Temperature > 38 degrees C or < 36 degrees C (Yes = 1; No = 0), Heart rate > 90 (Yes = 1; No = 0), Respiratory rate > 20 or PaCO2 < 32 mmHg (Yes = 1; No = 0), WBC > 12,000 / mm3 or < 4,000 / mm3 or > 10% bands (Yes = 1; No = 0)",
-            "SIRS Score 0 or 1: Patient does not meet criteria for SIRS Score 2, 3 or 4: Patient meets SIRS criteria. Note that this does not diagnose infection",
-            "DUKE endocarditis: MAIN: blood culture, Echo, Intraop confirmation (SIDE CRETERIA: predisposition, fever, immunological phenomena, microbiological evidence)",
-            "Sepsis 3 (2016 - Singer, Angus): ## life-threatening organ dysfunction caused by a dysregulated host response to infection, no severe sepsis anymore, SOFA > 2 (mortality 10%)",
-            "Prognose vascular spasms: Fischer scale (modified): 1: ≤ 1 mm SAB, keine IVB # 24%, 2: ≤ 1 mm SAB, IVB - 33%, 3: > 1 mm SAB, keine IVB 33%, 4: > 1 mm SAB + IVB oder intrazerebrale Blutung - 40%",
-            "NSQIP evaluates over 20 patient variables and the specific Current Procedural Terminology (CPT) code to predict 15+ different postoperative complications (such as pneumonia, SSI, and renal failure)",
-            "Aortic stenosis:  > 2,5cm² normal, < 2cm² mild (2-3 m/s, mean gradient < 20 mmHg): 1-1,5cm²: moderate (3-4 m/s, 20-40 mmHg), < 1cm²: severe „high-grade“ (>4 m/s, > 40 mmHg)",
-            "NSQIP utilizes a massive, continuously updated database of millions of surgical cases to calculate exact percentages",
-            "quickSOFA (qSOFA): respiratory rate of 22/min or greater, altered mentation, or systolic blood pressure of 100 mm Hg or less",
-            "Septic shock identified > vasopressor requirement to maintain MAP of 65 mm Hg or greater + lactate > 2 mmol/L (>18 mg/dL) in the absence of hypovolemia (Mortality 40%)",
-            
-            
-            
-            # STATISTIC
-            "ATTRITION bias - droping out non randomly - intention to treat, REPORTING bias (publishing), DETECTION bias (equipment), ALLOCATION bias (study group), SELECTION bias (population not properly represented - RCT, INFORMATION bias, and confounding",
-            "Bland-Altman plot: X: Average of 2 measurements, Y: difference of two measurements, method to compare two measurements of the same variable, plotting the difference between the two measurements against their average, to assess agreement and identify any systematic bias or outliers",
-            
-            
-            # OBSTETRICS
-            "If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - very potent uterotonic (bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, Thrombos: 70-100, MAD: 55-65, pH > 7.2, T > 34, Ca > 0.9 mmmol/L, BE > -6, mEq/L, Lactate < 4 mmol/L  bleeding - check Tissue, Trauma, Thrombin, Tone, LESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol 1g rectaly or 600mü orally (synthetic E1-prostaglandine for uteral contraction and good for gastric ulcer - off label - stimulation of prostaglandine receptors), if SHOCK index > 0.9 (HR/sRR)", 
-            "Avoid NSAIDs in pregnancy to avoid prmature ductus closure in 3 trimester",
-            "Anesthetic during pregnancy after completed organogenesis (week 10 completed) - very low teratogenicity, induced labor and misscariage, haemodynamic compromise (but if emergency operation (lap chol) - this outweights the anesthetic risc",
-            "FVII (if fibrinogen > 1.5g/L, Thrombos > 50k and T > 35), FXIII 20 IE (GOAL activity > 60%, PPSB 25 UI/kg, FFP 30ml/kg (4:4:1 ratio), repeat 1g TXA, If congenital thrombopathy: DDAVP 0.3mü/kg  If > 25 IE Oxytocine change to SULPROSTON (Nalador - synthetic E2 prostaglandin - bronchospasm, PAH, MI, severy RR up, cardiac arrest, brady) - also labor induction, 500 mü in 500 and slow - max 1.5g/d - 1mü/ml - max 10-20ml/h!!!!!!!!!) Confirm that it is not uterus rupture, placental rests, Hamilton Handgriff, Bakri Cath (intrauterine balloon),  GOAL: Hb 7-9, ThLESS 1000: Oxytocin 3 IE and 10-40 in 1000ml infusion, TXA 1g, Misoprostol 1g rectaly or 600mü orally (synthetic E1-prostaglandine",
-            "If surgery on a pregnant - RSI, Sodiumcitrate, MCP, Fetal heart rate, contract to midwifery to inform, left tilt (caval compression)",
-            "Hemolysis, elevated liver enzymes, and low platelet count (HELLP) syndrome develops in approximately 20% of women with severe preeclampsia (pulmonary edema, acute renal failure, disseminated vascular coagulopathy, abruptio placentae, hepatic hemorrhage or failure, and fetal or maternal death)",
-            "PDK-Anlage im Kreissaal bei unauffälliger Gerinnungs- und Schwangerschaftsanamnese OHNE Laborkontrolle möglich, DGAI. A&I 2009",
-            
-            
-            
-            # PHARMACOLOGY
-            "Contraction alcalosis in diurhetics (bicarbonate increase) - extracellular volume depletion but fixed bicarbonate",
-            "Elimination rate constant (k) = 1/ time constant (min)",
-            "Half life (T1/2) = 0.693 x time constant (min)",
-            "Nalador (sulproston: PGE2 prostaglandin receptor agonist in uterine smooth muscles BUT also bronchi - BRONCHOSPASM, PAH, MI!!!), Ergometrine (Ergonovine) (UNCLEAR mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension), Prostaglandins analoges (Dinoprostone, Misoprostol) (PGE2 > cervical ripening, PGF2a > uterine contraction), Carbetocin (Oxytocin analogue with longer half life)",
-            "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
-            "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
-            "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
-            "Antagonists have a flat line on a dose responce curve",
-            "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
-            "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
-            "Bupivacain is 20 times more lipid solumble and 4 times more potent than lidocain",
-            "In healthy anion gap unmeasured particles include: albumin (net negative charge), Phosphates, Sulfates (Sulfur-containing anions), Organic acids: lactate",
-            "Andexanet (Ondexxya) > reversal agent for factor Xa inhibitors apixaban AND rivaroxaban) - modified recombinant factor Xa",
-            "Diastasis is the longest phase in cardiac cycle (diasole - after rapid filling and before atrial contraction)",
-            "Atrial filling (V wave) - happens during systoly!",
-            "Beta-2-Sympathomimetics - hypo-K and hypoerglycaemia",
-            "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
-            "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
-            "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
-            "Antimetabolites: Mucophenolate, Azathioprine, 5FU: resemble normal cellular metabolites and interfere with DNA or RNA synthesis (mimic purines, puyrimidines, folates) - Bone marrow suppression, mucositis, diarhea",
-            "Digoxin increases the refractory period of the AV node and bundle of His but decreases the ventricular refractory period",
-            "An agonist will have an affinity of 1 (morphin vs buprenorphine)",
-            "Glycopyrrolate 200micrograms iv",
-            "Medication Timing: Levodopa has a short half-life (1–3 hours). It must be continued up until the morning of surgery. Abrupt withdrawal can cause a sudden return of symptoms or Neuroleptic Malignant Syndrome",
-            "Carbidopa: The most common DDCI used globally. It is paired with levodopa",
-            "Benserazide: Paired with levodopa to create the combination drug Madopar",
-            "Hepatic clearance (ER * blood flow) and ER (extraction ration are describing livers capacity to clear the drug",
-            "TBV of a patient is around 42 Liters (much lower than Vd for lipophilic drugs",
-            "Tirofiban - IV glycoprotein IIb/IIIa inhibitor > final step of platelet aggregation, whereas clopidogrel = oral P2Y₁₂ receptor inhibitor prevents platelet activation",
-            "Vd = Dose (mg) / Concentration (mg/ml) - kind of a theoretical concept (protein binding, lipid solubility)",
-            "Magnesium: 4th abundant bivaletn ion of the body, 60% bones, 20% intracellular (muscle) - calcium antagonist (reduces ca-triggert transmitter realease (like Ach), opposes Ach postsynamptically, inhibits Ca entry via voltage-gated channels, reduces Ca release from ER, and ca-induced ca-release, Na/K-ATPase needs Mg to work, opposes K to leave, if Mg low > K will be low too, RR low and Bradycardia, pain: NMDA antagonism, Mg. suppresses early early afterrepolarisation",
-            "Oxytocine: 15 Units in 30 minutes after first bolus of 3 units - hypotony, flush, nausea",
-            "Insuline: 1U ~ 20-25 mg/dl glucose lower, H1/2 10minutes, infusion: 0.1U/kg/h or plasma glucose / 150,  1 U/h at rest, up to 59 Units/d, anabolic, 51AS polypeptides hormon, alpha stimulation increase, beta and parasympathetic decrease",
-            "INSULINE: SHORT: Aspart/Lispro (shorter HL than insulin), LONG: Glargine (peakless, 24h)",
-            "Glucagon: (alpha cells pankreas), not a catecholamine but increases cAPM, positiv inotrope, HR and CO, increases bile production (ERCP), beta blocker intox",
-            "Sulfonureas (Glibemglimid): STOP AM of OR > incerease beta cell activity and insuline secretion (not in DMI), Biguanides (Metformin): decrease hepatic gluconeogenesis, NO STOP if normal kidney function, small OR and no contrast agent use anymore, inhibits insuline resistance",
-            "DPP4: Sitagliptin, Vildagliptin, Saxagliptin - inhibit DPP4 (dipeptidyl peptidase-4) enzyme that degrades incretins (GLP-1 and GIP) > increase insulin release - no need to stop",
-            "All antidiabetics can be continued on the day before surgery, DAY of SURGERY: STOP metformine (if renal, contrast or large OR), stop sufonureas (restart after food intake), stop acarbose (inhibits glucose absorbtion in the gut), restart after food intake, stop Sodium Glucose Cotransporter 2 inhibitors (SGLT2: FLOZINS - stop on day of surgery, restart after feeding,  euglycemic ketoacidosis)",
-            "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
-            "Methylergometrine (Ergonovine) - 200 micrograms IM (unclear mechanism, partial agonist at alpha-adrenergic, serotonin and dopamine receptors > uterine contraction, but also vasoconstriction > hypertension - not in pre-eclamsia, PHT",
-            "ASS (acetycalicylic acid): non specific COX inhibitor (fever, pain, analgesia, NO anti-inflamattoryr, irrversible acetylation of the platelet COX1, cave uraemic patients - have already plateled dysfunction, all NSAIDS > bronchocostriction, not in pediatric viral infection - Reye Syndrom",
-            "Ibuprofen: pain, fever, inflammation, high first pass, does not accumulate in IV, same side effects (plattelets, bronchospasm, renal, GI",
-            "NSAIDS: not up to 6 month, premature DA closure, renal increase in miscarriage risk",
-            "Dose ratio = Dose of Agonist with PA / Dose of Agonist without PA",
-            "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
-            "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
-            
-            # PEDIATRICS
-            "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
-            "Reason for late bleeding after tonsillectomy are infections",
-            "Reye syndrom: acute encephalopathy and hepatic failure",
-            
-            
-            # PHYSIOLOGY
-            "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
-            "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
-            "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
-            "On 100% oxygen, the A-a gradient in elderly patient can be as high as 100 mmHg",
-            "Volume of distribution (ml) = Dose (mg) / Concentration (mg/ml)",
-            "Human hemoglobin is a roughly spherical protein complex with a molecular weight of approximately65 kDa and a molecular diameter of about 6nm",
-            "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
-            "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
-            "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
-            
-            
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
         ),
         
         best_book = c(
@@ -1639,7 +1862,7 @@ run <- function() {
             "Show me on the diagram the absolute refractory period and relative refractory period.",
             "What is after-depolarisation? What is after-hyperpolarisation?",
             "What do you mean by shunt? What contributes to normal physiological shunting?",
-            "Derive the shunt equation. Can you explain it with a simple diagram?",
+            "Derive the shunt equation. Can you explain it with a simple diagram?",                                                    ##              QS * CVO2 and (QT - QS) * CCO2 >>>>> QS/QT = CCO2 - CaO2 / CCO2 - CVO2
             "What factors modify HPV?",
             "Can you name some pathological causes of increased shunt?",
             "What do you mean by hypoxic pulmonary vasoconstriction?",
@@ -1782,7 +2005,6 @@ run <- function() {
             "What are the adverse effects of NSAIDs?",
             "Are there any risk factors that may precipitate impaired renal function?",
             "How do you classify anti-arrhythmic drugs?",
-            "Can you explain how amiodarone acts as an anti-arrhythmic?",
             "Can you describe the pharmacokinetics of amiodarone?",
             "What are the clinical uses of amiodarone?",
             "What are the side effects of amiodarone?",
@@ -1795,7 +2017,7 @@ run <- function() {
             "What are the problems associated with dry soda lime?",
             "Is there any problem in using volatile agents in circle system?",
             "What is the composition of baralyme?",
-            "How much CO2 will be absorbed by a canister containing 2 kg of soda lime?",                                               #              Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g
+            "How much CO2 will be absorbed by a canister containing 2 kg of soda lime?",                                               ###              Absorptive capacity of soda lime is in the order of 25 l CO2 100g, but is used over time so 17L/100g
             "Can you describe the chemical reaction of carbon dioxide absorption?",
             "What is the size of soda lime granules? Why is that important?",
             "What is the composition of soda lime?",
@@ -1809,7 +2031,7 @@ run <- function() {
             "What are the disadvantages of spinal anaesthesia?",
             "What are the benefits of spinal anaesthesia?",
             "What is the dibucaine number? What is dibucaine?",
-            "What are the side effects of suxamethonium?",
+            "What are the side effects of suxamethonium?",                                                                               ###          Hyperkalaemia, malignant hyperthermia, increased intraocular pressure, increased intragastric pressure, muscle pain, bradycardia (especially with repeated doses), anaphylaxis
             "How is suxamethonium metabolised?",                                                                                         #            Rapidly hydrolysed by plasma cholinesterase (pseudocholinesterase) to succinyl monocholine and choline. Pseudocholinesterase has a large capacity to hydrolyse suxamethonium, so that only a small amount (10 20%) of the administered drug reaches the neuromuscular junction
             "How does suxamethonium act?",
             "Can you draw the structure of suxamethonium?",
@@ -2001,15 +2223,9 @@ run <- function() {
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -2019,23 +2235,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -2049,7 +2259,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -2068,7 +2277,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -2084,36 +2292,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -2125,16 +2325,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -2142,7 +2338,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -2152,7 +2347,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -2191,12 +2385,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -2217,7 +2408,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -2267,17 +2463,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -2296,6 +2497,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -2312,6 +2528,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -2319,6 +2536,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -2359,8 +2579,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -2377,6 +2604,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -2385,9 +2620,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -2405,6 +2641,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -2415,17 +2653,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -2448,11 +2699,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -2465,13 +2718,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -2506,6 +2761,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -2518,6 +2800,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -2527,6 +2810,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -2542,7 +2826,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -2552,6 +2836,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -2586,16 +2873,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -2606,12 +2901,18 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
         
@@ -2628,7 +2929,7 @@ run <- function() {
             "How would you perform an axillary brachial plexus block?",
             "NT > How would you perform a suprascapular nerve block?",                                                                ###             C5-6 (upper trunk of brachial plexus) > through suprascapular notch (with transverse scapular ligament) > innervates supraspinatus + infraspinatus, sensory to 70% of shoulder joint, block at suprascapular notch (posterior approach, CLASSIC) or suporaspinatus fossa (more superficial), better that ISNB if respiratory compromise, 
             "Draw the branches if abdominal aorta (TT)",
-            "Draw the ankle plane (TT)",                                                                                              #
+            "Draw the ankle plane (TT)",                                                                                              ###
             "NT > What structures are near the saphenus nerve?",                                                                      ##              Runs with femoral artery and vein, deep to sartorius and over adductor longus 
             "NT > What structures are around saphenus nerve at high thigh window?",                                                                   # fermoal artery medial, nerve lateral to FA, sartorius above, vastus medialis medial, AL below 
             "NT > Tell the order of the adductor muscles",                                                                            ##              Anteriu to posterior: M. pectineus > AL > AB > AD 
@@ -2668,8 +2969,8 @@ run <- function() {
             "What nerves need to be innervated for an awake FOI?",
             "What is the MACOCHA airway assessment?",
             "NT > What is the lateral horn?",                                                                                                         # T1-L2, ell bodies of preganglionic sympathetic neurons, axons exit via ventral root, enter spinal nerve, then white ramus communicantes > sympathetic chain ganglia
-            "NT > How would you perform a rectus sheath block?",                                                                      ##.             Periumbilical procedures especially, 20ml of LA, CAVE: Arcuate line (termination of posterior rectus sheath (1/3 of the distance between umbilicus - pubis), NOT BELOW THE LINE (no backstop!!!!!!), track lines (double lines, ZUG for the sheath), Rectus muscles from costal cartilages of the pubis, fascia comes from convergiance of oblique and transverse abdominis muscles, innervating nerves travel in TAP plane (between transverse and oblique muscles) > pierce rectus sheath to innervate the rectus muscle, inferior and superior epigastric arteries run in the rectus abdominis muschle, LA injected in undersurface of the muscle (muscle and posterior surface of the sheath), 
-            "In healthy adults, which is produced in greater quantity: adrenaline or noradrenaline?",
+            "NT > How would you perform a rectus sheath block?",                                                                      ##              Periumbilical procedures especially, 20ml of LA, CAVE: Arcuate line (termination of posterior rectus sheath (1/3 of the distance between umbilicus - pubis), NOT BELOW THE LINE (no backstop!!!!!!), track lines (double lines, ZUG for the sheath), Rectus muscles from costal cartilages of the pubis, fascia comes from convergiance of oblique and transverse abdominis muscles, innervating nerves travel in TAP plane (between transverse and oblique muscles) > pierce rectus sheath to innervate the rectus muscle, inferior and superior epigastric arteries run in the rectus abdominis muschle, LA injected in undersurface of the muscle (muscle and posterior surface of the sheath), 
+            # "In healthy adults, which is produced in greater quantity: adrenaline or noradrenaline?",                               #               # Adrenaline 80% → Noradrenaline 20%
             "Tell be about the kidney (ABC)",
             "Describe the anatomy of the adrenal gland",                                                                              #               Cortex (outer layer, produces steroid hormones, three layers: zona glomerulosa (aldosterone), zona fasciculata (cortisol), zona reticularis (androgens)), Medulla (inner layer, produces catecholamines (adrenaline and noradrenaline) in response to sympathetic stimulation, chromaffin cells are modified postganglionic sympathetic neurons that release catecholamines directly into the bloodstream, innervated by preganglionic sympathetic fibers from T5-L2 via the splanchnic nerves, Bilateral, triangular, superior pole, T12, Retroperitoneal, protective fatty capsule              
             "How would you perform a quadratus lumborum block?",                                                                      #               Blockade of intercostal nerves of the abdominal wall (T7-L1), posterior to psoas major, lateral to errector spinae, from iliac crest to 12th rib + medial attachmewnt to lumbar transverse processes, anterior to errector spinus muscle, ventral rami of lower thoracic nerves between psoas - ql - can be blocked there, ventral rami run then between transverse and internal oblique
@@ -2780,7 +3081,7 @@ run <- function() {
             "NT > Why is the right internal jugular vein used more frequently than the left?",                                         ###            Right is straighter course to SVC, left thoracic duct (chylothorax), left is more likely to be compressed by aortic arch, right handed operators, right wider, left often in arm or azygos
             "How can you tell between the internal jugular vein and the carotid artery on ultrasound?",
             "How many vertebrae are there?",
-            "NT > Explain the functional anatomy of the liver",                                                                        ##             Largest gland, 1.5 kg, 4 lobes (right, left, caudate and quadrate), 8 segments (Couinaud classification), dual blood supply (portal vein 75% and hepatic artery 25%), portal vein (nutrient rich, deoxygenated blood from GI tract), hepatic artery (oxygenated blood from celiac trunk), hepatic veins (drain into IVC), bile ducts (drain into duodenum via common bile duct), hepatocytes (metabolism, detoxification, bile production), Kupffer cells (macrophages in sinusoids), stellate cells (vitamin A storage, fibrosis)             
+            "NT > Explain the functional anatomy of the liver",                                                                        ###             Largest gland, 1.5 kg, 4 lobes (right, left, caudate and quadrate), 8 segments (Couinaud classification), dual blood supply (portal vein 75% and hepatic artery 25%), portal vein (nutrient rich, deoxygenated blood from GI tract), hepatic artery (oxygenated blood from celiac trunk), hepatic veins (drain into IVC), bile ducts (drain into duodenum via common bile duct), hepatocytes (metabolism, detoxification, bile production), Kupffer cells (macrophages in sinusoids), stellate cells (vitamin A storage, fibrosis)             
             "NT > What are the function of the liver?",                                                                                               # Production of bile (break and carry fats - small intestine), proteins production (albumin, globulins), cholesterol production, glucose into glycogen, amino acids break down, Processing of Hb (the liver stores iron), Conversion of toxic ammonia to urea (end product of protein metabolism), Regulating blood clotting, making immune factors and removing bacteria from the bloodstream bilirubin clearance
             "What are the primary and compensatory curvatures of the spine?",
             "What are the distinguishing features of each type of vertebra?",                                                          #              C1 > No body, No spine, Anterior arch that articulates with the odontoid peg of C2, C2 - 6 > Bifid spinous process, C7 > Prominent spinous process (note that C7 is the prominens vertebra), Thoracic > Heart shaped bod, Articulate with ribs via their costal facet joints, Large transverse processes, Long caudally angulated spinous process, Lumbar > Kidney shaped body, Wide transverse processes, Large horizontal spinous process
@@ -2804,7 +3105,7 @@ run <- function() {
             "Can you explain the difference between sensitivity and specificity?",                                                     #              CONFUSION MATRIX > Sensitivity: “If I have the condition, how likely is it that the test will detect it?” > TP/(TP + FN), Specificity: “If I don’t have the condition, how likely am I to test negative?” > TN/TN + FP
             "Key facts about the Circle of Willis",  
             "Which arteries form the Circle of Willis?",                                                                               #            
-            "Where are arterial aneurysms most commonly found?",                                                                       ##             30-40% at junction of anterior communicating and anterior cerebral arteries, 30% at junction of internal carotid and posterior communicating artery, 20-30% in middle cerebral artery, 10% in posterior circulation (*basilar and superior and posterior inferior cerebellar arteries*)
+            "Where are arterial aneurysms most commonly found?",                                                                       ###            30-40% at junction of anterior communicating and anterior cerebral arteries, 30% at junction of internal carotid and posterior communicating artery, 20-30% in middle cerebral artery, 10% in posterior circulation (*basilar and superior and posterior inferior cerebellar arteries*)
             "NT > What are the contents and border of the adductor canal?",                                                            #              Borders: Medially (roof) it is formed by sartorius muscle beneath which lies subsartorial plexuses over a fascial sheath, Anterolaterally it is bounded by vastus medialis, posterior: adductor longus (in upper part) and adductor magnus (in lower part, lateral: vastus medialis, Contents: femoral artery, femoral vein, saphenous nerve (sensory to medial leg), nerve to vastus medialis (motor to vastus medialis)
             "NT > Tell me the branches of the A. femoralis",                                                                           #              Common femoral artery (from external iliac artery) > profunda femoris artery (deep artery of the thigh) > medial and lateral circumflex femoral arteries (hip joint), various perforating branches to the adductors,  superficial femoral artery (continues down the thigh) > popliteal artery (after passing through adductor hiatus) > anterior tibial artery (after passing through interosseous membrane) and posterior tibial artery (continues down the leg)
             "What factors affect flow in a blood vessel?",                                                                             ##             Hagen Poisselle: Flow (Q) = Pressure gradient (P) / Resistance (R), Resistance (R) = 8 x viscosity (n) x length (L) / π x radius^4 (r^4), Flow is directly proportional to the pressure gradient and inversely proportional to the resistance, Resistance is directly proportional to the viscosity and length of the vessel and inversely proportional to the fourth power of the radius, therefore small changes in radius have a large effect on flow
@@ -2853,15 +3154,9 @@ run <- function() {
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -2871,23 +3166,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -2901,7 +3190,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -2920,7 +3208,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -2936,36 +3223,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -2977,16 +3256,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -2994,7 +3269,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -3004,7 +3278,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -3043,12 +3316,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -3069,7 +3339,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -3119,17 +3394,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -3148,6 +3428,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -3164,6 +3459,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -3171,6 +3467,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -3211,8 +3510,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -3229,6 +3535,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -3237,9 +3551,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -3257,6 +3572,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -3267,17 +3584,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -3300,11 +3630,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -3317,13 +3649,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -3358,6 +3692,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -3370,6 +3731,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -3379,6 +3741,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -3394,7 +3757,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -3404,6 +3767,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -3438,16 +3804,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -3458,23 +3832,30 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
     
         
         #####
         physics_physiology = c(
+            "Can you tell me the differences between the different types of muscle?",
             "NT > What is SID (Steward) and how is it calculated?",                                                                                   # Strong Ion Difference (SID) = (Na + K + Ca + Mg) - (Cl + lactate), normal around 40 (if albumine normal), decrease in SID causes acidosis, increase causes alkalosis (unmeasured ions)
             "Tell me how oxygen is carried in blood",
             "NT > What is the structure of haemoglobin?",                                                                              ##             # Tetrameric 4 globin chains (2 alpha, 2 beta), each with a haem group (protoporphyrin ring + ferrous iron), each haem can bind one O2 molecule, cooperative binding (binding of one O2 increases affinity for the next O2)
             "How does foetal Hb differ from adult Hb?",
-            "What factors impact the amount of drug absorbed by the inhalational route?",                                              #              Solubility (blood:gas partition coefficient), concentration gradient, alveolar ventilation, cardiac output, diffusion capacity of the lungs, patient factors (e.g., age, lung disease)          
+            "What factors impact the amount of drug absorbed by the inhalational route?",                                              ###            Solubility (blood:gas partition coefficient), CONCENTRATION GRADIENT, alveolar ventilation, cardiac output, diffusion capacity of the lungs, patient factors (e.g., age, lung disease)          
             "What is 2,3-DPG?",                                                                                                        ##             2,3-DPG is an end product of red cell metabolism (Rapoport-Luebering-Zyklus), an increase in its concentration shifts the O2 dissociation curve to the right, its concentration is increased in chronic hypoxia, high altitude, chronic lung disease. By contrast, stored blood in a blood bank may be depleted of 2,3-DPG and unloading of oxygen is impaired, highly anionic intermediate (organic phosphate) of glycolysis. It binds to the deoxygenated form of Hb, significantly reducing the affinity of Hb for oxygen. HbF has a increased affinity for oxygen, which adapts its transport and delivery characteristics to the lower oxygen tensions in the placento-foetal circulation. HbA replaces HbF during the first year of life. HbF is also modified by having a lower affinity for binding 2,3-diphosphoglycerate (2,3-DPG) than adult forms of Hb.
             "NT > Why can a hypoalbuminaemia mask detection of metabolic acidosis?",                                                                  # Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis)
             "How does the saturation of Hb occur?",                                                                                    ##             First tense (low affinity and flat curve) > relaxed (high affinity and sigmoidal curve) > cooperative binding 
@@ -3634,7 +4015,6 @@ run <- function() {
             "What are the different measures of central tendency?",                                                                     ###
             "How does fluid move between intra and extracellular fluid?",
             "Describe the nephron and where do the diuretic drugs work?",
-            "Can you tell me the differences between the different types of muscle?",
             "NT > Describe the difference between first and second order neurons",                                                                    # In the pain/temperature > second-order cross immediately, touch/proprioception > cross in the medulla,  First-order neurons (Cell bodies in dorsal root ganglia (spinal nerves) or sensory ganglia (CN) > sensory neurons > stimuli in the periphery > transmitting to spinal cord or brainstem. Second-order neurons (Cell bodies in dorsal horn/posterior gray column) or the medulla (nucleus gracilis/cuneatus).) > spinal cord dorsal horn or brainstem, receive input from 1 order > to thalamus, crossing over to the opposite side (decussation)
             "How does Heparin work?",
             "How is 2,3-DPG produced and what does it do?",                                                                             #             Side pathway of glycolysis (Rappoport-Luebering shunt), Right shift, Stabilising the T or ‘Taut’ state of Hb (binding lysine and histidine on b-SU), RBC 'choose' between ATP or O2 unloading, Glycolysis (step of 1,3-Bisphosphoglycerate), Produce 3-phosphoglycerate and continue, Or produce 2,3-DPG → unloading of O2
@@ -3778,7 +4158,7 @@ run <- function() {
             "Tell me about the haemoglobin buffer system",
             "What statistical tests do you know and in which scenarios are they used?",
             "Should we hyperventilate patients with high intracranial pressure?",                                                       #             Hyperventilation causes vasoconstriction and thus reduces cerebral blood flow and intracranial pressure, but it also reduces oxygen delivery to the brain, so it should be used with caution and only as a temporary measure, - ICP reduction only temporarily, Recalibration → new set point → previous returns to same level (hours), If hyperventilation stops (CO2 rises) → resulting vasodilatation worse
-            "What effect does increasing venous filling have on venous return and cardiac output?",
+            "What effect does increasing venous filling have on venous return and cardiac output?",                                     ###
             "What is dead space and what types of dead space are there?",
             "How can you calculate fluid deficit in an infant?",
             "Tell me about the factors influencing the diffusion of gases between pulmonary capillaries and alveoli",
@@ -3795,7 +4175,7 @@ run <- function() {
             "How can the body compensate for the increased ventilation and perfusion during physical activity?",
             "What is the equation for venous return?",
             "How can nociceptive pain be classified?",
-            "Tell me about the production, composition, circulation and reabsorbtion of CSF",
+            "Tell me about the production, composition, circulation and reabsorbtion of CSF",                                           ###           Composition CSF: Clear, colorless fluid with low protein content (15-45 mg/dL), low glucose (50-80 mg/dL), less glucose, higher chloride, no cells, Lactate level in the CSF of acute B-Meningitis group was 4-fold higher than that in the acute V-Meningitis 
             "What is hypoxic pulmonary vasoconstriction (HPV)?",
             "Where is calcium stored in the body?",                                                                                     #             Total 1.2 kg, 99% in bone, 1% in extracellular fluid (half ionised, 40% bound to albumin (16 binding sites (20% by Ca)) and globulins, 10% to bicarbonate), 1% muscles, normal plasma concentration 2.2 - 2.6 mmol/L (1.15 - 1.35 mmol/L ionised)
             "NT > Please describe the physiological functions of the kidneys.",                                                         ##            Excretion (urea, creatinine, uric acid, bilirubin, drugs), water and electrolyte balance, acid-base balance, Endocrine functions (RAAS, erythropoietin, calcitriol > vitamin D activation)
@@ -3819,7 +4199,6 @@ run <- function() {
             "Explain the proportion, L/min and ml/100g of blood flow for heart, kidney, liver and the brain",
             "What is the equation for venous return?",
             # "What effect does reducing venous resistance have on venous return and cardiac output?",                                    ####           X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)
-            "What effect does increasing venous filling have on venous return and cardiac output?",
             "How does the respiratory cycle affect preload?",
             "Can you explain the Frank-Starling mechanism in relation to the heart?",
             "What does the LVEDP-SV graph look like in heart failure?",
@@ -3827,7 +4206,6 @@ run <- function() {
             "What is the Fick principle?",
             "How can the Fick principle be used to calculate Cardiac output?",                                                          ###           CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference of the substance.
             "Can you draw and explain the MAP formula?",
-            "Tell me about pressure is the pressure driving flow to the coronary arteries",
             "What are the mechanisms?",
             "How does the kidney contribute to the regulation of the water balance in the body?",
             "NT > Why do we have measurements for AG and SID, what is the difference?",                                                 #             AG - Diagnostic Tool (anion gap - Henderson-Hasselbach tradition - are there unmeasured anions that eat up my bicarbonate - to categorise types of metabolic acidosis) = [Na+] - ([Cl-] + [HCO3-]) > normal 12 mEq/L, used to identify causes of metabolic acidosis (elevated AG suggests presence of unmeasured anions, such as lactate or ketones), SID (strong ion difference - Stewards physical chemistry approach - explains how changes in water dissociation (H+ and OH-) are forced by the balance of strong ions.) = [Na+] + [K+] - [Cl-] > normal 40 mEq/L, used in the Stewart approach to acid-base ELECTRICAL BALANCE balance, where a decrease in SID (due to increased Cl- or decreased Na+) leads to acidosis, while an increase in SID leads to alkalosis
@@ -3924,25 +4302,13 @@ run <- function() {
             "Explain the Bohr equation?"                                                                                                              # https://www.tiktok.com/@anaestheasier/video/7436091968536595744
         ),
         
-        guidlines = c(
-            "We recommend using a muscle relaxant to facilitate tracheal intubation (1A). R2 We recommend the use of muscle relaxants to reduce pharyngeal and/or laryngeal injury following endotracheal intubation (1C). R3 We recommend the use of a fast-acting muscle relaxant for rapid sequence induction intubation (RSII) such as succinylcholine 1 mg kg 1 or rocuronium 0.9 to 1.2 mg kg 1 (1B). R4 We recommend deepening neuromuscular blockade if surgical conditions need to be improved (1B). R5 There is insufficient evidence to recommend deep neuromuscular blockade in general to reduce postoperative pain or decrease the incidence of peri-operative complications. (2C). R6 We recommend the use of ulnar nerve stimulation and quantitative neuromuscular monitoring at the adductor pollicis muscle to exclude residual paralysis (1B). R7 We recommend using sugammadex to antagonise deep, moderate and shallow neuromuscular blockade induced by aminosteroidal agents (rocuronium, vecuronium) (1A). R8 We recommend advanced spontaneous recovery (i.e. TOF ratio >0.2) before starting neostigmine-based (40 microgram/kg) reversal and to continue quantitative monitoring of neuromuscular blockade until a TOF ratio of more than 0.9 has been attained. (1C)",
-            "GRADE approach (Grading of Recommendations Assessment, Development and Evaluation): High, Moderate, Low, Very Low, a systematic framework for evaluating the quality of evidence and strength of recommendations in healthcare, considering factors such as study design, risk of bias, consistency of results, directness of evidence, and precision of estimates",
-            "CPS1: Current evidence does not allow the recommendation of one reversal agent over another when reversing a TOF-ratio between 0.4 and 0.9. The choice between sugammadex and neostigmine must consider patient-related factors as well as availability. CPS2: Recovery from succinylcholine-induced neuromuscular blockade should also be monitored quantitatively",
-            "Risk of bias assessment was conducted in accordance with the Cochrane Hand book for Systematic Reviews and Interventions. The risk of bias was assessed for the following domains: (1) Random sequence generation (selection bias); (2) Allocation concealment (selection bias); (3) Blinding of participants and personnel (performance bias);(4) Blinding of outcome assessors (detection bias); (5) Incomplete outcome data, intention-to-treat (attrition bias); (6) Selective reporting. "
-        ),
 
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -3952,23 +4318,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -3982,7 +4342,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -4001,7 +4360,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -4017,36 +4375,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -4058,16 +4408,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -4075,7 +4421,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -4085,7 +4430,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -4124,12 +4468,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -4150,7 +4491,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -4200,17 +4546,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -4229,6 +4580,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -4245,6 +4611,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -4252,6 +4619,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -4292,8 +4662,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -4310,6 +4687,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -4318,9 +4703,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -4338,6 +4724,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -4348,17 +4736,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -4381,11 +4782,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -4398,13 +4801,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -4439,6 +4844,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -4451,6 +4883,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -4460,6 +4893,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -4475,7 +4909,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -4485,6 +4919,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -4519,16 +4956,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -4539,12 +4984,18 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
         
@@ -4579,7 +5030,6 @@ run <- function() {
             "NT > Draw the classical clotting cascade and the drugs involved",
             "NT > How can acute vs. chronic hepatitis infection be separated?",                                                                       # Vaccinated: Only anti-HBs is positive, Acute Infection: HBsAg is positive, IgM anti-HBc is positive, anti-HBs is negative,  HBsAg (Surface Antigen): Indicates active infection (acute or chronic), Anti-HBs (Surface Antibody): Indicates immunity from vaccination or past resolved infection, Anti-HBc (Core Antibody): Indicates exposure to the virus. Total anti-HBc means past or current infection, while IgM anti-HBc indicates acute infection
             "NT > Why is pregabalin better compared to gabapentin?",                                                                    #             Pregabalins (Lyrica) bioavailability (90% vs 33-66%), linear pharmacokinetics, faster onset, less interactions, more potent (150 mg pregabalin = 300 mg gabapentin), more sedation with pregabaline, Gabapentin better for dialysis patients in renal failure
-            "What classes of antidepressant do you know?",
             "NT > How do TCAs work and what effects do they have",                                                                      #             Inhibit reuptake of serotonin and noradrenaline (some dopamine) > increase these in synaptic cleft > antidepressant effect, ANTIMUSCARINIC = ANTICHOLINERGIC (M1) (dry mouth, blurred vision, constipation, urinary retention), ALPHA-ADRENERGIC (orthostatic hypotension), ANTIHISTAMINIC (sedation), TOXIC > cardiac (Na channel blockade - WIDE QRS, ventricular arrhythmias), seizures, ANTICHOLINERGIC "Hot, Dry, Blind, Tachycardic" > (hyperthermia, dilated pupils, dry skin, urinary retention) - SodiumBicarb (treats acidosis, cardiac toxicity)
             "How would you diagnose and manage TCA overdose?",
             "How do serotonin specific reuptake inhibitors work?",
@@ -4739,7 +5189,6 @@ run <- function() {
             "NT > Explain the NASPE code for ICDs (NBD code)",                                                                                        # North American Society of Pacing and Electrophysiology (NASPE) Defibrillator Code (NBD)A similar code for Implantable Cardioverter Defibrillators (ICDs) exists, covering:Shock Chamber (O, A, V, D)Antitachycardia Pacing Chamber (O, A, V, D)Tachycardia Detection (E=Electrogram, H=Hemodynamic)Antibradycardia Pacing Chamber
             "What is the difference between an inverse agonist and a competitive antagonist?",                                           #            In inverse agonist binds preferentially to inactive receptors, which has the effect of reducing basal activity, an effect opposite to that of the agonist. A competitive antagonist binds equally to active and inactive receptors and prevents the agonist from binding. It has no effect of its own.           
             "What is the difference between tolerance, desensitisation and tachyphylaxis?",                                              #            Tolerance > larger dose achieve same clinical effect > Faster metabolism > hepatic enzyme induction (chronic alcohol), Tachyphylaxis > Rapid decrease in response > repeated doses over a short period > endogenous neurotransmitter stores (noradrenaline) exhausted before synthesised (ephedrine), Desensitisation > Slower response decrease over longer time period > Change in receptor shape, Reduction in receptor number (down regulation) >  β receptors (after continued dobutamine) 
-            "How can general anaesthesia be administered?",
             "What factors specifically affect transdermal absorption of a drug?",
             "What factors do you need to consider in a patient with renal disease?",
             "Can you describe and draw the glomerulus with the cells involved?",                                                                      # https://www.youtube.com/watch?v=2eiLaFlTfKc
@@ -4795,7 +5244,7 @@ run <- function() {
             "What factors affect whether a drug distributes to the foetus?",                                                             ##           Blood flow, Protein Binding →  ‘free’ fraction cross → highly protein bound stay in plasma, However fetal protein binding encourage passage across placentaGraham’s law → passive diffusion rate inversely proportional to square root of size, ficks law, Ionisation → fat soluble unionised (not ionised) → pKa  → foetal lower ph → basic drugs more ionised → ion trapping → bupivacaine classic example → in placental insufficiency (acidosis) → ion trapping → toxicity, 
             # "What are the suitable locations for gaining intraosseous access on a child?",                                            ####
             "What do you understand by the term ‘muscle relaxant’?",
-            "What is meant by the term pharmacogenetics and what are typical conditions?",
+            # "What is meant by the term pharmacogenetics and what are typical conditions?",                                               ####         CYP2D6 polymorphisms affecting codeine metabolism (ultra-rapid metabolizers may experience toxicity, while poor metabolizers may have reduced analgesic effect)
             "What types of muscle relaxants are you aware of?",                                                                          #           
             "Tell me about depolarizing muscle relaxants first.",
             "What do first order and zero order kinetics mean?",                                                                         ###          First order kinetics → rate of removal is proportional to concentration (same proportion is removed) → enzymatic capacity exceeds drug concentration → half life remains constant → drop in concentration is negatively exponential, Zero order kinetics → half life progressively shorter if concentration decreases, rate of removal is constant (same amount is removed) → enzymatic capacity is saturated by drug concentration → half life concept does not make sense → drop in concentration is linear, half life progressively shorter → zero order half life isn’t used for calculating anything → isn’t useful, Alcohol → reducing by '1 unit per hour' rather than in terms of half lives, Phenytoin → enzymes rapidly saturated → switch first order → zero order
@@ -4906,15 +5355,9 @@ run <- function() {
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -4924,23 +5367,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -4954,7 +5391,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -4973,7 +5409,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -4989,36 +5424,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -5030,16 +5457,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -5047,7 +5470,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -5057,7 +5479,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -5096,12 +5517,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -5122,7 +5540,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -5172,17 +5595,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -5201,6 +5629,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -5217,6 +5660,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -5224,6 +5668,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -5264,8 +5711,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -5282,6 +5736,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -5290,9 +5752,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -5310,6 +5773,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -5320,17 +5785,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -5353,11 +5831,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -5370,13 +5850,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -5411,6 +5893,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -5423,6 +5932,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -5432,6 +5942,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -5447,7 +5958,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -5457,6 +5968,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -5491,16 +6005,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -5511,12 +6033,18 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
         
@@ -5589,7 +6117,7 @@ run <- function() {
             "How can intracranial pressure be monitored?",
             "What framework can you use for evaluating the TTE/TEE examination?",                                                                     # structural, functional and haemodynamic assessment
             "Explain how antiarrhythmic agents are classified",                                                                        ##
-            "What are carboprost and misoprostol?",
+            "What are carboprost and misoprostol?",                                                                                    ###.           Carboprost (analogue of prostaglandin F2α, Misoprostol (Cytotec) (prostaglandin E1 analogue) prevention of gastric ulcers, medical abortion and induction of labor, uterine contraction and cervical dilation.             
             "What are the indications specifically for CRRT?",
             "What are responses to a Valsalva manouvre seen in neuropathy and heart failure?",
             "What is ultrafiltration?",
@@ -5644,7 +6172,6 @@ run <- function() {
             "Tell me about propofol as a TIVA agent",
             "Resus Council Guidelines for adult tachycardia",
             "How do you estimate blood volume in a child?",
-            "What are carboprost and misoprostol?",
             "What drugs do you know that can help promote uterine contraction?",                                                      #               OXYTOCINE (10 IE - hypertension, synthetic, short half life, uterine contraction and anti-diuretic effect), ERGOMETRINE (ergot alcaloid - 0.25-0.5 mg IV/IM hypertension, not in eclampsia, longer half life, more side effects - hypertension, nausea, vomiting), CARBOPORST Prostaglandins 0.25 mg IM - bronchospasm, MISOPROSTOL (cytotec) - also used for medical abortion
             "Tell me about the use of remifentanil in TIVA",
             "What do you understand by TCI?",                                                                                         #               Target controlled infusion > pre-programmed microprocessor > three-compartment pharmacokinetic for specific drug > Marsh and Schneider (propofol) and Minto (remifentanil) > weight, age and heigh programmed > algorithm determine correct infusion rate > no plasma measurement or effect site concentrations > estimated by algorithm > difference TIVA and inhalational  > no equivalent of end-tidal agent concentration or MAC, Target in question either > target plasma or effect site (brain) concentration Marsh > traditionally targets plasma concentration > much larger, weight-dependent central compartment > much more propofol as bolus at start Schnieder > traditionally effect site concentration > aims equilibrium blood vs brain quickly > ‘overshoot’  plasma concentration slightly > more rapid changes in effect concentration Eleveld > larger initial bolus than Marsh > more predictable wake up Patients sleep at ESC of 2.5-3μg/ml on propofol alone, or 2-2.5μg/ml if remifentanil used            
@@ -5818,7 +6345,6 @@ run <- function() {
             "NT > Explain the formuola of mass action and the constants for affinity and dissociation",                               #               (A) + (B) < (Kback) > (Kforward) (AB), Dissociation constant Kd = Kback / Kforward, Affinity constant (Ka) = Kforward / Kback, High affinity > low Kd > high Ka > more likely to bind to receptor and less likely to dissociate > more potent drug, Low affinity > high Kd > low Ka > less likely to bind to receptor and more likely to dissociate  
             "What do you know about pancuronium?",
             "Tell me about atracurium",
-            "How do atracurium and cisatracurium compare?",
             "What neuromuscular blockade reversal agents are you aware of?",
             "What are the problems with using anticholinesterases for reversal?",
             "What anticholinesterases do you know?",
@@ -6000,7 +6526,7 @@ run <- function() {
             "What voltage is carried by UK overhead powerlines, and how is it converted to 240V in the home?",
             "What are the three points on a UK plug socket for?",
             "What are the different types of electrical injury?",
-            "What are the types of electric shock?",
+            "What are the types of electric shock?",                                                                                  #               Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)
             "What resistance is offered by different parts of the body?",
             "What are the three main dangers from electrical circuits?",
             "How can electricutions be prevented?",
@@ -6143,15 +6669,9 @@ run <- function() {
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -6161,23 +6681,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -6191,7 +6705,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -6210,7 +6723,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -6226,36 +6738,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -6267,16 +6771,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -6284,7 +6784,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -6294,7 +6793,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -6333,12 +6831,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -6359,7 +6854,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -6409,17 +6909,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -6438,6 +6943,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -6454,6 +6974,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -6461,6 +6982,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -6501,8 +7025,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -6519,6 +7050,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -6527,9 +7066,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -6547,6 +7087,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -6557,17 +7099,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -6590,11 +7145,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -6607,13 +7164,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -6648,6 +7207,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -6660,6 +7246,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -6669,6 +7256,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -6684,7 +7272,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -6694,6 +7282,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -6728,16 +7319,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -6748,50 +7347,56 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
         
         ABC_Verbal = c(
-            "60y male with pancreatic cancer - what you want to know on assessment",                                                    ##            5MC: Mass (surrounding organs, diabetes, malnutrition), Metastasis, Metabolic activity, Medications, Mental state, Cause - integrate in SSCCT)
+            "60y male with pancreatic cancer - what you want to know on assessment",                                                    ###            5MC: Mass (surrounding organs, diabetes, malnutrition), Metastasis, Metabolic activity, Medications, Mental state, Cause - integrate in SSCCT)
             "60y male with colon cancer - what you want to know on assessment",                                                                       # 23:40 - How to structure your patient assessment (SSCCM) - 5MC (carcinoid tumor, inflamatory bowl disease or idiopathic/genetic cause)
-            "50y male with a large base of tounge tumor - what you want to know on assessment",                                                       # 23:40 - How to structure your patient assessment (SSCCM) - 5MC + positional, progression, critical structures (SOB, hoursness, dyspahgia, stridor, couph), surrounding structures, Airway problem now but also after the surgery and if progressed quickly planning proactively)
-            "50y male with a large mediastinal tumor - what you want to know on assessment",                                            #             26:41 - How to structure your patient assessment (SSCCM) - 5MC + positional, progression, critical structures (syncopy, SOB, chest pain, neck congestion) 
+            "50y male with a large base of tounge tumor - what you want to know on assessment",                                         ##             5MC + positional, progression, critical structures (SOB, hoursness, dyspahgia, stridor, couph), surrounding structures, Airway problem now but also after the surgery and if progressed quickly planning proactively)
+            "50y male with a large mediastinal tumor - what you want to know on assessment",                                            ##             26:41 - How to structure your patient assessment (SSCCM) - 5MC + positional, progression, critical structures (syncopy, SOB, chest pain, neck congestion) 
             "70y male, 1d post total knee replacement, SpO2 70% - what you want to know on assessment",                                               # 26:41 - How to structure your patient assessment - DRSABCDE, AMPLE for quick patient history, CRM - after initial stabilisation, AMPLE asssessment we continue with HxExIx approach
             "18y male, worsening tridor from pharyngeal absess - what you want to know on assessment",                                                # 29:50 - How to structure your patient assessment - potentially life threatening > DRSABCDE > AMPLE > assess for MASS effect (positional, progression, critical sttuctrues (SOB, horseness, dysphagia, stridor)) > mobilise help and arrange transport > assess if the tumor rapidly progresses
             "60y, male, lung fibrosis, BMI 50, 150kg with lung tumor for thoracotomy",                                                                # 30:56 - How to structure your patient assessment - start with the 5 MC for the tumor and continue with SSCCM for lung fibrosis and type 3 adipositas (cause (steroid, eating, illness, other), complications (cardiovascular, ))
             "How would you assess, risk stratify and proceed with a child having a cold?",
-            "What are the mnenonics for anion gap acidosis?",                                                                           #             HIGH GAP ACIDOSIS: DULE: Diabetes, Uraemia, Lactic acidosis, Ethanol (toxins), NORMAL GAP ACIDOSIS: GRAN: GI (diarhia, fistula, vomiting),  Renal tubular acidosis, Addison's disease, Normal saline (hyperchloremic acidosis)
+            "What are the mnenonics for anion gap acidosis?",                                                                           ##             HIGH GAP ACIDOSIS: DULE: Diabetes, Uraemia, Lactic acidosis, Ethanol (toxins), NORMAL GAP ACIDOSIS: GRAN: GI (diarhia, fistula, vomiting),  Renal tubular acidosis, Addison's disease, Normal saline (hyperchloremic acidosis)
             # The summary statement
-            "74y male, with ruptured AAA (abdominal) by ambulance for laparatomy rushed in ED (pAVK, HTN, RR 80/40)",                   #             # 06:25 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - transfer to ceatre, cross clamp, ruptured AAA, hypovolemic shock, resuscitation, damage control surgery, endovascular repair, open repair, blood products, vasopressors, ICU care, MTP (cell caver), vascular and cardiac, haematology
+            "74y male, with ruptured AAA (abdominal) by ambulance for laparatomy rushed in ED (pAVK, HTN, RR 80/40)",                   ##             # 06:25 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - transfer to ceatre, cross clamp, ruptured AAA, hypovolemic shock, resuscitation, damage control surgery, endovascular repair, open repair, blood products, vasopressors, ICU care, MTP (cell caver), vascular and cardiac, haematology
             "50y female with grade 3 SAB in a primary hospital without neurosurgical department",                                                     # 09:03 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - urgent, high risc, comnplex neurosurgical pathology, transfer (NCU, interventional radiology), rebleed, ICP
             "30y female, G1P0, 29 weeks, BP 160/90, headache, abdominal pain",                                                                        # 10:55 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - preterm, high risc, initialisation of RR, corticosteroids (preterm), prevent firther hypertensive crisis and eklampsia (seizures), plan for neonatal care
-            "7y boy, 24h post tonsilectomy presents with bleeing in ED",                                                                ##            # 12:15 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - high risc, urgent procedure, unfasted, distressed child, hypovolaemic shock, remote location, airway compromise, need transport into ENT hospital
+            "7y boy, 24h post tonsilectomy presents with bleeing in ED",                                                                ###            # 12:15 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - high risc, urgent procedure, unfasted, distressed child, hypovolaemic shock, remote location, airway compromise, need transport into ENT hospital
             "50y female, heart transplant 4 years ago, idiopathic dilated cardiomyopathy, small hospital for elective LAP",                           # 13:26 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - possible imminent peritonitis and a high rist cardiac patient, specialized transport, organize notes
             "4 week old baby, remote hospital, projectile vomiting, diagnosis pyloric stenosis",                                                      # 15:40 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - neonate who presents with a neonatal emergency, stabilise hypovolaemic shock and acid base, electrolyte abnormalities before transport
-            "19y old, Fontan`s repair for appendectomy, remote hospital",                                                               #             # 16:20 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - complex, cardio-surgical pt for high risc procedure
+            "19y old, Fontan`s repair for appendectomy, remote hospital",                                                               ##             # 16:20 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - complex, cardio-surgical pt for high risc procedure
             "85y female, fractured NOF, small hospital for a DHY, aortic stenosis (area 1.2 cm2 on TTE 3y ago)",                                      # 17:37 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location)
-            "50y Jehovas Witness for multilevel lumbar scoliosis instrumentation",                                                      ##            # Age, gender, risc level, elective or emergency, critical issue, location) - allogen vs autolog dilemma, cell caver, tertiary hospital, fast surgeon (two), preoperative optimisation 
-            "5yo child for MRI, cerebral palsy workup",                                                                                 #             # 19:37 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - remote environment, neurologically impaired child, need skilled assistance and ped-anesthesiologist
-            "61y male, in ICU pos CABG for urgent sternotomy, RR 80/40, pulsus paradoxus, pale, sweaty",                                #             Age, gender, risc level, elective or emergency, critical issue, location) - emergent transfer, MTP, sternotomy at ICU, cardiac tamponade and cardiogenic shock, logistics for CPR2
-            "60y male for elective lap chole, with COPD - what you want to know on assessment",                                         #             18:39 - How to structure your patient assessment (SSCCM) - particulary conserned about severity/stability (recent exacerbations, hospitalisations, medications, home oxygen), smoking, environmental or work exposure, complication (lung, other cancers, severy bullae, pneumothorax)
+            "50y Jehovas Witness for multilevel lumbar scoliosis instrumentation",                                                      ###            # Age, gender, risc level, elective or emergency, critical issue, location) - allogen vs autolog dilemma, cell caver, tertiary hospital, fast surgeon (two), preoperative optimisation 
+            "5yo child for MRI, cerebral palsy workup",                                                                                 ###             # 19:37 - The Summary Statement (age, gender, risc level, elective or emergency, critical issue, location) - remote environment, neurologically impaired child, need skilled assistance and ped-anesthesiologist
+            "61y male, in ICU pos CABG for urgent sternotomy, RR 80/40, pulsus paradoxus, pale, sweaty",                                ###            Age, gender, risc level, elective or emergency, critical issue, location) - emergent transfer, MTP, sternotomy at ICU, cardiac tamponade and cardiogenic shock, logistics for CPR2
+            "60y male for elective lap chole, with COPD - what you want to know on assessment",                                         ###             18:39 - How to structure your patient assessment (SSCCM) - particulary conserned about severity/stability (recent exacerbations, hospitalisations, medications, home oxygen), smoking, environmental or work exposure, complication (lung, other cancers, severy bullae, pneumothorax)
             "50y, COPD, rib fractures post fall (no other injuries), prolonged ITN for tracheostomy in OR",                                           # 00:25 - The Anaesthesia Assessment - complex so "In additional to my usual assessment" > focus on airway anatomy (difficult airway) / history (ultrasound), ventilatory settings, ARDS, pneumonia and respiratory stability, coagulation,
-            "50y female for total thyroidectomy for very large goiter",                                                                 ##            03:44 - The Anaesthesia Assessment - thyroid storm, retrosternal extension, malignancy yes/no, genetic syndroms (MEN (MEN2A (Sipple syndrome): The most common form, characterized by MTC, pheochromocytoma (adrenal tumors), and hyperparathyroidism), tracheamalacia postsurgery in malignant tumors
+            # "50y female for total thyroidectomy for very large goiter",                                                                 ####            03:44 - The Anaesthesia Assessment - thyroid storm, retrosternal extension, malignancy yes/no, genetic syndroms (MEN (MEN2A (Sipple syndrome): The most common form, characterized by MTC, pheochromocytoma (adrenal tumors), and hyperparathyroidism), tracheamalacia postsurgery in malignant tumors
             "5y boy for tonsillectomy",                                                                                                               # 05:21 - The Anaesthesia Assessment - bleeding risk, obstructive sleep apnea, snoring, obligated mouth breathing, congenital breathing, difficult airway, post-tonsillectomy bleed, dehydration and electrolyte abnormalities from reduced oral intake, pregnancy problems, compliance of the child (premed, parents in OR)
-            "35y G5P4 for elective C-section with placenta praevia, previous CC with small transfusions",                               ##            Placenta covers the cervix > risk of bleeding (previous history > adhaesive deorder (accreta > increca > percreta), assessment for hysterectomy, preterm delivery, fetal distress, maternal haemorrhage, need for blood products, neonatal resuscitation, preeclampsia, gestational diabetes, airway problems from pregnancy (weight gain, breast engorgement, airway oedema), aspiration risk from pregnancy (reduced gastric emptying and increased intraabdominal pressure), post-partum haemorrhage, preoperative Hb (anaemia optimisation)
+            # "35y G5P4 for elective C-section with placenta praevia, previous CC with small transfusions",                               ####            Placenta covers the cervix > risk of bleeding (previous history > adhaesive deorder (accreta > increca > percreta), assessment for hysterectomy, preterm delivery, fetal distress, maternal haemorrhage, need for blood products, neonatal resuscitation, preeclampsia, gestational diabetes, airway problems from pregnancy (weight gain, breast engorgement, airway oedema), aspiration risk from pregnancy (reduced gastric emptying and increased intraabdominal pressure), post-partum haemorrhage, preoperative Hb (anaemia optimisation)
             "90h, vocal minimal surg. (horse voice), COPD (home O2 mult. exacerb), pulm. hypertony, STEMY, NYHA4, nursing home",                      # 08:23 - The Anaesthesia Assessment - no surgery
             "80y independent male, multiple episodes of malaena for gastroskopy (IHD, DM, metabolic syndrome, Afib)",                                 # 10:21 - The Anaesthesia Assessment - ensure cessation, reversal anticoagulants, assess rescucitation (volume loss, Hb,  vitals), will be instable due to blood loss, will have ischemic heart disease and other issues but the effects of blood loss are mor urgent, bleeding risk, anticoagulation, cardiac stability, need for endoscopy, risk of sedation, risk of aspiration, need for blood products
             "80y male, for cataract surgery (IHD, DM, metabolic syndrome, Afib)",                                                                     # 11:25 - The Anaesthesia Assessment - local anesthesia indication and contraindications, sedation risk, ability to lie flat, axial length, acut cardio-respiratory compromise, claustrophobia, chronic cough, dementia, agitation
             # be a boss
             "30y G2P1, elective C-section at 39 weeks (M4, gained 30kg, no mention of mask or SCL options",                                           #                                                   
             "80y, NYHA3 > cataract, private hospital, stens (clopidogrel), severy metabic syndrome, <4 METs, wants peribulbar",                       # Cosmetic not a reason for risk, postpone and rebook, high bleeding risk, sub tennons block or topical, cardiology consultation and postponing surgery, difficult to justify in private praxis
-            "5y, unfasted, DMS compromnise, no IV possible, parents (ORIF)",                                                            #             Aspiration and mortality is very low in peds 
-            "96y frail, for urgent ERCP (stones), nursing home, HR 115 on metoprolol for AF",                                           #             Gallstone is the reason of sepsis (metoprolol, amiadaron, elytes, cardioversion)
+            "5y, unfasted, DMS compromnise, no IV possible, parents (ORIF)",                                                            ##             Aspiration and mortality is very low in peds 
+            "96y frail, for urgent ERCP (stones), nursing home, HR 115 on metoprolol for AF",                                           ##             Gallstone is the reason of sepsis (metoprolol, amiadaron, elytes, cardioversion)
             "40y, 1 post G3 SAB, raised CK, T wave inversion, clipping - proceed?",                                                                   # Common pattern for SAB with low incidence of KHK, but stop if dynamic changes, heart failure, oedema, trop dynamic, abnormal wall motion
             "60y for knee TEP, systolic murmur projection into carotids, good functional capacit",                                                    # 
             "60y, hip TEP, COPD FEV1 0.8L, warfarin for AF, bridged with clexane, acc. given clexane 12h ago",                                        # Be a Boss - do a spinal (cave for 24 if therapeutic), post op ICU bed for COPD, proceed with GA + facia iliaca block (order more blood )
@@ -6799,39 +7404,39 @@ run <- function() {
             "90, nursing home, NOF, limited ADLS, loud ejection murmur, otherwise ok",                                                                # Echo would bring no real benefit, proceed causiously, high risk, if septic or rapid AF we can still optimise (Hb, antibiotics) fluids and proceed, ketamine - accept the complication and deal with it (midazolam is best?)
             # Appreciationg the risc
             "80, 5 left rib # PCA/Ketamine inefective (coughing), clopidoglel for stent 1 mo aga - paravertebral block?",                             # risk benefif for analgesia              
-            "50y, compartment tibia #, OSA, BMI 50, recent stent, COPD O2 at home - clopi today",                                      #
+            "50y, compartment tibia #, OSA, BMI 50, recent stent, COPD O2 at home - clopi today",                                      ##
             "60y, emergency femoral nail (severe aortic stenosis, COPD (home O2), 160mg/d oxycodone for back pain",                                   # epidural might be possible, prevent high doses of systemic analgesia
-            "8y morbidly obese (55kg) with severe OSA for tonsillectomy - how to manage anxiety?",
-            "5y tonsillectomy, bad clinical, post URTi with cough, no fever, finantial problem getting off work, rural area home",     #              Acknowledge and accept the risk of drugs that work best here and proceed with caution
+            "8y morbidly obese (55kg) with severe OSA for tonsillectomy - how to manage anxiety?",                                     ##
+            "5y tonsillectomy, bad clinical, post URTi with cough, no fever, finantial problem getting off work, rural area home",     ##              Acknowledge and accept the risk of drugs that work best here and proceed with caution
             "60y, pot CABG, tamponade, difficult airway and BMV, OSA - method of induction?",                                                         # DSI, inhaled induction, ketamine, propofol sparing technique, anticipate problems and plan for i.v. inductrion wirh CPR, surgery ready and draped, topical anesthesia of the glottis
             "23, MBA, regional hospital, substantial tissue and left side traum, massivly aggitatedn, needs diagnosti, SpO2 89",                      # No propofol, ketamin to sedate and do diagnostik plus next steps planning
             # Priorities statement
-            "80y, severe AS (<0.7cm2) for laparatomy (you have all stuff) - induction?",                                               #               Main goal to maintain preload, contractility and afterload sinus rhythm - coronary pressure                                                 
-            "60y for carotid endarterectomy - general intraop plan",                                                                   #              Vigilance around clamping, allow rapid energence to assess neuro function, RR based on pat. previous RR, avoid hypertension (bleeding), viskosity and oxygen content, motinoring (NIRS) 
+            "80y, severe AS (<0.7cm2) for laparatomy (you have all stuff) - induction?",                                               ##               Main goal to maintain preload, contractility and afterload sinus rhythm - coronary pressure                                                 
+            "60y for carotid endarterectomy - general intraop plan",                                                                   ##              Vigilance around clamping, allow rapid energence to assess neuro function, RR based on pat. previous RR, avoid hypertension (bleeding), viskosity and oxygen content, motinoring (NIRS) 
             "Colled into ED for a just ruptured AAA, what are your priorities?",                                                                      # Rapid AMPLE and DRSABCDE, MTP, help, blood logistics, MDT (vascular vs KCH), diagnosics
             "55y, otherwise well, for SAB3 clipping - priorities",                                                                                    # Circulation cerebral (hydrocepahlus), vasospasm, Avoiding increase of TPP (not lowering ICP to quickly), Prevent rebleed, CPP, DO2 (Hb, viscosity), temperature, fast recovery for neuro assessment, monitor CPP (drain), prepare for bleed (MTP, adenosine), seizures, cardiac manifestations (takotsubo) or neurogenic pulmonary oedema!!!
-            "33y, general assessment, severe preeclampsia",                                                                            #.             timely delivery (control everything first), seizure (Mg), RR (hydralasin, Methyl-DOPA), electrolyte control, HELLP monitoring, be prepare for MTP, how about neuraxial if clotting bad
+            "33y, general assessment, severe preeclampsia",                                                                            ###             timely delivery (control everything first), seizure (Mg), RR (hydralasin, Methyl-DOPA), electrolyte control, HELLP monitoring, be prepare for MTP, how about neuraxial if clotting bad
             "55y, myasthnia gravis for small intervention, preop workup - what to do to manage the patient",                                          # perop drog management, assessing bulbar function (aspiration risc) and mediastinal mass, post op ICU, functional respiratory capacity, avoid muscle relaxants, neuromuscular monitoring, optimisation of respiratory function, avoid oversedation, over analgesia, cave with relaxants (minimal 10% dose, succy not working), pyridostigmin dosages, avoid magnesium, 
             "Pheochromocytoma patient for adrenalectomy, preop workup - what to do to manage the patient",                                            # Fluid rescucitation, preop alpha blockade (phenoxybenzamine, doxazosin), beta blockade (propranolol) only after alpha blockade, volume expansion, intraop management (vasodilators, short acting beta blockers, magnesium sulfate), post op management (hypotension from sudden drop in catecholamines, hypoglycemia from rebound hyperinsulinemia (loss of alpha inhibition), lower insuline resistance (beta blockade), adrenal insufficiency (addissonian: low Na, high K, low glucose, vasoplegic shock - hydrocortison 100mg (both glucocorticoid and mineralocorticoid effect?)
             "80y rheumatoid arthritis, lap chole, what are the concerns with regards to the patient’s medication?",                                   # Respiratory involvement due to RA (interstitial lung disease), cardiac involvemt due to RA, Corticosteroid effects on organs and anesthesia (not only addisson, but adipositas, sugar, airway, muscle weakness, Immunosuppression (steroids, methotrexate (myelosuppression (thrombocytes, anaemia, immunology), MTX-pneuomnitis, hepatotoxicitry (fibrosis), nephrotox, GI problems (aspiration)), biologics) > increased risk of infection and impaired wound healing, Cardiovascular risk (NSAIDs) > perioperative cardiovascular complications, Bleeding risk (NSAIDs) > increased bleeding risk during surgery, Drug interactions (methotrexate)
-            "Induction of a tamponade patient",                                                                                        #              Always state your priorities: good preload, SR, contractility and stable afterload to prevent backfilling into the lungs
+            "Induction of a tamponade patient",                                                                                        ##              Always state your priorities: good preload, SR, contractility and stable afterload to prevent backfilling into the lungs
             "Bronchopulmonary fistula due to stamp break down post pneumectomy - induction plan",                                                     # Priority to isolate the lung with double lumen tube with placement into good side, low tidal volume ventilation, inhalational technique may not be possible in large leak, avoid nitrous oxide, consider ECMO if severe
-            "22 with traumatic laryngeal fracture - how to manage the airway",                                                         #              Supraglotic vs infraglottic? awake tracheostomy?, deterioriateion of a small patent leak in the airway? aspiration?, spontaneous breathing induction, awake fiberoptic, C-Mac all ready, CPR drugs, difficult airway trolly, assign roles 
+            "22 with traumatic laryngeal fracture - how to manage the airway",                                                         ##              Supraglotic vs infraglottic? awake tracheostomy?, deterioriateion of a small patent leak in the airway? aspiration?, spontaneous breathing induction, awake fiberoptic, C-Mac all ready, CPR drugs, difficult airway trolly, assign roles 
             # Anaesthesia Critical Inductions
-            "Critical cardiac patient with very low EF of 20%",                                                                        ###                                                                                    
-            "Young patient with intraabdominal haemorrage after trauma",                                                               #              ALL ABOUT SYMPATHETIC DRIVE!, have NORA running is the biggest deal!!!!!!, always preload, contractility is less important cause healthy, SR (not important cause they are healthy) afterload and optimise Hb, prevent hypertension for permission hypotension (~90 systolic), maintain sympathetic coten and avoid cardio-inhibitory drugs
+            # "Critical cardiac patient with very low EF of 20%",                                                                        ####                                                                                    
+            "Young patient with intraabdominal haemorrage after trauma",                                                               ##              ALL ABOUT SYMPATHETIC DRIVE!, have NORA running is the biggest deal!!!!!!, always preload, contractility is less important cause healthy, SR (not important cause they are healthy) afterload and optimise Hb, prevent hypertension for permission hypotension (~90 systolic), maintain sympathetic coten and avoid cardio-inhibitory drugs
             "Pulmonary hypertension RSVP ~90mmHg - induction",                                                                                        # Prevent longer apnea time (CO2), low peep or V pressures, all HPV increasing points should be avoided, maintain right heart perfusion (sufficient Hb and MAP), 
             "SAB III for induction",                                                                                                                  # Avoid increases in TMPG (spray chords, iv lidocaine, esmolol, phentolamine), 20 mcg/kg alfentanyl
             # Intra-operative problem solving and anaesthetic emergencies (monitors, field, help, stop)
             "60y, intraop carotid endarteriektomy, no PHx meds or allergies 200mmHg - what do you do?",
             "60y, heavy smoker, COPD - emergency laparatomy, desaturation - what causes this?",                                                       # Tell most serious, most likely, other differentials, anaphylaxis, RR poor, bronchospasm, PE, obstruction, tension pneumothorax, mucus plug, equipment, pulmonary oedema, pneumonia, air ambolism, cor pulmonale
             "24y for appendectomy, RR to 65 - what is most likely, most serious, categories for complete answer?",                                    # sepsis, anaphylaxis, pneu, pe, heart attach, measurement errors, dosing errors, HEART diffeentials: preload, contractility, rate, afterload
-            "40, lap chole, tachycardic on incision -  what is most likely, most serious, categories for complete answer?",             #             Depth of anaesthesia, anaphylaxis, SVT/VT, 
-            "25y, motor accident, asthma - desat post RSI - what is most likely, most serious, categories for complete answer?",        #             Aspiration, anaphylaxis, one sided intubation, derecruitment, bronchospasm, laryngospasm, aesophageal intubation, pe, fat embolism, tension pneu, cardiac failure, HYPOXIA 
+            "40, lap chole, tachycardic on incision -  what is most likely, most serious, categories for complete answer?",             ##             Depth of anaesthesia, anaphylaxis, SVT/VT, 
+            "25y, motor accident, asthma - desat post RSI - what is most likely, most serious, categories for complete answer?",        ##             Aspiration, anaphylaxis, one sided intubation, derecruitment, bronchospasm, laryngospasm, aesophageal intubation, pe, fat embolism, tension pneu, cardiac failure, HYPOXIA 
             "35y, in recovery room, post hypophysectomy - stridor - what is most likely, most serious, categories for complete answer?",              #(FRAMEWORK: supraglotic, glotic, infraglottic, surgical, anaesthetic, toxins, neurological), POST EXTUBATION STRIDOR, decrease conscious state (ICB, herniations, liquor circulation, ischemia, seizures), airway obstruction (mucus plug, airway oedema (Volume), haematoma, skin emphysaema, tamponade (foregn body), muscle relaxants, laryngospasm, anaphylaxis, airway oedema, vocal cord paralysis, hematoma, tracheomalacia, aspiration,  
             "40y female, lap endometriosis, high vent pressure - what is most likely, most serious, categories for complete answer?", 
             "80y, failed peribulbar block, now unresponsive - what is most likely, most serious, categories for complete answer?",                    # anesthetic oversode (analgetics, muscle relaxants, sedatives), brain stem spread of LA after peribulbar block, anaphylaxis, stroke, ICB, seizure, glucose, sepsis (PHYSIOLOGICAL, PHARMACOLOGICAL, PATHOLOGY, PATIENT, SURGERY, ANESTHETICS)
-            "60y, 3h difficult lap chole, 190/100, HR 110 fentanyl-most likely, most serious, categories for complete answer?",         #              Drug and equipment error, surgical (pheoch), fever, malignant hyperthermia, still not adequate anesthsia, full bladder, pneumoperitonium compresson (RR high)  
+            "60y, 3h difficult lap chole, 190/100, HR 110 fentanyl-most likely, most serious, categories for complete answer?",         ##              Drug and equipment error, surgical (pheoch), fever, malignant hyperthermia, still not adequate anesthsia, full bladder, pneumoperitonium compresson (RR high)  
             # Crisis Resource Management
             "35y female, lap app, 70/40, high V pressures, low tidals - CRM prinicple, patient deteriorating",                                        # call a crisis, allocate team members for parallel tasks, state youre PRIORITIES !!!!!!!!! Tell the story for every priority (O2 - intubate, 100%, I:E ratio, Vent-pressures, salbutamole-adrenaline for bronchospasm, avoid gas trapping, permissive hypercapnia), adrenalin 3mg in 50ml - 10mü/min - titrate, retrieval? ECMO as ECLS guidline, REASSESS!
             "50y lap chole, ECO2 70 and rising, RR 160, patient looks flushed - CRM principle, patient deteriorating",                                # cooling, metabolic state (acidosis), dantroloen and equipment change, postoperative ICU, cpr trolly with pads, assign role and draw up drugs, mangage ventilation of the patient, assing someone for lines, DANTROLEN: 2.5mg/kg in 15 min, max 10 mg/kg (cave: Verapamile), dissolve in sterile water, mobilise stocks if not enough
@@ -6868,15 +7473,9 @@ run <- function() {
         FACTS = c(
             "low flow determined by viscosity because flow is laminar, high flow is determined by density because flow is turbulent",
             "CO = VO2 / (CaO2 - CvO2) - PRINCIPLE > amount of substance taken up by organ (or the whole body) per unit time is equal to the product of the blood flow to the organ and the arteriovenous concentration difference",
-            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             "pressure at fresh gas flow outlet in an anaesthetic machine is reduced to less than 2 cmH2O",
             "Pulse oximetry uses spectrophotometry",
-            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
-            "Amides are metabolised by hepatic amidases (slower - accumulation if continuus)",
-            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
-            "The normal length of sarcomere is about 2.2 microm",
             "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
-            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
             "Pentose-Phosphate pathway: alternative to glycolysis, produces NADPH (for anabolic reactions and glutathione reduction) and ribose-5-phosphate (for nucleotide synthesis)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
@@ -6886,23 +7485,17 @@ run <- function() {
             "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
             "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
             "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
-            "DEAD SPACE 2ml/kg", 
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "NSQIP underestimates mortality",
-            "Albumine correlates with morbidity and mortality", 
             "Restriction: VC is reduced because the total lung volume is reduced, in obstruction the lung volume is normal (or increased) but the VC is low because of the increas of residual volume",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
-            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
             "LRS > low fiO2  RLS > fiO2 high ",
-            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
-            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Beta-blockers are competitive antagonists on the beta cardiac receptors",
-            "IF CT > 90s it is too long",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
             "TCA toxicity: QRS > 100ms, QT > 430 ms, tachycardia, R:S ratio > 0.7 in lead aVR",
             "labetalol, carvedilol - unselective beta blocker (alpha and beta)",
@@ -6916,7 +7509,6 @@ run <- function() {
             "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
             "Respiratory disorders (acute or chronic compansation) - metabolic disorders (Acid Base) - just compensation ()",
             "Phosphate is re-absorbed in the proximal and distal tubules, so furosemide has little effect on phosphate clearance",
-            "Oxygenation markers: PF ration or Aa gradient ()",
             "Bezold-Jarisch reflex is an inhibitory reflex usually denoted as a cardioinhibitory reflex defined as bradycardia, vasodilation, and hypotension resulting from stimulation of cardiac receptors",
             "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
             "Lasers are described in terms of their lasing medium (Ruby: chromium ions, Nd-YAG > Neodynium doped Yttrium (infrared) - airway surgery",
@@ -6935,7 +7527,6 @@ run <- function() {
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
-            "MH testing, pseudocholinesterase testing, tryptase testing",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
             "Maintenance infusion rate = target concentration x clearance",
@@ -6951,36 +7542,28 @@ run <- function() {
             "Hand block (4 syringes) - Bupi 0.5% or lidocaine 2% (each 3 ml) > 25-27G needle",
             "Spinal nerve - dorsal ramus and ventral ramus (gives off lateral and anterior cutaneus branches)",
             "Recurrent Upper Respiratory Tract Infections (R-URTIs) - 6 or more URTIs per year, or 1 or more URTI per month from September to April, or 3 or more URTIs in a 3-month period",
-            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
             "SvO2 is determined by the exraction ratio, at normal DO2 it is 70% indicating 30% of extraction",
             "Tamponade patient - spontaneous breathing induction with ketamine (maintains respiratory drive and sympathetic tone) ",
             "Infraclavicular are chords and supraclavicular are divisions and truncs (interscalenus?)",
             "Bleomycine and oxygen toxicity for the lung",
             "Direct non dabigatran thrombin inhibitors (DTI) - Argatroban, Bivalirudin (both parenteral)",
             "Palatine tonsil lies between anterior and posterior palatine arch",
-            "1mmHg ~ 1.36 cmH2O",
             "Propofol sparing technique",
             "thermoplastic elastomer",
             "Le Fort I > floating palat",
             "Dagger Q waves - hypertrophic cardiomyopathy (narrower than infrarction q waves, deeper than 10 mm + narrower than 40ms)",
-            "Early systolic, non projecting, positional dependent murmor - benign in kids",
             "Pericardium secretes prostaglandins for coronary perfusion",
-            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
-            "TAPSE - M-mode - (Tricuspid Annular Plane Systolic Excursion) less than 17 mm is not good",
             "Always mention the MDT approach before you start",
             "Epicardium is the inner sheatch of the visceral pericardium",
             "Dressler syndrome - postmyocardial infarction pericarditis, autoimmune, 2-3 weeks after MI, fever, chest pain, pericardial effusion, treat with NSAIDs",
             "Anesthetic with COMPETING interests",
             "Pericardial effusion will deteriorate into tamponade if haemodynamic compromise",
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
-            "Superficial cervical plexus - between superior and investing cervical faschia",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
             "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
-            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
-            "Damage Control Surgery",
             "Low Aanion gap metabolic acidosis → loss or depletion of albumin",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
             "despite crossmatch and bedsite - acute haemolytic 1:40000 - wrong name, wrong etikette (ABO, KEll, Duffy, Rh, Kidd) - 2005 FDA changed > 2 people need to look at the product",
@@ -6992,16 +7575,12 @@ run <- function() {
             "zero order drugs - ethanol, phenytoin",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
-            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "Body is on a alkaline neutral side state",
             "Change in pCO2 of 10 should make a change in pH of 0.08 in opposite direction and changes in bicarb/co2 in opposite direction speak to mixed disorder",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Mass transfusion > citrate load is converted into bicabonate > metabolic alkalosis",
             "Fibrinolysis is assesset with DDimers, and Thrombintime!",
             
-            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
-            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
             "PICCO: ELWI: > 10mlkg, ",
             "LAST - INTRALIPID 20% - under 70kg: 1.5ml/kg bolus every 5 minuts, infusion 0.25mg/kg/min, MAX 10mg/kg in 30 minutes",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
@@ -7009,7 +7588,6 @@ run <- function() {
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
             "Picco: ITTV: entire intrathoracal volume (all chambers and lung), PTV (only lung and vessels), if PTV subtracted from ITTV we get GEDV (only heart, preload), GEDV * 1.25 we get ITBV (all heart volume + vessels), if we subtract ITBV from ITTV we get only pulmonary water (ELWI)",
             "Plain 0.5% bupivacain will last around 13h compared to 3h ligocaine",
-            "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "Intercostal nerve (sensory): dorsal horn (afferent input) > dorsal root > dorsal or ventral ramus, motor fibers > ventral horn > ventral root > dorsal or ventral ramus",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
@@ -7019,7 +7597,6 @@ run <- function() {
             "Aim is to keep SVV < 10%, CI > 3L/min/m2, ELWI < 10 ml/kg, SVRI > 2000-2400 dynes/s/cm5",
             
             
-            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
             "Ethmoid bone (roof of the nose), perforated by the olfactorius branches",
             "PICCO (TDL) decision tree: CI <3 or >3 - next GEDI? (<700 or >700) - ELWI(<10 or >10) - Volume or Volume and catecholamins",
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
@@ -7058,12 +7635,9 @@ run <- function() {
             "Thyreostatika (Propylthiouracil, Carbimazol, Thiamazol und andere) eingesetzt, die jedoch eine etwa einwöchige Wirklatenz",
             "Hypovolaemic shock: I	<15% min (fast heart rate, normal RR), II	15–30% (fast heart rate, min. low RR), III	30–40% (very fast heart rate, low RR), IV	>40% (critical RR and HR)",
             "Propranolol > 1mg/min (15mg max - bronchospasm and heart failure), thyroid storm (inhibiting conversion of inactive T4 into highly active T3), COOLING, fluids, steroids, iodine (inhibiting release of thyroid hormones )",
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
-            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
             "Body needs 200 mikrograms Iondine a day",
             "Amiodaron or contrasting agens can lead to a thyroid storm",
             "MCF low: EXTEM vs FIBTEM comparison to decide if platelets or fibrinogen (if FIBTEM high give plateles)",
-            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
             "Clonidin orally up to 4 micrograms/kg in pediatrics (tastes better than midazolam but longer)to work) or i.n. Dexmedetomidine 2 mü/kg, oral ketamine 3-5 mg/kg, OXYCODON 0.05 mg/kg (max 5 mg/d)",
             "Avoid relying solely on SIRS: Because it is overly sensitive and non-specific, SIRS often leads to false alarms.",
             "Cryoprecipitate: Compatibility tests are not necessary, however, preferably ABO compatible with the recipients red cells",
@@ -7084,7 +7658,12 @@ run <- function() {
             
             
             
-            # ANATOMY
+            # ANATOMY            
+            "The normal length of sarcomere is about 2.2 microm",
+            "Superficial cervical plexus - between superior and investing cervical faschia",
+            "At the sacral hiatus, the opening is covered by the sacrococcygeal ligament, which is a direct, fibrous continuation of the ligamentum flavum",
+            "Medullary respiratory center (part of the reticular formation): Dorsal respiratory group (inspiration - active), Ventral respiratory group (expiration - passive), Pre-Bötzinger complex (pacemaker activity for respiration)",
+            "Central controller for respiration: neurons of pons and medulla, (medullary respiratory center, apneustic and pneumotaxic centers in the pons)",
             "Titin is the largest known protein in the human body. acts like a giant spring, spans half the sarcomere. It provides elasticity, helps center myosin, and prevents overstretching",
             "PICA originate for the vertebral artery",
             "Coronary sinus into posterior RA between IVC and tricuspidal valve, GREAT cardiac veins along LAD, MIDDLE cardiac veins along posterior descending, SMALL cardiac veins along right marginal artery, medium and great vein drain into CS, small cardiac veins and vens cordis minimae direct into RV",
@@ -7134,17 +7713,22 @@ run <- function() {
             
             # ANTIBIOTICS
             "VANCOMYCINE: Glycopeptide: inhibits the glycopeptide synthetase and prevents formation of peptidoglycan in the bacterial cell wall",
+            "Transfusion Anaphylaxis occurs when a patient who is pre-sensitised to an allergen producing IgE antibodies is re-exposed to the particular antigen, Rapid infusion of plasma is one cause",
             "Ciprofloxacine inhibits Cyp1A2 (mainly) and lowers seizure threshold, inhibits bacterial DNA gyrase and topoisomerase IV, used for UTI, prostatitis, anthrax, bone and joint infections (uncoiling of DNA cannot happen)",
             "Coagulase negative staphylococcus (esp. Staph epidermidis): Do not produce coagulase, SKIN bacteria, often contaminating cultures BUT infecting prosthetic material and often Methicillin resistant",
             "Coagulase positive - building a biofilm (Staph. aureus), coagulase negative not",
             "CAP: Streptococcus pneumoniae (most common), Haemophilus influenzae, Staph. aureus,  ATYPICAL Bacteria: Mycoplasma pneumoniae (frequently in younger adults), Legionella pneumophila, Chlamydia pneumonia, VIRUSES: Influenza A and B, Respiratory Syncytial Virus (RSV), Human Rhinovirus (the common cold), SARS-CoV-2",
             "Penicillin V ist primär gegen Streptokokken wirksam und Mittel der Wahl bei Halsentzündungen. Aminopenicilline bieten ein breiteres Wirkungsspektrum (grampositiv & -negativ) und sind stabiler gegen Magensäure",
+            "Aminoglycosids (30s, bactericidal - NATS-Mnemonic Neomycin, Amikacin, Tobramycin, Streptomycin) and macrolides (50s, bacteriostatic) are both protein synthesis inhibitors but have different binding sites on the ribosome",
+            "Gram-negative bacteria Piperacillin/tazobactam (Tazocin) 4.5 g tds iv OR Ceftriaxone 1 g once daily iv (2 g if 'severe' infection) OR Meropenem 1 g tds iv",
+            "Gram-positive bacteria including most MRSA Teicoplanin 400 mg bd iv x 2 doses then once daily (non-nephrotoxic) OR Vancomycin − 1 g bd iv then adjusted according to levels − equally effective but potentially adds to any renal impairment OR Ceftriaxone/teicoplanin has the advantages of once daily dosing, low renal toxicity",
             
             
             # ACID-BASE-BLOOD-GAS
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
             "AG 8-12 mmols/L",
+            "Albumin contributes to 80% of unmeasured anions of the anion gap (hypoalbuminaemia can cause a normal anion gap metabolic acidosis) ",
             "Aa gradient increases with 1 mmHg for every decade ([age in years/4] + 4)",
             "Ketons (euglycaemic ketoazidosis with SGLT2 flozins > ketons less than 1 mmol/L, than check BE if less than -5 be conserned",
             "DKA: unopposed lipolysis, but also hepatic glyconeogenesis, glycolyis with further increase in glucose",
@@ -7163,6 +7747,21 @@ run <- function() {
             
             
             # CLINIC
+            "A normal transferrin saturation (TSAT) level is generally between 20% and 50% for adults",
+            "Albumine correlates with morbidity and mortality", 
+            "In hemolytic anemia, chronic destruction of red blood cells causes iron to be continuously released and recycled. Consequently, serum ferritin (representing iron stores) and transferrin saturation (TSAT) are typically elevated",
+            "Iron deficiency anemia: low ferritin, low serum iron, low transferrin saturation (NORM 20-50%), to combat iron deficiency the total iron binding capacity (TIBC) increases",
+            "Ferritin: Chaperons of Fe: storage protein that binds iron (bound iron non toxic, otherwise FENTON reaction (Fe will steal electrons from everywhere and make - ROS) - protein build in bones and liver, stored in macrophages of bone marrow, ferritin is up if iron overload AND anaemia of chronic diseas because that iron cannot be used), SERUM IRON: is carried on transferrin when old RBC are destroyed and transferrin carries iron bound to bone marrow, but also transferrin takes iron from GI and transfers it to bone marrow, and especially liver macrophages (largest store of iron in liver) ",
+            "Dont forget Mg, Supra (inh) and anaphylaxis if wheeze",
+            "In LAST > If epinephrine is required (e.g., for PEA arrest), it should be dose-reduced by a factor of about ten to avoid arrhythmia - less than 1mü/kg",
+            "Neostigmin 2.5 mg and glycopyrronium 0.5 mg standart ample (Neostigmin:Glycopyrronium = 5:1), Neostigmin and atropine (2:1)",
+            "FCO2 = VCO2/Valveolar = increasing alveolar ventilation will decrease VACO2 (Valv = VT *RR",
+            "MH testing, pseudocholinesterase testing, tryptase testing",
+            "Nociceptive, neuropathic, or mixed types, Nociceptive > physical tissue damage (e.g., burns, injuries) on healthy nerves (sharp or aching), Neuropathic > nervous system damage (burning, tingling, or stabbing)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
+            "Anemia in CKD: Low erythropoietin,  Low iron: lose iron (during dialysis) or not absorb enough iron from food, Low vitamin B12 or folate: Chronic inflammation: use iron properly, Blood loss: lab tests, dialysis, or stomach problems",
+            "Fresh Frozen Plasma (FFP) is generally considered free of red blood cells (RBCs), making its role in Rh alloimmunization highly niche. However, trace amounts of RBCs or plasma proteins in FFP can still pose a risk in highly sensitized patients",
+            "ABO-mismatched or compatible platelets are frequently used (but contains donor plasma with ABO antibodies (low - hemolysis of recipient RBCs for minor ABO incompatible transfusions) amount, after O group - AB group would be best (RHESUS DOESNT PLAY A ROLE). Platelets do not possess Rh factors, but small amounts of red blood cells (RBCs) remain in the product, Unlike major incompatible RBC transfusions, there is no risk for hemolysis, Rh is ok, but can contain small amounts of RBC so Anti-D-immunglobuline (250U - 50mügramm)",
             "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta) - zone 1 below left subclavian A., zone 2 coeliac - renal, zone 3 below renal",
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
@@ -7179,6 +7778,7 @@ run <- function() {
             "Acute chest syndrome (ACS) is a life-threatening complication of sickle cell disease characterized by lung injury, fever, chest pain, and breathing difficulties",
             "Meralgia Paresthetica - compression of LFCN as it passes under the inguinal ligament (obesity, pregnancy, tight clothing, diabetes) > burning pain and numbness in the outer thigh",
             "DKA - if GCA drops, suspect cerebral swelling - give 3ml/kg hypertonic saline (2.7% in kids) and lowering glucose can worksen oedema - Na and glucose limit swelling, lowering one without replacing other is not good.",
+            "Severe bronchospasm: ketamine, volatiles, salbutamol, magnesium, adrenaline - never forget to check for ANAPHYLAXIS",
             "Protamine is a strong base that combines with acidic heparine (1mg reverses 100 units) - reduce dose if longer time elapsed since last heparine dose",
             "Preeklampsia: headache, swelling hands and face, weight gain, proteinuria, new onset vomiting, visual disturbances",
             "THRIVE (Transnasal Humidified Rapid Insufflation Ventilatory Exchange) - high flow nasal oxygenation during apnoea, flow rates up to 70 L/min, humidified and warmed, creates positive airway pressure",
@@ -7186,6 +7786,9 @@ run <- function() {
             "Preeklampsia: High RR from 20 gestational weeks and resolution of hypertony after 3month post delivery - formal diagnosis only retrospektive",
             "Doppellumentubus-Größen - 35–39 Fr (Frauen) und 39–41 Fr (Männer)",
             "Nimodipine 60mg orally every 4 hours",
+            "In viral meningitis, CSF glucose typically remains normal. In bacterial meningitis, it is significantly reduced (hypoglycorrhachia)",
+            "If asked about effects of anything on anything - say always: under anesthesia AND in disease state", 
+            "Provide oxygen in recovery room because patients have blunted responce to hypxia and hypercarbia",
             "Tracheal narrowing > 50%, awake ITN, rigid fiberoscopit ETN, ECMO standby, repositioning where less compression, CPAP with higher pressure to open the narrowing, sternotomy for respiratory!, vascular access upper body - upper obstruction - use lower body iv lines",
             "Defer surgery for balloon (1d), BMS (4-6w), DES (6-12m), if surgery can`t be delayed > continue DAPT and use platelet transfusion if bleeding occurs",
             "Preeclampsia: Normal Ng: 1.7-2.5 mg/dl - GOAL: < 5 mg/dl (> 12: heart block, respiratory weakness, bradycardia - treat with calcium",
@@ -7226,8 +7829,15 @@ run <- function() {
             "Closed system (ET) and open system for laryngeal surgery: Hunsaker subglottig ventilation tube having a basket like distal portion for positioning and is used for jet ventilation, has a CO2 line for monitoring (benjet has no CO2)",
             "Nutrition: 25-30 kcal/kg/d, 1-1.5 g/kg/d protein, 30 ml/kg/d fluids, Carbs 2g/kg/d, fat 1g/kg/d, Na 1-2 mmol/kg/d, K 1-2 mmol/kg/d, Ca 0.1 mmol/kg/d, Mg 0.1 mmol/kg/d, Phosphor 20-40 mmol/kg/d",
             "Start feeding: trophic feeding 10ml/kg of 1kcalml then gradually increase to 20ml/h",
+            "Dobutamin 250mg/50 ml (5mg/ml) - Startdosis 5µg/kg/min > fast start (70kg): 4ml/h",
+            
             
             # CLOTTING
+            "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
+            "Minor reactions where the transfusion may be continued: Mild allergic reaction (Urticarial rash only (slow transfusion, antihistaminics, antipyretics), Febrile non-haemolytic transfusion reactions (FNHTR) (mild fever only)",
+            "Acute haemolysis may also occur following infusion of plasma-rich components, usually platelets or FFP, containing high-titre anti-red-cell antibodies, usually anti A or B",
+            "There are eight types of Acute Transfusion Reaction: Mild fever - febrile non-haemolytic transfusion reaction, Mild allergic reaction – urticaria, Severe allergic - anaphylactic, Suspected ABO haemolytic reaction, Other haemolytic reaction / bacterial contamination of unit, Fluid overload – transfusion associated circulatory overload (TACO), Transfusion related acute lung injury (TRALI), Transfusion Associated Dyspnoea(TAD)",
+            "DDAVP (0.3microgram/kg) improves postoperative platelet function and bleeding time in uremic patients [128], improves platelet aggregation in patients taking aspirin and/orclopidogrel [129–131], and reduces postoperative bleeding in cardiac patients taking aspirin",
             "During pregnancy more clotting factors, less protein c and s, less antifibrinolytic activity, plasma volume increased by 40% > dilution anaemia and thrombocytaemia, high fibrinogen 4-6g/L",
             "Acute bleeding pat (CT (factros or HEPARIN), CFT (fibrinogen), alpha angle (fibrinogen), MCF (fibrinogen and plateletts) first normal) - BUT LY 30 is not sufficient - TXA", 
             "APTEM find out if fibrinolysis (same as EXTEM with antibribrinolytic added)",
@@ -7244,6 +7854,14 @@ run <- function() {
             "EXTEM: external pathway (FVII, X, V, II, I, platelets and fibrinolysis analysis) - NEEDS TISSUE ACTIVATOR",
             "Haemophelia A: INTEM and HEPTEM both have prolonged CT time",
             "CASCADE (old) describes clotting in vitro, but not in vivo > cell-based model has several changes, noting the central role of the platelet: Initiation phase: begins with tissue factor exposed > activates platelets. AMPLIFICATION phase: positive feedback loop: Production of Xa causes production of thrombin (IIa), priming the system > Thrombin then activates factors V, VIII, and IX, accelerating Xa production and further thrombin generation, PROPAGATION phase > Platelets bind activated clotting factors > thrombin formation around platelets", 
+            "The landmark BRIDGE Trial showed that for most patients with atrial fibrillation, pausing Marcumar without bridging does not increase stroke risk and significantly lowers bleeding",
+            "Bridging should be commenced starting from a CHA2DS2-VASc score of 7 or higher",
+            "PAUSE study: stopping DOACs for 1 day (or 2 days if renal) prior to surgery and resuming 1-3 days after surgery is safe in most patients without the need for bridging",
+            "Regional (SpA or PDK) in marcumar patients if INR is < 1.5 INR",
+            "After warfarin is stopped, 5 to 6 days before surgery (to allow sufficient time for its anticoagulant effect to wane), bridging anticoagulation is started 3 days before surgery, with the last dose given 24 hours before surgery. After surgery, bridging is resumed no earlier than 24 hours after surgery; at the same time, warfarin is restarted. Bridging is continued, typically for 4 to 6 days, until the anticoagulant effect of warfarin has resumed and the blood is sufficiently thinned again",
+            "IF CT > 90s it is too long", 
+            "Vitamin K - slow infusion because of anaphylaxis risc, takes up to 24 to work (esp. for factor II and X)",
+            "Steward-Prower-Factor (X) > Prothrombin (II) to thrombin (IIa) ",
             
             
             
@@ -7252,9 +7870,10 @@ run <- function() {
             
             # DEVICES
             "Maplesson systems are semiopen (reservoir bag, no functionsl rebreathing, high FGF), circle systems are semi closed (partial rebreathing, unidirectional valves, CO2 absorbstion)",
-            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",
+            "3 Fr/Charrier = 1 mm outer diameter (14G Vigoo = 2.2 mm outer diameter)",             
+            "FLOATING CURCUIT > Isolates the patient from the earth, Isolating capacitor > high impedance to low frequency signals",
             "Absorptive capacity of soda lime is in the order of 25 l CO2/100, but is used over time so 17L/100g",
-            
+            "Macroshock > how much current required to induce VF (~100mA) Sensation felt for cutaneous shock Current (mA) - 1 Tingling sensation, 5 Painful Shock, 15 Severe Pain and Contraction, 30 Unable to let go of wire, 50 Respiratory Arrest, 75-100 Ventricular Fibrillation, 1000 Severe Burns, MICROSHOCK > How much current required for VF on heart directly? 0.05 to 1mA, far less than cutaneous shock (no skin and soft tissue resistance) > direct communication from outside to myocardium (Guidewires, Central lines + conducting fluid, pacing lines)",
             
             
             # ECG
@@ -7272,6 +7891,8 @@ run <- function() {
             "Acute adrenal insufficiency (Addison) - hypotension, hyponatremia, hyperkalemia, hypoglycemia, treat with hydrocortisone and fluids",
             "Stop conversion of T4 to T3 (peripheral conversion) - Propylthiouracil, Propranolol (80mg/6h), Glucocorticoids",
             
+            
+            
             # EMERGENCY 
             "<30C: ONLY 3 DEFIBRILLATION, Withhold ACLS medications, including epinephrine and antiarrhythmics, 30 - 35C: NORMAL DEFIBRILLATIONS, Standard drug administration intervals should be doubled (e.g., give epinephrine every 6–10 minutes instead of the standard 3–5 minutes), >35C: Resume standard ACLS drug",
             
@@ -7282,17 +7903,30 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+            "Oxygenation markers: PF ration or Aa gradient ()",
+            "Bicarbonate in blood gas is calculated (Henderson-Hasselbach equation) and bicarbonate in electrolites is measured (lab)",
+            "STOPBANG: S (Snore), T (Tired), O (Observed), P (Pressure), B (BMI): > 35kg/m^2?, A (Age): > 50 Jahre? ,N (Neck): > 40 cm?, G: (Gender) male",
+            "Force (N = ma (kg * m * s-2)) is doing work (J = FD) if an object is moved over distance, and power (J/s) describes how fast work is done",
+            "WHO Obesity classification: Overweight 25 ASA 1, Preobese 25 - 29.9 ASA 1, Obese: 30 ASA 1, Class 1: 30 - 34.9 ASA 1, Class 2: 35 - 39.9 ASA 2, Class 3: 40 ASA 3",
+            "1mmHg ~ 1.36 cmH2O",
+            "Beck's triad (Pericaridial tamponade) - hypotension, raised JVP and muffled heart sounds - not sensitive",
             "101 kPa (1 Atm or 1 bar) is 101 thousend Pascal",
+            "DEAD SPACE 2ml/kg", 
+            "1 T = 1 Wb/m2 (1 Weber = 10000 Gauss - Earth magnetic field is 0.5 Gauss) > 1.5 Tesla is 30k much stonger than earch magnetic field",
+            "CHA2DS2 VA1Sc: CHF, Hypertension, Age > 75 (2 points), Diabetes, Stroke/TIA (2 points), Vascular disease, Age 65-74, Female - assessing the risc of stroke perioperatively",
+            "Kussmaul's sign (Pericaridial tamponade) - Distended neck veins during inspiration",
             "If MCF too low: differentiate between EXTEM and FIBTEM (is both low: platetelets and fibrinogen, if FIBTEM is high than PLATELETS)",
             "Cathodes Tungsten Filament (very high melting point) is heated, electrons get energy, high voltage (up to 140kV) move electrons towards anode",
             "Presession: change in wobble of hydrogens around axis with the Larmour frequency (how fast it aligns to the external magnetic field) - RADIOFREQUENCY PULSE increases the amplitude of rotation > RFP swithced off > protons fall back",
             "PAH: MILD: 20-40 mmHG, MODERATE: 40-55 mmHG, SEVERE: > 55 mmHG",
+            "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "aPTT > intrinsic pathway (heparin - negative charged kollagen), PT > extrinsic pathway (warfarin), INR > standardised PT (trauma, faster)",
             "Photoelectric effect and Compton scattering used in CT enhancement - both are used to absorb photons that are ejected due to X-electron stimulation",
             "Extrinsic pathway is the primary trigger for in vivo blood clotting > faster and shorter than intrinsic pathway (trauma or inflammation damages the vascular wall, or from leukocytes)",
             "GEDI: Global End Diastolic Index: preload > should be > 600 ml/m2", 
             "PICCO (Pulse index Contour Cardiac Output) - uses Transpulmonary Thermodilution (Stewart-Hamilton equation for CO) and ",
             "PICCO: Fails to differentiate between left and right ventricular failure",
+            "AG = Na - (Cl + HCO3), normal AG is 7-13, corrected AG = AG + 2.5 (4 - albumin g/dL)",
             "PICCO: Pulse contour analysis unreliable in arrhythmias, aortic valve pathology.",
             "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
             "By excluding heparine effect on FIBTEM we can see that prolongation of CT is due to factors deficiency and not heparine",
@@ -7315,11 +7949,13 @@ run <- function() {
             "X-Ray tube: Electrons from the cathode strike Anode and produce X-rays",
             "Predicted postoperative FEV1/FVC ratio (Tiffeneau-Index) or ppoFEV1, ppoDLCO after surgery - preop Value * (1 - (segments removed/total segments)) - full lung 19 segments (right upper lobe removed: 16 segments left - if ppoFEV1 or ppoDLCO > 40% is low risk, if less than shuttle walk or 6 minute walk test - if good ok, if bad than CPET - there if VO2 less 15ml/kg/min > HIGH RISK",
             "Work of breathing: W = P * deltaV",
+            "Zur Abschätzung des individuellen Blutungs- und Ischämie-Risikos bei Patienten unter dualen Plättchenaggregationshemmung ist zum jetzigen Zeitpunkt der PRECISE-DAPT Score der am besten validierte Score",
             "1 cmH2O is 1 mbar (20mbar ventilatory pressure is 20 cmH2O)",
             "Amniotic fluid embolism - flat ROTEM trace",
             "Muddy brown granular casts - Acute tubular necrosis, Red cell casts - Glomerulonephritis, White cell casts - Pyelonephritis / interstitial nephritis, Crystals - Stones / drug precipitation, Proteinuria - Glomerular disease",
             "The normal range for DLCO (Diffusing Capacity of the Lungs for Carbon Monoxide) is typically 75% to 140% of the predicted value",
             "A normal Forced Vital Capacity (FVC) is typically 80% to 120% of the predicted value, which is calculated based on age, height, gender",
+            "POISE I: new onset beta-blockers has no benefit for MACE but increases stroke risk, POISE II - no continuation of ASS (more bleeding) - only stented patients with coronary heart disease porfited from continuing ASS",
             "Elastance is the reciprocal of compliance (E = 1/C), measuring stiffness or the natural tendency to recoil",
             "Compliance is volume change for pressure change, but resistance is pressure change for change in flow",
             "Total chest wall compliance: Ctot = 1/Clung + 1/Cchest > 1/200 ml/cmH2O + 1/200 ml/cmH2O = 100 ml/cmH2O - because two coils in series need to be streched we add the reciprocals and the compliance is decreased",
@@ -7332,13 +7968,15 @@ run <- function() {
             "Multimodal analgesia strategy: Paravertebral block is the preferred regional analgesia technique for open thoracotomy, Paravertebral and erector spinae plane blocks are for VATS, routine thPDA not recommendet, surgical intercostal catheters or interpleural caths also useful, basic analgesic regimen: paracetamol (max 4g) and NSAIDS (IBU max 800mg/d, metammizol: 2g (young adults) - 4g (adults)) or cyclo-oxygenase-2-selective inhibitors should be administered postoperatively",
             "PENG block has no skin coverage (articular branches of femoral nerve, obturator nerve, accessory obturator nerve) ",
             "Nerves like fermoral arborise > slide higher",
+            "Frequency dependance - Na channels are open more frequenty in smaller fibers (pain,temperature) and thus are more affected by LA",
             
             
             
             
             
             
-            # SCORES
+            # SCORES            
+            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
             "SOFA-2 retains the six organ systems from the original SOFA (now referred to as SOFA-1), but it updates both the scoring ranges and introduces include contemporary organ support treatments to better capture organ dysfunction using a scale from 0 to 4.",
@@ -7373,6 +8011,33 @@ run <- function() {
             
             
             # PHARMACOLOGY
+            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+            "Diastereoisomer: atom that contains two or more chiral centers (carbon or nitrogen with 4 dissimilar groups)",
+            "Surfactant: increased compliance, less atelectasis, DPPC (dipalmityolphosphatidyl), by type II pneumocytes, reduces transudation, reduces surface tension (P = 2T/r), reduces work of breathing, reduces pulmonary edema",
+            "Laplace: Surfactant decreases T (surface tension), Alveolar pressure = 2 * surface tension / radius > smaller alveoli have higher pressure and tend to collapse, surfactant reduces surface tension and prevents collapse",
+            "Dipalmitoylphosphatidylcholine (DPPC) is the primary lipid component of natural pulmonary surfactant, accounting for roughly 40-50% of its composition, DPPC possesses a polar, hydrophilic head (phosphocholine) and two non-polar, hydrophobic tails (palmitic acid), allowing it to orient itself at air-water interfaces, Alveolar Type II epithelial cells (also called Type II pneumocytes",
+            "Rate constant k: if 10% of the drug is removed in a first order kinetic, then k = 0.1/min",
+            "Morphine: up to 0.1mg/kg, hepatic metabolism (as most other opioids), at mü receptor, slow BBB crossing, peak time is up to 40 minutes, 35 protein bound, eliminatin up to 3 hours",
+            "Hydromorphone (Palladon): 5 times more potent than morphine, less nausea and vomiting, less histamine release, hepatic metabolism, no active metabolism (good in renal), 0.2 mg/kg",
+            "Methadone: long duration of action, for opioid withdrawal, potent mü but also NMDA antagonis, Heroin (Acetylation of morphine)",
+            "Morphine 10mg iv - 1 mg epidural, 0.1mg intrathecal - excreted in the urine - accumulation in renal patients",
+            "Polymorphism for CYP2D6 in opioid metabolism: up to 10% have deficient gene: codein, oxycodon, tramadol - poor metabolisers into ACTIVE forms - poor analgesia",
+            "Opioid receptors: CYP2D6 (up to 10% in some populations deficient, poor metabolisers), MÜ (analgesia, sedation, euphoria, respiratory depression, miosis, reduced GI motility), KAPPA (analgesia, sedation, dysphoria, miosis), DELTA (analgesia, antidepressant effects), SIGMA: dysphoria, hallutinations, nociceptin/orphanin FQ peptide receptor (NOP) (modulates pain and other functions)",
+            "Morpheus: god of dreams, opioid: any natural or synthetic drug, opiate: naturally occuring (morphine, codeine, thebaine, papaverine, ), so a synthetic drug is an opioid but not opiate",
+            "Atracurium is a mixture of ten isomers > three geometrical isomer groups, cis-cis, cis-trans, and trans-trans, which contain three, four, and three isomers, respectively, molecule has four chiral centers, it can exist in several geometric (cis/trans) and optical (R/S) forms, Cis-cis isomers (approx. 58%): The most potent components. The specific 1R-cis, 1'R-cis isomer is highly potent and is extracted to create the standalone drug cisatracurium (Nimbex). Cis-trans isomers (approx. 36%)Trans-trans isomers (approx. 6%)",
+            "Erythropoietin: HYPERTENSION and THROMBEMBOLY, high hematocrit (heart strain), high viscosity syndrome, stimulates erythropoiesis, 5000U 3 times a week, takes 2-6 weeks to see effect, iron supplementation needed doe to increased erythropoesis",
+            "If a drug is protenin bound it cannot be excreted by the kidney and needs to wait for hepatic or pulmonary (propofol) biotransformations (making it more water soluble)",
+            "AB FFP universal donor, 0 Rh- universal FFP recipient, AB universal RBC recipient, O universal RBC donor",
+            "Etomidate: mimics GABA, inhibits reticular activating system, 0.2 - 0.3 mg/kg, hepatic hydrolysis, plasma esterases, propylenglycol (solvent) can cause pain on injection, myoclonus, adrenal suppression (inhibits 11-beta-hydroxylase), not for septic patients", 
+            "Propofol burning: bradikinine vasodilates the vessel and the phenol group interacts with nerve endings - burning",
+            "Propofol: 25-75 micrograms/kg/min for sedation, 1-2.5 mg/kg for induction, 10/8/6 mg/kg/h (Bristol) for maintenance (100-200 micrograms/kg/min - large doses (high lipid load) and propofol inhibits lipids oxidation",
+            "Propofol syndrom: all or none phenomen, associated if > 75microgram/kg/min over 24h, stop propofol, symptomatic, give insuline/dextrose to activate lipoproteine lipase activity",
+            "Pharmacodynamics: receptor model, ED50, TD50, LD50, therapeutic index = LD/ED", 
+            "Redundancy: relaxants - you need to block 75% of the receptorsa as onöy 25 of Ach receptors needed for contraction",
+            "Loading dose: Vd * target concentration (high Vd > more drug is needed to reach target concentration)",
+            "Infusion rate: C (concentration) * CL (clearance)",
+            "Elimination HL is not the same as half life (halving plasma concentration by 2) - removing half of the drug from the body - elderly can metabolise thiopenthal but fat mass is larger in elderly and elim HL is slower (doesnt say anything about termination of the effect",
+            "Half life (T1/2) = 0.693 * time constant (min) DERIVED from ln(2) / K - because K is the reciprocal of time constant the 0.63 (ln(2) can be multiplied by time constant to get T1/2)",
             "L-Thyroxin: increases metabolic state by almost 100% (HR and contractility), longer HL, skipping doses for days is not a problem",
             "HPA-axis: Hypothalamus (CRH) - Pituitary (ACTH) - Adrenal (Cortisol) Axis - NEGATIVE FEEDBACK - adrenal insufficieny with cardiovacular collapse (addisson) - morning cortisol should be > 10micrograms/dl or 250 microgram ACTH stress test > cortisol should be > 18mü",
             "Addisson prophylaxis: 100mg hydrocortisone iv before induction, then 50-100mg every 6-8h for 24-48h, then tapering, Dexamethason also ok but no mineralocorticoid effect, so NaCl may be needed",
@@ -7385,6 +8050,7 @@ run <- function() {
             "Elimination rate constant (k) = 1/ time constant (min)",
             "Renal clearanc ef drugs is low, because most drugs are protein bound and not filtered, active transport is needed for secretion",
             "Half life (T1/2) = 0.693 x time constant (min)",
+            "Amide LA have a higher protein binding and last longer, Bupi very lipid soluble and is potent",
             "SSRI: CAVE: METHYLENE BLUE, linezolid, MAOs, FENTANYL, TRAMADOL, METHADONE, not only depri, compulsive diorders, PTSD, social phoby, Fluoxetin (Prozac), Sertralin (Zoloft), Paroxetin (Paxil), Citalopram (Cipramil), Escitalopram (Lexapro) - inhibit serotonin reuptake, sexual dysfunction, weight gain, serotonin syndrome (hyperthermia, muscle rigidity, sweating, myoclonus, autonomic instability) - treat with cyproheptadine (serotonin antagonist)",
             "Antipsychotics (Dopamine antagonism: movements side effects: tardive dyskinesia (face), acute dystonic (larynx cramps), akathesia (restlesness) - diphenhydramine (benadryl NOT vomex)",
             "NMS (Neuroleptic Malignant Syndrome: Dopamine antagonsists: Temp, rigidity (ventilation), autonomic instability, elevated CK, leukocytosis, rhabdomyolysis - treat with dantrolene (musle relaxant) and bromocriptine (Dopa agonist)",
@@ -7394,6 +8060,7 @@ run <- function() {
             "PDE3 inhibitor (milrinone), PDE4 (roflumilast - antiimmune, bronchodilating) PDE5 (sildenafil)",
             "Intrathecal opiate dosing: morphine 0.05-0.2mg (long action up to 36h), fentanyl (10-25 µg > 2-3h, sufentanyl 5 mü (2-4h)",
             "Inverse agonist: H1 blockers (diphenhydramine (Benadryl) and cetirizine (Zyrtec) suppress H1 signaling, beta-blockers",
+            "Barbiturates: Thiobarbiturates (faster and more potent - Thiopenton (legal killing) and Oxybarbiturates (phenobarbital, less potent and slower) : pKa 7.6, very alkaline (ph 10 in solution: paravasate: papaverine, heparine, stellate block, lidocaine), suppress reticular activating system, GABA enhancers, suppress excitatroy neurotransmitter Acetylcholine",
             "Antagonists have a flat line on a dose responce curve",
             "Non-competitivie antagonist > right shift and reduce maximal response (height), Partial agonist no left or right > but height reduction (maximal response unachievable)",
             "Pyruvate (3 carbons) is reduced to lactate > Glycolysis generates NADH and to keep producing energy (ATP), NADH must constantly be converted back to NAD+",
@@ -7409,7 +8076,7 @@ run <- function() {
             "TCAs: amitriptyline, imipramine, nortriptyline, BLOCK UPTAKE of norepinephrine, ANTICHOLINERGIC SE: dry mouth, tachy, orthostatic dysfunction, urinary retention, constipation, sedation, weight gain, cardiac toxicity (QT prolongation, arrhythmias), serotonin syndrome (when combined with SSRIs), MOST NOW for chronic pain and not depression, lethal in overdose",
             "Red man syndrome (vancomycine) and contrast agent allergy (non IgE mediated, non anaphylaxis, ANAPHYLAXOID (direct mast cell stimulation without IgE))",
             "Methylene blue is a potent MAO inhibitor and can cause serotonin syndrome when given with SSRIs, SNRIs, TCAs, MAOIs, linezolid, tramadol, methadone, fentanyl",
-            "MTX (Folate antagonist - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
+            "MTX (Folate antagonist (B9 folic acid) - inhibits DNA synthesis (Leukemia, Lymphoma, Rheumatic, Psoriarsis, Crohn) - PNEUMONITIS (cought, interstitial), bone marrow suppresion, mucositis, hepatotoxicity, teratotoxicity",
             "Calcineurin inhibitors (suppress T cell activation - inhibition of IL-2 transcription): tacrolimus, cyclosporin - NEPHROTOXICITY, Seizures, hypertension!, hepatic side effects - Cyclo (hirsutrisumus, gingival hyperplasia), Tacrolimus (Diabetes, nephrotox)",
             "Indirect acting sympathomimetics (ephedrin) may have exagerrated responce if on MAO, TCAs or if chronic use > chronic elevated catecholamins and weak responce to catecholamins",
             "Meloxicam (COX2 NSAID) - HL > ibuprofen (non-selective COX inhibitor) - COX 1 less gastric, still renal SE (esp. with RR + ACE inhibitors + diurhetics) + bleeding (less than COX II)",
@@ -7419,6 +8086,9 @@ run <- function() {
             "After infusion of a drug it leaves the plasma into vessel reach group, than into muschle and than into fat (https://www.youtube.com/watch?v=8uaIj5sKKqo 09:44)",
             "Albumin binds most acidic and basic drugs, only few neutral drugs, second most is alpha-1-acid glycoprotein (basic drugs), lipophilic drugs bind to lipoproteins - chronic illness less protein - higher plasma and active drug portion",
             "Acid is a molecule that can loose a proton and become negatively charged, a base is a molecule that can accept a proton and become positively charged",
+            "Ketamine: NMDA antagonist, dissociates thalamus from limbic cortex, patients are consciouse but amneasic, phencyclidine (PCP) - hallucinations, Ketophol (10mg Propofol +1g Ketamin)",
+            "Midazolam: potentiator of GABA, very high first pass effect (IV better), slow recovery (up to 80min) after induction dose, peak effect 5 min, CYP3A4, lorazepam lower lipid solubility (FASTER), flumazenil (competitive antagonist): 0.2mg bolus (up to 5 doses, max 1mg)",
+            "Dexmedetomidine: 0.2-0.7 mü/kg/h, highly selective alpha2-agonis, strong MAC reduction, RR and brady, arousable, coopereative, some analgetic effect", 
             "Glycopyrrolate 200micrograms iv",
             "Midazolam pKa 6.2 and it is a base - in 7.4 it is loosing all the protons and is to 96% UNIONISED",
             "Propofol is an acid, pKa is 11 - at physiological pH 7.4 it is almost completely unionised (99.96%) and can easily cross membranes",
@@ -7453,16 +8123,24 @@ run <- function() {
             "Acetaminophen: > 4g/d (alcoholics (decrease in gluthatione and increas in p450 activity)) NAPQI (N-acetyl-p-benzoquinone (liver) and p-Aminophenol (nephrotoxin), ACETYLCYSTEIN (antioxidant), scavenging by gluthathion quickly exsausted, mechanism not understood, metabolite AM404 (cannabinoid receptor TRPV1, slight anti-inflammatory (COXI-II primarily in CNS), direct antipyretic in hypothalamus, no effect on plattelets or GI, no inflammatory effect peripherally (in contrast to other nsaids) ",
             "COX enzymes convert arachidonic acid into prostaglandins (COXI always on: platelet aggregation, gastric mucosa, renal blood flow, COX II is inducible by injury: pain, fever, inflammation mediated by PGE2, upregulates nociceptor sensitivity, crosses BBB and facilitates spinal nociception)",
             
+            
+            
             # PEDIATRICS
             "Dychene Muscular Dystrophy - X linked, dystrophin gene mutation, muscle weakness, dilated cardiomyopathy, respiratory failure, no cure, steroids to slow progression",
             "Reason for late bleeding after tonsillectomy are infections",
             "Reye syndrom: acute encephalopathy and hepatic failure",
             "Holliday-Segar formula for maintenance fluids in children: 100 ml/kg for first 10 kg, 50 ml/kg for second 10 kg, 20 ml/kg for every kg above 20 kg",
+            "Most common zyanotic entities: Fallot, TGA, Truncus arteriosus",
+            "Early systolic, non projecting, positional dependent murmor - benign in kids",
+            
             
             
             
             # PHYSIOLOGY
+            "Alternative to Aa gradient is PF ratio (PaO2 / FiO2) - normal is > 400 (100/0.21 = 476mmHg), mild ARDS 200-300, moderate ARDS 100-200, severe ARDS < 100",
+            "The glossopharyngeal nerve (Cranial Nerve IX) sends hypoxia stimuli from the carotid body (peripheral chemoreceptors located at the branching of the carotid artery) directly to the nucleus tractus solitarius (NTS) in the medulla oblongata of the brainstem",
             "As glomerular filtration decreases due to the loss of more and more functioning nephrons, each remaining nephron increases its rate of ammonium secretion.",
+            "Control of something: ventilation (Sensor > Control center > Effector) - Sensor: central chemoreceptors (medulla, slower but overall 70% of control) - respond to changes in PaCO2 and pH of cerebrospinal fluid, peripheral chemoreceptors (carotid and aortic bodies - faster, but minor fraction) - respond to changes in PaO2, PaCO2, and pH of arterial blood, mechanoreceptors (lungs, chest wall) - respond to stretch and irritants, proprioceptors (muscles and joints) - respond to movement and position",
             "Air bubbles in blood gas will increas the paO2 (160 mmHg in room air - will diffuse",
             "Structural (static vs dynamic) AND Stereoisomers (CIS/Trans and enantiomers)",
             "Uraemia: High anion gap due to retentions of the ANIONS: sulfate, phosphate, urate and hippurate retention",
@@ -7473,20 +8151,28 @@ run <- function() {
             "Myoglobin has a much higher affinity to oxygen, and has a hyperbolic curve - much smaller, only one chain - no cooperative binding - It captures oxygen delivered by the blood's hemoglobin and stores it until muscle cells require it for energy production",
             "‘Set point’ for core temperature > pre-optic hypothalamus detects T rise > vasodilation, sweating, Inhibits the posterior hypothalamus, Posterior hypothalamus < cold sensors from periphery > shivering (medial posterior hypothalmus near third ventricle), chemical Thermogenesis (non-shivering thermogenesis, Sympathicus can uncouple OXPHOS > increased heat production without generating too much ATP > mainly brown fat, Tumours/trauma > compress hypothalamus > T dysregulation, spinal cord injury can alter hypothalamic afferent inputs > disrupt T regulation",
             "R = 8 * viscosity * L / (pi * r^4) - resistance is inversely proportional to the radius to the power of 4 (Poiseuille's law)",
-            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)",
+            "Compliance in vascular system is ml/mmHg compared to ml/cmH2O in respiratory system, 1 mmHg = 1.36 cmH2O",
+            "On the pulmonary pressure-volume curve, the compliance will be the slope of the curve", 
+            "Dynamic compliance: using spirometer and a osophageal manometer you measure the pressurrae at the moment of the end of inspiration (peak inspiratory pressure) before experation begins",
+            "Hysterisis in the lung is introduced by surfactant",
+            "Static comliance is always higher as the fast and slow alveoly can aquilibrate",
+            "Specific compliance: static compliance / FRC - value adjusted to lung size, in healthy adults around 0.1 ml/cmH2O/L, in ARDS around 0.02 ml/cmH2O/L, measured with osophageal manometer ballon with simultaneous volume measurements - slope between volume and pressure is the compliance",
+            "If the compliance of the chest is 100 ml/cmH2O we would expect to get 500ml TV for 5 cmH2O (but this is for static (always larger), so in ventilation (dynamic), one will need more pressure ~ 10 cmH2O over PEEP",
+            "Elastance (stiffness) is the reciprocal of compliance (distensibility/stretchiness - and is seen on the LV pressure-volume curve. Interestingly PV loops for lungs are similar but with exchanged axis and vice versa",
+            "Guyton graph: Cardiac function curve (similar to Frank-Starlink relationship except right atrial pressure is used as the x coordinate, X: RAP, Y: Venous return and Cardiac output, at RAP from 0 to -2 the venous return is the best (CO too), highest return at 0 mmHg RAP, increase in RAP will decrease return and plateau CO, instead of the end-diastolic volume, and the y-axis is cardiac output instead of stroke volume)"
             
             
-            # GUIDLINES
-            "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
-            "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J" 
+            
         ),
         
         
         
         good_old_answers = c(
+            "Systematic error in the design, conduct or analysis > mistaken estimate of effect (attrition bias (droping out non randomly - intention to treat), reporting bias (publishing), detection bias (equipment), allocation bias (study group), selection bias (population - RCT), information bias)",
             "High prostaglandin level during pregnancy keeps DAB open, after birth prostaglandine levels sink and get metabolised by the lung, plus PVR low, ductus smooth muscles contract (takes up to 3 days), if preterm > DAB is open > left-right shunt with lung over-perfusion, systolic murmur, tachycardia, no weight gain, cardiac failure, substantial LV work load, pulmonary hypertony with large DAB, small DAB does not need to be closed (cath closure can be done later), if hamodynamically relevant but no cardiac failure/PAH - closure < 1y old,  NSAIDs (indomethacin, ibuprofen) to inhibit prostaglandin synthesis (works only on preterm), if not possible > surgical ligation with a clip (small kids surgery, larger kids intervention), always keep PVR low and SVR normal (otherwise R > L shunt is possible), pulmonary hypertony and hypoxia in preterm babies lead to persistent DAB, circulus vicious > more hypoxia + acidosis > more PVR more shunt over DAB,  Pregnancy: Represents a high-risk state for EMAH patients, especially those with Eisenmenger syndrome, where mortality is significantly elevated",
-            "Conditions affect neuromuscular blockade? Drugs > Volatiles, Gentamicin, Lithium, Hypothermia > Slower metabolism, Acidosis > enzymes less effective, Hypokalaemia> hyperpolarisation of excitable cells (opposite effect for suxamethonium), Hypermagnesaemia > Calcium antagonism > acetylcholine release > prolongs blockade, Hypotension > slows clearance, Burns > After 48 h >  resistance to non-depolarising agents develops, Neuromuscular disease, Myasthenia Gravis, Autoimmune destruction of postsynaptic ACh receptors. Massively increased sensitivity to non-depolarising agents, Lambert-Eaton Myasthenic Syndrome, Reduced presynaptic ACh release > Ca channel autoantibodies, Increased sensitivity to non-depolarising relaxants, Motor Neuron Diseases (e.g. ALS) > Denervation and muscle atrophy reduce receptor density, Increased sensitivity to muscle relaxants, Peripheral Neuropathies (e.g. Guillain-Barré Syndrome) > denervation and receptor upregulation , Critical Illness Polyneuropathy / Myopathy (ICU) > prolonged immobilisation or sepsis, Increased sensitivity to NMBDs + reduced clearance"
-            
+            "Conditions affect neuromuscular blockade? Drugs > Volatiles, Gentamicin, Lithium, Hypothermia > Slower metabolism, Acidosis > enzymes less effective, Hypokalaemia> hyperpolarisation of excitable cells (opposite effect for suxamethonium), Hypermagnesaemia > Calcium antagonism > acetylcholine release > prolongs blockade, Hypotension > slows clearance, Burns > After 48 h >  resistance to non-depolarising agents develops, Neuromuscular disease, Myasthenia Gravis, Autoimmune destruction of postsynaptic ACh receptors. Massively increased sensitivity to non-depolarising agents, Lambert-Eaton Myasthenic Syndrome, Reduced presynaptic ACh release > Ca channel autoantibodies, Increased sensitivity to non-depolarising relaxants, Motor Neuron Diseases (e.g. ALS) > Denervation and muscle atrophy reduce receptor density, Increased sensitivity to muscle relaxants, Peripheral Neuropathies (e.g. Guillain-Barré Syndrome) > denervation and receptor upregulation , Critical Illness Polyneuropathy / Myopathy (ICU) > prolonged immobilisation or sepsis, Increased sensitivity to NMBDs + reduced clearance",
+            "ENDOCARDITIS: 2g AMOXICILLIN, Staphylococci (42–57%; primarily S. aureus and coagulase-negative Staph. epidermidis) and oral streptococci (27–31%),  enterococci (13%), HACEK group pathogens - gram negative stabs (BACILLII) (normal mouth flora) (12%; Aggregatibacter, Cardiobacterium, Eikenella, Kingella), and fungi (12%) . Acute: Most commonly caused by S. aureus or pneumococci. Subacute IE (endocarditis lenta): More commonly caused by streptococci, coagulase-negative staphylococci, or HACEK pathogens. Limited to high-risk patients: History of valve replacement (mechanical/biological) or valve reconstruction with prosthetic material, previous endocarditis, uncorrected cyanotic heart defects, first 6 months after correction with prosthetic material, or persistent residual defects in prosthetic material. For dental procedures (gums, the periapical region, or perforation of the oral mucosa; 30–60 min preoperatively): Amoxicillin: 50 mg/kg p.o. (adults 2 g). In case of penicillin allergy: Clindamycin 20 mg/kg p.o./i.v. (adults 600 mg), Diagnosis: The gold standard is the modified Duke criteria (main criteria: positive blood cultures and imaging evidence/echocardiogram). Blood cultures: At least 3 sets (aerobic/anaerobic) prior to antibiotic administration, regardless of fever spikes. High-dose, parenteral (i.v.) long-term therapy (usually 4–6 weeks). In cases of prosthetic valve endocarditis caused by staphylococci, combination with rifampicin (biofilm efficacy) is mandatory. Surgical indication (acute/urgent): Progressive heart failure (most common cause), uncontrolled infection (despite antibiotic), prevention of emboly if vegetation over 10mm",
+            "DUCTUS ATERIOSUS: High prostaglandin level during pregnancy keeps DAB open, after birth prostaglandine levels sink and get metabolised by the lung, plus PVR low, ductus smooth muscles contract (takes up to 3 days), if preterm > DAB is open > left-right shunt with lung over-perfusion, systolic murmur, tachycardia, no weight gain, cardiac failure, substantial LV work load, pulmonary hypertony with large DAB, small DAB does not need to be closed (cath closure can be done later), if hamodynamically relevant but no cardiac failure/PAH - closure < 1y old,  NSAIDs (indomethacin, ibuprofen) to inhibit prostaglandin synthesis (works only on preterm), if not possible > surgical ligation with a clip (small kids surgery, larger kids intervention), always keep PVR low and SVR normal (otherwise R > L shunt is possible), pulmonary hypertony and hypoxia in preterm babies lead to persistent DAB, circulus vicious > more hypoxia + acidosis > more PVR more shunt over DAB,  Pregnancy: Represents a high-risk state for EMAH patients, especially those with Eisenmenger syndrome, where mortality is significantly elevated"
         )
         
     )
