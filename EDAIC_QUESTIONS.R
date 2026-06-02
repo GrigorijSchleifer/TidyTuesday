@@ -239,18 +239,12 @@ run <- function() {
         
         
         FACTS = c(
-            "CT: Factors (FFP or Prothrombin), alpha angle: fibrinogen, MCF: platelets, lysis: fibrinolysis vs TXAlp",
-            "Ankylosing spondylitis: severy neck movement impairment",
-            "rigid bronchoskope technique",
-            "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
-            "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
-            "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
             "Tonsillectomy most because OSA and/or recurrent infections (URTIs)",
             "Fractional Area Change (RVFAC) - (End-diastolic area - End-systolic area) / End-diastolic area",
             "Spirometry is cooperations dependent, body pletysmography not (can measure resistance and is more accurate at defining obstruction / restriction)",
             "FEV1 / FVC ratio < 0.7 is suggestive of obstructive lung disease, normal or high FEV1/FVC ratio with a reduced FVC > restrictive",
             "Max paracetamol dose 3g/d (15-20 mg/kg - rectal first dose 40mg/kg)",
-            "LRS > low fiO2  RLS > fiO2 high ",
+            "LRS > low fiO2  RLS > fiO2 high",
             "If difficult induction always state preload, contractility, SR, stable afterload and sufficient DO2",
             "TCI: loading dose = Vd * desired concentration (i.e. the concentration at steady state)",
             "Suprascapular and transverse cervical artery above and crossin the phrenic nerve above scalenus anterior",
@@ -266,13 +260,7 @@ run <- function() {
             "D (in DRSABCDE) (GSC/AVPU, pupils, gross motor function, GLUCOSE!!!!!!!!!!!",
             "Beck triad (tamponade) - hypotonia, muffled/abolished heart sounds, distenden jugular vain",
             "How strong it gets: Platelets, How long it needs: Fibrinogen, Initiation: Factors",
-            "Hypercalcaemia makes all segments shorter (PR and ST)",
-            "Neonate CPR: all depends on the HR (assess every 30 seconds - adjust airway manouvers to the HR)",
             "Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2 * R)",
-            "Ortner syndrome - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarsenesss",
-            "Foregn body child > keep spontaneous",
-            "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
-            "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
             "Clearance = dose / Area under curve (concentration/time)",
             "Loading dose = Volume of distribution x target concentration",
@@ -302,7 +290,6 @@ run <- function() {
             "Inhalational pediatric - dial up > better preoxygenation (if agitated kid > full sevoflurane!)",
             "Arytenoid and corniculate cartilage are on the dorsal site of crycoid cartilage ",
             "There is no oncotic pressure in bowmans capsule",
-            "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
             "Missed pyridostigmin (MG) - 60 mg p.o. equivalent to 2 mg i.v.or 500 micrograms neostigmine",
             "APRV and relaxation does not make sense",
             "Sacral hiatus is the missing vertebral arch (covered by Lis. sacrococcygeatum)",
@@ -313,7 +300,6 @@ run <- function() {
             "pons and cerebella build the metencephlon (hindbrain)",
             "Aminoglycosides can be described in a one compartment model because highly hydrophillic and confined to plasma compartment",
             "ESBL - extended spectrum beta lactamase - resistance to penicillins and cephalosporins, treat with carbapenems (E.coli, clebsiella)",
-            "Body is on a alkaline neutral side state",
             "By compensation of respiratory or metabolic desorders CO2 and HCO3 go in the same direction",
             "Ciprofloxacin, Levofloxacin, Moxifloxacin, and Ofloxacin > kill bacteria by inhibiting DNA gyrase and topoisomerase IV - tendinopathy and tendon ruptures, peripheral neuropathy, suizidal thoughts, exceptional tissue penetration (great as alternative for Beta-Lacs for CAP) - aortic aneurysm, QT long, clostridien, photosensitivity",
             "Neuropraxia - smalles injury > temporary nerve injury, axonal continuity preserved, recovery in weeks to months (e.g. compression injury)",
@@ -330,7 +316,6 @@ run <- function() {
             "Warfarin has over 690 known drug interactions, with 181 major (increase the risk of bleeding > ciprofloxacin, cotrimoxazole, metronidazole), NSAIDs, amiodarone, and statins)",
             "FFP dose for INR 2,4,>6 is around 10-20 ml/kg",
             "The acid-base regulation is chiefly dependent on the control of net acid excretion by the kidney and CO2 excretion by the lungs. Renal acid-base homeostasis consists of two major processes, the reabsorption of filtered bicarbonate and the excretion of the hydrogen ion",
-            "SVI: approximately 35–65 ml/m2 - indicator for SV",
             "Functioning kidney - Urine Na: 10 - 20 mmol/L (RAAS, ADH, Sympathicus activation) otherwise high urine osmolarity, acute tubular necrosis: Urine Na > 40 mmol/L, low urine osmolarity, muddy brown casts ",
             "Glycopeptides - ONLY G+, (e.g., vancomycin, teicoplanin, oritavancin) - MRSA, Sepsis, Endocarditis - inhibit bacterial wall synthesis (peptidoglycan interaction, D-Ala-D-Ala block), red man syndrom, oto and nephrotoxicity, MRSA and Clostridium difficile infections (oral, not absorbed, QT,  Time dependent killing (need to be above certain level for some time",
             "Normal urine osmolarity is between 300 - 900 depending on ADH (if ADH low > low urine osmolarity, if ADH high > high urine osmolarity) - osmolarity decreases if kidney function declines",
@@ -372,11 +357,11 @@ run <- function() {
             "If large volumes of ABO-incompatible cryoprecipitate are used, the recipient may develop a positive direct antiglobulin test and, very rarely, develop haemolysis.",
             "HCAP: Healthcare-Associated Pneumonia - Pseudomonas aeruginosa, Staph aureus and MRSA, Klebsiella pneumoniae, Escherichia coli, Acinetobacter species",
             "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
-            "Cryoprecipitate contains fibrinogen, Factor VIII, Factor XIII and vWF, 1 unit for every 10kg, 1 UNIT raises fibrinogen by 0.5-1 g/dL - Fibrinogen level less than 1.5 g/L (2.0 g/L in obstetric haemorrhage or cardiothoracic haemorrhage)",
             
             
             
             # ANATOMY    
+            "Anterior spinal artery: (Aa. vertebralis) anterior 2/3 - corticospinal tract, spinothalamic tract, and anterior horn (anterior cord syndrome (loss of motor function and pain/temperature sensation below the lesion,preserved proprioception and vibration), Aa. posterior spinal (PICA in 75%): posterior 1/3 - dorsal columns and dorsal horn (posterior cord syndrome (loss of proprioception and vibration, preserved motor function and pain/temperature), Radicular arteries (artery of Adamkiewicz): supply the lower thoracic and upper lumbar spinal cord, typically arising from the left side between T9 and L2, important for the blood supply to the anterior spinal artery in this region), segmental arteries from intercostal aa. (ant/post. radicular artery)",
             "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
             "Ascending spinal pathways include the dorsal columns (gracile fasciculus (MEDIAL - LOWER BODY, except face (trigeminal ganglion)) and the cuneate fasciculus (lateral to gracilis UPPER BODY), cross over at the sensory decussation to form medial lemniscus >synapse with third-order neurons of the thalamus, fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the CORTICOSPINAL tract for voluntary movement and EXTRAPYRAMIDAL tracts for posture and tone. Dorsal column medial lemniscus (DCML) > touch, pressure, vibration, proprioception, large myelinated fibers (Aβ), decussate in medulla, synapse in gracile and cuneate nuclei, then to thalamus and somatosensory cortex, Spinothalamic tract (STT) > pain and temperature, small myelinated (Aδ) and unmyelinated (C) fibers, decussate in spinal cord at the level of entry, then ascend contralaterally to thalamus and somatosensory cortex, Spinocerebellar tract > proprioception from muscle spindles and golgi tendon organs, uncrossed (ipsilateral) to cerebellum",
             "Caudal cornua are remnants of unfused vertebral arches",
@@ -467,6 +452,7 @@ run <- function() {
             
             
             # ACID-BASE-BLOOD-GAS
+           "Body is on a alkaline neutral side state",
            "PaO2 < 85mmHg (child), < 75mmHg (adult) - pathological",
             "Urea (also known as carbamide) is an organic compound that serves as the main nitrogen-containing waste product of protein metabolism in mammals and is excreted renally",
             "ASS intoxication - increased ventilation - respiratory alcalosis AND metabolic acidosis",
@@ -494,6 +480,13 @@ run <- function() {
             
             
             # CLINIC
+           "Pulmonary embolism causes dead space but causes hypoxia - this is because of inflammation and V/Q mismatch",
+           "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
+           "Ortner syndrome - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarsenesss",
+           "1-2g/kg Mannitol 20% = 5 - 10 ml/kg",
+           "TEVAR: pre insertion low RR to limit aortic movement, post deployment higher RR for spinal perfusion, kidney protection with volume, NAC, spinal protection with drain (reduces intrathecal pressure), full rupture cart ready, discuss prior to build a shared mental model, monitor for paraplegia (ischaemic spinal chord injury) and renal failure",
+           "Respiratory failure types: Type I: hypoxemic (PaO2 < 50 mmHg with normal or low PaCO2), Type II: hypercapnic (PaO2 < 50 mmHg, PaCO2 > 50 mmHg), Type III: perioperative (atelectasis, V/Q mismatch), Type IV: shock (hyperperfusion of respiratory muscles and thus hypoperfusion of coronary muschles)",
+           "Fatiguable weakness: myasthenia gravis",
            "Mitral stenosis after C-Section: only 1 oxtocine (we dont want to drop her SVR), 10U/over 1 hour for 4 hours, avoid ergotamine, carboprostone, misoprostol (800mü) is ok",
            "In LAST ACLS avoid epinephrine (severe arrhythmias, dose-reduced to <  mcg/kg), lidocaine (also LA), beta-blockers, very low propofol dose, calcim channel blocker and vasopressine (massive afterload is bad to inhibited heart)",
            "Thyroid strom: fever (>40°C), severe tachycardia (>140 bpm), agitation, delirium, psychosis, severe nausea/vomiting, diarrhea, and JAUNDICE",
@@ -612,6 +605,8 @@ run <- function() {
             
             
             # CLOTTING
+           "ACT: used for bedside, especially intrinsic cascade (Heparin or direct thrombin inhibitors (argatraban, bilevirdin), needs kaolin for activation - measures time to fibrin, wrong with low thrombocytes and abnormal plattelets, normal 70-120s, for heparin therapy > 300s, for bypass > 400s",
+            "aPTT: intrinsic pathway (XII, XI, IX, VIII), normal 25-35s, for heparin therapy 1.5-2.5 times normal",
            "C3 is the most abundand complement",
            "85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haem",
            "How long it needs: Fibrinogen, Initiation: Factors, How strong it gets: Platelets",
@@ -650,6 +645,7 @@ run <- function() {
            "CT (factros or HEPARIN), CFT and alpha (at 20mm clot: mainly platelets and some fibrinogen), MCF (fibrinogen and plateletts)",
            "IPTEM: Contact activation (Kaolin) (in opposition to EXTEM which is tissue factor activation)",
            "PPSB is Beriplex (Prothrommbn complex concentrate) - contains factors II, VII, IX, X (and some protein C and S) - used for reversal of warfarin",
+           "Cryoprecipitate contains fibrinogen, Factor VIII, Factor XIII and vWF, 1 unit for every 10kg, 1 UNIT raises fibrinogen by 0.5-1 g/dL - Fibrinogen level less than 1.5 g/L (2.0 g/L in obstetric haemorrhage or cardiothoracic haemorrhage)",
            
            
            
@@ -675,7 +671,8 @@ run <- function() {
             "Vertical axis (III and aVF very positive) and clockwise rotation (prolonged R progression in wilson leads - transitional lead is V5), peak P waves in inferior leads, Low voltages in the left-sided leads (I, aVL, V5-6)",
             "aVR is not a real lead – it is calculated from leads I and II and is a mirror (reciprocal) image of changes seen in these leads",
             "VT: ABCDE approach: Axis (northwest bad), Broad (> 200ms), Concordance (all in the same diraction), Dissociation, Early part (take long to reach the peak (SVT very fast upslope))",
-
+            "Hypercalcaemia makes all segments shorter (PR and ST)",
+           
             
             
             
@@ -695,6 +692,7 @@ run <- function() {
             "WEIGHT > (Age + 4) * 2 OR (Age * 2) + 9",
             
             # MEASUREMENTS
+           "SVI: approximately 35–65 ml/m2 - indicator for SV",
            "The helium dilution method is a pulmonary function test used to measure Functional Residual Capacity (FRC)—the volume of air left in the lungs after a normal exhalation, V2 = V1 * ((C1-C2) / C1) - law of conservation of mass",
            "Vitalograph is a brand that it itself is a spirometer",
            "Delayed Emergence: Physilogical, Pharm, Neuro, Other",
@@ -801,6 +799,7 @@ run <- function() {
             "quickSOFA (qSOFA): respiratory rate of 22/min or greater, altered mentation, or systolic blood pressure of 100 mm Hg or less",
             "Septic shock identified > vasopressor requirement to maintain MAP of 65 mm Hg or greater + lactate > 2 mmol/L (>18 mg/dL) in the absence of hypovolemia (Mortality 40%)",
            "Le Fort I > floating palat",
+           "Jaw protrusion (A: lower in front of upper, B: lower over upper, C: lower behind upper (bad))",
            "SOFA Predicts ICU mortality based on lab results and clinical data (describes organ dysfunction): Respiratory, PO2/FiO2 (mmHg/kPa), Platelets, (×103/mm3), Bilirubin (mg/dL), GCS, Creatinine (mg/dL)",
            
             
@@ -823,6 +822,13 @@ run <- function() {
             
             
             # PHARMACOLOGY
+           "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
+           "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
+           "Low solubility (slow transfer over membrane: diffusion limited, high solubility (fast membrane transfer) - perfusion limited), O2 are perfusion limited (but can be diffusion limited in atlethes if CO is very high or at very high altitude), CO is diffusion limited (so high affinity to Hb that perfusion does play a minor role and the diffusion properties of the membrane define the rate of diffusion",
+           "DLCO - In exercise DLCO increases due to recruitment of alveoli (area), Vco2 / (P1 - P2) > Vco2 / PCO - ml/min/mmHg - norm is 25 ml/min/mmHg - low in emphysema (less surface), interstitial lung disease,",
+           "Diffusion capacity: ability of a gas/agent to diffuse over time for every mmHg of partial pressure of that agent",
+           "RR: VCO2/VO2 (overall 0.8, only carbs RR 1, only proteins RR 0.8, only fats RR 0.7",
+           "Ficks diffusion law: alveolar thicknes is 0.3 micrometers and surface is 100m2, CO2 molecular weight is similar to oxygen, but 20 times more soluble, so role of weight is negligible, but solubility is important",
            "Before we remove an uterus from a young lady - think about ergometrine!!!",
            "Protamin: mainly heparine, but also LMWH, Vit-K-Antagonist: prothrombincomplex (PPSB - 10, 9, 7, 2, Proteine C + S - IMMEDIATE, vitamine K - only after 12 hours), dabigatran (idarizuzumab), Argatroban, Fondaparinux, Hirudine no antidote, Rivaroxaban or Apixaban - andexxanet or PPSB",
            "Succi: side effects due to Ach resemblance (muscarinic - brady), TRUE BODY WEIGHT, DO NOT REVERSE - increase in Ach will deepen the block, and if esterases are inhibited we slow down the hydrolysis of succ, two Ach molecules joined together, gigantic first pass metabolism due to plasmacholinesterases, prolonged in liver failure, kidney and pregnancy, but also pseudocholinesterase gene defect (Debucaine - 80% normal, 40-60 heterozygos, 0-20 homozygos), 1:50 heterocygos (20 minutes block), patients with NMS can get succ without a problem",
@@ -1019,7 +1025,12 @@ run <- function() {
             
             
             # PHYSIOLOGY
+           "Hering-Breuer reflex: strech receptors sense overdistension of the lung > N.vagus (to medulla > pons) > stop inspiration (CPAP > can cause apnea) - negative feedback reflex",
+           
+           "Isoshunt diagram shows that for a 50% shunt arterial blood will be alomost identical to venous blood, at a certain point increasing FiO2 will not really increase PaO2 due to shunt admixure",
+           "Shunt usually does not affect CO2, only a slight CO2 increase due to shunt will be sensed by chemoreceptors and ventilation will increas, BUT in anesthesia and paralised patients shunt will lead to an increase in PaCO2, or patients with decreased respiratory capacity (COPD, lung disease, pneumonia, or just opioids",
            "Oxygen is perfusion limited not diffusion limited, this is why the calculated PAO2 is almost identical to PcO2 as long as perfusion is sufficient",
+           "Shunt - you can calculate (content (normal O2 content will be around 20 ml/100ml blood) will be calculated with the content formula and Huefner count, cave 0.03 is based on the Henry law) but not measure it - it is a theoretical concept, but is an amount of mixed-venous blood that needs to be added to the capillary blood to explain the PaO2 amount",
            "PvO2 is 40mmHg (5.3 kPa) vs PvCO2 45mmHg (6 kPa)",
            "Things would boil if your saturated vapor pressuer equals atmospheric pressure",
            "Saturated water pressure depends on the barometric pressure (?) and temeprature (low temperature - low vapor pressure) - decrease in barometeric pressuer decreases also the boiling pressuere",
