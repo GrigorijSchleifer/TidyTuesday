@@ -239,7 +239,6 @@ run <- function() {
         
         
         FACTS = c(
-            "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
             "CT: Factors (FFP or Prothrombin), alpha angle: fibrinogen, MCF: platelets, lysis: fibrinolysis vs TXAlp",
             "Ankylosing spondylitis: severy neck movement impairment",
             "rigid bronchoskope technique",
@@ -272,7 +271,6 @@ run <- function() {
             "Power needed for defibrillation is 125 kW, based on a current of 50A across the thorax with a resistance of 50 Ω (as power = I2 * R)",
             "Ortner syndrome - left recurrent laryngeal nerve compression by an enlarged left atrium (mitral stenosis) > hoarsenesss",
             "Foregn body child > keep spontaneous",
-            "During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!",
             "MH Dantrolen (2.5mg/kg every 15 minutes up to 10mg/kg (sterile water) - cave arrytmias for Ca-channel blocker patients)",
             "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
             "Cooling on countercurrent exchange points (groin, neck, axilla)",
@@ -375,11 +373,11 @@ run <- function() {
             "HCAP: Healthcare-Associated Pneumonia - Pseudomonas aeruginosa, Staph aureus and MRSA, Klebsiella pneumoniae, Escherichia coli, Acinetobacter species",
             "300 large squares is equal to 1 minute at a paper speed of 25mm/sec, 1 large square = 0.2 seconds, 5 large squares = 1 second, 5 LARGE squares = 1 second - RR distance of 5 large squares is 60 bpm",
             "Cryoprecipitate contains fibrinogen, Factor VIII, Factor XIII and vWF, 1 unit for every 10kg, 1 UNIT raises fibrinogen by 0.5-1 g/dL - Fibrinogen level less than 1.5 g/L (2.0 g/L in obstetric haemorrhage or cardiothoracic haemorrhage)",
-            "C3 is the most abundand complement",
             
             
             
             # ANATOMY    
+            "Pineal gland is not pituitary gland - controls circadian rhythm (melatonin)",
             "Ascending spinal pathways include the dorsal columns (gracile fasciculus (MEDIAL - LOWER BODY, except face (trigeminal ganglion)) and the cuneate fasciculus (lateral to gracilis UPPER BODY), cross over at the sensory decussation to form medial lemniscus >synapse with third-order neurons of the thalamus, fine touch, proprioception), spinothalamic tracts (pain and temperature), spinocerebellar tracts (unconscious proprioception), while descending pathways include the CORTICOSPINAL tract for voluntary movement and EXTRAPYRAMIDAL tracts for posture and tone. Dorsal column medial lemniscus (DCML) > touch, pressure, vibration, proprioception, large myelinated fibers (Aβ), decussate in medulla, synapse in gracile and cuneate nuclei, then to thalamus and somatosensory cortex, Spinothalamic tract (STT) > pain and temperature, small myelinated (Aδ) and unmyelinated (C) fibers, decussate in spinal cord at the level of entry, then ascend contralaterally to thalamus and somatosensory cortex, Spinocerebellar tract > proprioception from muscle spindles and golgi tendon organs, uncrossed (ipsilateral) to cerebellum",
             "Caudal cornua are remnants of unfused vertebral arches",
             "Corticospinal tract: primary motor cortex > corona radiata > posterior part of internal capsule > cerebral peduncles > medullary pyramids > decussation at the cervicomedullary junction > lateral corticospinal tract in the spinal cord > synapse with lower motor neurons in the anterior horn", 
@@ -496,9 +494,12 @@ run <- function() {
             
             
             # CLINIC
+           "Mitral stenosis after C-Section: only 1 oxtocine (we dont want to drop her SVR), 10U/over 1 hour for 4 hours, avoid ergotamine, carboprostone, misoprostol (800mü) is ok",
            "In LAST ACLS avoid epinephrine (severe arrhythmias, dose-reduced to <  mcg/kg), lidocaine (also LA), beta-blockers, very low propofol dose, calcim channel blocker and vasopressine (massive afterload is bad to inhibited heart)",
            "Thyroid strom: fever (>40°C), severe tachycardia (>140 bpm), agitation, delirium, psychosis, severe nausea/vomiting, diarrhea, and JAUNDICE",
            "Kiwi/avokado allergie - Latex allergy association",
+           "Routine Anti-Xa results are not required only if renal function is vastly decreased",
+           "HELLP: Variety of pre-eclampsia. Haemolysis, Elevated Liver enzymes, and Low Platelets. life-threatening - resolved by delivering the baby. It usually starts during the last three months (but up to 15% start second trimester) or shortly after childbirth. Symptoms include tiredness, fluid retention/oedema, headache, nausea, upper right abdominal pain, blurry vision, nosebleeds, and seizures. Untreated, HELLP-syndrome may lead to DIC, placental abruption, kidney failure, seizures, and brain haemorrhage",
            "Asthma: salbutamol 8-12 puffs, ipratropium bromide, magnesium, iv fenoterol, sevoflurane, ketamine, adrenalin, HYPERINFATION (external pressure), prednisolon (works quicker than expected), deepen anesthesia, permissive hypercapnia (RR 8, I:E 1:5 (cave spike pressure and not enouph volume in short time)), avoiding barotrauma, ECCMO",
            "If a tooth is chiped, one need to put it in milk", 
            "MH: UNCONTROLLED MASSIVE CA RELEASE (rocuronium does not help, not a muscular junction problem), 25% occure after surgery in the first dasy postop, hyperkalemia (arytmias), myoglobinuremia, renal failure, CK, autosomal dominant, 1:5000 - 1:65000 (alway ask for family history), prior uneventfull anesthesia is no proof, proof is only the caffeine-halothan-contraction test (biopsy), genetic testing is not sufficient (massive heterogenicity)",
@@ -537,6 +538,7 @@ run <- function() {
             "Thyroid storm: Propylthiouracil (600mg oral (T44 synthesis stop, and no T4 > 3, hepatic failure)), Hydrocortison (100mg) or dexamethasomne (10mg), Propranolol (80mg/6h, 1mg/kg/min - ESMOLOL is the modern altenative) - Carbimazol (20-30mg tbl., potassium iodid solution (5 drops orally every h (Wolff-Chaikoff effect - inhibits iodine organofication - BUT thyreostatic FIRST and than))",
             "Pacemaker: First: PACING 0: none, A: Atrium, V: Ventrikel: D: both, SENSING: same as first, RESPONCE TO SENSING: 0: none, I: inhibited, T: Triggerted, D: dual (inhibited and/or triggered",
             "DKA triad: ketonuria, acidosis, hyperglycaemia",
+           "HELLP: Variety of pre-eclampsia. Haemolysis, Elevated Liver enzymes, and Low Platelets. life-threatening - resolved by delivering the baby. It usually starts during the last three months (but up to 15% start second trimester) or shortly after childbirth. Symptoms include tiredness, fluid retention/oedema, headache, nausea, upper right abdominal pain, blurry vision, nosebleeds, and seizures. Untreated, HELLP-syndrome may lead to DIC, placental abruption, kidney failure, seizures, and brain haemorrhage",
             "X-linked recessive, most common enzymatic disorder of red blood cells, G6PD is an enzyme in the pentose phosphate pathway that helps protect red blood cells from oxidative damage, deficiency can lead to hemolytic anemia in response to oxidative stress (e.g., infections, certain drugs like sulfonamides, antimalarials, and fava beans), avoid triggers, monitor for signs of hemolysis (jaundice, dark urine, fatigue), maintain hydration and consider blood transfusion if severe hemolysis occurs, riggers for hemolysis: Oxidative stress caused by medications, infections, metabolic acidosis, ketoacidosis, hypothermia, and surgical stress. Anesthesia-related medications: Avoid: Medications that trigger oxidative stress or methemoglobinemia. Absolutely contraindicated: Methylene blue (is ineffective and triggers severe hemolysis), Critical: Lidocaine, Prilocaine (EMLA), Metoclopramide, Diclofenac, and high-dose ASA, Safe: Propofol, Ketamine, Fentanyl, Sufentanil, Rocuronium, succinylcholine, bupivacaine, acetaminophen (in therapeutic doses), and nitrous oxide. Management tips: Preoperatively: Screen for jaundice; laboratory tests (LDH, haptoglobin, bilirubin, LDH, spherocytes on smear, reticulocytes); no elective procedures during acute hemolysis; intraoperatively: Avoid stress through generous analgesia, maintain normothermia, closely monitor blood glucose; Postoperatively: Hemolysis usually occurs 24–72 hours after exposure to the trigger (therefore, outpatient anesthesia is not recommended); Monitor urine for hemoglobinuria",
             "COACHED approach: Continue compressions, Oxygen away, All clear except compressions, Charging, Hands off, Evaluate, Deliver or Disarm",
             "Pacemaker: Fourth Letter: RATE MODULATION: O: none, R: rate respopnsive > DDDR (adjusts rate to activity), Fifth letter: MULTISIDE PACING (in the same chamber) 0: none, A: Atrium, V: Ventrikel: D: both",
@@ -575,6 +577,7 @@ run <- function() {
             "Mediastinal mass: 4Ts: Terrible infections, Thymoma, Teratoma (germ cell tumor), retrosternal Thyroid)",
             "PLAN PREPARE PROCEED - extubation or other interventions ",
            "Causes of HYPOXAEMIA (V/Q mismatch, shunt, diffusion abnormalities, hypoventilation, low FiO2) are NOT causes for HYPOXIA (anaemic, histotoxic, stagnant, hypoxic",
+           "HELLP: Variety of pre-eclampsia. Haemolysis, Elevated Liver enzymes, and Low Platelets. life-threatening - resolved by delivering the baby. It usually starts during the last three months (but up to 15% start second trimester) or shortly after childbirth. Symptoms include tiredness, fluid retention/oedema, headache, nausea, upper right abdominal pain, blurry vision, nosebleeds, and seizures. Untreated, HELLP-syndrome may lead to DIC, placental abruption, kidney failure, seizures, and brain haemorrhage",
             "Large mediastinal mass: positional - not for sedation, maybe lateral or prone - otherwise not suitable for sedation procedure",
             "Goiter: tachy, CO2 normal, no rigor, high fever - thyroid storm",
             "Parkinson: decrease in dopaminergic and increase in cholinergic activity, Levodopa (precursor) PLUS decarboxylase inhibitor, Or dopamine agonists (pramipexol), or NMDA receptor antagonists (amantadin), no droperidol, MCP or haloperidol, cave with antihistaminics due to anticholinergic effect, Aspiration risc and recurrent pneumonia, postural hypotension and autonomic dysfunction, increased sensitivity to sedatives and antipsychotics (dopamine antagonists), avoid metoclopramide (dopamine antagonist), use domperidone instead (does not cross BBB), avoid haloperidol, use quetiapine or clozapine if needed",
@@ -590,6 +593,7 @@ run <- function() {
             "Coca Cola Urine - Rhabdomyolysis, muscle breakdown, myoglobinuria, hyperbilirubinuria (Cholurie), treat with fluids (myoglobin dilution --- MOST IMPORTANT), mannitol, bicarbonate",
             "Post drual headache: caffeine: 200mg 3/d, theophyllin 300mg 3/d, Gabapentine 300mg 3/d, hydrocortison 10mg po 3/d, paracetamol - max 4g, Ibuprofen max 2.4g",
             "In BLS abnormal breathing qualifies for CPR!",
+           "HELLP: Variety of pre-eclampsia. Haemolysis, Elevated Liver enzymes, and Low Platelets. life-threatening - resolved by delivering the baby. It usually starts during the last three months (but up to 15% start second trimester) or shortly after childbirth. Symptoms include tiredness, fluid retention/oedema, headache, nausea, upper right abdominal pain, blurry vision, nosebleeds, and seizures. Untreated, HELLP-syndrome may lead to DIC, placental abruption, kidney failure, seizures, and brain haemorrhage",
             "4 weeks baby: 2.5 uncuffed and 3 cuffed tube, 9cm depth oral, 11 cm depth nasal",
             "DLT - hypoxaemia, if inhalation, CPAP on collapsed lung does not help, clamp pulmoary artery to the collapsed lung, reverse to two lung ventilation",
             "Double lumen tube or single lumen tube with a bronchus blocker could be used to isolate the lung",
@@ -608,6 +612,7 @@ run <- function() {
             
             
             # CLOTTING
+           "C3 is the most abundand complement",
            "85% are rhesus positive and rest is rhesus negative (Anti-D (IgG immunglobuline destroys rhesus positive red blood cells) - preventing haem",
            "How long it needs: Fibrinogen, Initiation: Factors, How strong it gets: Platelets",
             "For ITP, the general recommendation is for oral glucocorticoids, such as prednisone 1mg/kg/day",
@@ -778,7 +783,8 @@ run <- function() {
             
             
             # SCORES            
-            "Child-Pugh-Creteria: Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie",
+            "Child-Pugh-Creteria: every groupe scores 3 points max (1-3), Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie - A: 5-6 points (well compensated), B: 7-9 points (significant compormise), C: 10-15 points (decompensated)",
+           "MELD (Model for End-Stage Liver Disease - for transplant priorisation): billi, INR, creatinin, Na (min 6 - max 40",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
             "Gurd`s crteria for diagnosing fat embolism syndrome - 1 major (respiratory insufficiency, cerebral involvement, petechial rash) + 4 minor (tachycardia, pyrexia, retinal changes, jaundice, renal changes, anemia, thrombocytopenia) + fat macroglobulinemiat",
            "SOFA - Predicts ICU mortality based on lab results and clinical data (describes organ dysfunction): Respiratory, PO2/FiO2 (mmHg/kPa), Platelets, (×103/mm3), Bilirubin (mg/dL), GCS, Creatinine (mg/dL)",
@@ -813,10 +819,12 @@ run <- function() {
             "If surgery on a pregnant - RSI, Sodiumcitrate, MCP, Fetal heart rate, contract to midwifery to inform, left tilt (caval compression)",
             "Hemolysis, elevated liver enzymes, and low platelet count (HELLP) syndrome develops in approximately 20% of women with severe preeclampsia (pulmonary edema, acute renal failure, disseminated vascular coagulopathy, abruptio placentae, hepatic hemorrhage or failure, and fetal or maternal death)",
             "PDK-Anlage im Kreissaal bei unauffälliger Gerinnungs- und Schwangerschaftsanamnese OHNE Laborkontrolle möglich, DGAI. A&I 2009",
-
+            "The modified WHO (mWHO) risk classification for pregnant I-IV (with 60% risk of cardiac complications in mWHO IV",
             
             
             # PHARMACOLOGY
+           "Before we remove an uterus from a young lady - think about ergometrine!!!",
+           "Protamin: mainly heparine, but also LMWH, Vit-K-Antagonist: prothrombincomplex (PPSB - 10, 9, 7, 2, Proteine C + S - IMMEDIATE, vitamine K - only after 12 hours), dabigatran (idarizuzumab), Argatroban, Fondaparinux, Hirudine no antidote, Rivaroxaban or Apixaban - andexxanet or PPSB",
            "Succi: side effects due to Ach resemblance (muscarinic - brady), TRUE BODY WEIGHT, DO NOT REVERSE - increase in Ach will deepen the block, and if esterases are inhibited we slow down the hydrolysis of succ, two Ach molecules joined together, gigantic first pass metabolism due to plasmacholinesterases, prolonged in liver failure, kidney and pregnancy, but also pseudocholinesterase gene defect (Debucaine - 80% normal, 40-60 heterozygos, 0-20 homozygos), 1:50 heterocygos (20 minutes block), patients with NMS can get succ without a problem",
            "Lung volumens can be measured with spirometer, benedigt roth spirometer and vitalograph",
            "Depolarising agent: mimic Acetylcholine, cause phase I and phase II block (prolonged depolarisation due to high concentration of succi - uncommon, resembles non depolarising with fade, unclear mechanism, can be reversed with neostigmin but is not recommendet, wait is better), no reversal (recovery when agent diffuses from the receptor - hydrolysis by plasma pseudocholinesterase. reversal with neostigmin will lead to prolonged weakness), all twitches are reduced and no fade is visible",
@@ -836,6 +844,7 @@ run <- function() {
            "Desflurane: O:G 18.7, B:G 0.42 - most expensive, boils at room temperature, some tachy on induction othersise no cardiac depression, pungend (not for inhalation induction), Death-flurane (laryngospasm in children), highest bronchospasm (sinlge not to use in asthmatics), CA in older absorbants, CONTRAIDICATION: asthma, best recovery profile (low solubility O:G 18.7, B:G 0.42",
            "Sevoflurane/Isoflurane - minimal cardiac depression",
            "Xenon (Xe): O:G 0.14, B:G 0.115 - very expensive, fast but not potent, special xenone machine (xenone is saved after exhalation for the next patient), no cardiac depression, neuroprotective, no MH, no metabolism, low blood solubility (fast induction and emergence), CONTRAINDICATION: pregnancy",
+           "Protamin: mainly heparine, but also LMWH, Vit-K-Antagonist: prothrombincomplex (PPSB - 10, 9, 7, 2, Proteine C + S - IMMEDIATE, vitamine K - only after 12 hours), dabigatran (idarizuzumab), Argatroban, Fondaparinux, Hirudine no antidote, Rivaroxaban or Apixaban - andexxanet or PPSB",
            "Diffusion hypoxia: N2O is flooding the alveolus and displacing oxygen",
            "Nitrous oxide (N20): inorganic (no carbon bonds), NON-volatile, analgesic, sweet smelling, NO MH and no muscle relaxation, insoluble, non flammable (but supports combustion if with oxygen), PONV, almost no metabolism, 34times more soluble than N2 (closed spaces), oxidises cobalt in VitB12 (myeline formation down, pernicious anaemia, and teratogenic)",
            "N2O is a tiny, linear molecule with very weak intermolecular forces called London dispersion forces. Because it lacks strong forces holding the molecules tightly together (like hydrogen bonding), it does not form liquids easily at standard room temperature and pressure",
@@ -864,6 +873,7 @@ run <- function() {
            "Rule of 10: 10mg morphine, 1mg hydromorphone, 0.1mg fentanyl, 0.01 mg sufentanyl, more precise: equianalgesic table of opioids",
            "Hyperalgesia is more common with phenantrenes (morphine, oxycodone, hydromorphone, codein - similar to tolerance, but pain seem to increase with increased dosing - maybe some agonist action at the NMDA receptor (heterotetrameric protein. Functioning as a ligand-gated and voltage-dependent ion channe)",
            "Alfentalyl 10-50 microgram/kg > Fentanyl 1-5 microgram/kg > Sufentanyl 0.1-0.5 microgram/kg",
+           "Protamin: mainly heparine, but also LMWH, Vit-K-Antagonist: prothrombincomplex (PPSB - 10, 9, 7, 2, Proteine C + S - IMMEDIATE, vitamine K - only after 12 hours), dabigatran (idarizuzumab), Argatroban, Fondaparinux, Hirudine no antidote, Rivaroxaban or Apixaban - andexxanet or PPSB",
            "Halogenated refers to a class of inhaled general anesthetics that have been chemically altered by attaching one or more halogen elements (such as fluorine, chlorine, or bromine)",
            "Local anesthetics and propofol are highly protein bound",
            "The inhalation wash in curve has time on x and FA/Fi ratio on Y and can display the alveolar equilibration speed of inhalation agensts",
@@ -1009,6 +1019,12 @@ run <- function() {
             
             
             # PHYSIOLOGY
+           "Oxygen is perfusion limited not diffusion limited, this is why the calculated PAO2 is almost identical to PcO2 as long as perfusion is sufficient",
+           "PvO2 is 40mmHg (5.3 kPa) vs PvCO2 45mmHg (6 kPa)",
+           "Things would boil if your saturated vapor pressuer equals atmospheric pressure",
+           "Saturated water pressure depends on the barometric pressure (?) and temeprature (low temperature - low vapor pressure) - decrease in barometeric pressuer decreases also the boiling pressuere",
+           "Alveolar gas equation incorporates an F factor that needs to be added to the equation (if FiO2 100%, f will be 10, otherwise around 2 (dependent on PCO2 and FiO2",
+           "During apnea V02 is 250 ml/min and CO2 production is 8-20ml/min > negative pressure > ATELECTASIS!!!!!!!!",
            "Hypoxemia: Hypoventilation, V/Q mismatch, Shunt, Diffusion impairment, Cardiac",
            "When axon depolarises and the impulse reaches the neuromuscular junction - Calcium enters the presynaptic TERMINAL AXON and triggers Ach release - end plate potential is generated - voltage gated na channels open - Ach amount exceeds by 10fold the amount needed, Ach is hydrolised to choline and acetate by esterase that is embedded in the motor end plate below the terminal axon",
            "Systemic vascular resistance - 700–1600 (dyn·s/cm5) OR 9–20 (mmHg·min/L or Wood units) VS Pulmonary vascular resistance 20–130 (dyn·s/cm5)    OR 0.25–1.6 (mmHg·min/L or Wood units)",
