@@ -225,6 +225,8 @@ run <- function() {
             "Surviving sepsis campaign bundle: Early lactate, blood cultures, broad spectrum antibiotics, fluids, vasopressors to maintain MAP > 65 mmHg - old 2021 - new 2026 - prehospital antibiotics, active fluid removal (diurhetics after shock over), MAP for elderly (> 65) 60-65 instead of > 65 (less catecholmines and less adverse effects), in BMI >30 volume 30/kg based on ideal istead of lean, beta lactams (strong evidenc upgrade), strongly recommend using Early Warning Scores (like NEWS, NEWS2, MEWS, or SIRS) over qSOFA (poor sensitivity), elective Decontamination of the Digestive Tract, High-Flow Nasal Cannula (HFNC), awake proning",
             "Chronic AKI: Hemoglobin levels should be kept between 11 and 12 g/dL to avoid possible increases in cardiovascular events and thromboembolic phenomena",
             "ScvO2 is no longer recommended as a therapeutic target by the Surviving Sepsis Campaign",
+            "CHA2DVAS2Sc: maximal 10, if men over 2 or women over 3 first line are DOACS (for Afib prevention), patients with valves (mitral stenosis and esp. mechanical valves are still on coumarins",
+            "Anticoagulation for cardioversion: if Af > 48h or unknown duration - for at least 3 weeks, at least 4 weeks after cardioversion regardless of CHADVASc score", 
             "Pediatric CPR: 15:2, Adrenalin 10mü/kg, Amiodarone 5mg/kg, defibrillation 4J", 
             "Aspiration: first pneumonitis (supportive care) We found that extended anaerobic coverage likely is unnecessary in aspiration pneumonia because it was associated with no additional mortality benefit, only an increased risk of C difficile colitis",
             "Aspiration: first pneumonitis (supportive care) Minor criteria: Respiratory rate is >30 breaths/min, Ratio of PaO2/FIO2 <250, Multilobar infiltrates are present, The patient is confused or disoriented, Serum urea nitrogen level is >20 mg/dL, WBC <4,000 cells/mL due to the severity of the infection (not due to other causes such as malignancy or chemotherapy), Platelet count <100,000/mL, Core temperature <36 °C, The patient is hypotensive and requires aggressive fluid resuscitation, Major criteria Patient is in septic shock, requiring vasopressors to maintain adequate mean arterial blood pressure, Patient is in respiratory failure and requires mechanical ventilation Ampicillin/sulbactam, carbapenems, or respiratory fluoroquinolones (such as levofloxacin or moxifloxacin) are effective for most patients with community-acquired aspiration pneumonia",
@@ -781,6 +783,7 @@ run <- function() {
             
             
             # SCORES            
+           "HASBLED: Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65), Drugs/alcohol concomitantly - assessing the risc of bleeding perioperatively - only 1 point each - above 3 points increased risc of bleeding",
             "Child-Pugh-Creteria: every groupe scores 3 points max (1-3), Serumalbumin, Bilirubin, Quick (%), Aszites, Enzephalopathie - A: 5-6 points (well compensated), B: 7-9 points (significant compormise), C: 10-15 points (decompensated)",
            "MELD (Model for End-Stage Liver Disease - for transplant priorisation): billi, INR, creatinin, Na (min 6 - max 40",
             "PATIL TEST: Tip of thyroid cartilage to tip of the chin (mentum) > Thyromental distance should be over 7cm! A distance of less than 6.0 cm is associated with difficult laryngoscopy and predicts 75 % of difficult laryngoscopies.",
@@ -822,6 +825,7 @@ run <- function() {
             
             
             # PHARMACOLOGY
+           "NOACs (Non-Vitamin K Antagonist Oral Anticoagulants) and DOACs (Direct Oral Anticoagulants) are the same thing - There is no clinical difference between NOACs and DOACs; they are simply two different acronyms used to describe the exact same class of modern blood thinners",
            "Elimination rate constat is the slope of the log(concentration) over time - if k is 0.1 > plasma concentration drops by 10% per minute",
            "Rate of elimination (mg/min) = Concentration (mg/ml) x clearance (ml/min)",
            "Low solubility (slow transfer over membrane: diffusion limited, high solubility (fast membrane transfer) - perfusion limited), O2 are perfusion limited (but can be diffusion limited in atlethes if CO is very high or at very high altitude), CO is diffusion limited (so high affinity to Hb that perfusion does play a minor role and the diffusion properties of the membrane define the rate of diffusion",
