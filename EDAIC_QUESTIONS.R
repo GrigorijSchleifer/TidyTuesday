@@ -8,6 +8,8 @@
 # LAST WEEK
 
 # CTG
+# TCI
+# BIS
 # Respiratory failures: types
 # CPR ALS guidlines 
 # NAPs
