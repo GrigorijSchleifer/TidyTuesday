@@ -7,6 +7,8 @@
 
 # LAST WEEK
 
+# CTG
+# Respiratory failures: types
 # CPR ALS guidlines 
 # NAPs
 # https://www.ccjm.org/content/92/4/213
@@ -411,6 +413,9 @@ run <- function() {
             
             
             # ACID-BASE-BLOOD-GAS
+           "1:4:2:5 rule: for every PaCO2 of 10 up/down: respAzidosis: acute 1 HCO3 up/chronic 4 HCO3 up : respAlkalosis: acute 2 HCO3 down/chronic 5 HCO3 down",
+            "Normal PaO2: 80-100 mmHg, Normal PaCO2: 35-45 mmHg, Normal pH: 7.35-7.45, Normal HCO3-: 22-26 mEq/L, Normal SaO2: 95-100%",
+           "Expected PaO2: FiO2 * 5 (21 * 5 = 105mmHg) or alveolar gas equation, normal Aa difference: Age/4 + 4 (like pediatric tube sizing) - INDICATING SHUNT, V/Q, DIFFUSION",
            "Urea is produced in the liver from ammonia (protein and amino acid metabolism), Protein > amino acids > deamination > NH3 (ammonia) / NH4+ (ammonium) > liver > urea cycle > urea, Why? Because ammonia is toxic, especially to the brain. The liver converts it into urea, which is much less toxic and water-soluble.",
            "Boston rule for CO2 (otherwise: 1:4/2:5 rule for H2CO2 compensation): Acidosis > 1.5 * H2CO3 + 9, Alkalosis < 0.7 * H2CO3 + 20 vs Copenhagen rule: every 0.1 pH change 6 BE",
            "Body is on a alkaline neutral side state",
@@ -11571,7 +11576,7 @@ run <- function() {
         ),
         
         good_old_answers = c(
-            "INSULINE: Anabolic peptide (51 AS) hormone by beta cells (alpha cells > glucagon, delta cells: somatostatin), of the pancreatic islets of Langerhans, regulating glucose fat and protein metabolism. glucose (enters cell via GLUT 2 transporter) - glucose metabolism increases ATP > ATP closes ATP-sensible K-channels > depolarisation > insulin ex > and incretins (from the gut in response to food intake), amino acids, and certain neurotransmitters influence insulin secretion. Insuline receptor: tyrosine kinase receptor > autophosphorylation > phosphorylation of insulin receptor substrates (IRS) > activation of PI3K and MAPK pathways > translocation of GLUT4 to cell membrane "
+            "INSULINE: Anabolic peptide (51 AS) hormone by beta cells (alpha cells > glucagon, delta cells: somatostatin), of the pancreatic islets of Langerhans, regulating glucose fat and protein metabolism. glucose (enters cell via GLUT 2 transporter) - glucose metabolism increases ATP > ATP closes ATP-sensible K-channels > depolarisation > insulin ex > and incretins (from the gut in response to food intake), amino acids, and certain neurotransmitters influence insulin secretion. Insuline receptor: tyrosine kinase receptor > autophosphorylation > phosphorylation of insulin receptor substrates (IRS) > activation of PI3K and MAPK pathways > translocation of GLUT4 to cell membrane ",
             "HOCM: Most common genetic cardiovascular disorder, autosomal-dominant (worsens with: Decreased Preload: Reduced left ventricular (LV) cavity size, Decreased Afterload: Reduced systemic vascular resistance (SVR), Increased Contractility: Stronger myocardial contraction narrows the LVOT, tachycardia: Decreases diastolic filling time, further reducing LV volume) characterized by asymmetric hypertrophy of the interventricular septum > intermittent obstruction of the left ventricular outflow tract (LVOT).Asymmetric septal hypertrophy, dynamic LVOT obstruction, mitral regurgitation, diastolic dysfunction, arrhythmias, sudden cardiac death, syncope, dyspnea, angina, palpitations, beta blockers to reduce heart rate and contractility (reduce LVOT obstruction), avoid vasodilators (can worsen obstruction), maintain adequate preload and afterload, careful fluid management to avoid hypovolemia, avoid tachycardia (can worsen obstruction), consider invasive monitoring for hemodynamic management, Screen for dyspnea, syncope, and palpitations, Left Ventricular Hypertrophy (LVH) or left axis deviation on ECT (Sokolow-Lyon-Index (SV1 + RV5 or V6 > 3,5 mm), Continue beta-blockers to maintain a slow heart rate and prolong diastole, Maintain Preload: Use judicious fluid preloading (e.g., 500ml Ringer’s Lactate) to maintain stroke volume, Maintain Afterload: Avoid systemic vasodilation, Maintain Sinus Rhythm/Slow Heart Rate: Tachycardia or loss of atrial kick,  Avoid Sympathetic Stimulation: Use adequate anxiolysis (e.g., benzodiazepines) and analgesia to prevent increases in contractility and heart rate",
             "1 Atm = 1 bar = 760 mmHg = 101.3 kPa = 14.7 psi, 760 Torr",
             "Ignition source, fuel, oxygen (or other oxidising agent)",
